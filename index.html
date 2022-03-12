@@ -7,62 +7,160 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid container-lg">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.html">Index</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="Profile.html">Profile</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <div class="d-flex">
+        <div class="p-2">Img</div>
+        <div>
+          <div>Player name</div>
+          <div>Menu ▼</div>
+        </div>
+      </div>
 
-<div class="d-flex container-lg my-5">
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+<div class="d-flex container-lg my-2">
   <div class="main-left d-flex flex-column w-50">
-    <div class="border-primary border m-2 p-5">
+    <div class="border-primary bg-light border m-2 p-5">
       <div>Some Announcement</div>
       <div>Announcement description</div>
       <div>Time of announcement</div>
     </div>
-    <div class="border-primary border m-2" style="height: 400px">
+    <div class="border-primary bg-light border m-2" style="height: 400px">
       <div class="m-5">Profile panel</div>
     </div>
     <div class="d-flex flex-row m-2">
-      <div class="text-center w-50 px-5 py-2 border-primary border">Some link</div>
-      <div class="ms-1 w-50 px-5 py-2 border-primary border text-center">Some link</div>
+      <div class="text-center w-50 px-5 py-2 border-primary bg-light border">Some link</div>
+      <div class="ms-1 w-50 px-5 py-2 border-primary bg-light border text-center">Some link</div>
     </div>
     <div class="d-flex flex-column m-2">
       <div>Server status</div>
       <div>Online players</div>
-      <div class="my-1 p-2 border-primary border">Some server <span class="text-primary">0 Players</span></div>
-      <div class="my-1 p-2 border-primary border">Some server <span class="text-primary">0 Players</span></div>
-      <div class="my-1 p-2 border-primary border">Some server <span class="text-primary">0 Players</span></div>
-      <div class="my-1 p-2 border-primary border">Some server <span class="text-primary">0 Players</span></div>
-      <div class="my-1 p-2 border-primary border">Some server <span class="text-primary">0 Players</span></div>
+      <div class="my-1 p-2 border-primary bg-light border">Some server <span class="fw-bold">0 Players</span></div>
+      <div class="my-1 p-2 border-primary bg-light border">Some server <span class="fw-bold">0 Players</span></div>
+      <div class="my-1 p-2 border-primary bg-light border">Some server <span class="fw-bold">0 Players</span></div>
+      <div class="my-1 p-2 border-primary bg-light border">Some server <span class="fw-bold">0 Players</span></div>
+      <div class="my-1 p-2 border-primary bg-light border">Some server <span class="fw-bold">0 Players</span></div>
     </div>
     <div class="d-flex flex-column m-2">
       <div>Online players</div>
-      <div class="my-1 p-2 border-primary border">Some player <span class="text-primary">0 Hours</span></div>
-      <div class="my-1 p-2 border-primary border">Some player <span class="text-primary">0 Hours</span></div>
-      <div class="my-1 p-2 border-primary border">Some player <span class="text-primary">0 Hours</span></div>
+      <div class="my-1 p-2 border-primary bg-light border">Some player <span class="fw-bold">0 Hours</span></div>
+      <div class="my-1 p-2 border-primary bg-light border">Some player <span class="fw-bold">0 Hours</span></div>
+      <div class="my-1 p-2 border-primary bg-light border">Some player <span class="fw-bold">0 Hours</span></div>
     </div>
 
   </div>
   <div class="main-right d-flex flex-column w-50">
-    <div class="border-primary border m-2 p-2">
+    <div class="border-primary bg-light border m-2 p-2">
       <div>Player: Some rupor</div>
     </div>
     <div class="m-2 d-flex flex-row" style="height: 440px">
-      <div class="border-primary border p-5 me-1 h-10 w-25">Prime panel</div>
+      <div class="border-primary bg-light border p-5 me-1 h-10 w-25">Prime panel</div>
       <div class="w-100">
-        <div class="border-primary border p-5 h-50">
+        <div class="border-primary bg-light border p-5 h-50">
           <div>Some panel</div>
           <div>Time</div>
           <div>Panel description</div>
         </div>
         <div class="d-flex flex-row h-50">
-          <div class="border-primary border p-5 my-1 w-50">
+          <div class="border-primary bg-light border p-5 mt-1 w-50">
             <div>Some panel</div>
             <div>Panel description</div>
           </div>
-          <div class="border-primary border p-5 my-1 ms-1 w-50">
+          <div class="border-primary bg-light border p-5 mt-1 ms-1 w-50">
             <div>Some panel</div>
             <div>Panel description</div>
           </div>
         </div>
       </div>
     </div>
+    <div class="d-flex flex-column m-2">
+      <div>News</div>
+      <div class="d-grid" style="grid-template-columns: repeat(2,1fr); grid-gap: 4px;">
+        <div class="border-primary bg-light border p-4">
+          <div>Some news</div>
+          <div>News time</div>
+        </div>
+        <div class="border-primary bg-light border p-4">
+          <div>Some news</div>
+          <div>News time</div>
+        </div>
+        <div class="border-primary bg-light border p-4">
+          <div>Some news</div>
+          <div>News time</div>
+        </div>
+        <div class="border-primary bg-light border p-4">
+          <div>Some news</div>
+          <div>News time</div>
+        </div>
+      </div>
+      <div class="d-flex flex-column">
+        <div>Last changes</div>
+        <div class="overflow-auto" style="max-height: 310px">
+          <div class="border-primary bg-light border p-4 my-1 me-2">
+            <div><span>Time of change</span> Change title</div>
+            <div>Change description</div>
+          </div>
+          <div class="border-primary bg-light border p-4 my-1 me-2">
+            <div><span>Time of change</span> Change title</div>
+            <div>Change description</div>
+          </div>
+          <div class="border-primary bg-light border p-4 my-1 me-2">
+            <div><span>Time of change</span> Change title</div>
+            <div>Change description</div>
+          </div>
+          <div class="border-primary bg-light border p-4 my-1 me-2">
+            <div><span>Time of change</span> Change title</div>
+            <div>Change description</div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
   </div>
 </div>
 

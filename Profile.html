@@ -8,7 +8,7 @@
 </head>
 <body>
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
+    <div class="container-fluid container-lg">
         <a class="navbar-brand" href="#">Navbar</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -16,10 +16,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link active" href="index.html">Index</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Link</a>
+                    <a class="nav-link" href="Profile.html">Profile</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -36,35 +36,366 @@
                     <a class="nav-link disabled">Disabled</a>
                 </li>
             </ul>
-            <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+            <div class="d-flex">
+                <div class="p-2">Img</div>
+                <div>
+                    <div>Player name</div>
+                    <div>Menu ▼</div>
+                </div>
+            </div>
+
         </div>
     </div>
 </nav>
-<div class="nav-tabs">
-    <div data-id="1" data-type="1" senpai-iam-ready>Tab 1</div>
-    <div data-id="2" data-type="2" senpai-iam-ready>Tab 2</div>
-    <div data-id="3" data-type="3" senpai-iam-ready>Tab 3</div>
+
+
+
+
+
+<div class="container-lg">
+    <div class="d-flex my-5">
+        <div>
+            <div class="border border-primary" style="width: 256px;height: 256px"></div>
+            <div class="d-flex">
+                <div class="p-2">Upload pic</div>
+                <div class="p-2">Upload banner</div>
+            </div>
+        </div>
+        <div class="d-flex flex-column py-5 px-2">
+            <div style="font-size: 50px">Player name</div>
+            <div>Rating <span class="fw-bold">Prefix</span></div>
+            <div>Online hours</div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-bs-toggle="tab" href="#profile">Player name</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#activity">Activity</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#collection">Collection</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#talents">Talents</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#characters">Characters</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#friends">Friends</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-bs-toggle="tab" href="#achievements">Achievements</a>
+        </li>
+    </ul>
+    <div class="tab-content mb-5">
+        <div class="tab-pane fade show active" id="profile">
+            <div class="d-flex">
+                <div class="main-left d-flex flex-column w-50 m-2">
+                    <div>General information</div>
+                    <div class="d-grid" style="grid-template-columns: repeat(3,1fr); grid-gap: 3px;">
+                        <div class="border-primary border p-2">
+                            <div>Registration</div>
+                            <div>Time</div>
+                        </div>
+                        <div class="border-primary border p-2">
+                            <div>Last online</div>
+                            <div>Time</div>
+                        </div>
+                        <div class="border-primary border p-2">
+                            <div>Prestige</div>
+                            <div>0</div>
+                        </div>
+                        <div class="border-primary border p-2">
+                            <div>Last game online</div>
+                            <div>Time</div>
+                        </div>
+                        <div class="border-primary border p-2">
+                            <div>Reputation</div>
+                            <div>0</div>
+                        </div>
+                        <div class="border-primary border p-2">
+                            <div>0 Level <span class="fw-light">0 exp</span></div>
+                            <div class="fw-light">Remain 1000 exp for 1 lvl</div>
+                        </div>
+                        <div class="border-primary border p-2">
+                            <div>Some currency</div>
+                            <div>0</div>
+                        </div>
+                        <div class="border-primary border p-2">
+                            <div>Some currency</div>
+                            <div>0</div>
+                        </div>
+                        <div class="border-primary border p-2">
+                            <div>Some currency</div>
+                            <div>0</div>
+                        </div>
+                    </div>
+
+
+                    <div>Player statistics</div>
+
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-bs-toggle="tab" href="#server1">Some server</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#server2">Some server</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#server3">Some server</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#server4">Some server</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-bs-toggle="tab" href="#server5">Some server</a>
+                        </li>
+
+                    </ul>
+                    <div class="tab-content">
+                        <div class="tab-pane fade show active" id="server1">
+                            <div class="text-center">
+                                <div style="padding: 150px;">Character preview</div>
+                                <div>Server online time <span class="fw-bold">0 hours</span></div>
+                                <div>Full online time <span class="fw-bold">0 hours</span></div>
+                                <div>Week online time <span class="fw-bold">0 hours</span> </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show active" id="server2">
+                            <div class="text-center">
+                                <div style="padding: 150px;">Character preview</div>
+                                <div>Server online time <span class="fw-bold">0 hours</span></div>
+                                <div>Full online time <span class="fw-bold">0 hours</span></div>
+                                <div>Week online time <span class="fw-bold">0 hours</span> </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show active" id="server3">
+                            <div class="text-center">
+                                <div style="padding: 150px;">Character preview</div>
+                                <div>Server online time <span class="fw-bold">0 hours</span></div>
+                                <div>Full online time <span class="fw-bold">0 hours</span></div>
+                                <div>Week online time <span class="fw-bold">0 hours</span> </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show active" id="server4">
+                            <div class="text-center">
+                                <div style="padding: 150px;">Character preview</div>
+                                <div>Server online time <span class="fw-bold">0 hours</span></div>
+                                <div>Full online time <span class="fw-bold">0 hours</span></div>
+                                <div>Week online time <span class="fw-bold">0 hours</span> </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade show active" id="server5">
+                            <div class="text-center">
+                                <div style="padding: 150px;">Character preview</div>
+                                <div>Server online time <span class="fw-bold">0 hours</span></div>
+                                <div>Full online time <span class="fw-bold">0 hours</span></div>
+                                <div>Week online time <span class="fw-bold">0 hours</span> </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="main-right d-flex flex-column w-50 m-2">
+                    <div>Achievement showcase</div>
+                    <div class="d-flex">
+                        <div class="border-primary border p-3 w-100 me-1">
+                            <div>Img</div>
+                            <div>Some achievement</div>
+                        </div>
+                        <div class="border-primary border p-3 w-100 me-1">
+                            <div>Img</div>
+                            <div>Some achievement</div>
+                        </div>
+                        <div class="border-primary border p-3  w-100 me-1">
+                            <div>Img</div>
+                            <div>Some achievement</div>
+                        </div>
+                        <div class="border-primary border p-3 w-100 me-1">
+                            <div>Img</div>
+                            <div>Some achievement</div>
+                        </div>
+                        <div class="border-primary border p-3 w-100">
+                            <div>Img</div>
+                            <div>Some achievement</div>
+                        </div>
+                    </div>
+                    <div>Collection showcase</div>
+                    <div class="d-flex">
+                        <div class="border-primary border p-3 w-100 me-1">
+                            <div>Img</div>
+                            <div>Some collectible</div>
+                        </div>
+                        <div class="border-primary border p-3 w-100 me-1">
+                            <div>Img</div>
+                            <div>Some collectible</div>
+                        </div>
+                        <div class="border-primary border p-3  w-100 me-1">
+                            <div>Img</div>
+                            <div>Some collectible</div>
+                        </div>
+                        <div class="border-primary border p-3 w-100">
+                            <div>Img</div>
+                            <div>Some collectible</div>
+                        </div>
+                    </div>
+                    <div>Perks</div>
+                    <div class="d-grid" style="grid-template-columns: repeat(2,1fr); grid-gap: 3px;}">
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div>
+                                    <div>Some perk</div>
+                                    <div>0 level</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div>
+                                    <div>Some perk</div>
+                                    <div>0 level</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div>
+                                    <div>Some perk</div>
+                                    <div>0 level</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div>
+                                    <div>Some perk</div>
+                                    <div>0 level</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div>
+                                    <div>Some perk</div>
+                                    <div>0 level</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div>
+                                    <div>Some perk</div>
+                                    <div>0 level</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div>
+                                    <div>Some perk</div>
+                                    <div>0 level</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div>
+                                    <div>Some perk</div>
+                                    <div>0 level</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div>
+                                    <div>Some perk</div>
+                                    <div>0 level</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div>
+                                    <div>Some perk</div>
+                                    <div>0 level</div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+        <div class="tab-pane fade" id="activity">
+
+        </div>
+        <div class="tab-pane fade" id="collection">
+
+        </div>
+        <div class="tab-pane fade" id="talents">
+
+        </div>
+        <div class="tab-pane fade" id="characters">
+
+        </div>
+        <div class="tab-pane fade" id="friends">
+
+        </div>
+        <div class="tab-pane fade" id="achievements">
+
+        </div>
+    </div>
 </div>
-<div class="tab-content push-main">
-    <div class="tab-panel" data-id="1" data-type="1">
-        <p>Test content 1</p>
-        <p>Test content 1</p>
-        <p>Test content 1</p>
-    </div>
-    <div class="tab-panel" data-id="2" data-type="2">
-        <p>Test content 2</p>
-        <p>Test content 2</p>
-        <p>Test content 2</p>
-    </div>
-    <div class="tab-panel" data-id="3" data-type="3">
-        <p>Test content 3</p>
-        <p>Test content 3</p>
-        <p>Test content 3</p>
-    </div>
-</div>
+
 
 
 
