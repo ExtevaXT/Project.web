@@ -40,12 +40,20 @@
         </li>
       </ul>
       <div class="d-flex">
-        <div class="p-2">Img</div>
-        <div>
-          <div>Player name</div>
-          <div>Menu ▼</div>
-        </div>
+        <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</div>
+        <a class="text-decoration-none" href="Register.html"><div class="border-primary border py-2 px-4">Register</div></a>
+
       </div>
+
+
+
+<!--      <div class="d-flex" data-bs-toggle="modal" data-bs-target="#exampleModal">-->
+<!--        <div class="p-2">Img</div>-->
+<!--        <div>-->
+<!--          <div>Player name</div>-->
+<!--          <div>Menu ▼</div>-->
+<!--        </div>-->
+<!--      </div>-->
 
     </div>
   </div>
@@ -166,6 +174,46 @@
 
   </div>
 </div>
+
+
+
+
+
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="container">
+    <div class="modal-dialog float-end w-50" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+
+          <h5 class="modal-title text-center" id="exampleModalLabel">Authorization</h5>
+
+        </div>
+        <div class="modal-body">
+          <form action="" class="d-flex flex-column">
+            <input class="my-1 p-2 border border-primary form-control" type="text" placeholder="Login" required>
+            <input class="my-1 p-2 border border-primary form-control" type="password" placeholder="Password" required>
+            <input class="my-1 p-2 btn-outline-primary btn" type="submit" value="Login">
+          </form>
+        </div>
+        <div class="modal-footer justify-content-start">
+          <a class="text-decoration-none" href="">Recover account</a>
+          <a class="text-decoration-none" href="Register.html">Register</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
 
 <script src="js/script.js"></script>
 <script src="js/jquery.js"></script>
