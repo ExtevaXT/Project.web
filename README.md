@@ -4,5 +4,5 @@
 <li>Index</li>
 <li>Profile</li>
 <li>Guides</li>
-<li>Register, Login modal (Float end or center?)</li>
+<li>Register, Login modal</li>
 </ol>

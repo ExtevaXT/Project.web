@@ -2,13 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
   <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/Index/style.css">
   <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
+<div class="main-content">
+
+
 <nav class="navbar navbar-expand-lg navbar-light ">
-  <div class="container-fluid container-lg">
+  <div class="container-fluid">
     <a class="navbar-brand" href="#">Navbar</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -16,7 +22,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" href="index.html">Index</a>
+          <a class="nav-link active" href="Index.html">Index</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="Profile.html">Profile</a>
@@ -65,7 +71,7 @@
 
 
 
-<div class="d-flex container-lg my-2">
+<div class="d-flex my-2 main">
   <div class="main-left d-flex flex-column w-50">
     <div class="border-primary  border m-2 p-5">
       <div>Some Announcement</div>
@@ -100,20 +106,20 @@
     <div class="border-primary  border m-2 p-2">
       <div>Player: Some rupor</div>
     </div>
-    <div class="m-2 d-flex flex-row" style="height: 440px">
-      <div class="border-primary  border p-5 me-1 h-10 w-25">Prime panel</div>
+    <div class="m-2 d-flex flex-row prime-panel2">
+      <div class="border-primary  border p-5 me-1 w-25 prime-panel">Prime panel</div>
       <div class="w-100">
-        <div class="border-primary  border p-5 h-50">
+        <div class="border-primary border p-5 h-50 prime-panel-parent">
           <div>Some panel</div>
           <div>Time</div>
           <div>Panel description</div>
         </div>
-        <div class="d-flex flex-row h-50">
-          <div class="border-primary  border p-5 mt-1 w-50">
+        <div class="d-flex flex-row prime-other-panels h-50 prime-panel-parent">
+          <div class="border-primary border p-5 mt-1 w-50 prime-other-panel">
             <div>Some panel</div>
             <div>Panel description</div>
           </div>
-          <div class="border-primary  border p-5 mt-1 ms-1 w-50">
+          <div class="border-primary  border p-5 mt-1 ms-1 w-50 prime-other-panel">
             <div>Some panel</div>
             <div>Panel description</div>
           </div>
@@ -122,7 +128,7 @@
     </div>
     <div class="d-flex flex-column m-2">
       <div>News</div>
-      <div class="d-grid" style="grid-template-columns: repeat(2,1fr); grid-gap: 4px;">
+      <div class="d-grid news-panel">
         <div class="border-primary  border p-4">
           <div>Some news</div>
           <div>News time</div>
@@ -143,19 +149,19 @@
       <div class="d-flex flex-column">
         <div>Last changes</div>
         <div class="overflow-auto" style="max-height: 310px">
-          <div class="border-primary  border p-4 my-1 me-2">
+          <div class="border-primary change-item border p-4 my-1 me-2">
             <div><span>Time of change</span> Change title</div>
             <div>Change description</div>
           </div>
-          <div class="border-primary  border p-4 my-1 me-2">
+          <div class="border-primary change-item border p-4 my-1 me-2">
             <div><span>Time of change</span> Change title</div>
             <div>Change description</div>
           </div>
-          <div class="border-primary  border p-4 my-1 me-2">
+          <div class="border-primary change-item border p-4 my-1 me-2">
             <div><span>Time of change</span> Change title</div>
             <div>Change description</div>
           </div>
-          <div class="border-primary  border p-4 my-1 me-2">
+          <div class="border-primary change-item border p-4 my-1 me-2">
             <div><span>Time of change</span> Change title</div>
             <div>Change description</div>
           </div>
@@ -170,13 +176,10 @@
 
 
 
-
-
   </div>
 </div>
 
-
-
+</div>
 
 
 
@@ -210,7 +213,7 @@
   </div>
 
 </div>
-
+</div>
 
 
 
