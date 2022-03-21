@@ -13,4 +13,12 @@ input::placeholder{
     margin: auto;
     height: auto;
 }
+.main-content{
+    width: 90%;
+    margin: auto;
+    height: auto;
+}
+.progress{
+    height: 5px;
+}
 
