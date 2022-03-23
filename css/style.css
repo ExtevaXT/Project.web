@@ -21,4 +21,6 @@ input::placeholder{
 .progress{
     height: 5px;
 }
-
+.dropdown-toggle:after{
+    display: none;
+}
