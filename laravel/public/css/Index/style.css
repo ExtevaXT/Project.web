@@ -1,0 +1,36 @@
+.prime-panel2{
+    height: 440px
+}
+.news-panel{
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 4px;
+}
+@media screen and (max-width: 1000px){
+    .main{
+        flex-direction: column;
+    }
+    .main-left, .main-right{
+        width: 100%!important;
+    }
+    .prime-panel{
+        display: none;
+    }
+    .prime-other-panels{
+        flex-direction: column!important;
+    }
+    .prime-other-panel{
+        width: 100% !important;
+        margin-left: 0!important;
+
+    }
+    .prime-panel2{
+        height: 100%;
+    }
+    .news-panel{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .prime-panel-parent{
+        height: auto!important;
+    }
+
+}
