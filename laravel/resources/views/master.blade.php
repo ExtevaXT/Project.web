@@ -11,51 +11,51 @@
 </head>
 <body>
 <div class="main-content">
-    @auth()
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <a class="navbar-brand" href="#">Project.web</a>
-            <div class="d-flex mobile-panel">
-                <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</div>
-                <a class="text-decoration-none" href="Register.html"><div class="border-primary border py-2 px-4">Register</div></a>
-            </div>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="/">Index</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/profile">Profile</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/guides">Guides</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled">Disabled</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="d-flex pc-panel">
-                <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</div>
-                <a class="text-decoration-none" href="Register.html"><div class="border-primary border py-2 px-4">Register</div></a>
-            </div>
-        </div>
-    </nav>
-    @endauth
+{{--    @auth()--}}
+{{--    <nav class="navbar navbar-expand-lg navbar-light ">--}}
+{{--        <div class="container-fluid">--}}
+{{--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">--}}
+{{--                <span class="navbar-toggler-icon"></span>--}}
+{{--            </button>--}}
+{{--            <a class="navbar-brand" href="#">Project.web</a>--}}
+{{--            <div class="d-flex mobile-panel">--}}
+{{--                <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</div>--}}
+{{--                <a class="text-decoration-none" href="Register.html"><div class="border-primary border py-2 px-4">Register</div></a>--}}
+{{--            </div>--}}
+{{--            <div class="collapse navbar-collapse" id="navbarSupportedContent">--}}
+{{--                <ul class="navbar-nav me-auto mb-2 mb-lg-0">--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link active" href="/">Index</a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link" href="/profile">Profile</a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link" href="/guides">Guides</a>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item dropdown">--}}
+{{--                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
+{{--                            Dropdown--}}
+{{--                        </a>--}}
+{{--                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">--}}
+{{--                            <li><a class="dropdown-item" href="#">Action</a></li>--}}
+{{--                            <li><a class="dropdown-item" href="#">Another action</a></li>--}}
+{{--                            <li><hr class="dropdown-divider"></li>--}}
+{{--                            <li><a class="dropdown-item" href="#">Something else here</a></li>--}}
+{{--                        </ul>--}}
+{{--                    </li>--}}
+{{--                    <li class="nav-item">--}}
+{{--                        <a class="nav-link disabled">Disabled</a>--}}
+{{--                    </li>--}}
+{{--                </ul>--}}
+{{--            </div>--}}
+{{--            <div class="d-flex pc-panel">--}}
+{{--                <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</div>--}}
+{{--                <a class="text-decoration-none" href="Register.html"><div class="border-primary border py-2 px-4">Register</div></a>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </nav>--}}
+{{--    @endauth--}}
 
     @guest()
             <nav class="navbar navbar-expand-lg navbar-light">
@@ -91,6 +91,7 @@
                                         </div>
                                     </div>
                                 </a>
+{{--                                https://stackoverflow.com/questions/55309379/how-to-display-and-shut-message-modal-when-hovering-over-buttons--}}
                                 <ul class="dropdown-menu user-panel-crutch" aria-labelledby="navbarDropdown">
                                     <li><!--User panel like modal?-->
                                         <div class="d-flex user-panel">
@@ -189,7 +190,6 @@
 
 </div>
 </div>
-
 
 
 

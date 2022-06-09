@@ -21,3 +21,6 @@ Route::get('/profile', function () {
 Route::get('/guides', function () {
     return view('guides');
 });
+Route::get('/category', function () {
+    return view('category');
+});
