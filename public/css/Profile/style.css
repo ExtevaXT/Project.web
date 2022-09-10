@@ -1,0 +1,73 @@
+.info-panel{
+    grid-template-columns: repeat(3,1fr); grid-gap: 3px;
+}
+.perk-panel{
+    grid-template-columns: repeat(2,1fr); grid-gap: 3px;
+}
+.friend-panel{
+    grid-template-columns: repeat(6,1fr);grid-gap: 4px;
+}
+.talent-panel{
+    grid-template-columns: repeat(4,1fr);grid-gap: 4px;
+}
+.collection-panel{
+    grid-template-columns: repeat(5,1fr);grid-gap: 4px;
+}
+.inventory-panel{
+    grid-template-columns: repeat(8,1fr);grid-gap: 4px;
+}
+.inventory-item{
+    width: 105px;
+    height: 105px;
+    text-align: center;
+}
+@media screen and (max-width: 1000px){
+    .main{
+        flex-direction: column;
+    }
+    .main-left, .main-right{
+        width: 100%!important;
+        margin: 0!important;
+    }
+    .info-panel{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .perk-panel{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .top-panel{
+        flex-direction: column;
+    }
+    .achievement-panel{
+        overflow-x: auto;
+    }
+    .collection-panel{
+        overflow-x: auto;
+    }
+    .friend-panel{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .talent-panel{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .collection-tab{
+        flex-direction: column;
+    }
+    .collection-nav{
+        flex-direction: row!important;
+    }
+    .collection-panel{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .inventory-panel{
+        width: 100%; !important;
+    }
+    #inventory{
+        display: none;
+    }
+    .mobile-lock{
+        pointer-events: none;
+        color: gray;
+    }
+
+}

@@ -1,0 +1,64 @@
+.tab-panel{
+    display: none;
+}
+*{
+    color: #0d6efd;
+}
+.mobile-panel{
+    display: none!important;
+}
+.pc-panel{
+    display: flex!important;
+}
+input::placeholder{
+    padding: 15px;
+    color: #0d6efd!important;
+}
+.main-content{
+    width: 90%;
+    margin: auto;
+    height: auto;
+}
+.main-content{
+    width: 90%;
+    margin: auto;
+    height: auto;
+}
+.progress{
+    height: 5px;
+}
+.dropdown-toggle:after{
+    display: none;
+}
+
+.user-panel-left{
+    width: 400px;
+}
+.user-panel-crutch{
+    margin-left: -300px;
+    margin-top:-50px;
+}
+@media screen and (max-width: 1000px) {
+    .user-panel-crutch{
+        margin-left: 0;
+        margin-top: 0;
+    }
+    .user-panel{
+        flex-direction: column;
+    }
+    .user-panel-nav{
+        width: 400px;
+        margin-left: 0 !important;
+        margin-top:10px;
+    }
+    .pc-panel{
+        display: none!important;
+    }
+    .mobile-panel{
+        display: flex!important;
+    }
+    .authorization-panel{
+        padding-top: 50px;
+        width: 100%!important;
+    }
+}
