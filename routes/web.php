@@ -24,8 +24,8 @@ Route::get('/guides', function () {
 Route::get('/category', function () {
     return view('category');
 });
-Route::get('/profile', function () {
-    return redirect('/user/test');
+Route::get('/map', function () {
+    return view('map');
 });
 
 
@@ -42,7 +42,7 @@ Route::get('/user/{name}', function ($name) {
 //    $character_inventory = (array)DB::table('character_inventory')->where('character', '=' , $character['name']);
 //    $character_personal_storage = (array)DB::table('character_personal_storage')->where('character', '=' , $character['name']);
     $character_personal_storage = \App\Models\Character_personal_storage::all()->where('character', $character['name']);
-    return view('profile', [
+    return view('users.profile', [
         'account' => (array)$account,
         'character' => $character,
 //        'character_inventory' => $character_inventory,

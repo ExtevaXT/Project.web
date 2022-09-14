@@ -200,7 +200,7 @@
                                 @foreach($character_personal_storage as $item)
 
                                     @if($item->slot==$i)
-                                        <div>{{$item}}</div>
+                                        <div>{{$item->name}}</div>
                                     @endif
                                 @endforeach
                             </div>

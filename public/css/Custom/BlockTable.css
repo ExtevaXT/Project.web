@@ -1,0 +1,76 @@
+.BlockTable {
+    display: table;
+    margin: 0 50px;
+    width: 100%;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.09);
+}
+.BlockTable-head {
+    display: table-header-group;
+}
+.BlockTable-body {
+    display: table-row-group;
+}
+.BlockTable-row {
+    /*background: rgba(55,55,55,0.26);*/
+    /*box-shadow: 0 5px 15px rgb(0 0 0 / 10%);*/
+    transition: .2s;
+    /*border: 1px solid rgb(255 255 255 / 12%);*/
+    padding: 2px;
+    margin-bottom: 4px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.BlockTable-label {
+    /*font-weight: 700;*/
+    font-size: 1.5em;
+    line-height: 1.5em;
+    white-space: nowrap;
+    color: #fff;
+    text-align: center;
+    display: table-cell;
+}
+.BlockTable-label .BlockTable-labelInner {
+    padding-right: 10px;
+    padding-left: 10px;
+}
+.BlockTable-labelInner {
+    display: block;
+    padding: 13px 0;
+    position: relative;
+}
+.BlockTable-label--left {
+    text-align: left;
+}
+/*.BlockTable-data {*/
+/*    padding: 10px;*/
+/*    display: block;*/
+/*}*/
+.BlockTable-data {
+    padding: 10px 5px;
+    vertical-align: middle;
+    position: relative;
+    display: table-cell;
+}
+
+.auction-name-count-item {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 4px;
+}
+.shop-button {
+    /*box-shadow: 0 5px 15px rgb(0 0 0 / 13%);*/
+    /*background: rgb(140 140 140 / 2%);*/
+    /*border: 1px solid rgb(115 115 115 / 20%);*/
+    height: 35px;
+    width: 120px;
+    opacity: .8;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 auto;
+    line-height: 3;
+    transition: .2s;
+    color: #a7a7a7;
+    text-transform: uppercase;
+    font-weight: 700;
+    border-radius: 2px;
+}
