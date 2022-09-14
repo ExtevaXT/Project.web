@@ -15,6 +15,22 @@ use Symfony\Component\Console\Helper\Table;
 class UserController extends Controller
 {
 
+    public function profile($name)
+    {
+        $account = DB::table('accounts')->where('name', $name)->first();
+        if($account==null) return redirect('/');
+        $character = (array)DB::table('characters')->where('account', $name)->first();
+//    $character_inventory = (array)DB::table('character_inventory')->where('character', '=' , $character['name']);
+//    $character_personal_storage = (array)DB::table('character_personal_storage')->where('character', '=' , $character['name']);
+        $character_personal_storage = \App\Models\Character_personal_storage::all()->where('character', $character['name']);
+        return view('users.profile', [
+            'account' => (array)$account,
+            'character' => $character,
+//        'character_inventory' => $character_inventory,
+            'character_personal_storage'=> $character_personal_storage,
+        ]);
+    }
+
 
     public function login()
     {

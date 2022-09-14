@@ -16,11 +16,47 @@
             </form>
         </div>
         <div>Categories</div>
-        @for($i = 0; $i < 7; $i++)
-        <a href="/guides/category" class="border-primary border p-2 px-5 my-1 text-decoration-none">
-            <div>Some category</div>
-            <div>Category description</div>
+        <a href="/guides/achievements" class="border-primary border p-2 px-5 my-1 text-decoration-none">
+            <div>Achievements</div>
+            <div>Information about achievements</div>
         </a>
-        @endfor
+        <a href="/guides/talents" class="border-primary border p-2 px-5 my-1 text-decoration-none">
+            <div>Talents</div>
+            <div>Information about talents</div>
+        </a>
+        <a href="/guides/ranking" class="border-primary border p-2 px-5 my-1 text-decoration-none">
+            <div>Ranking</div>
+            <div>Information about level and experience</div>
+        </a>
+        <a href="/guides/auction" class="border-primary border p-2 px-5 my-1 text-decoration-none">
+            <div>Auction</div>
+            <div>Information about auction</div>
+        </a>
+
+        <a href="/guides/anomalies" class="border-primary border p-2 px-5 my-1 text-decoration-none">
+            <div>Anomalies</div>
+            <div>Information about anomalies</div>
+        </a>
+        <a href="/guides/artefacts" class="border-primary border p-2 px-5 my-1 text-decoration-none">
+            <div>Artefacts</div>
+            <div>Information about artefacts</div>
+        </a>
+        <a href="/guides/equipment" class="border-primary border p-2 px-5 my-1 text-decoration-none">
+            <div>Equipment</div>
+            <div>Information about equipment</div>
+        </a>
+        <a href="/guides/attachments" class="border-primary border p-2 px-5 my-1 text-decoration-none">
+            <div>Attachments</div>
+            <div>Information about attachments</div>
+        </a>
+        <a href="/guides/weapons" class="border-primary border p-2 px-5 my-1 text-decoration-none">
+            <div>Weapons</div>
+            <div>Information about weapons</div>
+        </a>
+        <a href="/guides/other" class="border-primary border p-2 px-5 my-1 text-decoration-none">
+            <div>Other</div>
+            <div>Information about other stuff</div>
+        </a>
+
     </div>
 @endsection

@@ -14,15 +14,19 @@
 
     <script src="{{asset('leaflet/leaflet.js')}} "></script>
     <script>
-        let map = L.map('map').setView([51.505, -0.09], 13);
+        let map = L.map('map', {
+            center: [40.75, -74.2],
+            zoom: 14,
+            minZoom: 13
+        });
 
-        let bounds = [[0,0], [1000,1000]];
-        let image = L.imageOverlay('uqm_map_full.png', bounds).addTo(map);
+        let imageUrl = '{{asset('leaflet/map.svg')}}',
+            imageBounds = [
+                [40.712216, -74.22655],
+                [40.773941, -74.12544]
+            ];
 
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 19,
-            attribution: '© OpenStreetMap'
-        }).addTo(map);
+        L.imageOverlay(imageUrl, imageBounds).addTo(map);
 
     </script>
 @endsection

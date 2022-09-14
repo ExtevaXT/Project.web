@@ -29,8 +29,8 @@
                 <option value={{$item->name.'.'.$item->amount.'.'.$item->durability.'.'.$item->ammo.'.'.$item->metadata}}>{{$item->name}}</option>
             @endforeach
         </select>
-        <input name="min_price" class="my-1 p-2 border border-primary form-control" type="number" placeholder="Bid price" required>
-        <input name="max_price" class="my-1 p-2 border border-primary form-control" type="number" placeholder="Buyout price">
+        <input name="bid" class="my-1 p-2 border border-primary form-control" type="number" placeholder="Bid price" required>
+        <input name="price" class="my-1 p-2 border border-primary form-control" type="number" placeholder="Buyout price">
         <select name="time" class="my-1 p-2 border border-primary form-control">
             <option disabled selected>Select Time</option>
             <option value="12">12:00</option>

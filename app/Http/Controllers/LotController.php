@@ -30,19 +30,32 @@ class LotController extends Controller
         $validate = $request->validated();
         $validate['character']= Character::all()->where('account',  Auth::user()->name)->first()->name;
         $validate['bidder']= Character::all()->where('account',  Auth::user()->name)->first()->name;
-        $validate['bid']= 0;
+
         $validate['item'] = $item[0];
         $validate['amount'] = $item[1];
         $validate['durability'] = $item[2];
         $validate['ammo'] = $item[3];
         $validate['metadata'] = $item[4];
         Lot::create($validate);
-        return $validate;
+        return redirect('/auction');
     }
 
-    public function countdown()
+    public function bid(Request $request)
     {
+        $lot = Lot::find($request->id);
+        $lot->bid = $request->bid;
 
+        $lot->bidder = Character::all()->where('account', Auth::user()->name)->first()->name;
+        $lot->save();
+        return $request;
+    }
+
+    public function buyout(Request $request)
+    {
+        $lot = Lot::find($request->id);
+        $lot->bid = $lot->price;
+        $lot->save();
+        return $request;
     }
 
 }

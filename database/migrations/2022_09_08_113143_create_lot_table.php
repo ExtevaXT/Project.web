@@ -21,12 +21,12 @@ return new class extends Migration
             $table->integer('durability');
             $table->integer('ammo');
             $table->string('metadata');
-            $table->integer('min_price');
-            $table->integer('max_price');
+
             $table->dateTime('time');
 
-            $table->string('bidder');
             $table->integer('bid');
+            $table->integer('price');
+            $table->string('bidder');
             $table->timestamps();
         });
     }
@@ -38,6 +38,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('lot');
+        Schema::dropIfExists('lots');
     }
 };

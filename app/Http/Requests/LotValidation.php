@@ -24,8 +24,8 @@ class LotValidation extends FormRequest
     public function rules()
     {
         return [
-            'min_price' => 'required',
-            'max_price' => 'nullable',
+            'bid' => 'required',
+            'price' => 'nullable',
             'item' => 'required',
             'time' => 'required',
         ];
