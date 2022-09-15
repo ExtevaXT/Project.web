@@ -24,6 +24,7 @@ Route::get('/guides', function () {
     return view('guides');
 });
 Route::get('/guides/{category}', [GuideController::class, 'category']);
+Route::get('/guides/{category}/{item_name}', [GuideController::class, 'item']);
 
 
 

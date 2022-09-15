@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Symfony\Component\Yaml\Yaml;
 
 class GuideController extends Controller
 {
@@ -14,29 +15,37 @@ class GuideController extends Controller
             ($category == 'talents'))
             return view('guides.'.$category);
         else{
-            $item_filler = [];
-//            Make above like top
-            switch ($category) {
-                case 'anomaly':
-                    $item_filler[] = [
-                        'title' => 'Blackhole',
-                        'description' => 'Gravitational anomaly',
-                        'content' => 'A common and dangerous anomaly, which snatches its victims up in the air and spins them at a breakneck speed.
-                        The exact nature of the Whirligig remains unknown.
-                        The anomaly can be recognized by a light whirlwind of dust above and by body fragments scattered in the vicinity.
-                        Victims caught on its outer rim, far enough from the maximum effect zone at the center, can escape the anomaly with relatively minor injuries.'
-                    ];
-                    break;
-                case 1:
-                    echo "i равно 1";
-                    break;
-                case 2:
-                    echo "i равно 2";
-                    break;
+            $trim = '%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000';
+            $files = glob(resource_path().'/assets/yaml/*.*', GLOB_BRACE);
+            $items = [];
+            foreach($files as $file) {
+                $items[] = Yaml::parse(str_ireplace($trim,'', file_get_contents($file)))['MonoBehaviour'];
             }
-            return view('guides.category', $item_filler);
+//            $item = Yaml::parse(str_ireplace($trim,'', file_get_contents(resource_path('assets/yaml/Crystal.asset'))));
+
+            return view('guides.category', ['items' => $items, 'category' => $category]);
         }
 
 
+    }
+
+    public function item($category, $item_name)
+    {
+        $trim = '%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000';
+        $files = glob(resource_path().'/assets/yaml/*.*', GLOB_BRACE);
+        $items = [];
+        foreach($files as $file) {
+            $items[] = Yaml::parse(str_ireplace($trim,'', file_get_contents($file)))['MonoBehaviour'];
+        }
+        foreach ($items as $item){
+            if ($item['m_Name'] == $item_name){
+                return view('guides.item', ['item' => $item, 'category' => $category]);
+            }
+        }
+        return back();
     }
 }
