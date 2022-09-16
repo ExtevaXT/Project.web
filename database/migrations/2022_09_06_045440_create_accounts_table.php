@@ -22,6 +22,8 @@ return new class extends Migration
             $table->dateTime('created')->default(Carbon::now());
             $table->dateTime('lastLogin')->nullable();
             $table->boolean('banned')->default(false);
+            $table->string('image')->default('user.png');
+            $table->string('banner')->nullable();
             $table->rememberToken();
         });
     }

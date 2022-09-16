@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,54 +11,8 @@
 
 </head>
 <body>
+@inject('Auth','\Illuminate\Support\Facades\Auth')
 <div class="main-content">
-{{--    @guest()--}}
-{{--    <nav class="navbar navbar-expand-lg navbar-light ">--}}
-{{--        <div class="container-fluid">--}}
-{{--            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">--}}
-{{--                <span class="navbar-toggler-icon"></span>--}}
-{{--            </button>--}}
-{{--            <a class="navbar-brand" href="#">Project.web</a>--}}
-{{--            <div class="d-flex mobile-panel">--}}
-{{--                <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</div>--}}
-{{--                <a class="text-decoration-none" href="{{route('register')}}"><div class="border-primary border py-2 px-4">Register</div></a>--}}
-{{--            </div>--}}
-{{--            <div class="collapse navbar-collapse" id="navbarSupportedContent">--}}
-{{--                <ul class="navbar-nav me-auto mb-2 mb-lg-0">--}}
-{{--                    <li class="nav-item">--}}
-{{--                        <a class="nav-link active" href="/">Index</a>--}}
-{{--                    </li>--}}
-{{--                    <li class="nav-item">--}}
-{{--                        <a class="nav-link" href="/auction">Auction</a>--}}
-{{--                    </li>--}}
-{{--                    <li class="nav-item">--}}
-{{--                        <a class="nav-link" href="/guides">Guides</a>--}}
-{{--                    </li>--}}
-{{--                    <li class="nav-item dropdown">--}}
-{{--                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">--}}
-{{--                            Dropdown--}}
-{{--                        </a>--}}
-{{--                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">--}}
-{{--                            <li><a class="dropdown-item" href="#">Action</a></li>--}}
-{{--                            <li><a class="dropdown-item" href="#">Another action</a></li>--}}
-{{--                            <li><hr class="dropdown-divider"></li>--}}
-{{--                            <li><a class="dropdown-item" href="#">Something else here</a></li>--}}
-{{--                        </ul>--}}
-{{--                    </li>--}}
-{{--                    <li class="nav-item">--}}
-{{--                        <a class="nav-link disabled">Disabled</a>--}}
-{{--                    </li>--}}
-{{--                </ul>--}}
-{{--            </div>--}}
-{{--            <div class="d-flex pc-panel">--}}
-{{--                <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</div>--}}
-{{--                <a class="text-decoration-none" href="{{route('register')}}"><div class="border-primary border py-2 px-4">Register</div></a>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </nav>--}}
-{{--    @endguest--}}
-
-{{--    @auth()--}}
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -93,9 +48,16 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="d-flex">
-                                        <div class="border border-primary me-3" style="height: 48px; width: 48px"></div>
+                                        <div class="border border-primary me-3" style="
+                                            width: 48px;
+                                            height: 48px;
+                                            background-size: cover;
+                                            background-position: center;
+                                            filter: blur(0.6px);
+                                            background-image:url('{{ asset($Auth::user()->image)}}')
+                                            "></div>
                                         <div>
-                                            <div>{{\Illuminate\Support\Facades\Auth::user()->name}}</div>
+                                            <div>{{$Auth::user()->name}}</div>
                                             <div>Menu ▼</div>
                                         </div>
                                     </div>
@@ -107,9 +69,18 @@
                                             <div class="user-panel-left">
                                                 <div class="user-panel-profile border border-primary p-3 mb-1">
                                                     <div class="d-flex">
-                                                        <div class="border border-primary me-3" style="height: 48px; width: 48px"></div>
+                                                        <div class="border border-primary me-3"
+                                                             style="
+                                                                 width: 48px;
+                                                                 height: 48px;
+                                                                 background-size: cover;
+                                                                 background-position: center;
+                                                                 filter: blur(0.6px);
+                                                                 background-image:url('{{ asset($Auth::user()->image)}}')
+                                                                 "
+                                                        ></div>
                                                         <div>
-                                                            <div>{{\Illuminate\Support\Facades\Auth::user()->name}}</div>
+                                                            <div>{{$Auth::user()->name}}</div>
                                                             <div>0 level</div>
                                                         </div>
                                                     </div>
@@ -139,7 +110,7 @@
                                                 </div>
                                             </div>
                                             <div class="user-panel-nav d-flex flex-column border border-primary p-3 ms-1">
-                                                <a class="p-2" href="/user/{{\Illuminate\Support\Facades\Auth::user()->name}}">Profile</a>
+                                                <a class="p-2" href="/user/{{$Auth::user()->name}}">Profile</a>
                                                 <a class="p-2" href="/settings">Settings</a>
                                                 <a class="p-2" href="/ranking">Ranking</a>
                                                 <a class="p-2" href="/quests">Quests</a>
@@ -161,7 +132,6 @@
                     @endguest
                 </div>
             </nav>
-{{--    @endauth--}}
 
     @section('content')
 
@@ -205,7 +175,7 @@
     </div>
 
 </div>
-</div>
+
 
 
 

@@ -1,7 +1,5 @@
 @inject('Auth','\Illuminate\Support\Facades\Auth')
 @inject('Carbon','\Carbon\Carbon')
-
-
 @extends('master')
 
 

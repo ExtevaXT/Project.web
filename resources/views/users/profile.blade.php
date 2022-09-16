@@ -1,3 +1,4 @@
+@inject('Auth','\Illuminate\Support\Facades\Auth')
 @extends('master')
 
 
@@ -8,21 +9,38 @@
 @endsection
 
 @section('content')
-
+    @if ($errors->any())
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
+    @if (\Session::has('success'))
+        <div class="alert alert-success">
+            <ul>
+                <li>{!! \Session::get('success') !!}</li>
+            </ul>
+        </div>
+    @endif
 
 <div class="">
     <div class="d-flex my-5 top-panel">
-        <div>
-            <div class="border border-primary" style="width: 256px;height: 256px"></div>
+        <div class="pe-3">
+            <div class="border border-primary" style="width: 256px; height: 256px"><img style="object-fit: cover; width: 256px; height: 256px" src="{{ asset($account['image'])}}" alt=""></div>
             <div class="d-flex">
-                <div class="p-2">Upload pic</div>
+                <div class="p-2" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    Upload pic
+                </div>
                 <div class="p-2">Upload banner</div>
             </div>
         </div>
         <div class="d-flex flex-column py-5 px-2">
             <div style="font-size: 50px">{{ $account['name'] }}</div>
             <div>Rating <span class="fw-bold">Prefix</span></div>
-            <div> @if($character['online']) <span class="text-success">Online</span> @else <span class="text-danger">Not online</span> @endif </div>
+            <div>@if( $character!=null and $character['online']) <span class="text-success">Online</span> @else <span class="text-danger">Not online</span> @endif </div>
         </div>
     </div>
 
@@ -35,6 +53,7 @@
         <li class="nav-item">
             <a class="nav-link active" data-bs-toggle="tab" href="#profile">{{ $account['name'] }}</a>
         </li>
+        @if($Auth::user() !=null and $Auth::user()->name == $account->name)
         <li class="nav-item">
             <a class="nav-link mobile-lock" data-bs-toggle="tab" href="#inventory">Inventory</a>
         </li>
@@ -50,9 +69,12 @@
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#friends">Friends</a>
         </li>
+        @endif
+        @if($character!=null)
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#achievements">Achievements</a>
         </li>
+        @endif
     </ul>
     <div class="tab-content mb-5">
         <div class="tab-pane fade show active" id="profile">
@@ -68,6 +90,7 @@
                             <div>Last online</div>
                             <div>{{ $account['lastLogin'] }}</div>
                         </div>
+                        @if($character!=null)
                         <div class="border-primary border p-2">
                             <div>Prestige</div>
                             <div class="progress">
@@ -90,23 +113,26 @@
                             </div>
                             <div class="fw-light">Remain 1000 exp for {{ $character['level']+1 }} lvl</div>
                         </div>
-                        <div class="border-primary border p-2">
-                            <div>Some currency</div>
-                            <div>0</div>
-                        </div>
-                        <div class="border-primary border p-2">
-                            <div>Some currency</div>
-                            <div>0</div>
-                        </div>
-                        <div class="border-primary border p-2">
-                            <div>Some currency</div>
-                            <div>0</div>
-                        </div>
+                        @endif
+                        @if($Auth::user() !=null and $Auth::user()->name == $account->name)
+                            <div class="border-primary border p-2">
+                                <div>Some currency</div>
+                                <div>0</div>
+                            </div>
+                            <div class="border-primary border p-2">
+                                <div>Some currency</div>
+                                <div>0</div>
+                            </div>
+                            <div class="border-primary border p-2">
+                                <div>Some currency</div>
+                                <div>0</div>
+                            </div>
+                        @endif
                     </div>
 
 
                     <div>Player statistics</div>
-
+                    @if($character!=null)
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
                             <a class="nav-link active" data-bs-toggle="tab" href="#server1">{{ $character['name'] }}</a>
@@ -126,10 +152,14 @@
                         @endfor
 
                     </div>
+                    @else
+                        <div class="text-center p-5">Character is not created</div>
+                    @endif
 
 
                 </div>
                 <div class="main-right d-flex flex-column w-50 m-2">
+                    @if($character!=null)
                     <div>Achievement showcase</div>
                     <div class="d-flex achievement-panel">
                         @for ($i = 1; $i <= 5; $i++)
@@ -139,6 +169,8 @@
                             </div>
                         @endfor
                     </div>
+                    @endif
+                    @if($Auth::user() !=null and $Auth::user()->name == $account->name)
                     <div>Collection showcase</div>
                     <div class="d-flex collection-panel">
                         @for ($i = 1; $i <= 4; $i++)
@@ -148,6 +180,8 @@
                             </div>
                         @endfor
                     </div>
+                    @endif
+                        @if($character!=null)
                     <div>Perks</div>
                     <div class="d-grid perk-panel">
                         @for ($i = 1; $i <= 10; $i++)
@@ -165,6 +199,7 @@
                             </div>
                         @endfor
                     </div>
+                        @endif
 
 
                 </div>
@@ -189,7 +224,7 @@
         </div>
 
 
-
+        @if($Auth::user() !=null and $Auth::user()->name == $account->name)
         <div class="tab-pane fade" id="inventory">
 
             <div class="d-flex">
@@ -365,6 +400,7 @@
 
 
         </div>
+        @endif
         <div class="tab-pane fade" id="achievements">
             <div>Achievements</div>
 
@@ -529,5 +565,30 @@
         </div>
     </div>
 </div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageLabel" aria-hidden="true">
+    <div class="container">
+        <div class="modal-dialog float-end w-50 authorization-panel" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h5 class="modal-title text-center" id="imageLabel">Upload profile picture</h5>
+
+                </div>
+                <div class="modal-body">
+                    <form method="post" action="{{ route('upload') }}" class="d-flex flex-column" enctype="multipart/form-data">
+                        @csrf
+                        <input name="image" class="my-1 p-2 border border-primary form-control" type="file" required>
+                        <input class="my-1 p-2 btn-outline-primary btn" type="submit" value="Upload">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
 
 @endsection

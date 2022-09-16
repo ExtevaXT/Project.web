@@ -44,6 +44,7 @@ Route::post('/buyout', [LotController::class, 'buyout'])->name('buyout');
 
 Route::get('/user/{name}', [UserController::class, 'profile']);
 
+Route::post('/upload',[UserController::class, 'upload'])->name('upload');
 
 Route::get('/login',[UserController::class, 'login'])->name('login');
 Route::post('/login',[UserController::class, 'loginPost']);

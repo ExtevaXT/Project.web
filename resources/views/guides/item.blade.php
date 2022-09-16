@@ -33,6 +33,37 @@
                             <div class="BlockTable-data">Created at</div>
                             <div class="BlockTable-data">2022</div>
                         </div>
+                        @if($item['category'] == 'WeaponTwohand' or $item['category'] == 'WeaponOnehand')
+                        <div class="BlockTable-row">
+                            <div class="BlockTable-data">Damage</div>
+                            <div class="BlockTable-data">{{ $item['damage'] }}</div>
+                        </div>
+                        <div class="BlockTable-row">
+                            <div class="BlockTable-data">Max distance</div>
+                            <div class="BlockTable-data">{{ $item['attackRange'] }}</div>
+                        </div>
+                        <div class="BlockTable-row">
+                            <div class="BlockTable-data">Rate of fire</div>
+                            <div class="BlockTable-data">{{ $item['cooldown'] }}</div>
+                        </div>
+                        <div class="BlockTable-row">
+                            <div class="BlockTable-data">Magazine size</div>
+                            <div class="BlockTable-data">{{ $item['magazineSize'] }}</div>
+                        </div>
+                        <div class="BlockTable-row">
+                            <div class="BlockTable-data">Reload speed</div>
+                            <div class="BlockTable-data">{{ $item['reloadTime'] }}</div>
+                        </div>
+                        <div class="BlockTable-row">
+                            <div class="BlockTable-data">Recoil</div>
+                            <div class="BlockTable-data">{{ $item['recoilVertical'] }}</div>
+                        </div>
+                        @endif
+
+
+
+
+
                         {!! $item['notes'] !!}
                     </div>
                 </div>

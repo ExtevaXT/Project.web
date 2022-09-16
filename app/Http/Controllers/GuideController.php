@@ -14,11 +14,17 @@ class GuideController extends Controller
             ($category == 'ranking') or
             ($category == 'talents'))
             return view('guides.'.$category);
-        else{
+        elseif (($category == 'anomalies') or
+            ($category == 'artefacts') or
+            ($category == 'equipment') or
+            ($category == 'weapons') or
+            ($category == 'attachments') or
+            ($category == 'other'))
+        {
             $trim = '%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000';
-            $files = glob(resource_path().'/assets/yaml/*.*', GLOB_BRACE);
+            $files = glob(resource_path().'/assets/yaml/'.$category.'/*.*', GLOB_BRACE);
             $items = [];
             foreach($files as $file) {
                 $items[] = Yaml::parse(str_ireplace($trim,'', file_get_contents($file)))['MonoBehaviour'];
@@ -27,6 +33,7 @@ class GuideController extends Controller
 
             return view('guides.category', ['items' => $items, 'category' => $category]);
         }
+        return back();
 
 
     }
@@ -36,7 +43,7 @@ class GuideController extends Controller
         $trim = '%YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000';
-        $files = glob(resource_path().'/assets/yaml/*.*', GLOB_BRACE);
+        $files = glob(resource_path().'/assets/yaml/'.$category.'/*.*', GLOB_BRACE);
         $items = [];
         foreach($files as $file) {
             $items[] = Yaml::parse(str_ireplace($trim,'', file_get_contents($file)))['MonoBehaviour'];
