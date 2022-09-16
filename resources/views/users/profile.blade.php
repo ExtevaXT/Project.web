@@ -25,7 +25,6 @@
             </ul>
         </div>
     @endif
-
 <div class="">
     <div class="d-flex my-5 top-panel">
         <div class="pe-3">
@@ -143,7 +142,20 @@
                         @for ($i = 1; $i <= 1; $i++)
                             <div class="tab-pane fade show active" id="server{{$i}}">
                                 <div class="text-center">
-                                    <div style="padding: 150px;">Character preview</div>
+                                    <model-viewer
+                                        alt=""
+                                        src="{{asset('model/soldier.glb')}}"
+                                        ar
+                                        shadow-intensity="1"
+                                        shadow-softness="1"
+                                        exposure="0.5"
+                                        camera-controls
+                                        touch-action="pan-y"
+                                        class="model-size"
+                                    >
+
+
+                                    </model-viewer>
                                     <div>Server online time <span class="fw-bold">0 hours</span></div>
                                     <div>Full online time <span class="fw-bold">0 hours</span></div>
                                     <div>Week online time <span class="fw-bold">0 hours</span> </div>
@@ -589,6 +601,6 @@
     </div>
 
 </div>
-
-
+    <!-- Import the component -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 @endsection

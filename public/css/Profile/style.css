@@ -21,6 +21,10 @@
     height: 105px;
     text-align: center;
 }
+.model-size{
+    width: 800px;
+    height: 400px
+}
 @media screen and (max-width: 1000px){
     .main{
         flex-direction: column;
@@ -68,6 +72,10 @@
     .mobile-lock{
         pointer-events: none;
         color: gray;
+    }
+    .model-size{
+        width: 300px;
+        height: 500px
     }
 
 }

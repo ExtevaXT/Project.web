@@ -88,22 +88,12 @@
                                                 <div class="user-panel-notifications border border-primary p-3">
                                                     <div>Last notifications <a href="/Notifications">All notifications</a></div>
                                                     <div class="notification-panel">
+                                                        @foreach(Notification::all()->where('account', $Auth::user()->name) as $notification)
                                                         <div class="border border-primary p-1 mt-1">
-                                                            <div>Title <span class="fw-light">Time of notification</span></div>
-                                                            <div>Some notification</div>
+                                                            <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
+                                                            <div>{{$notification->value}}</div>
                                                         </div>
-                                                        <div class="border border-primary p-1 mt-1">
-                                                            <div>Title <span class="fw-light">Time of notification</span></div>
-                                                            <div>Some notification</div>
-                                                        </div>
-                                                        <div class="border border-primary p-1 mt-1">
-                                                            <div>Title <span class="fw-light">Time of notification</span></div>
-                                                            <div>Some notification</div>
-                                                        </div>
-                                                        <div class="border border-primary p-1 mt-1">
-                                                            <div>Title <span class="fw-light">Time of notification</span></div>
-                                                            <div>Some notification</div>
-                                                        </div>
+                                                        @endforeach
                                                     </div>
 
 

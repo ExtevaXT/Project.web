@@ -7,6 +7,7 @@ use App\Http\Requests\RegisterValidation;
 use App\Models\Account;
 use App\Models\Character;
 use App\Models\Character_personal_storage;
+use App\Models\Notification;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -73,8 +74,14 @@ class UserController extends Controller
         $validation = $registerValidation->validated();
 //        $validation['password'] = strtoupper(hash_pbkdf2('sha1', $validation['password'], 'at_least_16_byte_with_login', 10000, 40));
         $validation['password'] = Hash::make($validation['password']);
+        $notification = [
+            'account' => $validation['name'],
+            'title'=>'Welcome',
+            'value'=>'You registered account',
+        ];
+        Notification::create($notification);
         Account::create($validation);
-        return redirect('/');
+        return back()->with(['success'=> 'Registered successfully']);
     }
 
     public function logout(Request $request)
