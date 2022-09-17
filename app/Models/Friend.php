@@ -5,10 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Character extends Model
+class Friend extends Model
 {
     use HasFactory;
-    protected $table = 'characters';
-    public $timestamps = false;
-    protected $fillable = ['gold'];
+    protected $table = 'friends';
+    protected $fillable = ['account', 'friend','accepted'];
 }

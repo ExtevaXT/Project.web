@@ -21,7 +21,8 @@
                         <input name="name"
                                class="@error('name') is-invalid @enderror my-1 p-2 border border-primary form-control d-inline-block w-75 border-end-0"
                                type="text"
-                               placeholder="Login">
+                               placeholder="Login"
+                               autocomplete="off">
                         <span class="float-end border-primary border my-1 p-2 w-25 text-center">Check</span>
                         @error('name')
                             <div id="invalidName" class="invalid-feedback">
@@ -31,7 +32,8 @@
                         <input name="email"
                                class="@error('email') is-invalid @enderror my-1 p-2 border border-primary form-control d-inline-block"
                                type="text"
-                               placeholder="E-Mail">
+                               placeholder="E-Mail"
+                               autocomplete="off">
                         @error('email')
                         <div id="invalidEmail" class="invalid-feedback"
                             {{$message}}

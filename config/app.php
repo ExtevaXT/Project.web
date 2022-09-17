@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Character;
 use Illuminate\Support\Facades\Facade;
 
 return [
@@ -210,10 +211,12 @@ return [
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'ExampleClass' => App\Example\ExampleClass::class,
+        'Account' => \App\Models\Account::class,
         'Character' => App\Models\Character::class,
         'Character_personal_storage' => \App\Models\Character_personal_storage::class,
         'Lot' => \App\Models\Lot::class,
-        'Notification' => \App\Models\Notification::class
+        'Notification' => \App\Models\Notification::class,
+        'Friend' => \App\Models\Friend::class,
 
     ])->toArray(),
 

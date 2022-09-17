@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\FriendController;
 use App\Http\Controllers\GuideController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LotController;
@@ -35,16 +36,27 @@ Route::get('/map', function () {
 
 
 Route::get('/auction', [LotController::class, 'index']);
+
+
+
 Route::get('/lot', [LotController::class, 'create'])->name('lot_create');
 Route::post('/lot', [LotController::class, 'createPost']);
 
 Route::post('/bid', [LotController::class, 'bid'])->name('bid');
 Route::post('/buyout', [LotController::class, 'buyout'])->name('buyout');
+Route::get('/notifications', function () {
+    return view('users.notifications');
+});
+Route::post('/upload', [UserController::class, 'upload'])->name('upload');
+
+Route::post('/friend_add', [FriendController::class, 'friendAdd'])->name('friend_add');
+Route::post('/friend_accept', [FriendController::class, 'friendAccept'])->name('friend_accept');
+
+Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
 
 Route::get('/user/{name}', [UserController::class, 'profile']);
 
-Route::post('/upload',[UserController::class, 'upload'])->name('upload');
 
 Route::get('/login',[UserController::class, 'login'])->name('login');
 Route::post('/login',[UserController::class, 'loginPost']);
@@ -56,5 +68,4 @@ Route::get('/test', function () {
     return DB::select('select * from characters');
 });
 
-Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 

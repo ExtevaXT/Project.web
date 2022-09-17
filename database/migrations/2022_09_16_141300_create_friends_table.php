@@ -15,7 +15,7 @@ return new class extends Migration
     {
         Schema::create('friends', function (Blueprint $table) {
             $table->id();
-            $table->string('character');
+            $table->string('account');
             $table->string('friend');
             $table->boolean('accepted')->default(false);
             $table->timestamps();

@@ -7,6 +7,7 @@ use App\Http\Requests\RegisterValidation;
 use App\Models\Account;
 use App\Models\Character;
 use App\Models\Character_personal_storage;
+use App\Models\Friend;
 use App\Models\Notification;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Http\Request;
@@ -46,6 +47,10 @@ class UserController extends Controller
         }
         return $request;
     }
+
+
+
+
 
     public function login()
     {

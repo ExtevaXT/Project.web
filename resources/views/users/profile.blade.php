@@ -40,6 +40,44 @@
             <div style="font-size: 50px">{{ $account['name'] }}</div>
             <div>Rating <span class="fw-bold">Prefix</span></div>
             <div>@if( $character!=null and $character['online']) <span class="text-success">Online</span> @else <span class="text-danger">Not online</span> @endif </div>
+            @auth()
+                {{--SHOW ONLY IF ACCOUNT['NAME'] IS NOT AUTHED ACCOUNT FRIEND--}}
+                {{--FRIENDS TABLE FIND COLUMN WITH ACCOUNT == AUTH ACCOUNT, FIRST FINDED FRIEND COLUMN NOT EQUALS PAGE NAME --}}
+                {{-- NOW WORKS FROM ONE SIDE ONLY, REMOVE SECOND LINE IF NOT--}}
+                @if(($Auth::user()->name != $account->name) and
+                    (Friend::all()->where('account', $Auth::user()->name)->first() != null) and
+                    (Friend::all()->where('account', $Auth::user()->name)->first()->friend != $account['name']))
+                    <div>
+                        <form method="post" action="{{route('friend_add')}}">
+                            @csrf
+                            <input type="hidden" name="friend" value="{{$account['name']}}">
+                            <button class="btn btn-primary" type="submit">Add to friends</button>
+                        </form>
+                    </div>
+                @endif
+                @if(($Auth::user()->name != $account->name) and
+                (Friend::all()->where('friend', $Auth::user()->name)->first() != null) and
+                (Friend::all()->where('friend', $Auth::user()->name)->first()->account != $account['name']))
+                    <div>
+                        <form method="post" action="{{route('friend_add')}}">
+                            @csrf
+                            <input type="hidden" name="friend" value="{{$account['name']}}">
+                            <button class="btn btn-primary" type="submit">Add to friends</button>
+                        </form>
+                    </div>
+                @endif
+{{--                @if(($Auth::user()->name != $account->name) and (--}}
+{{--                (Friend::all()->where('friend', $Auth::user()->name)->first() == null) or--}}
+{{--                (Friend::all()->where('account', $Auth::user()->name)->first() == null)))--}}
+{{--                    <div>--}}
+{{--                        <form method="post" action="{{route('friend_add')}}">--}}
+{{--                            @csrf--}}
+{{--                            <input type="hidden" name="friend" value="{{$account['name']}}">--}}
+{{--                            <button class="btn btn-primary" type="submit">Add to friends</button>--}}
+{{--                        </form>--}}
+{{--                    </div>--}}
+{{--                @endif--}}
+            @endauth
         </div>
     </div>
 
@@ -397,17 +435,60 @@
         <div class="tab-pane fade" id="friends">
             <div>Friends</div>
             <div class="d-grid friend-panel">
-                @for ($i = 1; $i <= 10; $i++)
+                {{-- SHOW YOUR FRIEND REQUESTS AND ACCEPTED --}}
+                    @foreach(Friend::all()->where('account', $Auth::user()->name) as $friend)
                     <div class="border-primary border p-3">
                         <div class="d-flex">
-                            <div class="p-2">Img</div>
+                            <div class="border border-primary me-3" style="
+                                width: 64px;
+                                height: 64px;
+                                background-size: cover;
+                                background-position: center;
+                                filter: blur(0.6px);
+                                background-image:url('{{ asset(Account::all()->where('name', $friend->friend)->first()->image)}}')
+                                "></div>
                             <div>
-                                <div>Some friend</div>
-                                <div>Message</div>
+                            <div>
+                                <div>{{$friend->friend}}</div>
+                                @if($friend->accepted)
+                                    <div>Message</div>
+                                @else
+                                    <div>Not accepted</div>
+                                @endif
                             </div>
                         </div>
                     </div>
-                @endfor
+                    @endforeach
+                        {{-- SHOW OTHER FRIEND REQUESTS AND  --}}
+                    @foreach(Friend::all()->where('friend', $Auth::user()->name) as $friend)
+                    <div class="border-primary border p-3">
+                        <div class="d-flex">
+                            <div class="border border-primary me-3" style="
+                                width: 64px;
+                                height: 64px;
+                                background-size: cover;
+                                background-position: center;
+                                filter: blur(0.6px);
+                                background-image:url('{{ asset(Account::all()->where('name', $friend->account)->first()->image)}}')
+                                "></div>
+                            <div>
+                                <div>
+                                    <div>{{$friend->account}}</div>
+                                    @if($friend->accepted)
+                                        <div>Message</div>
+                                    @else
+                                        <div>
+                                            <form method="post" action="{{route('friend_accept')}}">
+                                                @csrf
+                                                <input type="hidden" name="friend" value="{{$friend->account}}">
+                                                <button class="btn btn-primary" type="submit">Add to friends</button>
+                                            </form>
+                                        </div>
+                                    @endif
+                                </div>
+                            </div>
+                        </div>
+                        @endforeach
             </div>
 
 

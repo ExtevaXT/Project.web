@@ -43,13 +43,26 @@ class LotController extends Controller
     public function bid(Request $request)
     {
         $lot = Lot::find($request->id);
+
+        $bidder = Character::all()->where('account', Auth::user()->name)->first();
+        $bidder->gold = $request['bid'];
+        $bidder->save();
+
+        $previousBidder = Character::all()->where('name', $lot->bidder)->first();
+        $previousBidder->gold += $request->bid;
+        $previousBidder->save();
+
         $lot->bid = $request->bid;
 
-        $lot->bidder = Character::all()->where('account', Auth::user()->name)->first()->name;
+        $lot->bidder = $bidder->name;
         $lot->save();
-        return $request;
+        return $bidder;
     }
 
+    public function lotRecieve(Request $request)
+    {
+
+    }
     public function buyout(Request $request)
     {
         $lot = Lot::find($request->id);

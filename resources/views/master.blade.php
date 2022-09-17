@@ -12,6 +12,7 @@
 </head>
 <body>
 @inject('Auth','\Illuminate\Support\Facades\Auth')
+@inject('Carbon','\Carbon\Carbon')
 <div class="main-content">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
@@ -86,13 +87,15 @@
                                                     </div>
                                                 </div>
                                                 <div class="user-panel-notifications border border-primary p-3">
-                                                    <div>Last notifications <a href="/Notifications">All notifications</a></div>
-                                                    <div class="notification-panel">
+                                                    <div>Last notifications <a href="/notifications">All notifications</a></div>
+                                                    <div class="notification-panel " style="height: 300px">
                                                         @foreach(Notification::all()->where('account', $Auth::user()->name) as $notification)
+                                                            @if($notification->created_at < $Carbon::now()->addDay())
                                                         <div class="border border-primary p-1 mt-1">
                                                             <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
                                                             <div>{{$notification->value}}</div>
                                                         </div>
+                                                            @endif
                                                         @endforeach
                                                     </div>
 
