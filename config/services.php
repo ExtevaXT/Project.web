@@ -31,10 +31,10 @@ return [
         'region' => env('AWS_DEFAULT_REGION', 'us-east-1'),
     ],
     'telegram-bot-api' =>[
-        'token' => env('TELEGRAM_BOT_TOKEN', '5730915938:AAFJNAB6n-IG4bwDUuUske6rEjrEAw7JwUc')
+        'token' => env('TELEGRAM_BOT_TOKEN', '5730915938:AAEjSUnuYeAXgIewZARL835TnxuZsdzte1k')
     ],
     'discord' => [
-    'token' => 'OTgxOTAyODkzMzcwMTgzNzIw.Gbgn9n.617NvFmBkVJzuBEfFToi24vgwEXgQm1qBYFa0c',
+    'token' => 'OTgxOTAyODkzMzcwMTgzNzIw.GFTk10.LugwfQ9LeMkcD5n6IhqZ0i3H_tbcbZUjGFCWeo',
     ],
 
 
