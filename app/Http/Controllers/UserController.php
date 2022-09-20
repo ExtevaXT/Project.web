@@ -17,6 +17,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Storage;
 use Monolog\Handler\TelegramBotHandler;
 use NotificationChannels\Discord\Discord;
 use NotificationChannels\Discord\DiscordMessage;
@@ -58,7 +59,8 @@ class UserController extends Controller
 //            $request->image->storeAs('images',$filename,'public');
 //            Auth()->user()->update(['image'=>$filename]);
             $user = Account::find(Auth::user()->id);
-            $user->image = $request->file('image')->store('img/user' ,['disk' => 'public_real']);
+            //$request->file('image')->store('img/user' ,['disk' => 'public_real'])
+            $user->image = Storage::disk('public_real')->put('img/user', $request->file('image'));
 
             $user->save();
             return back()->with(['success'=> 'Picture uploaded successfully']);
