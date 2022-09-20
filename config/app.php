@@ -216,7 +216,7 @@ return [
         'Character' => App\Models\Character::class,
         'Character_personal_storage' => \App\Models\Character_personal_storage::class,
         'Lot' => \App\Models\Lot::class,
-        'Notification' => \App\Models\Notification::class,
+        'AccountNotification' => \App\Models\AccountNotification::class,
         'Friend' => \App\Models\Friend::class,
 
     ])->toArray(),
