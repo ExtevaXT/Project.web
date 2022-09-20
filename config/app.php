@@ -156,6 +156,7 @@ return [
     */
 
     'providers' => [
+        \NotificationChannels\Discord\DiscordServiceProvider::class,
 
         /*
          * Laravel Framework Service Providers...

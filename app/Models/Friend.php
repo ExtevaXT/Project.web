@@ -10,4 +10,5 @@ class Friend extends Model
     use HasFactory;
     protected $table = 'friends';
     protected $fillable = ['account', 'friend','accepted'];
+
 }

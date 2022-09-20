@@ -4,8 +4,11 @@ use App\Http\Controllers\FriendController;
 use App\Http\Controllers\GuideController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LotController;
+use GrahamCampbell\GitHub\Facades\GitHub;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
+use NotificationChannels\Telegram\TelegramUpdates;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,7 +21,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('index');
+    $tg = TelegramUpdates::create()->get();
+    $updates = [];
+    foreach (array_reverse($tg['result']) as $update){
+        if ($tg['ok'] and array_key_exists('channel_post',$update))
+            $updates[] = $update;
+    }
+
+    return view('index', [
+        'git' => GitHub::repo()->commits()->all('ExtevaXT','Project.web', []),
+        'updates' =>  $updates
+    ]);
 });
 
 Route::get('/guides', function () {
@@ -54,6 +67,7 @@ Route::post('/friend_accept', [FriendController::class, 'friendAccept'])->name('
 
 Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
+Route::get('/test', [UserController::class, 'test']);
 
 Route::get('/user/{name}', [UserController::class, 'profile']);
 
@@ -64,8 +78,6 @@ Route::post('/login',[UserController::class, 'loginPost']);
 Route::get('/register', [UserController::class, 'register'])->name('register');
 Route::post('/register', [UserController::class, 'registerPost']);
 
-Route::get('/test', function () {
-    return DB::select('select * from characters');
-});
+
 
 

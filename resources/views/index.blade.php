@@ -1,3 +1,7 @@
+<?php
+    $o = 0;
+    ?>
+@inject('Carbon','\Carbon\Carbon')
 @extends('master')
 
 
@@ -83,42 +87,24 @@
             <div class="d-flex flex-column m-2">
                 <div>News</div>
                 <div class="d-grid news-panel">
-                    <div class="border-primary  border p-4">
-                        <div>Some news</div>
-                        <div>News time</div>
-                    </div>
-                    <div class="border-primary  border p-4">
-                        <div>Some news</div>
-                        <div>News time</div>
-                    </div>
-                    <div class="border-primary  border p-4">
-                        <div>Some news</div>
-                        <div>News time</div>
-                    </div>
-                    <div class="border-primary  border p-4">
-                        <div>Some news</div>
-                        <div>News time</div>
-                    </div>
+                    @foreach($updates as $update)
+                            @if($loop->index<=3)
+                                <div class="border-primary  border p-4">
+                                    <div>{{ $update['channel_post']['text']}}</div>
+                                    <div>{{ $Carbon::parse($update['channel_post']['date'])}}</div>
+                                </div>
+                            @endif
+                    @endforeach
                 </div>
                 <div class="d-flex flex-column">
                     <div>Last changes</div>
                     <div class="overflow-auto" style="max-height: 310px">
+                        @foreach($git as $commit)
                         <div class="border-primary change-item border p-4 my-1">
-                            <div><span>Time of change</span> Change title</div>
-                            <div>Change description</div>
+                            <div><span>{{ $Carbon::parse($commit['commit']['author']['date']) }}</span> {{ $commit['commit']['author']['name']}}</div>
+                            <div>{{ $commit['commit']['message']}}</div>
                         </div>
-                        <div class="border-primary change-item border p-4 my-1">
-                            <div><span>Time of change</span> Change title</div>
-                            <div>Change description</div>
-                        </div>
-                        <div class="border-primary change-item border p-4 my-1">
-                            <div><span>Time of change</span> Change title</div>
-                            <div>Change description</div>
-                        </div>
-                        <div class="border-primary change-item border p-4 my-1">
-                            <div><span>Time of change</span> Change title</div>
-                            <div>Change description</div>
-                        </div>
+                        @endforeach
                     </div>
                 </div>
 
@@ -132,4 +118,16 @@
 
         </div>
     </div>
+    <script type="module">
+        import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
+
+        const octokit = new Octokit({
+            auth: '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'
+        })
+
+        await octokit.request('GET /repos/{owner}/{repo}/commits', {
+            owner: 'ExtevaXT',
+            repo: 'Project.unity'
+        })
+    </script>
 @endsection

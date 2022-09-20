@@ -3,7 +3,6 @@
 @extends('master')
 
 
-
 @section('title', 'Auction')
 @section('style')
     <link rel="stylesheet" href="{{ asset('css/Auction/style.css')}}">
@@ -14,9 +13,11 @@
     <div class="top-filter">
         <ul class="nav nav-tabs">
             <li class="nav-item"><a class="p-3 nav-link active" data-bs-toggle="tab" href="#all">All lots</a></li>
+            @auth()
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#my_lots">My lots</a></li>
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#my_bids">My bids</a></li>
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#history">History</a></li>
+            @endauth
         </ul>
     </div>
     <div class="main d-flex">
@@ -41,7 +42,7 @@
                     @foreach(Lot::all() as $lot)
                         @if(($Carbon::parse($lot->created_at)->addHours($lot->time) > $Carbon::now()) and $lot->bid!=$lot->price )
                         <div class="accordion-item
-                        @if($lot->character == Character::where('account', $Auth::user()->name)->first()->name)
+                        @if(!$Auth::guest() and $lot->character == Character::where('account', $Auth::user()->name)->first()->name)
                             bg-opacity-10
                             bg-primary
 
@@ -82,7 +83,7 @@
                                  aria-labelledby="flush-heading{{$lot->id}}"
                                  data-bs-parent="#accordionFlush">
                                     <div class="accordion-body d-grid" style="grid-template-columns: repeat(3,1fr); grid-column-gap: 20px">
-                                        @if($lot->character == Character::where('account', $Auth::user()->name)->first()->name)
+                                        @if(!$Auth::guest() and $lot->character == Character::where('account', $Auth::user()->name)->first()->name)
                                             <form method="post" action="{{ route('buyout') }}">
                                                 @csrf
                                                 <input name="id" type="hidden" value="{{$lot->id}}">
@@ -113,7 +114,7 @@
                 </div>
 
             </div>
-
+            @auth()
             <div id="my_lots" class="BlockTable tab-pane fade">
                 <div class="BlockTable-head">
                     <div class="BlockTable-row" style="grid-template-columns: repeat(3,1fr);">
@@ -236,6 +237,10 @@
                 </div>
 
             </div>
+
+
+
+            @endauth
     </div>
     </div>
 

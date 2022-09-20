@@ -5,20 +5,38 @@ namespace App\Http\Controllers;
 use App\Http\Requests\AuthValidation;
 use App\Http\Requests\RegisterValidation;
 use App\Models\Account;
+use App\Models\AccountNotification;
 use App\Models\Character;
 use App\Models\Character_personal_storage;
 use App\Models\Friend;
-use App\Models\Notification;
+use Illuminate\Support\Facades\Notification;
+use App\Notifications\DiscordTestMessage;
+use GrahamCampbell\GitHub\Facades\GitHub;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Monolog\Handler\TelegramBotHandler;
+use NotificationChannels\Discord\Discord;
+use NotificationChannels\Discord\DiscordMessage;
+use NotificationChannels\Discord\DiscordServiceProvider;
+use NotificationChannels\Telegram\Telegram;
+use NotificationChannels\Telegram\TelegramChannel;
+use NotificationChannels\Telegram\TelegramUpdates;
 use Symfony\Component\Console\Helper\Table;
 
 class UserController extends Controller
 {
 
+    public function test()
+    {
+        Notification::route('discord', '1006396129153392742')
+            ->notify(new DiscordTestMessage('Test 2'));
+
+
+
+    }
     public function profile($name)
     {
         $account = Account::all()->where('name', $name)->first();
@@ -84,8 +102,10 @@ class UserController extends Controller
             'title'=>'Welcome',
             'value'=>'You registered account',
         ];
-        Notification::create($notification);
+        AccountNotification::create($notification);
         Account::create($validation);
+        Notification::route('discord', '1006396129153392742')
+            ->notify(new DiscordTestMessage('User '.$validation['name'].' has been registered'));
         return back()->with(['success'=> 'Registered successfully']);
     }
 
