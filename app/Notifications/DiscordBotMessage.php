@@ -10,7 +10,7 @@ use NotificationChannels\Discord\DiscordChannel;
 use NotificationChannels\Discord\DiscordMessage;
 
 
-class DiscordTestMessage extends Notification
+class DiscordBotMessage extends Notification
 {
     use Queueable;
     public $message;

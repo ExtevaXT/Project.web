@@ -10,7 +10,7 @@ use App\Models\Character;
 use App\Models\Character_personal_storage;
 use App\Models\Friend;
 use Illuminate\Support\Facades\Notification;
-use App\Notifications\DiscordTestMessage;
+use App\Notifications\DiscordBotMessage;
 use GrahamCampbell\GitHub\Facades\GitHub;
 use Illuminate\Auth\Authenticatable;
 use Illuminate\Http\Request;
@@ -32,7 +32,7 @@ class UserController extends Controller
     public function test()
     {
         Notification::route('discord', '1006396129153392742')
-            ->notify(new DiscordTestMessage('Test 2'));
+            ->notify(new DiscordBotMessage('Test 2'));
 
 
 
@@ -104,8 +104,8 @@ class UserController extends Controller
         ];
         AccountNotification::create($notification);
         Account::create($validation);
-        Notification::route('discord', '1006396129153392742')
-            ->notify(new DiscordTestMessage('User '.$validation['name'].' has been registered'));
+        Notification::route('discord', '1021763702741008435')
+            ->notify(new DiscordBotMessage('User '.$validation['name'].' has been registered'));
         return back()->with(['success'=> 'Registered successfully']);
     }
 
