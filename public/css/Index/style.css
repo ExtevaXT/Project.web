@@ -5,6 +5,18 @@
     grid-template-columns: repeat(2,1fr);
     grid-gap: 4px;
 }
+.profile-panel-nav{
+    grid-template-rows: repeat(4,1fr);
+    margin-right: 10px;
+}
+.profile-panel-nav-item{
+    padding: 20px;
+    margin: 2px;
+}
+.profile-panel-bg{
+    height: 425px;
+}
+
 @media screen and (max-width: 1000px){
     .main{
         flex-direction: column;
@@ -32,5 +44,27 @@
     .prime-panel-parent{
         height: auto!important;
     }
+    .profile-panel-nav{
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows:  repeat(1,1fr);
+        margin-right: 0;
 
+    }
+    .profile-panel{
+        flex-direction: column;
+    }
+    .profile-panel-nav-item{
+        padding: 15px 0;
+        margin: 0;
+    }
+    .profile-panel-bg{
+        height: 250px;
+    }
+    .profile-panel-pic{
+        height: 100px!important;
+        width: 100px!important;
+    }
+    .profile-panel-bg{
+        margin-top: 5px;
+    }
 }

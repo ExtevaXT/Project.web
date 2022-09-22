@@ -38,6 +38,9 @@ input::placeholder{
     margin-left: -300px;
     margin-top:-50px;
 }
+.pc-panel{
+    display: block;
+}
 @media screen and (max-width: 1000px) {
     .user-panel-crutch{
         margin-left: 0;
@@ -60,5 +63,8 @@ input::placeholder{
     .authorization-panel{
         padding-top: 50px;
         width: 100%!important;
+    }
+    .pc-panel{
+        display: none;
     }
 }

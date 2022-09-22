@@ -1,7 +1,5 @@
-<?php
-    $o = 0;
-    ?>
 @inject('Carbon','\Carbon\Carbon')
+@inject('Auth','\Illuminate\Support\Facades\Auth')
 @extends('master')
 
 
@@ -12,6 +10,30 @@
 @endsection
 
 @section('content')
+    @guest()
+    <div class="text-center py-5 mt-5">
+        <div class="fs-3">Project.web - Web interface for Project.unity</div>
+{{--        <div>Project was created at 2022</div>--}}
+        <div class="text-secondary fs-5">Last update {{$Carbon::parse($git[0]['commit']['author']['date'])}}</div>
+        <div class="border-primary border py-2 px-4 d-inline-block fs-5 mt-3"><a class="text-decoration-none" href="{{route('register')}}">Register account</a></div>
+        <br>
+        <div class="border-primary border py-2 px-4 d-inline-block mt-2"><a class="text-decoration-none" href="">Download</a></div>
+    </div>
+    <div class="d-flex flex-column m-2">
+        <div>Server status</div>
+        <div class="my-1 p-2 border-primary  border">Main server <span class="fw-bold">
+                        {{Character::all()->where('online', true)->count()}}
+                        Players</span><div class="progress">
+                <div class="progress-bar"
+                     role="progressbar"
+                     style="width: {{Character::all()->where('online', true)->count()*10}}%"
+                     aria-valuenow="{{Character::all()->where('online', true)->count()}}"
+                     aria-valuemin="0"
+                     aria-valuemax="10"></div>
+            </div>
+        </div>
+    </div>
+    @endguest
     <div class="d-flex my-2 main">
         <div class="main-left d-flex flex-column w-50">
             @auth()
@@ -20,42 +42,90 @@
                 <div>Announcement description</div>
                 <div>Time of announcement</div>
             </div>
-
-            <div class="border-primary  border m-2" style="height: 400px">
-                <div class="m-5">Profile panel</div>
-            </div>
-            <div class="d-flex flex-row m-2 link-panel">
-                <div class="text-center w-50 px-5 py-2 border-primary  border">Some link</div>
-                <div class="ms-1 w-50 px-5 py-2 border-primary  border text-center">Some link</div>
-            </div>
-            @endauth
-            <div class="d-flex flex-column m-2">
-                <div>Server status</div>
-                <div class="my-1 p-2 border-primary  border">Some server <span class="fw-bold">0 Players</span><div class="progress">
-                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="d-flex m-2 profile-panel">
+                <div class="d-grid text-center profile-panel-nav">
+                    <div class="profile-panel-nav-item border border-primary">
+                        <i class="icons mdi mdi-slack"></i>
+                        <div>Character</div>
+                    </div>
+                    <div class="profile-panel-nav-item border border-primary">
+                        <i class="icons mdi mdi-creation"></i>
+                        <div>Quests</div>
+                    </div>
+                    <div class="profile-panel-nav-item border border-primary">
+                        <i class="icons mdi mdi-scale-balance"></i>
+                        <div>Auction</div>
+                    </div>
+                    <div class="profile-panel-nav-item border border-primary">
+                        <i class="icons mdi mdi-trophy"></i>
+                        <div>Ranking</div>
                     </div>
                 </div>
-{{--                <div class="my-1 p-2 border-primary  border">Some server <span class="fw-bold">0 Players</span><div class="progress">--}}
-{{--                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>--}}
-{{--                    </div></div>--}}
-{{--                <div class="my-1 p-2 border-primary  border">Some server <span class="fw-bold">0 Players</span><div class="progress">--}}
-{{--                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>--}}
-{{--                    </div></div>--}}
-{{--                <div class="my-1 p-2 border-primary  border">Some server <span class="fw-bold">0 Players</span><div class="progress">--}}
-{{--                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>--}}
-{{--                    </div></div>--}}
-{{--                <div class="my-1 p-2 border-primary  border">Some server <span class="fw-bold">0 Players</span><div class="progress">--}}
-{{--                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>--}}
-{{--                    </div></div>--}}
+                <div class="border-primary border w-100 d-flex profile-panel-bg">
+                    <div class="d-flex m-3 align-self-end">
+                        <div class="border border-primary me-3 profile-panel-pic"
+                             style="
+                                 width: 128px;
+                                 height: 128px;
+                                 background-size: cover;
+                                 background-position: center;
+                                 filter: blur(0.6px);
+                                 background-image:url('{{ asset($Auth::user()->image)}}')
+                                 "
+                        ></div>
+                        <div>
+                            <div class="fs-2">{{$Auth::user()->name}}</div>
+                            <div class="fs-5">Currency on balance</div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            @auth()
+                <div class="d-flex flex-row m-2 link-panel">
+                    <div class="text-center w-50 px-5 py-2 border-primary  border">Profile</div>
+                    <div class="ms-1 w-50 px-5 py-2 border-primary  border text-center">Download</div>
+                </div>
+
             <div class="d-flex flex-column m-2">
+                <div>Server status</div>
+                <div class="my-1 p-2 border-primary  border">Main server <span class="fw-bold">
+                        {{Character::all()->where('online', true)->count()}}
+                        Players</span><div class="progress">
+                        <div class="progress-bar"
+                             role="progressbar"
+                             style="width: {{Character::all()->where('online', true)->count()*10}}%"
+                             aria-valuenow="{{Character::all()->where('online', true)->count()}}"
+                             aria-valuemin="0"
+                             aria-valuemax="10"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column m-2">
+                @if(Character::all()->where('online', true)->count()!=0)
                 <div>Online players</div>
-                <div class="my-1 p-2 border-primary  border">Some player <span class="fw-bold">0 Hours</span></div>
-                <div class="my-1 p-2 border-primary  border">Some player <span class="fw-bold">0 Hours</span></div>
-                <div class="my-1 p-2 border-primary  border">Some player <span class="fw-bold">0 Hours</span></div>
+                @foreach(Character::all()->where('online', true) as $online_character)
+                    <div class="my-1 p-2 border-primary  border">{{$online_character->name}} <span class="fw-bold">0 Hours</span></div>
+                @endforeach
+                @endif
+
             </div>
             @endauth
+                @guest()
+                    <div class="m-2">
+                        <div>News</div>
+                        <div class="d-grid news-panel">
+                            @foreach($updates as $update)
+                                @if($loop->index<=3)
+                                    <div class="border-primary  border p-4">
+                                        <div>{{ $update['channel_post']['text']}}</div>
+                                        <div>{{ $Carbon::parse($update['channel_post']['date'])}}</div>
+                                    </div>
+                                @endif
+                            @endforeach
+                        </div>
+                    </div>
+
+                @endguest
 
         </div>
         <div class="main-right d-flex flex-column w-50">
@@ -85,6 +155,7 @@
             </div>
             @endauth
             <div class="d-flex flex-column m-2">
+                @auth()
                 <div>News</div>
                 <div class="d-grid news-panel">
                     @foreach($updates as $update)
@@ -96,6 +167,7 @@
                             @endif
                     @endforeach
                 </div>
+                @endauth
                 <div class="d-flex flex-column">
                     <div>Last changes</div>
                     <div class="overflow-auto" style="max-height: 310px">
@@ -118,16 +190,4 @@
 
         </div>
     </div>
-    <script type="module">
-        import { Octokit } from "https://cdn.skypack.dev/@octokit/core";
-
-        const octokit = new Octokit({
-            auth: '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'
-        })
-
-        await octokit.request('GET /repos/{owner}/{repo}/commits', {
-            owner: 'ExtevaXT',
-            repo: 'Project.unity'
-        })
-    </script>
 @endsection

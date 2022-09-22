@@ -21,6 +21,15 @@
     /*TO FIX*/
     grid-template-columns: repeat(2,1fr);
 }
+.BT-R2{
+    grid-template-columns: repeat(2,1fr)!important;
+}
+.BT-R3{
+    grid-template-columns: repeat(3,1fr)!important;
+}
+.BT-R4{
+    grid-template-columns: repeat(4,1fr)!important;
+}
 .BlockTable-label {
     /*font-weight: 700;*/
     font-size: 1.5em;

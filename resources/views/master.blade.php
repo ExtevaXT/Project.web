@@ -7,6 +7,71 @@
     <title>@yield('title')</title>
     <link rel="stylesheet" href="{{ asset('css/bs/bootstrap.css')}}">
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/Custom/MaterialDesignIcons.min.css')}}">
+    <style>
+        .mdi::before {
+            font-size: 24px;
+            line-height: 14px;
+        }
+        .btn .mdi::before {
+            position: relative;
+            top: 4px;
+        }
+        .btn-xs .mdi::before {
+            font-size: 18px;
+            top: 3px;
+        }
+        .btn-sm .mdi::before {
+            font-size: 18px;
+            top: 3px;
+        }
+        .dropdown-menu .mdi {
+            width: 18px;
+        }
+        .dropdown-menu .mdi::before {
+            position: relative;
+            top: 4px;
+            left: -8px;
+        }
+        .nav .mdi::before {
+            position: relative;
+            top: 4px;
+        }
+        .navbar .navbar-toggle .mdi::before {
+            position: relative;
+            top: 4px;
+            color: #FFF;
+        }
+        .breadcrumb .mdi::before {
+            position: relative;
+            top: 4px;
+        }
+        .breadcrumb a:hover {
+            text-decoration: none;
+        }
+        .breadcrumb a:hover span {
+            text-decoration: underline;
+        }
+        .alert .mdi::before {
+            position: relative;
+            top: 4px;
+            margin-right: 2px;
+        }
+        .input-group-addon .mdi::before {
+            position: relative;
+            top: 3px;
+        }
+        .navbar-brand .mdi::before {
+            position: relative;
+            top: 2px;
+            margin-right: 2px;
+        }
+        .list-group-item .mdi::before {
+            position: relative;
+            top: 3px;
+            left: -3px
+        }
+    </style>
     @yield('style')
 
 </head>
@@ -19,7 +84,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand" href="#">Project.web</a>
+                    <a class="navbar-brand pc-panel" href="#">Project.web</a>
                     @guest()
                     <div class="d-flex mobile-panel">
                         <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</div>
@@ -28,6 +93,9 @@
                     @endguest
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="mobile-panel">
+                                <a class="navbar-brand" href="#">Project.web</a>
+                            </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="/">Index</a>
                             </li>
