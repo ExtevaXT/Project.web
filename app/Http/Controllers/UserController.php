@@ -36,10 +36,6 @@ class UserController extends Controller
 
     public function test()
     {
-//        Notification::route('discord', '1006396129153392742')
-//            ->notify(new DiscordBotMessage('Test 2'));
-        $var = new Discord(new \GuzzleHttp\Client(), 'OTgxOTAyODkzMzcwMTgzNzIw.G6b9TB.AcTqb8UbyvJEnwaYAlz4aySeOugEqZZB4tL3pA');
-        return $var->request('GET','channels/1006396129153392742/messages', []);
 
     }
     public function profile($name)
