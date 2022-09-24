@@ -13,11 +13,11 @@
     <div class="top-filter">
         <ul class="nav nav-tabs">
             <li class="nav-item"><a class="p-3 nav-link active" data-bs-toggle="tab" href="#all">All lots</a></li>
-            @auth()
+            @if($Auth::check() and Character::where('account', $Auth::user()->name)->first()!=null)
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#my_lots">My lots</a></li>
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#my_bids">My bids</a></li>
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#history">History</a></li>
-            @endauth
+            @endif
         </ul>
     </div>
     <div class="main d-flex">
@@ -33,7 +33,7 @@
             <div id="all" class="BlockTable tab-pane fade show active">
                 <div class="BlockTable-head">
                     <div class="BlockTable-row" style="grid-template-columns: repeat(3,1fr);" >
-                        <div class="BlockTable-label"><div class="BlockTable-labelInner" style="margin-left: -50px">Item / Time</div></div>
+                        <div class="BlockTable-label"><div class="BlockTable-labelInner" style="margin-left: -50px; width: 500px">Item / Time</div></div>
                         <div class="BlockTable-label"><div class="BlockTable-labelInner">Bid price</div></div>
                         <div class="BlockTable-label"><div class="BlockTable-labelInner">Buyout price</div></div>
                     </div>
@@ -114,11 +114,11 @@
                 </div>
 
             </div>
-            @auth()
+            @if($Auth::check() and Character::where('account', $Auth::user()->name)->first()!=null)
             <div id="my_lots" class="BlockTable tab-pane fade">
                 <div class="BlockTable-head">
                     <div class="BlockTable-row" style="grid-template-columns: repeat(3,1fr);">
-                        <div class="BlockTable-label"><div class="BlockTable-labelInner" style="margin-left: -50px">Item / Time</div></div>
+                        <div class="BlockTable-label"><div class="BlockTable-labelInner" style="margin-left: -50px; width: 500px">Item / Time</div></div>
                         <div class="BlockTable-label"><div class="BlockTable-labelInner">Bid price</div></div>
                         <div class="BlockTable-label"><div class="BlockTable-labelInner">Buyout price</div></div>
                     </div>
@@ -182,7 +182,7 @@
             <div id="my_bids" class="BlockTable tab-pane fade">
                 <div class="BlockTable-head">
                     <div class="BlockTable-row" style="grid-template-columns: repeat(3,1fr);">
-                        <div class="BlockTable-label"><div class="BlockTable-labelInner" style="margin-left: -50px">Item / Time</div></div>
+                        <div class="BlockTable-label"><div class="BlockTable-labelInner" style="margin-left: -50px; width: 500px">Item / Time</div></div>
                         <div class="BlockTable-label"><div class="BlockTable-labelInner">Bid price</div></div>
                         <div class="BlockTable-label"><div class="BlockTable-labelInner">Buyout price</div></div>
                     </div>
@@ -240,7 +240,7 @@
 
 
 
-            @endauth
+            @endif
     </div>
     </div>
 

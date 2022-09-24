@@ -9,6 +9,7 @@ use App\Models\AccountNotification;
 use App\Models\Character;
 use App\Models\Character_personal_storage;
 use App\Models\Friend;
+use Discord\Http\Http;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\DiscordBotMessage;
 use GrahamCampbell\GitHub\Facades\GitHub;
@@ -18,24 +19,27 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
+use Monolog\Handler\StreamHandler;
 use Monolog\Handler\TelegramBotHandler;
 use NotificationChannels\Discord\Discord;
+use NotificationChannels\Discord\DiscordChannel;
 use NotificationChannels\Discord\DiscordMessage;
 use NotificationChannels\Discord\DiscordServiceProvider;
 use NotificationChannels\Telegram\Telegram;
 use NotificationChannels\Telegram\TelegramChannel;
 use NotificationChannels\Telegram\TelegramUpdates;
 use Symfony\Component\Console\Helper\Table;
+use Monolog\Logger;
 
 class UserController extends Controller
 {
 
     public function test()
     {
-        Notification::route('discord', '1006396129153392742')
-            ->notify(new DiscordBotMessage('Test 2'));
-
-
+//        Notification::route('discord', '1006396129153392742')
+//            ->notify(new DiscordBotMessage('Test 2'));
+        $var = new Discord(new \GuzzleHttp\Client(), 'OTgxOTAyODkzMzcwMTgzNzIw.G6b9TB.AcTqb8UbyvJEnwaYAlz4aySeOugEqZZB4tL3pA');
+        return $var->request('GET','channels/1006396129153392742/messages', []);
 
     }
     public function profile($name)

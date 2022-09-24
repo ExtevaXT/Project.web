@@ -34,7 +34,8 @@ Route::get('/', function () {
     }
 
     return view('index', [
-        'git' => GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []),
+        'unity' => GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []),
+        'web' => GitHub::repo()->commits()->all('ExtevaXT','Project.web', []),
         'updates' =>  $updates
     ]);
 });

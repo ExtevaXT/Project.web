@@ -14,7 +14,9 @@
     <div class="text-center py-5 mt-5">
         <div class="fs-3">Project.web - Web interface for Project.unity</div>
 {{--        <div>Project was created at 2022</div>--}}
-        <div class="text-secondary fs-5">Last update {{$Carbon::parse($git[0]['commit']['author']['date'])}}</div>
+        <div class="text-secondary fs-5">Last update
+            {{$Carbon::parse(max($unity[0]['commit']['author']['date'], $web[0]['commit']['author']['date']))->tz('Asia/Yekaterinburg')}}
+        </div>
         <div class="border-primary border py-2 px-4 d-inline-block fs-5 mt-3"><a class="text-decoration-none" href="{{route('register')}}">Register account</a></div>
         <br>
         <div class="border-primary border py-2 px-4 d-inline-block mt-2"><a class="text-decoration-none" href="">Download</a></div>
@@ -112,16 +114,27 @@
             @endauth
                 @guest()
                     <div class="m-2">
-                        <div>News</div>
-                        <div class="d-grid news-panel">
-                            @foreach($updates as $update)
-                                @if($loop->index<=3)
-                                    <div class="border-primary  border p-4">
-                                        <div>{{ $update['channel_post']['text']}}</div>
-                                        <div>{{ $Carbon::parse($update['channel_post']['date'])}}</div>
+{{--                        <div>News</div>--}}
+{{--                        <div class="d-grid news-panel">--}}
+{{--                            @foreach($updates as $update)--}}
+{{--                                @if($loop->index<=3)--}}
+{{--                                    <div class="border-primary  border p-4">--}}
+{{--                                        <div>{{ $update['channel_post']['text']}}</div>--}}
+{{--                                        <div>{{ $Carbon::parse($update['channel_post']['date'])}}</div>--}}
+{{--                                    </div>--}}
+{{--                                @endif--}}
+{{--                            @endforeach--}}
+{{--                        </div>--}}
+                        <div class="d-flex flex-column">
+                            <div>Last changes .web</div>
+                            <div class="overflow-auto" style="max-height: 310px">
+                                @foreach($web as $commit)
+                                    <div class="border-primary change-item border p-4 my-1">
+                                        <div><span>{{ $Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg') }}</span> {{ $commit['commit']['author']['name']}}</div>
+                                        <div>{{ $commit['commit']['message']}}</div>
                                     </div>
-                                @endif
-                            @endforeach
+                                @endforeach
+                            </div>
                         </div>
                     </div>
 
@@ -156,24 +169,35 @@
             @endauth
             <div class="d-flex flex-column m-2">
                 @auth()
-                <div>News</div>
-                <div class="d-grid news-panel">
-                    @foreach($updates as $update)
-                            @if($loop->index<=3)
-                                <div class="border-primary  border p-4">
-                                    <div>{{ $update['channel_post']['text']}}</div>
-                                    <div>{{ $Carbon::parse($update['channel_post']['date'])}}</div>
+{{--                <div>News</div>--}}
+{{--                <div class="d-grid news-panel">--}}
+{{--                    @foreach($updates as $update)--}}
+{{--                            @if($loop->index<=3)--}}
+{{--                                <div class="border-primary  border p-4">--}}
+{{--                                    <div>{{ $update['channel_post']['text']}}</div>--}}
+{{--                                    <div>{{ $Carbon::parse($update['channel_post']['date'])}}</div>--}}
+{{--                                </div>--}}
+{{--                            @endif--}}
+{{--                    @endforeach--}}
+{{--                </div>--}}
+                    <div class="d-flex flex-column">
+                        <div>Last changes .web</div>
+                        <div class="overflow-auto" style="max-height: 310px">
+                            @foreach($web as $commit)
+                                <div class="border-primary change-item border p-4 my-1">
+                                    <div><span>{{ $Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg') }}</span> {{ $commit['commit']['author']['name']}}</div>
+                                    <div>{{ $commit['commit']['message']}}</div>
                                 </div>
-                            @endif
-                    @endforeach
-                </div>
+                            @endforeach
+                        </div>
+                    </div>
                 @endauth
                 <div class="d-flex flex-column">
-                    <div>Last changes</div>
+                    <div>Last changes .unity</div>
                     <div class="overflow-auto" style="max-height: 310px">
-                        @foreach($git as $commit)
+                        @foreach($unity as $commit)
                         <div class="border-primary change-item border p-4 my-1">
-                            <div><span>{{ $Carbon::parse($commit['commit']['author']['date']) }}</span> {{ $commit['commit']['author']['name']}}</div>
+                            <div><span>{{ $Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg') }}</span> {{ $commit['commit']['author']['name']}}</div>
                             <div>{{ $commit['commit']['message']}}</div>
                         </div>
                         @endforeach
