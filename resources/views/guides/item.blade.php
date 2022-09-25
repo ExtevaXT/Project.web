@@ -33,6 +33,17 @@
                             <div class="BlockTable-data">Created at</div>
                             <div class="BlockTable-data">2022</div>
                         </div>
+                        @if($item['category'] == 'Artefact')
+                            @foreach($item as $argument => $value)
+                                @if(str_contains($argument,'Bonus') and $value!=0)
+                                    <div class="BlockTable-row">
+                                        <div class="BlockTable-data">{{$argument}}</div>
+                                        <div class="BlockTable-data">{{$value}}</div>
+                                    </div>
+
+                                @endif
+                            @endforeach
+                        @endif
                         @if($item['category'] == 'WeaponTwohand' or $item['category'] == 'WeaponOnehand')
                         <div class="BlockTable-row">
                             <div class="BlockTable-data">Damage</div>

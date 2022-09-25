@@ -23,20 +23,12 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: 1d490cb34e461c14ca367352f50dedb9, type: 3}
   drop: {fileID: 4835910926617433926, guid: 5998b3b9f9a118744ba8025a048f49e9, type: 3}
   modelPrefab: {fileID: 0}
-  type: Thermal artefact
-  content: '<div>Is created when heavy metals fall into the Burner anomaly.</div>
-
-    <div>This
-    artifact eliminates radiation wonderfully.</div>
-
-    <div>It is highly valued
-    by stalkers and hard to find.</div>'
-  notes: "<div class=\"BlockTable-row\">\r\n\t<div class=\"BlockTable-data text-center\">Stats</div>\r\n</div>\r\n<div
-    class=\"BlockTable-row\">\r\n\t<div class=\"BlockTable-data\">Burn damage factor</div>\r\n\t<div
-    class=\"BlockTable-data\">[ 1% ; 3% ]</div>\r\n</div>\r\n<div class=\"BlockTable-row\">\r\n\t<div
-    class=\"BlockTable-data\">Temperature</div>\r\n\t<div class=\"BlockTable-data\">[
-    -2 ; -1 ]</div>\r\n</div>\r\n<div class=\"BlockTable-row\">\r\n\t<div class=\"BlockTable-data\">Regeneration</div>\r\n\t<div
-    class=\"BlockTable-data\">[ -1% ; -0.5% ]</div>\r\n</div>"
+  type: Thermal
+  content: The artifact speeds up the wearer's metabolism, which allows his tissues
+    to recover faster from damage. Some superstitious stalkers believe that being
+    under "supervision" the wearer will also be protected from severe wounds - bullets
+    and shrapnel will not be able to hit important organs.
+  notes: 
   category: Artefact
   keepUsingWhileButtonDown: 0
   successfulUseSound: {fileID: 0}
@@ -50,6 +42,10 @@ MonoBehaviour:
   hydrationBonus: 0
   nutritionBonus: 0
   damageBonus: 0
+  protectionThermalBonus: 0
+  protectionBiologicalBonus: 0
+  protectionPsychoBonus: 0
+  protectionRadiationBonus: 0
   slotBonus: 0
   artefactBonus: 0
   healthRecoveryBonus: 0

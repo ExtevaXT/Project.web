@@ -44,7 +44,7 @@ MonoBehaviour:
   drop: {fileID: 836678223174015140, guid: 80a9f191b53232f4fa7491ff1a830eab, type: 3}
   modelPrefab: {fileID: 1344463760805258, guid: a5c45b2b5a5b2f24bace6edc4c04f8d5,
     type: 3}
-  type: 
+  type: Assault Rifle
   content: A shortened version of the AKS-74 assault rifle, it was developed in the
     late 1970s-early 1980s for use with combat vehicles crews, aircraft crews, gun
     crews, and paratroopers. It is also used by the Interior Ministry and security
