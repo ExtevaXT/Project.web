@@ -19,6 +19,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
+use League\Flysystem\Config;
 use Monolog\Handler\StreamHandler;
 use Monolog\Handler\TelegramBotHandler;
 use NotificationChannels\Discord\Discord;
@@ -39,20 +40,18 @@ class UserController extends Controller
         $url = 'https://discordapp.com/api/v9/channels/1023796617985404948/messages';
 
         $ch = curl_init();
-        $f = fopen('request.txt', 'w');
         curl_setopt_array($ch, array(
             CURLOPT_URL            => $url,
-            CURLOPT_HTTPHEADER     => array('Authorization: Bot OTgxOTAyODkzMzcwMTgzNzIw.Gm5xO0.A6w7QEoWgOGiK2omzrtBcr2f_2-c_A-JHlM1B8'),
+            CURLOPT_HTTPHEADER     => array('Authorization: Bot '. config('services.discord')['token']),
             CURLOPT_RETURNTRANSFER => 1,
             CURLOPT_FOLLOWLOCATION => 1,
             CURLOPT_VERBOSE        => 1,
             CURLOPT_SSL_VERIFYPEER => 0,
-            CURLOPT_STDERR         => $f,
         ));
+
         $response = curl_exec($ch);
-        fclose($f);
         curl_close($ch);
-        return $response;
+        return  $response;
 
 // or when your server returns json
 // $content = json_decode($response->getBody(), true);

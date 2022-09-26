@@ -1,6 +1,5 @@
 .BlockTable {
     display: table;
-    margin: 0 50px;
     width: 100%;
     box-shadow: 0 5px 20px rgba(0,0,0,0.09);
 }

@@ -17,6 +17,7 @@
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#my_lots">My lots</a></li>
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#my_bids">My bids</a></li>
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#history">History</a></li>
+                <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="modal" data-bs-target="#lotModal">Create lot</a></li>
             @endif
         </ul>
     </div>
@@ -30,7 +31,7 @@
             <div class="p-3">Attachments</div>
         </div>
         <div class="tab-content">
-            <div id="all" class="BlockTable tab-pane fade show active">
+            <div id="all" class="BlockTable tab-pane fade show active ms-5">
                 <div class="BlockTable-head">
                     <div class="BlockTable-row" style="grid-template-columns: repeat(3,1fr);" >
                         <div class="BlockTable-label"><div class="BlockTable-labelInner" style="margin-left: -50px; width: 500px">Item / Time</div></div>
@@ -42,7 +43,7 @@
                     @foreach(Lot::all() as $lot)
                         @if(($Carbon::parse($lot->created_at)->addHours($lot->time) > $Carbon::now()) and $lot->bid!=$lot->price )
                         <div class="accordion-item
-                        @if(!$Auth::guest() and $lot->character == Character::where('account', $Auth::user()->name)->first()->name)
+                        @if(!$Auth::guest() and Character::where('account', $Auth::user()->name)->first()!=null and $lot->character == Character::where('account', $Auth::user()->name)->first()->name)
                             bg-opacity-10
                             bg-primary
 
@@ -78,12 +79,14 @@
                                     </div>
                                 </div>
                             </div>
+                            @if(!$Auth::guest() and Character::where('account', $Auth::user()->name)->first()!=null)
                             <div id="flush-collapse{{$lot->id}}"
                                  class="accordion-collapse collapse"
                                  aria-labelledby="flush-heading{{$lot->id}}"
                                  data-bs-parent="#accordionFlush">
                                     <div class="accordion-body d-grid" style="grid-template-columns: repeat(3,1fr); grid-column-gap: 20px">
-                                        @if(!$Auth::guest() and $lot->character == Character::where('account', $Auth::user()->name)->first()->name)
+
+                                        @if($lot->character == Character::where('account', $Auth::user()->name)->first()->name)
                                             <form method="post" action="{{ route('buyout') }}">
                                                 @csrf
                                                 <input name="id" type="hidden" value="{{$lot->id}}">
@@ -105,8 +108,10 @@
                                                 </form>
                                             @endif
                                         @endif
+
                                     </div>
                             </div>
+                                @endif
                         </div>
                         @endif
 
@@ -115,7 +120,7 @@
 
             </div>
             @if($Auth::check() and Character::where('account', $Auth::user()->name)->first()!=null)
-            <div id="my_lots" class="BlockTable tab-pane fade">
+            <div id="my_lots" class="BlockTable tab-pane fade ms-5">
                 <div class="BlockTable-head">
                     <div class="BlockTable-row" style="grid-template-columns: repeat(3,1fr);">
                         <div class="BlockTable-label"><div class="BlockTable-labelInner" style="margin-left: -50px; width: 500px">Item / Time</div></div>
@@ -179,7 +184,7 @@
                 </div>
 
             </div>
-            <div id="my_bids" class="BlockTable tab-pane fade">
+            <div id="my_bids" class="BlockTable tab-pane fade ms-5">
                 <div class="BlockTable-head">
                     <div class="BlockTable-row" style="grid-template-columns: repeat(3,1fr);">
                         <div class="BlockTable-label"><div class="BlockTable-labelInner" style="margin-left: -50px; width: 500px">Item / Time</div></div>
@@ -243,6 +248,71 @@
             @endif
     </div>
     </div>
+
+
+
+
+
+
+
+    @if($Auth::check() and Character::where('account', $Auth::user()->name)->first()!=null)
+    <!-- LOT CREATE -->
+    <div class="modal fade" id="lotModal" tabindex="-1" role="dialog" aria-labelledby="lotModalLabel" aria-hidden="true">
+        <div class="container">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+
+                        <h5 class="modal-title text-center" id="lotModalLabel">Create lot</h5>
+
+                    </div>
+                    <div class="modal-body">
+
+                            @if ($errors->any())
+                                <div class="alert alert-danger">
+                                    <ul>
+                                        @foreach ($errors->all() as $error)
+                                            <li>{{ $error }}</li>
+                                        @endforeach
+                                    </ul>
+                                </div>
+                            @endif
+                            <form method="post" action="{{ route('lot_create') }}" class="d-flex flex-column">
+                                @csrf
+                                <select name="item" class="my-1 p-2 border border-primary form-control">
+                                    <option disabled selected>Select Item</option>
+                                    @foreach($character_personal_storage as $item)
+                                        <option value={{$item->name.'.'.$item->amount.'.'.$item->durability.'.'.$item->ammo.'.'.$item->metadata}}>{{$item->name}}</option>
+                                    @endforeach
+                                </select>
+                                <input name="bid" class="my-1 p-2 border border-primary form-control" type="number" placeholder="Bid price" required>
+                                <input name="price" class="my-1 p-2 border border-primary form-control" type="number" placeholder="Buyout price">
+                                <select name="time" class="my-1 p-2 border border-primary form-control">
+                                    <option disabled selected>Select Time</option>
+                                    <option value="12">12:00</option>
+                                    <option value="24">24:00</option>
+                                    <option value="36">36:00</option>
+                                    <option value="48">48:00</option>
+                                </select>
+
+                                <input class="my-1 p-2 btn-outline-primary btn" type="submit" value="Create">
+                            </form>
+
+
+
+
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    @endif
+
+
+
 
 
     <script src="https://code.jquery.com/jquery-2.0.0.min.js" integrity="sha256-1IKHGl6UjLSIT6CXLqmKgavKBXtr0/jJlaGMEkh+dhw=" crossorigin="anonymous"></script>

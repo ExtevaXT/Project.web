@@ -49,8 +49,11 @@ input::placeholder{
     .user-panel{
         flex-direction: column;
     }
+    .user-panel-left{
+        width: auto;
+    }
     .user-panel-nav{
-        width: 400px;
+        width: auto;
         margin-left: 0 !important;
         margin-top:10px;
     }

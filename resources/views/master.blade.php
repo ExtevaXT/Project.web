@@ -87,7 +87,7 @@
                     <a class="navbar-brand pc-panel" href="#">Project.web</a>
                     @guest()
                     <div class="d-flex mobile-panel">
-                        <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</div>
+                        <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#authModal">Login</div>
                         <a class="text-decoration-none" href="{{route('register')}}"><div class="border-primary border py-2 px-4">Register</div></a>
                     </div>
                     @endguest
@@ -112,8 +112,24 @@
                                 <a class="nav-link" href="/map">Map</a>
                             </li>
                         </ul>
-                        @auth()
-                        <ul class="navbar-nav">
+
+                    </div>
+                    @auth()
+                        <div class="d-flex mobile-panel" data-bs-toggle="modal" data-bs-target="#userModal">
+                            <div class="border border-primary me-3" style="
+                                width: 48px;
+                                height: 48px;
+                                background-size: cover;
+                                background-position: center;
+                                filter: blur(0.6px);
+                                background-image:url('{{ asset($Auth::user()->image)}}')
+                                "></div>
+                            <div>
+                                <div>{{$Auth::user()->name}}</div>
+                                <div>Menu ▼</div>
+                            </div>
+                        </div>
+                        <ul class="navbar-nav pc-panel">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="d-flex">
@@ -131,7 +147,7 @@
                                         </div>
                                     </div>
                                 </a>
-{{--                                https://stackoverflow.com/questions/55309379/how-to-display-and-shut-message-modal-when-hovering-over-buttons--}}
+                                {{--                                https://stackoverflow.com/questions/55309379/how-to-display-and-shut-message-modal-when-hovering-over-buttons--}}
                                 <ul class="dropdown-menu user-panel-crutch" aria-labelledby="navbarDropdown">
                                     <li><!--User panel like modal?-->
                                         <div class="d-flex user-panel">
@@ -159,10 +175,10 @@
                                                     <div class="notification-panel " style="height: 300px">
                                                         @foreach(AccountNotification::all()->where('account', $Auth::user()->name) as $notification)
                                                             @if($notification->created_at < $Carbon::now()->addDay())
-                                                        <div class="border border-primary p-1 mt-1">
-                                                            <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
-                                                            <div>{{$notification->value}}</div>
-                                                        </div>
+                                                                <div class="border border-primary p-1 mt-1">
+                                                                    <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
+                                                                    <div>{{$notification->value}}</div>
+                                                                </div>
                                                             @endif
                                                         @endforeach
                                                     </div>
@@ -170,24 +186,23 @@
 
                                                 </div>
                                             </div>
-                                            <div class="user-panel-nav d-flex flex-column border border-primary p-3 ms-1">
-                                                <a class="p-2" href="/user/{{$Auth::user()->name}}">Profile</a>
-                                                <a class="p-2" href="/settings">Settings</a>
-                                                <a class="p-2" href="/ranking">Ranking</a>
-                                                <a class="p-2" href="/quests">Quests</a>
-                                                <a class="p-2" href="/auction">Auction</a>
-                                                <a class="p-2" href="{{ route('logout') }}">Logout</a>
+                                            <div class="user-panel-nav d-flex flex-column border border-primary p-3 ms-1 text-decoration-none">
+                                                <a class="p-2 text-decoration-none" href="/user/{{$Auth::user()->name}}">Profile</a>
+                                                <a class="p-2 text-decoration-none" href="/settings">Settings</a>
+                                                <a class="p-2 text-decoration-none" href="/ranking">Ranking</a>
+                                                <a class="p-2 text-decoration-none" href="/quests">Quests</a>
+                                                <a class="p-2 text-decoration-none" href="/auction">Auction</a>
+                                                <a class="p-2 text-decoration-none" href="{{ route('logout') }}">Logout</a>
                                             </div>
                                         </div></li>
 
                                 </ul>
                             </li>
                         </ul>
-                        @endauth
-                    </div>
+                    @endauth
                     @guest()
                     <div class="d-flex pc-panel">
-                        <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#exampleModal">Login</div>
+                        <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#authModal">Login</div>
                         <a class="text-decoration-none" href="{{route('register')}}"><div class="border-primary border py-2 px-4">Register</div></a>
                     </div>
                     @endguest
@@ -204,19 +219,81 @@
 </div>
 
 
+<!-- Modal FULLSCREEN USER PANEL FOR MOBILE -->
+@auth()
+<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
+    <div class="">
+        <div class="modal-dialog user-panel-mobile modal-fullscreen" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <h5 class="modal-title text-center" id="userModalLabel">User panel</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="user-panel-left">
+                        <div class="user-panel-profile border border-primary p-3 mb-1">
+                            <div class="d-flex">
+                                <div class="border border-primary me-3"
+                                     style="
+                                         width: 48px;
+                                         height: 48px;
+                                         background-size: cover;
+                                         background-position: center;
+                                         filter: blur(0.6px);
+                                         background-image:url('{{ asset($Auth::user()->image)}}')
+                                         "
+                                ></div>
+                                <div>
+                                    <div>{{$Auth::user()->name}}</div>
+                                    <div>0 level</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="user-panel-nav d-flex flex-column border border-primary p-3 ms-1 text-decoration-none">
+                            <a class="p-2 text-decoration-none" href="/user/{{$Auth::user()->name}}">Profile</a>
+                            <a class="p-2 text-decoration-none" href="/settings">Settings</a>
+                            <a class="p-2 text-decoration-none" href="/ranking">Ranking</a>
+                            <a class="p-2 text-decoration-none" href="/quests">Quests</a>
+                            <a class="p-2 text-decoration-none" href="/auction">Auction</a>
+                            <a class="p-2 text-decoration-none" href="{{ route('logout') }}">Logout</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="modal-footer justify-content-start">
+                    <div class="user-panel-notifications border border-primary p-3 w-100">
+                        <div>Last notifications <a href="/notifications">All notifications</a></div>
+                        <div class="notification-panel " style="height: 300px">
+                            @foreach(AccountNotification::all()->where('account', $Auth::user()->name) as $notification)
+                                @if($notification->created_at < $Carbon::now()->addDay())
+                                    <div class="border border-primary p-1 mt-1">
+                                        <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
+                                        <div>{{$notification->value}}</div>
+                                    </div>
+                                @endif
+                            @endforeach
+                        </div>
 
 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+</div>
+@endauth
 
 
 <!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade" id="authModal" tabindex="-1" role="dialog" aria-labelledby="authModalLabel" aria-hidden="true">
     <div class="container">
         <div class="modal-dialog float-end w-50 authorization-panel" role="document">
             <div class="modal-content">
                 <div class="modal-header">
 
-                    <h5 class="modal-title text-center" id="exampleModalLabel">Authorization</h5>
+                    <h5 class="modal-title text-center" id="authModalLabel">Authorization</h5>
 
                 </div>
                 <div class="modal-body">

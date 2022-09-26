@@ -9,15 +9,14 @@
 @endsection
 
 @section('content')
-
-    <div class="row my-2 main">
-        <div class="main-left col">
-            <a href="/guides/{{$category}}"><div>Back</div></a>
+    <a href="/guides/{{$category}}"><div>Back</div></a>
+    <div class="my-2 main">
+        <div class="main-left">
             <div class="fs-5 title">{{$item['m_Name']}}</div>
             <div class="content">{!! $item['content']!!}</div>
         </div>
-        <div class="main-right col-3">
-            <div class="image text-center"><img src="{{asset('img/icon/'.$category.'/'.$item['m_Name'].'.png')}}"></div>
+        <div class="main-right">
+            <div class="image text-center d-flex justify-content-center"><img src="{{asset('img/icon/'.$category.'/'.$item['m_Name'].'.png')}}"></div>
             <div>
                 <div class="BlockTable">
                     <div class="BlockTable-body">

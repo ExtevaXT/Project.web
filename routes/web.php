@@ -54,7 +54,7 @@ Route::get('/map', function () {
 });
 
 
-Route::get('/auction', [LotController::class, 'index']);
+Route::get('/auction', [LotController::class, 'show']);
 
 
 

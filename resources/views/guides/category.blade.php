@@ -10,7 +10,7 @@
 
 @section('content')
     <div>{{$category}}</div>
-    <div class="d-grid" style="grid-template-columns: repeat(4,1fr); grid-gap: 4px;">
+    <div class="d-grid objects-panel">
         @foreach($items as $item)
             <div class="p-3 border border-primary">
                 <a href="/guides/{{$category}}/{{$item['m_Name']}}" class="d-flex text-decoration-none">

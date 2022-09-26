@@ -46,19 +46,19 @@
             </div>
             <div class="d-flex m-2 profile-panel">
                 <div class="d-grid text-center profile-panel-nav">
-                    <div class="profile-panel-nav-item border border-primary">
+                    <div onclick="location.href='/user/{{$Auth::user()->name}}'" class="profile-panel-nav-item border border-primary">
                         <i class="icons mdi mdi-slack"></i>
                         <div>Character</div>
                     </div>
-                    <div class="profile-panel-nav-item border border-primary">
+                    <div onclick="location.href='/quests'" class="profile-panel-nav-item border border-primary">
                         <i class="icons mdi mdi-creation"></i>
                         <div>Quests</div>
                     </div>
-                    <div class="profile-panel-nav-item border border-primary">
+                    <div onclick="location.href='/auction'" class="profile-panel-nav-item border border-primary">
                         <i class="icons mdi mdi-scale-balance"></i>
                         <div>Auction</div>
                     </div>
-                    <div class="profile-panel-nav-item border border-primary">
+                    <div onclick="location.href='/ranking'" class="profile-panel-nav-item border border-primary">
                         <i class="icons mdi mdi-trophy"></i>
                         <div>Ranking</div>
                     </div>
@@ -83,7 +83,7 @@
                 </div>
             </div>
                 <div class="d-flex flex-row m-2 link-panel">
-                    <div class="text-center w-50 px-5 py-2 border-primary  border">Profile</div>
+                    <div class="text-center w-50 px-5 py-2 border-primary  border"><a class="text-decoration-none" href="/user/{{$Auth::user()->name}}">Profile</a></div>
                     <div class="ms-1 w-50 px-5 py-2 border-primary  border text-center">Download</div>
                 </div>
 

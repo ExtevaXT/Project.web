@@ -1,5 +1,5 @@
-*   Trying 162.159.129.233:443...
-* Connected to discordapp.com (162.159.129.233) port 443 (#0)
+*   Trying 162.159.134.233:443...
+* Connected to discordapp.com (162.159.134.233) port 443 (#0)
 * ALPN, offering h2
 * ALPN, offering http/1.1
 * successfully set certificate verify locations:
@@ -17,7 +17,7 @@
 * Using HTTP2, server supports multi-use
 * Connection state changed (HTTP/2 confirmed)
 * Copying HTTP/2 data in stream buffer to connection buffer after upgrade: len=0
-* Using Stream ID: 1 (easy handle 0x1ff90965360)
+* Using Stream ID: 1 (easy handle 0x1ff908f67b0)
 > GET /api/v9/channels/1023796617985404948/messages HTTP/2
 Host: discordapp.com
 accept: */*
@@ -25,24 +25,20 @@ authorization: Bot OTgxOTAyODkzMzcwMTgzNzIw.Gm5xO0.A6w7QEoWgOGiK2omzrtBcr2f_2-c_
 
 * old SSL session ID is stale, removing
 * Connection state changed (MAX_CONCURRENT_STREAMS == 256)!
-< HTTP/2 200 
-< date: Mon, 26 Sep 2022 04:40:10 GMT
+< HTTP/2 401 
+< date: Mon, 26 Sep 2022 10:44:25 GMT
 < content-type: application/json
-< set-cookie: __dcfduid=4dc87bf63d5511ed9c539665d0a8575c; Expires=Sat, 25-Sep-2027 04:40:10 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+< content-length: 43
+< set-cookie: __dcfduid=30a1b3343d8811eda49fde220f446c23; Expires=Sat, 25-Sep-2027 10:44:25 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
 < strict-transport-security: max-age=31536000; includeSubDomains
-< x-ratelimit-bucket: fccc1d589e71dd6f0c55fde9faa2838d
-< x-ratelimit-limit: 5
-< x-ratelimit-remaining: 4
-< x-ratelimit-reset: 1664167215.462
-< x-ratelimit-reset-after: 5.000
-< x-envoy-upstream-service-time: 48
+< x-envoy-upstream-service-time: 9
 < via: 1.1 google
 < alt-svc: h3=":443"; ma=86400, h3-29=":443"; ma=86400
-< set-cookie: __sdcfduid=4dc87bf63d5511ed9c539665d0a8575cb9aca468df711d3d181432a7c722e065db3792ab2df376061ca9a3b1be50ed0d; Expires=Sat, 25-Sep-2027 04:40:10 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
+< set-cookie: __sdcfduid=30a1b3343d8811eda49fde220f446c232a7e615bfafc71b7c18057a5759748b51e83596e604eca7f3bf57aaf8dfdf983; Expires=Sat, 25-Sep-2027 10:44:25 GMT; Max-Age=157680000; Secure; HttpOnly; Path=/
 < cf-cache-status: DYNAMIC
-< report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=Bs0TvRV0E%2BED6%2BgdqAWJ3ASkPQPInnFnIBgfu5osz5%2FmEfEoE9wKnJiEuVqlvFKOx7IXXkGgZHybDWLhRu9v1hHQoZDDdeQYDvEH%2BsdrykyC2qNCqy%2Ft9NjjZSnWIigv"}],"group":"cf-nel","max_age":604800}
+< report-to: {"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=ptgi1sUeqS65%2Ffbs2XyPLO6Ph245RO84RH2ZXWyF2IAuUaTi6HYPMh9XxOzJBcX43hdNLsuIozyb8Hsyr5uttNbsUmsnCyB68hjlXiGjr5CDjR16zNeo70QoOxNXg0Sd"}],"group":"cf-nel","max_age":604800}
 < nel: {"success_fraction":0,"report_to":"cf-nel","max_age":604800}
 < server: cloudflare
-< cf-ray: 750951e8b96d5f86-SVX
+< cf-ray: 750b677d58455fa4-SVX
 < 
 * Connection #0 to host discordapp.com left intact
