@@ -33,29 +33,95 @@
 {{--            <div>Information about auction</div>--}}
 {{--        </a>--}}
 
-        <a href="/guides/anomalies" class="border-primary border p-2 px-5 my-1 text-decoration-none">
-            <div>Anomalies</div>
-            <div>Information about anomalies</div>
+        <a href="/guides/anomalies" class="border-primary border p-2 my-1 text-decoration-none d-flex">
+            <div class="me-3" style="
+                width: 48px;
+                height: 48px;
+                background-size: cover;
+                background-position: center;
+                filter: blur(0.6px);
+                background-image:url('{{asset('img/icon/anomalies/anomaly.gif')}}')
+                "></div>
+            <div>
+                <div>Anomalies</div>
+                <div>Information about anomalies</div>
+            </div>
+
         </a>
-        <a href="/guides/artefacts" class="border-primary border p-2 px-5 my-1 text-decoration-none">
-            <div>Artefacts</div>
-            <div>Information about artefacts</div>
+        <a href="/guides/artefacts" class="border-primary border p-2 my-1 text-decoration-none d-flex">
+            <div class="me-3" style="
+                width: 48px;
+                height: 48px;
+                background-size: cover;
+                background-position: center;
+                filter: blur(0.6px);
+                background-image:url('{{asset('img/icon/artefacts/Crystal.png')}}')
+                "></div>
+            <div>
+                <div>Artefacts</div>
+                <div>Information about artefacts</div>
+            </div>
+
         </a>
-        <a href="/guides/equipment" class="border-primary border p-2 px-5 my-1 text-decoration-none">
-            <div>Equipment</div>
-            <div>Information about equipment</div>
+        <a href="/guides/equipment" class="border-primary border p-2 my-1 text-decoration-none d-flex">
+            <div class="me-3" style="
+                width: 48px;
+                height: 48px;
+                background-size: cover;
+                background-position: center;
+                filter: blur(0.6px);
+                background-image:url('{{asset('img/icon/equipment/Ghillie.png')}}')
+                "></div>
+            <div>
+                <div>Equipment</div>
+                <div>Information about equipment</div>
+            </div>
+
         </a>
-        <a href="/guides/attachments" class="border-primary border p-2 px-5 my-1 text-decoration-none">
-            <div>Attachments</div>
-            <div>Information about attachments</div>
+        <a href="/guides/attachments" class="border-primary border p-2 my-1 text-decoration-none d-flex">
+            <div class="me-3" style="
+                width: 48px;
+                height: 48px;
+                background-size: cover;
+                background-position: center;
+                filter: blur(0.6px);
+                background-image:url('{{asset('img/icon/attachments/SightBarska.png')}}')
+                "></div>
+            <div>
+                <div>Attachments</div>
+                <div>Information about attachments</div>
+            </div>
+
         </a>
-        <a href="/guides/weapons" class="border-primary border p-2 px-5 my-1 text-decoration-none">
-            <div>Weapons</div>
-            <div>Information about weapons</div>
+        <a href="/guides/weapons" class="border-primary border p-2 my-1 text-decoration-none d-flex">
+            <div class="me-3" style="
+                width: 48px;
+                height: 48px;
+                background-size: cover;
+                background-position: center;
+                filter: blur(0.6px);
+                background-image:url('{{asset('img/icon/weapons/AKSU.png')}}')
+                "></div>
+            <div>
+                <div>Weapons</div>
+                <div>Information about weapons</div>
+            </div>
+
         </a>
-        <a href="/guides/other" class="border-primary border p-2 px-5 my-1 text-decoration-none">
-            <div>Other</div>
-            <div>Information about other stuff</div>
+        <a href="/guides/other" class="border-primary border p-2 my-1 text-decoration-none d-flex">
+            <div class="me-3" style="
+                width: 48px;
+                height: 48px;
+                background-size: cover;
+                background-position: center;
+                filter: blur(0.6px);
+                background-image:url('{{asset('img/icon/other/Bandage.png')}}')
+                "></div>
+            <div>
+                <div>Other</div>
+                <div>Information about other stuff</div>
+            </div>
+
         </a>
 
     </div>

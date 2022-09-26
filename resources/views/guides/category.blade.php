@@ -13,9 +13,20 @@
     <div class="d-grid" style="grid-template-columns: repeat(4,1fr); grid-gap: 4px;">
         @foreach($items as $item)
             <div class="p-3 border border-primary">
-                <a href="/guides/{{$category}}/{{$item['m_Name']}}">
-                    <div>{{$item['m_Name']}}</div>
-                    <div>{{$item['type']}}</div>
+                <a href="/guides/{{$category}}/{{$item['m_Name']}}" class="d-flex text-decoration-none">
+                    <div class="me-3" style="
+                        width: 48px;
+                        height: 48px;
+                        background-size: cover;
+                        background-position: center;
+                        filter: blur(0.6px);
+                        background-image:url('{{asset('img/icon/'.$category.'/'.$item['m_Name'].'.png')}}')
+                        "></div>
+                    <div>
+                        <div>{{$item['m_Name']}}</div>
+                        <div>{{$item['type']}}</div>
+                    </div>
+
                 </a>
             </div>
         @endforeach

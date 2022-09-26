@@ -17,7 +17,7 @@
             <div class="content">{!! $item['content']!!}</div>
         </div>
         <div class="main-right col-3">
-            <div class="image text-center"><img src="{{asset('img/icon/'.$item['m_Name'].'.png')}}"></div>
+            <div class="image text-center"><img src="{{asset('img/icon/'.$category.'/'.$item['m_Name'].'.png')}}"></div>
             <div>
                 <div class="BlockTable">
                     <div class="BlockTable-body">

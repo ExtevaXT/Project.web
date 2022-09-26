@@ -12,10 +12,10 @@ class GuideController extends Controller
         if(($category == 'achievements') or
             ($category == 'auction') or
             ($category == 'ranking') or
-            ($category == 'talents'))
+            ($category == 'talents') or
+            ($category == 'anomalies'))
             return view('guides.'.$category);
-        elseif (($category == 'anomalies') or
-            ($category == 'artefacts') or
+        elseif (($category == 'artefacts') or
             ($category == 'equipment') or
             ($category == 'weapons') or
             ($category == 'attachments') or
