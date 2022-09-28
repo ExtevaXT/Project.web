@@ -21,22 +21,22 @@ use NotificationChannels\Telegram\TelegramUpdates;
 */
 
 Route::get('/', function () {
-    $tg = TelegramUpdates::create()->get();
-    $updates = [];
-    foreach (array_reverse($tg['result']) as $update){
-        if ($tg['ok'] and array_key_exists('channel_post',$update)){
-//            str_replace(['#', '&b', 'b&', '&Img'],
-//                ['<br>', '<b>', '</b>', '<img src="">'],
-//                $update['channel_post']['text']);
-            $updates[] = $update;
-        }
-
-    }
+//    $tg = TelegramUpdates::create()->get();
+//    $updates = [];
+//    foreach (array_reverse($tg['result']) as $update){
+//        if ($tg['ok'] and array_key_exists('channel_post',$update)){
+////            str_replace(['#', '&b', 'b&', '&Img'],
+////                ['<br>', '<b>', '</b>', '<img src="">'],
+////                $update['channel_post']['text']);
+//            $updates[] = $update;
+//        }
+//
+//    }
 
     return view('index', [
         'unity' => GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []),
         'web' => GitHub::repo()->commits()->all('ExtevaXT','Project.web', []),
-        'updates' =>  $updates
+//        'updates' =>  $updates
     ]);
 });
 

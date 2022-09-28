@@ -8,7 +8,16 @@
     <link rel="stylesheet" href="{{ asset('css/bs/bootstrap.css')}}">
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <link rel="stylesheet" href="{{ asset('css/Custom/MaterialDesignIcons.min.css')}}">
+    <link rel="stylesheet" id="switcher-id" href="">
     <style>
+        {{--body{--}}
+        {{--    background: url("{{asset('img/bg/fractals.png')}}");--}}
+        {{--    position: absolute;--}}
+        {{--    width: 100%;--}}
+        {{--    height: 100%;--}}
+        {{--    z-index: -100;--}}
+        {{--}--}}
+
         .mdi::before {
             font-size: 24px;
             line-height: 14px;
@@ -76,6 +85,7 @@
 
 </head>
 <body>
+
 @inject('Auth','\Illuminate\Support\Facades\Auth')
 @inject('Carbon','\Carbon\Carbon')
 <div class="main-content">
@@ -91,6 +101,22 @@
                         <a class="text-decoration-none" href="{{route('register')}}"><div class="border-primary border py-2 px-4">Register</div></a>
                     </div>
                     @endguest
+                    @auth()
+                    <div class="d-flex mobile-panel" data-bs-toggle="modal" data-bs-target="#userModal">
+                        <div class="border border-primary me-3" style="
+                            width: 48px;
+                            height: 48px;
+                            background-size: cover;
+                            background-position: center;
+                            filter: blur(0.6px);
+                            background-image:url('{{ asset($Auth::user()->image)}}')
+                            "></div>
+                        <div>
+                            <div>{{$Auth::user()->name}}</div>
+                            <div>Menu ▼</div>
+                        </div>
+                    </div>
+                    @endauth
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="mobile-panel">
@@ -111,24 +137,21 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/map">Map</a>
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Theme switcher
+                                </a>
+                                <div class="dropdown-menu theme-switches" aria-labelledby="themeDropdown">
+                                    <div data-theme="wireframe" class="switch dropdown-item" id="switch-1">WIREFRAME</div>
+                                    <div data-theme="light" class="switch dropdown-item" id="switch-1">LIGHT</div>
+                                    <div data-theme="dark" class="switch dropdown-item" id="switch-4">DARK</div>
+                                </div>
+
+                            </li>
                         </ul>
 
                     </div>
                     @auth()
-                        <div class="d-flex mobile-panel" data-bs-toggle="modal" data-bs-target="#userModal">
-                            <div class="border border-primary me-3" style="
-                                width: 48px;
-                                height: 48px;
-                                background-size: cover;
-                                background-position: center;
-                                filter: blur(0.6px);
-                                background-image:url('{{ asset($Auth::user()->image)}}')
-                                "></div>
-                            <div>
-                                <div>{{$Auth::user()->name}}</div>
-                                <div>Menu ▼</div>
-                            </div>
-                        </div>
                         <ul class="navbar-nav pc-panel">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -314,10 +337,35 @@
 
 </div>
 
+<script>
+    let switches = document.getElementsByClassName('switch');
+    let style = localStorage.getItem('style');
 
+    if (style == null) {
+        setTheme('light');
+    } else {
+        setTheme(style);
+    }
 
+    for (let i of switches) {
+        i.addEventListener('click', function () {
+            let theme = this.dataset.theme;
+            setTheme(theme);
+        });
+    }
 
-<script src="js/script.js"></script>
+    function setTheme(theme) {
+        if (theme == 'light') {
+            document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/light.css')}}';
+        } else if (theme == 'wireframe') {
+            document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/wireframe.css')}}';
+        } else if (theme == 'dark') {
+            document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/dark.css')}}';
+        }
+        localStorage.setItem('style', theme);
+    }
+
+</script>
 <script src="{{asset('js/bootstrap.bundle.js')}}"></script>
 </body>
 </html>

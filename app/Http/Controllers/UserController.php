@@ -37,7 +37,7 @@ class UserController extends Controller
 
     public function test()
     {
-        $url = 'https://discordapp.com/api/v9/channels/1023796617985404948/messages';
+        $url = 'https://discordapp.com/api/v9/channels/1023240443145764894/messages';
 
         $ch = curl_init();
         curl_setopt_array($ch, array(
@@ -51,7 +51,7 @@ class UserController extends Controller
 
         $response = curl_exec($ch);
         curl_close($ch);
-        return  $response;
+        return view('chat',['log'=>array_reverse(json_decode($response, true))]);
 
 // or when your server returns json
 // $content = json_decode($response->getBody(), true);

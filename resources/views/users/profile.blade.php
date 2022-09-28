@@ -283,25 +283,34 @@
                     @for ($i = 0; $i <= 71; $i++)
                         <div class="inventory-item border-primary border">
                             <div>
+                                {{-- FOREACH IS EXCESS --}}
                                 @foreach($character_personal_storage as $item)
-
+                                    <div id="{{$item->slot}}" data-slot="{{$item->slot}}"
                                     @if($item->slot==$i)
-                                        <div>{{$item->name}}</div>
+                                         data-item="{{$item->name}}"
+                                             data-amount="{{$item->amount}}"
+                                             data-ammo="{{$item->ammo}}"
+                                             data-durability="{{$item->durability}}"
+                                             data-metadata="{{$item->metadata}}"
+
+                                             onclick="SelectItem({{$item->slot}})"
                                     @endif
+                                    >
+                                    </div>
                                 @endforeach
                             </div>
                         </div>
                     @endfor
                 </div>
-                <div class="m-5 inventory-selector" >
+                <div class="m-5 inventory-selector">
                     <div class="p-5 border border-primary" style="width: 256px; height: 256px">Icon</div>
-                    <div>Item name</div>
-                    <div>Item description</div>
-                    <div>Item tags</div>
+                    <div class="item-name">Item name</div>
+                    <div class="item-description">Item description</div>
+                    <div class="item-metadata">Item tags</div>
                     <div class="w-100">
-                        <div class="p-2 my-1 border-primary border text-center">Sell</div>
-                        <div class="p-2 my-1 border-primary border text-center">Trade</div>
-                        <div class="p-2 my-1 border-primary border text-center">Delete</div>
+                        <div onclick="" class="item-sell p-2 my-1 border-primary border text-center">Sell</div>
+                        <div onclick="" class="item-trade p-2 my-1 border-primary border text-center">Trade</div>
+                        <div onclick="" class="item-delete p-2 my-1 border-primary border text-center">Delete</div>
                     </div>
 
 
@@ -458,6 +467,7 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     @endforeach
                         {{-- SHOW OTHER FRIEND REQUESTS AND  --}}
                     @foreach(Friend::all()->where('friend', $Auth::user()->name) as $friend)
@@ -488,6 +498,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                         @endforeach
             </div>
 
@@ -682,6 +693,48 @@
     </div>
 
 </div>
+        <script>
+            let slot_out = document.querySelector('.item-slot');
+            let name_out = document.querySelector('.item-name');
+            let amount_out = document.querySelector('.item-amount');
+            let ammo_out = document.querySelector('.item-ammo');
+            let durability_out = document.querySelector('.item-durability');
+            let metadata_out = document.querySelector('.item-metadata');
+
+            // let description = document.querySelector('.item-description');
+
+            function SelectItem(slot){
+                // name_out.innerHTML = document.querySelector(`.test`).getAttribute('data-name');
+                //NEED TO SELECT DATA-SLOT IN DIV AND DISPLAY ITS DATA-NAME
+                console.log(
+                    document.getElementById('2')
+                );
+            }
+            function SellItem(){
+
+            }
+            function TradeItem(){
+
+            }
+            function DeleteItem(){
+
+            }
+
+
+
+
+            function FindByAttributeValue(attribute, value, element_type)    {
+                element_type = element_type || "*";
+                var All = document.getElementsByTagName(element_type);
+                for (var i = 0; i < All.length; i++)       {
+                    if (All[i].getAttribute(attribute) == value) { return All[i]; }
+                }
+            }
+
+
+
+
+        </script>
     <!-- Import the component -->
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 @endsection
