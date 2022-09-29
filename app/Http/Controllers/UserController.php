@@ -56,18 +56,46 @@ class UserController extends Controller
 // or when your server returns json
 // $content = json_decode($response->getBody(), true);
     }
+
     public function profile($name)
     {
+        //IMAGES ROUTES FOR ALL
+        $item_icons = [];
+        foreach ( Storage::disk('public_real')->directories('img/icon') as $category){
+            foreach (Storage::disk('public_real')->files($category) as $icon){
+                $item_icons[ basename($icon, '.png')] = $icon;
+            }
+        }
         $account = Account::all()->where('name', $name)->first();
         if($account==null) return back();
             $character = Character::all()->where('account', $name)->first();
         $character_personal_storage = [];
-        if($character!=null)
+        $items = collect();
+        if($character!=null) {
             $character_personal_storage = Character_personal_storage::all()->where('character', $character['name']);
+            //Logic from unity
+            for($i = 0; $i<=72; $i++){
+                $items->push([
+                    'character'=> $character->name,
+                    'slot'=> $i,
+                    'name' => '',
+                    'amount' => 0,
+                    'ammo' => 0,
+                    'durability' => 0,
+                    'metadata' =>'00000',
+
+                ]);
+            }
+            foreach ($character_personal_storage as $row){
+                $items->put($row->slot, $row);
+            }
+
+        }
         return view('users.profile', [
             'account' => $account,
             'character' => $character,
-            'character_personal_storage'=> $character_personal_storage,
+            'inventory'=> $items,
+            'icons' => $item_icons
         ]);
     }
     public function upload(Request $request)

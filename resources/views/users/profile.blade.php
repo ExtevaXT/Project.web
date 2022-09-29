@@ -278,35 +278,42 @@
         <div class="tab-pane fade" id="inventory">
 
             <div class="d-flex">
+{{--                @for ($i = 0; $i <= 71; $i++)--}}
+{{--                    <div>{{$character_personal_storage->get($i)}}</div>--}}
+{{--                @endfor--}}
+
+
 {{--                72 SLOTS --}}
                 <div class="d-grid w-50 inventory-panel">
-                    @for ($i = 0; $i <= 71; $i++)
-                        <div class="inventory-item border-primary border">
-                            <div>
-                                {{-- FOREACH IS EXCESS --}}
-                                @foreach($character_personal_storage as $item)
-                                    <div id="{{$item->slot}}" data-slot="{{$item->slot}}"
-                                    @if($item->slot==$i)
-                                         data-item="{{$item->name}}"
-                                             data-amount="{{$item->amount}}"
-                                             data-ammo="{{$item->ammo}}"
-                                             data-durability="{{$item->durability}}"
-                                             data-metadata="{{$item->metadata}}"
+                    @foreach($inventory as $item)
 
-                                             onclick="SelectItem({{$item->slot}})"
-                                    @endif
-                                    >
-                                    </div>
-                                @endforeach
+                        <div class="inventory-item border-primary border">
+                            <div class="w-100 h-100"
+                                 @if($item['name']!='')
+                                 style="background-image:url('{{ asset($icons[$item['name']]) }}');
+                                     background-size: cover;"
+                                 @endif
+                                data-slot="{{$item['slot']}}"
+                                 data-item="{{$item['name']}}"
+                                 data-amount="{{$item['amount']}}"
+                                 data-ammo="{{$item['ammo']}}"
+                                 data-durability="{{$item['durability']}}"
+                                 data-metadata="{{$item['metadata']}}"
+
+                                 onclick="SelectItem({{$item['slot']}})">
+
                             </div>
                         </div>
-                    @endfor
+                    @endforeach
                 </div>
                 <div class="m-5 inventory-selector">
-                    <div class="p-5 border border-primary" style="width: 256px; height: 256px">Icon</div>
-                    <div class="item-name">Item name</div>
-                    <div class="item-description">Item description</div>
-                    <div class="item-metadata">Item tags</div>
+                    <div class="p-5 border border-primary item-icon" style="background-size: cover; width: 256px; height: 256px"></div>
+                    <div class="item-name">Name</div>
+                    <div class="item-amount">Amount</div>
+                    <div class="item-ammo">Ammo</div>
+                    <div class="item-durability">Durability</div>
+                    <div class="item-metadata">Metadata</div>
+
                     <div class="w-100">
                         <div onclick="" class="item-sell p-2 my-1 border-primary border text-center">Sell</div>
                         <div onclick="" class="item-trade p-2 my-1 border-primary border text-center">Trade</div>
@@ -701,14 +708,18 @@
             let durability_out = document.querySelector('.item-durability');
             let metadata_out = document.querySelector('.item-metadata');
 
+            let icon_out = document.querySelector('.item-icon');
+
             // let description = document.querySelector('.item-description');
 
             function SelectItem(slot){
-                // name_out.innerHTML = document.querySelector(`.test`).getAttribute('data-name');
-                //NEED TO SELECT DATA-SLOT IN DIV AND DISPLAY ITS DATA-NAME
-                console.log(
-                    document.getElementById('2')
-                );
+                let selected = document.querySelector(`[data-slot="${slot}"]`);
+                name_out.innerHTML = selected.getAttribute('data-item');
+                amount_out.innerHTML = selected.getAttribute('data-amount');
+                ammo_out.innerHTML = selected.getAttribute('data-ammo');
+                durability_out.innerHTML = selected.getAttribute('data-durability');
+                metadata_out.innerHTML = selected.getAttribute('data-metadata');
+                icon_out.style.backgroundImage = selected.style.backgroundImage;
             }
             function SellItem(){
 
