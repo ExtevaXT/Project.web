@@ -290,7 +290,7 @@
                         <div class="inventory-item border-primary border">
                             <div class="w-100 h-100"
                                  @if($item['name']!='')
-                                 style="background-image:url('{{ asset($icons[$item['name']]) }}');
+                                 style="background-image:url('{{ asset(data_get($icons, $item['name'], 'img/icon/item.png')) }}');
                                      background-size: cover;"
                                  @endif
                                 data-slot="{{$item['slot']}}"
@@ -714,11 +714,11 @@
 
             function SelectItem(slot){
                 let selected = document.querySelector(`[data-slot="${slot}"]`);
-                name_out.innerHTML = selected.getAttribute('data-item');
-                amount_out.innerHTML = selected.getAttribute('data-amount');
-                ammo_out.innerHTML = selected.getAttribute('data-ammo');
-                durability_out.innerHTML = selected.getAttribute('data-durability');
-                metadata_out.innerHTML = selected.getAttribute('data-metadata');
+                name_out.innerHTML ='Name:' + selected.getAttribute('data-item');
+                amount_out.innerHTML ='Amount:' + selected.getAttribute('data-amount');
+                ammo_out.innerHTML ='Ammo:' + selected.getAttribute('data-ammo');
+                durability_out.innerHTML ='Durability:' + selected.getAttribute('data-durability');
+                metadata_out.innerHTML ='Meta:' + selected.getAttribute('data-metadata');
                 icon_out.style.backgroundImage = selected.style.backgroundImage;
             }
             function SellItem(){
