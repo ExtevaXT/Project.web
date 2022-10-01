@@ -293,7 +293,7 @@
                                  style="background-image:url('{{ asset(data_get($icons, $item['name'], 'img/icon/item.png')) }}');
                                      background-size: cover;"
                                  @endif
-                                data-slot="{{$item['slot']}}"
+                                 data-slot="{{$item['slot']}}"
                                  data-item="{{$item['name']}}"
                                  data-amount="{{$item['amount']}}"
                                  data-ammo="{{$item['ammo']}}"
@@ -315,7 +315,8 @@
                     <div class="item-metadata">Metadata</div>
 
                     <div class="w-100">
-                        <div onclick="" class="item-sell p-2 my-1 border-primary border text-center">Sell</div>
+{{--                        ROUTE TO LOT CREATE WITH ITEM MAYBE SLOT IN GET FROM JS? OR SMTH--}}
+                        <div onclick="SellItem()" class="item-sell p-2 my-1 border-primary border text-center">Sell</div>
                         <div onclick="" class="item-trade p-2 my-1 border-primary border text-center">Trade</div>
                         <div onclick="" class="item-delete p-2 my-1 border-primary border text-center">Delete</div>
                     </div>
@@ -710,10 +711,18 @@
 
             let icon_out = document.querySelector('.item-icon');
 
+            let item_sell = document.querySelector('.item-sell');
+            let item_trade = document.querySelector('.item-trade');
+            let item_delete = document.querySelector('.item-delete');
+
+            let selectedSlot = -1;
+
             // let description = document.querySelector('.item-description');
 
             function SelectItem(slot){
                 let selected = document.querySelector(`[data-slot="${slot}"]`);
+                selectedSlot = slot;
+
                 name_out.innerHTML ='Name:' + selected.getAttribute('data-item');
                 amount_out.innerHTML ='Amount:' + selected.getAttribute('data-amount');
                 ammo_out.innerHTML ='Ammo:' + selected.getAttribute('data-ammo');
@@ -722,7 +731,7 @@
                 icon_out.style.backgroundImage = selected.style.backgroundImage;
             }
             function SellItem(){
-
+                window.location.href = `{{route('lot_create')}}?slot=${selectedSlot}`;
             }
             function TradeItem(){
 

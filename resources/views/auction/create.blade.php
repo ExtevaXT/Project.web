@@ -24,9 +24,16 @@
     <form method="post" action="{{ route('lot_create') }}" class="d-flex flex-column">
         @csrf
         <select name="item" class="my-1 p-2 border border-primary form-control">
-            <option disabled selected>Select Item</option>
-            @foreach($character_personal_storage as $item)
-                <option value={{$item->name.'.'.$item->amount.'.'.$item->durability.'.'.$item->ammo.'.'.$item->metadata}}>{{$item->name}}</option>
+            @if(app('request')->input('slot') and  $character_personal_storage->where('slot', app('request')->input('slot'))->first())
+                <option selected value="{{$character_personal_storage->where('slot', app('request')->input('slot'))->first()->slot }}">
+                    {{$character_personal_storage->where('slot', app('request')->input('slot'))->first()->name }}
+                </option>
+            @else
+                <option disabled selected>Select Item</option>
+            @endif
+
+            @foreach($character_personal_storage->forget(app('request')->input('slot')-1) as $item)
+                <option value={{$item->slot}}>{{$item->name}}</option>
             @endforeach
         </select>
         <input name="bid" class="my-1 p-2 border border-primary form-control" type="number" placeholder="Bid price" required>

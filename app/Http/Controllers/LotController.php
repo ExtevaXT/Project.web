@@ -12,6 +12,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\DB;
+use mysql_xdevapi\Table;
 
 class LotController extends Controller
 {
@@ -27,22 +28,32 @@ class LotController extends Controller
     }
     public function create()
     {
-        $character = (array)DB::table('characters')->where('account',  Auth::user()->name)->first();
+        $character = Character::all()->where('account',  Auth::user()->name)->first();
         $character_personal_storage = Character_personal_storage::all()->where('character', $character['name']);
         return view('auction.create', ['character_personal_storage' => $character_personal_storage]);
     }
     public function createPost(LotValidation $request)
     {
-        $item = explode('.', $request['item']);
-        $validate = $request->validated();
-        $validate['character']= Character::all()->where('account',  Auth::user()->name)->first()->name;
-        $validate['bidder']= Character::all()->where('account',  Auth::user()->name)->first()->name;
+//        $item = explode('.', $request['item']);
+        $character = Character::all()->where('account',  Auth::user()->name)->first();
+        $cps = Character_personal_storage::all()->where('character', $character->name);
+        $item = $cps->where('slot', $request['item'])->first();
 
-        $validate['item'] = $item[0];
-        $validate['amount'] = $item[1];
-        $validate['durability'] = $item[2];
-        $validate['ammo'] = $item[3];
-        $validate['metadata'] = $item[4];
+        $validate = $request->validated();
+        $validate['character']= $character->name;
+        $validate['bidder']= $character->name;
+
+        $validate['item'] = $item->name;
+        $validate['amount'] = $item->amount;
+        $validate['durability'] = $item->durability;
+        $validate['ammo'] = $item->ammo;
+        $validate['metadata'] = $item->metadata;
+        //FACADE FOR UPDATING
+        DB::table('characters')->where('name',$character->name)->update(['gold'=>$character->gold-$request['bid']]);
+        //RAW SQL FOR DELETING
+        $q = 'DELETE FROM character_personal_storage WHERE character = ? AND slot = ?';
+        DB::delete($q, [$character->name, $item->slot]);
+
         Lot::create($validate);
         return redirect('/auction');
     }
