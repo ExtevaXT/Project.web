@@ -12,7 +12,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Log;
 use mysql_xdevapi\Table;
+use Symfony\Component\ErrorHandler\Debug;
 
 class LotController extends Controller
 {
@@ -58,17 +60,30 @@ class LotController extends Controller
         return redirect('/auction');
     }
 
+
     public function bid(Request $request)
     {
         $lot = Lot::find($request->id);
         $bidder = Character::all()->where('account', Auth::user()->name)->first();
         $previousBidder = Character::all()->where('name', $lot->bidder)->first();
 
+        //validation
+        if($bidder->gold < $request['bid']) return 'Not enough currency';
+        if($request['bid'] < $lot->bid) return 'Bid is too low';
+        if($previousBidder->name == $bidder->name) return "Can't overwrite your bid";
+
         //not working WITH DB FROM UNITY WITHOUT ID
-        $bidder->gold -= $request['bid'];
-        $bidder->save();
-        $previousBidder->gold += $request->bid;
-        $previousBidder->save();
+//        $bidder->gold -= $request['bid'];
+//        $bidder->save();
+//        $previousBidder->gold += $request->bid;
+//        $previousBidder->save();
+
+        //Remove gold from bidder and give gold back to previous bidder
+        DB::table('characters')->where('name',$bidder->name)->update(['gold'=>$bidder->gold - $request['bid']]);
+        DB::table('characters')->where('name',$previousBidder->name)->update(['gold'=>$previousBidder->gold + $request['bid']]);
+
+
+
 
         //working
         $lot->bid = $request->bid;
@@ -81,35 +96,56 @@ class LotController extends Controller
     {
         $lot = Lot::find($request->id);
         $bidder = Character::all()->where('account', Auth::user()->name)->first();
-        $bidder->gold -= $lot->price;
+        $cps = Character_personal_storage::all()->where('character', $bidder->name);
+//        $bidder->gold -= $lot->price;
 
+        //Remove buyout price from bidder
+        DB::table('characters')->where('name',$bidder->name)->update(['gold'=>$bidder->gold - $lot->price]);
+
+        //Add bid to lot price to remove display in blade
         $lot->bid = $lot->price;
         $lot->save();
 
         //Give item
-        $i = 0;
-        foreach (Character_personal_storage::all()->where('character', $bidder->name) as $item){
-            //add only in free slot
-            if($i<=72) return 'Inventory full';
-            if($i != $item->slot){
-                Character_personal_storage::create([
-                    'character' => $bidder,
-                    'slot' => $i,
+        //IF CPS HAVE SOME ITEMS FIND FREE SLOT
+        //NEED TO SOMEHOW FIND FREE SLOT
+        $full_cps = collect([]);
+        for ($i = 0; $i<72;$i++){
+            //IDK HOW TO MAKE THIS FUCKING CLAUSE
+            //
+            //MAYBE TRY TO ADD ALL SLOTS?
+            //
+            $full_cps->push([
+                'character' => $bidder->name,
+                'slot' => $i,
+                'name' => '',
+                'amount' => 0,
+                'durability' => 0,
+                'ammo' => 0,
+                'metadata' => '00000',
+            ]);
+        }
+        foreach ($cps->values() as $item){
+            $full_cps->put($item->slot, $item);
+        }
+        //THIS GORGEOUS CONSTRUCTION IS SOMEHOW WORKING THANKS VIS2K
+        foreach ($full_cps as $item){
+            if($item['amount']==0){
+                DB::table('character_personal_storage')->insert([
+                    'character' => $bidder->name,
+                    'slot' => $item['slot'],
                     'name' => $lot->item,
                     'amount' => $lot->amount,
                     'durability' => $lot->durability,
                     'ammo' => $lot->ammo,
                     'metadata' => $lot->metadata,
                 ]);
-                break;
+                return "Added item to {$item['slot']} slot";
             }
-            else{
-                $i++;
-            }
-
         }
 
-        return $request;
+
+        return 'Not success';
     }
 
     public function lotRecieve(Request $request)
