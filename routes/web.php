@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\FriendController;
 use App\Http\Controllers\GuideController;
 use App\Http\Controllers\UserController;
@@ -20,23 +21,11 @@ use NotificationChannels\Telegram\TelegramUpdates;
 |
 */
 
+//MAIN
 Route::get('/', function () {
-//    $tg = TelegramUpdates::create()->get();
-//    $updates = [];
-//    foreach (array_reverse($tg['result']) as $update){
-//        if ($tg['ok'] and array_key_exists('channel_post',$update)){
-////            str_replace(['#', '&b', 'b&', '&Img'],
-////                ['<br>', '<b>', '</b>', '<img src="">'],
-////                $update['channel_post']['text']);
-//            $updates[] = $update;
-//        }
-//
-//    }
-
     return view('index', [
         'unity' => GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []),
         'web' => GitHub::repo()->commits()->all('ExtevaXT','Project.web', []),
-//        'updates' =>  $updates
     ]);
 });
 
@@ -46,18 +35,16 @@ Route::get('/guides', function () {
 Route::get('/guides/{category}', [GuideController::class, 'category']);
 Route::get('/guides/{category}/{item_name}', [GuideController::class, 'item']);
 
-
-
-
 Route::get('/map', function () {
     return view('map');
 });
+Route::get('/log', [Controller::class, 'log']);
+Route::get('/ranking', function () {
+    return view('ranking');
+});
 
-
+//AUCTION
 Route::get('/auction', [LotController::class, 'show']);
-
-
-
 Route::get('/lot', [LotController::class, 'create'])->name('lot_create');
 Route::post('/lot', [LotController::class, 'createPost']);
 
@@ -66,6 +53,8 @@ Route::post('/buyout', [LotController::class, 'buyout'])->name('buyout');
 Route::get('/notifications', function () {
     return view('users.notifications');
 });
+
+//USER
 Route::post('/upload', [UserController::class, 'upload'])->name('upload');
 
 Route::post('/friend_add', [FriendController::class, 'friendAdd'])->name('friend_add');

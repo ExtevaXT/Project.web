@@ -129,13 +129,18 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/auction">Auction</a>
                             </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/log">Log</a>
+                            </li>
                             @endauth
                             <li class="nav-item">
                                 <a class="nav-link" href="/guides">Guides</a>
                             </li>
-
                             <li class="nav-item">
                                 <a class="nav-link" href="/map">Map</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" data-bs-target="modalContact">Contact</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

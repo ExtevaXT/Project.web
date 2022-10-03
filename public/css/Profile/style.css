@@ -1,3 +1,8 @@
+.selected{
+    background: rgba(13, 110, 253, 0.5);
+
+}
+
 .info-panel{
     grid-template-columns: repeat(3,1fr); grid-gap: 3px;
 }
@@ -65,9 +70,21 @@
     }
     .inventory-panel{
         width: 100%; !important;
+        grid-gap: 1px;
     }
-    #inventory{
-        display: none;
+    /*#inventory{*/
+    /*    display: none;*/
+    /*}*/
+    .inventory-item{
+        width: 40px;
+        height: 40px;
+        text-align: center;
+    }
+    .inventory-parent{
+        flex-direction: column-reverse;
+    }
+    .inventory-selector{
+        margin: 10px 5px !important;
     }
     .mobile-lock{
         pointer-events: none;

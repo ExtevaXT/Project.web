@@ -9,6 +9,7 @@ use App\Models\AccountNotification;
 use App\Models\Character;
 use App\Models\Character_personal_storage;
 use App\Models\Friend;
+use App\Models\PlayerAchievement;
 use Discord\Http\Http;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\DiscordBotMessage;
@@ -31,30 +32,14 @@ use NotificationChannels\Telegram\TelegramChannel;
 use NotificationChannels\Telegram\TelegramUpdates;
 use Symfony\Component\Console\Helper\Table;
 use Monolog\Logger;
+use Symfony\Component\Yaml\Yaml;
 
 class UserController extends Controller
 {
 
     public function test()
     {
-        $url = 'https://discordapp.com/api/v9/channels/1023240443145764894/messages';
-
-        $ch = curl_init();
-        curl_setopt_array($ch, array(
-            CURLOPT_URL            => $url,
-            CURLOPT_HTTPHEADER     => array('Authorization: Bot '. config('services.discord')['token']),
-            CURLOPT_RETURNTRANSFER => 1,
-            CURLOPT_FOLLOWLOCATION => 1,
-            CURLOPT_VERBOSE        => 1,
-            CURLOPT_SSL_VERIFYPEER => 0,
-        ));
-
-        $response = curl_exec($ch);
-        curl_close($ch);
-        return view('chat',['log'=>array_reverse(json_decode($response, true))]);
-
-// or when your server returns json
-// $content = json_decode($response->getBody(), true);
+        return view('test');
     }
 
     public function profile($name)
@@ -68,13 +53,13 @@ class UserController extends Controller
         }
         $account = Account::all()->where('name', $name)->first();
         if($account==null) return back();
-            $character = Character::all()->where('account', $name)->first();
-        $character_personal_storage = [];
+        $character = Character::all()->where('account', $name)->first();
+        //Items for inventory
         $items = collect();
         if($character!=null) {
             $character_personal_storage = Character_personal_storage::all()->where('character', $character['name']);
             //Logic from unity
-            for($i = 0; $i<=72; $i++){
+            for($i = 0; $i<72; $i++){
                 $items->push([
                     'character'=> $character->name,
                     'slot'=> $i,
@@ -91,11 +76,22 @@ class UserController extends Controller
             }
 
         }
+        //Achievements
+        $player_achievements = PlayerAchievement::all()->where('character', $character->name);
+        $files = glob(resource_path().'/assets/yaml/achievements/*.*', GLOB_BRACE);
+        $achievement_data = [];
+        foreach($files as $file) {
+            $achievement_data[] = Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour'];
+        }
+
+
         return view('users.profile', [
             'account' => $account,
             'character' => $character,
             'inventory'=> $items,
-            'icons' => $item_icons
+            'achievements' => $player_achievements,
+            'icons' => $item_icons,
+
         ]);
     }
     public function upload(Request $request)

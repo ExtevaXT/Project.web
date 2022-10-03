@@ -143,8 +143,6 @@ class LotController extends Controller
                 return "Added item to {$item['slot']} slot";
             }
         }
-
-
         return 'Not success';
     }
 

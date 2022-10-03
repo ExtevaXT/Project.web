@@ -92,7 +92,7 @@
         </li>
         @if($Auth::user() !=null and $Auth::user()->name == $account->name)
         <li class="nav-item">
-            <a class="nav-link mobile-lock" data-bs-toggle="tab" href="#inventory">Inventory</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#inventory">Inventory</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#activity">Activity</a>
@@ -277,7 +277,7 @@
         @if($Auth::user() !=null and $Auth::user()->name == $account->name)
         <div class="tab-pane fade" id="inventory">
 
-            <div class="d-flex">
+            <div class="d-flex inventory-parent">
 {{--                @for ($i = 0; $i <= 71; $i++)--}}
 {{--                    <div>{{$character_personal_storage->get($i)}}</div>--}}
 {{--                @endfor--}}
@@ -306,7 +306,7 @@
                         </div>
                     @endforeach
                 </div>
-                <div class="m-5 inventory-selector">
+                <div class="mx-5 inventory-selector">
                     <div class="p-5 border border-primary item-icon" style="background-size: cover; width: 256px; height: 256px"></div>
                     <div class="item-name">Name</div>
                     <div class="item-amount">Amount</div>
@@ -315,15 +315,10 @@
                     <div class="item-metadata">Metadata</div>
 
                     <div class="w-100">
-{{--                        ROUTE TO LOT CREATE WITH ITEM MAYBE SLOT IN GET FROM JS? OR SMTH--}}
                         <div onclick="SellItem()" class="item-sell p-2 my-1 border-primary border text-center">Sell</div>
                         <div onclick="" class="item-trade p-2 my-1 border-primary border text-center">Trade</div>
                         <div onclick="" class="item-delete p-2 my-1 border-primary border text-center">Delete</div>
                     </div>
-
-
-
-
 
                 </div>
             </div>
@@ -515,171 +510,192 @@
         @endif
         <div class="tab-pane fade" id="achievements">
             <div>Achievements</div>
-
-
-            <ul class="nav nav-tabs">
-                <li class="nav-item">
-                    <a class="nav-link active" data-bs-toggle="tab" href="#achievements-general">General</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#achievements-progression">Progression</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#achievements-pvp">PVP</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#achievements-pve">PVE</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#achievements-craft">Crafting</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#achievements-collections">Collections</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" data-bs-toggle="tab" href="#achievements-skills">Skills</a>
-                </li>
-
-            </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="achievements-general">
-                    <div class="d-flex flex-column my-5">
-                        @for ($i = 1; $i <= 10; $i++)
-                            <div class="border-primary border mb-1 p-3">
-                                <div class="d-flex justify-content-between">
-                                    <div class="d-flex">
-                                        <div class="p-2">Img</div>
-                                        <div>
-                                            <div>Some achievement</div>
-                                            <div>Achievement description</div>
-                                        </div>
-                                    </div>
-                                    <div>Trophy amount</div>
-                                </div>
-
+            @forelse($achievements as $achievement)
+                <div class="border-primary border mb-1 p-3">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-flex">
+                            <div class="p-2">Img</div>
+                            <div>
+                                <div>{{$achievement->achievementName}}</div>
+                                <div>Achievement description</div>
                             </div>
-                        @endfor
-                    </div>
-
-                </div>
-                <div class="tab-pane fade" id="achievements-progression">
-                    <div class="d-flex flex-column my-5">
-                        @for ($i = 1; $i <= 10; $i++)
-                            <div class="border-primary border mb-1 p-3">
-                                <div class="d-flex justify-content-between">
-                                    <div class="d-flex">
-                                        <div class="p-2">Img</div>
-                                        <div>
-                                            <div>Some achievement</div>
-                                            <div>Achievement description</div>
-                                        </div>
-                                    </div>
-                                    <div>Trophy amount</div>
-                                </div>
-                            </div>
-                        @endfor
-
-
+                        </div>
+                        <div>Trophy amount</div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="achievements-pvp">
-                    <div class="d-flex flex-column my-5">
-                        @for ($i = 1; $i <= 10; $i++)
-                            <div class="border-primary border mb-1 p-3">
-                                <div class="d-flex justify-content-between">
-                                    <div class="d-flex">
-                                        <div class="p-2">Img</div>
-                                        <div>
-                                            <div>Some achievement</div>
-                                            <div>Achievement description</div>
+            @empty
+                <div>No achievements</div>
+            @endforelse
+
+
+
+
+
+
+            <div class="d-none">
+                <ul class="nav nav-tabs">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#achievements-general">General</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#achievements-progression">Progression</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#achievements-pvp">PVP</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#achievements-pve">PVE</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#achievements-craft">Crafting</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#achievements-collections">Collections</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#achievements-skills">Skills</a>
+                    </li>
+
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane fade show active" id="achievements-general">
+                        <div class="d-flex flex-column my-5">
+                            @for ($i = 1; $i <= 10; $i++)
+                                <div class="border-primary border mb-1 p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="p-2">Img</div>
+                                            <div>
+                                                <div>Some achievement</div>
+                                                <div>Achievement description</div>
+                                            </div>
                                         </div>
+                                        <div>Trophy amount</div>
                                     </div>
-                                    <div>Trophy amount</div>
+
                                 </div>
-                            </div>
-                        @endfor
+                            @endfor
+                        </div>
+
                     </div>
-                </div>
-                <div class="tab-pane fade" id="achievements-pve">
-                    <div class="d-flex flex-column my-5">
-                        @for ($i = 1; $i <= 10; $i++)
-                            <div class="border-primary border mb-1 p-3">
-                                <div class="d-flex justify-content-between">
-                                    <div class="d-flex">
-                                        <div class="p-2">Img</div>
-                                        <div>
-                                            <div>Some achievement</div>
-                                            <div>Achievement description</div>
+                    <div class="tab-pane fade" id="achievements-progression">
+                        <div class="d-flex flex-column my-5">
+                            @for ($i = 1; $i <= 10; $i++)
+                                <div class="border-primary border mb-1 p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="p-2">Img</div>
+                                            <div>
+                                                <div>Some achievement</div>
+                                                <div>Achievement description</div>
+                                            </div>
                                         </div>
+                                        <div>Trophy amount</div>
                                     </div>
-                                    <div>Trophy amount</div>
                                 </div>
-                            </div>
-                        @endfor
+                            @endfor
+
+
+                        </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="achievements-craft">
-                    <div class="d-flex flex-column my-5">
-                        @for ($i = 1; $i <= 10; $i++)
-                            <div class="border-primary border mb-1 p-3">
-                                <div class="d-flex justify-content-between">
-                                    <div class="d-flex">
-                                        <div class="p-2">Img</div>
-                                        <div>
-                                            <div>Some achievement</div>
-                                            <div>Achievement description</div>
+                    <div class="tab-pane fade" id="achievements-pvp">
+                        <div class="d-flex flex-column my-5">
+                            @for ($i = 1; $i <= 10; $i++)
+                                <div class="border-primary border mb-1 p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="p-2">Img</div>
+                                            <div>
+                                                <div>Some achievement</div>
+                                                <div>Achievement description</div>
+                                            </div>
                                         </div>
+                                        <div>Trophy amount</div>
                                     </div>
-                                    <div>Trophy amount</div>
                                 </div>
-                            </div>
-                        @endfor
+                            @endfor
+                        </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="achievements-collections">
-                    <div class="d-flex flex-column my-5">
-                        @for ($i = 1; $i <= 10; $i++)
-                            <div class="border-primary border mb-1 p-3">
-                                <div class="d-flex justify-content-between">
-                                    <div class="d-flex">
-                                        <div class="p-2">Img</div>
-                                        <div>
-                                            <div>Some achievement</div>
-                                            <div>Achievement description</div>
+                    <div class="tab-pane fade" id="achievements-pve">
+                        <div class="d-flex flex-column my-5">
+                            @for ($i = 1; $i <= 10; $i++)
+                                <div class="border-primary border mb-1 p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="p-2">Img</div>
+                                            <div>
+                                                <div>Some achievement</div>
+                                                <div>Achievement description</div>
+                                            </div>
                                         </div>
+                                        <div>Trophy amount</div>
                                     </div>
-                                    <div>Trophy amount</div>
                                 </div>
-                            </div>
-                        @endfor
+                            @endfor
+                        </div>
                     </div>
-                </div>
-                <div class="tab-pane fade" id="achievements-skills">
-                    <div class="d-flex flex-column my-5">
-                        @for ($i = 1; $i <= 10; $i++)
-                            <div class="border-primary border mb-1 p-3">
-                                <div class="d-flex justify-content-between">
-                                    <div class="d-flex">
-                                        <div class="p-2">Img</div>
-                                        <div>
-                                            <div>Some achievement</div>
-                                            <div>Achievement description</div>
+                    <div class="tab-pane fade" id="achievements-craft">
+                        <div class="d-flex flex-column my-5">
+                            @for ($i = 1; $i <= 10; $i++)
+                                <div class="border-primary border mb-1 p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="p-2">Img</div>
+                                            <div>
+                                                <div>Some achievement</div>
+                                                <div>Achievement description</div>
+                                            </div>
                                         </div>
+                                        <div>Trophy amount</div>
                                     </div>
-                                    <div>Trophy amount</div>
                                 </div>
-                            </div>
-                        @endfor
+                            @endfor
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="achievements-collections">
+                        <div class="d-flex flex-column my-5">
+                            @for ($i = 1; $i <= 10; $i++)
+                                <div class="border-primary border mb-1 p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="p-2">Img</div>
+                                            <div>
+                                                <div>Some achievement</div>
+                                                <div>Achievement description</div>
+                                            </div>
+                                        </div>
+                                        <div>Trophy amount</div>
+                                    </div>
+                                </div>
+                            @endfor
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="achievements-skills">
+                        <div class="d-flex flex-column my-5">
+                            @for ($i = 1; $i <= 10; $i++)
+                                <div class="border-primary border mb-1 p-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="p-2">Img</div>
+                                            <div>
+                                                <div>Some achievement</div>
+                                                <div>Achievement description</div>
+                                            </div>
+                                        </div>
+                                        <div>Trophy amount</div>
+                                    </div>
+                                </div>
+                            @endfor
+                        </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
 
 
-<!-- Modal -->
+<!-- UPLOAD PFP -->
 <div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageLabel" aria-hidden="true">
     <div class="container">
         <div class="modal-dialog float-end w-50 authorization-panel" role="document">
@@ -701,19 +717,53 @@
     </div>
 
 </div>
+{{--<!-- MOBILE INVENTORY ITEM SELECTOR -->--}}
+{{--<div class="modal fade" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="itemLabel" aria-hidden="true">--}}
+{{--    <div class="">--}}
+{{--        <div class="modal-dialog modal-fullscreen" role="document">--}}
+{{--            <div class="modal-content">--}}
+{{--                <div class="modal-header">--}}
+{{--                    <h5 class="modal-title text-center" id="itemLabel">Item selection</h5>--}}
+{{--                </div>--}}
+{{--                <div class="modal-body">--}}
+{{--                    <div class="m-5 inventory-selector">--}}
+{{--                        <div class="p-5 border border-primary item-icon" style="background-size: cover; width: 256px; height: 256px"></div>--}}
+{{--                        <div class="item-name">Name</div>--}}
+{{--                        <div class="item-amount">Amount</div>--}}
+{{--                        <div class="item-ammo">Ammo</div>--}}
+{{--                        <div class="item-durability">Durability</div>--}}
+{{--                        <div class="item-metadata">Metadata</div>--}}
+
+{{--                        <div class="w-100">--}}
+{{--                            <div onclick="SellItem()" class="item-sell p-2 my-1 border-primary border text-center">Sell</div>--}}
+{{--                            <div onclick="" class="item-trade p-2 my-1 border-primary border text-center">Trade</div>--}}
+{{--                            <div onclick="" class="item-delete p-2 my-1 border-primary border text-center">Delete</div>--}}
+{{--                        </div>--}}
+
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+
+{{--</div>--}}
+
+
+
         <script>
-            let slot_out = document.querySelector('.item-slot');
-            let name_out = document.querySelector('.item-name');
-            let amount_out = document.querySelector('.item-amount');
-            let ammo_out = document.querySelector('.item-ammo');
-            let durability_out = document.querySelector('.item-durability');
-            let metadata_out = document.querySelector('.item-metadata');
 
-            let icon_out = document.querySelector('.item-icon');
+            let slot_out = document.querySelectorAll('.item-slot');
+            let name_out = document.querySelectorAll('.item-name');
+            let amount_out = document.querySelectorAll('.item-amount');
+            let ammo_out = document.querySelectorAll('.item-ammo');
+            let durability_out = document.querySelectorAll('.item-durability');
+            let metadata_out = document.querySelectorAll('.item-metadata');
 
-            let item_sell = document.querySelector('.item-sell');
-            let item_trade = document.querySelector('.item-trade');
-            let item_delete = document.querySelector('.item-delete');
+            let icon_out = document.querySelectorAll('.item-icon');
+
+            let item_sell = document.querySelectorAll('.item-sell');
+            let item_trade = document.querySelectorAll('.item-trade');
+            let item_delete = document.querySelectorAll('.item-delete');
 
             let selectedSlot = -1;
 
@@ -723,12 +773,16 @@
                 let selected = document.querySelector(`[data-slot="${slot}"]`);
                 selectedSlot = slot;
 
-                name_out.innerHTML ='Name:' + selected.getAttribute('data-item');
-                amount_out.innerHTML ='Amount:' + selected.getAttribute('data-amount');
-                ammo_out.innerHTML ='Ammo:' + selected.getAttribute('data-ammo');
-                durability_out.innerHTML ='Durability:' + selected.getAttribute('data-durability');
-                metadata_out.innerHTML ='Meta:' + selected.getAttribute('data-metadata');
-                icon_out.style.backgroundImage = selected.style.backgroundImage;
+
+                name_out.forEach(x => x.innerHTML ='Name:' + selected.getAttribute('data-item'));
+                amount_out.forEach(x => x.innerHTML ='Amount:' + selected.getAttribute('data-amount'));
+                ammo_out.forEach(x => x.innerHTML ='Ammo:' + selected.getAttribute('data-ammo'));
+                durability_out.forEach(x => x.innerHTML ='Durability:' + selected.getAttribute('data-durability'));
+                metadata_out.forEach(x => x.innerHTML ='Meta:' + selected.getAttribute('data-metadata'));
+                icon_out.forEach(x => x.style.backgroundImage = selected.style.backgroundImage);
+
+                document.querySelectorAll('[data-slot]').forEach(x => x.classList.remove('selected'));
+                selected.classList.add('selected');
             }
             function SellItem(){
                 window.location.href = `{{route('lot_create')}}?slot=${selectedSlot}`;
@@ -742,14 +796,6 @@
 
 
 
-
-            function FindByAttributeValue(attribute, value, element_type)    {
-                element_type = element_type || "*";
-                var All = document.getElementsByTagName(element_type);
-                for (var i = 0; i < All.length; i++)       {
-                    if (All[i].getAttribute(attribute) == value) { return All[i]; }
-                }
-            }
 
 
 
