@@ -21,7 +21,7 @@ class GuideController extends Controller
             ($category == 'attachments') or
             ($category == 'other'))
         {
-            $files = glob(resource_path().'/assets/yaml/'.$category.'/*.*', GLOB_BRACE);
+            $files = glob(resource_path().'/assets/items/'.$category.'/*.*', GLOB_BRACE);
             $items = [];
             foreach($files as $file) {
                 $items[] = Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour'];
@@ -37,13 +37,10 @@ class GuideController extends Controller
 
     public function item($category, $item_name)
     {
-        $trim = '%YAML 1.1
-%TAG !u! tag:unity3d.com,2011:
---- !u!114 &11400000';
-        $files = glob(resource_path().'/assets/yaml/'.$category.'/*.*', GLOB_BRACE);
+        $files = glob(resource_path().'/assets/items/'.$category.'/*.*', GLOB_BRACE);
         $items = [];
         foreach($files as $file) {
-            $items[] = Yaml::parse(str_ireplace($trim,'', file_get_contents($file)))['MonoBehaviour'];
+            $items[] = Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour'];
         }
         foreach ($items as $item){
             if ($item['m_Name'] == $item_name){

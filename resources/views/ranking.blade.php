@@ -18,11 +18,13 @@
                 <div class="p-3">Achievements</div>
                 <div class="p-3">Online time</div>
                 <div class="p-3">KDA</div>
+
             </div>
             <div class="BlockTable ms-5">
                 <div class="BlockTable-body">
                     @foreach(Character::all() as $player)
-                        <div class="BlockTable-row BT-R4">
+                        <div class="BlockTable-row BT-R4" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-html="true" title="" data-bs-original-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
+
                             <div class="BlockTable-data">
                                 <div class="d-flex">
                                     <div class="border border-primary me-3"
@@ -68,4 +70,10 @@
 
         </div>
     @endauth
+    <script src="{{asset('js/jquery.js')}}"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('[data-bs-toggle="tooltip"]').tooltip()
+        })
+    </script>
 @endsection

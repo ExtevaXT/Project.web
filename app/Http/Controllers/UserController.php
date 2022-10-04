@@ -78,10 +78,11 @@ class UserController extends Controller
         }
         //Achievements
         $player_achievements = PlayerAchievement::all()->where('character', $character->name);
-        $files = glob(resource_path().'/assets/yaml/achievements/*.*', GLOB_BRACE);
-        $achievement_data = [];
+        $files = glob(resource_path().'/assets/achievements/*.*', GLOB_BRACE);
+        $achievement_data = collect([]);
+
         foreach($files as $file) {
-            $achievement_data[] = Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour'];
+            $achievement_data->push(Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour']);
         }
 
 
@@ -90,6 +91,7 @@ class UserController extends Controller
             'character' => $character,
             'inventory'=> $items,
             'achievements' => $player_achievements,
+            'achievement_data' => $achievement_data,
             'icons' => $item_icons,
 
         ]);

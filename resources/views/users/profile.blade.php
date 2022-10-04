@@ -520,7 +520,7 @@
                                 <div>Achievement description</div>
                             </div>
                         </div>
-                        <div>Trophy amount</div>
+                        <div>Trophy amount: {{$achievement_data->where('m_Name', $achievement->achievementName)->first()['reward']}}</div>
                     </div>
                 </div>
             @empty
