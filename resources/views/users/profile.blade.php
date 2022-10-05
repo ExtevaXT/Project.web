@@ -41,12 +41,20 @@
             <div>Rating <span class="fw-bold">Prefix</span></div>
             <div>@if( $character!=null and $character['online']) <span class="text-success">Online</span> @else <span class="text-danger">Not online</span> @endif </div>
             @auth()
-                {{--SHOW ONLY IF ACCOUNT['NAME'] IS NOT AUTHED ACCOUNT FRIEND--}}
-                {{--FRIENDS TABLE FIND COLUMN WITH ACCOUNT == AUTH ACCOUNT, FIRST FINDED FRIEND COLUMN NOT EQUALS PAGE NAME --}}
-                {{-- NOW WORKS FROM ONE SIDE ONLY, REMOVE SECOND LINE IF NOT--}}
-                @if(($Auth::user()->name != $account->name) and
-                    (Friend::all()->where('account', $Auth::user()->name)->first() != null) and
-                    (Friend::all()->where('account', $Auth::user()->name)->first()->friend != $account['name']))
+                {{--                TEST CLAUSE                   --}}
+                @if(// Account doesnt have you in friends
+                    $account_friend_start != $Auth::user()->name and
+                    $account_friend_end != $Auth::user()->name and
+                    // You doesnt have account in friends
+                    $your_friend_start != $account->name and
+                    $your_friend_end != $account->name and
+
+                    // You cant add yourself
+                    $account->name != $Auth::user()->name
+
+
+
+                    )
                     <div>
                         <form method="post" action="{{route('friend_add')}}">
                             @csrf
@@ -55,17 +63,13 @@
                         </form>
                     </div>
                 @endif
-                @if(($Auth::user()->name != $account->name) and
-                (Friend::all()->where('friend', $Auth::user()->name)->first() != null) and
-                (Friend::all()->where('friend', $Auth::user()->name)->first()->account != $account['name']))
-                    <div>
-                        <form method="post" action="{{route('friend_add')}}">
-                            @csrf
-                            <input type="hidden" name="friend" value="{{$account['name']}}">
-                            <button class="btn btn-primary" type="submit">Add to friends</button>
-                        </form>
-                    </div>
-                @endif
+
+
+
+
+
+
+
 {{--                @if(($Auth::user()->name != $account->name) and (--}}
 {{--                (Friend::all()->where('friend', $Auth::user()->name)->first() == null) or--}}
 {{--                (Friend::all()->where('account', $Auth::user()->name)->first() == null)))--}}
@@ -514,13 +518,16 @@
                 <div class="border-primary border mb-1 p-3">
                     <div class="d-flex justify-content-between">
                         <div class="d-flex">
-                            <div class="p-2">Img</div>
+                            <i class="icons mdi mdi-trophy mdi-36px align-self-end mx-3 mb-1"></i>
                             <div>
-                                <div>{{$achievement->achievementName}}</div>
-                                <div>Achievement description</div>
+                                <div>{{$achievement->name}}</div>
+                                <div>{{$achievement_data->firstWhere('m_Name', $achievement->name)['description']}}</div>
                             </div>
                         </div>
-                        <div>Trophy amount: {{$achievement_data->where('m_Name', $achievement->achievementName)->first()['reward']}}</div>
+                        <div class="align-self-center">
+                            <i class="icons mdi mdi-trophy-outline"></i>
+                            <span class="fs-4">{{$achievement_data->firstWhere('m_Name', $achievement->name)['reward']}}</span>
+                        </div>
                     </div>
                 </div>
             @empty

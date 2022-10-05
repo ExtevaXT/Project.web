@@ -9,7 +9,7 @@ use App\Models\AccountNotification;
 use App\Models\Character;
 use App\Models\Character_personal_storage;
 use App\Models\Friend;
-use App\Models\PlayerAchievement;
+use App\Models\CharacterAchievement;
 use Discord\Http\Http;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\DiscordBotMessage;
@@ -56,6 +56,9 @@ class UserController extends Controller
         $character = Character::all()->where('account', $name)->first();
         //Items for inventory
         $items = collect();
+
+        $achievements = [];
+        $achievement_data = [];
         if($character!=null) {
             $character_personal_storage = Character_personal_storage::all()->where('character', $character['name']);
             //Logic from unity
@@ -74,25 +77,53 @@ class UserController extends Controller
             foreach ($character_personal_storage as $row){
                 $items->put($row->slot, $row);
             }
-
+            //Achievements
+            $achievements = CharacterAchievement::all()->where('character', $character->name);
+            $files = glob(resource_path().'/assets/achievements/*.*', GLOB_BRACE);
+            $achievement_data = collect([]);
+            foreach($files as $file) {
+                $achievement_data->push(Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour']);
+            }
         }
-        //Achievements
-        $player_achievements = PlayerAchievement::all()->where('character', $character->name);
-        $files = glob(resource_path().'/assets/achievements/*.*', GLOB_BRACE);
-        $achievement_data = collect([]);
 
-        foreach($files as $file) {
-            $achievement_data->push(Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour']);
-        }
+
+
+
+
+        // if account friended somebody get his name
+        $account_friend_start = null;
+        if (Friend::all()->firstWhere('account', $account->name)!=null)
+            $account_friend_start = Friend::all()->firstWhere('account', $account->name)->friend;
+        // if account are friend of somebody get his name
+        $account_friend_end = null;
+        if (Friend::all()->firstWhere('friend', $account->name)!=null)
+            $account_friend_end = Friend::all()->firstWhere('friend', $account->name)->account;
+        // if you friended somebody get his name
+        $your_friend_start = null;
+        if (Auth::check() and Friend::all()->firstWhere('account', Auth::user()->name)!=null)
+            $your_friend_start = Friend::all()->firstWhere('account', Auth::user()->name)->friend;
+        // if you are friend of somebody get his name
+        $your_friend_end = null;
+        if (Auth::check() and Friend::all()->firstWhere('friend', Auth::user()->name)!=null)
+            $your_friend_end = Friend::all()->firstWhere('friend', Auth::user()->name)->account;
+
+
 
 
         return view('users.profile', [
             'account' => $account,
             'character' => $character,
             'inventory'=> $items,
-            'achievements' => $player_achievements,
+            'achievements' => $achievements,
             'achievement_data' => $achievement_data,
             'icons' => $item_icons,
+
+
+            //FRIEND HELPERS
+            'account_friend_start' => $account_friend_start,
+            'account_friend_end' => $account_friend_end,
+            'your_friend_start' => $your_friend_start,
+            'your_friend_end' => $your_friend_end
 
         ]);
     }
