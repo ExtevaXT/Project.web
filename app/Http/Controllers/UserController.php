@@ -59,6 +59,7 @@ class UserController extends Controller
 
         $achievements = [];
         $achievement_data = [];
+        $trophies = 0;
         if($character!=null) {
             $character_personal_storage = Character_personal_storage::all()->where('character', $character['name']);
             //Logic from unity
@@ -83,6 +84,9 @@ class UserController extends Controller
             $achievement_data = collect([]);
             foreach($files as $file) {
                 $achievement_data->push(Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour']);
+            }
+            foreach ($achievements as $achievement){
+                $trophies += $achievement->reward;
             }
         }
 
@@ -117,7 +121,7 @@ class UserController extends Controller
             'achievements' => $achievements,
             'achievement_data' => $achievement_data,
             'icons' => $item_icons,
-
+            'trophies' => $trophies,
 
             //FRIEND HELPERS
             'account_friend_start' => $account_friend_start,

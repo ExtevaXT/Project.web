@@ -77,7 +77,11 @@
                         ></div>
                         <div>
                             <div class="fs-2">{{$Auth::user()->name}}</div>
-                            <div class="fs-5">Currency on balance</div>
+                            @if(Character::all()->firstWhere('account', $Auth::user()->name)!=null)
+                            <div class="fs-5">Balance: {{Character::all()->firstWhere('account', $Auth::user()->name)->gold}}₽</div>
+                            @else
+                            <div class="fs-5">Character not created</div>
+                            @endif
                         </div>
                     </div>
                 </div>
@@ -149,19 +153,25 @@
             <div class="m-2 d-flex flex-row prime-panel2">
                 <div class="border-primary  border p-5 me-1 w-25 prime-panel">Prime panel</div>
                 <div class="w-100">
+                    @if(Character::all()->firstWhere('account', $Auth::user()->name)!=null)
                     <div class="border-primary border p-5 h-50 prime-panel-parent">
-                        <div>Some panel</div>
-                        <div>Time</div>
-                        <div>Panel description</div>
+                        <div>Faction <span class="text-uppercase">{{Character::all()->firstWhere('account', $Auth::user()->name)->faction}}</span></div>
+                        <div></div>
                     </div>
+                    @else
+                        <div class="border-primary border p-5 h-50 prime-panel-parent">
+                            <div>Factions</div>
+                            <div>You can join faction in game</div>
+                        </div>
+                    @endif
                     <div class="d-flex flex-row prime-other-panels h-50 prime-panel-parent">
                         <div class="border-primary border p-5 mt-1 w-50 prime-other-panel">
-                            <div>Some panel</div>
-                            <div>Panel description</div>
+                            <div>Discord</div>
+                            <div>https://discord.com/</div>
                         </div>
                         <div class="border-primary  border p-5 mt-1 ms-1 w-50 prime-other-panel">
-                            <div>Some panel</div>
-                            <div>Panel description</div>
+                            <div>Github</div>
+                            <div>https://github.com/ExtevaXT</div>
                         </div>
                     </div>
                 </div>

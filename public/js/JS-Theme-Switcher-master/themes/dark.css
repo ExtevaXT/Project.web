@@ -20,8 +20,27 @@
 .border-primary{
     border-color: white !important;
 }
-*{
-    background-color: #1b1b1b!important;
+body{
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://letragon.ru/assets/visual/front-bg/profile/72.jpg); /*MAX 72*/
+}
+.dropdown-menu, .modal-content{
+    background: #1b1b1b !important;
+}
+.form-control, .form-control:focus, .nav-link.active, .accordion-item{
+    background: transparent !important;
+}
+.btn-outline-primary{
+    border-color: white !important;
+}
+.btn-outline-primary:hover{
+    background-color: white !important;
+    color: #1b1b1b!important;
+}
+option{
+    background-color: #1b1b1b !important;
+}
+*, input::placeholder{
+    /*background-color: #1b1b1b!important;*/
     color: white !important;
 }
 .navbar-light .navbar-toggler-icon {

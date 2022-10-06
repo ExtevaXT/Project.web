@@ -42,6 +42,9 @@ Route::get('/log', [Controller::class, 'log']);
 Route::get('/ranking', function () {
     return view('ranking');
 });
+Route::get('/faction', function () {
+    return view('faction');
+});
 
 //AUCTION
 Route::get('/auction', [LotController::class, 'show']);

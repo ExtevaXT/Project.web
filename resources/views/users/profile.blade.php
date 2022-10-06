@@ -37,8 +37,8 @@
             </div>
         </div>
         <div class="d-flex flex-column py-5 px-2">
-            <div style="font-size: 50px">{{ $account['name'] }}</div>
-            <div>Rating <span class="fw-bold">Prefix</span></div>
+            <div style="font-size: 50px; font-weight: bold">{{ $account['name'] }}</div>
+            <div class="fs-5"><i class="icons mdi mdi-trophy mdi-18px"></i> {{ $trophies }} <span class="fw-bold">Prefix</span></div>
             <div>@if( $character!=null and $character['online']) <span class="text-success">Online</span> @else <span class="text-danger">Not online</span> @endif </div>
             @auth()
                 {{--                TEST CLAUSE                   --}}

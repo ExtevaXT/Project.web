@@ -84,7 +84,7 @@
     @yield('style')
 
 </head>
-<body>
+<body id="bg">
 
 @inject('Auth','\Illuminate\Support\Facades\Auth')
 @inject('Carbon','\Carbon\Carbon')
@@ -129,9 +129,6 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/auction">Auction</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/log">Log</a>
-                            </li>
                             @endauth
                             <li class="nav-item">
                                 <a class="nav-link" href="/guides">Guides</a>
@@ -139,9 +136,7 @@
                             <li class="nav-item">
                                 <a class="nav-link" href="/map">Map</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" data-bs-target="modalContact">Contact</a>
-                            </li>
+
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Theme switcher
@@ -149,10 +144,23 @@
                                 <div class="dropdown-menu theme-switches" aria-labelledby="themeDropdown">
                                     <div data-theme="wireframe" class="switch dropdown-item" id="switch-1">WIREFRAME</div>
                                     <div data-theme="light" class="switch dropdown-item" id="switch-1">LIGHT</div>
-                                    <div data-theme="dark" class="switch dropdown-item" id="switch-4">DARK</div>
+                                    <div data-theme="dark" class="switch dropdown-item" id="switch-4">LETRA</div>
                                 </div>
-
                             </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Other
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                    <li><a class="dropdown-item" href="/faction">Faction</a></li>
+                                    @auth
+                                    <li><a class="dropdown-item" href="/log">Log</a></li>
+                                    @endauth
+
+                                    <li><a class="dropdown-item disabled" data-bs-target="modalContact">Contact</a></li>
+                                </ul>
+                            </li>
+
                         </ul>
 
                     </div>
@@ -362,14 +370,34 @@
     function setTheme(theme) {
         if (theme == 'light') {
             document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/light.css')}}';
+            document.querySelector('body').style.cssText = 'background: white;'
         } else if (theme == 'wireframe') {
             document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/wireframe.css')}}';
+            document.querySelector('body').style.cssText = 'background: white;'
         } else if (theme == 'dark') {
             document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/dark.css')}}';
+            //Experimental
+            // random bg from letra
+            document.querySelector('body').style.cssText = `background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://letragon.ru/assets/visual/front-bg/profile/${Math.floor(Math.random() * 71)+1}.jpg); /*MAX 72*/`;
         }
         localStorage.setItem('style', theme);
     }
 
+</script>
+<script src="{{asset('js/jquery.js')}}"></script>
+<script>
+    $(document).ready(function() {
+        var amountMove = 100;
+        var height = amountMove / $(window).height();
+        var width = amountMove / $(window).width();
+        $("#bg").mousemove(function(e) {
+            var pageX = e.pageX - ($(window).width() / 2);
+            var pageY = e.pageY - ($(window).height() / 2);
+            var newpageX = width * pageX * -1 - 55;
+            var newpageY = height * pageY * -1 - 50;
+            $('#bg').css("background-position", newpageX + "px " + newpageY + "px");
+        });
+    });
 </script>
 <script src="{{asset('js/bootstrap.bundle.js')}}"></script>
 </body>

@@ -4,7 +4,7 @@
 
 @section('title', 'Chat logger')
 @section('style')
-    <link rel="stylesheet" href="{{asset('leaflet/leaflet.css')}} ">
+
 @endsection
 
 @section('content')
