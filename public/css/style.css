@@ -37,7 +37,7 @@ input::placeholder{
 }
 .user-panel-crutch{
     margin-left: -385px;
-    margin-top: 15px;
+    margin-top: 0;
 }
 .pc-panel{
     display: block;

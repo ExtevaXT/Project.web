@@ -147,7 +147,7 @@
                                 <div class="dropdown-menu theme-switches" aria-labelledby="themeDropdown">
                                     <div data-theme="wireframe" class="switch dropdown-item" id="switch-1">WIREFRAME</div>
                                     <div data-theme="light" class="switch dropdown-item" id="switch-1">LIGHT</div>
-                                    <div data-theme="dark" class="switch dropdown-item" id="switch-4">LETRA</div>
+                                    <div data-theme="dark" class="switch dropdown-item" id="switch-4">HANIPAGANDA</div>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -376,27 +376,25 @@
     function setTheme(theme) {
         if (theme == 'light') {
             document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/light.css')}}';
-            document.querySelector('body').style.cssText = 'background: white;'
         } else if (theme == 'wireframe') {
             document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/wireframe.css')}}';
-            document.querySelector('body').style.cssText = 'background: white;'
         } else if (theme == 'dark') {
             document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/dark.css')}}';
-            //Experimental
-            // random bg from letra
-            var styleElem = document.head.appendChild(document.createElement("style"));
-
-            styleElem.innerHTML = `#bg{ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
-                    url(http://letragon.ru/assets/visual/front-bg/profile/${Math.floor(Math.random() * 71)+1}.jpg) no-repeat;
-                    position: fixed; height: 100%; width: 100%;
-                    display: block;
-                    background-size: cover;
-                    z-index: -1;
-                    left: 0;
-                    right: 0;}
-                    `;
-            // document.querySelector('#bg').style.cssText =
+            // //Experimental
+            // // random bg from letra
+            // var styleElem = document.head.appendChild(document.createElement("style"));
             //
+            // styleElem.innerHTML = `#bg{ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+            //         url(http://letragon.ru/assets/visual/front-bg/profile/${Math.floor(Math.random() * 71)+1}.jpg) no-repeat;
+            //         position: fixed; height: 100%; width: 100%;
+            //         display: block;
+            //         background-size: cover;
+            //         z-index: -1;
+            //         left: 0;
+            //         right: 0;}
+            //         `;
+            // // document.querySelector('#bg').style.cssText =
+            // //
 
         }
         localStorage.setItem('style', theme);
@@ -404,51 +402,7 @@
 
 </script>
 <script>
-    // $(document).ready(function() {
-    //     var amountMove = 100;
-    //     var height = amountMove / $(window).height();
-    //     var width = amountMove / $(window).width();
-    //     $("#bg").mousemove(function(e) {
-    //         var pageX = e.pageX - ($(window).width() / 2);
-    //         var pageY = e.pageY - ($(window).height() / 2);
-    //         var newpageX = width * pageX * -1 - 55;
-    //         var newpageY = height * pageY * -1 - 50;
-    //         $('#bg').css("background-position", newpageX + "px " + newpageY + "px");
-    //     });
-    // });
 
-
-
-    // $(document).ready(function() {
-    //     $(".dropdown-toggle").dropdown();
-    // });
-
-    // $(".dropdown-toggle").mouseenter(function(e) {
-    //     e.preventDefault();
-    //     $(this).parent().addClass("show");
-    //     $(this).attr("aria-expanded", "true");
-    //     $(this).next().addClass("show");
-    // }).mouseleave(function(e) {
-    //     e.preventDefault();
-    //     $(this).parent().removeClass("show");
-    //     $(this).attr("aria-expanded", "false");
-    //     $(this).next().removeClass("show");
-    // });
-
-
-
-    // $(function(){
-    //     $('.dropdown-toggle').hover(function() {
-    //             $(this).parent().addClass('show');
-    //             $(this).attr("aria-expanded", "true");
-    //             $(this).next().addClass("show");
-    //         },
-    //         function() {
-    //             $(this).parent().removeClass('show');
-    //             $(this).attr("aria-expanded", "false");
-    //             $(this).next().removeClass("show");
-    //         });
-    // });
 
 
 

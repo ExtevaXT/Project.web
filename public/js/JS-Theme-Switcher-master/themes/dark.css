@@ -20,6 +20,18 @@
 .border-primary{
     border-color: white !important;
 }
+#bg{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/img/bg/march.gif') no-repeat;
+    position: fixed; height: 100%; width: 100%;
+    display: block;
+    filter: blur(15px);
+    transform: scale(1.05);
+    background-size: cover;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
 /*body{*/
 /*    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://letragon.ru/assets/visual/front-bg/profile/72.jpg); !*MAX 72*!*/
 /*}*/

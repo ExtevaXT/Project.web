@@ -12,6 +12,7 @@
 
     <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/javascript/javascript.js'></script>
     <!-- The script above loaded the highlighting for JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
 @endsection
 
 @section('content')
