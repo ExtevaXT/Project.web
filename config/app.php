@@ -215,6 +215,7 @@ return [
         'Account' => \App\Models\Account::class,
         'Character' => App\Models\Character::class,
         'Character_personal_storage' => \App\Models\Character_personal_storage::class,
+        'CharacterSkills' => \App\Models\CharacterSkills::class,
         'Lot' => \App\Models\Lot::class,
         'AccountNotification' => \App\Models\AccountNotification::class,
         'Friend' => \App\Models\Friend::class,

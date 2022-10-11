@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3996bdd118ded4c48bd62b57a2ed36c6, type: 3}
+  m_Name: Many Faces
+  m_EditorClassIdentifier: 
+  description: 'Appears the ability to change the name of the character / (account?)
+
+    But
+    each change resets the balance and inventory'
+  requirementLevel: 0
+  requirementCustom: 
+  buff: 
+  debuff: 

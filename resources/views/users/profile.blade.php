@@ -95,18 +95,22 @@
             <a class="nav-link active" data-bs-toggle="tab" href="#profile">{{ $account['name'] }}</a>
         </li>
         @if($Auth::user() !=null and $Auth::user()->name == $account->name)
+            @if($character!=null)
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#inventory">Inventory</a>
         </li>
+            @endif
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#activity">Activity</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#collection">Collection</a>
         </li>
+            @if($character!=null)
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#talents">Talents</a>
         </li>
+            @endif
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#friends">Friends</a>
         </li>
@@ -186,7 +190,7 @@
                                 <div class="text-center">
                                     <model-viewer
                                         alt=""
-                                        src="{{asset('model/soldier.glb')}}"
+{{--                                        src="{{asset('model/soldier.glb')}}"--}}
                                         ar
                                         shadow-intensity="1"
                                         shadow-softness="1"
@@ -236,22 +240,128 @@
                     </div>
                     @endif
                         @if($character!=null)
-                    <div>Perks</div>
-                    <div class="d-grid perk-panel">
-                        @for ($i = 1; $i <= 10; $i++)
-                            <div class="border-primary border p-3">
-                                <div class="d-flex">
-                                    <div class="p-2">Img</div>
-                                    <div class="w-100">
-                                        <div>Some perk</div>
-                                        <div class="progress">
-                                            <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                        </div>
-                                        <div>0 level</div>
+                    <div>Skills</div>
+                    <div class="d-grid skill-panel">
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div class="w-100">
+                                    <div>Vitality</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
+                                    <div>{{$skills->health}} </div>
                                 </div>
                             </div>
-                        @endfor
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div class="w-100">
+                                    <div>Endurance</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div>{{$skills->endurance}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div class="w-100">
+                                    <div>Metabolism</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div>{{$skills->nutrition}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div class="w-100">
+                                    <div>Hydration</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div>{{$skills->hydration}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div class="w-100">
+                                    <div>Strength</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div>{{$skills->weight}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div class="w-100">
+                                    <div>Radioresistance</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div>{{$skills->radiation}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div class="w-100">
+                                    <div>Immunity</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div>{{$skills->biological}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div class="w-100">
+                                    <div>Acclimatisation</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div>{{$skills->thermal}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div class="w-100">
+                                    <div>Intellect</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div>{{$skills->psycho}}</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-primary border p-3">
+                            <div class="d-flex">
+                                <div class="p-2">Img</div>
+                                <div class="w-100">
+                                    <div>Hemostasis</div>
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                    <div>{{$skills->bleeding}}</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                         @endif
 
@@ -279,6 +389,7 @@
 
 
         @if($Auth::user() !=null and $Auth::user()->name == $account->name)
+            @if($character!=null)
         <div class="tab-pane fade" id="inventory">
 
             <div class="d-flex inventory-parent">
@@ -328,6 +439,7 @@
             </div>
 
         </div>
+            @endif
 
 
 
@@ -427,24 +539,26 @@
 
 
         </div>
+        @if($character!=null)
         <div class="tab-pane fade" id="talents">
             <div>Talents</div>
             <div>Talents general description</div>
-            <div>Level 0/1000</div>
+            <div>Level {{$character->level}}/1000</div>
             <div class="d-grid talent-panel">
-                @for ($i = 1; $i <= 10; $i++)
+                @foreach ($talent_data as $talent)
                     <div class="border border-primary p-3">
-                        <div>Some talent <span class="float-end">Rarity</span></div>
-                        <div>Talent description</div>
-                        <div class="text-center border-primary border m-1 p-1">Need 1 level</div>
+                        <div>{{$talent['m_Name']}} <span class="float-end">Rarity</span></div>
+                        <div>{{$talent['description']}}</div>
+                        <div class="text-center border-primary border m-1 p-1">Need {{$talent['requirementLevel']}} level</div>
                     </div>
-                @endfor
 
+                @endforeach
             </div>
 
 
 
         </div>
+            @endif
         <div class="tab-pane fade" id="inventory">
 
         </div>
@@ -492,7 +606,7 @@
                                 <div>
                                     <div>{{$friend->account}}</div>
                                     @if($friend->accepted)
-                                        <div>Message</div>
+{{--                                        <div></div>--}}
                                     @else
                                         <div>
                                             <form method="post" action="{{route('friend_accept')}}">
@@ -512,6 +626,7 @@
 
         </div>
         @endif
+        @if($character!=null)
         <div class="tab-pane fade" id="achievements">
             <div>Achievements</div>
             @forelse($achievements as $achievement)
@@ -533,171 +648,8 @@
             @empty
                 <div>No achievements</div>
             @endforelse
-
-
-
-
-
-
-            <div class="d-none">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="tab" href="#achievements-general">General</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#achievements-progression">Progression</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#achievements-pvp">PVP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#achievements-pve">PVE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#achievements-craft">Crafting</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#achievements-collections">Collections</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#achievements-skills">Skills</a>
-                    </li>
-
-                </ul>
-                <div class="tab-content">
-                    <div class="tab-pane fade show active" id="achievements-general">
-                        <div class="d-flex flex-column my-5">
-                            @for ($i = 1; $i <= 10; $i++)
-                                <div class="border-primary border mb-1 p-3">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex">
-                                            <div class="p-2">Img</div>
-                                            <div>
-                                                <div>Some achievement</div>
-                                                <div>Achievement description</div>
-                                            </div>
-                                        </div>
-                                        <div>Trophy amount</div>
-                                    </div>
-
-                                </div>
-                            @endfor
-                        </div>
-
-                    </div>
-                    <div class="tab-pane fade" id="achievements-progression">
-                        <div class="d-flex flex-column my-5">
-                            @for ($i = 1; $i <= 10; $i++)
-                                <div class="border-primary border mb-1 p-3">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex">
-                                            <div class="p-2">Img</div>
-                                            <div>
-                                                <div>Some achievement</div>
-                                                <div>Achievement description</div>
-                                            </div>
-                                        </div>
-                                        <div>Trophy amount</div>
-                                    </div>
-                                </div>
-                            @endfor
-
-
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="achievements-pvp">
-                        <div class="d-flex flex-column my-5">
-                            @for ($i = 1; $i <= 10; $i++)
-                                <div class="border-primary border mb-1 p-3">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex">
-                                            <div class="p-2">Img</div>
-                                            <div>
-                                                <div>Some achievement</div>
-                                                <div>Achievement description</div>
-                                            </div>
-                                        </div>
-                                        <div>Trophy amount</div>
-                                    </div>
-                                </div>
-                            @endfor
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="achievements-pve">
-                        <div class="d-flex flex-column my-5">
-                            @for ($i = 1; $i <= 10; $i++)
-                                <div class="border-primary border mb-1 p-3">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex">
-                                            <div class="p-2">Img</div>
-                                            <div>
-                                                <div>Some achievement</div>
-                                                <div>Achievement description</div>
-                                            </div>
-                                        </div>
-                                        <div>Trophy amount</div>
-                                    </div>
-                                </div>
-                            @endfor
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="achievements-craft">
-                        <div class="d-flex flex-column my-5">
-                            @for ($i = 1; $i <= 10; $i++)
-                                <div class="border-primary border mb-1 p-3">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex">
-                                            <div class="p-2">Img</div>
-                                            <div>
-                                                <div>Some achievement</div>
-                                                <div>Achievement description</div>
-                                            </div>
-                                        </div>
-                                        <div>Trophy amount</div>
-                                    </div>
-                                </div>
-                            @endfor
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="achievements-collections">
-                        <div class="d-flex flex-column my-5">
-                            @for ($i = 1; $i <= 10; $i++)
-                                <div class="border-primary border mb-1 p-3">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex">
-                                            <div class="p-2">Img</div>
-                                            <div>
-                                                <div>Some achievement</div>
-                                                <div>Achievement description</div>
-                                            </div>
-                                        </div>
-                                        <div>Trophy amount</div>
-                                    </div>
-                                </div>
-                            @endfor
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="achievements-skills">
-                        <div class="d-flex flex-column my-5">
-                            @for ($i = 1; $i <= 10; $i++)
-                                <div class="border-primary border mb-1 p-3">
-                                    <div class="d-flex justify-content-between">
-                                        <div class="d-flex">
-                                            <div class="p-2">Img</div>
-                                            <div>
-                                                <div>Some achievement</div>
-                                                <div>Achievement description</div>
-                                            </div>
-                                        </div>
-                                        <div>Trophy amount</div>
-                                    </div>
-                                </div>
-                            @endfor
-                        </div>
-                    </div>
-                </div>
-            </div>
         </div>
+        @endif
     </div>
 </div>
 

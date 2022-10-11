@@ -3,11 +3,16 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\AuthValidation;
+use App\Http\Requests\Settings\EmailValidation;
 use App\Http\Requests\RegisterValidation;
+use App\Http\Requests\Settings\PasswordValidation;
+use App\Http\Requests\Settings\SettingsValidation;
 use App\Models\Account;
 use App\Models\AccountNotification;
 use App\Models\Character;
 use App\Models\Character_personal_storage;
+use App\Models\CharacterSkills;
+use App\Models\CharacterTalents;
 use App\Models\Friend;
 use App\Models\CharacterAchievement;
 use Discord\Http\Http;
@@ -20,18 +25,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Storage;
-use League\Flysystem\Config;
-use Monolog\Handler\StreamHandler;
-use Monolog\Handler\TelegramBotHandler;
-use NotificationChannels\Discord\Discord;
-use NotificationChannels\Discord\DiscordChannel;
-use NotificationChannels\Discord\DiscordMessage;
-use NotificationChannels\Discord\DiscordServiceProvider;
-use NotificationChannels\Telegram\Telegram;
-use NotificationChannels\Telegram\TelegramChannel;
-use NotificationChannels\Telegram\TelegramUpdates;
-use Symfony\Component\Console\Helper\Table;
-use Monolog\Logger;
+use PharIo\Manifest\Email;
 use Symfony\Component\Yaml\Yaml;
 
 class UserController extends Controller
@@ -39,7 +33,8 @@ class UserController extends Controller
 
     public function test()
     {
-        return view('test');
+       Account::find(Auth::user()->id)->settings(['isNigger' =>'yes']);
+       return Account::find(Auth::user()->id)->settings;
     }
 
     public function profile($name)
@@ -57,9 +52,12 @@ class UserController extends Controller
         //Items for inventory
         $items = collect();
 
-        $achievements = [];
-        $achievement_data = [];
+        $achievements = null;
+        $achievement_data = null;
         $trophies = 0;
+        $skills = null;
+        $talents = null;
+        $talent_data = null;
         if($character!=null) {
             $character_personal_storage = Character_personal_storage::all()->where('character', $character['name']);
             //Logic from unity
@@ -72,7 +70,6 @@ class UserController extends Controller
                     'ammo' => 0,
                     'durability' => 0,
                     'metadata' =>'00000',
-
                 ]);
             }
             foreach ($character_personal_storage as $row){
@@ -88,6 +85,17 @@ class UserController extends Controller
             foreach ($achievements as $achievement){
                 $trophies += $achievement->reward;
             }
+            //Skills always create with character (additional fields for character)
+            $skills = CharacterSkills::all()->firstWhere('character', $character->name);
+
+            //Talents
+            $talents = CharacterTalents::all()->where('character', $character->name);
+            $files = glob(resource_path().'/assets/talents/*.*', GLOB_BRACE);
+            $talent_data = collect([]);
+            foreach($files as $file) {
+                $talent_data->push(Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour']);
+            }
+
         }
 
 
@@ -122,6 +130,9 @@ class UserController extends Controller
             'achievement_data' => $achievement_data,
             'icons' => $item_icons,
             'trophies' => $trophies,
+            'skills' => $skills,
+            'talents' => $talents,
+            'talent_data' => $talent_data,
 
             //FRIEND HELPERS
             'account_friend_start' => $account_friend_start,
@@ -149,6 +160,33 @@ class UserController extends Controller
 
 
 
+
+    //SETTINGS
+    public function settings(SettingsValidation $request)
+    {
+        Account::find(Auth::user()->id)->settings($request->validated());
+        return back()->with(['success'=>true]);
+    }
+    public function email(EmailValidation $request)
+    {
+        $validation = $request->validated();
+        if (Hash::check($validation['password'],Auth::user()->password) and $validation['email'] == Auth::user()->email)
+        {
+            Account::find(Auth::user()->id)->update(['email' => $validation['emailNew']]);
+            return back()->with(['success'=>true]);
+        }
+        return back()->withErrors(['message'=>'Email or password are incorrect']);
+    }
+    public function password(PasswordValidation $request)
+    {
+        $validation = $request->validated();
+        if (Hash::check($validation['passwordOld'],Auth::user()->password))
+        {
+            Account::find(Auth::user()->id)->update(['password' => Hash::make($validation['password'])]);
+            return back()->with(['success'=>true]);
+        }
+        return back()->withErrors(['message'=>'Password is incorrect']);
+    }
 
 
     public function login()

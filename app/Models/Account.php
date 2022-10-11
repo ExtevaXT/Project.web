@@ -16,23 +16,32 @@ class Account extends Authenticatable
 
     protected $table = 'accounts';
     protected $connection = 'sqlite';
+    // User model
+    protected $casts = ["settings" => "array"];
+    public function setting(string $name, $default = null)
+    {
+        if (array_key_exists($name, $this->settings)) {
+            return $this->settings[$name];
+        }
+        return $default;
+    }
+    /**
+     * Update one or more settings and then optionally save the model.
+     *
+     */
+    public function settings(array $revisions, bool $save = true) : self
+    {
+        $this->settings = array_merge($this->settings, $revisions);
+        if ($save) {
+            $this->save();
+        }
+        return $this;
+    }
 
-    public function getAuthPassword()
-    {
-        return strtoupper(hash_pbkdf2('sha1', $this->password, 'at_least_16_byte'.$this->name, 10000, 40));
-    }
-    public function getRememberToken()
-    {
-        return $this->attributes[$this->getRememberTokenName()];
-    }
-    protected $fillable = ['name', 'password','email'];
+
+    protected $fillable = ['name', 'password', 'email'];
     protected $guarded = ['id'];
     public $timestamps = false;
-    /**
-     * The attributes that should be hidden for serialization.
-     *
-     * @var array<int, string>
-     */
     protected $hidden = [
         'password'
     ];

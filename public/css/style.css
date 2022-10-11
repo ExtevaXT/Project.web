@@ -2,6 +2,7 @@
     display: none;
 }
 *{
+    /*font-family:  var(--bs-font-monospace);*/
     color: #0d6efd;
 }
 .mobile-panel{
@@ -35,8 +36,8 @@ input::placeholder{
     width: 400px;
 }
 .user-panel-crutch{
-    margin-left: -300px;
-    margin-top:-50px;
+    margin-left: -385px;
+    margin-top: 15px;
 }
 .pc-panel{
     display: block;

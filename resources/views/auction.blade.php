@@ -5,6 +5,7 @@
 
 @section('title', 'Auction')
 @section('style')
+    <link rel="stylesheet" href="{{ asset('css/Index/style.css')}}">
     <link rel="stylesheet" href="{{ asset('css/Auction/style.css')}}">
     <link rel="stylesheet" href="{{ asset('css/Custom/BlockTable.css')}}">
 @endsection
@@ -13,11 +14,11 @@
     <div class="top-filter">
         <ul class="nav nav-tabs">
             <li class="nav-item"><a class="p-3 nav-link active" data-bs-toggle="tab" href="#all">All lots</a></li>
-            @if($Auth::check() and Character::where('account', $Auth::user()->name)->first()!=null)
+            @if($Auth::check() and $character!=null)
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#my_lots">My lots</a></li>
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#my_bids">My bids</a></li>
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#history">History</a></li>
-                <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="modal" data-bs-target="#lotModal">Create lot</a></li>
+            <li class="nav-item create-lot-tab"><button class="create-lot-tab-btn btn btn-outline-primary p-2 mt-2" data-bs-toggle="modal" data-bs-target="#lotModal">Create lot</button></li>
             @endif
         </ul>
     </div>
@@ -43,7 +44,7 @@
                     @foreach(Lot::all() as $lot)
                         @if(($Carbon::parse($lot->created_at)->addHours($lot->time) > $Carbon::now()) and $lot->bid!=$lot->price )
                         <div class="accordion-item
-                        @if(!$Auth::guest() and Character::where('account', $Auth::user()->name)->first()!=null and $lot->character == Character::where('account', $Auth::user()->name)->first()->name)
+                        @if(!$Auth::guest() and $character!=null and $lot->character == $character->name)
                             bg-opacity-10
                             bg-primary
 
@@ -79,32 +80,35 @@
                                     </div>
                                 </div>
                             </div>
-                            @if(!$Auth::guest() and Character::where('account', $Auth::user()->name)->first()!=null)
+                            @if(!$Auth::guest() and $character!=null)
                             <div id="flush-collapse{{$lot->id}}"
                                  class="accordion-collapse collapse"
                                  aria-labelledby="flush-heading{{$lot->id}}"
                                  data-bs-parent="#accordionFlush">
-                                    <div class="accordion-body d-grid" style="grid-template-columns: repeat(3,1fr); grid-column-gap: 20px">
+                                    <div class="accordion-body d-flex justify-content-between"
 
-                                        @if($lot->character == Character::where('account', $Auth::user()->name)->first()->name)
-                                            <form method="post" action="{{ route('buyout') }}">
+                                        @if($lot->character == $character->name)
+                                            <form class="d-inline" method="post" action="{{ route('buyout') }}">
                                                 @csrf
                                                 <input name="id" type="hidden" value="{{$lot->id}}">
                                                 <button class="btn btn-primary">Remove</button>
                                             </form>
                                         @else
-                                            <form method="post" action="{{ route('bid') }}">
+                                            <form class="form-bid" method="post" action="{{ route('bid') }}">
                                                 @csrf
-                                                <div class="w-50 p-2">Seller: {{$lot->character}}</div>
+                                                <div class="seller">Seller: {{$lot->character}}</div>
                                                 <input name="id" type="hidden" value="{{$lot->id}}">
-                                                <input name="bid" class="form-control" type="number" value="{{$lot->bid}}">
-                                                <button class="btn btn-primary">Place bid</button>
+                                                <div class="d-flex form-bid-child">
+                                                    <input name="bid" class="form-control input-bid" type="number" value="{{$lot->bid}}">
+                                                    <button class="btn btn-primary btn-bid">Bid</button>
+                                                </div>
+
                                             </form>
                                             @if($lot->price!=null)
-                                                <form method="post" action="{{ route('buyout') }}">
+                                                <form class="form-buyout" method="post" action="{{ route('buyout') }}">
                                                     @csrf
                                                     <input name="id" type="hidden" value="{{$lot->id}}">
-                                                    <button class="btn btn-primary">Buyout</button>
+                                                    <button class="btn btn-primary d-inline btn-buyout">Buyout</button>
                                                 </form>
                                             @endif
                                         @endif
@@ -119,7 +123,7 @@
                 </div>
 
             </div>
-            @if($Auth::check() and Character::where('account', $Auth::user()->name)->first()!=null)
+            @if($Auth::check() and $character!=null)
             <div id="my_lots" class="BlockTable tab-pane fade ms-5">
                 <div class="BlockTable-head">
                     <div class="BlockTable-row" style="grid-template-columns: repeat(3,1fr);">
@@ -129,7 +133,7 @@
                     </div>
                 </div>
                 <div class="BlockTable-body accordion accordion-flush" id="accordionFlush1">
-                    @foreach((Lot::all()->where('character', Character::where('account', $Auth::user()->name)->first()->name)) as $lot)
+                    @foreach($my_lots as $lot)
 
                         @if(($Carbon::parse($lot->created_at)->addHours($lot->time) > $Carbon::now()) and $lot->bid!=$lot->price )
                             <div class="accordion-item">
@@ -168,7 +172,7 @@
                                      aria-labelledby="flush-heading1{{$lot->id}}"
                                      data-bs-parent="#accordionFlush1">
                                     <div class="accordion-body d-grid" style="grid-template-columns: repeat(3,1fr); grid-column-gap: 20px">
-                                        @if($lot->character == Character::where('account', $Auth::user()->name)->first()->name)
+                                        @if($lot->character == $character->name)
                                             <form method="post" action="{{ route('buyout') }}">
                                                 @csrf
                                                 <input name="id" type="hidden" value="{{$lot->id}}">
@@ -193,7 +197,7 @@
                     </div>
                 </div>
                 <div class="BlockTable-body accordion accordion-flush" id="accordionFlush2">
-                    @foreach((Lot::all()->where('bidder', Character::where('account', $Auth::user()->name)->first()->name)) as $lot)
+                    @foreach($my_bids as $lot)
 
                         @if(($Carbon::parse($lot->created_at)->addHours($lot->time) > $Carbon::now()) and $lot->bid!=$lot->price and $lot->character != $lot->bidder)
                             <div class="accordion-item">
@@ -242,12 +246,52 @@
                 </div>
 
             </div>
+            <div id="history" class="tab-pane fade ms-5">
+                <table class="table">
+                    <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Item</th>
+                        <th scope="col">Seller</th>
+                        <th scope="col">Bidder</th>
+                        <th scope="col">Bid</th>
+                        <th scope="col">Price</th>
+                        <th scope="col">Created at</th>
+                        <th scope="col">Remove time</th>
+                        <th scope="col">Result</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    @foreach(Lot::where('character', $character->name)->orWhere('bidder',$character->name)->get() as $lot)
+                        <tr>
+                            <td>{{$lot->id}}</td>
+                            <td>{{$lot->item}}</td>
+                            <td>{{$lot->character}}</td>
+                            <td>@if($lot->bidder != $lot->character) {{ $lot->bidder}} @else <span class="text-danger">None</span>  @endif</td>
+                            <td>{{$lot->bid}}</td>
+                            <td>{{$lot->price}}</td>
+                            <td>{{$lot->created_at}}</td>
+                            <td>{{$Carbon::parse($lot->created_at)->addHours($lot->time)}}</td>
+                            @if($lot->bidder != $character->name and $lot->price == $lot->bid)
+                                <td><i class="mdi mdi-check-all"></i></td>
+                            @elseif($lot->bidder != $character->name)
+                                <td><i class="mdi mdi-check"></i></td>
+                            @else
+                                <td><i class="mdi mdi-close"></i></td>
+                            @endif
+                        </tr>
+                    @endforeach
+                    </tbody>
+                </table>
+
+
+
+            </div>
 
 
 
             @endif
     </div>
-    </div>
 
 
 
@@ -255,7 +299,7 @@
 
 
 
-    @if($Auth::check() and Character::where('account', $Auth::user()->name)->first()!=null)
+    @if($Auth::check() and $character!=null)
     <!-- LOT CREATE -->
     <div class="modal fade" id="lotModal" tabindex="-1" role="dialog" aria-labelledby="lotModalLabel" aria-hidden="true">
         <div class="container">
@@ -322,6 +366,10 @@
 
                 let diff = new Date(1000 * document.getElementsByClassName('data-countdown')[i].getAttribute('data-countdown')) - Date.now();
                 let date = new Date(Math.floor(diff));
+                if (matchMedia('only screen and (max-width: 1000px)').matches) {
+                    document.getElementsByClassName('data-countdown')[i].innerHTML = Math.floor(diff/(3600*1000)) + ':' + date.getMinutes() + ':' + date.getSeconds() + ''
+                    // smartphone/iphone... maybe run some small-screen related dom scripting?
+                } else
                 document.getElementsByClassName('data-countdown')[i].innerHTML = Math.floor(diff/(3600*1000)) + ' hours ' + date.getMinutes() + ' minutes ' + date.getSeconds() + ' seconds remaining'
             }
 

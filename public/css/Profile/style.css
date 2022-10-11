@@ -6,7 +6,7 @@
 .info-panel{
     grid-template-columns: repeat(3,1fr); grid-gap: 3px;
 }
-.perk-panel{
+.skill-panel{
     grid-template-columns: repeat(2,1fr); grid-gap: 3px;
 }
 .friend-panel{

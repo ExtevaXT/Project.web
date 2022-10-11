@@ -20,13 +20,23 @@ class LotController extends Controller
 {
     public function show()
     {
+        $character = null;
+        $character_personal_storage = null;
+        $my_lots = null;
+        $my_bids = null;
+
         if(Auth::check() and Character::where('account', Auth::user()->name)->first()!=null)
         {
             $character = Character::all()->where('account', Auth::user()->name)->first();
             $character_personal_storage = Character_personal_storage::all()->where('character', $character['name']);
-            return view('auction', ['character_personal_storage' => $character_personal_storage]);
+            $my_lots = Lot::all()->where('character', $character->name);
+            $my_bids = Lot::all()->where('bidder', $character->name);
         }
-        return view('auction');
+        return view('auction', compact('character',
+            'character_personal_storage',
+            'my_lots',
+            'my_bids'
+        ));
     }
     public function create()
     {

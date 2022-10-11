@@ -20,9 +20,9 @@
 .border-primary{
     border-color: white !important;
 }
-body{
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://letragon.ru/assets/visual/front-bg/profile/72.jpg); /*MAX 72*/
-}
+/*body{*/
+/*    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://letragon.ru/assets/visual/front-bg/profile/72.jpg); !*MAX 72*!*/
+/*}*/
 .dropdown-menu, .modal-content{
     background: #1b1b1b !important;
 }

@@ -45,6 +45,9 @@ Route::get('/ranking', function () {
 Route::get('/faction', function () {
     return view('faction');
 });
+//Route::get('/download', function () {
+//    return response()->download('');
+//});
 
 //AUCTION
 Route::get('/auction', [LotController::class, 'show']);
@@ -58,24 +61,29 @@ Route::get('/notifications', function () {
 });
 
 //USER
-Route::post('/upload', [UserController::class, 'upload'])->name('upload');
+Route::middleware('auth')->group(function() {
+    Route::get('/settings', function () {
+        return view('users.settings');
+    })->name('settings');
+    Route::post('/settings', [UserController::class, 'settings']);
+    Route::post('/upload', [UserController::class, 'upload'])->name('upload');
 
-Route::post('/friend_add', [FriendController::class, 'friendAdd'])->name('friend_add');
-Route::post('/friend_accept', [FriendController::class, 'friendAccept'])->name('friend_accept');
+    Route::post('/friend_add', [FriendController::class, 'friendAdd'])->name('friend_add');
+    Route::post('/friend_accept', [FriendController::class, 'friendAccept'])->name('friend_accept');
 
-Route::get('/logout', [UserController::class, 'logout'])->name('logout');
+    Route::post('/password', [UserController::class, 'password'])->name('password');
+    Route::post('/email', [UserController::class, 'email'])->name('email');
+    Route::get('/logout', [UserController::class, 'logout'])->name('logout');
 
+});
+Route::get('/user/{name}', [UserController::class, 'profile']);
 Route::get('/test', [UserController::class, 'test']);
 
-Route::get('/user/{name}', [UserController::class, 'profile']);
-
-
-Route::get('/login',[UserController::class, 'login'])->name('login');
-Route::post('/login',[UserController::class, 'loginPost']);
+Route::get('/login', [UserController::class, 'login'])->name('login');
+Route::post('/login', [UserController::class, 'loginPost']);
 
 Route::get('/register', [UserController::class, 'register'])->name('register');
 Route::post('/register', [UserController::class, 'registerPost']);
-
 
 
 

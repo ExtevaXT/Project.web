@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="{{ asset('css/Custom/MaterialDesignIcons.min.css')}}">
     <link rel="stylesheet" id="switcher-id" href="">
     <style>
+        .dropdown:hover .dropdown-menu {
+            display: block;
+        }
         {{--body{--}}
         {{--    background: url("{{asset('img/bg/fractals.png')}}");--}}
         {{--    position: absolute;--}}
@@ -84,8 +87,8 @@
     @yield('style')
 
 </head>
-<body id="bg">
-
+<body>
+<div id="bg"></div>
 @inject('Auth','\Illuminate\Support\Facades\Auth')
 @inject('Carbon','\Carbon\Carbon')
 <div class="main-content">
@@ -138,7 +141,7 @@
                             </li>
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Theme switcher
                                 </a>
                                 <div class="dropdown-menu theme-switches" aria-labelledby="themeDropdown">
@@ -167,7 +170,7 @@
                     @auth()
                         <ul class="navbar-nav pc-panel">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle p-0" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle p-0" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="d-flex">
                                         <div class="border border-primary me-3" style="
                                             width: 48px;
@@ -349,13 +352,16 @@
     </div>
 
 </div>
+<script src="{{asset('js/jquery.js')}}"></script>
+<script src="{{asset('js/bootstrap.js')}}"></script>
+
 
 <script>
     let switches = document.getElementsByClassName('switch');
     let style = localStorage.getItem('style');
 
     if (style == null) {
-        setTheme('light');
+        setTheme('wireframe');
     } else {
         setTheme(style);
     }
@@ -378,27 +384,74 @@
             document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/dark.css')}}';
             //Experimental
             // random bg from letra
-            document.querySelector('body').style.cssText = `background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://letragon.ru/assets/visual/front-bg/profile/${Math.floor(Math.random() * 71)+1}.jpg); /*MAX 72*/`;
+            var styleElem = document.head.appendChild(document.createElement("style"));
+
+            styleElem.innerHTML = `#bg{ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
+                    url(http://letragon.ru/assets/visual/front-bg/profile/${Math.floor(Math.random() * 71)+1}.jpg) no-repeat;
+                    position: fixed; height: 100%; width: 100%;
+                    display: block;
+                    background-size: cover;
+                    z-index: -1;
+                    left: 0;
+                    right: 0;}
+                    `;
+            // document.querySelector('#bg').style.cssText =
+            //
+
         }
         localStorage.setItem('style', theme);
     }
 
 </script>
-<script src="{{asset('js/jquery.js')}}"></script>
 <script>
-    $(document).ready(function() {
-        var amountMove = 100;
-        var height = amountMove / $(window).height();
-        var width = amountMove / $(window).width();
-        $("#bg").mousemove(function(e) {
-            var pageX = e.pageX - ($(window).width() / 2);
-            var pageY = e.pageY - ($(window).height() / 2);
-            var newpageX = width * pageX * -1 - 55;
-            var newpageY = height * pageY * -1 - 50;
-            $('#bg').css("background-position", newpageX + "px " + newpageY + "px");
-        });
-    });
+    // $(document).ready(function() {
+    //     var amountMove = 100;
+    //     var height = amountMove / $(window).height();
+    //     var width = amountMove / $(window).width();
+    //     $("#bg").mousemove(function(e) {
+    //         var pageX = e.pageX - ($(window).width() / 2);
+    //         var pageY = e.pageY - ($(window).height() / 2);
+    //         var newpageX = width * pageX * -1 - 55;
+    //         var newpageY = height * pageY * -1 - 50;
+    //         $('#bg').css("background-position", newpageX + "px " + newpageY + "px");
+    //     });
+    // });
+
+
+
+    // $(document).ready(function() {
+    //     $(".dropdown-toggle").dropdown();
+    // });
+
+    // $(".dropdown-toggle").mouseenter(function(e) {
+    //     e.preventDefault();
+    //     $(this).parent().addClass("show");
+    //     $(this).attr("aria-expanded", "true");
+    //     $(this).next().addClass("show");
+    // }).mouseleave(function(e) {
+    //     e.preventDefault();
+    //     $(this).parent().removeClass("show");
+    //     $(this).attr("aria-expanded", "false");
+    //     $(this).next().removeClass("show");
+    // });
+
+
+
+    // $(function(){
+    //     $('.dropdown-toggle').hover(function() {
+    //             $(this).parent().addClass('show');
+    //             $(this).attr("aria-expanded", "true");
+    //             $(this).next().addClass("show");
+    //         },
+    //         function() {
+    //             $(this).parent().removeClass('show');
+    //             $(this).attr("aria-expanded", "false");
+    //             $(this).next().removeClass("show");
+    //         });
+    // });
+
+
+
 </script>
-<script src="{{asset('js/bootstrap.bundle.js')}}"></script>
 </body>
 </html>

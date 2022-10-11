@@ -24,6 +24,7 @@ return new class extends Migration
             $table->boolean('banned')->default(false);
             $table->string('image')->default('user.png');
             $table->string('banner')->nullable();
+            $table->string('settings')->default('{}');
             $table->rememberToken();
         });
     }
