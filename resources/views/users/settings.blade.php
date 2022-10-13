@@ -120,7 +120,7 @@
                         <option value="hanipaganda" @if(Account::find($Auth::user()->id)->setting('styleTheme')=='hanipaganda') selected @endif>HANIPAGANDA</option>
                         <option value="consultant" @if(Account::find($Auth::user()->id)->setting('styleTheme')=='consultant') selected @endif>CONSULTANT</option>
                     </select>
-                    <div>
+                    <div class="mb-2">
                         <input type="radio" class="btn-check" name="styleThemeShow" value="0" id="styleThemeShow1" autocomplete="off"
                         @if(Account::find($Auth::user()->id)->setting('styleThemeShow') == 0) checked @endif>
                         <label class="btn btn-outline-primary w-100 text-start my-1" for="styleThemeShow1">Show theme only in profile for everyone</label>
