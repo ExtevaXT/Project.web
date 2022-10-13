@@ -144,18 +144,21 @@ class UserController extends Controller
     }
     public function upload(Request $request)
     {
+        $user = Account::find(Auth::user()->id);
         if($request['image']){
 //            $filename = $request['image']->getClientOriginalName();
 //            $request->image->storeAs('images',$filename,'public');
 //            Auth()->user()->update(['image'=>$filename]);
-            $user = Account::find(Auth::user()->id);
             //$request->file('image')->store('img/user' ,['disk' => 'public_real'])
             $user->image = Storage::disk('public_real')->put('img/user', $request->file('image'));
-
             $user->save();
-            return back()->with(['success'=> 'Picture uploaded successfully']);
         }
-        return $request;
+        else{
+            $user->image = 'user.png';
+            $user->save();
+        }
+
+        return back()->with(['success'=> 'Picture saved successfully']);
     }
 
 
@@ -164,6 +167,7 @@ class UserController extends Controller
     //SETTINGS
     public function settings(SettingsValidation $request)
     {
+        //return $request->validated();
         Account::find(Auth::user()->id)->settings($request->validated());
         return back()->with(['success'=>true]);
     }
@@ -221,11 +225,12 @@ class UserController extends Controller
             'title'=>'Welcome',
             'value'=>'You registered account',
         ];
+        $validation['image'] ='https://www.gravatar.com/avatar/'. md5($validation['name']).'?d=identicon';
         AccountNotification::create($notification);
         Account::create($validation);
         Notification::route('discord', '1021763702741008435')
             ->notify(new DiscordBotMessage('User '.$validation['name'].' has been registered'));
-        return back()->with(['success'=> 'Registered successfully']);
+        return redirect('/login')->with(['success'=> true]);
     }
 
     public function logout(Request $request)

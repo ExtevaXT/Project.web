@@ -1,0 +1,51 @@
+.border-primary{
+    border-color: white !important;
+}
+.profile-panel-bg{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/img/bg/consultant.gif') no-repeat;
+    background-size: cover;
+}
+#bg{
+    background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/img/bg/consultant.gif') no-repeat;
+    position: fixed; height: 100%; width: 100%;
+    display: block;
+    filter: blur(15px);
+    transform: scale(1.1);
+    background-size: cover;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.dropdown-menu, .modal-content{
+    background: #1b1b1b !important;
+}
+.form-control, .form-control:focus, .nav-link.active, .accordion-item{
+    background: transparent !important;
+}
+.btn-outline-primary{
+    border-color: white !important;
+}
+.btn-outline-primary:hover{
+    background-color: white !important;
+    color: #1b1b1b!important;
+}
+option{
+    background-color: #1b1b1b !important;
+}
+*, input::placeholder{
+    /*background-color: #1b1b1b!important;*/
+    color: white !important;
+}
+.navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+.navbar-toggler{
+    border-color: rgb(255, 255, 255) !important;
+}
+.btn-close {
+    filter: invert(100%);
+    opacity: 1;
+    background-color: transparent !important;
+
+}

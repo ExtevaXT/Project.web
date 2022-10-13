@@ -6,6 +6,7 @@
 @section('style')
     <link rel="stylesheet" href="{{asset('leaflet/leaflet.css')}} ">
     <link rel="stylesheet" href="{{asset('css/Custom/BlockTable.css')}}">
+    <link rel="stylesheet" href="{{asset('css/Index/style.css')}}">
 @endsection
 
 @section('content')
@@ -13,51 +14,53 @@
         <div class="fs-3 p-1 text-center">Player ranking</div>
         <div class="main d-flex">
             <div class="side-filter">
-                <input class="p-1 form-control border-primary" placeholder="Search">
-                <div class="p-3">Level</div>
-                <div class="p-3">Achievements</div>
-                <div class="p-3">Online time</div>
-                <div class="p-3">KDA</div>
+                <input class="p-1 form-control border-primary search" placeholder="Search">
+                <div class="py-2"><a class="nav-link sort" data-sort="level">Level</a></div>
+                <div class="py-2"><a class="nav-link sort" data-sort=achievements">Achievements</a> </div>
+                <div class="py-2"><a class="nav-link sort" data-sort="online">Online time</a></div>
+                <div class="py-2"><a class="nav-link sort" data-sort="kda">KDA</a></div>
 
             </div>
-            <div class="BlockTable ms-5">
-                <div class="BlockTable-body">
-                    @foreach(Character::all() as $player)
+            <div class="BlockTable">
+                <div class="BlockTable-body sort">
+                    @foreach($characters as $player)
                         <div class="BlockTable-row BT-R4" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-html="true" title="" data-bs-original-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
 
                             <div class="BlockTable-data">
                                 <div class="d-flex">
-                                    <div class="border border-primary me-3"
-                                         style="
-                                             width: 64px;
-                                             height: 64px;
-                                             background-size: cover;
-                                             background-position: center;
-                                             filter: blur(0.6px);
-                                             background-image:url('{{ asset(Account::all()->where('name', $player->account)->first()->image)}}')
-                                             "
-                                    ></div>
+                                    @if(Account::all()->where('name', $player->account)->first()->image !='user.png')
+                                        <div class="border border-primary me-3" style="
+                                            width: 64px;
+                                            height: 64px;
+                                            background-size: cover;
+                                            background-position: center;
+                                            filter: blur(0.6px);
+                                            background-image:url('{{ asset(Account::all()->where('name', $player->account)->first()->image)}}')
+                                            "></div>
+                                    @else
+                                        <svg class="me-3" data-jdenticon-value="{{$player->name}}" width="64" height="64"></svg>
+                                    @endif
                                     <div>
-                                        <div>{{$player->name}}</div>
-                                        <div>{{$player->level}} level</div>
+                                        <div class="name">{{$player->name}}</div>
+                                        <div class="level">{{$player->level}} level</div>
                                     </div>
                                 </div>
                             </div>
                             <div class="BlockTable-data">
                                 <div>
-                                    <div>Achievements unlocked</div>
-                                    <div>Trophy amount</div>
+                                    <div class="achievements">Achievements unlocked</div>
+                                    <div class="trophies">Trophy amount</div>
                                 </div>
                             </div>
                             <div class="BlockTable-data">
                                 <div>
-                                    <div>Online time</div>
+                                    <div class="online">Online time</div>
                                     <div>Full online</div>
                                 </div>
                             </div>
                             <div class="BlockTable-data">
                                 <div>
-                                    <div>KDA</div>
+                                    <div class="kda">KDA</div>
                                     <div>Or something</div>
                                 </div>
                             </div>
@@ -71,9 +74,16 @@
         </div>
     @endauth
     <script src="{{asset('js/jquery.js')}}"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $('[data-bs-toggle="tooltip"]').tooltip()
         })
+
+        var options = {
+            valueNames: [ 'name', 'level', 'achievements', 'trophies', 'online', 'kda' ]
+        };
+
+        var userList = new List('users', options);
     </script>
 @endsection

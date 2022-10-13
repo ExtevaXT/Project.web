@@ -39,9 +39,8 @@ Route::get('/map', function () {
     return view('map');
 });
 Route::get('/log', [Controller::class, 'log']);
-Route::get('/ranking', function () {
-    return view('ranking');
-});
+Route::post('/contact', [Controller::class, 'contact'])->name('contact');
+Route::get('/ranking', [Controller::class, 'ranking']);
 Route::get('/faction', function () {
     return view('faction');
 });

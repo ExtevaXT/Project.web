@@ -2,10 +2,14 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Character;
+use App\Notifications\DiscordBotMessage;
+use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Notification;
 
 class Controller extends BaseController
 {
@@ -27,4 +31,19 @@ class Controller extends BaseController
         curl_close($ch);
         return view('chat',['log'=>array_reverse(json_decode($response, true))]);
     }
+
+    public function contact(Request $request)
+    {
+        Notification::route('discord', '1029657585177079838')
+            ->notify(new DiscordBotMessage($request['name'].': '. $request['message']));
+        return back()->with(['success' =>true]);
+    }
+
+    public function ranking(Request $request)
+    {
+        $filter = $request->query('filter');
+        $characters = Character::all()->sortBy($filter, 0, true);
+        return view('ranking', compact('characters'));
+    }
+
 }

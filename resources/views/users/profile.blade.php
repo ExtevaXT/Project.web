@@ -6,6 +6,12 @@
 @section('title', 'Profile page')
 @section('style')
     <link rel="stylesheet" href="{{ asset('css/Profile/style.css')}}">
+    @if($account->setting('styleTheme') and ($account->setting('styleThemeShow') == 0 or $account->setting('styleThemeShow') == 2))
+    <link rel="stylesheet" href="{{asset('js/JS-Theme-Switcher-master/themes/'.$account->setting('styleTheme').'.css')}}">
+    @endif
+    <style>
+        {{$account->setting('styleCSS')}}
+    </style>
 @endsection
 
 @section('content')
@@ -28,12 +34,27 @@
 <div class="">
     <div class="d-flex my-5 top-panel">
         <div class="pe-3">
-            <div class="border border-primary" style="width: 256px; height: 256px"><img style="object-fit: cover; width: 256px; height: 256px" src="{{ asset($account['image'])}}" alt=""></div>
+            @if($account->image !='user.png')
+                <div class="border border-primary" style="
+                    width: 256px;
+                    height: 256px;
+                    background-size: cover;
+                    background-position: center;
+                    filter: blur(0.6px);
+                    background-image:url('{{ asset($Auth::user()->image)}}')
+                    "></div>
+            @else
+                <svg data-jdenticon-value="{{$account->name}}" width="256" height="256"></svg>
+            @endif
             <div class="d-flex">
                 <div class="p-2" data-bs-toggle="modal" data-bs-target="#imageModal">
                     Upload pic
                 </div>
-                <div class="p-2">Upload banner</div>
+                <form action="{{route('upload')}}" method="POST">
+                    @csrf
+                    <button class="p-2 btn" type="submit">Default</button>
+                </form>
+
             </div>
         </div>
         <div class="d-flex flex-column py-5 px-2">

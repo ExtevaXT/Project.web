@@ -24,6 +24,9 @@ class SettingsValidation extends FormRequest
     public function rules()
     {
         return [
+            'styleCSS' => 'nullable',
+            'styleTheme' => 'in:hanipaganda,consultant,null',
+            'styleThemeShow' => 'in:0,1,2',
 
             'profileColor' => 'size:7',
             'profileAchievements' => 'boolean',

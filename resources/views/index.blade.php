@@ -65,16 +65,18 @@
                 </div>
                 <div class="border-primary border w-100 d-flex profile-panel-bg">
                     <div class="d-flex m-3 align-self-end">
-                        <div class="border border-primary me-3 profile-panel-pic"
-                             style="
-                                 width: 128px;
-                                 height: 128px;
-                                 background-size: cover;
-                                 background-position: center;
-                                 filter: blur(0.6px);
-                                 background-image:url('{{ asset($Auth::user()->image)}}')
-                                 "
-                        ></div>
+                        @if($Auth::user()->image !='user.png')
+                            <div class="border border-primary me-3" style="
+                                width: 128px;
+                                height: 128px;
+                                background-size: cover;
+                                background-position: center;
+                                filter: blur(0.6px);
+                                background-image:url('{{ asset($Auth::user()->image)}}')
+                                "></div>
+                        @else
+                            <svg class="me-3" data-jdenticon-value="{{$Auth::user()->name}}" width="128" height="128"></svg>
+                        @endif
                         <div>
                             <div class="fs-2">{{$Auth::user()->name}}</div>
                             @if(Character::all()->firstWhere('account', $Auth::user()->name)!=null)

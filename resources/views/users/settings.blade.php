@@ -10,9 +10,17 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.js'></script>
     <!-- The script above loaded the core editor -->
 
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/mode/javascript/javascript.js'></script>
-    <!-- The script above loaded the highlighting for JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/9000.0.1/prism.min.js"></script>
+    <style>
+        #editor{
+            height: 600px;
+            font-size: 16px;
+        }
+        @media screen and (max-width: 1000px) {
+            #editor{
+                height: 400px;
+            }
+        }
+    </style>
 @endsection
 
 @section('content')
@@ -20,14 +28,15 @@
     @if(session()->has(['success']))
         <div class="alert alert-success">Changes have been saved</div>
     @endif
+
     <div class="main d-flex my-3 gap-2">
-        <ul class="nav nav-pills flex-column d-flex collection-nav gap-2">
+        <ul class="nav nav-pills flex-column d-flex collection-nav gap-2" id="pills-tab">
             <li class="fw-bold">Main</li>
             <li class="nav-item">
                 <a class=" pe-5 nav-link active" data-bs-toggle="tab" href="#security">Security</a>
             </li>
             <li class="nav-item">
-                <a class=" pe-5 nav-link disabled" data-bs-toggle="tab" href="#css">CSS</a>
+                <a class=" pe-5 nav-link" data-bs-toggle="tab" href="#style">Styles</a>
             </li>
             <li class="fw-bold">Customization</li>
             <li class="nav-item">
@@ -101,10 +110,36 @@
 {{--                <button class="btn btn-outline-primary p-2 my-2 w-100">Save changes</button>--}}
 {{--                <div class="code"></div>--}}
 {{--            </div>--}}
+            <div class="tab-pane fade" id="style">
+                <form id="form" action="{{route('settings')}}" method="POST">
+                    @csrf
+                    <button type="submit" class="btn btn-outline-primary p-2 my-2 w-100">Save changes</button>
+                    <select class="form-control my-2 " name="styleTheme">
+                        <option selected disabled>Select theme</option>
+                        <option value="null">None</option>
+                        <option value="hanipaganda" @if(Account::find($Auth::user()->id)->setting('styleTheme')=='hanipaganda') selected @endif>HANIPAGANDA</option>
+                        <option value="consultant" @if(Account::find($Auth::user()->id)->setting('styleTheme')=='consultant') selected @endif>CONSULTANT</option>
+                    </select>
+                    <div>
+                        <input type="radio" class="btn-check" name="styleThemeShow" value="0" id="styleThemeShow1" autocomplete="off"
+                        @if(Account::find($Auth::user()->id)->setting('styleThemeShow') == 0) checked @endif>
+                        <label class="btn btn-outline-primary w-100 text-start my-1" for="styleThemeShow1">Show theme only in profile for everyone</label>
+                        <input type="radio" class="btn-check" name="styleThemeShow" value="1" id="styleThemeShow2" autocomplete="off"
+                        @if(Account::find($Auth::user()->id)->setting('styleThemeShow') == 1) checked @endif>
+                        <label class="btn btn-outline-primary w-100 text-start my-1" for="styleThemeShow2">Show theme for yourself only</label>
+                        <input type="radio" class="btn-check" name="styleThemeShow" value="2" id="styleThemeShow3" autocomplete="off"
+                        @if(Account::find($Auth::user()->id)->setting('styleThemeShow') == 2) checked @endif>
+                        <label class="btn btn-outline-primary w-100 text-start my-1" for="styleThemeShow3">Show theme always</label>
+                    </div>
+                    <input name="styleCSS" type="hidden" value="">
+                    <div id="editor">{{Account::find($Auth::user()->id)->setting('styleCSS')}}</div>
+                </form>
+            </div>
             <div class="tab-pane fade" id="profile">
                 <form action="{{route('settings')}}" method="POST">
                     @csrf
                     <button type="submit" class="btn btn-outline-primary p-2 my-2 w-100">Save changes</button>
+
                     <label for="profileColor" class="form-label">Color picker</label>
                     <div class="d-flex">
                         <input name="profileColor" onchange="colorPreview()" type="color" class="form-control form-control-color" id="profileColor"  title="Choose your color"
@@ -211,4 +246,38 @@
                 document.querySelector('.colorPreview').style.color = document.querySelector('#profileColor').value
             }
         </script>
+        <script src="{{asset('js/jquery.js')}}"></script>
+        <script>
+            $( document ).ready(function() {
+                var editor = ace.edit("editor");
+                editor.setTheme("ace/theme/tomorrow_night");
+                if(document.getElementById('switcher-id').href == '{{asset('js/JS-Theme-Switcher-master/themes/light.css')}}' ||
+                    document.getElementById('switcher-id').href == '{{asset('js/JS-Theme-Switcher-master/themes/wireframe.css')}}'){
+                    editor.setTheme("ace/theme/crimson_editor");
+                }
+                editor.session.setMode("ace/mode/css");
+            });
+            $('#form').submit(function(){
+                document.querySelector('input[name="styleCSS"]').value = editor.getSession().getValue();
+                return true;
+            });
+
+
+
+            $(function() {
+
+                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+                    localStorage.setItem('lastTab', $(this).attr('href'));
+                });
+                var lastTab = localStorage.getItem('lastTab');
+
+                if (lastTab) {
+                    $('[href="' + lastTab + '"]').tab('show');
+                }
+
+            });
+
+
+        </script>
+
 @endsection

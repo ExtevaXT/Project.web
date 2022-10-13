@@ -1,4 +1,5 @@
-
+@inject('Auth','\Illuminate\Support\Facades\Auth')
+@inject('Carbon','\Carbon\Carbon')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,18 +10,18 @@
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <link rel="stylesheet" href="{{ asset('css/Custom/MaterialDesignIcons.min.css')}}">
     <link rel="stylesheet" id="switcher-id" href="">
+    @if($Auth::check() and Account::find($Auth::user()->id)->setting('styleTheme') and
+(Account::find($Auth::user()->id)->setting('styleThemeShow') == 1 or Account::find($Auth::user()->id)->setting('styleThemeShow') == 2))
+        <link rel="stylesheet" href="{{asset('js/JS-Theme-Switcher-master/themes/'.Account::find($Auth::user()->id)->setting('styleTheme').'.css')}}">
+    @endif
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.11.2/ace.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.2.0/dist/jdenticon.min.js" async
+            integrity="sha384-yBhgDqxM50qJV5JPdayci8wCfooqvhFYbIKhv0hTtLvfeeyJMJCscRfFNKIxt43M" crossorigin="anonymous">
+    </script>
     <style>
         .dropdown:hover .dropdown-menu {
             display: block;
         }
-        {{--body{--}}
-        {{--    background: url("{{asset('img/bg/fractals.png')}}");--}}
-        {{--    position: absolute;--}}
-        {{--    width: 100%;--}}
-        {{--    height: 100%;--}}
-        {{--    z-index: -100;--}}
-        {{--}--}}
-
         .mdi::before {
             font-size: 24px;
             line-height: 14px;
@@ -89,9 +90,8 @@
 </head>
 <body>
 <div id="bg"></div>
-@inject('Auth','\Illuminate\Support\Facades\Auth')
-@inject('Carbon','\Carbon\Carbon')
 <div class="main-content">
+
             <nav class="navbar navbar-expand-lg navbar-light">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -123,7 +123,7 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="mobile-panel">
-                                <a class="navbar-brand" href="#">Project.web</a>
+                                <a class="navbar-brand" href="/">Project.web</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link active" href="/">Index</a>
@@ -146,8 +146,8 @@
                                 </a>
                                 <div class="dropdown-menu theme-switches" aria-labelledby="themeDropdown">
                                     <div data-theme="wireframe" class="switch dropdown-item" id="switch-1">WIREFRAME</div>
-                                    <div data-theme="light" class="switch dropdown-item" id="switch-1">LIGHT</div>
-                                    <div data-theme="dark" class="switch dropdown-item" id="switch-4">HANIPAGANDA</div>
+                                    <div data-theme="light" class="switch dropdown-item" id="switch-2">LIGHT</div>
+                                    <div data-theme="dark" class="switch dropdown-item" id="switch-3">DARK</div>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
@@ -160,7 +160,7 @@
                                     <li><a class="dropdown-item" href="/log">Log</a></li>
                                     @endauth
 
-                                    <li><a class="dropdown-item disabled" data-bs-target="modalContact">Contact</a></li>
+                                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
                                 </ul>
                             </li>
 
@@ -172,6 +172,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle p-0" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="d-flex">
+                                        @if($Auth::user()->image !='user.png')
                                         <div class="border border-primary me-3" style="
                                             width: 48px;
                                             height: 48px;
@@ -180,6 +181,10 @@
                                             filter: blur(0.6px);
                                             background-image:url('{{ asset($Auth::user()->image)}}')
                                             "></div>
+                                        @else
+                                            <svg class="me-3" data-jdenticon-value="{{$Auth::user()->name}}" width="48" height="48"></svg>
+                                        @endif
+
                                         <div>
                                             <div>{{$Auth::user()->name}}</div>
                                             <div>Menu ▼</div>
@@ -193,16 +198,18 @@
                                             <div class="user-panel-left">
                                                 <div class="user-panel-profile border border-primary p-3 mb-1">
                                                     <div class="d-flex">
-                                                        <div class="border border-primary me-3"
-                                                             style="
-                                                                 width: 48px;
-                                                                 height: 48px;
-                                                                 background-size: cover;
-                                                                 background-position: center;
-                                                                 filter: blur(0.6px);
-                                                                 background-image:url('{{ asset($Auth::user()->image)}}')
-                                                                 "
-                                                        ></div>
+                                                        @if($Auth::user()->image !='user.png')
+                                                            <div class="border border-primary me-3" style="
+                                                                width: 48px;
+                                                                height: 48px;
+                                                                background-size: cover;
+                                                                background-position: center;
+                                                                filter: blur(0.6px);
+                                                                background-image:url('{{ asset($Auth::user()->image)}}')
+                                                                "></div>
+                                                        @else
+                                                            <svg class="me-3" data-jdenticon-value="{{$Auth::user()->name}}" width="48" height="48"></svg>
+                                                        @endif
                                                         <div>
                                                             <div>{{$Auth::user()->name}}</div>
                                                             <div>0 level</div>
@@ -350,13 +357,36 @@
             </div>
         </div>
     </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="container">
+        <div class="modal-dialog contact-panel modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
 
+                    <h5 class="modal-title text-center" id="authModalLabel">Contact</h5>
+
+                </div>
+                <div class="modal-body">
+                    <form method="post" action="{{ route('contact') }}" class="d-flex flex-column">
+                        @csrf
+                        <input name="name" class="my-1 p-2 border border-primary form-control" type="text" placeholder="Name" required>
+                        <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                        <input class="my-1 p-2 btn-outline-primary btn" type="submit" value="Submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
 <script src="{{asset('js/jquery.js')}}"></script>
-<script src="{{asset('js/bootstrap.js')}}"></script>
+<script src="{{asset('js/bootstrap.bundle.js')}}"></script>
 
 
 <script>
+    if(document.querySelector('#editor'))
+        var editor = ace.edit("editor");
     let switches = document.getElementsByClassName('switch');
     let style = localStorage.getItem('style');
 
@@ -376,35 +406,16 @@
     function setTheme(theme) {
         if (theme == 'light') {
             document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/light.css')}}';
+            if(typeof editor !=='undefined') editor.setTheme("ace/theme/crimson_editor");
         } else if (theme == 'wireframe') {
             document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/wireframe.css')}}';
+            if(typeof editor !=='undefined') editor.setTheme("ace/theme/crimson_editor");
         } else if (theme == 'dark') {
             document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/dark.css')}}';
-            // //Experimental
-            // // random bg from letra
-            // var styleElem = document.head.appendChild(document.createElement("style"));
-            //
-            // styleElem.innerHTML = `#bg{ background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),
-            //         url(http://letragon.ru/assets/visual/front-bg/profile/${Math.floor(Math.random() * 71)+1}.jpg) no-repeat;
-            //         position: fixed; height: 100%; width: 100%;
-            //         display: block;
-            //         background-size: cover;
-            //         z-index: -1;
-            //         left: 0;
-            //         right: 0;}
-            //         `;
-            // // document.querySelector('#bg').style.cssText =
-            // //
-
+            if(typeof editor !=='undefined') editor.setTheme("ace/theme/tomorrow_night");
         }
-        localStorage.setItem('style', theme);
+            localStorage.setItem('style', theme);
     }
-
-</script>
-<script>
-
-
-
 
 </script>
 </body>
