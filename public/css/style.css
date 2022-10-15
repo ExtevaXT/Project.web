@@ -5,6 +5,12 @@
     /*font-family:  var(--bs-font-monospace);*/
     color: #0d6efd;
 }
+.alert li{
+    color: initial !important;
+}
+ul{
+    list-style-type: none;
+}
 .mobile-panel{
     display: none!important;
 }

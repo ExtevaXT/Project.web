@@ -5,10 +5,14 @@ use App\Http\Controllers\FriendController;
 use App\Http\Controllers\GuideController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LotController;
+use Carbon\Carbon;
 use GrahamCampbell\GitHub\Facades\GitHub;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Str;
 use NotificationChannels\Telegram\TelegramUpdates;
+use Illuminate\Http\Request;
 
 /*
 |--------------------------------------------------------------------------
@@ -55,12 +59,14 @@ Route::post('/lot', [LotController::class, 'createPost']);
 
 Route::post('/bid', [LotController::class, 'bid'])->name('bid');
 Route::post('/buyout', [LotController::class, 'buyout'])->name('buyout');
-Route::get('/notifications', function () {
-    return view('users.notifications');
-});
+
+
 
 //USER
 Route::middleware('auth')->group(function() {
+    Route::get('/notifications', function () {
+        return view('users.notifications');
+    });
     Route::get('/settings', function () {
         return view('users.settings');
     })->name('settings');
@@ -84,5 +90,13 @@ Route::post('/login', [UserController::class, 'loginPost']);
 Route::get('/register', [UserController::class, 'register'])->name('register');
 Route::post('/register', [UserController::class, 'registerPost']);
 
+//RESET PASSWORD
+Route::get('/forgot', function () {
+    return view('users.password.forgot');
+})->middleware('guest')->name('forgot');
+Route::post('/forgot', [UserController::class, 'forgot'])->middleware('guest');
 
-
+Route::get('/reset', function () {
+    return view('users.password.reset');
+})->middleware('guest')->name('reset');
+Route::post('/reset', [UserController::class, 'reset'])->middleware('guest');

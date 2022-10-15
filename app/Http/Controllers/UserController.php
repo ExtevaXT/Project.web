@@ -16,6 +16,8 @@ use App\Models\CharacterTalents;
 use App\Models\Friend;
 use App\Models\CharacterAchievement;
 use Discord\Http\Http;
+use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
 use App\Notifications\DiscordBotMessage;
 use GrahamCampbell\GitHub\Facades\GitHub;
@@ -24,7 +26,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Str;
 use PharIo\Manifest\Email;
 use Symfony\Component\Yaml\Yaml;
 
@@ -33,8 +37,12 @@ class UserController extends Controller
 
     public function test()
     {
-       Account::find(Auth::user()->id)->settings(['isNigger' =>'yes']);
-       return Account::find(Auth::user()->id)->settings;
+        Mail::raw( "Some link \n if you want to recover password go to link \n if not block this email to not spam", function($message)
+        {
+            $message->from('info@external.su','external.su');
+            $message->to(Auth::user()->email)->subject('PASSWORD RECOVERY');
+        });
+        return 'email sent';
     }
 
     public function profile($name)
@@ -162,8 +170,6 @@ class UserController extends Controller
     }
 
 
-
-
     //SETTINGS
     public function settings(SettingsValidation $request)
     {
@@ -208,7 +214,7 @@ class UserController extends Controller
             $authValidation->session()->regenerate();
             return redirect('/');
         }
-        return 'not success ';
+        return redirect()->route('login')->withErrors(['message'=>'Login or password are incorrect']);
     }
 
     public function register()
@@ -239,4 +245,49 @@ class UserController extends Controller
         $request->session()->regenerate();
         return redirect('/');
     }
+
+    public function forgot(Request $request)
+    {
+        $request->validate(['email' => 'required|email']);
+        $token = Str::random(60);
+        if(DB::table('password_resets')->where('email', $request['email'])!=null)
+            DB::table('password_resets')->where('email', $request['email'])->delete();
+        DB::table('password_resets')->insert([
+            'email' => $request['email'],
+            'token' => $token,
+            'created_at' => Carbon::now()
+        ]);
+        Mail::raw('https://external.su/reset?token='.$token, function($message) use ($request) {
+            $message->to($request['email'])->subject('Password reset');
+        });
+        return back()->with(['success' => true]);
+    }
+
+    public function reset(Request $request)
+    {
+        //Validate input
+        $request->validate([
+            'password' => 'required|confirmed',
+            'token' => 'required'
+        ]);
+        $tokenData = DB::table('password_resets')->where('token', $request['token'])->first();
+        // Redirect the user back to the password reset request form if the token is invalid
+        if (!$tokenData) return back();
+        // If 10 minutes passed not available
+        if(Carbon::parse($tokenData->created_at)->addMinutes(10) < Carbon::now()) return redirect()->route('forgot')->withErrors(['timeout'=>'Reset link is not available, try again']);
+        $user = Account::all()->where('email', $tokenData->email)->first();
+        // Redirect the user back if the email is invalid
+        if (!$user) return back()->withErrors(['email' => 'Email not found']);
+        //Hash and update the new password
+        $user->password = Hash::make($request['password']);
+        $user->save();
+        //Delete the token
+        DB::table('password_resets')->where('token', $request['token'])->delete();
+        Mail::raw('Password has been reset', function($message) use ($user) {
+            $message->to($user->email)->subject('Password reset');
+        });
+        return redirect('/login')->with(['reset'=>true]);
+
+    }
+
 }

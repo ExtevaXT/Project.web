@@ -106,14 +106,18 @@
                     @endguest
                     @auth()
                     <div class="d-flex mobile-panel" data-bs-toggle="modal" data-bs-target="#userModal">
-                        <div class="border border-primary me-3" style="
-                            width: 48px;
-                            height: 48px;
-                            background-size: cover;
-                            background-position: center;
-                            filter: blur(0.6px);
-                            background-image:url('{{ asset($Auth::user()->image)}}')
-                            "></div>
+                        @if($Auth::user()->image !='user.png')
+                            <div class="border border-primary me-3" style="
+                                width: 48px;
+                                height: 48px;
+                                background-size: cover;
+                                background-position: center;
+                                filter: blur(0.6px);
+                                background-image:url('{{ asset($Auth::user()->image)}}')
+                                "></div>
+                        @else
+                            <svg class="me-3" data-jdenticon-value="{{$Auth::user()->name}}" width="48" height="48"></svg>
+                        @endif
                         <div>
                             <div>{{$Auth::user()->name}}</div>
                             <div>Menu ▼</div>
@@ -267,7 +271,7 @@
 
 <!-- Modal FULLSCREEN USER PANEL FOR MOBILE -->
 @auth()
-<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
+<div class="modal fade show hideAfterRendering" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
     <div class="">
         <div class="modal-dialog user-panel-mobile modal-fullscreen" role="document">
             <div class="modal-content">
@@ -280,16 +284,18 @@
                     <div class="user-panel-left">
                         <div class="user-panel-profile border border-primary p-3 mb-1">
                             <div class="d-flex">
-                                <div class="border border-primary me-3"
-                                     style="
-                                         width: 48px;
-                                         height: 48px;
-                                         background-size: cover;
-                                         background-position: center;
-                                         filter: blur(0.6px);
-                                         background-image:url('{{ asset($Auth::user()->image)}}')
-                                         "
-                                ></div>
+                                @if($Auth::user()->image !='user.png')
+                                    <div class="border border-primary me-3" style="
+                                        width: 48px;
+                                        height: 48px;
+                                        background-size: cover;
+                                        background-position: center;
+                                        filter: blur(0.6px);
+                                        background-image:url('{{ asset($Auth::user()->image)}}')
+                                        "></div>
+                                @else
+                                    <svg class="me-3 modal-svg" data-jdenticon-value="{{$Auth::user()->name}}" width="48" height="48"></svg>
+                                @endif
                                 <div>
                                     <div>{{$Auth::user()->name}}</div>
                                     <div>0 level</div>
@@ -351,7 +357,7 @@
                     </form>
                 </div>
                 <div class="modal-footer justify-content-start">
-                    <a class="text-decoration-none" href="">Recover account</a>
+                    <a class="text-decoration-none" href="/forgot">Recover account</a>
                     <a class="text-decoration-none" href="{{route('register')}}">Register</a>
                 </div>
             </div>
@@ -417,6 +423,11 @@
             localStorage.setItem('style', theme);
     }
 
+    $('.hideAfterRendering').each( function () {
+        let el = document.querySelector('.modal-svg');
+        jdenticon.update(el, el.getAttribute('data-jdenticon-value'))
+        $(this).removeClass('show');
+    });
 </script>
 </body>
 </html>
