@@ -96,7 +96,8 @@ Route::get('/forgot', function () {
 })->middleware('guest')->name('forgot');
 Route::post('/forgot', [UserController::class, 'forgot'])->middleware('guest');
 
-Route::get('/reset', function () {
-    return view('users.password.reset');
+Route::get('/reset', function (Request $request) {
+    $token = $request['token'];
+    return view('users.password.reset', compact('token'));
 })->middleware('guest')->name('reset');
 Route::post('/reset', [UserController::class, 'reset'])->middleware('guest');

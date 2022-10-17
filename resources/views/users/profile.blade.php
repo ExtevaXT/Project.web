@@ -615,6 +615,18 @@
                     @foreach(Friend::all()->where('friend', $Auth::user()->name) as $friend)
                     <div class="border-primary border p-3">
                         <div class="d-flex">
+                            @if(Account::all()->where('name', $friend->account)->first()->image !='user.png')
+                                <div class="border border-primary" style="
+                                    width: 256px;
+                                    height: 256px;
+                                    background-size: cover;
+                                    background-position: center;
+                                    filter: blur(0.6px);
+                                    background-image:url('{{ asset($Auth::user()->image)}}')
+                                    "></div>
+                            @else
+                                <svg data-jdenticon-value="{{$friend->account}}" width="256" height="256"></svg>
+                            @endif
                             <div class="border border-primary me-3" style="
                                 width: 64px;
                                 height: 64px;

@@ -30,7 +30,7 @@
                        class="my-1 p-2 border border-primary form-control d-inline-block"
                        type="password"
                        placeholder="Password confirm">
-                <input name="token" type="hidden" value="{{app('request')->input('token')}}">
+                <input name="token" type="hidden" value="{{$token}}">
                 <input class="my-2 w-100 p-2 btn-outline-primary btn" type="submit" value="Submit">
             </form>
         </div>
