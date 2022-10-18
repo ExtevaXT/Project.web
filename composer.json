@@ -7,6 +7,7 @@
     "require": {
         "php": "^8.0.2",
         "ext-curl": "*",
+        "biscolab/laravel-recaptcha": "^5.4",
         "discord-php/http": "^10.1",
         "graham-campbell/github": "^11.0",
         "graham-campbell/manager": "^4.7",

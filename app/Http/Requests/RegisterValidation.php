@@ -24,6 +24,7 @@ class RegisterValidation extends FormRequest
     public function rules()
     {
         return [
+            'g-recaptcha-response' => 'recaptcha',
             'name'=>'required|unique:accounts',
             'email'=>'required|unique:accounts',
             'password'=>'required|confirmed'

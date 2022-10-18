@@ -18,6 +18,32 @@
     <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.2.0/dist/jdenticon.min.js" async
             integrity="sha384-yBhgDqxM50qJV5JPdayci8wCfooqvhFYbIKhv0hTtLvfeeyJMJCscRfFNKIxt43M" crossorigin="anonymous">
     </script>
+    <script
+        src="https://unpkg.com/@andreasremdt/simple-translator@latest/dist/umd/translator.min.js"
+        defer
+    ></script>
+    {!! htmlScriptTagJsApi() !!}
+    <style>
+        .goog-te-banner-frame{
+            display: none;
+        }
+        body{
+            position: initial !important;
+            min-height: 100%;
+            top: 0 !important;
+        }
+        #goog-gt-tt {
+            display: none !important;
+        }
+        #goog-gt-tt:hover {
+            display: none !important;
+        }
+        .goog-text-highlight {
+            background-color: transparent !important;
+            border: none !important;
+            box-shadow: none !important;
+        }
+    </style>
     <style>
         .dropdown:hover .dropdown-menu {
             display: block;
@@ -165,6 +191,7 @@
                                     @endauth
 
                                     <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+                                    <li><a class="dropdown-item"><div id="google_translate_element"></div></a></li>
                                 </ul>
                             </li>
 
@@ -258,7 +285,9 @@
                     @endguest
                 </div>
             </nav>
-
+    @if($errors->has('g-recaptcha-response'))
+        <div class="alert alert-danger">Recaptcha failed</div>
+    @endif
     @section('content')
 
 
@@ -271,7 +300,7 @@
 
 <!-- Modal FULLSCREEN USER PANEL FOR MOBILE -->
 @auth()
-<div class="modal fade show hideAfterRendering" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
+<div class="modal fade" id="userModal" tabindex="-1" role="dialog" aria-labelledby="userModalLabel" aria-hidden="true">
     <div class="">
         <div class="modal-dialog user-panel-mobile modal-fullscreen" role="document">
             <div class="modal-content">
@@ -349,7 +378,7 @@
 
                 </div>
                 <div class="modal-body">
-                    <form method="post" action="{{ route('login') }}" class="d-flex flex-column">
+                    <form id="demo-form" method="post" action="{{ route('login') }}" class="d-flex flex-column">
                         @csrf
                         <input name="name" class="my-1 p-2 border border-primary form-control" type="text" placeholder="Login" required>
                         <input name="password" class="my-1 p-2 border border-primary form-control" type="password" placeholder="Password" required>
@@ -365,23 +394,22 @@
     </div>
 </div>
 <!-- Modal -->
-<div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
-    <div class="container">
-        <div class="modal-dialog contact-panel modal-lg" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
+<div class="modal fade" id="contactModal" tabindex="-2" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog contact-panel modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
 
-                    <h5 class="modal-title text-center" id="authModalLabel">Contact</h5>
+                <h5 class="modal-title text-center" id="authModalLabel">Contact</h5>
 
-                </div>
-                <div class="modal-body">
-                    <form method="post" action="{{ route('contact') }}" class="d-flex flex-column">
-                        @csrf
-                        <input name="name" class="my-1 p-2 border border-primary form-control" type="text" placeholder="Name" required>
-                        <textarea class="form-control" name="message" cols="30" rows="10" placeholder="Message"></textarea>
-                        <input class="my-1 p-2 btn-outline-primary btn" type="submit" value="Submit">
-                    </form>
-                </div>
+            </div>
+            <div class="modal-body">
+                <form method="post" action="{{ route('contact') }}" class="d-flex flex-column">
+                    @csrf
+                    <input name="name" class="my-1 p-2 border border-primary form-control" type="text" placeholder="Name" required>
+                    <textarea class="form-control mb-3" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    {!! htmlFormSnippet() !!}
+                    <input class="my-3 p-2 btn-outline-primary btn" type="submit" value="Submit">
+                </form>
             </div>
         </div>
     </div>
@@ -428,6 +456,27 @@
         jdenticon.update(el, el.getAttribute('data-jdenticon-value'))
         $(this).removeClass('show');
     });
+
+
+</script>
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {pageLanguage: 'en'},
+            'google_translate_element'
+        );
+        document.querySelector('.goog-te-combo').classList.add('form-select');
+        document.querySelector('#google_translate_element').firstChild.lastChild.remove();
+        document.querySelector('#google_translate_element').firstChild.lastChild.remove();
+
+    }
+</script>
+<script src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+<script src="https://www.google.com/recaptcha/api.js"></script>
+<script>
+    function onSubmit(token) {
+        document.getElementById("demo-form").submit();
+    }
 </script>
 </body>
 </html>

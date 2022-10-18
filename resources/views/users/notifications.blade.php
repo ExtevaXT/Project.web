@@ -11,7 +11,7 @@
 @section('content')
 
     <div>All notifications</div>
-    @foreach(Notification::all()->where('account', $Auth::user()->name) as $notification)
+    @foreach(AccountNotification::all()->where('account', $Auth::user()->name) as $notification)
             <div class="border border-primary p-1 mt-1">
                 <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
                 <div>{{$notification->value}}</div>

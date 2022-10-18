@@ -21,6 +21,9 @@ input::placeholder{
     padding: 15px;
     color: #0d6efd!important;
 }
+font{
+    color: inherit;
+}
 .main-content{
     width: 90%;
     margin: auto;

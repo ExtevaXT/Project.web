@@ -248,7 +248,10 @@ class UserController extends Controller
 
     public function forgot(Request $request)
     {
-        $request->validate(['email' => 'required|email']);
+        $request->validate([
+            'email' => 'required|email',
+            'g-recaptcha-response' => 'recaptcha',
+        ]);
         $token = Str::random(60);
         if(DB::table('password_resets')->where('email', $request['email'])!=null)
             DB::table('password_resets')->where('email', $request['email'])->delete();

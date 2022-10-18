@@ -8,25 +8,22 @@
 @endsection
 
 @section('content')
-    <div class="px-5">
+    <div class="">
         @if(session()->has('success'))
             <div class="alert alert-success">Password reset link was sent to email</div>
         @endif
-        @if ($errors->any())
+        @if ($errors->has('email'))
             <div class="alert alert-danger">
-                <ul>
-                    @foreach ($errors->all() as $error)
-                        <li>{{ $error }}</li>
-                    @endforeach
-                </ul>
+                {{$errors->first()}}
             </div>
         @endif
-        <div class="border border-primary p-5">
+        <div class="border border-primary px-5 py-4">
             <form method="POST" action="{{route('forgot')}}">
                 @csrf
-                <div>Type your email to send email with password reset link</div>
-                <input name="email" class="my-1 p-2 border border-primary form-control" type="text" placeholder="Email" required>
-                <input class="my-2 w-100 p-2 btn-outline-primary btn" type="submit" value="Submit">
+                <div class="my-3">Type your email to send email with password reset link</div>
+                <input autocomplete="off" name="email" class="mb-3 p-2 border border-primary form-control" type="text" placeholder="Email" required>
+                {!! htmlFormSnippet() !!}
+                <input class="my-3 w-100 p-2 btn-outline-primary btn" type="submit" value="Submit">
             </form>
         </div>
 

@@ -132,7 +132,7 @@
                         <label class="btn btn-outline-primary w-100 text-start my-1" for="styleThemeShow3">Show theme always</label>
                     </div>
                     <input name="styleCSS" type="hidden" value="">
-                    <div id="editor">{{Account::find($Auth::user()->id)->setting('styleCSS')}}</div>
+                    <div id="editor" class="notranslate">{{Account::find($Auth::user()->id)->setting('styleCSS')}}</div>
                 </form>
             </div>
             <div class="tab-pane fade" id="profile">
@@ -264,19 +264,25 @@
 
 
 
-            $(function() {
+            $(function($){
+                var storage = document.cookie.match(/nav-tabs=(.+?);/);
 
-                $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
-                    localStorage.setItem('lastTab', $(this).attr('href'));
-                });
-                var lastTab = localStorage.getItem('lastTab');
+                // This crutch somehow works
+                if (storage && storage[1] !== "#") {
+                    document.querySelector('a[href="#security"]').classList.remove('active')
+                    document.querySelector('#security').classList.remove('show')
+                    document.querySelector('#security').classList.remove('active')
 
-                if (lastTab) {
-                    $('[href="' + lastTab + '"]').tab('show');
+                    document.querySelector(`a[href="${storage[1]}"]`).classList.add('active')
+                    document.querySelector(`${storage[1]}`).classList.add('show')
+                    document.querySelector(`${storage[1]}`).classList.add('active')
                 }
 
+                $('ul.nav li').on('click', function() {
+                    var id = $(this).find('a').attr('href');
+                    document.cookie = 'nav-tabs=' + id;
+                });
             });
-
 
         </script>
 
