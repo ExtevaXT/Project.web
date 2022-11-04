@@ -46,6 +46,7 @@
             @else
                 <svg data-jdenticon-value="{{$account->name}}" width="256" height="256"></svg>
             @endif
+            @if($Auth::user() !=null and $Auth::user()->name == $account->name)
             <div class="d-flex">
                 <div class="p-2" data-bs-toggle="modal" data-bs-target="#imageModal">
                     Upload pic
@@ -56,6 +57,7 @@
                 </form>
 
             </div>
+            @endif
         </div>
         <div class="d-flex flex-column py-5 px-2">
             <div style="font-size: 50px; font-weight: bold">{{ $account['name'] }}</div>

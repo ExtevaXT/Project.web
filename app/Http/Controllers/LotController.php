@@ -6,14 +6,12 @@ use App\Http\Requests\LotValidation;
 use App\Models\Character;
 use App\Models\Character_personal_storage;
 use App\Models\Lot;
-use Barryvdh\Debugbar\Facades\Debugbar;
 use Illuminate\Auth\Events\Authenticated;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Crypt;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Log;
-use mysql_xdevapi\Table;
 use Symfony\Component\ErrorHandler\Debug;
 
 class LotController extends Controller

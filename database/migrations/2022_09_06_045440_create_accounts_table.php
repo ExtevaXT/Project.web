@@ -19,13 +19,13 @@ return new class extends Migration
             $table->string('name');
             $table->string('email')->nullable();
             $table->string('password');
-            $table->dateTime('created')->default(Carbon::now());
             $table->dateTime('lastLogin')->nullable();
             $table->boolean('banned')->default(false);
             $table->string('image')->default('user.png');
             $table->string('banner')->nullable();
             $table->string('settings')->default('{}');
             $table->rememberToken();
+            $table->timestamps();
         });
     }
 

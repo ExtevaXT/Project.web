@@ -44,7 +44,6 @@ class Account extends Authenticatable
 
     protected $fillable = ['name', 'password', 'email'];
     protected $guarded = ['id'];
-    public $timestamps = false;
     protected $hidden = [
         'password'
     ];

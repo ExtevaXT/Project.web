@@ -4,7 +4,7 @@
 
 
 
-@section('title', 'Main page')
+@section('title', 'Project.web')
 @section('style')
     <link rel="stylesheet" href="{{ asset('css/Index/style.css')}}">
 @endsection
@@ -19,7 +19,7 @@
         </div>
         <div class="border-primary border py-2 px-4 d-inline-block fs-5 mt-3"><a class="text-decoration-none" href="{{route('register')}}">Register account</a></div>
         <br>
-        <div class="border-primary border py-2 px-4 d-inline-block mt-2"><a class="text-decoration-none" href="">Download</a></div>
+        <div class="border-primary border py-2 px-4 d-inline-block mt-2"><a class="text-decoration-none" href="{{route('download')}}">Download</a></div>
     </div>
     <div class="d-flex flex-column m-2">
         <div>Server status</div>
@@ -90,7 +90,7 @@
             </div>
                 <div class="d-flex flex-row m-2 link-panel">
                     <div class="text-center w-50 px-5 py-2 border-primary  border"><a class="text-decoration-none" href="/user/{{$Auth::user()->name}}">Profile</a></div>
-                    <div class="ms-1 w-50 px-5 py-2 border-primary  border text-center">Download</div>
+                    <div class="ms-1 w-50 px-5 py-2 border-primary  border text-center"><a class="text-decoration-none" href="{{route('download')}}">Download</a></div>
                 </div>
 
             <div class="d-flex flex-column m-2">

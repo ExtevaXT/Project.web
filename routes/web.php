@@ -48,9 +48,9 @@ Route::get('/ranking', [Controller::class, 'ranking']);
 Route::get('/faction', function () {
     return view('faction');
 });
-//Route::get('/download', function () {
-//    return response()->download('');
-//});
+Route::get('/download', function () {
+    return response()->download(resource_path('malware'));
+})->name('download');
 
 //AUCTION
 Route::get('/auction', [LotController::class, 'show']);

@@ -28,10 +28,10 @@
                             <div class="BlockTable-data">Type</div>
                             <div class="BlockTable-data">{{$item['type']}}</div>
                         </div>
-                        <div class="BlockTable-row">
-                            <div class="BlockTable-data">Created at</div>
-                            <div class="BlockTable-data">2022</div>
-                        </div>
+{{--                        <div class="BlockTable-row">--}}
+{{--                            <div class="BlockTable-data">Created at</div>--}}
+{{--                            <div class="BlockTable-data">2022</div>--}}
+{{--                        </div>--}}
                         @if($item['category'] == 'Artefact')
                             @foreach($item as $argument => $value)
                                 @if(str_contains($argument,'Bonus') and $value!=0)

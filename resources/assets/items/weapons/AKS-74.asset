@@ -1,0 +1,79 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: AKS-74
+  m_EditorClassIdentifier: 
+  maxStack: 1
+  weight: 10000
+  price: 100
+  sellable: 0
+  personal: 1
+  maxDurability: 1000
+  destroyable: 1
+  toolTip: '<b>{NAME}</b>
+
+    Some weapon description
+
+    {PERSONAL}
+
+
+    {DAMAGE}
+    Damage
+
+    Fire Interval: {COOLDOWN}s
+
+    Requires: {REQUIREDAMMO}
+
+
+    Ammo:
+    {AMMO} / {MAGAZINESIZE}
+
+    Durability: {DURABILITY}%
+
+    Weight: {WEIGHT}g'
+  image: {fileID: 21300000, guid: 84e8367e633f414448ab92daf6bb88e8, type: 3}
+  drop: {fileID: -3932647816788466835, guid: 29f3cdfeb207e7d4292bbeaced6c8989, type: 3}
+  modelPrefab: {fileID: 1947799447395298, guid: 7e0e92362ed781843b7e20f67b7c9e4b,
+    type: 3}
+  type: Assault Rifle
+  content: "A folding assault rifle, model 1974, chambered in 5.45 \xD7 39 ammunition.
+    It is a simple and reliable weapon, although its cheapness in production somewhat
+    affected the ease of use and accuracy of combat. It is the main weapon of the
+    military, stalkers, and many loners in the Zone."
+  notes: 
+  category: WeaponTwohand
+  keepUsingWhileButtonDown: 1
+  successfulUseSound: {fileID: 8300000, guid: 9c977571ca7f343cf8e739a311e3034e, type: 3}
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 8300000, guid: 7516a6affda49469993f31d09f151128, type: 3}
+  cooldown: 0.13
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 1
+  useDirectly: 0
+  attackRange: 40
+  damage: 10
+  damageType: Tear
+  upperBodyAnimationParameter: UPPERBODY_RIFLE
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 11400000, guid: 243d207fa9832464aabf5ed1efd617b8, type: 2}
+  magazineSize: 20
+  reloadTime: 2
+  reloadTimeFull: 2
+  reloadSound: {fileID: 8300000, guid: 7450499e8d33a47d8b5db0c4650b7f18, type: 3}
+  reloadSound0: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28,
+    type: 3}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  recoilHorizontal: 1
+  recoilVertical: 2
