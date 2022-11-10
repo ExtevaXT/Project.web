@@ -23,7 +23,7 @@
     </div>
     <div class="d-flex flex-column m-2">
         <div>Server status</div>
-        <div class="my-1 p-2 border-primary  border">Main server <span class="fw-bold">
+        <div class="my-1 p-2 border-primary  border">Main server @if($status) <span class="text-success">ONLINE</span> @else <span class="text-danger">OFFLINE</span> @endif <span class="fw-bold">
                         {{Character::all()->where('online', true)->count()}}
                         Players</span><div class="progress">
                 <div class="progress-bar"
@@ -65,18 +65,7 @@
                 </div>
                 <div class="border-primary border w-100 d-flex profile-panel-bg">
                     <div class="d-flex m-3 align-self-end">
-                        @if($Auth::user()->image !='user.png')
-                            <div class="border border-primary me-3" style="
-                                width: 128px;
-                                height: 128px;
-                                background-size: cover;
-                                background-position: center;
-                                filter: blur(0.6px);
-                                background-image:url('{{ asset($Auth::user()->image)}}')
-                                "></div>
-                        @else
-                            <svg class="me-3" data-jdenticon-value="{{$Auth::user()->name}}" width="128" height="128"></svg>
-                        @endif
+                        <x-user-profile name="{{$Auth::user()->name}}" size="128" all="0" />
                         <div>
                             <div class="fs-2">{{$Auth::user()->name}}</div>
                             @if(Character::all()->firstWhere('account', $Auth::user()->name)!=null)
@@ -95,7 +84,7 @@
 
             <div class="d-flex flex-column m-2">
                 <div>Server status</div>
-                <div class="my-1 p-2 border-primary  border">Main server <span class="fw-bold">
+                <div class="my-1 p-2 border-primary  border">Main server @if($status) <span class="text-success">ONLINE</span> @else <span class="text-danger">OFFLINE</span> @endif <span class="fw-bold">
                         {{Character::all()->where('online', true)->count()}}
                         Players</span><div class="progress">
                         <div class="progress-bar"

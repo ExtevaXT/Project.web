@@ -28,22 +28,7 @@
 
                             <div class="BlockTable-data">
                                 <div class="d-flex">
-                                    @if(Account::all()->where('name', $player->account)->first()->image !='user.png')
-                                        <div class="border border-primary me-3" style="
-                                            width: 64px;
-                                            height: 64px;
-                                            background-size: cover;
-                                            background-position: center;
-                                            filter: blur(0.6px);
-                                            background-image:url('{{ asset(Account::all()->where('name', $player->account)->first()->image)}}')
-                                            "></div>
-                                    @else
-                                        <svg class="me-3" data-jdenticon-value="{{$player->name}}" width="64" height="64"></svg>
-                                    @endif
-                                    <div>
-                                        <div class="name">{{$player->name}}</div>
-                                        <div class="level">{{$player->level}} level</div>
-                                    </div>
+                                    <x-user-profile name="{{$player->account}}" size="64" />
                                 </div>
                             </div>
                             <div class="BlockTable-data">
@@ -74,16 +59,9 @@
         </div>
     @endauth
     <script src="{{asset('js/jquery.js')}}"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/2.3.1/list.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
             $('[data-bs-toggle="tooltip"]').tooltip()
         })
-
-        var options = {
-            valueNames: [ 'name', 'level', 'achievements', 'trophies', 'online', 'kda' ]
-        };
-
-        var userList = new List('users', options);
     </script>
 @endsection

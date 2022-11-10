@@ -206,19 +206,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle p-0" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="d-flex">
-                                        @if($Auth::user()->image !='user.png')
-                                        <div class="border border-primary me-3" style="
-                                            width: 48px;
-                                            height: 48px;
-                                            background-size: cover;
-                                            background-position: center;
-                                            filter: blur(0.6px);
-                                            background-image:url('{{ asset($Auth::user()->image)}}')
-                                            "></div>
-                                        @else
-                                            <svg class="me-3" data-jdenticon-value="{{$Auth::user()->name}}" width="48" height="48"></svg>
-                                        @endif
-
+                                        <x-user-profile name="{{$Auth::user()->name}}" size="48" all="0" />
                                         <div>
                                             <div>{{$Auth::user()->name}}</div>
                                             <div>Menu ▼</div>
@@ -231,24 +219,7 @@
                                         <div class="d-flex user-panel">
                                             <div class="user-panel-left">
                                                 <div class="user-panel-profile border border-primary p-3 mb-1">
-                                                    <div class="d-flex">
-                                                        @if($Auth::user()->image !='user.png')
-                                                            <div class="border border-primary me-3" style="
-                                                                width: 48px;
-                                                                height: 48px;
-                                                                background-size: cover;
-                                                                background-position: center;
-                                                                filter: blur(0.6px);
-                                                                background-image:url('{{ asset($Auth::user()->image)}}')
-                                                                "></div>
-                                                        @else
-                                                            <svg class="me-3" data-jdenticon-value="{{$Auth::user()->name}}" width="48" height="48"></svg>
-                                                        @endif
-                                                        <div>
-                                                            <div>{{$Auth::user()->name}}</div>
-                                                            <div>0 level</div>
-                                                        </div>
-                                                    </div>
+                                                    <x-user-profile name="{{$Auth::user()->name}}" size="48" />
                                                 </div>
                                                 <div class="user-panel-notifications border border-primary p-3">
                                                     <div>Last notifications <a href="/notifications">All notifications</a></div>

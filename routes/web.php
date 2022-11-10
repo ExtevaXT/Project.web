@@ -26,12 +26,7 @@ use Illuminate\Http\Request;
 */
 
 //MAIN
-Route::get('/', function () {
-    return view('index', [
-        'unity' => GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []),
-        'web' => GitHub::repo()->commits()->all('ExtevaXT','Project.web', []),
-    ]);
-});
+Route::get('/', [Controller::class, 'index']);
 
 Route::get('/guides', function () {
     return view('guides');
@@ -43,6 +38,8 @@ Route::get('/map', function () {
     return view('map');
 });
 Route::get('/log', [Controller::class, 'log']);
+Route::get('/ping', [Controller::class, 'pingDomain']);
+
 Route::post('/contact', [Controller::class, 'contact'])->name('contact');
 Route::get('/ranking', [Controller::class, 'ranking']);
 Route::get('/faction', function () {

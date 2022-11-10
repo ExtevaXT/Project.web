@@ -11,19 +11,15 @@
     @if(session()->has('reset'))
         <div class="alert alert-success">Password has been reset</div>
     @endif
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
+    <div class="register-panel border-primary border ">
+        <div class="fs-3 mb-4">Authorization</div>
+        <div class="mt-2">
+            <form method="post" action="{{ route('login') }}" class="d-flex flex-column">
+                @csrf
+                <x-input name="name" placeholder="Login"/>
+                <x-input name="password" placeholder="Password" type="password"/>
+                <input class="my-1 p-2 btn-outline-primary btn" type="submit" value="Login">
+            </form>
         </div>
-    @endif
-    <form method="post" action="{{ route('login') }}" class="d-flex flex-column">
-        @csrf
-        <input name="name" class="my-1 p-2 border border-primary form-control" type="text" placeholder="Login" required>
-        <input name="password" class="my-1 p-2 border border-primary form-control" type="password" placeholder="Password" required>
-        <input class="my-1 p-2 btn-outline-primary btn" type="submit" value="Login">
-    </form>
+    </div>
 @endsection

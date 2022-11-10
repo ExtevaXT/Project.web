@@ -13,8 +13,8 @@
 
         <div class="">
             <div class="register-panel border-primary border ">
-                <div>Registration</div>
-                <div>Registering, you accept our rules</div>
+                <div class="fs-3">Registration</div>
+                <div class="text-secondary">Registering, you accept our rules</div>
                 <div class="mt-2">
                     <form method="post" action="{{ route('register') }}" class="d-block">
                         @csrf
@@ -31,42 +31,9 @@
                             </div>
                             @enderror
                         </div>
-                        <div class="mb-2">
-                            <input name="email"
-                                   class="@error('email') is-invalid @enderror p-2 border border-primary form-control d-inline-block"
-                                   type="text"
-                                   placeholder="E-Mail"
-                                   autocomplete="off">
-                            @error('email')
-                            <div id="invalidEmail" class="invalid-feedback"
-                            {{$message}}
-                        </div>
-                    @enderror
-                        </div>
-
-                        <div class="mb-2">
-                            <input name="password"
-                                   class="@error('password') is-invalid @enderror p-2 border border-primary form-control d-inline-block"
-                                   type="password"
-                                   placeholder="Password">
-                            @error('password')
-                            <div id="invalidPassword" class="invalid-feedback">
-                                {{$message}}
-                            </div>
-                            @enderror
-                        </div>
-
-                        <div class="mb-2">
-                            <input name="password_confirmation"
-                                   class="@error('password_confirmation') is-invalid @enderror p-2 border border-primary form-control d-inline-block"
-                                   type="password"
-                                   placeholder="Password confirm">
-                            @error('password_confirmation')
-                            <div id="invalidPasswordConfirmation" class="invalid-feedback">
-                                {{$message}}
-                            </div>
-                            @enderror
-                        </div>
+                        <x-input name="email" placeholder="E-Mail"/>
+                        <x-input name="password" placeholder="Password" type="password"/>
+                        <x-input name="password_confirmation" placeholder="Password confirm" type="password"/>
 
                         {!! htmlFormSnippet() !!}
                         <input class="my-2 p-2 btn-outline-primary btn w-100" type="submit" value="Register">

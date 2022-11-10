@@ -32,7 +32,7 @@
 {{--                            <div class="BlockTable-data">Created at</div>--}}
 {{--                            <div class="BlockTable-data">2022</div>--}}
 {{--                        </div>--}}
-                        @if($item['category'] == 'Artefact')
+                        @if(in_array($item['category'],['Artefact','Body','Back','Head']))
                             @foreach($item as $argument => $value)
                                 @if(str_contains($argument,'Bonus') and $value!=0)
                                     <div class="BlockTable-row">
@@ -68,6 +68,17 @@
                             <div class="BlockTable-data">Recoil</div>
                             <div class="BlockTable-data">{{ $item['recoilVertical'] }}</div>
                         </div>
+                        @endif
+                        @if($item['category'] == 'Other')
+                            @foreach($item as $argument => $value)
+                                @if(str_contains($argument,'usage') and $value!=0)
+                                    <div class="BlockTable-row">
+                                        <div class="BlockTable-data">{{$argument}}</div>
+                                        <div class="BlockTable-data">{{$value}}</div>
+                                    </div>
+
+                                @endif
+                            @endforeach
                         @endif
 
 

@@ -4,12 +4,15 @@ namespace App\Http\Controllers;
 
 use App\Models\Character;
 use App\Notifications\DiscordBotMessage;
+use GrahamCampbell\GitHub\Facades\GitHub;
 use Illuminate\Http\Request;
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Notification;
+use PHPUnit\Util\Json;
 
 class Controller extends BaseController
 {
@@ -50,5 +53,24 @@ class Controller extends BaseController
         $characters = Character::all()->sortBy($filter, 0, true);
         return view('ranking', compact('characters'));
     }
+
+    public function index()
+    {
+        // CHECK UDP 91.197.1.60:7777
+        // OR
+        // CHECK PROCESS ON SERVER
+        $status = (bool)shell_exec('pidof ./headless.x86_64');
+        return view('index', [
+            'unity' => GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []),
+            'web' => GitHub::repo()->commits()->all('ExtevaXT','Project.web', []),
+            'status' => $status,
+        ]);
+    }
+
+
+
+
+
+
 
 }

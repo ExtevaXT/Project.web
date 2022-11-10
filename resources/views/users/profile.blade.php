@@ -34,18 +34,7 @@
 <div class="">
     <div class="d-flex my-5 top-panel">
         <div class="pe-3">
-            @if($account->image !='user.png')
-                <div class="border border-primary" style="
-                    width: 256px;
-                    height: 256px;
-                    background-size: cover;
-                    background-position: center;
-                    filter: blur(0.6px);
-                    background-image:url('{{ asset($Auth::user()->image)}}')
-                    "></div>
-            @else
-                <svg data-jdenticon-value="{{$account->name}}" width="256" height="256"></svg>
-            @endif
+            <x-user-profile name="{{$account->name}}" size="256" all="0"/>
             @if($Auth::user() !=null and $Auth::user()->name == $account->name)
             <div class="d-flex">
                 <div class="p-2" data-bs-toggle="modal" data-bs-target="#imageModal">
@@ -592,51 +581,23 @@
                     @foreach(Friend::all()->where('account', $Auth::user()->name) as $friend)
                     <div class="border-primary border p-3">
                         <div class="d-flex">
-                            <div class="border border-primary me-3" style="
-                                width: 64px;
-                                height: 64px;
-                                background-size: cover;
-                                background-position: center;
-                                filter: blur(0.6px);
-                                background-image:url('{{ asset(Account::all()->where('name', $friend->friend)->first()->image)}}')
-                                "></div>
-                            <div>
+                            <x-user-profile name="{{$friend->friend}}" size="64" all="0" />
                             <div>
                                 <div>{{$friend->friend}}</div>
                                 @if($friend->accepted)
-                                    <div>Message</div>
+                                    <div class="text-success">Message</div>
                                 @else
-                                    <div>Not accepted</div>
+                                    <div class="text-danger">Not accepted</div>
                                 @endif
                             </div>
                         </div>
-                    </div>
                     </div>
                     @endforeach
                         {{-- SHOW OTHER FRIEND REQUESTS AND  --}}
                     @foreach(Friend::all()->where('friend', $Auth::user()->name) as $friend)
                     <div class="border-primary border p-3">
                         <div class="d-flex">
-                            @if(Account::all()->where('name', $friend->account)->first()->image !='user.png')
-                                <div class="border border-primary" style="
-                                    width: 256px;
-                                    height: 256px;
-                                    background-size: cover;
-                                    background-position: center;
-                                    filter: blur(0.6px);
-                                    background-image:url('{{ asset($Auth::user()->image)}}')
-                                    "></div>
-                            @else
-                                <svg data-jdenticon-value="{{$friend->account}}" width="256" height="256"></svg>
-                            @endif
-                            <div class="border border-primary me-3" style="
-                                width: 64px;
-                                height: 64px;
-                                background-size: cover;
-                                background-position: center;
-                                filter: blur(0.6px);
-                                background-image:url('{{ asset(Account::all()->where('name', $friend->account)->first()->image)}}')
-                                "></div>
+                            <x-user-profile name="{{$friend->account}}" size="64" all="0" />
                             <div>
                                 <div>
                                     <div>{{$friend->account}}</div>
@@ -647,7 +608,7 @@
                                             <form method="post" action="{{route('friend_accept')}}">
                                                 @csrf
                                                 <input type="hidden" name="friend" value="{{$friend->account}}">
-                                                <button class="btn btn-primary" type="submit">Add to friends</button>
+                                                <button class="btn btn-primary" type="submit">Accept request</button>
                                             </form>
                                         </div>
                                     @endif
