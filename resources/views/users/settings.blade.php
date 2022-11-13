@@ -146,82 +146,30 @@
                                value="{{Account::find($Auth::user()->id)->setting('profileColor')}}">
                         <div class="colorPreview p-1 ms-2 fw-bold" style="color: {{Account::find($Auth::user()->id)->setting('profileColor')}}">{{$Auth::user()->name}}</div>
                     </div>
-                    <div class="form-check form-switch">
-                        <label class="form-check-label" for="profileAchievements">Achievements</label>
-                        <input type='hidden' value='0' name='profileAchievements'>
-                        <input name="profileAchievements" value='1' class="form-check-input" type="checkbox" role="switch" id="profileAchievements"
-                        @if(Account::find($Auth::user()->id)->setting('profileAchievements')) checked @endif>
-                    </div>
-                    <div class="form-check form-switch">
-                        <label class="form-check-label" for="profileTalents">Talents</label>
-                        <input type='hidden' value='0' name='profileTalents'>
-                        <input name="profileTalents" value='1' class="form-check-input" type="checkbox" role="switch" id="profileTalents"
-                        @if(Account::find($Auth::user()->id)->setting('profileTalents')) checked @endif>
-                    </div>
-                    <div class="form-check form-switch">
-                        <label class="form-check-label" for="profileInventory">Inventory</label>
-                        <input type='hidden' value='0' name='profileInventory'>
-                        <input name="profileInventory" value='1' class="form-check-input" type="checkbox" role="switch" id="profileInventory"
-                        @if(Account::find($Auth::user()->id)->setting('profileInventory')) checked @endif>
-                    </div>
-                    <div class="form-check form-switch">
-                        <label class="form-check-label" for="profileFriends">Friends</label>
-                        <input type='hidden' value='0' name='profileFriends'>
-                        <input name="profileFriends" value='1' class="form-check-input" type="checkbox" role="switch" id="profileFriends"
-                        @if(Account::find($Auth::user()->id)->setting('profileFriends')) checked @endif>
-                    </div>
+                    <x-input-switch name="profileAchievements" label="Achievements"/>
+                    <x-input-switch name="profileTalents" label="Talents"/>
+                    <x-input-switch name="profileInventory" label="Inventory"/>
+                    <x-input-switch name="profileFriends" label="Friends"/>
                 </form>
             </div>
             <div class="tab-pane fade" id="index">
                 <form action="{{route('settings')}}" method="POST">
                     @csrf
                     <button type="submit" class="btn btn-outline-primary p-2 my-2 w-100">Save changes</button>
-                    <div class="form-check form-switch">
-                        <label class="form-check-label" for="indexAnnouncements">Announcements</label>
-                        <input class="form-check-input" type="checkbox" role="switch" id="indexAnnouncements"
-                        @if(Account::find($Auth::user()->id)->setting('indexAnnouncements')) checked @endif>
-                    </div>
-                    <div class="form-check form-switch">
-                        <label class="form-check-label" for="indexWeb">Web changes</label>
-                        <input class="form-check-input" type="checkbox" role="switch" id="indexWeb"
-                        @if(Account::find($Auth::user()->id)->setting('indexWeb')) checked @endif>
-                    </div>
-                    <div class="form-check form-switch">
-                        <label class="form-check-label" for="indexUnity">Unity changes</label>
-                        <input class="form-check-input" type="checkbox" role="switch" id="indexUnity"
-                        @if(Account::find($Auth::user()->id)->setting('indexUnity')) checked @endif>
-                    </div>
-                    <div class="form-check form-switch">
-                        <label class="form-check-label" for="indexOnline">Online players</label>
-                        <input class="form-check-input" type="checkbox" role="switch" id="indexOnline"
-                        @if(Account::find($Auth::user()->id)->setting('indexOnline')) checked @endif>
-                    </div>
+                    <x-input-switch name="indexAnnouncements" label="Announcements"/>
+                    <x-input-switch name="indexWeb" label="Web changes"/>
+                    <x-input-switch name="indexUnity" label="Unity changes"/>
+                    <x-input-switch name="indexOnline" label="Online players"/>
                 </form>
             </div>
             <div class="tab-pane fade" id="nav">
                 <form action="{{route('settings')}}" method="POST">
                     @csrf
                     <button type="submit" class="btn btn-outline-primary p-2 my-2 w-100">Save changes</button>
-                    <div class="form-check form-switch">
-                        <label class="form-check-label" for="navAuction">Auction</label>
-                        <input class="form-check-input" type="checkbox" role="switch" id="navAuction"
-                        @if(Account::find($Auth::user()->id)->setting('navAuction')) checked @endif>
-                    </div>
-                    <div class="form-check form-switch">
-                        <label class="form-check-label" for="navGuides">Guides</label>
-                        <input class="form-check-input" type="checkbox" role="switch" id="navGuides"
-                        @if(Account::find($Auth::user()->id)->setting('navGuides')) checked @endif>
-                    </div>
-                    <div class="form-check form-switch">
-                        <label class="form-check-label" for="navMap">Map</label>
-                        <input class="form-check-input" type="checkbox" role="switch" id="navMap"
-                        @if(Account::find($Auth::user()->id)->setting('navMap')) checked @endif>
-                    </div>
-                    <div class="form-check form-switch">
-                        <label class="form-check-label" for="navFaction">Faction</label>
-                        <input class="form-check-input" type="checkbox" role="switch" id="navFaction"
-                        @if(Account::find($Auth::user()->id)->setting('navFaction')) checked @endif>
-                    </div>
+                    <x-input-switch name="navAuction" label="Auction"/>
+                    <x-input-switch name="navGuides" label="Guides"/>
+                    <x-input-switch name="navMap" label="Map"/>
+                    <x-input-switch name="navFaction" label="Faction"/>
                 </form>
             </div>
 
@@ -264,25 +212,25 @@
 
 
 
-            $(function($){
-                var storage = document.cookie.match(/nav-tabs=(.+?);/);
-
-                // This crutch somehow works
-                if (storage && storage[1] !== "#") {
-                    document.querySelector('a[href="#security"]').classList.remove('active')
-                    document.querySelector('#security').classList.remove('show')
-                    document.querySelector('#security').classList.remove('active')
-
-                    document.querySelector(`a[href="${storage[1]}"]`).classList.add('active')
-                    document.querySelector(`${storage[1]}`).classList.add('show')
-                    document.querySelector(`${storage[1]}`).classList.add('active')
-                }
-
-                $('ul.nav li').on('click', function() {
-                    var id = $(this).find('a').attr('href');
-                    document.cookie = 'nav-tabs=' + id;
-                });
-            });
+            // $(function($){
+            //     var storage = document.cookie.match(/nav-tabs=(.+?);/);
+            //
+            //     // This crutch somehow works
+            //     if (storage && storage[1] !== "#") {
+            //         document.querySelector('a[href="#security"]').classList.remove('active')
+            //         document.querySelector('#security').classList.remove('show')
+            //         document.querySelector('#security').classList.remove('active')
+            //
+            //         document.querySelector(`a[href="${storage[1]}"]`).classList.add('active')
+            //         document.querySelector(`${storage[1]}`).classList.add('show')
+            //         document.querySelector(`${storage[1]}`).classList.add('active')
+            //     }
+            //
+            //     $('ul.nav li').on('click', function() {
+            //         var id = $(this).find('a').attr('href');
+            //         document.cookie = 'nav-tabs=' + id;
+            //     });
+            // });
 
         </script>
 

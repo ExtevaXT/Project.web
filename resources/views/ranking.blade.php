@@ -24,8 +24,8 @@
             <div class="BlockTable">
                 <div class="BlockTable-body sort">
                     @foreach($characters as $player)
-                        <div class="BlockTable-row BT-R4" data-bs-placement="left" data-bs-toggle="tooltip" data-bs-html="true" title="" data-bs-original-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>">
-
+                        <div class="BlockTable-row BT-R4">
+{{-- data-bs-placement="left" data-bs-toggle="tooltip" data-bs-html="true" title="" data-bs-original-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>" --}}
                             <div class="BlockTable-data">
                                 <div class="d-flex">
                                     <x-user-profile name="{{$player->account}}" size="64" />

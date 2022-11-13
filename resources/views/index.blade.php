@@ -23,9 +23,11 @@
     </div>
     <div class="d-flex flex-column m-2">
         <div>Server status</div>
-        <div class="my-1 p-2 border-primary  border">Main server @if($status) <span class="text-success">ONLINE</span> @else <span class="text-danger">OFFLINE</span> @endif <span class="fw-bold">
+        <div class="my-1 p-2 border-primary  border">Main server @if($status) <span class="text-success">ONLINE</span> <span class="fw-bold">
                         {{Character::all()->where('online', true)->count()}}
-                        Players</span><div class="progress">
+                        Players</span>
+            @else <span class="text-danger">OFFLINE</span> @endif
+            <div class="progress">
                 <div class="progress-bar"
                      role="progressbar"
                      style="width: {{Character::all()->where('online', true)->count()*10}}%"
@@ -33,6 +35,7 @@
                      aria-valuemin="0"
                      aria-valuemax="10"></div>
             </div>
+
         </div>
     </div>
     @endguest
@@ -84,9 +87,11 @@
 
             <div class="d-flex flex-column m-2">
                 <div>Server status</div>
-                <div class="my-1 p-2 border-primary  border">Main server @if($status) <span class="text-success">ONLINE</span> @else <span class="text-danger">OFFLINE</span> @endif <span class="fw-bold">
+                <div class="my-1 p-2 border-primary  border">Main server @if($status) <span class="text-success">ONLINE</span> <span class="fw-bold">
                         {{Character::all()->where('online', true)->count()}}
-                        Players</span><div class="progress">
+                        Players</span>
+                    @else <span class="text-danger">OFFLINE</span> @endif
+                    <div class="progress">
                         <div class="progress-bar"
                              role="progressbar"
                              style="width: {{Character::all()->where('online', true)->count()*10}}%"

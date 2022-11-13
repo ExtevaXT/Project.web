@@ -191,9 +191,10 @@
                                     <li><a class="dropdown-item" href="/faction">Faction</a></li>
                                     @auth
                                     <li><a class="dropdown-item" href="/log">Log</a></li>
+                                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
                                     @endauth
 
-                                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
+
                                     <li><a class="dropdown-item"><div id="google_translate_element"></div></a></li>
                                 </ul>
                             </li>
@@ -367,6 +368,7 @@
         </div>
     </div>
 </div>
+@auth()
 <!-- Modal -->
 <div class="modal fade" id="contactModal" tabindex="-2" role="dialog" aria-labelledby="contactModalLabel" aria-hidden="true">
     <div class="modal-dialog contact-panel modal-lg" role="document">
@@ -379,7 +381,7 @@
             <div class="modal-body">
                 <form method="post" action="{{ route('contact') }}" class="d-flex flex-column">
                     @csrf
-                    <input name="name" class="my-1 p-2 border border-primary form-control" type="text" placeholder="Name" required>
+                    <input value="{{$Auth::user()->name}}" name="name" class="my-1 p-2 border border-primary form-control" type="text" placeholder="Name">
                     <textarea class="form-control mb-3" name="message" cols="30" rows="10" placeholder="Message"></textarea>
                     {!! htmlFormSnippet() !!}
                     <input class="my-3 p-2 btn-outline-primary btn" type="submit" value="Submit">
@@ -388,6 +390,7 @@
         </div>
     </div>
 </div>
+@endauth
 <script src="{{asset('js/jquery.js')}}"></script>
 <script src="{{asset('js/bootstrap.bundle.js')}}"></script>
 
