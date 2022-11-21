@@ -1,5 +1,3 @@
-@inject('Auth','\Illuminate\Support\Facades\Auth')
-@inject('Carbon','\Carbon\Carbon')
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,9 +11,9 @@
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <link rel="stylesheet" href="{{ asset('css/Custom/MaterialDesignIcons.min.css')}}">
     <link rel="stylesheet" id="switcher-id" href="">
-    @if($Auth::check() and Account::find($Auth::user()->id)->setting('styleTheme') and
-(Account::find($Auth::user()->id)->setting('styleThemeShow') == 1 or Account::find($Auth::user()->id)->setting('styleThemeShow') == 2))
-        <link rel="stylesheet" href="{{asset('js/JS-Theme-Switcher-master/themes/'.Account::find($Auth::user()->id)->setting('styleTheme').'.css')}}">
+    @if(Auth::check() and  UserController::AuthSetting('styleTheme') and
+(UserController::AuthSetting('styleThemeShow') == 1 or UserController::AuthSetting('styleThemeShow') == 2))
+        <link rel="stylesheet" href="{{asset('js/JS-Theme-Switcher-master/themes/'.UserController::AuthSetting('styleTheme').'.css')}}">
     @endif
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.11.2/ace.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.2.0/dist/jdenticon.min.js" async
@@ -27,6 +25,13 @@
     ></script>
     {!! htmlScriptTagJsApi() !!}
     <style>
+        @font-face {
+            font-family: 'Aquire';
+            src: url({{asset('font/Aquire/AquireLight.otf')}});
+        }
+        .navbar-brand{
+            font-family: Aquire, sans-serif;
+        }
         .goog-te-banner-frame{
             display: none;
         }
@@ -135,20 +140,20 @@
                     @endguest
                     @auth()
                     <div class="d-flex mobile-panel" data-bs-toggle="modal" data-bs-target="#userModal">
-                        @if($Auth::user()->image !='user.png')
+                        @if(Auth::user()->image !='user.png')
                             <div class="border border-primary me-3" style="
                                 width: 48px;
                                 height: 48px;
                                 background-size: cover;
                                 background-position: center;
                                 filter: blur(0.6px);
-                                background-image:url('{{ asset($Auth::user()->image)}}')
+                                background-image:url('{{ asset(Auth::user()->image)}}')
                                 "></div>
                         @else
-                            <svg class="me-3" data-jdenticon-value="{{$Auth::user()->name}}" width="48" height="48"></svg>
+                            <svg class="me-3" data-jdenticon-value="{{Auth::user()->name}}" width="48" height="48"></svg>
                         @endif
                         <div>
-                            <div>{{$Auth::user()->name}}</div>
+                            <div>{{Auth::user()->name}}</div>
                             <div>Menu ▼</div>
                         </div>
                     </div>
@@ -207,9 +212,9 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle p-0" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="d-flex">
-                                        <x-user-profile name="{{$Auth::user()->name}}" size="48" all="0" />
+                                        <x-user-profile name="{{Auth::user()->name}}" size="48" all="0" />
                                         <div>
-                                            <div>{{$Auth::user()->name}}</div>
+                                            <div>{{Auth::user()->name}}</div>
                                             <div>Menu ▼</div>
                                         </div>
                                     </div>
@@ -220,13 +225,13 @@
                                         <div class="d-flex user-panel">
                                             <div class="user-panel-left">
                                                 <div class="user-panel-profile border border-primary p-3 mb-1">
-                                                    <x-user-profile name="{{$Auth::user()->name}}" size="48" />
+                                                    <x-user-profile name="{{Auth::user()->name}}" size="48" />
                                                 </div>
                                                 <div class="user-panel-notifications border border-primary p-3">
                                                     <div>Last notifications <a href="/notifications">All notifications</a></div>
                                                     <div class="notification-panel " style="height: 300px">
-                                                        @foreach(AccountNotification::all()->where('account', $Auth::user()->name) as $notification)
-                                                            @if($notification->created_at < $Carbon::now()->addDay())
+                                                        @foreach(AccountNotification::all()->where('account', Auth::user()->name) as $notification)
+                                                            @if($notification->created_at < Carbon::now()->addDay())
                                                                 <div class="border border-primary p-1 mt-1">
                                                                     <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
                                                                     <div>{{$notification->value}}</div>
@@ -239,7 +244,7 @@
                                                 </div>
                                             </div>
                                             <div class="user-panel-nav d-flex flex-column border border-primary p-3 ms-1 text-decoration-none">
-                                                <a class="p-2 text-decoration-none" href="/user/{{$Auth::user()->name}}">Profile</a>
+                                                <a class="p-2 text-decoration-none" href="/user/{{Auth::user()->name}}">Profile</a>
                                                 <a class="p-2 text-decoration-none" href="/settings">Settings</a>
                                                 <a class="p-2 text-decoration-none" href="/ranking">Ranking</a>
                                                 <a class="p-2 text-decoration-none" href="/quests">Quests</a>
@@ -288,26 +293,26 @@
                     <div class="user-panel-left">
                         <div class="user-panel-profile border border-primary p-3 mb-1">
                             <div class="d-flex">
-                                @if($Auth::user()->image !='user.png')
+                                @if(Auth::user()->image !='user.png')
                                     <div class="border border-primary me-3" style="
                                         width: 48px;
                                         height: 48px;
                                         background-size: cover;
                                         background-position: center;
                                         filter: blur(0.6px);
-                                        background-image:url('{{ asset($Auth::user()->image)}}')
+                                        background-image:url('{{ asset(Auth::user()->image)}}')
                                         "></div>
                                 @else
-                                    <svg class="me-3 modal-svg" data-jdenticon-value="{{$Auth::user()->name}}" width="48" height="48"></svg>
+                                    <svg class="me-3 modal-svg" data-jdenticon-value="{{Auth::user()->name}}" width="48" height="48"></svg>
                                 @endif
                                 <div>
-                                    <div>{{$Auth::user()->name}}</div>
+                                    <div>{{Auth::user()->name}}</div>
                                     <div>0 level</div>
                                 </div>
                             </div>
                         </div>
                         <div class="user-panel-nav d-flex flex-column border border-primary p-3 ms-1 text-decoration-none">
-                            <a class="p-2 text-decoration-none" href="/user/{{$Auth::user()->name}}">Profile</a>
+                            <a class="p-2 text-decoration-none" href="/user/{{Auth::user()->name}}">Profile</a>
                             <a class="p-2 text-decoration-none" href="/settings">Settings</a>
                             <a class="p-2 text-decoration-none" href="/ranking">Ranking</a>
                             <a class="p-2 text-decoration-none" href="/quests">Quests</a>
@@ -321,8 +326,8 @@
                     <div class="user-panel-notifications border border-primary p-3 w-100">
                         <div>Last notifications <a href="/notifications">All notifications</a></div>
                         <div class="notification-panel " style="height: 300px">
-                            @foreach(AccountNotification::all()->where('account', $Auth::user()->name) as $notification)
-                                @if($notification->created_at < $Carbon::now()->addDay())
+                            @foreach(AccountNotification::all()->where('account', Auth::user()->name) as $notification)
+                                @if($notification->created_at < Carbon::now()->addDay())
                                     <div class="border border-primary p-1 mt-1">
                                         <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
                                         <div>{{$notification->value}}</div>
@@ -381,7 +386,7 @@
             <div class="modal-body">
                 <form method="post" action="{{ route('contact') }}" class="d-flex flex-column">
                     @csrf
-                    <input value="{{$Auth::user()->name}}" name="name" class="my-1 p-2 border border-primary form-control" type="text" placeholder="Name">
+                    <input value="{{Auth::user()->name}}" name="name" class="my-1 p-2 border border-primary form-control" type="text" placeholder="Name">
                     <textarea class="form-control mb-3" name="message" cols="30" rows="10" placeholder="Message"></textarea>
                     {!! htmlFormSnippet() !!}
                     <input class="my-3 p-2 btn-outline-primary btn" type="submit" value="Submit">
@@ -454,6 +459,11 @@
     function onSubmit(token) {
         document.getElementById("demo-form").submit();
     }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
+<script>
+
 </script>
 </body>
 </html>

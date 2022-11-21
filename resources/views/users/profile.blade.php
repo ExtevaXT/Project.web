@@ -1,4 +1,3 @@
-@inject('Auth','\Illuminate\Support\Facades\Auth')
 @extends('master')
 
 
@@ -35,7 +34,7 @@
     <div class="d-flex my-5 top-panel">
         <div class="pe-3">
             <x-user-profile name="{{$account->name}}" size="256" all="0"/>
-            @if($Auth::user() !=null and $Auth::user()->name == $account->name)
+            @if(Auth::user() !=null and Auth::user()->name == $account->name)
             <div class="d-flex">
                 <div class="p-2" data-bs-toggle="modal" data-bs-target="#imageModal">
                     Upload pic
@@ -55,14 +54,14 @@
             @auth()
                 {{--                TEST CLAUSE                   --}}
                 @if(// Account doesnt have you in friends
-                    $account_friend_start != $Auth::user()->name and
-                    $account_friend_end != $Auth::user()->name and
+                    $account_friend_start != Auth::user()->name and
+                    $account_friend_end != Auth::user()->name and
                     // You doesnt have account in friends
                     $your_friend_start != $account->name and
                     $your_friend_end != $account->name and
 
                     // You cant add yourself
-                    $account->name != $Auth::user()->name
+                    $account->name != Auth::user()->name
 
 
 
@@ -82,9 +81,9 @@
 
 
 
-{{--                @if(($Auth::user()->name != $account->name) and (--}}
-{{--                (Friend::all()->where('friend', $Auth::user()->name)->first() == null) or--}}
-{{--                (Friend::all()->where('account', $Auth::user()->name)->first() == null)))--}}
+{{--                @if((Auth::user()->name != $account->name) and (--}}
+{{--                (Friend::all()->where('friend', Auth::user()->name)->first() == null) or--}}
+{{--                (Friend::all()->where('account', Auth::user()->name)->first() == null)))--}}
 {{--                    <div>--}}
 {{--                        <form method="post" action="{{route('friend_add')}}">--}}
 {{--                            @csrf--}}
@@ -106,7 +105,7 @@
         <li class="nav-item">
             <a class="nav-link active" data-bs-toggle="tab" href="#profile">{{ $account['name'] }}</a>
         </li>
-        @if($Auth::user() !=null and $Auth::user()->name == $account->name)
+        @if(Auth::user() !=null and Auth::user()->name == $account->name)
             @if($character!=null)
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#inventory">Inventory</a>
@@ -171,7 +170,7 @@
                             <div class="fw-light">Remain 1000 exp for {{ $character['level']+1 }} lvl</div>
                         </div>
                         @endif
-                        @if($Auth::user() !=null and $Auth::user()->name == $account->name)
+                        @if(Auth::user() !=null and Auth::user()->name == $account->name)
                             <div class="border-primary border p-2">
                                 <div>Some currency</div>
                                 <div>0</div>
@@ -240,7 +239,7 @@
                         @endfor
                     </div>
                     @endif
-                    @if($Auth::user() !=null and $Auth::user()->name == $account->name)
+                    @if(Auth::user() !=null and Auth::user()->name == $account->name)
                     <div>Collection showcase</div>
                     <div class="d-flex collection-panel">
                         @for ($i = 1; $i <= 4; $i++)
@@ -400,7 +399,7 @@
         </div>
 
 
-        @if($Auth::user() !=null and $Auth::user()->name == $account->name)
+        @if(Auth::user() !=null and Auth::user()->name == $account->name)
             @if($character!=null)
         <div class="tab-pane fade" id="inventory">
 
@@ -578,7 +577,7 @@
             <div>Friends</div>
             <div class="d-grid friend-panel">
                 {{-- SHOW YOUR FRIEND REQUESTS AND ACCEPTED --}}
-                    @foreach(Friend::all()->where('account', $Auth::user()->name) as $friend)
+                    @foreach(Friend::all()->where('account', Auth::user()->name) as $friend)
                     <div class="border-primary border p-3">
                         <div class="d-flex">
                             <x-user-profile name="{{$friend->friend}}" size="64" all="0" />
@@ -594,7 +593,7 @@
                     </div>
                     @endforeach
                         {{-- SHOW OTHER FRIEND REQUESTS AND  --}}
-                    @foreach(Friend::all()->where('friend', $Auth::user()->name) as $friend)
+                    @foreach(Friend::all()->where('friend', Auth::user()->name) as $friend)
                     <div class="border-primary border p-3">
                         <div class="d-flex">
                             <x-user-profile name="{{$friend->account}}" size="64" all="0" />

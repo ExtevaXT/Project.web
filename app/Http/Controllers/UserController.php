@@ -34,15 +34,13 @@ use Symfony\Component\Yaml\Yaml;
 
 class UserController extends Controller
 {
-
+    public static function AuthSetting($setting)
+    {
+        return Account::find(Auth::user()->id)->setting($setting);
+    }
     public function test()
     {
-        Mail::raw( "Some link \n if you want to recover password go to link \n if not block this email to not spam", function($message)
-        {
-            $message->from('info@external.su','external.su');
-            $message->to(Auth::user()->email)->subject('PASSWORD RECOVERY');
-        });
-        return 'email sent';
+        return null;
     }
 
     public function profile($name)

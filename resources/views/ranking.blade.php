@@ -14,11 +14,13 @@
         <div class="fs-3 p-1 text-center">Player ranking</div>
         <div class="main d-flex">
             <div class="side-filter">
-                <input class="p-1 form-control border-primary search" placeholder="Search">
-                <div class="py-2"><a class="nav-link sort" data-sort="level">Level</a></div>
-                <div class="py-2"><a class="nav-link sort" data-sort=achievements">Achievements</a> </div>
-                <div class="py-2"><a class="nav-link sort" data-sort="online">Online time</a></div>
-                <div class="py-2"><a class="nav-link sort" data-sort="kda">KDA</a></div>
+                <form action="/ranking">
+                    <input value="{{ app('request')->input('search') }}" name="search" class="p-1 form-control border-primary search" placeholder="Search" onchange="this.form.submit()">
+                </form>
+                <div class="py-2"><a class="nav-link sort" data-sort="level" href="/ranking?filter=level">Level</a></div>
+                <div class="py-2"><a class="nav-link sort" data-sort=achievements" href="/ranking?filter=achievements">Achievements</a> </div>
+                <div class="py-2"><a class="nav-link sort" data-sort="online" href="/ranking?filter=created_at">Online time</a></div>
+                <div class="py-2"><a class="nav-link sort" data-sort="kda" href="/ranking?filter=kda">KDA</a></div>
 
             </div>
             <div class="BlockTable">
@@ -33,20 +35,20 @@
                             </div>
                             <div class="BlockTable-data">
                                 <div>
-                                    <div class="achievements">Achievements unlocked</div>
-                                    <div class="trophies">Trophy amount</div>
+                                    <div class="achievements">Achievements: {{ $player->achievements }}</div>
+                                    <div class="trophies">Trophies: {{ $player->trophies }}</div>
                                 </div>
                             </div>
                             <div class="BlockTable-data">
                                 <div>
-                                    <div class="online">Online time</div>
-                                    <div>Full online</div>
+                                    <div class="online">Last save: {{$player->online}}</div>
+                                    <div>Joined: {{$player->joined}}</div>
                                 </div>
                             </div>
                             <div class="BlockTable-data">
                                 <div>
-                                    <div class="kda">KDA</div>
-                                    <div>Or something</div>
+                                    <div class="kda">KDA {{$player->kda}}</div>
+                                    <div></div>
                                 </div>
                             </div>
                         </div>

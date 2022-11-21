@@ -2,7 +2,9 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Account;
 use App\Models\Character;
+use App\Models\CharacterAchievement;
 use App\Notifications\DiscordBotMessage;
 use GrahamCampbell\GitHub\Facades\GitHub;
 use Illuminate\Http\Request;
@@ -10,6 +12,7 @@ use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
+use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Notification;
 use PHPUnit\Util\Json;
@@ -50,7 +53,29 @@ class Controller extends BaseController
     public function ranking(Request $request)
     {
         $filter = $request->query('filter');
-        $characters = Character::all()->sortBy($filter, 0, true);
+        $search = $request->query('search');
+        $characters = [];
+        // Helper for accessing filters
+        foreach (Character::all() as $character){
+            $characters[] = (object)[
+                'name' => $character->name,
+                'account' => $character->account,
+                'level' => $character->level,
+                'achievements' => CharacterAchievement::where('character', $character->name)->count(),
+                'trophies' =>  CharacterAchievement::where('character', $character->name)->sum('reward'),
+                'online' => Carbon::parse($character->lastsaved)->format('d M Y'),
+                'joined' => Carbon::parse(Account::firstWhere('name', $character->account)->created_at)->year,
+                'kda' => round(rand(1, 200)/100, 2)
+            ];
+        }
+        $characters = collect($characters)->sortBy($filter, 0, true);
+        // Search
+        if($search!=null){
+            $characters = $characters->filter(function ($item) use ($search) {
+                // replace stristr with your choice of matching function
+                return false !== stristr($item->name, $search);
+            });
+        }
         return view('ranking', compact('characters'));
     }
 

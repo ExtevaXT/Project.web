@@ -1,5 +1,3 @@
-@inject('Auth','\Illuminate\Support\Facades\Auth')
-@inject('Carbon','\Carbon\Carbon')
 @extends('master')
 
 
@@ -14,7 +12,7 @@
     <div class="top-filter">
         <ul class="nav nav-tabs">
             <li class="nav-item"><a class="p-3 nav-link active" data-bs-toggle="tab" href="#all">All lots</a></li>
-            @if($Auth::check() and $character!=null)
+            @if(Auth::check() and $character!=null)
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#my_lots">My lots</a></li>
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#my_bids">My bids</a></li>
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#history">History</a></li>
@@ -42,9 +40,9 @@
                 </div>
                 <div class="BlockTable-body accordion accordion-flush" id="accordionFlush">
                     @foreach(Lot::all() as $lot)
-                        @if(($Carbon::parse($lot->created_at)->addHours($lot->time) > $Carbon::now()) and $lot->bid!=$lot->price )
+                        @if((Carbon::parse($lot->created_at)->addHours($lot->time) > Carbon::now()) and $lot->bid!=$lot->price )
                         <div class="accordion-item
-                        @if(!$Auth::guest() and $character!=null and $lot->character == $character->name)
+                        @if(!Auth::guest() and $character!=null and $lot->character == $character->name)
                             bg-opacity-10
                             bg-primary
 
@@ -62,7 +60,7 @@
                                         <div class="p-4 border border-primary text-center" >Icon</div>
                                         <div class="mx-4 auction-name-count-item">
                                             <h5>{{$lot->item}}</h5>
-                                            <p id="{{$lot->id}}" class="data-countdown" data-countdown="{{$Carbon::parse($lot->created_at)->addHours($lot->time)->timestamp}}">
+                                            <p id="{{$lot->id}}" class="data-countdown" data-countdown="{{Carbon::parse($lot->created_at)->addHours($lot->time)->timestamp}}">
     {{--                                            {{gmdate('H:i:s', Carbon\Carbon::parse($lot->created_at)->addHours($lot->time)->diffInSeconds(\Carbon\Carbon::now()))}}--}}
                                                 0 hours 0 minutes 0 seconds
                                                 remaining</p>
@@ -80,7 +78,7 @@
                                     </div>
                                 </div>
                             </div>
-                            @if(!$Auth::guest() and $character!=null)
+                            @if(!Auth::guest() and $character!=null)
                             <div id="flush-collapse{{$lot->id}}"
                                  class="accordion-collapse collapse"
                                  aria-labelledby="flush-heading{{$lot->id}}"
@@ -123,7 +121,7 @@
                 </div>
 
             </div>
-            @if($Auth::check() and $character!=null)
+            @if(Auth::check() and $character!=null)
             <div id="my_lots" class="BlockTable tab-pane fade ms-5">
                 <div class="BlockTable-head">
                     <div class="BlockTable-row" style="grid-template-columns: repeat(3,1fr);">
@@ -135,7 +133,7 @@
                 <div class="BlockTable-body accordion accordion-flush" id="accordionFlush1">
                     @foreach($my_lots as $lot)
 
-                        @if(($Carbon::parse($lot->created_at)->addHours($lot->time) > $Carbon::now()) and $lot->bid!=$lot->price )
+                        @if((Carbon::parse($lot->created_at)->addHours($lot->time) > Carbon::now()) and $lot->bid!=$lot->price )
                             <div class="accordion-item">
                                 <div class="BlockTable-row accordion-header"
                                      id="flush-heading1{{$lot->id}}"
@@ -150,7 +148,7 @@
                                             <div class="p-4 border border-primary text-center" >Icon</div>
                                             <div class="mx-4 auction-name-count-item">
                                                 <h5>{{$lot->item}}</h5>
-                                                <p id="1{{$lot->id}}" class="data-countdown" data-countdown="{{$Carbon::parse($lot->created_at)->addHours($lot->time)->timestamp}}">
+                                                <p id="1{{$lot->id}}" class="data-countdown" data-countdown="{{Carbon::parse($lot->created_at)->addHours($lot->time)->timestamp}}">
                                                     0 hours 0 minutes 0 seconds
                                                     remaining</p>
                                             </div>
@@ -199,7 +197,7 @@
                 <div class="BlockTable-body accordion accordion-flush" id="accordionFlush2">
                     @foreach($my_bids as $lot)
 
-                        @if(($Carbon::parse($lot->created_at)->addHours($lot->time) > $Carbon::now()) and $lot->bid!=$lot->price and $lot->character != $lot->bidder)
+                        @if((Carbon::parse($lot->created_at)->addHours($lot->time) > Carbon::now()) and $lot->bid!=$lot->price and $lot->character != $lot->bidder)
                             <div class="accordion-item">
                                 <div class="BlockTable-row accordion-header"
                                      id="flush-heading2{{$lot->id}}"
@@ -214,7 +212,7 @@
                                             <div class="p-4 border border-primary text-center" >Icon</div>
                                             <div class="mx-4 auction-name-count-item">
                                                 <h5>{{$lot->item}}</h5>
-                                                <p id="1{{$lot->id}}" class="data-countdown" data-countdown="{{$Carbon::parse($lot->created_at)->addHours($lot->time)->timestamp}}">
+                                                <p id="1{{$lot->id}}" class="data-countdown" data-countdown="{{Carbon::parse($lot->created_at)->addHours($lot->time)->timestamp}}">
                                                     0 hours 0 minutes 0 seconds
                                                     remaining</p>
                                             </div>
@@ -271,7 +269,7 @@
                             <td>{{$lot->bid}}</td>
                             <td>{{$lot->price}}</td>
                             <td>{{$lot->created_at}}</td>
-                            <td>{{$Carbon::parse($lot->created_at)->addHours($lot->time)}}</td>
+                            <td>{{Carbon::parse($lot->created_at)->addHours($lot->time)}}</td>
                             @if($lot->bidder != $character->name and $lot->price == $lot->bid)
                                 <td><i class="mdi mdi-check-all"></i></td>
                             @elseif($lot->bidder != $character->name)
@@ -299,7 +297,7 @@
 
 
 
-    @if($Auth::check() and $character!=null)
+    @if(Auth::check() and $character!=null)
     <!-- LOT CREATE -->
     <div class="modal fade" id="lotModal" tabindex="-1" role="dialog" aria-labelledby="lotModalLabel" aria-hidden="true">
         <div class="container">

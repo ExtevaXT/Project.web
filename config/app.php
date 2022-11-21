@@ -216,9 +216,14 @@ return [
         'Character' => App\Models\Character::class,
         'Character_personal_storage' => \App\Models\Character_personal_storage::class,
         'CharacterSkills' => \App\Models\CharacterSkills::class,
+        'CharacterAchievement' => \App\Models\CharacterAchievement::class,
         'Lot' => \App\Models\Lot::class,
         'AccountNotification' => \App\Models\AccountNotification::class,
         'Friend' => \App\Models\Friend::class,
+        'UserController' => \App\Http\Controllers\UserController::class,
+        'Auth' => \Illuminate\Support\Facades\Auth::class,
+        'Carbon' => \Illuminate\Support\Carbon::class,
+
 
     ])->toArray(),
 

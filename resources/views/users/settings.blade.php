@@ -24,7 +24,7 @@
 @endsection
 
 @section('content')
-    @inject('Auth','\Illuminate\Support\Facades\Auth')
+
     @if(session()->has(['success']))
         <div class="alert alert-success">Changes have been saved</div>
     @endif
@@ -117,22 +117,22 @@
                     <select class="form-control my-2 " name="styleTheme">
                         <option selected disabled>Select theme</option>
                         <option value="null">None</option>
-                        <option value="hanipaganda" @if(Account::find($Auth::user()->id)->setting('styleTheme')=='hanipaganda') selected @endif>HANIPAGANDA</option>
-                        <option value="consultant" @if(Account::find($Auth::user()->id)->setting('styleTheme')=='consultant') selected @endif>CONSULTANT</option>
+                        <option value="hanipaganda" @if(UserController::AuthSetting('styleTheme')=='hanipaganda') selected @endif>HANIPAGANDA</option>
+                        <option value="consultant" @if(UserController::AuthSetting('styleTheme')=='consultant') selected @endif>CONSULTANT</option>
                     </select>
                     <div class="mb-2">
                         <input type="radio" class="btn-check" name="styleThemeShow" value="0" id="styleThemeShow1" autocomplete="off"
-                        @if(Account::find($Auth::user()->id)->setting('styleThemeShow') == 0) checked @endif>
+                        @if(UserController::AuthSetting('styleThemeShow') == 0) checked @endif>
                         <label class="btn btn-outline-primary w-100 text-start my-1" for="styleThemeShow1">Show theme only in profile for everyone</label>
                         <input type="radio" class="btn-check" name="styleThemeShow" value="1" id="styleThemeShow2" autocomplete="off"
-                        @if(Account::find($Auth::user()->id)->setting('styleThemeShow') == 1) checked @endif>
+                        @if(UserController::AuthSetting('styleThemeShow') == 1) checked @endif>
                         <label class="btn btn-outline-primary w-100 text-start my-1" for="styleThemeShow2">Show theme for yourself only</label>
                         <input type="radio" class="btn-check" name="styleThemeShow" value="2" id="styleThemeShow3" autocomplete="off"
-                        @if(Account::find($Auth::user()->id)->setting('styleThemeShow') == 2) checked @endif>
+                        @if(UserController::AuthSetting('styleThemeShow') == 2) checked @endif>
                         <label class="btn btn-outline-primary w-100 text-start my-1" for="styleThemeShow3">Show theme always</label>
                     </div>
                     <input name="styleCSS" type="hidden" value="">
-                    <div id="editor" class="notranslate">{{Account::find($Auth::user()->id)->setting('styleCSS')}}</div>
+                    <div id="editor" class="notranslate">{{UserController::AuthSetting('styleCSS')}}</div>
                 </form>
             </div>
             <div class="tab-pane fade" id="profile">
@@ -143,8 +143,8 @@
                     <label for="profileColor" class="form-label">Color picker</label>
                     <div class="d-flex">
                         <input name="profileColor" onchange="colorPreview()" type="color" class="form-control form-control-color" id="profileColor"  title="Choose your color"
-                               value="{{Account::find($Auth::user()->id)->setting('profileColor')}}">
-                        <div class="colorPreview p-1 ms-2 fw-bold" style="color: {{Account::find($Auth::user()->id)->setting('profileColor')}}">{{$Auth::user()->name}}</div>
+                               value="{{UserController::AuthSetting('profileColor')}}">
+                        <div class="colorPreview p-1 ms-2 fw-bold" style="color: {{UserController::AuthSetting('profileColor')}}">{{Auth::user()->name}}</div>
                     </div>
                     <x-input-switch name="profileAchievements" label="Achievements"/>
                     <x-input-switch name="profileTalents" label="Talents"/>

@@ -1,5 +1,3 @@
-@inject('Carbon','\Carbon\Carbon')
-@inject('Auth','\Illuminate\Support\Facades\Auth')
 @extends('master')
 
 
@@ -15,7 +13,7 @@
         <div class="fs-3">Project.web - Web interface for Project.unity</div>
 {{--        <div>Project was created at 2022</div>--}}
         <div class="text-secondary fs-5">Last update
-            {{$Carbon::parse(max($unity[0]['commit']['author']['date'], $web[0]['commit']['author']['date']))->tz('Asia/Yekaterinburg')}}
+            {{Carbon::parse(max($unity[0]['commit']['author']['date'], $web[0]['commit']['author']['date']))->tz('Asia/Yekaterinburg')}}
         </div>
         <div class="border-primary border py-2 px-4 d-inline-block fs-5 mt-3"><a class="text-decoration-none" href="{{route('register')}}">Register account</a></div>
         <br>
@@ -49,7 +47,7 @@
             </div>
             <div class="d-flex m-2 profile-panel">
                 <div class="d-grid text-center profile-panel-nav">
-                    <div onclick="location.href='/user/{{$Auth::user()->name}}'" class="profile-panel-nav-item border border-primary">
+                    <div onclick="location.href='/user/{{Auth::user()->name}}'" class="profile-panel-nav-item border border-primary">
                         <i class="icons mdi mdi-slack"></i>
                         <div>Character</div>
                     </div>
@@ -68,11 +66,11 @@
                 </div>
                 <div class="border-primary border w-100 d-flex profile-panel-bg">
                     <div class="d-flex m-3 align-self-end">
-                        <x-user-profile name="{{$Auth::user()->name}}" size="128" all="0" />
+                        <x-user-profile name="{{Auth::user()->name}}" size="128" all="0" />
                         <div>
-                            <div class="fs-2">{{$Auth::user()->name}}</div>
-                            @if(Character::all()->firstWhere('account', $Auth::user()->name)!=null)
-                            <div class="fs-5">Balance: {{Character::all()->firstWhere('account', $Auth::user()->name)->gold}}₽</div>
+                            <div class="fs-2">{{Auth::user()->name}}</div>
+                            @if(Character::all()->firstWhere('account', Auth::user()->name)!=null)
+                            <div class="fs-5">Balance: {{Character::all()->firstWhere('account', Auth::user()->name)->gold}}₽</div>
                             @else
                             <div class="fs-5">Character not created</div>
                             @endif
@@ -81,7 +79,7 @@
                 </div>
             </div>
                 <div class="d-flex flex-row m-2 link-panel">
-                    <div class="text-center w-50 px-5 py-2 border-primary  border"><a class="text-decoration-none" href="/user/{{$Auth::user()->name}}">Profile</a></div>
+                    <div class="text-center w-50 px-5 py-2 border-primary  border"><a class="text-decoration-none" href="/user/{{Auth::user()->name}}">Profile</a></div>
                     <div class="ms-1 w-50 px-5 py-2 border-primary  border text-center"><a class="text-decoration-none" href="{{route('download')}}">Download</a></div>
                 </div>
 
@@ -120,7 +118,7 @@
 {{--                                @if($loop->index<=3)--}}
 {{--                                    <div class="border-primary  border p-4">--}}
 {{--                                        <div>{{ $update['channel_post']['text']}}</div>--}}
-{{--                                        <div>{{ $Carbon::parse($update['channel_post']['date'])}}</div>--}}
+{{--                                        <div>{{ Carbon::parse($update['channel_post']['date'])}}</div>--}}
 {{--                                    </div>--}}
 {{--                                @endif--}}
 {{--                            @endforeach--}}
@@ -130,7 +128,7 @@
                             <div class="overflow-auto" style="max-height: 310px">
                                 @foreach($web as $commit)
                                     <div class="border-primary change-item border p-4 my-1">
-                                        <div><span>{{ $Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg') }}</span> {{ $commit['commit']['author']['name']}}</div>
+                                        <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg') }}</span> {{ $commit['commit']['author']['name']}}</div>
                                         <div>{{ $commit['commit']['message']}}</div>
                                     </div>
                                 @endforeach
@@ -149,9 +147,9 @@
             <div class="m-2 d-flex flex-row prime-panel2">
                 <div class="border-primary  border p-5 me-1 w-25 prime-panel">Prime panel</div>
                 <div class="w-100">
-                    @if(Character::all()->firstWhere('account', $Auth::user()->name)!=null)
+                    @if(Character::all()->firstWhere('account', Auth::user()->name)!=null)
                     <div class="border-primary border p-5 h-50 prime-panel-parent">
-                        <div>Faction <span class="text-uppercase">{{Character::all()->firstWhere('account', $Auth::user()->name)->faction}}</span></div>
+                        <div>Faction <span class="text-uppercase">{{Character::all()->firstWhere('account', Auth::user()->name)->faction}}</span></div>
                         <div></div>
                     </div>
                     @else
@@ -181,7 +179,7 @@
 {{--                            @if($loop->index<=3)--}}
 {{--                                <div class="border-primary  border p-4">--}}
 {{--                                    <div>{{ $update['channel_post']['text']}}</div>--}}
-{{--                                    <div>{{ $Carbon::parse($update['channel_post']['date'])}}</div>--}}
+{{--                                    <div>{{ Carbon::parse($update['channel_post']['date'])}}</div>--}}
 {{--                                </div>--}}
 {{--                            @endif--}}
 {{--                    @endforeach--}}
@@ -191,7 +189,7 @@
                         <div class="overflow-auto" style="max-height: 310px">
                             @foreach($web as $commit)
                                 <div class="border-primary change-item border p-4 my-1">
-                                    <div><span>{{ $Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg') }}</span> {{ $commit['commit']['author']['name']}}</div>
+                                    <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg') }}</span> {{ $commit['commit']['author']['name']}}</div>
                                     <div>{{ $commit['commit']['message']}}</div>
                                 </div>
                             @endforeach
@@ -203,7 +201,7 @@
                     <div class="overflow-auto" style="max-height: 310px">
                         @foreach($unity as $commit)
                         <div class="border-primary change-item border p-4 my-1">
-                            <div><span>{{ $Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg') }}</span> {{ $commit['commit']['author']['name']}}</div>
+                            <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg') }}</span> {{ $commit['commit']['author']['name']}}</div>
                             <div>{{ $commit['commit']['message']}}</div>
                         </div>
                         @endforeach
