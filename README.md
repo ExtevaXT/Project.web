@@ -1,7 +1,7 @@
 # Project.web
 <h3>当冒名顶替者可疑时</h3>
 <pre>Demo https://external.su 大鸡巴 权力</pre> 
-<h5>For 弱智,弱智</h5>
+<h5>For 弱智</h5>
 <pre>login: test</pre> 
 <pre>password: test</pre> 
 <h4>为赞美习近平而杀黑鬼</h4>
