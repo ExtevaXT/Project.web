@@ -32,22 +32,21 @@
 {{--            <div>Auction</div>--}}
 {{--            <div>Information about auction</div>--}}
 {{--        </a>--}}
+{{--        <a href="/guides/anomalies" class="border-primary border p-2 my-1 text-decoration-none d-flex">--}}
+{{--            <div class="me-3" style="--}}
+{{--                width: 48px;--}}
+{{--                height: 48px;--}}
+{{--                background-size: cover;--}}
+{{--                background-position: center;--}}
+{{--                filter: blur(0.6px);--}}
+{{--                background-image:url('{{asset('img/icon/anomalies/anomaly.gif')}}')--}}
+{{--                "></div>--}}
+{{--            <div>--}}
+{{--                <div>Anomalies</div>--}}
+{{--                <div>Information about anomalies</div>--}}
+{{--            </div>--}}
 
-        <a href="/guides/anomalies" class="border-primary border p-2 my-1 text-decoration-none d-flex">
-            <div class="me-3" style="
-                width: 48px;
-                height: 48px;
-                background-size: cover;
-                background-position: center;
-                filter: blur(0.6px);
-                background-image:url('{{asset('img/icon/anomalies/anomaly.gif')}}')
-                "></div>
-            <div>
-                <div>Anomalies</div>
-                <div>Information about anomalies</div>
-            </div>
-
-        </a>
+{{--        </a>--}}
         <a href="/guides/artefacts" class="border-primary border p-2 my-1 text-decoration-none d-flex">
             <div class="me-3" style="
                 width: 48px;
@@ -85,7 +84,7 @@
                 background-size: cover;
                 background-position: center;
                 filter: blur(0.6px);
-                background-image:url('{{asset('img/icon/attachments/SightBarska.png')}}')
+                background-image:url('{{asset('img/icon/attachments/Scope PSO-1.png')}}')
                 "></div>
             <div>
                 <div>Attachments</div>
@@ -100,7 +99,7 @@
                 background-size: cover;
                 background-position: center;
                 filter: blur(0.6px);
-                background-image:url('{{asset('img/icon/weapons/AKSU.png')}}')
+                background-image:url('{{asset('img/icon/weapons/AKM.png')}}')
                 "></div>
             <div>
                 <div>Weapons</div>

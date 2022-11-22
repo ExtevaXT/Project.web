@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Resource;
 use Illuminate\Http\Request;
 use Symfony\Component\Yaml\Yaml;
 
@@ -21,13 +22,7 @@ class GuideController extends Controller
             ($category == 'attachments') or
             ($category == 'other'))
         {
-            $files = glob(resource_path().'/assets/items/'.$category.'/*.*', GLOB_BRACE);
-            $items = [];
-            foreach($files as $file) {
-                $items[] = Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour'];
-            }
-//            $item = Yaml::parse(str_ireplace($trim,'', file_get_contents(resource_path('assets/yaml/Crystal.asset'))));
-
+            $items = Resource::data("/items/$category");
             return view('guides.category', ['items' => $items, 'category' => $category]);
         }
         return back();

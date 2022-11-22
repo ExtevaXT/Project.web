@@ -9,7 +9,7 @@
 @endsection
 
 @section('content')
-    <div>{{$category}}</div>
+    <div><a href="/guides">back</a> <span class="fs-4">{{ucfirst($category)}}</span></div>
     <div class="d-grid objects-panel">
         @foreach($items as $item)
             <div class="p-3 border border-primary">

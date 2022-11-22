@@ -161,7 +161,7 @@
                     <div class="d-flex flex-row prime-other-panels h-50 prime-panel-parent">
                         <div class="border-primary border p-5 mt-1 w-50 prime-other-panel">
                             <div>Discord</div>
-                            <div>https://discord.com/</div>
+                            <div>https://discord.gg/JMhd6VtVv5</div>
                         </div>
                         <div class="border-primary  border p-5 mt-1 ms-1 w-50 prime-other-panel">
                             <div>Github</div>

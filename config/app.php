@@ -223,7 +223,8 @@ return [
         'UserController' => \App\Http\Controllers\UserController::class,
         'Auth' => \Illuminate\Support\Facades\Auth::class,
         'Carbon' => \Illuminate\Support\Carbon::class,
-
+        'CharacterQuests' => \App\Models\CharacterQuests::class,
+        'Resource'=> \App\Models\Resource::class,
 
     ])->toArray(),
 

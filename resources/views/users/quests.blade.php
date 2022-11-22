@@ -8,9 +8,10 @@
 @endsection
 
 @section('content')
-    @auth()
+    @if(Auth::check() and $quests)
+        <div>Active quests</div>
         <div>
-
+            {{$quests}}
         </div>
-    @endauth
+    @endif
 @endsection

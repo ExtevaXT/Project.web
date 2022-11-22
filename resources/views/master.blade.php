@@ -131,7 +131,7 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
-                    <a class="navbar-brand pc-panel" href="#">Project.web</a>
+                    <a class="navbar-brand pc-panel" href="/">Project.web</a>
                     @guest()
                     <div class="d-flex mobile-panel">
                         <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#authModal">Login</div>
@@ -160,23 +160,12 @@
                     @endauth
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="mobile-panel">
-                                <a class="navbar-brand" href="/">Project.web</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active" href="/">Index</a>
-                            </li>
+                            <li class="mobile-panel"><a class="navbar-brand" href="/">Project.web</a></li>
                             @auth()
-                            <li class="nav-item">
-                                <a class="nav-link" href="/auction">Auction</a>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="/auction">Auction</a</li>
                             @endauth
-                            <li class="nav-item">
-                                <a class="nav-link" href="/guides">Guides</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="/map">Map</a>
-                            </li>
+                            <li class="nav-item"><a class="nav-link" href="/guides">Guides</a></li>
+                            <li class="nav-item"><a class="nav-link" href="/map">Map</a></li>
 
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -198,8 +187,6 @@
                                     <li><a class="dropdown-item" href="/log">Log</a></li>
                                     <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
                                     @endauth
-
-
                                     <li><a class="dropdown-item"><div id="google_translate_element"></div></a></li>
                                 </ul>
                             </li>

@@ -42,9 +42,7 @@ Route::get('/ping', [Controller::class, 'pingDomain']);
 
 Route::post('/contact', [Controller::class, 'contact'])->name('contact');
 Route::get('/ranking', [Controller::class, 'ranking']);
-Route::get('/faction', function () {
-    return view('faction');
-});
+Route::get('/faction', [Controller::class, 'faction']);
 Route::get('/download', function () {
     return response()->download(resource_path('malware'));
 })->name('download');
@@ -61,6 +59,7 @@ Route::post('/buyout', [LotController::class, 'buyout'])->name('buyout');
 
 //USER
 Route::middleware('auth')->group(function() {
+    Route::get('/quests', [UserController::class, 'quests']);
     Route::get('/notifications', function () {
         return view('users.notifications');
     });

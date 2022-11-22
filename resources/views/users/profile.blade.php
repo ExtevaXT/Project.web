@@ -427,6 +427,9 @@
                                  data-metadata="{{$item['metadata']}}"
 
                                  onclick="SelectItem({{$item['slot']}})">
+                                @if($item['name']!='' and $item['amount']!=1)
+                                    <div class="float-end me-3">x{{$item['amount']}}</div>
+                                @endif
 
                             </div>
                         </div>
@@ -728,11 +731,11 @@
                 selectedSlot = slot;
 
 
-                name_out.forEach(x => x.innerHTML ='Name:' + selected.getAttribute('data-item'));
-                amount_out.forEach(x => x.innerHTML ='Amount:' + selected.getAttribute('data-amount'));
-                ammo_out.forEach(x => x.innerHTML ='Ammo:' + selected.getAttribute('data-ammo'));
-                durability_out.forEach(x => x.innerHTML ='Durability:' + selected.getAttribute('data-durability'));
-                metadata_out.forEach(x => x.innerHTML ='Meta:' + selected.getAttribute('data-metadata'));
+                name_out.forEach(x => x.innerHTML ='Name: ' + selected.getAttribute('data-item'));
+                amount_out.forEach(x => x.innerHTML ='Amount: ' + selected.getAttribute('data-amount'));
+                ammo_out.forEach(x => x.innerHTML ='Ammo: ' + selected.getAttribute('data-ammo'));
+                durability_out.forEach(x => x.innerHTML ='Durability: ' + selected.getAttribute('data-durability'));
+                metadata_out.forEach(x => x.innerHTML ='Meta: ' + selected.getAttribute('data-metadata'));
                 icon_out.forEach(x => x.style.backgroundImage = selected.style.backgroundImage);
 
                 document.querySelectorAll('[data-slot]').forEach(x => x.classList.remove('selected'));

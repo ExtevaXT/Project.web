@@ -1,4 +1,4 @@
-<div class="{{$all ? 'd-flex' : 'd-block'}}">
+<div {{ $attributes->merge(['class' => ($all ? 'd-flex' : 'd-block')]) }}>
     @if($account->image !='user.png')
         <div class="border border-primary me-3" style="
             width: {{$size}}px;

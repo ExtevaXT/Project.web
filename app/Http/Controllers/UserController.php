@@ -11,10 +11,12 @@ use App\Models\Account;
 use App\Models\AccountNotification;
 use App\Models\Character;
 use App\Models\Character_personal_storage;
+use App\Models\CharacterQuests;
 use App\Models\CharacterSkills;
 use App\Models\CharacterTalents;
 use App\Models\Friend;
 use App\Models\CharacterAchievement;
+use App\Models\Resource;
 use Discord\Http\Http;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Mail;
@@ -34,6 +36,18 @@ use Symfony\Component\Yaml\Yaml;
 
 class UserController extends Controller
 {
+    public function quests()
+    {
+        //if not null
+        if($quests = CharacterQuests::all()->firstWhere('character', Character::all()->firstWhere('account', Auth::user()->name)))
+            $quests = $quests['data'];
+        //some awesome logic for parsing custom data serialization type
+
+        return view('users.quests', compact('quests'));
+    }
+
+
+
     public static function AuthSetting($setting)
     {
         return Account::find(Auth::user()->id)->setting($setting);
@@ -46,12 +60,7 @@ class UserController extends Controller
     public function profile($name)
     {
         //IMAGES ROUTES FOR ALL
-        $item_icons = [];
-        foreach ( Storage::disk('public_real')->directories('img/icon') as $category){
-            foreach (Storage::disk('public_real')->files($category) as $icon){
-                $item_icons[ basename($icon, '.png')] = $icon;
-            }
-        }
+        $item_icons = Resource::icons();
         $account = Account::all()->where('name', $name)->first();
         if($account==null) return back();
         $character = Character::all()->where('account', $name)->first();
@@ -83,11 +92,7 @@ class UserController extends Controller
             }
             //Achievements
             $achievements = CharacterAchievement::all()->where('character', $character->name);
-            $files = glob(resource_path().'/assets/achievements/*.*', GLOB_BRACE);
-            $achievement_data = collect([]);
-            foreach($files as $file) {
-                $achievement_data->push(Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour']);
-            }
+            $achievement_data = Resource::data('achievements');;
             foreach ($achievements as $achievement){
                 $trophies += $achievement->reward;
             }
@@ -96,11 +101,7 @@ class UserController extends Controller
 
             //Talents
             $talents = CharacterTalents::all()->where('character', $character->name);
-            $files = glob(resource_path().'/assets/talents/*.*', GLOB_BRACE);
-            $talent_data = collect([]);
-            foreach($files as $file) {
-                $talent_data->push(Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour']);
-            }
+            $talent_data = Resource::data('talents');
 
         }
 
