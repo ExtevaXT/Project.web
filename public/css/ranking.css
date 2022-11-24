@@ -1,0 +1,21 @@
+.label-player{
+    margin-left: -100px;
+}
+.row-player{
+    margin-left: 50px;
+}
+@media screen and (max-width: 1000px) {
+    .BlockTable-labelInner{
+        font-size: 16px!important;
+        padding: 5px;
+    }
+    .level, .trophies, .achievements{
+        white-space: nowrap;
+    }
+    .label-player{
+        margin-left: 0;
+    }
+    .row-player{
+        margin-left: 0;
+    }
+}

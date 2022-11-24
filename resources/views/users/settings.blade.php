@@ -58,7 +58,7 @@
                     <form action="{{route('password')}}" method="POST">
                         @csrf
                         <div class="p-3 my-1">
-                            <div>Change password</div>
+                            <div class="fs-4">Change password</div>
                             <div>Description</div>
                             <button class="btn btn-outline-primary p-2 float-end" style="margin: -44px 5px;">Save changes</button>
                         </div>
@@ -75,7 +75,7 @@
                     <form action="{{route('email')}}" method="POST">
                         @csrf
                         <div class="p-3 my-1">
-                            <div>Change E-Mail</div>
+                            <div class="fs-4">Change E-Mail</div>
                             <div>Description</div>
                             <button type="submit" class="btn btn-outline-primary p-2 float-end" style="margin: -44px 5px;">Save changes</button>
                         </div>
@@ -91,7 +91,7 @@
                 </div>
                 <div class="p-3 my-3">
                     <div class="p-3 my-1">
-                        <div>Security IP check</div>
+                        <div class="fs-4">Security IP check</div>
                         <div>Description</div>
                         <button class="btn btn-outline-primary p-2 float-end" style="margin: -44px 5px;">Save changes</button>
                     </div>
@@ -140,7 +140,7 @@
                     @csrf
                     <button type="submit" class="btn btn-outline-primary p-2 my-2 w-100">Save changes</button>
 
-                    <label for="profileColor" class="form-label">Color picker</label>
+                    <label for="profileColor" class="form-label fs-4">Color picker</label>
                     <div class="d-flex">
                         <input name="profileColor" onchange="colorPreview()" type="color" class="form-control form-control-color" id="profileColor"  title="Choose your color"
                                value="{{UserController::AuthSetting('profileColor')}}">

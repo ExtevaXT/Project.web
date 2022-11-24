@@ -108,7 +108,7 @@
         @if(Auth::user() !=null and Auth::user()->name == $account->name)
             @if($character!=null)
         <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#inventory">Inventory</a>
+            <a class="nav-link" data-bs-toggle="tab" href="#inventory">Storage</a>
         </li>
             @endif
         <li class="nav-item">
@@ -136,7 +136,7 @@
         <div class="tab-pane fade show active" id="profile">
             <div class="d-flex main">
                 <div class="main-left d-flex flex-column w-50 m-2">
-                    <div>General information</div>
+                    <div class="fs-3 my-3">General information</div>
                     <div class="d-grid info-panel">
                         <div class="border-primary border p-2">
                             <div>Registration</div>
@@ -172,22 +172,22 @@
                         @endif
                         @if(Auth::user() !=null and Auth::user()->name == $account->name)
                             <div class="border-primary border p-2">
-                                <div>Some currency</div>
+                                <div>Balance</div>
+                                <div>{{$character['gold']}}</div>
+                            </div>
+                            <div class="border-primary border p-2">
+                                <div>Research Tokens</div>
                                 <div>0</div>
                             </div>
                             <div class="border-primary border p-2">
-                                <div>Some currency</div>
-                                <div>0</div>
-                            </div>
-                            <div class="border-primary border p-2">
-                                <div>Some currency</div>
+                                <div>Hunting Tokens</div>
                                 <div>0</div>
                             </div>
                         @endif
                     </div>
 
 
-                    <div>Player statistics</div>
+                    <div class="fs-3 my-3">Player statistics</div>
                     @if($character!=null)
                     <ul class="nav nav-tabs">
                         <li class="nav-item">
@@ -222,40 +222,44 @@
 
                     </div>
                     @else
-                        <div class="text-center p-5">Character is not created</div>
+                        <div class="text-center p-5 fs-3">Character is not created</div>
                     @endif
 
 
                 </div>
                 <div class="main-right d-flex flex-column w-50 m-2">
                     @if($character!=null)
-                    <div>Achievement showcase</div>
+                    <div class="fs-3 my-3">Achievement showcase</div>
                     <div class="d-flex achievement-panel">
-                        @for ($i = 1; $i <= 5; $i++)
-                            <div class="border-primary border p-3 w-100 me-1">
-                                <div>Img</div>
-                                <div>Some achievement</div>
+                        @for ($i = 0; $i < 5; $i++)
+                            @isset($achievements[$i])
+                            <div class="border-primary border p-3 w-100 me-1 text-center achievement-collection-item">
+                                <div class="m-1"><i class="icons mdi mdi-trophy mdi-48px"></i></div>
+                                <div style="white-space: nowrap">{{$achievements[$i]['name']}}</div>
                             </div>
+                            @else
+                            <div class="border border-primary p-3 w-100 me-1 text-center achievement-collection-item-placeholder"></div>
+                            @endisset
                         @endfor
                     </div>
                     @endif
-                    @if(Auth::user() !=null and Auth::user()->name == $account->name)
-                    <div>Collection showcase</div>
-                    <div class="d-flex collection-panel">
-                        @for ($i = 1; $i <= 4; $i++)
-                            <div class="border-primary border p-3 w-100 me-1">
-                                <div>Img</div>
-                                <div>Some collectible</div>
-                            </div>
-                        @endfor
-                    </div>
-                    @endif
-                        @if($character!=null)
-                    <div>Skills</div>
+{{--                    @if(Auth::user() !=null and Auth::user()->name == $account->name)--}}
+{{--                    <div class="fs-3 my-3">Collection showcase</div>--}}
+{{--                    <div class="d-flex collection-panel">--}}
+{{--                        @for ($i = 1; $i <= 4; $i++)--}}
+{{--                            <div class="border-primary border p-3 w-100 me-1">--}}
+{{--                                <div>Img</div>--}}
+{{--                                <div>Some collectible</div>--}}
+{{--                            </div>--}}
+{{--                        @endfor--}}
+{{--                    </div>--}}
+{{--                    @endif--}}
+                    @if($character!=null)
+                    <div class="fs-3 my-3">Skills</div>
                     <div class="d-grid skill-panel">
                         <div class="border-primary border p-3">
                             <div class="d-flex">
-                                <div class="p-2">Img</div>
+                                <div class="mt-3 me-2"><i class="mdi mdi-heart-pulse mdi-48px"></i></div>
                                 <div class="w-100">
                                     <div>Vitality</div>
                                     <div class="progress">
@@ -267,7 +271,7 @@
                         </div>
                         <div class="border-primary border p-3">
                             <div class="d-flex">
-                                <div class="p-2">Img</div>
+                                <div class="mt-3 me-2"><i class="mdi mdi-lightning-bolt mdi-48px"></i></div>
                                 <div class="w-100">
                                     <div>Endurance</div>
                                     <div class="progress">
@@ -279,7 +283,7 @@
                         </div>
                         <div class="border-primary border p-3">
                             <div class="d-flex">
-                                <div class="p-2">Img</div>
+                                <div class="mt-3 me-2"><i class="mdi mdi-food-drumstick mdi-48px"></i></div>
                                 <div class="w-100">
                                     <div>Metabolism</div>
                                     <div class="progress">
@@ -291,7 +295,7 @@
                         </div>
                         <div class="border-primary border p-3">
                             <div class="d-flex">
-                                <div class="p-2">Img</div>
+                                <div class="mt-3 me-2"><i class="mdi mdi-water mdi-48px"></i></div>
                                 <div class="w-100">
                                     <div>Hydration</div>
                                     <div class="progress">
@@ -303,7 +307,7 @@
                         </div>
                         <div class="border-primary border p-3">
                             <div class="d-flex">
-                                <div class="p-2">Img</div>
+                                <div class="mt-3 me-2"><i class="mdi mdi-dumbbell mdi-48px"></i></div>
                                 <div class="w-100">
                                     <div>Strength</div>
                                     <div class="progress">
@@ -315,7 +319,7 @@
                         </div>
                         <div class="border-primary border p-3">
                             <div class="d-flex">
-                                <div class="p-2">Img</div>
+                                <div class="mt-3 me-2"><i class="mdi mdi-radioactive mdi-48px"></i></div>
                                 <div class="w-100">
                                     <div>Radioresistance</div>
                                     <div class="progress">
@@ -327,7 +331,7 @@
                         </div>
                         <div class="border-primary border p-3">
                             <div class="d-flex">
-                                <div class="p-2">Img</div>
+                                <div class="mt-3 me-2"><i class="mdi mdi-shield mdi-48px"></i></div>
                                 <div class="w-100">
                                     <div>Immunity</div>
                                     <div class="progress">
@@ -339,7 +343,7 @@
                         </div>
                         <div class="border-primary border p-3">
                             <div class="d-flex">
-                                <div class="p-2">Img</div>
+                                <div class="mt-3 me-2"><i class="mdi mdi-heat-wave mdi-48px"></i></div>
                                 <div class="w-100">
                                     <div>Acclimatisation</div>
                                     <div class="progress">
@@ -351,7 +355,7 @@
                         </div>
                         <div class="border-primary border p-3">
                             <div class="d-flex">
-                                <div class="p-2">Img</div>
+                                <div class="mt-3 me-2"><i class="mdi mdi-square-root mdi-48px"></i></div>
                                 <div class="w-100">
                                     <div>Intellect</div>
                                     <div class="progress">
@@ -363,7 +367,7 @@
                         </div>
                         <div class="border-primary border p-3">
                             <div class="d-flex">
-                                <div class="p-2">Img</div>
+                                <div class="mt-3 me-2"><i class="mdi mdi-water-off mdi-48px"></i></div>
                                 <div class="w-100">
                                     <div>Hemostasis</div>
                                     <div class="progress">
@@ -383,32 +387,14 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
 
 
         @if(Auth::user() !=null and Auth::user()->name == $account->name)
             @if($character!=null)
         <div class="tab-pane fade" id="inventory">
-
+            <div class="fs-3 my-3">Personal Storage</div>
             <div class="d-flex inventory-parent">
-{{--                @for ($i = 0; $i <= 71; $i++)--}}
-{{--                    <div>{{$character_personal_storage->get($i)}}</div>--}}
-{{--                @endfor--}}
-
-
 {{--                72 SLOTS --}}
                 <div class="d-grid w-50 inventory-panel">
                     @foreach($inventory as $item)
@@ -555,9 +541,9 @@
         </div>
         @if($character!=null)
         <div class="tab-pane fade" id="talents">
-            <div>Talents</div>
-            <div>Talents general description</div>
-            <div>Level {{$character->level}}/1000</div>
+            <div class="fs-3 mt-3">Talents</div>
+            <div class="fs-5">Talents general description</div>
+            <div class="fs-5 mb-3">Level {{$character->level}}/1000</div>
             <div class="d-grid talent-panel">
                 @foreach ($talent_data as $talent)
                     <div class="border border-primary p-3">
@@ -577,7 +563,7 @@
 
         </div>
         <div class="tab-pane fade" id="friends">
-            <div>Friends</div>
+            <div class="fs-3 my-3">Friend list</div>
             <div class="d-grid friend-panel">
                 {{-- SHOW YOUR FRIEND REQUESTS AND ACCEPTED --}}
                     @foreach(Friend::all()->where('account', Auth::user()->name) as $friend)
@@ -587,7 +573,7 @@
                             <div>
                                 <div>{{$friend->friend}}</div>
                                 @if($friend->accepted)
-                                    <div class="text-success">Message</div>
+                                    <div class="text-success">Accepted</div>
                                 @else
                                     <div class="text-danger">Not accepted</div>
                                 @endif
@@ -626,7 +612,7 @@
         @endif
         @if($character!=null)
         <div class="tab-pane fade" id="achievements">
-            <div>Achievements</div>
+            <div class="fs-3 my-3">Achievements</div>
             @forelse($achievements as $achievement)
                 <div class="border-primary border mb-1 p-3">
                     <div class="d-flex justify-content-between">
@@ -738,8 +724,8 @@
                 metadata_out.forEach(x => x.innerHTML ='Meta: ' + selected.getAttribute('data-metadata'));
                 icon_out.forEach(x => x.style.backgroundImage = selected.style.backgroundImage);
 
-                document.querySelectorAll('[data-slot]').forEach(x => x.classList.remove('selected'));
-                selected.classList.add('selected');
+                document.querySelectorAll('[data-slot]').forEach(x => x.classList.remove('selected-item'));
+                selected.classList.add('selected-item');
             }
             function SellItem(){
                 window.location.href = `{{route('lot_create')}}?slot=${selectedSlot}`;

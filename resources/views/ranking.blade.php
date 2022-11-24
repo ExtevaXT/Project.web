@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="{{asset('leaflet/leaflet.css')}} ">
     <link rel="stylesheet" href="{{asset('css/Custom/BlockTable.css')}}">
     <link rel="stylesheet" href="{{asset('css/Index/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/ranking.css')}}">
 @endsection
 
 @section('content')
@@ -15,7 +16,7 @@
         <div class="main d-flex">
             <div class="side-filter">
                 <form action="/ranking">
-                    <input value="{{ app('request')->input('search') }}" name="search" class="p-1 form-control border-primary search" placeholder="Search" onchange="this.form.submit()">
+                    <input value="{{ app('request')->input('search') }}" name="search" class="p-2 form-control border-primary search" placeholder="Search" onchange="this.form.submit()">
                 </form>
                 <div class="py-2"><a class="nav-link sort" data-sort="level" href="/ranking?filter=level">Level</a></div>
                 <div class="py-2"><a class="nav-link sort" data-sort=achievements" href="/ranking?filter=achievements">Achievements</a> </div>
@@ -24,30 +25,42 @@
 
             </div>
             <div class="BlockTable">
+                <div class="BlockTable-head">
+                    <div class="BlockTable-row BT-R4">
+                        <div class="BlockTable-label fs-5"><div class="BlockTable-labelInner label-player">Player / Level</div></div>
+                        <div class="BlockTable-label fs-5"><div class="BlockTable-labelInner label-achievements">Achievements / Trophies</div></div>
+                        <div class="BlockTable-label fs-5"><div class="BlockTable-labelInner label-online">Last save / Joined</div></div>
+                        <div class="BlockTable-label fs-5"><div class="BlockTable-labelInner">KDA</div></div>
+                    </div>
+                </div>
                 <div class="BlockTable-body sort">
                     @foreach($characters as $player)
-                        <div class="BlockTable-row BT-R4">
+                        <div class="BlockTable-row BT-R4 text-center">
 {{-- data-bs-placement="left" data-bs-toggle="tooltip" data-bs-html="true" title="" data-bs-original-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>" --}}
-                            <div class="BlockTable-data">
+                            <div class="BlockTable-data row-player">
                                 <div class="d-flex">
                                     <x-user-profile name="{{$player->account}}" size="64" />
                                 </div>
                             </div>
                             <div class="BlockTable-data">
                                 <div>
-                                    <div class="achievements">Achievements: {{ $player->achievements }}</div>
-                                    <div class="trophies">Trophies: {{ $player->trophies }}</div>
+                                    @if($player->achievements==0)
+                                        <div class="fs-6">None</div>
+                                    @else
+                                    <div class="achievements fs-6">{{ $player->achievements}} <i class="mdi mdi-star mdi-18px"></i></div>
+                                    <div class="trophies fs-6">{{ $player->trophies }} <i class="mdi mdi-trophy mdi-18px"></i></div>
+                                    @endif
                                 </div>
                             </div>
                             <div class="BlockTable-data">
                                 <div>
-                                    <div class="online">Last save: {{$player->online}}</div>
-                                    <div>Joined: {{$player->joined}}</div>
+                                    <div class="online">{{$player->online}}</div>
+                                    <div>{{$player->joined}}</div>
                                 </div>
                             </div>
                             <div class="BlockTable-data">
                                 <div>
-                                    <div class="kda">KDA {{$player->kda}}</div>
+                                    <div class="kda">{{$player->kda}}</div>
                                     <div></div>
                                 </div>
                             </div>
@@ -65,5 +78,10 @@
         $(document).ready(function(){
             $('[data-bs-toggle="tooltip"]').tooltip()
         })
+        if(window.matchMedia( "(max-width: 1000px)" ).matches){
+            document.querySelector('.label-online').innerHTML = 'Online'
+            document.querySelector('.label-player').innerHTML = 'Player'
+            document.querySelector('.label-achievements').innerHTML = 'Achievements'
+        }
     </script>
 @endsection

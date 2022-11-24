@@ -1,5 +1,5 @@
-<div {{ $attributes->merge(['class' => '']) }} title="{{$name}}">
-    <div style="width: {{$size}}px; height: {{$size}}px">
+<div {{ $attributes->merge(['class' => 'item-component']) }} title="{{$name}}">
+    <div class="item-component-size" style="width: {{$size}}px; height: {{$size}}px">
         <div class="w-100 h-100"
              style="background-image:url('{{ asset($icon) }}');
                  background-size: cover;">

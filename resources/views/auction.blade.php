@@ -22,12 +22,14 @@
     </div>
     <div class="main d-flex">
         <div class="side-filter">
-            <input class="p-1 form-control border-primary" placeholder="Search">
-            <div class="p-3">All</div>
-            <div class="p-3">Equipment</div>
-            <div class="p-3">Artefacts</div>
-            <div class="p-3">Weapons</div>
-            <div class="p-3">Attachments</div>
+            <form action="/auction">
+                <input value="{{ app('request')->input('search') }}" name="search" class="p-2 mt-3 form-control border-primary search" placeholder="Search" onchange="this.form.submit()">
+            </form>
+            <div class="p-3" onclick="window.location.href='/auction'">All</div>
+            <div class="p-3" onclick="window.location.href='/auction?filter=equipment'">Equipment</div>
+            <div class="p-3" onclick="window.location.href='/auction?filter=artefacts'">Artefacts</div>
+            <div class="p-3" onclick="window.location.href='/auction?filter=weapons'">Weapons</div>
+            <div class="p-3" onclick="window.location.href='/auction?filter=attachments'">Attachments</div>
         </div>
         <div class="tab-content">
             <div id="all" class="BlockTable tab-pane fade show active ms-5">
@@ -39,14 +41,9 @@
                     </div>
                 </div>
                 <div class="BlockTable-body accordion accordion-flush" id="accordionFlush">
-                    @foreach(Lot::all() as $lot)
+                    @foreach($lots as $lot)
                         @if((Carbon::parse($lot->created_at)->addHours($lot->time) > Carbon::now()) and $lot->bid!=$lot->price )
-                        <div class="accordion-item
-                        @if(!Auth::guest() and $character!=null and $lot->character == $character->name)
-                            bg-opacity-10
-                            bg-primary
-
-                        @endif">
+                        <div class="accordion-item @if(!Auth::guest() and $character!=null and $lot->character == $character->name) selected-item @endif">
                             <div class="BlockTable-row accordion-header"
                                  id="flush-heading{{$lot->id}}"
                                  data-bs-toggle="collapse"
@@ -57,7 +54,8 @@
                                  data-item="2501" data-slot="" data-cat="14">
                                 <div class="BlockTable-data">
                                     <div class="d-flex justify-content-center">
-                                        <div class="p-4 border border-primary text-center" >Icon</div>
+{{--                                        <div class="p-4 border border-primary text-center" >Icon</div>--}}
+                                        <x-item size="72" name="{{$lot->item}}"/>
                                         <div class="mx-4 auction-name-count-item">
                                             <h5>{{$lot->item}}</h5>
                                             <p id="{{$lot->id}}" class="data-countdown" data-countdown="{{Carbon::parse($lot->created_at)->addHours($lot->time)->timestamp}}">
@@ -97,7 +95,7 @@
                                                 <div class="seller">Seller: {{$lot->character}}</div>
                                                 <input name="id" type="hidden" value="{{$lot->id}}">
                                                 <div class="d-flex form-bid-child">
-                                                    <input name="bid" class="form-control input-bid" type="number" value="{{$lot->bid}}">
+                                                    <input name="bid" class="form-control input-bid" type="number" value="{{$lot->bid + 1}}">
                                                     <button class="btn btn-primary btn-bid">Bid</button>
                                                 </div>
 

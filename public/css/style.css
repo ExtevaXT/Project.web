@@ -5,6 +5,9 @@
     /*font-family:  var(--bs-font-monospace);*/
     color: #0d6efd;
 }
+.selected-item{
+    background-color: rgba(13, 110, 253, 0.1) !important;
+}
 .alert li{
     color: initial !important;
 }

@@ -6,6 +6,7 @@ use App\Http\Requests\LotValidation;
 use App\Models\Character;
 use App\Models\Character_personal_storage;
 use App\Models\Lot;
+use App\Models\Resource;
 use Illuminate\Auth\Events\Authenticated;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -16,8 +17,24 @@ use Symfony\Component\ErrorHandler\Debug;
 
 class LotController extends Controller
 {
-    public function show()
+    public function show(Request $request)
     {
+        // Sorting and searching features
+        $filter = $request->query('filter');
+        $search = $request->query('search');
+        //sort by category from resources
+        $lots = Lot::all()->sort(function ($lot) use ($filter){
+            $item = Resource::data('items/'.$filter)->firstWhere('m_Name', $lot['item']);
+            return $item;
+        })->reverse();
+        // Search
+        if($search!=null){
+            $lots = $lots->filter(function ($lot) use ($search) {
+                // replace stristr with your choice of matching function
+                return false !== stristr($lot->item, $search);
+            });
+        }
+        // other legacy logic
         $character = null;
         $character_personal_storage = null;
         $my_lots = null;
@@ -33,7 +50,8 @@ class LotController extends Controller
         return view('auction', compact('character',
             'character_personal_storage',
             'my_lots',
-            'my_bids'
+            'my_bids',
+            'lots'
         ));
     }
     public function create()

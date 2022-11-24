@@ -64,7 +64,7 @@ class Controller extends BaseController
                 'level' => $character->level,
                 'achievements' => CharacterAchievement::where('character', $character->name)->count(),
                 'trophies' =>  CharacterAchievement::where('character', $character->name)->sum('reward'),
-                'online' => Carbon::parse($character->lastsaved)->format('d M Y'),
+                'online' => Carbon::parse($character->lastsaved)->format('Y.m.d'),
                 'joined' => Carbon::parse(Account::firstWhere('name', $character->account)->created_at)->year,
                 'kda' => round(rand(1, 200)/100, 2)
             ];
@@ -112,7 +112,7 @@ class Controller extends BaseController
         // CHECK PROCESS ON SERVER
         $status = (bool)shell_exec('pidof ./headless.x86_64');
         return view('index', [
-            'unity' => GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []),
+            'unity' => GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []) ,
             'web' => GitHub::repo()->commits()->all('ExtevaXT','Project.web', []),
             'status' => $status,
         ]);
