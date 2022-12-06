@@ -10,6 +10,7 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 
 
 use Illuminate\Notifications\Notifiable;
+use Illuminate\Support\Facades\Auth;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Database\Eloquent\Model;
 
@@ -20,6 +21,26 @@ class Account extends Authenticatable
     protected $table = 'accounts';
     protected $connection = 'sqlite';
     // User model
+    public static function auth()
+    {
+        return Account::find(Auth::user()->id);
+    }
+    public function character()
+    {
+        if($this->setting('character')){
+            return $this->characters()->values()[$this->setting('character')];
+        }
+        return $this->characters()->first();
+    }
+    public function characters()
+    {
+        return Character::all()->where('account', $this->name);
+    }
+    public function notifications()
+    {
+        return AccountNotification::all()->where('account', $this->name);
+    }
+
     protected $casts = ["settings" => "array"];
     public function setting(string $name, $default = null)
     {

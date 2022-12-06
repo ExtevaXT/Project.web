@@ -4,7 +4,7 @@
 
 @section('title', 'I forgor 💀')
 @section('style')
-    <link rel="stylesheet" href="{{ asset('css/Index/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/index.css')}}">
 @endsection
 
 @section('content')

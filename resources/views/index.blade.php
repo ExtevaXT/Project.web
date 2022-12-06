@@ -4,7 +4,7 @@
 
 @section('title', 'Project.web')
 @section('style')
-    <link rel="stylesheet" href="{{ asset('css/Index/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/index.css')}}">
 @endsection
 
 @section('content')
@@ -40,31 +40,31 @@
     <div class="d-flex my-2 main">
         <div class="main-left d-flex flex-column w-50">
             @auth()
-            <div class="border-primary  border m-2 p-5">
+            <div class="bg-glass m-2 p-5">
                 <div>Some Announcement</div>
                 <div>Announcement description</div>
                 <div>Time of announcement</div>
             </div>
             <div class="d-flex m-2 profile-panel">
                 <div class="d-grid text-center profile-panel-nav">
-                    <div onclick="location.href='/user/{{Auth::user()->name}}'" class="profile-panel-nav-item border border-primary">
+                    <div onclick="location.href='/user/{{Auth::user()->name}}'" class="profile-panel-nav-item bg-glass">
                         <i class="icons mdi mdi-slack"></i>
                         <div>Character</div>
                     </div>
-                    <div onclick="location.href='/quests'" class="profile-panel-nav-item border border-primary">
+                    <div onclick="location.href='/quests'" class="profile-panel-nav-item bg-glass">
                         <i class="icons mdi mdi-creation"></i>
                         <div>Quests</div>
                     </div>
-                    <div onclick="location.href='/auction'" class="profile-panel-nav-item border border-primary">
+                    <div onclick="location.href='/auction'" class="profile-panel-nav-item bg-glass">
                         <i class="icons mdi mdi-scale-balance"></i>
                         <div>Auction</div>
                     </div>
-                    <div onclick="location.href='/ranking'" class="profile-panel-nav-item border border-primary">
+                    <div onclick="location.href='/ranking'" class="profile-panel-nav-item bg-glass">
                         <i class="icons mdi mdi-trophy"></i>
                         <div>Ranking</div>
                     </div>
                 </div>
-                <div class="border-primary border w-100 d-flex profile-panel-bg">
+                <div class="bg-glass w-100 d-flex profile-panel-bg">
                     <div class="d-flex m-3 align-self-end">
                         <x-user-profile name="{{Auth::user()->name}}" size="128" all="0" />
                         <div>
@@ -79,8 +79,8 @@
                 </div>
             </div>
                 <div class="d-flex flex-row m-2 link-panel">
-                    <div class="text-center w-50 px-5 py-2 border-primary  border"><a class="text-decoration-none" href="/user/{{Auth::user()->name}}">Profile</a></div>
-                    <div class="ms-1 w-50 px-5 py-2 border-primary  border text-center"><a class="text-decoration-none" href="{{route('download')}}">Download</a></div>
+                    <div class="text-center w-50 px-5 py-2 bg-glass"><a class="text-decoration-none" href="/user/{{Auth::user()->name}}">Profile</a></div>
+                    <div class="ms-2 w-50 px-5 py-2 bg-glass text-center"><a class="text-decoration-none" href="{{route('download')}}">Download</a></div>
                 </div>
 
             <div class="d-flex flex-column m-2">
@@ -145,27 +145,41 @@
 {{--                <div>Player: Some rupor</div>--}}
 {{--            </div>--}}
             <div class="m-2 d-flex flex-row prime-panel2">
-                <div class="border-primary  border p-5 me-1 w-25 prime-panel">Prime panel</div>
+                <div class="bg-glass me-1 w-25 prime-panel d-flex align-items-end" style="background: center / cover url('{{asset('img/design/prime-panel.png')}}');">
+                    <div class="p-3">
+                        <h5>Prime panel</h5>
+                        <div>Some art idk</div>
+                    </div>
+
+                </div>
                 <div class="w-100">
                     @if(Character::all()->firstWhere('account', Auth::user()->name)!=null)
-                    <div class="border-primary border p-5 h-50 prime-panel-parent">
-                        <div>Faction <span class="text-uppercase">{{Character::all()->firstWhere('account', Auth::user()->name)->faction}}</span></div>
-                        <div></div>
+                    <div class="bg-glass h-50 prime-panel-parent d-flex align-items-end" style="background: center / cover url('{{asset('img/design/faction-panel.png')}}');">
+                        <div class="p-3">
+                            <h3>Faction </h3>
+                            <div><span class="text-uppercase">{{Account::auth()->character()->faction}}</span></div>
+                        </div>
                     </div>
                     @else
-                        <div class="border-primary border p-5 h-50 prime-panel-parent">
-                            <div>Factions</div>
-                            <div>You can join faction in game</div>
+                        <div class="bg-glass h-50 prime-panel-parent d-flex align-items-end" style="background: center / cover url('{{asset('img/design/faction-panel.png')}}');">
+                            <div class="p-3">
+                                <div>Factions</div>
+                                <div>You can join faction in game</div>
+                            </div>
                         </div>
                     @endif
                     <div class="d-flex flex-row prime-other-panels h-50 prime-panel-parent">
-                        <div class="border-primary border p-5 mt-1 w-50 prime-other-panel">
-                            <div>Discord</div>
-                            <div>https://discord.gg/JMhd6VtVv5</div>
+                        <div class="bg-glass mt-1 w-50 prime-other-panel d-flex align-items-end" style="background: center / cover url('{{asset('img/design/discord-panel.png')}}');">
+                            <div class="p-3">
+                                <div>Discord</div>
+                                <div>https://discord.gg/JMhd6VtVv5</div>
+                            </div>
                         </div>
-                        <div class="border-primary  border p-5 mt-1 ms-1 w-50 prime-other-panel">
-                            <div>Github</div>
-                            <div>https://github.com/ExtevaXT</div>
+                        <div class="bg-glass mt-1 ms-1 w-50 prime-other-panel d-flex align-items-end" style="background: center / cover url('{{asset('img/design/github-panel.png')}}');">
+                            <div class="p-3">
+                                <div>Github</div>
+                                <div>https://github.com/ExtevaXT</div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -188,7 +202,7 @@
                         <div>Last changes .web</div>
                         <div class="overflow-auto" style="max-height: 310px">
                             @foreach($web as $commit)
-                                <div class="border-primary change-item border p-4 my-1">
+                                <div class="bg-glass change-item p-4 my-2">
                                     <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg') }}</span> {{ $commit['commit']['author']['name']}}</div>
                                     <div>{{ $commit['commit']['message']}}</div>
                                 </div>
@@ -200,7 +214,7 @@
                     <div>Last changes .unity</div>
                     <div class="overflow-auto" style="max-height: 310px">
                         @foreach($unity as $commit)
-                        <div class="border-primary change-item border p-4 my-1">
+                        <div class="bg-glass change-item p-4 my-2">
                             <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg') }}</span> {{ $commit['commit']['author']['name']}}</div>
                             <div>{{ $commit['commit']['message']}}</div>
                         </div>

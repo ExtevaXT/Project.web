@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "32f5cb5fa0e698117cfae670c03247f6",
+    "content-hash": "6d50869f4858826f0a3199c5ea773235",
     "packages": [
         {
             "name": "biscolab/laravel-recaptcha",
@@ -1410,6 +1410,55 @@
                 }
             ],
             "time": "2022-08-28T14:45:39+00:00"
+        },
+        {
+            "name": "jdenticon/jdenticon",
+            "version": "1.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dmester/jdenticon-php.git",
+                "reference": "cabb7a44c413c318392a341c5d3ca30fcdd57a6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dmester/jdenticon-php/zipball/cabb7a44c413c318392a341c5d3ca30fcdd57a6f",
+                "reference": "cabb7a44c413c318392a341c5d3ca30fcdd57a6f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.7"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Jdenticon\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Mester Pirttijärvi"
+                }
+            ],
+            "description": "Render PNG and SVG identicons.",
+            "homepage": "https://jdenticon.com/",
+            "keywords": [
+                "avatar",
+                "identicon",
+                "jdenticon"
+            ],
+            "support": {
+                "docs": "https://jdenticon.com/php-api.html",
+                "issues": "https://github.com/dmester/jdenticon-php/issues",
+                "source": "https://github.com/dmester/jdenticon-php"
+            },
+            "time": "2022-10-30T17:15:02+00:00"
         },
         {
             "name": "knplabs/github-api",

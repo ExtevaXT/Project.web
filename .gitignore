@@ -24,3 +24,5 @@ Homestead.json
 
 config/github.php
 config/services.php
+
+*.psd

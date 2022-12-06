@@ -4,7 +4,7 @@
 
 @section('title', 'Authorization')
 @section('style')
-    <link rel="stylesheet" href="{{ asset('css/Register/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/register.css')}}">
 @endsection
 
 @section('content')

@@ -6,7 +6,7 @@
 @section('style')
     <link rel="stylesheet" href="{{asset('leaflet/leaflet.css')}} ">
     <link rel="stylesheet" href="{{asset('css/Custom/BlockTable.css')}}">
-    <link rel="stylesheet" href="{{asset('css/Index/style.css')}}">
+    <link rel="stylesheet" href="{{asset('css/index.css')}}">
     <link rel="stylesheet" href="{{asset('css/ranking.css')}}">
 @endsection
 

@@ -11,35 +11,18 @@
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <link rel="stylesheet" href="{{ asset('css/Custom/MaterialDesignIcons.min.css')}}">
     <link rel="stylesheet" id="switcher-id" href="">
-    @if(Auth::check() and  UserController::AuthSetting('styleTheme') and
-(UserController::AuthSetting('styleThemeShow') == 1 or UserController::AuthSetting('styleThemeShow') == 2))
-        <link rel="stylesheet" href="{{asset('js/JS-Theme-Switcher-master/themes/'.UserController::AuthSetting('styleTheme').'.css')}}">
+    @if(Auth::check() and  Account::auth()->setting('styleTheme') and
+(Account::auth()->setting('styleThemeShow') == 1 or Account::auth()->setting('styleThemeShow') == 2))
+        <link rel="stylesheet" href="{{asset('js/JS-Theme-Switcher-master/themes/'.Account::auth()->setting('styleTheme').'.css')}}">
     @endif
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.11.2/ace.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jdenticon@3.2.0/dist/jdenticon.min.js" async
-            integrity="sha384-yBhgDqxM50qJV5JPdayci8wCfooqvhFYbIKhv0hTtLvfeeyJMJCscRfFNKIxt43M" crossorigin="anonymous">
-    </script>
-    <script
-        src="https://unpkg.com/@andreasremdt/simple-translator@latest/dist/umd/translator.min.js"
-        defer
-    ></script>
+    <script src="{{asset('js/jdenticon/jdenticon-3.2.0.js')}}" defer></script>
     {!! htmlScriptTagJsApi() !!}
     <style>
-        @font-face {
-            font-family: 'Aquire';
-            src: url({{asset('font/Aquire/AquireLight.otf')}});
-        }
-        .navbar-brand{
-            font-family: Aquire, sans-serif;
-        }
         .goog-te-banner-frame{
             display: none;
         }
-        body{
-            position: initial !important;
-            min-height: 100%;
-            top: 0 !important;
-        }
+
         #goog-gt-tt {
             display: none !important;
         }
@@ -125,13 +108,12 @@
 <body>
 <div id="bg"></div>
 <div class="main-content">
-
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-glass mt-4">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+                        <i class="ms-1 mdi mdi-menu-open mdi-36px"></i>
                     </button>
-                    <a class="navbar-brand pc-panel" href="/">Project.web</a>
+                    <a class="navbar-brand pc-panel ms-4" href="/">Project.web</a>
                     @guest()
                     <div class="d-flex mobile-panel">
                         <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#authModal">Login</div>
@@ -162,7 +144,7 @@
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="mobile-panel"><a class="navbar-brand" href="/">Project.web</a></li>
                             @auth()
-                            <li class="nav-item"><a class="nav-link" href="/auction">Auction</a</li>
+                            <li class="nav-item"><a class="nav-link" href="/auction">Auction</a></li>
                             @endauth
                             <li class="nav-item"><a class="nav-link" href="/guides">Guides</a></li>
                             <li class="nav-item"><a class="nav-link" href="/map">Map</a></li>
@@ -195,7 +177,7 @@
 
                     </div>
                     @auth()
-                        <ul class="navbar-nav pc-panel">
+                        <ul class="navbar-nav pc-panel me-5">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle p-0" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="d-flex">
@@ -206,18 +188,18 @@
                                         </div>
                                     </div>
                                 </a>
-                                {{--                                https://stackoverflow.com/questions/55309379/how-to-display-and-shut-message-modal-when-hovering-over-buttons--}}
                                 <ul class="dropdown-menu user-panel-crutch" aria-labelledby="navbarDropdown">
-                                    <li><!--User panel like modal?-->
+                                    <li>
                                         <div class="d-flex user-panel">
                                             <div class="user-panel-left">
-                                                <div class="user-panel-profile border border-primary p-3 mb-1">
+                                                <div class="user-panel-profile border border-primary p-3 mb-1 d-flex justify-content-between">
                                                     <x-user-profile name="{{Auth::user()->name}}" size="48" />
+                                                    <button onclick="window.location.href=''" class="btn btn-outline-primary">Swap character</button>
                                                 </div>
                                                 <div class="user-panel-notifications border border-primary p-3">
                                                     <div>Last notifications <a href="/notifications">All notifications</a></div>
                                                     <div class="notification-panel " style="height: 300px">
-                                                        @foreach(AccountNotification::all()->where('account', Auth::user()->name) as $notification)
+                                                        @foreach(Account::auth()->notifications() as $notification)
                                                             @if($notification->created_at < Carbon::now()->addDay())
                                                                 <div class="border border-primary p-1 mt-1">
                                                                     <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
@@ -313,7 +295,7 @@
                     <div class="user-panel-notifications border border-primary p-3 w-100">
                         <div>Last notifications <a href="/notifications">All notifications</a></div>
                         <div class="notification-panel " style="height: 300px">
-                            @foreach(AccountNotification::all()->where('account', Auth::user()->name) as $notification)
+                            @foreach(Account::auth()->notifications() as $notification)
                                 @if($notification->created_at < Carbon::now()->addDay())
                                     <div class="border border-primary p-1 mt-1">
                                         <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
@@ -437,18 +419,16 @@
         document.querySelector('.goog-te-combo').classList.add('form-select');
         document.querySelector('#google_translate_element').firstChild.lastChild.remove();
         document.querySelector('#google_translate_element').firstChild.lastChild.remove();
+        document.body.style = null;
+        document.querySelector('html').style = null;
 
     }
 </script>
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 <script src="https://www.google.com/recaptcha/api.js"></script>
-<script>
-    function onSubmit(token) {
-        document.getElementById("demo-form").submit();
-    }
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
+
+{{--<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.146.0/three.min.js"></script>--}}
+{{--<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>--}}
 <script>
 
 </script>

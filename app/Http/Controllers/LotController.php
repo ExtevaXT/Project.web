@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\LotValidation;
+use App\Models\Account;
 use App\Models\Character;
 use App\Models\Character_personal_storage;
+use App\Models\ClaimItem;
 use App\Models\Lot;
 use App\Models\Resource;
 use Illuminate\Auth\Events\Authenticated;
@@ -63,19 +65,24 @@ class LotController extends Controller
     public function createPost(LotValidation $request)
     {
 //        $item = explode('.', $request['item']);
-        $character = Character::all()->where('account',  Auth::user()->name)->first();
-        $cps = Character_personal_storage::all()->where('character', $character->name);
+        $character = Account::auth()->character();
+        $cps = $character->cps();
         $item = $cps->where('slot', $request['item'])->first();
 
         $validate = $request->validated();
         $validate['character']= $character->name;
         $validate['bidder']= $character->name;
 
-        $validate['item'] = $item->name;
-        $validate['amount'] = $item->amount;
-        $validate['durability'] = $item->durability;
-        $validate['ammo'] = $item->ammo;
-        $validate['metadata'] = $item->metadata;
+        $claim_item = ClaimItem::create([
+            'name'=>$item->name,
+            'amount'=>$item->amount,
+            'durability'=>$item->durability,
+            'ammo'=>$item->ammo,
+            'metadata'=>$item->metadata,
+            'claimed'=>false,
+        ]);
+        $validate['item'] = $claim_item;
+        dd($validate);
         //FACADE FOR UPDATING
         DB::table('characters')->where('name',$character->name)->update(['gold'=>$character->gold-$request['bid']]);
         //RAW SQL FOR DELETING

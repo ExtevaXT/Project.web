@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('account');
             $table->string('title');
             $table->string('value');
+            $table->foreignId('item')->nullable()->constrained('claim_items');
             $table->timestamps();
         });
     }

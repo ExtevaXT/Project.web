@@ -14,10 +14,12 @@ use App\Models\Character_personal_storage;
 use App\Models\CharacterQuests;
 use App\Models\CharacterSkills;
 use App\Models\CharacterTalents;
+use App\Models\ClaimItem;
 use App\Models\Friend;
 use App\Models\CharacterAchievement;
 use App\Models\Resource;
 use Discord\Http\Http;
+use Github\Api\User;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
@@ -46,6 +48,13 @@ class UserController extends Controller
         return view('users.quests', compact('quests'));
     }
 
+    public function changeCharacter(Request $request)
+    {
+        $character = Account::auth()->characters()->where('name', $request->validate(['name'=>'required'])['name']);
+        $characters = Account::auth()->characters()->whereNotIn('name', $character->name);
+        //Need to swap db
+    }
+
 
 
     public static function AuthSetting($setting)
@@ -54,7 +63,8 @@ class UserController extends Controller
     }
     public function test()
     {
-        return null;
+
+        dd(Resource::attachments('12345'));
     }
 
     public function profile($name)
@@ -62,8 +72,8 @@ class UserController extends Controller
         //IMAGES ROUTES FOR ALL
         $item_icons = Resource::icons();
         $account = Account::all()->where('name', $name)->first();
-        if($account==null) return back();
-        $character = Character::all()->where('account', $name)->first();
+        if($account==null) return abort(404);
+        $character = $account->character();
         //Items for inventory
         $items = collect();
 
@@ -151,7 +161,7 @@ class UserController extends Controller
     }
     public function upload(Request $request)
     {
-        $user = Account::find(Auth::user()->id);
+        $user = Account::auth();
         if($request['image']){
 //            $filename = $request['image']->getClientOriginalName();
 //            $request->image->storeAs('images',$filename,'public');
@@ -173,7 +183,7 @@ class UserController extends Controller
     public function settings(SettingsValidation $request)
     {
         //return $request->validated();
-        Account::find(Auth::user()->id)->settings($request->validated());
+        Account::auth()->settings($request->validated());
         return back()->with(['success'=>true]);
     }
     public function email(EmailValidation $request)
@@ -181,7 +191,7 @@ class UserController extends Controller
         $validation = $request->validated();
         if (Hash::check($validation['password'],Auth::user()->password) and $validation['email'] == Auth::user()->email)
         {
-            Account::find(Auth::user()->id)->update(['email' => $validation['emailNew']]);
+            Account::auth()->update(['email' => $validation['emailNew']]);
             return back()->with(['success'=>true]);
         }
         return back()->withErrors(['message'=>'Email or password are incorrect']);
@@ -191,7 +201,7 @@ class UserController extends Controller
         $validation = $request->validated();
         if (Hash::check($validation['passwordOld'],Auth::user()->password))
         {
-            Account::find(Auth::user()->id)->update(['password' => Hash::make($validation['password'])]);
+            Account::auth()->update(['password' => Hash::make($validation['password'])]);
             return back()->with(['success'=>true]);
         }
         return back()->withErrors(['message'=>'Password is incorrect']);
@@ -211,7 +221,7 @@ class UserController extends Controller
 //            ->first();
         if(Auth::attempt($authValidation->validated())){
             $authValidation->session()->regenerate();
-            return redirect('/');
+            return back();
         }
         return redirect()->route('login')->withErrors(['message'=>'Login or password are incorrect']);
     }

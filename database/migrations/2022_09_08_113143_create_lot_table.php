@@ -16,11 +16,14 @@ return new class extends Migration
         Schema::create('lots', function (Blueprint $table) {
             $table->id();
             $table->string('character');
-            $table->string('item');
-            $table->integer('amount');
-            $table->integer('durability');
-            $table->integer('ammo');
-            $table->string('metadata');
+
+            $table->foreignId('item')->constrained('claim_items');
+
+            //$table->string('item');
+            //$table->integer('amount');
+            //$table->integer('durability');
+            //$table->integer('ammo');
+            //$table->string('metadata');
 
             $table->dateTime('time');
 

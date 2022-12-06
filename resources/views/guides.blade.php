@@ -4,7 +4,7 @@
 
 @section('title', 'Guides page')
 @section('style')
-    <link rel="stylesheet" href="{{ asset('css/Guides/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/guides.css')}}">
 @endsection
 
 @section('content')

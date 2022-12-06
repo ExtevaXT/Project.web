@@ -43,7 +43,7 @@
     }
 }
 body{
-    background: var(--bs-dark);
+    background: rgb(26,32,44);
 }
 
 /*body{*/
@@ -54,7 +54,7 @@ body{
     outline: 0;
     box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25)!important;
 }
-.nav-pills.nav-item.nav-link.active{
+.nav-pills .nav-item .nav-link.active{
     background-color: rgba(255,255,255,0.1)!important;
 }
 .nav-tabs .nav-item .nav-link.active{
@@ -63,6 +63,10 @@ body{
 .btn-check:checked + .btn-outline-primary{
     background-color: white!important;
     color: #1b1b1b !important;
+}
+.form-check-input:checked{
+    background-color: rgba(255,255,255,0.1)!important;
+    border-color: rgba(255,255,255,0.1)!important;
 }
 .btn-outline-primary:hover{
     background-color: white !important;

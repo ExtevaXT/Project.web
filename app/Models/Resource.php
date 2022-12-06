@@ -5,17 +5,27 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
 use Symfony\Component\Yaml\Yaml;
 
 class Resource extends Model
 {
     public static function data($path)
     {
+
         $data = collect();
-        $files = glob(resource_path()."/assets/$path/*.*", GLOB_BRACE);
-        foreach($files as $file) {
-            $data->push(Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour']);
+//        $files = glob(resource_path()."/assets/$path/*.*", GLOB_BRACE);
+//        foreach($files as $file) {
+//            $data->push(Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour']);
+//        }
+        $it = new RecursiveDirectoryIterator(resource_path()."/assets/$path");
+        foreach(new RecursiveIteratorIterator($it) as $file) {
+            if ($file->getExtension() == 'asset') {
+                $data->push(Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour']);
+            }
         }
+
         return $data;
     }
 
@@ -28,5 +38,15 @@ class Resource extends Model
             }
         }
         return $item_icons;
+    }
+    public static function attachments($metadata)
+    {
+        $attachments = collect();
+        foreach (self::data('items/attachments') as $attachment){
+            foreach (str_split($metadata) as $group => $id)
+                if($group == $attachment['attachmentMetaGroup'] and $id == chr($attachment['attachmentMetaId']))
+                    $attachments->push($attachment);
+        }
+        return $attachments;
     }
 }

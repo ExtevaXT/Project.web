@@ -32,11 +32,7 @@ class GuideController extends Controller
 
     public function item($category, $item_name)
     {
-        $files = glob(resource_path().'/assets/items/'.$category.'/*.*', GLOB_BRACE);
-        $items = [];
-        foreach($files as $file) {
-            $items[] = Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour'];
-        }
+        $items = Resource::data('items/'.$category);
         foreach ($items as $item){
             if ($item['m_Name'] == $item_name){
                 return view('guides.item', ['item' => $item, 'category' => $category]);

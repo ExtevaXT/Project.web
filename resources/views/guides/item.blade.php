@@ -4,7 +4,7 @@
 
 @section('title', 'Item')
 @section('style')
-    <link rel="stylesheet" href="{{ asset('css/Guides/style.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/guides.css')}}">
     <link rel="stylesheet" href="{{ asset('css/Custom/BlockTable.css')}}">
 @endsection
 

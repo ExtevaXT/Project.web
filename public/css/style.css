@@ -1,6 +1,10 @@
 .tab-panel{
     display: none;
 }
+.bg-glass{
+    background: rgba(177, 177, 177, 0.07);
+    outline: 1px solid rgba(171,171,171,0.16);
+}
 *{
     /*font-family:  var(--bs-font-monospace);*/
     color: #0d6efd;
@@ -43,18 +47,35 @@ font{
 .dropdown-toggle:after{
     display: none;
 }
-
+.navbar-toggler{
+    border: none!important;
+    font-size: 2rem;
+}
 .user-panel-left{
     width: 400px;
 }
 .user-panel-crutch{
-    margin-left: -385px;
+    margin-left: -325px;
     margin-top: 0;
 }
 .pc-panel{
     display: block;
 }
+.main-left > *{
+    margin-left: 0 !important;
+}
+.main-right > *{
+    margin-right: 0 !important;
+}
 @media screen and (max-width: 1000px) {
+    .main-left > *{
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .main-right > *{
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
     .user-panel-crutch{
         margin-left: 0;
         margin-top: 0;
