@@ -9,7 +9,7 @@
 
 @section('content')
     @if(Auth::check() and $quests)
-        <div>Active quests</div>
+        <h3>Active quests</h3>
         <div>
             {{$quests}}
         </div>

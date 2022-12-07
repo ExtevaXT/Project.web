@@ -1,9 +1,13 @@
 .tab-panel{
     display: none;
 }
+.border-glass{
+    outline: 1px solid rgba(171,171,171,0.16);
+}
 .bg-glass{
     background: rgba(177, 177, 177, 0.07);
     outline: 1px solid rgba(171,171,171,0.16);
+    border-radius: 0!important;
 }
 *{
     /*font-family:  var(--bs-font-monospace);*/

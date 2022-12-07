@@ -1,6 +1,6 @@
-<div class="mb-2">
+<div class="mb-3">
     <input name="{{$name}}"
-           class="@error($name) is-invalid @enderror p-2 border border-primary form-control d-inline-block"
+           class="@error($name) is-invalid @enderror p-2 bg-glass form-control d-inline-block"
            type="{{$type}}"
            placeholder="{{$placeholder}}"
            autocomplete="off">

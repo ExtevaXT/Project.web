@@ -1,5 +1,5 @@
 .objects-panel{
-    grid-template-columns: repeat(4,1fr);grid-gap: 4px;
+    grid-template-columns: repeat(4,1fr);grid-gap: 8px;
 }
 .main{
      display: flex;

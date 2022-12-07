@@ -12,6 +12,11 @@ class Character extends Model
     protected $table = 'characters';
     public $timestamps = false;
     protected $fillable = ['gold'];
+
+    public static function online()
+    {
+        return Character::all()->where('online', true);
+    }
     public function cps()
     {
         return Character_personal_storage::all()->where('character', $this->name);
@@ -26,7 +31,7 @@ class Character extends Model
     }
     public function quests()
     {
-        return CharacterQuests::all()->where('character', $this->name);
+        return CharacterQuests::all()->firstWhere('character', $this->name);
     }
     public function talents()
     {

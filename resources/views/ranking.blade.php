@@ -12,11 +12,11 @@
 
 @section('content')
     @auth()
-        <div class="fs-3 p-1 text-center">Player ranking</div>
+        <div class="fs-3 p-1 text-center my-3">Player ranking</div>
         <div class="main d-flex">
-            <div class="side-filter">
+            <div class="side-filter main-left me-3">
                 <form action="/ranking">
-                    <input value="{{ app('request')->input('search') }}" name="search" class="p-2 form-control border-primary search" placeholder="Search" onchange="this.form.submit()">
+                    <input value="{{ app('request')->input('search') }}" name="search" class="p-2 form-control bg-glass search" placeholder="Search" onchange="this.form.submit()">
                 </form>
                 <div class="py-2"><a class="nav-link sort" data-sort="level" href="/ranking?filter=level">Level</a></div>
                 <div class="py-2"><a class="nav-link sort" data-sort=achievements" href="/ranking?filter=achievements">Achievements</a> </div>
@@ -24,9 +24,9 @@
                 <div class="py-2"><a class="nav-link sort" data-sort="kda" href="/ranking?filter=kda">KDA</a></div>
 
             </div>
-            <div class="BlockTable">
+            <div class="BlockTable main-right">
                 <div class="BlockTable-head">
-                    <div class="BlockTable-row BT-R4">
+                    <div class="BlockTable-row BT-R4 bg-glass">
                         <div class="BlockTable-label fs-5"><div class="BlockTable-labelInner label-player">Player / Level</div></div>
                         <div class="BlockTable-label fs-5"><div class="BlockTable-labelInner label-achievements">Achievements / Trophies</div></div>
                         <div class="BlockTable-label fs-5"><div class="BlockTable-labelInner label-online">Last save / Joined</div></div>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="BlockTable-body sort">
                     @foreach($characters as $player)
-                        <div class="BlockTable-row BT-R4 text-center">
+                        <div class="BlockTable-row BT-R4 text-center bg-glass">
 {{-- data-bs-placement="left" data-bs-toggle="tooltip" data-bs-html="true" title="" data-bs-original-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>" --}}
                             <div class="BlockTable-data row-player">
                                 <div class="d-flex">

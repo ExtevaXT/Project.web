@@ -14,7 +14,7 @@ class Lot extends Model
 
     public function item()
     {
-        return ClaimItem::find($this->claim_item);
+        return ClaimItem::find($this->item);
     }
 
     public function endTime()

@@ -17,13 +17,13 @@
                 {{$errors->first()}}
             </div>
         @endif
-        <div class="border border-primary px-5 py-4">
+        <div class="bg-glass px-5 py-4 my-3">
             <form method="POST" action="{{route('forgot')}}">
                 @csrf
-                <div class="my-3">Type your email to send email with password reset link</div>
-                <input autocomplete="off" name="email" class="mb-3 p-2 border border-primary form-control" type="text" placeholder="Email" required>
+                <h4 class="my-3">Type your email to send email with password reset link</h4>
+                <input autocomplete="off" name="email" class="mb-3 p-2 bg-glass form-control" type="text" placeholder="Email" required>
                 {!! htmlFormSnippet() !!}
-                <input class="my-3 w-100 p-2 btn-outline-primary btn" type="submit" value="Submit">
+                <input class="my-3 w-100 p-2 btn-outline-primary bg-glass btn" type="submit" value="Submit">
             </form>
         </div>
 

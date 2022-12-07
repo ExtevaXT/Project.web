@@ -60,13 +60,13 @@
                         <div class="p-3 my-1">
                             <div class="fs-4">Change password</div>
                             <div>Description</div>
-                            <button class="btn btn-outline-primary p-2 float-end" style="margin: -44px 5px;">Save changes</button>
+                            <button class="btn btn-outline-primary bg-glass p-2 float-end" style="margin: -44px 5px;">Save changes</button>
                         </div>
                         <div>
-                            <input name="passwordOld" type="password" class="form-control border-primary border-bottom my-1 border-0 rounded-0" placeholder="Old password">
+                            <input name="passwordOld" type="password" class="form-control bg-glass my-1 border-0 rounded-0" placeholder="Old password">
                             <div class="d-flex">
-                                <input name="password" type="password" class="form-control input-group border-primary border-bottom my-1 me-2 border-0 rounded-0" placeholder="New password">
-                                <input name="password_confirmation" type="password" class="form-control input-group border-primary border-bottom my-1 ms-2 border-0 rounded-0" placeholder="Password confirm">
+                                <input name="password" type="password" class="form-control input-group bg-glass my-1 me-2 border-0 rounded-0" placeholder="New password">
+                                <input name="password_confirmation" type="password" class="form-control input-group bg-glass my-1 ms-2 border-0 rounded-0" placeholder="Password confirm">
                             </div>
                         </div>
                     </form>
@@ -77,13 +77,13 @@
                         <div class="p-3 my-1">
                             <div class="fs-4">Change E-Mail</div>
                             <div>Description</div>
-                            <button type="submit" class="btn btn-outline-primary p-2 float-end" style="margin: -44px 5px;">Save changes</button>
+                            <button type="submit" class="btn btn-outline-primary bg-glass p-2 float-end" style="margin: -44px 5px;">Save changes</button>
                         </div>
                         <div>
-                            <input name="password" type="password" class="form-control border-primary border-bottom my-1 border-0 rounded-0" placeholder="Password">
+                            <input name="password" type="password" class="form-control bg-glass my-1 border-0 rounded-0" placeholder="Password">
                             <div class="d-flex">
-                                <input name="email" type="text" class="form-control input-group border-primary border-bottom my-1 me-2 border-0 rounded-0" placeholder="Old E-mail">
-                                <input name="emailNew" type="text" class="form-control input-group border-primary border-bottom my-1 ms-2 border-0 rounded-0" placeholder="New E-Mail">
+                                <input name="email" type="text" class="form-control input-group bg-glass my-1 me-2 border-0 rounded-0" placeholder="Old E-mail">
+                                <input name="emailNew" type="text" class="form-control input-group bg-glass my-1 ms-2 border-0 rounded-0" placeholder="New E-Mail">
                             </div>
                         </div>
                     </form>
@@ -93,28 +93,28 @@
                     <div class="p-3 my-1">
                         <div class="fs-4">Security IP check</div>
                         <div>Description</div>
-                        <button class="btn btn-outline-primary p-2 float-end" style="margin: -44px 5px;">Save changes</button>
+                        <button class="btn btn-outline-primary bg-glass p-2 float-end" style="margin: -44px 5px;">Save changes</button>
                     </div>
                     <div>
                         <input type="radio" class="btn-check" name="security-pass" id="security1" autocomplete="off">
-                        <label class="btn btn-outline-primary w-100 text-start my-1" for="security1">Always check IP</label>
+                        <label class="btn btn-outline-primary bg-glass w-100 text-start my-1" for="security1">Always check IP</label>
                         <input type="radio" class="btn-check" name="security-pass" id="security2" autocomplete="off">
-                        <label class="btn btn-outline-primary w-100 text-start my-1" for="security2">Check IP on other PC</label>
+                        <label class="btn btn-outline-primary bg-glass w-100 text-start my-1" for="security2">Check IP on other PC</label>
                         <input type="radio" class="btn-check" name="security-pass" id="security3" autocomplete="off">
-                        <label class="btn btn-outline-primary w-100 text-start my-1" for="security3">Never check IP</label>
+                        <label class="btn btn-outline-primary bg-glass w-100 text-start my-1" for="security3">Never check IP</label>
                     </div>
                 </div>
             </div>
 
 {{--            <div class="tab-pane fade active hideAfterRendering" id="css">--}}
-{{--                <button class="btn btn-outline-primary p-2 my-2 w-100">Save changes</button>--}}
+{{--                <button class="btn btn-outline-primary bg-glass p-2 my-2 w-100">Save changes</button>--}}
 {{--                <div class="code"></div>--}}
 {{--            </div>--}}
             <div class="tab-pane fade" id="style">
                 <form id="form" action="{{route('settings')}}" method="POST">
                     @csrf
-                    <button type="submit" class="btn btn-outline-primary p-2 my-2 w-100">Save changes</button>
-                    <select class="form-control my-2 " name="styleTheme">
+                    <button type="submit" class="btn btn-outline-primary bg-glass p-2 my-2 w-100">Save changes</button>
+                    <select class="form-select my-2 bg-glass" name="styleTheme">
                         <option selected disabled>Select theme</option>
                         <option value="null">None</option>
                         <option value="hanipaganda" @if(Account::auth()->setting('styleTheme')=='hanipaganda') selected @endif>HANIPAGANDA</option>
@@ -123,13 +123,13 @@
                     <div class="mb-2">
                         <input type="radio" class="btn-check" name="styleThemeShow" value="0" id="styleThemeShow1" autocomplete="off"
                         @if(Account::auth()->setting('styleThemeShow') == 0) checked @endif>
-                        <label class="btn btn-outline-primary w-100 text-start my-1" for="styleThemeShow1">Show theme only in profile for everyone</label>
+                        <label class="btn btn-outline-primary bg-glass w-100 text-start my-1" for="styleThemeShow1">Show theme only in profile for everyone</label>
                         <input type="radio" class="btn-check" name="styleThemeShow" value="1" id="styleThemeShow2" autocomplete="off"
                         @if(Account::auth()->setting('styleThemeShow') == 1) checked @endif>
-                        <label class="btn btn-outline-primary w-100 text-start my-1" for="styleThemeShow2">Show theme for yourself only</label>
+                        <label class="btn btn-outline-primary bg-glass w-100 text-start my-1" for="styleThemeShow2">Show theme for yourself only</label>
                         <input type="radio" class="btn-check" name="styleThemeShow" value="2" id="styleThemeShow3" autocomplete="off"
                         @if(Account::auth()->setting('styleThemeShow') == 2) checked @endif>
-                        <label class="btn btn-outline-primary w-100 text-start my-1" for="styleThemeShow3">Show theme always</label>
+                        <label class="btn btn-outline-primary bg-glass w-100 text-start my-1" for="styleThemeShow3">Show theme always</label>
                     </div>
                     <input name="styleCSS" type="hidden" value="">
                     <div id="editor" class="notranslate">{{Account::auth()->setting('styleCSS')}}</div>
@@ -138,7 +138,7 @@
             <div class="tab-pane fade" id="profile">
                 <form action="{{route('settings')}}" method="POST">
                     @csrf
-                    <button type="submit" class="btn btn-outline-primary p-2 my-2 w-100">Save changes</button>
+                    <button type="submit" class="btn btn-outline-primary bg-glass p-2 my-2 w-100">Save changes</button>
 
                     <label for="profileColor" class="form-label fs-4">Color picker</label>
                     <div class="d-flex">
@@ -155,7 +155,7 @@
             <div class="tab-pane fade" id="index">
                 <form action="{{route('settings')}}" method="POST">
                     @csrf
-                    <button type="submit" class="btn btn-outline-primary p-2 my-2 w-100">Save changes</button>
+                    <button type="submit" class="btn btn-outline-primary bg-glass p-2 my-2 w-100">Save changes</button>
                     <x-input-switch name="indexAnnouncements" label="Announcements"/>
                     <x-input-switch name="indexWeb" label="Web changes"/>
                     <x-input-switch name="indexUnity" label="Unity changes"/>
@@ -165,7 +165,7 @@
             <div class="tab-pane fade" id="nav">
                 <form action="{{route('settings')}}" method="POST">
                     @csrf
-                    <button type="submit" class="btn btn-outline-primary p-2 my-2 w-100">Save changes</button>
+                    <button type="submit" class="btn btn-outline-primary bg-glass p-2 my-2 w-100">Save changes</button>
                     <x-input-switch name="navAuction" label="Auction"/>
                     <x-input-switch name="navGuides" label="Guides"/>
                     <x-input-switch name="navMap" label="Map"/>

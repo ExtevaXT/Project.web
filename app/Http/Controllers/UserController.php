@@ -41,7 +41,7 @@ class UserController extends Controller
     public function quests()
     {
         //if not null
-        if($quests = CharacterQuests::all()->firstWhere('character', Character::all()->firstWhere('account', Auth::user()->name)))
+        if($quests = Account::auth()->character()->quests())
             $quests = $quests['data'];
         //some awesome logic for parsing custom data serialization type
 

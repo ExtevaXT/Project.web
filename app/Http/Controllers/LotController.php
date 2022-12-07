@@ -26,35 +26,24 @@ class LotController extends Controller
         $search = $request->query('search');
         //sort by category from resources
         $lots = Lot::all()->sort(function ($lot) use ($filter){
-            $item = Resource::data('items/'.$filter)->firstWhere('m_Name', $lot['item']);
+            $item = Resource::data('items/'.$filter)->firstWhere('m_Name', $lot->item()->name);
             return $item;
         })->reverse();
         // Search
         if($search!=null){
             $lots = $lots->filter(function ($lot) use ($search) {
                 // replace stristr with your choice of matching function
-                return false !== stristr($lot->item, $search);
+                return false !== stristr($lot->item()->name, $search);
             });
         }
         // other legacy logic
         $character = null;
         $character_personal_storage = null;
-        $my_lots = null;
-        $my_bids = null;
-
-        if(Auth::check() and Character::where('account', Auth::user()->name)->first()!=null)
+        if(Auth::check() and $character = Account::auth()->character())
         {
-            $character = Character::all()->where('account', Auth::user()->name)->first();
-            $character_personal_storage = Character_personal_storage::all()->where('character', $character['name']);
-            $my_lots = Lot::all()->where('character', $character->name);
-            $my_bids = Lot::all()->where('bidder', $character->name);
+            $character_personal_storage = $character->cps();
         }
-        return view('auction', compact('character',
-            'character_personal_storage',
-            'my_lots',
-            'my_bids',
-            'lots'
-        ));
+        return view('auction', compact('character', 'character_personal_storage', 'lots'));
     }
     public function create()
     {

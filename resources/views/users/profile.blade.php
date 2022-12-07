@@ -35,13 +35,13 @@
         <div class="pe-3">
             <x-user-profile name="{{$account->name}}" size="256" all="0"/>
             @if(Auth::user() !=null and Auth::user()->name == $account->name)
-            <div class="d-flex">
-                <div class="p-2" data-bs-toggle="modal" data-bs-target="#imageModal">
-                    Upload pic
+            <div class="d-flex gap-2 ms-2">
+                <div class="p-2 btn btn-outline-primary bg-glass" data-bs-toggle="modal" data-bs-target="#imageModal">
+                    Upload picture
                 </div>
                 <form action="{{route('upload')}}" method="POST">
                     @csrf
-                    <button class="p-2 btn" type="submit">Default</button>
+                    <button class="py-2 px-4 btn btn-outline-primary bg-glass" type="submit">Default</button>
                 </form>
 
             </div>
@@ -138,31 +138,31 @@
                 <div class="main-left d-flex flex-column w-50 m-2">
                     <div class="fs-3 my-3">General information</div>
                     <div class="d-grid info-panel">
-                        <div class="border-primary border p-2">
+                        <div class="bg-glass p-2">
                             <div>Registration</div>
                             <div>{{ $account['created'] }}</div>
                         </div>
-                        <div class="border-primary border p-2">
+                        <div class="bg-glass p-2">
                             <div>Last online</div>
                             <div>{{ $account['lastLogin'] }}</div>
                         </div>
                         @if($character!=null)
-                        <div class="border-primary border p-2">
+                        <div class="bg-glass p-2">
                             <div>Prestige</div>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <div>0</div>
                         </div>
-                        <div class="border-primary border p-2">
+                        <div class="bg-glass p-2">
                             <div>Last game online</div>
                             <div>Time</div>
                         </div>
-                        <div class="border-primary border p-2">
+                        <div class="bg-glass p-2">
                             <div>Reputation</div>
                             <div>0</div>
                         </div>
-                        <div class="border-primary border p-2">
+                        <div class="bg-glass p-2">
                             <div>{{ $character['level'] }} Level <span class="fw-light">{{ $character['experience'] }} exp</span></div>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
@@ -171,15 +171,15 @@
                         </div>
                         @endif
                         @if(Auth::user() !=null and Auth::user()->name == $account->name)
-                            <div class="border-primary border p-2">
+                            <div class="bg-glass p-2">
                                 <div>Balance</div>
                                 <div>{{$character['gold']}}</div>
                             </div>
-                            <div class="border-primary border p-2">
+                            <div class="bg-glass p-2">
                                 <div>Research Tokens</div>
                                 <div>0</div>
                             </div>
-                            <div class="border-primary border p-2">
+                            <div class="bg-glass p-2">
                                 <div>Hunting Tokens</div>
                                 <div>0</div>
                             </div>
@@ -233,7 +233,7 @@
                     <div class="d-flex achievement-panel">
                         @for ($i = 0; $i < 5; $i++)
                             @isset($achievements[$i])
-                            <div class="border-primary border p-3 w-100 me-1 text-center achievement-collection-item">
+                            <div class="bg-glass p-3 w-100 me-1 text-center achievement-collection-item">
                                 <div class="m-1"><i class="icons mdi mdi-trophy mdi-48px"></i></div>
                                 <div style="white-space: nowrap">{{$achievements[$i]['name']}}</div>
                             </div>
@@ -247,7 +247,7 @@
 {{--                    <div class="fs-3 my-3">Collection showcase</div>--}}
 {{--                    <div class="d-flex collection-panel">--}}
 {{--                        @for ($i = 1; $i <= 4; $i++)--}}
-{{--                            <div class="border-primary border p-3 w-100 me-1">--}}
+{{--                            <div class="bg-glass p-3 w-100 me-1">--}}
 {{--                                <div>Img</div>--}}
 {{--                                <div>Some collectible</div>--}}
 {{--                            </div>--}}
@@ -257,7 +257,7 @@
                     @if($character!=null)
                     <div class="fs-3 my-3">Skills</div>
                     <div class="d-grid skill-panel">
-                        <div class="border-primary border p-3">
+                        <div class="bg-glass p-3">
                             <div class="d-flex">
                                 <div class="mt-3 me-2"><i class="mdi mdi-heart-pulse mdi-48px"></i></div>
                                 <div class="w-100">
@@ -269,7 +269,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-primary border p-3">
+                        <div class="bg-glass p-3">
                             <div class="d-flex">
                                 <div class="mt-3 me-2"><i class="mdi mdi-lightning-bolt mdi-48px"></i></div>
                                 <div class="w-100">
@@ -281,7 +281,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-primary border p-3">
+                        <div class="bg-glass p-3">
                             <div class="d-flex">
                                 <div class="mt-3 me-2"><i class="mdi mdi-food-drumstick mdi-48px"></i></div>
                                 <div class="w-100">
@@ -293,7 +293,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-primary border p-3">
+                        <div class="bg-glass p-3">
                             <div class="d-flex">
                                 <div class="mt-3 me-2"><i class="mdi mdi-water mdi-48px"></i></div>
                                 <div class="w-100">
@@ -305,7 +305,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-primary border p-3">
+                        <div class="bg-glass p-3">
                             <div class="d-flex">
                                 <div class="mt-3 me-2"><i class="mdi mdi-dumbbell mdi-48px"></i></div>
                                 <div class="w-100">
@@ -317,7 +317,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-primary border p-3">
+                        <div class="bg-glass p-3">
                             <div class="d-flex">
                                 <div class="mt-3 me-2"><i class="mdi mdi-radioactive mdi-48px"></i></div>
                                 <div class="w-100">
@@ -329,7 +329,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-primary border p-3">
+                        <div class="bg-glass p-3">
                             <div class="d-flex">
                                 <div class="mt-3 me-2"><i class="mdi mdi-shield mdi-48px"></i></div>
                                 <div class="w-100">
@@ -341,7 +341,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-primary border p-3">
+                        <div class="bg-glass p-3">
                             <div class="d-flex">
                                 <div class="mt-3 me-2"><i class="mdi mdi-heat-wave mdi-48px"></i></div>
                                 <div class="w-100">
@@ -353,7 +353,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-primary border p-3">
+                        <div class="bg-glass p-3">
                             <div class="d-flex">
                                 <div class="mt-3 me-2"><i class="mdi mdi-square-root mdi-48px"></i></div>
                                 <div class="w-100">
@@ -365,7 +365,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="border-primary border p-3">
+                        <div class="bg-glass p-3">
                             <div class="d-flex">
                                 <div class="mt-3 me-2"><i class="mdi mdi-water-off mdi-48px"></i></div>
                                 <div class="w-100">
@@ -399,7 +399,7 @@
                 <div class="d-grid w-50 inventory-panel">
                     @foreach($inventory as $item)
 
-                        <div class="inventory-item border-primary border">
+                        <div class="inventory-item bg-glass">
                             <div class="w-100 h-100"
                                  @if($item['name']!='')
                                  style="background-image:url('{{ asset(data_get($icons, $item['name'], 'img/icon/item.png')) }}');
@@ -422,7 +422,8 @@
                     @endforeach
                 </div>
                 <div class="mx-5 inventory-selector">
-                    <div class="p-5 border border-primary item-icon" style="background-size: cover; width: 256px; height: 256px"></div>
+                    <div class="bg-glass"><div class="p-5 item-icon" style="background-size: cover; width: 256px; height: 256px"></div></div>
+
                     <div class="item-name">Name</div>
                     <div class="item-amount">Amount</div>
                     <div class="item-ammo">Ammo</div>
@@ -430,9 +431,9 @@
                     <div class="item-metadata">Metadata</div>
 
                     <div class="w-100">
-                        <div onclick="SellItem()" class="item-sell p-2 my-1 border-primary border text-center">Sell</div>
-                        <div onclick="" class="item-trade p-2 my-1 border-primary border text-center">Trade</div>
-                        <div onclick="" class="item-delete p-2 my-1 border-primary border text-center">Delete</div>
+                        <div onclick="SellItem()" class="item-sell p-2 my-2 bg-glass text-center">Sell</div>
+                        <div onclick="" class="item-trade p-2 my-2 bg-glass text-center">Trade</div>
+                        <div onclick="" class="item-delete p-2 my-2 bg-glass text-center">Delete</div>
                     </div>
 
                 </div>
@@ -546,10 +547,12 @@
             <div class="fs-5 mb-3">Level {{$character->level}}/1000</div>
             <div class="d-grid talent-panel">
                 @foreach ($talent_data as $talent)
-                    <div class="border border-primary p-3">
-                        <div>{{$talent['m_Name']}} <span class="float-end">Rarity</span></div>
-                        <div>{{$talent['description']}}</div>
-                        <div class="text-center border-primary border m-1 p-1">Need {{$talent['requirementLevel']}} level</div>
+                    <div class="bg-glass p-3 d-flex flex-column justify-content-between">
+                        <div>
+                            <div>{{$talent['m_Name']}} <span class="float-end">Rarity</span></div>
+                            <div>{{$talent['description']}}</div>
+                        </div>
+                        <div class="text-center bg-glass m-1 p-1 w-100">Need {{$talent['requirementLevel']}} level</div>
                     </div>
 
                 @endforeach
@@ -567,7 +570,7 @@
             <div class="d-grid friend-panel">
                 {{-- SHOW YOUR FRIEND REQUESTS AND ACCEPTED --}}
                     @foreach(Friend::all()->where('account', Auth::user()->name) as $friend)
-                    <div class="border-primary border p-3">
+                    <div class="bg-glass p-3">
                         <div class="d-flex">
                             <x-user-profile name="{{$friend->friend}}" size="64" all="0" />
                             <div>
@@ -583,7 +586,7 @@
                     @endforeach
                         {{-- SHOW OTHER FRIEND REQUESTS AND  --}}
                     @foreach(Friend::all()->where('friend', Auth::user()->name) as $friend)
-                    <div class="border-primary border p-3">
+                    <div class="bg-glass p-3">
                         <div class="d-flex">
                             <x-user-profile name="{{$friend->account}}" size="64" all="0" />
                             <div>
@@ -614,7 +617,7 @@
         <div class="tab-pane fade" id="achievements">
             <div class="fs-3 my-3">Achievements</div>
             @forelse($achievements as $achievement)
-                <div class="border-primary border mb-1 p-3">
+                <div class="bg-glass mb-1 p-3">
                     <div class="d-flex justify-content-between">
                         <div class="d-flex">
                             <i class="icons mdi mdi-trophy mdi-36px align-self-end mx-3 mb-1"></i>
@@ -678,9 +681,9 @@
 {{--                        <div class="item-metadata">Metadata</div>--}}
 
 {{--                        <div class="w-100">--}}
-{{--                            <div onclick="SellItem()" class="item-sell p-2 my-1 border-primary border text-center">Sell</div>--}}
-{{--                            <div onclick="" class="item-trade p-2 my-1 border-primary border text-center">Trade</div>--}}
-{{--                            <div onclick="" class="item-delete p-2 my-1 border-primary border text-center">Delete</div>--}}
+{{--                            <div onclick="SellItem()" class="item-sell p-2 my-1 bg-glass text-center">Sell</div>--}}
+{{--                            <div onclick="" class="item-trade p-2 my-1 bg-glass text-center">Trade</div>--}}
+{{--                            <div onclick="" class="item-delete p-2 my-1 bg-glass text-center">Delete</div>--}}
 {{--                        </div>--}}
 
 {{--                    </div>--}}

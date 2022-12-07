@@ -15,7 +15,7 @@
     transition: .2s;
     /*border: 1px solid rgb(255 255 255 / 12%);*/
     padding: 2px;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
     display: grid;
     /*TO FIX*/
     grid-template-columns: repeat(2,1fr);

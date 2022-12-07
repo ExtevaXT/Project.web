@@ -117,7 +117,7 @@
                     @guest()
                     <div class="d-flex mobile-panel">
                         <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#authModal">Login</div>
-                        <a class="text-decoration-none" href="{{route('register')}}"><div class="border-primary border py-2 px-4">Register</div></a>
+                        <a class="text-decoration-none" href="{{route('register')}}"><div class="btn btn-outline-primary py-2 px-4">Register</div></a>
                     </div>
                     @endguest
                     @auth()
@@ -149,16 +149,16 @@
                             <li class="nav-item"><a class="nav-link" href="/guides">Guides</a></li>
                             <li class="nav-item"><a class="nav-link" href="/map">Map</a></li>
 
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Theme switcher
-                                </a>
-                                <div class="dropdown-menu theme-switches" aria-labelledby="themeDropdown">
-                                    <div data-theme="wireframe" class="switch dropdown-item" id="switch-1">WIREFRAME</div>
-                                    <div data-theme="light" class="switch dropdown-item" id="switch-2">LIGHT</div>
-                                    <div data-theme="dark" class="switch dropdown-item" id="switch-3">DARK</div>
-                                </div>
-                            </li>
+{{--                            <li class="nav-item dropdown">--}}
+{{--                                <a class="nav-link dropdown-toggle" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
+{{--                                    Theme switcher--}}
+{{--                                </a>--}}
+{{--                                <div class="dropdown-menu theme-switches" aria-labelledby="themeDropdown">--}}
+{{--                                    <div data-theme="wireframe" class="switch dropdown-item" id="switch-1">WIREFRAME</div>--}}
+{{--                                    <div data-theme="light" class="switch dropdown-item" id="switch-2">LIGHT</div>--}}
+{{--                                    <div data-theme="dark" class="switch dropdown-item" id="switch-3">DARK</div>--}}
+{{--                                </div>--}}
+{{--                            </li>--}}
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Other
@@ -229,7 +229,7 @@
                     @guest()
                     <div class="d-flex pc-panel">
                         <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#authModal">Login</div>
-                        <a class="text-decoration-none" href="{{route('register')}}"><div class="border-primary border py-2 px-4">Register</div></a>
+                        <a class="text-decoration-none" href="{{route('register')}}"><div class="border border-primary py-2 px-4">Register</div></a>
                     </div>
                     @endguest
                 </div>
@@ -376,7 +376,7 @@
     let style = localStorage.getItem('style');
 
     if (style == null) {
-        setTheme('wireframe');
+        setTheme('dark');
     } else {
         setTheme(style);
     }

@@ -16,9 +16,9 @@
             <div class="content">{!! $item['content']!!}</div>
         </div>
         <div class="main-right">
-            <div class="image text-center d-flex justify-content-center"><img src="{{asset('img/icon/'.$category.'/'.$item['m_Name'].'.png')}}"></div>
+            <div class="image text-center d-flex justify-content-center"><img src="{{asset('img/icon/'.$category.'/'.$item['m_Name'].'.png')}}" alt="..."></div>
             <div>
-                <div class="BlockTable">
+                <div class="BlockTable bg-glass">
                     <div class="BlockTable-body">
                         <div class="BlockTable-row">
                             <div class="BlockTable-data">Name</div>

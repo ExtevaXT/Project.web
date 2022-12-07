@@ -4,22 +4,22 @@
 }
 
 .info-panel{
-    grid-template-columns: repeat(3,1fr); grid-gap: 3px;
+    grid-template-columns: repeat(3,1fr); grid-gap: 6px;
 }
 .skill-panel{
-    grid-template-columns: repeat(2,1fr); grid-gap: 3px;
+    grid-template-columns: repeat(2,1fr); grid-gap: 6px;
 }
 .friend-panel{
-    grid-template-columns: repeat(6,1fr);grid-gap: 4px;
+    grid-template-columns: repeat(6,1fr);grid-gap: 8px;
 }
 .talent-panel{
-    grid-template-columns: repeat(4,1fr);grid-gap: 4px;
+    grid-template-columns: repeat(4,1fr);grid-gap: 8px;
 }
 .collection-panel{
-    grid-template-columns: repeat(5,1fr);grid-gap: 4px;
+    grid-template-columns: repeat(5,1fr);grid-gap: 8px;
 }
 .inventory-panel{
-    grid-template-columns: repeat(8,1fr);grid-gap: 4px;
+    grid-template-columns: repeat(8,1fr);grid-gap: 8px;
 }
 .inventory-item{
     width: 105px;
