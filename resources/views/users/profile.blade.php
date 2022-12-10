@@ -81,17 +81,6 @@
 
 
 
-{{--                @if((Auth::user()->name != $account->name) and (--}}
-{{--                (Friend::all()->where('friend', Auth::user()->name)->first() == null) or--}}
-{{--                (Friend::all()->where('account', Auth::user()->name)->first() == null)))--}}
-{{--                    <div>--}}
-{{--                        <form method="post" action="{{route('friend_add')}}">--}}
-{{--                            @csrf--}}
-{{--                            <input type="hidden" name="friend" value="{{$account['name']}}">--}}
-{{--                            <button class="btn btn-primary" type="submit">Add to friends</button>--}}
-{{--                        </form>--}}
-{{--                    </div>--}}
-{{--                @endif--}}
             @endauth
         </div>
     </div>
@@ -113,9 +102,6 @@
             @endif
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#activity">Activity</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" data-bs-toggle="tab" href="#collection">Collection</a>
         </li>
             @if($character!=null)
         <li class="nav-item">
@@ -462,107 +448,6 @@
 
 
 
-
-        </div>
-        <div class="tab-pane fade" id="collection">
-            <div class="d-flex my-3 collection-tab">
-                <ul class="nav nav-tabs flex-column d-flex collection-nav">
-                    <li class="nav-item">
-                        <a class="nav-link active" data-bs-toggle="tab" href="#collection-hats">Hats</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#collection-items">Items</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#collection-cosmetic">Cosmetic</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" data-bs-toggle="tab" href="#collection-accessories">Accessories</a>
-                    </li>
-
-                </ul>
-                <div class="tab-content w-100">
-                    <div class="tab-pane fade show active" id="collection-hats">
-                        <div class="d-grid collection-panel">
-                            @for ($i = 1; $i <= 10; $i++)
-                                <div class="border border-primary p-3">
-                                    <div>Img</div>
-                                    <div>Some collectible</div>
-                                    <div>Obtain time</div>
-                                </div>
-                            @endfor
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="collection-items">
-                        <div class="d-grid collection-panel">
-                            @for ($i = 1; $i <= 10; $i++)
-                                <div class="border border-primary p-3">
-                                    <div>Img</div>
-                                    <div>Some collectible</div>
-                                    <div>Obtain time</div>
-                                </div>
-                            @endfor
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="collection-cosmetic">
-                        <div class="d-grid collection-panel">
-                            @for ($i = 1; $i <= 10; $i++)
-                                <div class="border border-primary p-3">
-                                    <div>Img</div>
-                                    <div>Some collectible</div>
-                                    <div>Obtain time</div>
-                                </div>
-                            @endfor
-                        </div>
-                    </div>
-                    <div class="tab-pane fade" id="collection-accessories">
-                        <div class="d-grid collection-panel">
-                            @for ($i = 1; $i <= 10; $i++)
-                                <div class="border border-primary p-3">
-                                    <div>Img</div>
-                                    <div>Some collectible</div>
-                                    <div>Obtain time</div>
-                                </div>
-                            @endfor
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-        @if($character!=null)
-        <div class="tab-pane fade" id="talents">
-            <div class="fs-3 mt-3">Talents</div>
-            <div class="fs-5">Talents general description</div>
-            <div class="fs-5 mb-3">Level {{$character->level}}/1000</div>
-            <div class="d-grid talent-panel">
-                @foreach ($talent_data as $talent)
-                    <div class="bg-glass p-3 d-flex flex-column justify-content-between">
-                        <div>
-                            <div>{{$talent['m_Name']}} <span class="float-end">Rarity</span></div>
-                            <div>{{$talent['description']}}</div>
-                        </div>
-                        <div class="text-center bg-glass m-1 p-1 w-100">Need {{$talent['requirementLevel']}} level</div>
-                    </div>
-
-                @endforeach
-            </div>
-
-
-
-        </div>
-            @endif
-        <div class="tab-pane fade" id="inventory">
 
         </div>
         <div class="tab-pane fade" id="friends">

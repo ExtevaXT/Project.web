@@ -29,6 +29,7 @@ class SettingsValidation extends FormRequest
             'styleThemeShow' => 'in:0,1,2',
 
             'profileColor' => 'size:7',
+            'character' => 'numeric',
             'profileAchievements' => 'boolean',
             'profileTalents' => 'boolean',
             'profileInventory' => 'boolean',

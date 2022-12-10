@@ -9,7 +9,7 @@ class AccountNotification extends Model
 {
     use HasFactory;
     protected $table = 'notifications';
-    protected $fillable = ['account', 'value', 'title'];
+    protected $fillable = ['account', 'value', 'title', 'item', 'created_at'];
     public function item()
     {
         return ClaimItem::find($this->claim_item);

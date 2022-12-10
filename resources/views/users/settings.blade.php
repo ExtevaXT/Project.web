@@ -26,7 +26,7 @@
 @section('content')
 
     @if(session()->has(['success']))
-        <div class="alert alert-success">Changes have been saved</div>
+        <div class="alert alert-success my-3">Changes have been saved</div>
     @endif
 
     <div class="main d-flex my-3 gap-2">
@@ -139,13 +139,31 @@
                 <form action="{{route('settings')}}" method="POST">
                     @csrf
                     <button type="submit" class="btn btn-outline-primary bg-glass p-2 my-2 w-100">Save changes</button>
+                    <div class="d-flex justify-content-between">
+                        <div>
+                            <label for="profileColor" class="form-label fs-4">Account Name Color</label>
+                            <div class="d-flex">
+                                <input name="profileColor" onchange="colorPreview()" type="color" class="form-control form-control-color" id="profileColor"  title="Choose your color"
+                                       value="{{Account::auth()->setting('profileColor')}}">
+                                <div class="p-1 ms-2">
 
-                    <label for="profileColor" class="form-label fs-4">Color picker</label>
-                    <div class="d-flex">
-                        <input name="profileColor" onchange="colorPreview()" type="color" class="form-control form-control-color" id="profileColor"  title="Choose your color"
-                               value="{{Account::auth()->setting('profileColor')}}">
-                        <div class="colorPreview p-1 ms-2 fw-bold" style="color: {{Account::auth()->setting('profileColor')}}">{{Auth::user()->name}}</div>
+                                    <span class="colorPreview fw-bold" style="color: {{Account::auth()->setting('profileColor')}}">{{Auth::user()->name}}</span><span>: Hello World!</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-50">
+                            <label for="character" class="form-label fs-4">Preferred Character</label>
+                            <select id="character" name="character" class="form-select bg-glass">
+                                @forelse(Account::auth()->characters() as $character)
+                                    <option @if($character == Account::auth()->character()) selected @endif value="{{$loop->index}}">{{$character->name}}</option>
+                                @empty
+                                    <option disabled selected>Character not created</option>
+                                @endforelse
+                            </select>
+                        </div>
+
                     </div>
+
                     <x-input-switch name="profileAchievements" label="Achievements"/>
                     <x-input-switch name="profileTalents" label="Talents"/>
                     <x-input-switch name="profileInventory" label="Inventory"/>
@@ -195,6 +213,7 @@
             }
         </script>
         <script src="{{asset('js/jquery.js')}}"></script>
+        <script src="{{asset('js/bootstrap.js')}}"></script>
         <script>
             $( document ).ready(function() {
                 var editor = ace.edit("editor");
@@ -210,8 +229,10 @@
                 return true;
             });
 
-
-
+            //THIS FUCKING SHIT WORKS
+            const anchor = window.location.hash;
+            console.log(anchor)
+            new bootstrap.Tab($(`a[href="${anchor}"]`)).show()
             // $(function($){
             //     var storage = document.cookie.match(/nav-tabs=(.+?);/);
             //

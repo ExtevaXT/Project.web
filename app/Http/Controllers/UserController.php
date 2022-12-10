@@ -57,10 +57,6 @@ class UserController extends Controller
 
 
 
-    public static function AuthSetting($setting)
-    {
-        return Account::find(Auth::user()->id)->setting($setting);
-    }
     public function test()
     {
 

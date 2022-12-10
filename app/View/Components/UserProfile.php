@@ -20,7 +20,7 @@ class UserProfile extends Component
     public function __construct($name, $size = 64, $all = true)
     {
         $this->account = Account::all()->where('name', $name)->first();
-        $this->character = Character::all()->where('account', $name)->first();
+        $this->character = $this->account->character();
         $this->size = $size;
         $this->all = $all;
     }

@@ -4,11 +4,13 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\LotValidation;
 use App\Models\Account;
+use App\Models\AccountNotification;
 use App\Models\Character;
 use App\Models\Character_personal_storage;
 use App\Models\ClaimItem;
 use App\Models\Lot;
 use App\Models\Resource;
+use Carbon\Carbon;
 use Illuminate\Auth\Events\Authenticated;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -70,15 +72,23 @@ class LotController extends Controller
             'metadata'=>$item->metadata,
             'claimed'=>false,
         ]);
-        $validate['item'] = $claim_item;
-        dd($validate);
+        $validate['item'] = $claim_item->id;
         //FACADE FOR UPDATING
         DB::table('characters')->where('name',$character->name)->update(['gold'=>$character->gold-$request['bid']]);
         //RAW SQL FOR DELETING
         $q = 'DELETE FROM character_personal_storage WHERE character = ? AND slot = ?';
         DB::delete($q, [$character->name, $item->slot]);
 
-        Lot::create($validate);
+        $lot = Lot::create($validate);
+
+
+        AccountNotification::create([
+            'account'=>Auth::user()->name,
+            'title' => 'Delivery',
+            'value' =>'Your lot was expired',
+            'item' => $claim_item->id,
+            'created_at' => $lot->endTime(),
+        ]);
         return redirect('/auction');
     }
 

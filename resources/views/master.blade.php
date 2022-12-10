@@ -120,26 +120,6 @@
                         <a class="text-decoration-none" href="{{route('register')}}"><div class="btn btn-outline-primary py-2 px-4">Register</div></a>
                     </div>
                     @endguest
-                    @auth()
-                    <div class="d-flex mobile-panel" data-bs-toggle="modal" data-bs-target="#userModal">
-                        @if(Auth::user()->image !='user.png')
-                            <div class="border border-primary me-3" style="
-                                width: 48px;
-                                height: 48px;
-                                background-size: cover;
-                                background-position: center;
-                                filter: blur(0.6px);
-                                background-image:url('{{ asset(Auth::user()->image)}}')
-                                "></div>
-                        @else
-                            <svg class="me-3" data-jdenticon-value="{{Auth::user()->name}}" width="48" height="48"></svg>
-                        @endif
-                        <div>
-                            <div>{{Auth::user()->name}}</div>
-                            <div>Menu ▼</div>
-                        </div>
-                    </div>
-                    @endauth
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="mobile-panel"><a class="navbar-brand" href="/">Project.web</a></li>
@@ -148,17 +128,6 @@
                             @endauth
                             <li class="nav-item"><a class="nav-link" href="/guides">Guides</a></li>
                             <li class="nav-item"><a class="nav-link" href="/map">Map</a></li>
-
-{{--                            <li class="nav-item dropdown">--}}
-{{--                                <a class="nav-link dropdown-toggle" id="themeDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">--}}
-{{--                                    Theme switcher--}}
-{{--                                </a>--}}
-{{--                                <div class="dropdown-menu theme-switches" aria-labelledby="themeDropdown">--}}
-{{--                                    <div data-theme="wireframe" class="switch dropdown-item" id="switch-1">WIREFRAME</div>--}}
-{{--                                    <div data-theme="light" class="switch dropdown-item" id="switch-2">LIGHT</div>--}}
-{{--                                    <div data-theme="dark" class="switch dropdown-item" id="switch-3">DARK</div>--}}
-{{--                                </div>--}}
-{{--                            </li>--}}
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Other
@@ -177,9 +146,9 @@
 
                     </div>
                     @auth()
-                        <ul class="navbar-nav pc-panel me-5">
+                        <ul class="navbar-nav me-5">
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle p-0" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle p-0 nav-user" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="d-flex">
                                         <x-user-profile name="{{Auth::user()->name}}" size="48" all="0" />
                                         <div>
@@ -189,39 +158,7 @@
                                     </div>
                                 </a>
                                 <ul class="dropdown-menu user-panel-crutch" aria-labelledby="navbarDropdown">
-                                    <li>
-                                        <div class="d-flex user-panel">
-                                            <div class="user-panel-left">
-                                                <div class="user-panel-profile border border-primary p-3 mb-1 d-flex justify-content-between">
-                                                    <x-user-profile name="{{Auth::user()->name}}" size="48" />
-                                                    <button onclick="window.location.href=''" class="btn btn-outline-primary">Swap character</button>
-                                                </div>
-                                                <div class="user-panel-notifications border border-primary p-3">
-                                                    <div>Last notifications <a href="/notifications">All notifications</a></div>
-                                                    <div class="notification-panel " style="height: 300px">
-                                                        @foreach(Account::auth()->notifications() as $notification)
-                                                            @if($notification->created_at < Carbon::now()->addDay())
-                                                                <div class="border border-primary p-1 mt-1">
-                                                                    <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
-                                                                    <div>{{$notification->value}}</div>
-                                                                </div>
-                                                            @endif
-                                                        @endforeach
-                                                    </div>
-
-
-                                                </div>
-                                            </div>
-                                            <div class="user-panel-nav d-flex flex-column border border-primary p-3 ms-1 text-decoration-none">
-                                                <a class="p-2 text-decoration-none" href="/user/{{Auth::user()->name}}">Profile</a>
-                                                <a class="p-2 text-decoration-none" href="/settings">Settings</a>
-                                                <a class="p-2 text-decoration-none" href="/ranking">Ranking</a>
-                                                <a class="p-2 text-decoration-none" href="/quests">Quests</a>
-                                                <a class="p-2 text-decoration-none" href="/auction">Auction</a>
-                                                <a class="p-2 text-decoration-none" href="{{ route('logout') }}">Logout</a>
-                                            </div>
-                                        </div></li>
-
+                                    <li><x-user-panel/></li>
                                 </ul>
                             </li>
                         </ul>
@@ -258,56 +195,7 @@
                     <h5 class="modal-title text-center" id="userModalLabel">User panel</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="modal-body">
-                    <div class="user-panel-left">
-                        <div class="user-panel-profile border border-primary p-3 mb-1">
-                            <div class="d-flex">
-                                @if(Auth::user()->image !='user.png')
-                                    <div class="border border-primary me-3" style="
-                                        width: 48px;
-                                        height: 48px;
-                                        background-size: cover;
-                                        background-position: center;
-                                        filter: blur(0.6px);
-                                        background-image:url('{{ asset(Auth::user()->image)}}')
-                                        "></div>
-                                @else
-                                    <svg class="me-3 modal-svg" data-jdenticon-value="{{Auth::user()->name}}" width="48" height="48"></svg>
-                                @endif
-                                <div>
-                                    <div>{{Auth::user()->name}}</div>
-                                    <div>0 level</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="user-panel-nav d-flex flex-column border border-primary p-3 ms-1 text-decoration-none">
-                            <a class="p-2 text-decoration-none" href="/user/{{Auth::user()->name}}">Profile</a>
-                            <a class="p-2 text-decoration-none" href="/settings">Settings</a>
-                            <a class="p-2 text-decoration-none" href="/ranking">Ranking</a>
-                            <a class="p-2 text-decoration-none" href="/quests">Quests</a>
-                            <a class="p-2 text-decoration-none" href="/auction">Auction</a>
-                            <a class="p-2 text-decoration-none" href="{{ route('logout') }}">Logout</a>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="modal-footer justify-content-start">
-                    <div class="user-panel-notifications border border-primary p-3 w-100">
-                        <div>Last notifications <a href="/notifications">All notifications</a></div>
-                        <div class="notification-panel " style="height: 300px">
-                            @foreach(Account::auth()->notifications() as $notification)
-                                @if($notification->created_at < Carbon::now()->addDay())
-                                    <div class="border border-primary p-1 mt-1">
-                                        <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
-                                        <div>{{$notification->value}}</div>
-                                    </div>
-                                @endif
-                            @endforeach
-                        </div>
-
-
-                    </div>
-                </div>
+                <x-user-panel mobile/>
             </div>
         </div>
     </div>
@@ -368,7 +256,13 @@
 <script src="{{asset('js/jquery.js')}}"></script>
 <script src="{{asset('js/bootstrap.bundle.js')}}"></script>
 
-
+<script>
+    if(window.matchMedia( "(max-width: 1000px)" ).matches) {
+        document.querySelector('.nav-user').parentElement.classList.remove('dropdown')
+        document.querySelector('.nav-user').setAttribute('data-bs-toggle','modal')
+        document.querySelector('.nav-user').setAttribute('data-bs-target','#userModal')
+    }
+</script>
 <script>
     if(document.querySelector('#editor'))
         var editor = ace.edit("editor");

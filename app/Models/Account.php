@@ -23,11 +23,12 @@ class Account extends Authenticatable
     // User model
     public static function auth()
     {
+        if(Auth::guest()) return null;
         return Account::find(Auth::user()->id);
     }
     public function character()
     {
-        if($this->setting('character')){
+        if($this->setting('character')!=null){
             return $this->characters()->values()[$this->setting('character')];
         }
         return $this->characters()->first();

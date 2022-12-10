@@ -71,8 +71,8 @@
                         {{Character::online()->count()}}
                         Players</span>
                     @else <span class="text-danger">OFFLINE</span> @endif
-                    <div class="progress">
-                        <div class="progress-bar bg-dark"
+                    <div class="progress" style="background: transparent">
+                        <div class="progress-bar bg-light"
                              role="progressbar"
                              style="width: {{Character::online()->count()*10}}%"
                              aria-valuenow="{{Character::online()->count()}}"
@@ -100,7 +100,7 @@
 {{--                <div>Player: Some rupor</div>--}}
 {{--            </div>--}}
             <div class="m-2 d-flex flex-row prime-panel2">
-                <div class="bg-glass me-1 w-25 prime-panel d-flex align-items-end pc-panel" style="background: center / cover url('{{asset('img/design/prime-panel.png')}}') !important;">
+                <div class="bg-glass me-2 w-25 prime-panel d-flex align-items-end pc-panel">
                     <div class="p-3">
                         <h5>Prime panel</h5>
                         <div>Some art idk</div>
@@ -109,14 +109,14 @@
                 </div>
                 <div class="w-100">
                     @if(Account::auth()->character()!=null)
-                    <div class="bg-glass h-50 prime-panel-parent d-flex align-items-end" style="background: center / cover url('{{asset('img/design/faction-panel.png')}}') !important;">
+                    <div class="bg-glass h-50 prime-panel-parent d-flex align-items-end">
                         <div class="p-3">
                             <h3>Faction </h3>
                             <div><span class="text-uppercase">{{Account::auth()->character()->faction}}</span></div>
                         </div>
                     </div>
                     @else
-                        <div class="bg-glass h-50 prime-panel-parent d-flex align-items-end" style="background: center / cover url('{{asset('img/design/faction-panel.png')}}') !important;">
+                        <div class="bg-glass h-50 prime-panel-parent d-flex align-items-end">
                             <div class="p-3">
                                 <div>Factions</div>
                                 <div>You can join faction in game</div>
@@ -124,13 +124,13 @@
                         </div>
                     @endif
                     <div class="d-flex flex-row prime-other-panels h-50 prime-panel-parent">
-                        <div class="bg-glass mt-1 w-50 prime-other-panel d-flex align-items-end" style="background: center / cover url('{{asset('img/design/discord-panel.png')}}') !important;">
+                        <div class="bg-glass mt-2 w-50 prime-other-panel d-flex align-items-end">
                             <div class="p-3">
                                 <div>Discord</div>
                                 <div>https://discord.gg/JMhd6VtVv5</div>
                             </div>
                         </div>
-                        <div class="bg-glass mt-1 ms-1 w-50 prime-other-panel d-flex align-items-end" style="background: center / cover url('{{asset('img/design/github-panel.png')}}') !important;">
+                        <div class="bg-glass mt-2 ms-2 w-50 prime-other-panel d-flex align-items-end">
                             <div class="p-3">
                                 <div>Github</div>
                                 <div>https://github.com/ExtevaXT</div>
