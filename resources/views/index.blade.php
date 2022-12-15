@@ -108,7 +108,7 @@
 
                 </div>
                 <div class="w-100">
-                    @if(Account::auth()->character()!=null)
+                    @if(Auth::user()->character()!=null)
                     <div class="bg-glass h-50 prime-panel-parent d-flex align-items-end">
                         <div class="p-3">
                             <h3>Faction </h3>

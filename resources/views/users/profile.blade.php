@@ -156,7 +156,7 @@
                             <div class="fw-light">Remain 1000 exp for {{ $character['level']+1 }} lvl</div>
                         </div>
                         @endif
-                        @if(Auth::user() !=null and Auth::user()->name == $account->name)
+                        @if(Auth::check() and $character and Auth::user()->name == $account->name)
                             <div class="bg-glass p-2">
                                 <div>Balance</div>
                                 <div>{{$character['gold']}}</div>

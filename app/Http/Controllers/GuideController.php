@@ -10,25 +10,25 @@ class GuideController extends Controller
 {
     public function category($category)
     {
-        if(($category == 'achievements') or
-            ($category == 'auction') or
-            ($category == 'ranking') or
-            ($category == 'talents') or
-            ($category == 'anomalies'))
-            return view('guides.'.$category);
-        elseif (($category == 'artefacts') or
-            ($category == 'equipment') or
-            ($category == 'weapons') or
-            ($category == 'attachments') or
-            ($category == 'other'))
-        {
-            $items = Resource::data("/items/$category");
-            return view('guides.category', ['items' => $items, 'category' => $category]);
+        switch ($category) {
+            case 'achievements':
+            case 'auction':
+            case 'ranking':
+            case 'talents':
+            case 'anomalies':
+                return view('guides.'.$category);
+            case 'artefacts':
+            case 'equipment':
+            case 'weapons':
+            case 'attachments':
+            case 'other':
+                $items = Resource::data("/items/$category");
+                return view('guides.category', ['items' => $items, 'category' => $category]);
+            default:
+                return back();
         }
-        return back();
-
-
     }
+
 
     public function item($category, $item_name)
     {

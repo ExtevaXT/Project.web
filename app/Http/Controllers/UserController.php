@@ -41,20 +41,28 @@ class UserController extends Controller
     public function quests()
     {
         //if not null
-        if($quests = Account::auth()->character()->quests())
-            $quests = $quests['data'];
+        if($data = Account::auth()->character()->quests())
+            $data = $data['data'];
         //some awesome logic for parsing custom data serialization type
+        // ok so it is lua code
+        // here is some pseudo parsing for it
+        $asts = explode('; ' ,$data);
+        $quests = array_filter($asts, function ($ast){
+            return str_starts_with($ast, 'Item');
+        });
+        $quests_success = array_filter($asts, function ($ast){
+            return str_contains($ast, 'State="success"');
+        });
+        $quests_active = array_filter($asts, function ($ast){
+            return str_contains($ast, 'State="active"');
+        });
 
-        return view('users.quests', compact('quests'));
+        $vars = explode(', ',trim($asts[0], 'Variable={}'));
+        $vars = array_filter($vars, function ($var){
+            return str_contains($var, 'true');
+        });
+        return view('users.quests', compact('quests', 'quests_active', 'quests_success','vars'));
     }
-
-    public function changeCharacter(Request $request)
-    {
-        $character = Account::auth()->characters()->where('name', $request->validate(['name'=>'required'])['name']);
-        $characters = Account::auth()->characters()->whereNotIn('name', $character->name);
-        //Need to swap db
-    }
-
 
 
     public function test()

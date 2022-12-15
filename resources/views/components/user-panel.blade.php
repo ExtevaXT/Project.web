@@ -3,7 +3,9 @@
     <div class="user-panel-left">
         <div class="user-panel-profile border border-primary p-3 mb-1 d-flex justify-content-between">
             <x-user-profile name="{{Auth::user()->name}}" size="48" />
+            @if(Auth::user()->character())
             <button onclick="window.location.href='/settings#profile'" class="btn btn-outline-primary">Swap character</button>
+            @endif
         </div>
         @if($attributes->has('mobile'))
             <x-user-links/>
