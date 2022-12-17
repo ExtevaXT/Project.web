@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3996bdd118ded4c48bd62b57a2ed36c6, type: 3}
   m_Name: Renegate
   m_EditorClassIdentifier: 
-  description: 'You get the ability to change faction
+  description: 'You get the ability to change faction.
 
     But your level, inventory
     and balance are reset'
-  requirementLevel: 0
+  requirementLevel: 322
   requirementCustom: Looks kinda sussy
   buff: 
   debuff: 

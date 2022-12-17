@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3996bdd118ded4c48bd62b57a2ed36c6, type: 3}
   m_Name: Extrovert
   m_EditorClassIdentifier: 
-  description: 'Profile becomes fully public
+  description: 'Profile becomes fully public.
 
     Trophies displayed are 5% more'
-  requirementLevel: 0
+  requirementLevel: 55
   requirementCustom: 
   buff: 
   debuff: 

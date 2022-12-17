@@ -42,6 +42,13 @@ class Account extends Authenticatable
         return AccountNotification::all()->where('account', $this->name);
     }
 
+    public function friends($where)
+    {
+        return Friend::all()->where($where, $this->name);
+    }
+
+
+
     protected $casts = ["settings" => "array"];
     public function setting(string $name, $default = null)
     {

@@ -38,7 +38,7 @@ return [
      * get more info @ https://developers.google.com/recaptcha/docs/versions
      *
      */
-    'version'                      => 'v2',
+    'version'                      => 'v3',
 
     /**
      *
@@ -142,7 +142,7 @@ return [
          * The color theme of the widget.
          * Supported "light", "dark"
          */
-        'theme'            => 'light',
+        'theme'            => 'dark',
 
         /**
          * The size of the widget.

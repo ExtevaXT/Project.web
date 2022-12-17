@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: 'On the map you can see the location of all locations
 
-    But it
-    is distorted.'
-  requirementLevel: 0
+    But your
+    vision now is not good'
+  requirementLevel: 150
   requirementCustom: 
   buff: 
   debuff: 

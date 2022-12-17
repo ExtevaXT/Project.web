@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3996bdd118ded4c48bd62b57a2ed36c6, type: 3}
   m_Name: Longevity
   m_EditorClassIdentifier: 
-  description: 'Auction items can be bid for 56 and 72 hours
+  description: 'Auction items can be bid for 56 and 72 hours.
 
     But tax on items
     is x3 higher'
-  requirementLevel: 0
+  requirementLevel: 250
   requirementCustom: 
   buff: 
   debuff: 

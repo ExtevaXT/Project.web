@@ -5,6 +5,9 @@
 @section('title', 'Registration')
 @section('style')
     <link rel="stylesheet" href="{{ asset('css/register.css')}}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <!-- Include script -->
+    <x-captcha/>
 @endsection
 
 @section('content')
@@ -16,11 +19,11 @@
                 <div class="fs-3">Registration</div>
                 <div class="text-secondary">Registering, you accept our rules</div>
                 <div class="mt-2">
-                    <form method="post" action="{{ route('register') }}" class="d-block">
+                    <form id="form" method="post" action="{{ route('register') }}" class="d-block">
                         @csrf
                         <div class="mb-3">
                             <input name="name"
-                                   class="@error('name') is-invalid @enderror p-2 bg-glass form-control d-inline-block w-75 border-end-0"
+                                   class="@error('name') is-invalid @enderror p-2 input-glass d-inline-block w-75 border-end-0"
                                    type="text"
                                    placeholder="Login"
                                    autocomplete="off">
@@ -30,9 +33,7 @@
                         <x-input name="email" placeholder="E-Mail"/>
                         <x-input name="password" placeholder="Password" type="password"/>
                         <x-input name="password_confirmation" placeholder="Password confirm" type="password"/>
-                        {{--Need to remove this shit--}}
-                        {!! htmlFormSnippet() !!}
-                        <input class="my-2 p-2 btn-outline-primary bg-glass btn w-100" type="submit" value="Register">
+                        <input class="my-2 p-2 input-glass w-100" type="submit" value="Register">
                     </form>
                 </div>
             </div>

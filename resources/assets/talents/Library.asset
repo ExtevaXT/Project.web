@@ -12,11 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3996bdd118ded4c48bd62b57a2ed36c6, type: 3}
   m_Name: Library
   m_EditorClassIdentifier: 
-  description: 'More info about items appears in the guides
-
-    But it charges
-    you for every page you click on'
-  requirementLevel: 0
+  description: "More items appears in the guides.\nYou get Library\u2122\uFE0F subscription"
+  requirementLevel: 125
   requirementCustom: Web user
   buff: 
   debuff: 

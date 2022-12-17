@@ -46,36 +46,35 @@ Route::get('/faction', [Controller::class, 'faction']);
 Route::get('/download', function () {
     return response()->download(resource_path('malware'));
 })->name('download');
-
-//AUCTION
 Route::get('/auction', [LotController::class, 'show']);
-Route::get('/lot', [LotController::class, 'create'])->name('lot_create');
-Route::post('/lot', [LotController::class, 'createPost']);
-
-Route::post('/bid', [LotController::class, 'bid'])->name('bid');
-Route::post('/buyout', [LotController::class, 'buyout'])->name('buyout');
-
-
-
-//USER
 Route::middleware('auth')->group(function() {
+    Route::name('lot.')->prefix('lot')->group(function () {
+        Route::get('/create', [LotController::class, 'create'])->name('create');
+        Route::post('/create', [LotController::class, 'createPost']);
+        Route::post('/bid', [LotController::class, 'bid'])->name('bid');
+        Route::post('/buyout', [LotController::class, 'buyout'])->name('buyout');
+        Route::post('/claim', [LotController::class, 'lotReceive'])->name('claim');
+    });
+
     Route::get('/quests', [UserController::class, 'quests']);
     Route::get('/notifications', function () {
         return view('users.notifications');
     });
-    Route::get('/settings', function () {
-        return view('users.settings');
-    })->name('settings');
+    Route::get('/settings', fn() => view('users.settings'))->name('settings');
     Route::post('/settings', [UserController::class, 'settings']);
     Route::post('/upload', [UserController::class, 'upload'])->name('upload');
-
-    Route::post('/friend_add', [FriendController::class, 'friendAdd'])->name('friend_add');
-    Route::post('/friend_accept', [FriendController::class, 'friendAccept'])->name('friend_accept');
-
+    Route::name('talent.')->prefix('talent')->group(function () {
+        Route::post('/unlock', [UserController::class, 'talentUnlock'])->name('unlock');
+        Route::post('/toggle', [UserController::class, 'talentToggle'])->name('toggle');
+    });
+    Route::name('friend.')->prefix('friend')->group(function () {
+        Route::post('/add', [FriendController::class, 'add'])->name('add');
+        Route::post('/accept', [FriendController::class, 'accept'])->name('accept');
+    });
     Route::post('/password', [UserController::class, 'password'])->name('password');
     Route::post('/email', [UserController::class, 'email'])->name('email');
     Route::get('/logout', [UserController::class, 'logout'])->name('logout');
-
+    Route::get('/profile', fn() => redirect('/user/'.Auth::user()->name))->name('profile');
 });
 Route::get('/user/{name}', [UserController::class, 'profile']);
 Route::get('/test', [UserController::class, 'test']);
@@ -87,13 +86,8 @@ Route::get('/register', [UserController::class, 'register'])->name('register');
 Route::post('/register', [UserController::class, 'registerPost']);
 
 //RESET PASSWORD
-Route::get('/forgot', function () {
-    return view('users.password.forgot');
-})->name('forgot');
+Route::get('/forgot', fn() => view('users.password.forgot'))->name('forgot');
 Route::post('/forgot', [UserController::class, 'forgot']);
 
-Route::get('/reset', function (Request $request) {
-    $token = $request['token'];
-    return view('users.password.reset', compact('token'));
-})->name('reset');
+Route::get('/reset', fn(Request $request) => view('users.password.reset', ['token'=>$request['token']]))->name('reset');
 Route::post('/reset', [UserController::class, 'reset']);

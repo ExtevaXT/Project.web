@@ -10,9 +10,9 @@
 @section('content')
     <div class="d-flex flex-column">
         <div class="my-2">
-            <form class="form-inline my-2 d-flex">
-                <input class="form-control bg-glass rounded-0" type="search" placeholder="Search">
-                <button style="margin: 1px 0 1px 0" class="btn btn-outline-primary bg-glass rounded-0 border-start-0 px-5" type="submit">Search</button>
+            <form class="my-3 d-inline-flex w-100">
+                <input class="my-1 p-2 input-glass w-75" type="search" placeholder="Search">
+                <button class="input-glass w-25 my-1" type="submit">Search</button>
             </form>
         </div>
         <div class="fs-3 my-3">Categories</div>
@@ -47,7 +47,7 @@
 {{--            </div>--}}
 
 {{--        </a>--}}
-        <a href="/guides/artefacts" class="bg-glass p-2 my-1 text-decoration-none d-flex">
+        <a href="/guides/artefacts" class="input-glass p-2 my-1 text-decoration-none d-flex">
             <x-item class="me-3" name="Crystal" size="64"/>
             <div>
                 <div class="fs-4">Artefacts</div>
@@ -55,7 +55,7 @@
             </div>
 
         </a>
-        <a href="/guides/equipment" class="bg-glass p-2 my-1 text-decoration-none d-flex">
+        <a href="/guides/equipment" class="input-glass p-2 my-1 text-decoration-none d-flex">
             <x-item class="me-3" name="Ghillie" size="64"/>
             <div>
                 <div class="fs-4">Equipment</div>
@@ -63,7 +63,7 @@
             </div>
 
         </a>
-        <a href="/guides/attachments" class="bg-glass p-2 my-1 text-decoration-none d-flex">
+        <a href="/guides/attachments" class="input-glass p-2 my-1 text-decoration-none d-flex">
             <x-item class="me-3" name="Scope PSO-1" size="64"/>
             <div>
                 <div class="fs-4">Attachments</div>
@@ -71,7 +71,7 @@
             </div>
 
         </a>
-        <a href="/guides/weapons" class="bg-glass p-2 my-1 text-decoration-none d-flex">
+        <a href="/guides/weapons" class="input-glass p-2 my-1 text-decoration-none d-flex">
             <x-item class="me-3" name="AKM" size="64"/>
             <div>
                 <div class="fs-4">Weapons</div>
@@ -79,7 +79,7 @@
             </div>
 
         </a>
-        <a href="/guides/other" class="bg-glass p-2 my-1 text-decoration-none d-flex">
+        <a href="/guides/other" class="input-glass p-2 my-1 text-decoration-none d-flex">
             <x-item class="me-3" name="Bandage" size="64"/>
             <div>
                 <div class="fs-4">Other</div>

@@ -9,10 +9,12 @@
 @endsection
 
 @section('content')
-    <a href="/guides/{{$category}}"><div>Back</div></a>
+    <div class="my-3">
+        <a class="text-link" href="/guides/{{$category}}"><i class="mdi mdi-24px mdi-arrow-left"></i></a>
+        <h3 class="d-inline">{{$item['m_Name']}}</h3>
+    </div>
     <div class="my-2 main">
         <div class="main-left">
-            <div class="fs-5 title">{{$item['m_Name']}}</div>
             <div class="content">{!! $item['content']!!}</div>
         </div>
         <div class="main-right">

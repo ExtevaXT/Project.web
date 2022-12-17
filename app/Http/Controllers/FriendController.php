@@ -8,16 +8,24 @@ use Illuminate\Support\Facades\Auth;
 
 class FriendController extends Controller
 {
-    public function friendAdd(Request $request)
+    public function add(Request $request)
     {
+        // 'Fair Referral' talent
+        if($character = Auth::user()->character() and $character->talent('Fair Referral') and $character->gold > 1000)
+            $character->setGold($character->gold - 1000);
+
         Friend::create([
             'account' => Auth::user()->name,
             'friend' => $request['friend'],
         ]);
         return back();
     }
-    public function friendAccept(Request $request)
+    public function accept(Request $request)
     {
+        // 'Fair Referral' talent
+        if($character = Auth::user()->character() and $character->talent('Fair Referral'))
+            $character->setGold($character->gold + 1000);
+
         $friend = Friend::all()->where('account', $request['friend'])->where('friend', Auth::user()->name)->first();
         $friend->accepted = true;
         $friend->save();

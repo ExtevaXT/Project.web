@@ -12,7 +12,17 @@ class Character extends Model
     protected $table = 'characters';
     public $timestamps = false;
     protected $fillable = ['gold'];
-
+    // New high end code for convenience
+    public function level($level = null)
+    {
+        $level ??= $this->level;
+        return strlen($level)>2 ? (int)substr($level,1) : $level;
+    }
+    public function prestige($level = null)
+    {
+        $level ??= $this->level;
+        return strlen($level)>2 ? substr($level,0,1) : 0;
+    }
     public static function online()
     {
         return Character::all()->where('online', true);
@@ -23,12 +33,26 @@ class Character extends Model
     }
     public function skills()
     {
-        return CharacterSkills::all()->where('character', $this->name);
+        return CharacterSkills::all()->firstWhere('character', $this->name);
     }
     public function achievements()
     {
         return CharacterAchievement::all()->where('character', $this->name);
     }
+    public function trophies()
+    {
+        $trophies = $this->achievements()->sum('reward');
+        // 'Extrovert' and 'Introvert' talents
+        if($this->talent('Extrovert')) $trophies*=1.05;
+        if($this->talent('Introvert')) $trophies*=0.9;
+        return round($trophies);
+    }
+
+    public function setGold($gold)
+    {
+        DB::table('characters')->where('name',$this->name)->update(['gold'=>$gold]);
+    }
+
     public function quests()
     {
         return CharacterQuests::all()->firstWhere('character', $this->name);
@@ -37,7 +61,12 @@ class Character extends Model
     {
         return CharacterTalents::all()->where('character', $this->name);
     }
-
+    public function talent($name)
+    {
+        if($talent = $this->talents()->firstWhere('name', $name))
+            return $talent->enabled;
+        return false;
+    }
 
     public function claimItem(ClaimItem $item)
     {

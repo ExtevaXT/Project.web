@@ -9,11 +9,14 @@
 @endsection
 
 @section('content')
-    <div><a href="/guides">back</a> <span class="fs-4">{{ucfirst($category)}}</span></div>
+    <div class="my-3">
+        <a class="text-link" href="/guides"><i class="mdi mdi-24px mdi-arrow-left"></i></a>
+        <h3 class="d-inline">{{ucfirst($category)}}</h3>
+    </div>
     <div class="d-grid objects-panel">
         @foreach($items as $item)
-            <div class="p-3 bg-glass">
-                <a href="/guides/{{$category}}/{{$item['m_Name']}}" class="d-flex text-decoration-none">
+            <div class="p-3 input-glass">
+                <a href="/guides/{{$category}}/{{$item['m_Name']}}" class="d-flex text-link">
                     <div class="me-3" style="
                         width: 48px;
                         height: 48px;
@@ -26,7 +29,6 @@
                         <div>{{$item['m_Name']}}</div>
                         <div>{{$item['type']}}</div>
                     </div>
-
                 </a>
             </div>
         @endforeach

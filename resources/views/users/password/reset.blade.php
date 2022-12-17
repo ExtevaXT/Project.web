@@ -23,15 +23,15 @@
                 @csrf
                 <h4>Enter new password</h4>
                 <input name="password"
-                       class="my-1 p-2 bg-glass form-control d-inline-block"
+                       class="my-1 p-2 input-glass w-100 d-inline-block"
                        type="password"
                        placeholder="Password">
                 <input name="password_confirmation"
-                       class="my-1 p-2 bg-glass form-control d-inline-block"
+                       class="my-1 p-2 input-glass w-100 d-inline-block"
                        type="password"
                        placeholder="Password confirm">
                 <input name="token" type="hidden" value="{{$token}}">
-                <input class="my-2 w-100 p-2 btn-outline-primary bg-glass btn" type="submit" value="Submit">
+                <input class="my-2 w-100 p-2 input-glass" type="submit" value="Submit">
             </form>
         </div>
 

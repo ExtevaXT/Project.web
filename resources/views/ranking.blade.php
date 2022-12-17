@@ -16,12 +16,12 @@
         <div class="main d-flex">
             <div class="side-filter main-left me-3">
                 <form action="/ranking">
-                    <input value="{{ app('request')->input('search') }}" name="search" class="p-2 form-control bg-glass search" placeholder="Search" onchange="this.form.submit()">
+                    <input value="{{ app('request')->input('search') }}" name="search" class="p-2 input-glass search" placeholder="Search" onchange="this.form.submit()">
                 </form>
-                <div class="py-2"><a class="nav-link sort" data-sort="level" href="/ranking?filter=level">Level</a></div>
-                <div class="py-2"><a class="nav-link sort" data-sort=achievements" href="/ranking?filter=achievements">Achievements</a> </div>
-                <div class="py-2"><a class="nav-link sort" data-sort="online" href="/ranking?filter=created_at">Online time</a></div>
-                <div class="py-2"><a class="nav-link sort" data-sort="kda" href="/ranking?filter=kda">KDA</a></div>
+                <div class="p-2 mt-2 w-100 input-glass text-start"><a class="text-link sort" data-sort="level" href="/ranking?filter=level">Level</a></div>
+                <div class="p-2 mt-2 w-100 input-glass text-start"><a class="text-link sort" data-sort=achievements" href="/ranking?filter=achievements">Achievements</a> </div>
+                <div class="p-2 mt-2 w-100 input-glass text-start"><a class="text-link sort" data-sort="online" href="/ranking?filter=created_at">Online time</a></div>
+                <div class="p-2 mt-2 w-100 input-glass text-start"><a class="text-link sort" data-sort="kda" href="/ranking?filter=kda">KDA</a></div>
 
             </div>
             <div class="BlockTable main-right">

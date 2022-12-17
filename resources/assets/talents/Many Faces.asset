@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3996bdd118ded4c48bd62b57a2ed36c6, type: 3}
   m_Name: Many Faces
   m_EditorClassIdentifier: 
-  description: 'Appears the ability to change the name of the character / (account?)
+  description: 'Appears the ability to change the name of the character.
 
     But
     each change resets the balance and inventory'
-  requirementLevel: 0
+  requirementLevel: 450
   requirementCustom: 
   buff: 
   debuff: 

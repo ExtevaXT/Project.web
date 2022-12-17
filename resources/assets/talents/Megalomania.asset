@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3996bdd118ded4c48bd62b57a2ed36c6, type: 3}
   m_Name: Megalomania
   m_EditorClassIdentifier: 
-  description: 'Allows you to change your profile prefix
+  description: 'Allows you to change your profile prefix.
 
-    But trophies are displayed
+    Trophies are displayed
     10% less'
-  requirementLevel: 0
+  requirementLevel: 475
   requirementCustom: 
   buff: 
   debuff: 

@@ -9,6 +9,15 @@
 @endsection
 
 @section('content')
+    @if(session()->has('bid'))
+        <div class="alert alert-success my-3">Bid was placed successfully</div>
+    @endif
+    @if(session()->has('lot'))
+        <div class="alert alert-success my-3">Lot was created successfully</div>
+    @endif
+    @if(session()->has('error'))
+        <div class="alert alert-danger my-3">Something went wrong</div>
+    @endif
     <div class="top-filter my-3">
         <ul class="nav nav-tabs">
             <li class="nav-item"><a class="p-3 nav-link active" data-bs-toggle="tab" href="#all">All lots</a></li>
@@ -16,25 +25,25 @@
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#my_lots">My lots</a></li>
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#my_bids">My bids</a></li>
             <li class="nav-item"><a class="p-3 nav-link" data-bs-toggle="tab" href="#history">History</a></li>
-            <li class="nav-item create-lot-tab"><button class="create-lot-tab-btn btn btn-outline-primary p-2 mt-2" data-bs-toggle="modal" data-bs-target="#lotModal">Create lot</button></li>
+            <li class="nav-item create-lot-tab"><button class="create-lot-tab-btn btn btn-outline-light p-2 mt-2" data-bs-toggle="modal" data-bs-target="#lotModal">Create lot</button></li>
             @endif
         </ul>
     </div>
     <div class="main d-flex">
         <div class="side-filter">
-            <form action="/auction">
-                <input value="{{ app('request')->input('search') }}" name="search" class="p-2 mt-3 form-control bg-glass search" placeholder="Search" onchange="this.form.submit()">
+            <form action="/auction" class="w-100">
+                <input value="{{ app('request')->input('search') }}" name="search" class="w-100 p-2 mt-3 input-glass search" placeholder="Search" onchange="this.form.submit()">
             </form>
-            <div class="p-3" onclick="window.location.href='/auction'">All</div>
-            <div class="p-3" onclick="window.location.href='/auction?filter=equipment'">Equipment</div>
-            <div class="p-3" onclick="window.location.href='/auction?filter=artefacts'">Artefacts</div>
-            <div class="p-3" onclick="window.location.href='/auction?filter=weapons'">Weapons</div>
-            <div class="p-3" onclick="window.location.href='/auction?filter=attachments'">Attachments</div>
+            <button class="p-2 mt-2 w-100 input-glass d-block text-start" onclick="window.location.href='/auction'">All</button>
+            <button class="p-2 mt-2 w-100 input-glass d-block text-start" onclick="window.location.href='/auction?filter=equipment'">Equipment</button>
+            <button class="p-2 mt-2 w-100 input-glass d-block text-start" onclick="window.location.href='/auction?filter=artefacts'">Artefacts</button>
+            <button class="p-2 mt-2 w-100 input-glass d-block text-start" onclick="window.location.href='/auction?filter=weapons'">Weapons</button>
+            <button class="p-2 mt-2 w-100 input-glass d-block text-start" onclick="window.location.href='/auction?filter=attachments'">Attachments</button>
         </div>
         <div class="tab-content">
             <x-auction-table id="all" :lots="$lots"/>
 
-            @if(Auth::check() and $character!=null)
+            @if(Auth::check() and $character)
                 <x-auction-table id="my_lots" :lots="$lots"/>
                 <x-auction-table id="my_bids" :lots="$lots"/>
             <div id="history" class="tab-pane fade ms-5">
@@ -109,9 +118,9 @@
                                     </ul>
                                 </div>
                             @endif
-                                <form method="post" action="{{ route('lot_create') }}" class="d-flex flex-column">
+                                <form method="post" action="{{ route('lot.create') }}" class="d-flex flex-column">
                                     @csrf
-                                    <select name="item" class="my-1 p-2 border border-primary form-control">
+                                    <select name="item" class="my-1 p-2 input-glass w-100 form-select">
                                         @if(app('request')->input('slot') and  $character_personal_storage->where('slot', app('request')->input('slot'))->first())
                                             <option selected value="{{$character_personal_storage->where('slot', app('request')->input('slot'))->first()->slot }}">
                                                 {{$character_personal_storage->where('slot', app('request')->input('slot'))->first()->name }}
@@ -124,9 +133,9 @@
                                             <option value={{$item->slot}}>{{$item->name}}</option>
                                         @endforeach
                                     </select>
-                                    <input name="bid" class="my-1 p-2 border border-primary form-control" type="number" placeholder="Bid price" required>
-                                    <input name="price" class="my-1 p-2 border border-primary form-control" type="number" placeholder="Buyout price">
-                                    <select name="time" class="my-1 p-2 border border-primary form-control">
+                                    <input name="bid" class="my-1 p-2 input-glass w-100" type="number" placeholder="Bid price" required>
+                                    <input name="price" class="my-1 p-2 input-glass w-100" type="number" placeholder="Buyout price">
+                                    <select name="time" class="my-1 p-2 input-glass w-100 form-select">
                                         <option disabled selected>Select Time</option>
                                         <option value="12">12:00</option>
                                         <option value="24">24:00</option>
@@ -134,7 +143,7 @@
                                         <option value="48">48:00</option>
                                     </select>
 
-                                    <input class="my-1 p-2 btn-outline-primary btn" type="submit" value="Create">
+                                    <input class="my-1 p-2 input-glass w-100" type="submit" value="Create">
                                 </form>
 
 

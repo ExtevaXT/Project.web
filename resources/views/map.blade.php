@@ -7,7 +7,7 @@
 <link rel="stylesheet" href="{{asset('leaflet/leaflet.css')}} ">
 <style>
     #map {
-        height: calc(100vh - 100px);
+        height: calc(100vh - 150px);
     }
 </style>
 @endsection
@@ -15,7 +15,7 @@
 @section('content')
 
 
-    <div id="map"></div>
+    <div class="mt-4" id="map"></div>
 
     <script src="{{asset('leaflet/leaflet.js')}} "></script>
     <script>

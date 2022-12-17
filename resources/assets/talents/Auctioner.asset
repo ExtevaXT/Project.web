@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Auctioner
   m_EditorClassIdentifier: 
   description: "For a successfully sold item at auction, there is a 10% chance of
-    getting x1.5 the money\r\nBut on each the tax from auction will be x2 more\r"
-  requirementLevel: 0
+    getting x1.5 the money\r.\nBut on each the tax from auction will be x2 more\r"
+  requirementLevel: 175
   requirementCustom: 
   buff: 
   debuff: 

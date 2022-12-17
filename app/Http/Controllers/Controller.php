@@ -43,7 +43,6 @@ class Controller extends BaseController
     public function contact(Request $request)
     {
         $request = $request->validate([
-            'g-recaptcha-response' => 'recaptcha',
             'name' =>'required',
             'message' =>'required',
         ]);
@@ -113,8 +112,8 @@ class Controller extends BaseController
         // CHECK PROCESS ON SERVER
         $status = (bool)shell_exec('pidof ./headless.x86_64');
         return view('index', [
-            'unity' => GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []) ,
-            'web' => GitHub::repo()->commits()->all('ExtevaXT','Project.web', []),
+            'unity' => collect(GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []))->take(3) ,
+            'web' => collect(GitHub::repo()->commits()->all('ExtevaXT','Project.web', []))->take(3),
             'status' => $status,
         ]);
     }

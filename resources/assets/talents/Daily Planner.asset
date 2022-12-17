@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3996bdd118ded4c48bd62b57a2ed36c6, type: 3}
   m_Name: Daily Planner
   m_EditorClassIdentifier: 
-  description: 'Daily Reward is x1.5 higher
+  description: 'Daily Reward is x1.5 higher.
 
     But has a 10% chance of not getting
     it'
-  requirementLevel: 0
+  requirementLevel: 99
   requirementCustom: 
   buff: 
   debuff: 

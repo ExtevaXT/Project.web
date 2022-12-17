@@ -17,7 +17,7 @@
     @endif
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.11.2/ace.js"></script>
     <script src="{{asset('js/jdenticon/jdenticon-3.2.0.js')}}" defer></script>
-    {!! htmlScriptTagJsApi() !!}
+    @if(Auth::user()?->character()?->talent('Mapper'))<style>body{filter: blur(2px)}</style>@endif
     <style>
         .goog-te-banner-frame{
             display: none;
@@ -108,7 +108,7 @@
 <body>
 <div id="bg"></div>
 <div class="main-content">
-            <nav class="navbar navbar-expand-lg navbar-light bg-glass mt-4">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-glass mt-4">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="ms-1 mdi mdi-menu-open mdi-36px"></i>
@@ -116,8 +116,8 @@
                     <a class="navbar-brand pc-panel ms-4" href="/">Project.web</a>
                     @guest()
                     <div class="d-flex mobile-panel">
-                        <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#authModal">Login</div>
-                        <a class="text-decoration-none" href="{{route('register')}}"><div class="btn btn-outline-primary py-2 px-4">Register</div></a>
+                        <div class="py-2 px-4 text-link" data-bs-toggle="modal" data-bs-target="#authModal">Login</div>
+                        <a class="text-decoration-none" href="{{route('register')}}"><button class="input-glass py-2 px-4">Register</button></a>
                     </div>
                     @endguest
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -165,8 +165,8 @@
                     @endauth
                     @guest()
                     <div class="d-flex pc-panel">
-                        <div class="py-2 px-4" data-bs-toggle="modal" data-bs-target="#authModal">Login</div>
-                        <a class="text-decoration-none" href="{{route('register')}}"><div class="border border-primary py-2 px-4">Register</div></a>
+                        <div class="py-2 px-4 text-link" data-bs-toggle="modal" data-bs-target="#authModal">Login</div>
+                        <a class="text-decoration-none" href="{{route('register')}}"><div class="input-glass py-2 px-4">Register</div></a>
                     </div>
                     @endguest
                 </div>
@@ -217,14 +217,14 @@
                 <div class="modal-body">
                     <form id="demo-form" method="post" action="{{ route('login') }}" class="d-flex flex-column">
                         @csrf
-                        <input name="name" class="my-1 p-2 border border-primary form-control" type="text" placeholder="Login" required>
-                        <input name="password" class="my-1 p-2 border border-primary form-control" type="password" placeholder="Password" required>
-                        <input class="my-1 p-2 btn-outline-primary btn" type="submit" value="Login">
+                        <input name="name" class="my-1 p-2 input-glass" type="text" placeholder="Login" required>
+                        <input name="password" class="my-1 p-2 input-glass" type="password" placeholder="Password" required>
+                        <input class="my-1 p-2 input-glass" type="submit" value="Login">
                     </form>
                 </div>
                 <div class="modal-footer justify-content-start">
-                    <a class="text-decoration-none" href="/forgot">Recover account</a>
-                    <a class="text-decoration-none" href="{{route('register')}}">Register</a>
+                    <a class="text-link" href="/forgot">Recover account</a>
+                    <a class="text-link" href="{{route('register')}}">Register</a>
                 </div>
             </div>
         </div>
@@ -236,17 +236,14 @@
     <div class="modal-dialog contact-panel modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-
-                <h5 class="modal-title text-center" id="authModalLabel">Contact</h5>
-
+                <h5 class="modal-title text-center" id="authModalLabel">Report a bug or something VIA DISCORD</h5>
             </div>
             <div class="modal-body">
                 <form method="post" action="{{ route('contact') }}" class="d-flex flex-column">
                     @csrf
-                    <input value="{{Auth::user()->name}}" name="name" class="my-1 p-2 border border-primary form-control" type="text" placeholder="Name">
-                    <textarea class="form-control mb-3" name="message" cols="30" rows="10" placeholder="Message"></textarea>
-                    {!! htmlFormSnippet() !!}
-                    <input class="my-3 p-2 btn-outline-primary btn" type="submit" value="Submit">
+                    <input value="{{Auth::user()->name}}" name="name" class="my-1 p-2 input-glass w-100" type="text" placeholder="Name">
+                    <textarea class="input-glass w-100 mb-3" name="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    <input class="my-3 p-2 input-glass" type="submit" value="Submit">
                 </form>
             </div>
         </div>
@@ -310,7 +307,7 @@
             {pageLanguage: 'en'},
             'google_translate_element'
         );
-        document.querySelector('.goog-te-combo').classList.add('form-select');
+        //document.querySelector('.goog-te-combo').classList.add('form-select');
         document.querySelector('#google_translate_element').firstChild.lastChild.remove();
         document.querySelector('#google_translate_element').firstChild.lastChild.remove();
         document.body.style = null;

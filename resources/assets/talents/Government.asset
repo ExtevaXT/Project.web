@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: "Takes the tax off the auction.\r\nBut you get only 75% for the sold
     item.\r"
-  requirementLevel: 0
+  requirementLevel: 123
   requirementCustom: 
   buff: 
   debuff: 

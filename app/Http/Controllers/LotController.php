@@ -27,24 +27,14 @@ class LotController extends Controller
         $filter = $request->query('filter');
         $search = $request->query('search');
         //sort by category from resources
-        $lots = Lot::all()->sort(function ($lot) use ($filter){
-            $item = Resource::data('items/'.$filter)->firstWhere('m_Name', $lot->item()->name);
-            return $item;
-        })->reverse();
+        $lots = Lot::all()->sort(fn($lot) => Resource::data('items/'.$filter)->firstWhere('m_Name', $lot->item()->name))->reverse();
         // Search
-        if($search!=null){
-            $lots = $lots->filter(function ($lot) use ($search) {
-                // replace stristr with your choice of matching function
-                return false !== stristr($lot->item()->name, $search);
-            });
-        }
+        if($search) $lots = $lots->filter(fn($lot) => false !== stristr($lot->item()->name, $search));
         // other legacy logic
         $character = null;
         $character_personal_storage = null;
         if(Auth::check() and $character = Account::auth()->character())
-        {
             $character_personal_storage = $character->cps();
-        }
         return view('auction', compact('character', 'character_personal_storage', 'lots'));
     }
     public function create()
@@ -89,7 +79,7 @@ class LotController extends Controller
             'item' => $claim_item->id,
             'created_at' => $lot->endTime(),
         ]);
-        return redirect('/auction');
+        return redirect('/auction')->with(['lot'=>true]);
     }
 
 
@@ -104,25 +94,17 @@ class LotController extends Controller
         if($request['bid'] < $lot->bid) return 'Bid is too low';
         if($previousBidder->name == $bidder->name) return "Can't overwrite your bid";
 
-        //not working WITH DB FROM UNITY WITHOUT ID
-//        $bidder->gold -= $request['bid'];
-//        $bidder->save();
-//        $previousBidder->gold += $request->bid;
-//        $previousBidder->save();
-
         //Remove gold from bidder and give gold back to previous bidder
-        DB::table('characters')->where('name',$bidder->name)->update(['gold'=>$bidder->gold - $request['bid']]);
-        DB::table('characters')->where('name',$previousBidder->name)->update(['gold'=>$previousBidder->gold + $request['bid']]);
+        $bidder->setGold($bidder->gold- $request['bid']);
+        $previousBidder->setGold($previousBidder->gold + $request['bid']);
+        AccountNotification::make('Balance update', 'Your bid was outbid', $previousBidder->account);
 
-
-
-
-        //working
         $lot->bid = $request->bid;
         $lot->bidder = $bidder->name;
-        $lot->save();
-
-        return $request;
+        if($lot->save()){
+            return back()->with(['bid'=>true]);
+        }
+        return back()->with(['error'=>true]);
     }
     public function buyout(Request $request)
     {
@@ -178,9 +160,10 @@ class LotController extends Controller
         return 'Not success';
     }
 
-    public function lotRecieve(Request $request)
+    public function lotReceive(Request $request)
     {
-
+        if(Auth::user()->character()->claimItem($request->id)) return redirect()->route('profile');
+        return back();
     }
 
 }

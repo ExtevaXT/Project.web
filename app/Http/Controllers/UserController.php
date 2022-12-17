@@ -19,7 +19,6 @@ use App\Models\Friend;
 use App\Models\CharacterAchievement;
 use App\Models\Resource;
 use Discord\Http\Http;
-use Github\Api\User;
 use Illuminate\Support\Carbon;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Notification;
@@ -47,28 +46,40 @@ class UserController extends Controller
         // ok so it is lua code
         // here is some pseudo parsing for it
         $asts = explode('; ' ,$data);
-        $quests = array_filter($asts, function ($ast){
-            return str_starts_with($ast, 'Item');
-        });
-        $quests_success = array_filter($asts, function ($ast){
-            return str_contains($ast, 'State="success"');
-        });
-        $quests_active = array_filter($asts, function ($ast){
-            return str_contains($ast, 'State="active"');
-        });
-
+        $quests = array_filter($asts, fn($ast) => str_starts_with($ast, 'Item'));
+        $quests_success = array_filter($asts, fn($ast) => str_contains($ast, 'State="success"'));
+        $quests_active = array_filter($asts, fn($ast) => str_contains($ast, 'State="active"'));
         $vars = explode(', ',trim($asts[0], 'Variable={}'));
-        $vars = array_filter($vars, function ($var){
-            return str_contains($var, 'true');
-        });
+        $vars = array_filter($vars, fn($var) => str_contains($var, 'true'));
         return view('users.quests', compact('quests', 'quests_active', 'quests_success','vars'));
     }
 
+    public function talentUnlock(Request $request)
+    {
+        if(!(Auth::user()?->character()?->level < Resource::data('talents')?->firstWhere('m_Name', $request->name))) return back();
+        CharacterTalents::create([
+            'character' => Auth::user()->character()->name,
+            'name' => $request->name,
+            'enabled' => false,
+        ]);
+        return back()->with(['talentUnlock'=>true]);
+    }
+
+    public function talentToggle(Request $request)
+    {
+        $talent = CharacterTalents::get(Auth::user()->character()->name, $request->name);
+
+        DB::table('character_talents')->where('character',$talent->character)->where('name',$talent->name)->update(['enabled'=>!$talent->enabled]);
+        return back()->with(['talentToggle'=>true]);
+    }
+    public function delete()
+    {
+
+    }
 
     public function test()
     {
-
-        dd(Resource::attachments('12345'));
+        //dd(Resource::attachments('12345'));
     }
 
     public function profile($name)
@@ -78,51 +89,35 @@ class UserController extends Controller
         $account = Account::all()->where('name', $name)->first();
         if($account==null) return abort(404);
         $character = $account->character();
+        // Talent 'Introvert' feature
+        if($character->talent('Introvert')) return abort(404);
+        //Achievements
+        $achievement_data = Resource::data('achievements');;
+        //Skills always create with character (additional fields for character)
+        //Talents
+        $talent_data = Resource::data('talents');
         //Items for inventory
         $items = collect();
 
-        $achievements = null;
-        $achievement_data = null;
-        $trophies = 0;
-        $skills = null;
-        $talents = null;
-        $talent_data = null;
-        if($character!=null) {
+        if($character) {
             $character_personal_storage = Character_personal_storage::all()->where('character', $character['name']);
             //Logic from unity
-            for($i = 0; $i<72; $i++){
-                $items->push([
-                    'character'=> $character->name,
-                    'slot'=> $i,
-                    'name' => '',
-                    'amount' => 0,
-                    'ammo' => 0,
-                    'durability' => 0,
-                    'metadata' =>'00000',
-                ]);
-            }
+            $items = collect(array_fill(0, 72, [
+                'character' => $character->name,
+                'slot' => 0,
+                'name' => '',
+                'amount' => 0,
+                'ammo' => 0,
+                'durability' => 0,
+                'metadata' => '00000'
+            ]));
             foreach ($character_personal_storage as $row){
                 $items->put($row->slot, $row);
             }
-            //Achievements
-            $achievements = CharacterAchievement::all()->where('character', $character->name);
-            $achievement_data = Resource::data('achievements');;
-            foreach ($achievements as $achievement){
-                $trophies += $achievement->reward;
-            }
-            //Skills always create with character (additional fields for character)
-            $skills = CharacterSkills::all()->firstWhere('character', $character->name);
-
-            //Talents
-            $talents = CharacterTalents::all()->where('character', $character->name);
-            $talent_data = Resource::data('talents');
-
         }
 
 
-
-
-
+        // Some legacy code
         // if account friended somebody get his name
         $account_friend_start = null;
         if (Friend::all()->firstWhere('account', $account->name)!=null)
@@ -147,12 +142,8 @@ class UserController extends Controller
             'account' => $account,
             'character' => $character,
             'inventory'=> $items,
-            'achievements' => $achievements,
             'achievement_data' => $achievement_data,
             'icons' => $item_icons,
-            'trophies' => $trophies,
-            'skills' => $skills,
-            'talents' => $talents,
             'talent_data' => $talent_data,
 
             //FRIEND HELPERS
@@ -179,7 +170,7 @@ class UserController extends Controller
             $user->save();
         }
 
-        return back()->with(['success'=> 'Picture saved successfully']);
+        return back()->with(['upload'=> true]);
     }
 
 

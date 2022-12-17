@@ -1,123 +1,100 @@
-/*:root {*/
-/*  --back-color: #ffffff;*/
-/*  --primary-color: #f9ffee;*/
-/*  --header-back: #1a1d24;*/
-/*  --header-text: #eee;*/
+/*.bg-primary{*/
+/*    background: white!important;*/
 /*}*/
-
-/*body {*/
-/*  background-color: var(--back-color);*/
-/*  color: var(--primary-color);*/
+/*.btn-primary{*/
+/*    background: white !important;*/
+/*    color: black!important;*/
+/*    border-color: white!important;*/
 /*}*/
-/*header {*/
-/*  background-color: var(--header-back);*/
-/*  color: var(--header-text);*/
+/*.border-primary{*/
+/*    border-color: white !important;*/
 /*}*/
-
-/*.box img {*/
-/*  border: 2px solid var(--primary-color);*/
+/*.accordion-item.selected-item, .selected-item{*/
+/*    background-color: rgba(255,255,255,0.1) !important;*/
 /*}*/
-.bg-primary{
-    background: white!important;
-}
-.btn-primary{
-    background: white !important;
-    color: black!important;
-    border-color: white!important;
-}
-.border-primary{
-    border-color: white !important;
-}
-.accordion-item.selected-item, .selected-item{
-    background-color: rgba(255,255,255,0.1) !important;
-}
-.accordion-item.active-item, .active-item{
-    background-color: rgba(0, 0, 0, 0.1) !important;
-}
-@keyframes gradient {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-}
-body{
-    background: rgb(26,32,44);
-}
-
+/*.accordion-item.active-item, .active-item{*/
+/*    background-color: rgba(0, 0, 0, 0.1) !important;*/
+/*}*/
+/*@keyframes gradient {*/
+/*    0% {*/
+/*        background-position: 0% 50%;*/
+/*    }*/
+/*    50% {*/
+/*        background-position: 100% 50%;*/
+/*    }*/
+/*    100% {*/
+/*        background-position: 0% 50%;*/
+/*    }*/
+/*}*/
 /*body{*/
-/*    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://letragon.ru/assets/visual/front-bg/profile/72.jpg); !*MAX 72*!*/
+/*    background: rgb(26,32,44);*/
 /*}*/
 
-.btn-check:focus + .btn, .btn:focus {
-    outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25)!important;
-}
-.nav-pills .nav-item .nav-link.active{
-    background-color: rgba(255,255,255,0.1)!important;
-}
-.nav-tabs .nav-item .nav-link.active{
-    background: transparent!important;
-}
-.btn-check:checked + .btn-outline-primary{
-    background-color: white!important;
-    color: #1b1b1b !important;
-}
-.form-check-input:checked{
-    background-color: rgba(255,255,255,0.1)!important;
-    border-color: rgba(255,255,255,0.1)!important;
-}
-.btn-outline-primary:hover{
-    background-color: white !important;
-    color: #1b1b1b!important;
-}
-.alert-success{
-    color: black!important;
-}
+/*!*body{*!*/
+/*!*    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(http://letragon.ru/assets/visual/front-bg/profile/72.jpg); !*MAX 72*!*!*/
+/*!*}*!*/
 
-.dropdown-menu, .modal-content{
-    background: #1b1b1b !important;
-}
-.form-control, .form-control:focus, .accordion-item{
-    background: transparent !important;
-}
-.btn-outline-primary{
-    border-color: white !important;
-}
-.bg-glass{
-    background: rgba(177, 177, 177, 0.07) !important;
-    outline: 1px solid rgba(171,171,171,0.16) !important;
-    border: none !important;
-}
-.bg-glass.form-control::placeholder{
-    color: gray !important;
-}
+/*.btn-check:focus + .btn, .btn:focus {*/
+/*    outline: 0;*/
+/*    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25)!important;*/
+/*}*/
+/*.nav-pills .nav-item .nav-link.active{*/
+/*    background-color: rgba(255,255,255,0.1)!important;*/
+/*}*/
+/*.nav-tabs .nav-item .nav-link.active{*/
+/*    background: transparent!important;*/
+/*}*/
+/*.btn-check:checked + .btn-outline-primary{*/
+/*    background-color: white!important;*/
+/*    color: #1b1b1b !important;*/
+/*}*/
+/*.form-check-input:checked{*/
+/*    background-color: rgba(255,255,255,0.1)!important;*/
+/*    border-color: rgba(255,255,255,0.1)!important;*/
+/*}*/
+/*.btn-outline-primary:hover{*/
+/*    background-color: white !important;*/
+/*    color: #1b1b1b!important;*/
+/*}*/
+/*.dropdown-menu, .modal-content{*/
+/*    background: #1b1b1b !important;*/
+/*}*/
+/*.form-control, .form-control:focus, .accordion-item{*/
+/*    background: transparent !important;*/
+/*}*/
+/*.btn-outline-primary{*/
+/*    border-color: white !important;*/
+/*}*/
+/*.bg-glass{*/
+/*    background: rgba(177, 177, 177, 0.07) !important;*/
+/*    outline: 1px solid rgba(171,171,171,0.16) !important;*/
+/*    border: none !important;*/
+/*}*/
+/*.bg-glass.form-control::placeholder{*/
+/*    color: gray !important;*/
+/*}*/
 
-.btn-outline-primary:hover{
-    background-color: white !important;
-    color: #1b1b1b!important;
-}
-option{
-    background-color: #1b1b1b !important;
-}
-*, input::placeholder{
-    /*background-color: #1b1b1b!important;*/
-    color: white !important;
-}
-.navbar-light .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
-}
-.navbar-toggler{
-    border-color: rgb(255, 255, 255) !important;
-}
-.btn-close {
-    filter: invert(100%);
-    opacity: 1;
-     background-color: transparent !important;
+/*.btn-outline-primary:hover{*/
+/*    background-color: white !important;*/
+/*    color: #1b1b1b!important;*/
+/*}*/
+/*option{*/
+/*    background-color: #1b1b1b !important;*/
+/*}*/
+/**, input::placeholder{*/
+/*    !*background-color: #1b1b1b!important;*!*/
+/*    color: white !important;*/
+/*}*/
+/*.navbar-light .navbar-toggler-icon {*/
+/*    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");*/
+/*}*/
+/*.navbar-toggler{*/
+/*    border-color: rgb(255, 255, 255) !important;*/
+/*}*/
+/*.btn-close {*/
+/*    filter: invert(100%);*/
+/*    opacity: 1;*/
+/*     background-color: transparent !important;*/
 
-}
+/*}*/
 

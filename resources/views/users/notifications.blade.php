@@ -12,17 +12,21 @@
     <div class="fs-3">All Notifications</div>
     @foreach(AccountNotification::all()->where('account', Auth::user()->name) as $notification)
         @if($notification->title != 'Delivery')
-            <div class="border border-primary p-3 mt-1">
-                <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
+            <div class="bg-glass p-3 mt-2">
+                <div><span class="fw-bold">{{$notification->title}}</span> <span class="fw-light">{{$notification->created_at}}</span></div>
                 <div>{{$notification->value}}</div>
             </div>
         @else
-            <form action="{{route('claim')}}" method="POST" class="border border-primary p-3 mt-1 d-flex flex-row gap-3">
+            <form action="{{route('claim')}}" method="POST" class="bg-glass p-3 mt-2 d-flex flex-row gap-3">
                 <div>
-                    <div>{{$notification->title}} <span class="fw-light">{{$notification->created_at}}</span></div>
+                    <div><span class="fw-bold">{{$notification->title}}</span> <span class="fw-light">{{$notification->created_at}}</span></div>
                     <div>{{$notification->value}}</div>
                 </div>
-                <button class="btn btn-outline-primary px-5">Claim</button>
+                @if(!$notification->item()->claimed)
+                    <button class="btn btn-outline-primary px-5">Claim</button>
+                @else
+                    <button class="btn btn-outline-primary px-5 disabled">Already claimed</button>
+                @endif
             </form>
         @endif
     @endforeach

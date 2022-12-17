@@ -13,19 +13,14 @@ class Resource extends Model
 {
     public static function data($path)
     {
-
         $data = collect();
-//        $files = glob(resource_path()."/assets/$path/*.*", GLOB_BRACE);
-//        foreach($files as $file) {
-//            $data->push(Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour']);
-//        }
-        $it = new RecursiveDirectoryIterator(resource_path()."/assets/$path");
+        if(!is_dir($path = resource_path()."/assets/$path")) return abort(404);
+        $it = new RecursiveDirectoryIterator($path);
         foreach(new RecursiveIteratorIterator($it) as $file) {
             if ($file->getExtension() == 'asset') {
                 $data->push(Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour']);
             }
         }
-
         return $data;
     }
 

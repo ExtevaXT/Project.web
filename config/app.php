@@ -70,7 +70,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Asia/Yekaterinburg',
 
     /*
     |--------------------------------------------------------------------------
@@ -216,6 +216,7 @@ return [
         'Character' => App\Models\Character::class,
         'Character_personal_storage' => \App\Models\Character_personal_storage::class,
         'CharacterSkills' => \App\Models\CharacterSkills::class,
+        'CharacterTalents' => \App\Models\CharacterTalents::class,
         'CharacterAchievement' => \App\Models\CharacterAchievement::class,
         'Lot' => \App\Models\Lot::class,
         'AccountNotification' => \App\Models\AccountNotification::class,

@@ -25,6 +25,7 @@ MonoBehaviour:
   modelPrefab: {fileID: 1803123784931580, guid: 4132626e7d9f1a74c90596f4979502ce,
     type: 3}
   type: 
+  hide: 0
   content: 
   notes: 
   attachmentMetaId: 79

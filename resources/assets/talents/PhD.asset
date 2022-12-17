@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   description: Daily reward on the contrary takes away money, but in return there
     is a 5% chance to get a one level
-  requirementLevel: 0
+  requirementLevel: 55
   requirementCustom: Extra Virgin
   buff: 
   debuff: 

@@ -21,32 +21,36 @@
                 </ul>
             </div>
         @endif
-    <form method="post" action="{{ route('lot_create') }}" class="d-flex flex-column">
-        @csrf
-        <select name="item" class="my-1 p-2 border border-primary form-control">
-            @if(app('request')->input('slot') and  $character_personal_storage->where('slot', app('request')->input('slot'))->first())
-                <option selected value="{{$character_personal_storage->where('slot', app('request')->input('slot'))->first()->slot }}">
-                    {{$character_personal_storage->where('slot', app('request')->input('slot'))->first()->name }}
-                </option>
-            @else
-                <option disabled selected>Select Item</option>
-            @endif
+        <div class="bg-glass p-5 my-3">
+            <h3 class="mb-3">Lot creation</h3>
+            <form method="post" action="{{ route('lot.create') }}" class="d-flex flex-column">
+                @csrf
+                <select name="item" class="mb-2 p-2 input-glass w-100 form-select">
+                    @if(app('request')->input('slot') and  $character_personal_storage->where('slot', app('request')->input('slot'))->first())
+                        <option selected value="{{$character_personal_storage->where('slot', app('request')->input('slot'))->first()->slot }}">
+                            {{$character_personal_storage->where('slot', app('request')->input('slot'))->first()->name }}
+                        </option>
+                    @else
+                        <option disabled selected>Select Item</option>
+                    @endif
 
-            @foreach($character_personal_storage->forget(app('request')->input('slot')-1) as $item)
-                <option value={{$item->slot}}>{{$item->name}}</option>
-            @endforeach
-        </select>
-        <input name="bid" class="my-1 p-2 border border-primary form-control" type="number" placeholder="Bid price" required>
-        <input name="price" class="my-1 p-2 border border-primary form-control" type="number" placeholder="Buyout price">
-        <select name="time" class="my-1 p-2 border border-primary form-control">
-            <option disabled selected>Select Time</option>
-            <option value="12">12:00</option>
-            <option value="24">24:00</option>
-            <option value="36">36:00</option>
-            <option value="48">48:00</option>
-        </select>
+                    @foreach($character_personal_storage->forget(app('request')->input('slot')-1) as $item)
+                        <option value={{$item->slot}}>{{$item->name}}</option>
+                    @endforeach
+                </select>
+                <input name="bid" class="mb-2 p-2 input-glass w-100" type="number" placeholder="Bid price" required>
+                <input name="price" class="mb-2 p-2 input-glass w-100" type="number" placeholder="Buyout price">
+                <select name="time" class="mb-2 p-2 input-glass w-100 form-select">
+                    <option disabled selected>Select Time</option>
+                    <option value="12">12:00</option>
+                    <option value="24">24:00</option>
+                    <option value="36">36:00</option>
+                    <option value="48">48:00</option>
+                </select>
 
-        <input class="my-1 p-2 btn-outline-primary btn" type="submit" value="Create">
-    </form>
+                <input class="mb-2 p-2 input-glass" type="submit" value="Create">
+            </form>
+        </div>
+
     @endauth
 @endsection

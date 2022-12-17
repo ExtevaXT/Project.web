@@ -48,26 +48,26 @@
                             <div class="accordion-body d-flex justify-content-between"
 
                             @if($lot->character == Account::auth()->character()->name)
-                                <form class="d-inline" method="post" action="{{ route('buyout') }}">
+                                <form class="d-inline" method="post" action="{{ route('lot.buyout') }}">
                                     @csrf
                                     <input name="id" type="hidden" value="{{$lot->id}}">
-                                    <button class="btn btn-primary w-100">Remove</button>
+                                    <button class="input-glass p-2 w-100">Remove</button>
                                 </form>
                             @else
-                                <form class="form-bid" method="post" action="{{ route('bid') }}">
+                                <form class="form-bid" method="post" action="{{ route('lot.bid') }}">
                                     @csrf
                                     <div class="seller">Seller: {{$lot->character}}</div>
                                     <input name="id" type="hidden" value="{{$lot->id}}">
                                     <div class="d-flex form-bid-child">
-                                        <input name="bid" class="form-control input-bid" type="number" value="{{$lot->bid + 1}}">
-                                        <button class="btn btn-primary btn-bid">Bid</button>
+                                        <input name="bid" class="px-2 input-glass input-bid" value="{{$lot->bid + 1}}">
+                                        <button class="input-glass btn-bid">Bid</button>
                                     </div>
                                 </form>
                                 @if($lot->price!=null)
-                                    <form class="form-buyout" method="post" action="{{ route('buyout') }}">
+                                    <form class="form-buyout" method="post" action="{{ route('lot.buyout') }}">
                                         @csrf
                                         <input name="id" type="hidden" value="{{$lot->id}}">
-                                        <button class="btn btn-primary d-inline btn-buyout">Buyout</button>
+                                        <button class="input-glass d-inline btn-buyout">Buyout</button>
                                     </form>
                                 @endif
                             @endif

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3996bdd118ded4c48bd62b57a2ed36c6, type: 3}
   m_Name: Introvert
   m_EditorClassIdentifier: 
-  description: "Profile goes private\r\nBut for you too\r"
-  requirementLevel: 0
+  description: Your profile page becomes unavailable
+  requirementLevel: 135
   requirementCustom: 
   buff: 
   debuff: 

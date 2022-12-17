@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3996bdd118ded4c48bd62b57a2ed36c6, type: 3}
   m_Name: Fair Referral
   m_EditorClassIdentifier: 
-  description: 'You get money for each friend
+  description: 'You get money for each friend.
 
     But for each friend you add,
-    you get charged'
-  requirementLevel: 0
+    you lose them'
+  requirementLevel: 625
   requirementCustom: 
   buff: 
   debuff: 

@@ -14,21 +14,11 @@
 @endsection
 
 @section('content')
-    @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
+    @if(session()->has('error'))
+        <div class="alert alert-danger my-3">Something went wrong</div>
     @endif
-    @if (session()->has('success'))
-        <div class="alert alert-success">
-            <ul>
-                <li>{!! session()->get('success') !!}</li>
-            </ul>
-        </div>
+    @if(session()->has('upload'))
+        <div class="alert alert-success my-3">Picture uploaded successfully</div>
     @endif
 <div class="">
     <div class="d-flex my-5 top-panel">
@@ -36,12 +26,12 @@
             <x-user-profile name="{{$account->name}}" size="256" all="0"/>
             @if(Auth::user() !=null and Auth::user()->name == $account->name)
             <div class="d-flex gap-2 ms-2">
-                <div class="p-2 btn btn-outline-primary bg-glass" data-bs-toggle="modal" data-bs-target="#imageModal">
+                <button class="p-2 input-glass" data-bs-toggle="modal" data-bs-target="#imageModal">
                     Upload picture
-                </div>
+                </button>
                 <form action="{{route('upload')}}" method="POST">
                     @csrf
-                    <button class="py-2 px-4 btn btn-outline-primary bg-glass" type="submit">Default</button>
+                    <button class="py-2 px-4 input-glass" type="submit">Default</button>
                 </form>
 
             </div>
@@ -49,7 +39,7 @@
         </div>
         <div class="d-flex flex-column py-5 px-2">
             <div style="font-size: 50px; font-weight: bold">{{ $account['name'] }}</div>
-            <div class="fs-5"><i class="icons mdi mdi-trophy mdi-18px"></i> {{ $trophies }} <span class="fw-bold">Prefix</span></div>
+            <div class="fs-5"><i class="icons mdi mdi-trophy mdi-18px"></i> {{ $character ? $character->trophies() : 0 }} <span class="fw-bold">@if($character) {{$account->setting('prefix') ?? $character->faction}} @else Character not created @endif</span></div>
             <div>@if( $character!=null and $character['online']) <span class="text-success">Online</span> @else <span class="text-danger">Not online</span> @endif </div>
             @auth()
                 {{--                TEST CLAUSE                   --}}
@@ -67,7 +57,7 @@
 
                     )
                     <div>
-                        <form method="post" action="{{route('friend_add')}}">
+                        <form method="post" action="{{route('friend.add')}}">
                             @csrf
                             <input type="hidden" name="friend" value="{{$account['name']}}">
                             <button class="btn btn-primary" type="submit">Add to friends</button>
@@ -89,30 +79,27 @@
 
 
 
-
     <ul class="nav nav-tabs">
         <li class="nav-item">
             <a class="nav-link active" data-bs-toggle="tab" href="#profile">{{ $account['name'] }}</a>
         </li>
-        @if(Auth::user() !=null and Auth::user()->name == $account->name)
-            @if($character!=null)
+        @if($character and ((Auth::check() and Auth::user()->name == $account->name) or $character->talent('Extrovert')))
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#inventory">Storage</a>
         </li>
-            @endif
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#activity">Activity</a>
         </li>
-            @if($character!=null)
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#talents">Talents</a>
         </li>
-            @endif
+        @endif
+        @if(Auth::check() and Auth::user()->name == $account->name)
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#friends">Friends</a>
         </li>
         @endif
-        @if($character!=null)
+        @if($character)
         <li class="nav-item">
             <a class="nav-link" data-bs-toggle="tab" href="#achievements">Achievements</a>
         </li>
@@ -134,11 +121,11 @@
                         </div>
                         @if($character!=null)
                         <div class="bg-glass p-2">
-                            <div>Prestige</div>
+                            <div>Prestige {{$character->prestige()}}</div>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <div>0</div>
+                            <div class="fw-light">Remain {{100 - $character->level()}} levels for {{$character->prestige() + 1}} prestige</div>
                         </div>
                         <div class="bg-glass p-2">
                             <div>Last game online</div>
@@ -149,17 +136,17 @@
                             <div>0</div>
                         </div>
                         <div class="bg-glass p-2">
-                            <div>{{ $character['level'] }} Level <span class="fw-light">{{ $character['experience'] }} exp</span></div>
+                            <div>{{ $character->level() }} Level <span class="fw-light">{{ $character['experience'] }} exp</span></div>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
-                            <div class="fw-light">Remain 1000 exp for {{ $character['level']+1 }} lvl</div>
+                            <div class="fw-light">Remain 1000 exp for {{ $character->level()+1 }} level</div>
                         </div>
                         @endif
                         @if(Auth::check() and $character and Auth::user()->name == $account->name)
                             <div class="bg-glass p-2">
                                 <div>Balance</div>
-                                <div>{{$character['gold']}}</div>
+                                <div>{{$character['gold']}} ₽</div>
                             </div>
                             <div class="bg-glass p-2">
                                 <div>Research Tokens</div>
@@ -218,13 +205,13 @@
                     <div class="fs-3 my-3">Achievement showcase</div>
                     <div class="d-flex achievement-panel">
                         @for ($i = 0; $i < 5; $i++)
-                            @isset($achievements[$i])
+                            @isset($character->achievements()[$i])
                             <div class="bg-glass p-3 w-100 me-1 text-center achievement-collection-item">
                                 <div class="m-1"><i class="icons mdi mdi-trophy mdi-48px"></i></div>
-                                <div style="white-space: nowrap">{{$achievements[$i]['name']}}</div>
+                                <div style="white-space: nowrap">{{$character->achievements()[$i]['name']}}</div>
                             </div>
                             @else
-                            <div class="border border-primary p-3 w-100 me-1 text-center achievement-collection-item-placeholder"></div>
+                            <div class="bg-glass p-3 w-100 me-1 text-center achievement-collection-item-placeholder"></div>
                             @endisset
                         @endfor
                     </div>
@@ -251,7 +238,7 @@
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <div>{{$skills->health}} </div>
+                                    <div>{{$character->skills()->health}} </div>
                                 </div>
                             </div>
                         </div>
@@ -263,7 +250,7 @@
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <div>{{$skills->endurance}}</div>
+                                    <div>{{$character->skills()->endurance}}</div>
                                 </div>
                             </div>
                         </div>
@@ -275,7 +262,7 @@
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <div>{{$skills->nutrition}}</div>
+                                    <div>{{$character->skills()->nutrition}}</div>
                                 </div>
                             </div>
                         </div>
@@ -287,7 +274,7 @@
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <div>{{$skills->hydration}}</div>
+                                    <div>{{$character->skills()->hydration}}</div>
                                 </div>
                             </div>
                         </div>
@@ -299,7 +286,7 @@
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <div>{{$skills->weight}}</div>
+                                    <div>{{$character->skills()->weight}}</div>
                                 </div>
                             </div>
                         </div>
@@ -311,7 +298,7 @@
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <div>{{$skills->radiation}}</div>
+                                    <div>{{$character->skills()->radiation}}</div>
                                 </div>
                             </div>
                         </div>
@@ -323,7 +310,7 @@
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <div>{{$skills->biological}}</div>
+                                    <div>{{$character->skills()->biological}}</div>
                                 </div>
                             </div>
                         </div>
@@ -335,7 +322,7 @@
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <div>{{$skills->thermal}}</div>
+                                    <div>{{$character->skills()->thermal}}</div>
                                 </div>
                             </div>
                         </div>
@@ -347,7 +334,7 @@
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <div>{{$skills->psycho}}</div>
+                                    <div>{{$character->skills()->psycho}}</div>
                                 </div>
                             </div>
                         </div>
@@ -359,7 +346,7 @@
                                     <div class="progress">
                                         <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                     </div>
-                                    <div>{{$skills->bleeding}}</div>
+                                    <div>{{$character->skills()->bleeding}}</div>
                                 </div>
                             </div>
                         </div>
@@ -376,8 +363,7 @@
         </div>
 
 
-        @if(Auth::user() !=null and Auth::user()->name == $account->name)
-            @if($character!=null)
+        @if($character and ((Auth::check() and Auth::user()->name == $account->name) or $character->talent('Extrovert')))
         <div class="tab-pane fade" id="inventory">
             <div class="fs-3 my-3">Personal Storage</div>
             <div class="d-flex inventory-parent">
@@ -426,35 +412,53 @@
             </div>
 
         </div>
-            @endif
+            <div class="tab-pane fade" id="talents">
+                <div class="fs-3 mt-3">Talents</div>
+                <div class="fs-5">Unlock unique and unbalanced abilities</div>
+                <div class="fs-5 mb-3">Prestige {{$character->prestige()}} Level {{$character->level()}}/100</div>
+                <div class="d-grid talent-panel">
+                    @foreach ($talent_data as $talent)
+                        <div class="bg-glass p-3 d-flex flex-column justify-content-between">
+                            <div>
+                                <div>{{$talent['m_Name']}}
+                                    <span class="float-end rarity">
+                                        @switch($talent['requirementLevel'])
+                                            @case($talent['requirementLevel'] < 100) Common @break
+                                            @case($talent['requirementLevel'] > 300) Rare @break
+                                            @default Uncommon @break
+                                        @endswitch
+                                    </span>
+                                </div>
+                                <div>{{$talent['description']}}</div>
+                            </div>
+                            @if($character->level < $talent['requirementLevel'] )
+                                <button class="btn text-center input-glass m-1 p-1 w-100 disabled">Need {{($prestige = $character->prestige($talent['requirementLevel'])) == 0 ? null : $prestige.' Prestige and'}} {{$character->level($talent['requirementLevel'])}} level</button>
+                            @elseif(CharacterTalents::get($character->name, $talent['m_Name']))
+                                <form method="POST" action="{{route('talent.toggle', ['name'=>$talent['m_Name']])}}">
+                                    @csrf
+                                    @if($character->talent($talent['m_Name']))
+                                        <button type="submit" class="text-center input-glass bg-glass-danger m-1 p-1 w-100">Disable Talent</button>
+                                    @else
+                                        <button type="submit" class="text-center input-glass bg-glass-success m-1 p-1 w-100">Enable Talent</button>
+                                    @endif
+                                </form>
+                            @else
+                                <form method="POST" action="{{route('talent.unlock', ['name'=>$talent['m_Name']])}}">
+                                    @csrf
+                                    <button type="submit" class="text-center input-glass m-1 p-1 w-100">Unlock Talent</button>
+                                </form>
+                            @endif
 
 
-
-
-
-
-        <div class="tab-pane fade" id="activity">
-
-            <div class="d-flex flex-column">
-                @for ($i = 1; $i <= 10; $i++)
-                    <div class="p-3"><span class="me-2">Icon</span> Some activity <span class="fw-light mx-2">Time ago</span></div>
-                @endfor
+                        </div>
+                    @endforeach
+                </div>
             </div>
-
-
-
-
-
-
-
-
-
-        </div>
         <div class="tab-pane fade" id="friends">
             <div class="fs-3 my-3">Friend list</div>
             <div class="d-grid friend-panel">
                 {{-- SHOW YOUR FRIEND REQUESTS AND ACCEPTED --}}
-                    @foreach(Friend::all()->where('account', Auth::user()->name) as $friend)
+                    @foreach($account->friends('account') as $friend)
                     <div class="bg-glass p-3">
                         <div class="d-flex">
                             <x-user-profile name="{{$friend->friend}}" size="64" all="0" />
@@ -470,7 +474,7 @@
                     </div>
                     @endforeach
                         {{-- SHOW OTHER FRIEND REQUESTS AND  --}}
-                    @foreach(Friend::all()->where('friend', Auth::user()->name) as $friend)
+                    @foreach($account->friends('friend') as $friend)
                     <div class="bg-glass p-3">
                         <div class="d-flex">
                             <x-user-profile name="{{$friend->account}}" size="64" all="0" />
@@ -481,7 +485,7 @@
 {{--                                        <div></div>--}}
                                     @else
                                         <div>
-                                            <form method="post" action="{{route('friend_accept')}}">
+                                            <form method="post" action="{{route('friend.accept')}}">
                                                 @csrf
                                                 <input type="hidden" name="friend" value="{{$friend->account}}">
                                                 <button class="btn btn-primary" type="submit">Accept request</button>
@@ -501,8 +505,8 @@
         @if($character!=null)
         <div class="tab-pane fade" id="achievements">
             <div class="fs-3 my-3">Achievements</div>
-            @forelse($achievements as $achievement)
-                <div class="bg-glass mb-1 p-3">
+            @forelse($character->achievements() as $achievement)
+                <div class="bg-glass mb-2 p-3">
                     <div class="d-flex justify-content-between">
                         <div class="d-flex">
                             <i class="icons mdi mdi-trophy mdi-36px align-self-end mx-3 mb-1"></i>
@@ -539,8 +543,8 @@
                 <div class="modal-body">
                     <form method="post" action="{{ route('upload') }}" class="d-flex flex-column" enctype="multipart/form-data">
                         @csrf
-                        <input name="image" class="my-1 p-2 border border-primary form-control" type="file" required>
-                        <input class="my-1 p-2 btn-outline-primary btn" type="submit" value="Upload">
+                        <input name="image" class="my-1 p-2 input-glass" type="file" required>
+                        <input class="my-1 p-2 input-glass" type="submit" value="Upload">
                     </form>
                 </div>
             </div>
@@ -615,7 +619,7 @@
                 selected.classList.add('selected-item');
             }
             function SellItem(){
-                window.location.href = `{{route('lot_create')}}?slot=${selectedSlot}`;
+                window.location.href = `{{route('lot.create')}}?slot=${selectedSlot}`;
             }
             function TradeItem(){
 

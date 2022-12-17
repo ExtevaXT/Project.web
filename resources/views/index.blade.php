@@ -12,11 +12,11 @@
     <div class="text-center py-5 mt-5">
         <div class="fs-3">Project.web - Web interface for Project.unity</div>
         <div class="text-secondary fs-5">Last update
-            {{Carbon::parse(max($unity[0]['commit']['author']['date'], $web[0]['commit']['author']['date']))->tz('Asia/Yekaterinburg')->format('d M Y | h:i')}}
+            {{Carbon::parse(max($unity[0]['commit']['author']['date'], $web[0]['commit']['author']['date']))->tz('Asia/Yekaterinburg')->format('d M Y | H:i')}}
         </div>
-        <div class="bg-glass py-2 px-4 d-inline-block fs-5 mt-3"><a class="text-decoration-none" href="{{route('register')}}">Register account</a></div>
+        <button class="input-glass py-2 px-4 d-inline-block fs-5 mt-3" onclick="window.location.href='{{route('register')}}'">Register account</button>
         <br>
-        <div class="bg-glass py-2 px-4 d-inline-block mt-2"><a class="text-decoration-none" href="{{route('download')}}">Download</a></div>
+        <button class="input-glass py-2 px-4 d-inline-block mt-2" onclick="window.location.href='{{route('download')}}'">Download</button>
     </div>
     @endguest
     <div class="@auth d-flex my-2 main @endauth">
@@ -61,8 +61,8 @@
                 </div>
             </div>
                 <div class="d-flex flex-row m-2 link-panel">
-                    <div class="text-center w-50 px-5 py-2 bg-glass"><a class="text-decoration-none" href="/user/{{Auth::user()->name}}">Profile</a></div>
-                    <div class="ms-2 w-50 px-5 py-2 bg-glass text-center"><a class="text-decoration-none" href="{{route('download')}}">Download</a></div>
+                    <a class="text-decoration-none w-50" href="/user/{{Auth::user()->name}}"><div class="text-center px-5 py-2 input-glass">Profile</div></a>
+                    <a class="text-decoration-none w-50" href="{{route('download')}}"><div class="ms-2 px-5 py-2 input-glass text-center">Download</div></a>
                 </div>
             @endauth()
             <div class="d-flex flex-column m-2">
@@ -143,10 +143,10 @@
             <div class="m-2 @guest d-flex main gap-3 w-100 @endguest">
                 <div class="@guest w-50 main-left @endguest">
                     <h3>Last changes .web</h3>
-                    <div class="overflow-auto" style="max-height: 310px">
+                    <div>
                         @foreach($web as $commit)
                             <div class="bg-glass change-item p-4 my-2">
-                                <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg')->format('d M Y | h:i') }}</span> {{ $commit['commit']['author']['name']}}</div>
+                                <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg')->format('d M Y | H:i') }}</span> {{ $commit['commit']['author']['name']}}</div>
                                 <div>{{ $commit['commit']['message']}}</div>
                             </div>
                         @endforeach
@@ -154,10 +154,10 @@
                 </div>
                 <div class="@guest w-50 main-right @endguest">
                     <h3>Last changes .unity</h3>
-                    <div class="overflow-auto" style="max-height: 310px">
+                    <div>
                         @foreach($unity as $commit)
                         <div class="bg-glass change-item p-4 my-2">
-                            <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg')->format('d M Y | h:i') }}</span> {{ $commit['commit']['author']['name']}}</div>
+                            <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg')->format('d M Y | H:i') }}</span> {{ $commit['commit']['author']['name']}}</div>
                             <div>{{ $commit['commit']['message']}}</div>
                         </div>
                         @endforeach
