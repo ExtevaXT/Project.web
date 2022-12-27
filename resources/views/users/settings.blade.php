@@ -118,7 +118,7 @@
                         <option selected disabled>Select theme</option>
                         <option value="null">None</option>
                         <option value="hanipaganda" @if(Account::auth()->setting('styleTheme')=='hanipaganda') selected @endif>HANIPAGANDA</option>
-                        <option value="consultant" @if(Account::auth()->setting('styleTheme')=='consultant') selected @endif>CONSULTANT</option>
+                        <option value="consultant" @if(Account::auth()->setting('styleTheme')=='consultant') selected @endif>こ～んさるたん</option>
                     </select>
                     <div class="mb-2">
                         <input type="radio" class="btn-check" name="styleThemeShow" value="0" id="styleThemeShow1" autocomplete="off"

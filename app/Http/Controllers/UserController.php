@@ -37,6 +37,25 @@ use Symfony\Component\Yaml\Yaml;
 
 class UserController extends Controller
 {
+    public function daily()
+    {
+        $min = 500;
+        $max = 25000;
+        if(Auth::user()->setting('daily')) return back()->with(['dailyError'=>true]);
+        Auth::user()->settings(['daily'=>true]);
+        $character = Auth::user()->character();
+        //Maybe make interpolation ((max - min) * level) / Character::max('level') + min
+        $reward = $character->gold + max($min * $character->level, $max);
+        //Talent 'Daily Planner'
+        if($character->talent('Daily Planner')) rand(1, 100) < 90 ? (int)$reward *= 1.5 : $reward = 0;
+        //Talent 'Experienced Student'
+        if($character->talent('Daily Planner')) {
+            (int)$reward *= 0.9;
+            //$character->expire
+        }
+        $character->setGold($reward);
+        return back()->with(['daily'=>true]);
+    }
     public function quests()
     {
         //if not null
@@ -90,7 +109,7 @@ class UserController extends Controller
         if($account==null) return abort(404);
         $character = $account->character();
         // Talent 'Introvert' feature
-        if($character->talent('Introvert')) return abort(404);
+        if($character?->talent('Introvert')) return abort(404);
         //Achievements
         $achievement_data = Resource::data('achievements');;
         //Skills always create with character (additional fields for character)

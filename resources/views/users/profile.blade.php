@@ -60,7 +60,7 @@
                         <form method="post" action="{{route('friend.add')}}">
                             @csrf
                             <input type="hidden" name="friend" value="{{$account['name']}}">
-                            <button class="btn btn-primary" type="submit">Add to friends</button>
+                            <button class="input-glass p-2" type="submit">Add to friends</button>
                         </form>
                     </div>
                 @endif
@@ -454,6 +454,7 @@
                     @endforeach
                 </div>
             </div>
+        @endif
         <div class="tab-pane fade" id="friends">
             <div class="fs-3 my-3">Friend list</div>
             <div class="d-grid friend-panel">
@@ -482,13 +483,13 @@
                                 <div>
                                     <div>{{$friend->account}}</div>
                                     @if($friend->accepted)
-{{--                                        <div></div>--}}
+                                        <div class="text-success">Accepted</div>
                                     @else
                                         <div>
                                             <form method="post" action="{{route('friend.accept')}}">
                                                 @csrf
                                                 <input type="hidden" name="friend" value="{{$friend->account}}">
-                                                <button class="btn btn-primary" type="submit">Accept request</button>
+                                                <button class="input-glass p-2" type="submit">Accept request</button>
                                             </form>
                                         </div>
                                     @endif
@@ -501,7 +502,6 @@
 
 
         </div>
-        @endif
         @if($character!=null)
         <div class="tab-pane fade" id="achievements">
             <div class="fs-3 my-3">Achievements</div>
@@ -552,36 +552,6 @@
     </div>
 
 </div>
-{{--<!-- MOBILE INVENTORY ITEM SELECTOR -->--}}
-{{--<div class="modal fade" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="itemLabel" aria-hidden="true">--}}
-{{--    <div class="">--}}
-{{--        <div class="modal-dialog modal-fullscreen" role="document">--}}
-{{--            <div class="modal-content">--}}
-{{--                <div class="modal-header">--}}
-{{--                    <h5 class="modal-title text-center" id="itemLabel">Item selection</h5>--}}
-{{--                </div>--}}
-{{--                <div class="modal-body">--}}
-{{--                    <div class="m-5 inventory-selector">--}}
-{{--                        <div class="p-5 border border-primary item-icon" style="background-size: cover; width: 256px; height: 256px"></div>--}}
-{{--                        <div class="item-name">Name</div>--}}
-{{--                        <div class="item-amount">Amount</div>--}}
-{{--                        <div class="item-ammo">Ammo</div>--}}
-{{--                        <div class="item-durability">Durability</div>--}}
-{{--                        <div class="item-metadata">Metadata</div>--}}
-
-{{--                        <div class="w-100">--}}
-{{--                            <div onclick="SellItem()" class="item-sell p-2 my-1 bg-glass text-center">Sell</div>--}}
-{{--                            <div onclick="" class="item-trade p-2 my-1 bg-glass text-center">Trade</div>--}}
-{{--                            <div onclick="" class="item-delete p-2 my-1 bg-glass text-center">Delete</div>--}}
-{{--                        </div>--}}
-
-{{--                    </div>--}}
-{{--                </div>--}}
-{{--            </div>--}}
-{{--        </div>--}}
-{{--    </div>--}}
-
-{{--</div>--}}
 
 
 
@@ -634,10 +604,6 @@
                     return true
                 }
             })
-
-
-
-
 
 
 

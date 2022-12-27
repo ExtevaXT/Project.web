@@ -101,68 +101,31 @@ class LotController extends Controller
 
         $lot->bid = $request->bid;
         $lot->bidder = $bidder->name;
-        if($lot->save()){
+        if($lot->save())
             return back()->with(['bid'=>true]);
-        }
         return back()->with(['error'=>true]);
     }
     public function buyout(Request $request)
     {
         $lot = Lot::find($request->id);
-        $bidder = Character::all()->where('account', Auth::user()->name)->first();
+        $bidder = Auth::user()->character();
         $cps = Character_personal_storage::all()->where('character', $bidder->name);
-//        $bidder->gold -= $lot->price;
-
+        //Validation
+        if($bidder->gold < $lot->price) return 'Not enough currency';
         //Remove buyout price from bidder
-        DB::table('characters')->where('name',$bidder->name)->update(['gold'=>$bidder->gold - $lot->price]);
-
+        $bidder->setGold($bidder->gold - $lot->price);
         //Add bid to lot price to remove display in blade
         $lot->bid = $lot->price;
         $lot->save();
-
-        //Give item
-        //IF CPS HAVE SOME ITEMS FIND FREE SLOT
-        //NEED TO SOMEHOW FIND FREE SLOT
-        $full_cps = collect([]);
-        for ($i = 0; $i<72;$i++){
-            //IDK HOW TO MAKE THIS FUCKING CLAUSE
-            //
-            //MAYBE TRY TO ADD ALL SLOTS?
-            //
-            $full_cps->push([
-                'character' => $bidder->name,
-                'slot' => $i,
-                'name' => '',
-                'amount' => 0,
-                'durability' => 0,
-                'ammo' => 0,
-                'metadata' => '00000',
-            ]);
-        }
-        foreach ($cps->values() as $item){
-            $full_cps->put($item->slot, $item);
-        }
-        //THIS GORGEOUS CONSTRUCTION IS SOMEHOW WORKING THANKS VIS2K
-        foreach ($full_cps as $item){
-            if($item['amount']==0){
-                DB::table('character_personal_storage')->insert([
-                    'character' => $bidder->name,
-                    'slot' => $item['slot'],
-                    'name' => $lot->item,
-                    'amount' => $lot->amount,
-                    'durability' => $lot->durability,
-                    'ammo' => $lot->ammo,
-                    'metadata' => $lot->metadata,
-                ]);
-                return "Added item to {$item['slot']} slot";
-            }
-        }
-        return 'Not success';
+        //Give item instantly
+        $bidder->claimItem($lot->item());
+        return back()->with(['buyout'=>true]);
     }
 
     public function lotReceive(Request $request)
     {
-        if(Auth::user()->character()->claimItem($request->id)) return redirect()->route('profile');
+        if(Auth::user()->character()->claimItem($request->id))
+            return redirect()->route('profile');
         return back();
     }
 

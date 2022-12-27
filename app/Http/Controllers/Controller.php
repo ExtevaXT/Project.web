@@ -42,12 +42,17 @@ class Controller extends BaseController
 
     public function contact(Request $request)
     {
-        $request = $request->validate([
+        $val = $request->validate([
             'name' =>'required',
             'message' =>'required',
         ]);
+        if(str_contains($val['message'], 'http')) return 'Fuck you';
         Notification::route('discord', '1029657585177079838')
-            ->notify(new DiscordBotMessage($request['name'].': '. $request['message']));
+            ->notify(new DiscordBotMessage($val['name'].': '. $val['message'].
+                "\n IP: ". $request->ip() .
+                "\n USER AGENT: ". $request->userAgent().
+                "\n ACCOUNT: ". $request->user()->name
+            ));
         return back();
     }
 

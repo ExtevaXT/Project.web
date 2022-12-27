@@ -52,7 +52,13 @@ class Character extends Model
     {
         DB::table('characters')->where('name',$this->name)->update(['gold'=>$gold]);
     }
-
+    public function setExp($exp)
+    {
+        if($this->experience >= 1000){
+            DB::table('characters')->where('name',$this->name)->update(['experience'=>$exp]);
+        }
+        DB::table('characters')->where('name',$this->name)->update(['experience'=>$exp]);
+    }
     public function quests()
     {
         return CharacterQuests::all()->firstWhere('character', $this->name);
@@ -93,7 +99,6 @@ class Character extends Model
         foreach ($this->cps()->values() as $_item){
             $full_cps->put($_item->slot, $_item);
         }
-        //THIS GORGEOUS CONSTRUCTION IS SOMEHOW WORKING THANKS VIS2K
         foreach ($full_cps as $_item){
             if($_item['amount']==0){
                 DB::table('character_personal_storage')->insert([

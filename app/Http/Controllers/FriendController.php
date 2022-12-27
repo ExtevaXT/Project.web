@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\AccountNotification;
 use App\Models\Friend;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -18,6 +19,7 @@ class FriendController extends Controller
             'account' => Auth::user()->name,
             'friend' => $request['friend'],
         ]);
+        AccountNotification::make('Friend request', 'User '.Auth::user()->name.' want you to be his friend.', $request['friend']);
         return back();
     }
     public function accept(Request $request)
@@ -29,6 +31,7 @@ class FriendController extends Controller
         $friend = Friend::all()->where('account', $request['friend'])->where('friend', Auth::user()->name)->first();
         $friend->accepted = true;
         $friend->save();
+        AccountNotification::make('Friend request', 'User '.Auth::user()->name.' accepted your request.', $request['friend']);
         return back();
     }
 }
