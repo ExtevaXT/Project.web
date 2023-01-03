@@ -19,6 +19,12 @@
         <button class="input-glass py-2 px-4 d-inline-block mt-2" onclick="window.location.href='{{route('download')}}'">Download</button>
     </div>
     @endguest
+    @if(session()->has('daily') and session()->get('daily') == false)
+        <div class="alert alert-danger mt-4">Daily reward already claimed</div>
+    @endif
+    @if(session()->get('daily') == true)
+        <div class="alert alert-success mt-4">Daily reward claimed</div>
+    @endif
     <div class="@auth d-flex my-2 main @endauth">
         <div class="main-left d-flex flex-column @auth() w-50 @endauth ">
             @auth()
@@ -47,16 +53,30 @@
                     </div>
                 </div>
                 <div class="bg-glass w-100 d-flex profile-panel-bg">
-                    <div class="d-flex m-3 align-self-end">
-                        <x-user-profile name="{{Auth::user()->name}}" size="128" all="0" />
-                        <div>
-                            <div class="fs-2">{{Auth::user()->name}}</div>
-                            @if(Account::auth()->character()!=null)
-                            <div class="fs-5">Balance: {{Account::auth()->character()->gold}}₽</div>
+                    <div class="d-flex m-3 align-self-end justify-content-between w-100 flex-wrap">
+                        <div class="d-flex">
+                            <x-user-profile name="{{Auth::user()->name}}" size="128" all="0" />
+                            <div class="align-self-center mb-4">
+                                <div class="fs-2">{{Auth::user()->name}}</div>
+                                @if(Account::auth()->character()!=null)
+                                    <div class="fs-5">Balance: {{Account::auth()->character()->gold}}₽</div>
+                                @else
+                                    <div class="fs-5">Character not created</div>
+                                @endif
+                            </div>
+                        </div>
+                        <div class="bg-glass p-3 ms-4 mb-3">
+                            <h5 class="text-center">Daily Reward</h5>
+                            @if(Carbon::parse(Auth::user()->setting('daily'))->addDay() < Carbon::now())
+                                <form action="{{route('daily')}}" method="POST">
+                                    @csrf
+                                    <button class="input-glass py-2 px-4 m-2" type="submit">Claim</button>
+                                </form>
                             @else
-                            <div class="fs-5">Character not created</div>
+                                <button class="btn input-glass py-2 px-4 m-2 disabled">Remain {{Carbon::now()->addDay()->diffInHours(Carbon::parse(Auth::user()->setting('daily')))}} hours</button>
                             @endif
                         </div>
+
                     </div>
                 </div>
             </div>

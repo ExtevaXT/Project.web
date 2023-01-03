@@ -52,11 +52,15 @@ class Character extends Model
     {
         DB::table('characters')->where('name',$this->name)->update(['gold'=>$gold]);
     }
+    public function setLvl($gold)
+    {
+        DB::table('characters')->where('name',$this->name)->update(['level'=>$level]);
+    }
     public function setExp($exp)
     {
-        if($this->experience >= 1000){
-            DB::table('characters')->where('name',$this->name)->update(['experience'=>$exp]);
-        }
+        //if($this->experience >= 1000){
+        //    DB::table('characters')->where('name',$this->name)->update(['experience'=>$exp]);
+        //}
         DB::table('characters')->where('name',$this->name)->update(['experience'=>$exp]);
     }
     public function quests()

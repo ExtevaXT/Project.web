@@ -24,7 +24,6 @@ use Illuminate\Http\Request;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
 //MAIN
 Route::get('/', [Controller::class, 'index']);
 
@@ -55,8 +54,9 @@ Route::middleware('auth')->group(function() {
         Route::post('/buyout', [LotController::class, 'buyout'])->name('buyout');
         Route::post('/claim', [LotController::class, 'lotReceive'])->name('claim');
     });
-
+    Route::post('/daily', [UserController::class, 'daily'])->name('daily');
     Route::get('/quests', [UserController::class, 'quests']);
+    //Route::get('/ipa/notifications', fn(Request $request) => Auth::user()->notifications()->toJson());
     Route::get('/notifications', function () {
         return view('users.notifications');
     });

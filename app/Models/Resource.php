@@ -44,4 +44,29 @@ class Resource extends Model
         }
         return $attachments;
     }
+
+    public static function quest($name, $lua = true)
+    {
+        if($lua) $name = explode('"', $name)[1];
+        $db = json_decode( preg_replace('/[\x00-\x1F\x80-\xFF]/', '',
+            file_get_contents(resource_path().'/ds_dump.json')), true );
+        return array_values(array_filter($db['items'], function ($item) use ($name){
+            return $item['fields'][0]['value'] == $name;
+        }))[0]['fields'];
+    }
+
+    public static function bonus($bonus)
+    {
+        $bonus = ucfirst(str_replace('Bonus', '', $bonus));
+        $bonus = str_replace('Accumulation', 'Emission', $bonus);
+
+        $split = preg_split('/(?=[A-Z])/',$bonus);
+        if(!str_contains($bonus, 'Recovery') and !str_contains($bonus, 'Effiency')) $split = array_reverse($split);
+        $bonus = implode(' ', $split);
+
+        $bonus = str_replace('Factor Damage', 'Damage Factor', $bonus);
+        $bonus = str_replace('Weight', 'Carrying Capacity', $bonus);
+        $bonus = str_replace('Artefact', 'Artefact Slots', $bonus);
+        return $bonus;
+    }
 }

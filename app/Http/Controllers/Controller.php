@@ -123,6 +123,19 @@ class Controller extends BaseController
         ]);
     }
 
+    public function commits()
+    {
+        return collect([
+            'commits' => collect(GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []))->take(3)
+                ->map(fn($commit) => [
+                    'message' => $commit['commit']['message'],
+                    'author' => $commit['commit']['author']['name'],
+                    'date' => Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg')->format('d M Y | H:i'),
+                ])
+        ])->toJson();
+
+    }
+
 
 
 

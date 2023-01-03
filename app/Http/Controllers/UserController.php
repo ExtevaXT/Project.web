@@ -41,19 +41,39 @@ class UserController extends Controller
     {
         $min = 500;
         $max = 25000;
-        if(Auth::user()->setting('daily')) return back()->with(['dailyError'=>true]);
-        Auth::user()->settings(['daily'=>true]);
+        //1672665331
+        if(Auth::user()->setting('daily') and Carbon::parse(Auth::user()->setting('daily')) < Carbon::now()->addDay()) return back()->with(['daily'=>false]);
+        Auth::user()->settings(['daily'=>Carbon::now()->timestamp]);
         $character = Auth::user()->character();
         //Maybe make interpolation ((max - min) * level) / Character::max('level') + min
-        $reward = $character->gold + max($min * $character->level, $max);
+        $reward = min($min * $character->level, $max);
         //Talent 'Daily Planner'
-        if($character->talent('Daily Planner')) rand(1, 100) < 90 ? (int)$reward *= 1.5 : $reward = 0;
-        //Talent 'Experienced Student'
         if($character->talent('Daily Planner')) {
-            (int)$reward *= 0.9;
-            //$character->expire
+            if(rand(1, 100) < 90){
+                (int)$reward *= 1.5;
+                AccountNotification::make('Daily Planner', 'Daily reward was multiplied');
+            }
+            else{
+                $reward = 0;
+                AccountNotification::make('Daily Planner', 'Daily reward was lost');
+            }
         }
-        $character->setGold($reward);
+        //Talent 'Experienced Student'
+        if($character->talent('Experienced Student')) {
+            (int)$reward *= 0.9;
+            $character->setExp($character->experience + 250);
+            AccountNotification::make('Experienced Student', 'Got some experience');
+        }
+        //Talent 'PhD'
+        if($character->talent('PhD')) {
+            $reward *= -1;
+            if(rand(1, 100) < 5){
+                $character->setLevel($character->level++);
+                AccountNotification::make('PhD', 'Got 1 level');
+            }
+        }
+        $character->setGold($character->gold + $reward);
+        AccountNotification::make('Daily reward', "Claimed $reward ₽");
         return back()->with(['daily'=>true]);
     }
     public function quests()

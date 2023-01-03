@@ -1,4 +1,4 @@
-<div {{ $attributes->merge(['class' => ($all ? 'd-flex' : 'd-block')]) }}>
+<div ondblclick="window.location.href='/user/{{$account->name}}'" {{ $attributes->merge(['class' => ($all ? 'd-flex' : 'd-block')]) }}>
     @if($account->image !='user.png')
         <div class="border-glass me-3 mb-2" style="
             width: {{$size}}px;

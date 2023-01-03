@@ -38,7 +38,7 @@
                             @foreach($item as $argument => $value)
                                 @if(str_contains($argument,'Bonus') and $value!=0)
                                     <div class="BlockTable-row">
-                                        <div class="BlockTable-data">{{$argument}}</div>
+                                        <div class="BlockTable-data">{{Resource::bonus($argument)}}</div>
                                         <div class="BlockTable-data">{{$value}}</div>
                                     </div>
 

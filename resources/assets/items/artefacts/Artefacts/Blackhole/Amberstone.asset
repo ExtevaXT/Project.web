@@ -11,7 +11,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
   m_Name: Amberstone
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier:
   maxStack: 1
   weight: 100
   price: 0
@@ -30,14 +30,14 @@ MonoBehaviour:
     weight of any object. Formed in places of super interaction of several gravitational
     fields with extremely high intensity, so it is extremely rare. It has a mixed
     type of radiation, so it should be used with caution.
-  notes: 
+  notes:
   category: Artefact
   keepUsingWhileButtonDown: 0
   successfulUseSound: {fileID: 0}
   failedUseSound: {fileID: 0}
   emptySound: {fileID: 0}
   cooldown: 0
-  _cooldownCategory: 
+  _cooldownCategory:
   shoulderLookAtWhileHolding: 0
   useDirectly: 0
   healthBonus: 0
@@ -49,12 +49,12 @@ MonoBehaviour:
   protectionPsychoBonus: 0
   protectionRadiationBonus: 0
   slotBonus: 0
-  artefactBonus: 0
+  artefactBonus: 5
   healthRecoveryBonus: 0
   healingBonus: 0
-  healingEffiencyBonus: 0
+  healingEffiencyBonus: 1
   enduranceBonus: 5
-  enduranceRecoveryBonus: 0
+  enduranceRecoveryBonus: 5
   speedBonus: 0
   weightBonus: 15
   defenseThermalBonus: 0
