@@ -65,15 +65,15 @@
                                 @endif
                             </div>
                         </div>
-                        <div class="bg-glass p-3 ms-4 mb-3">
+                        <div class="bg-glass p-3 mb-3 daily-panel">
                             <h5 class="text-center">Daily Reward</h5>
                             @if(Carbon::parse(Auth::user()->setting('daily'))->addDay() < Carbon::now())
                                 <form action="{{route('daily')}}" method="POST">
                                     @csrf
-                                    <button class="input-glass py-2 px-4 m-2" type="submit">Claim</button>
+                                    <button class="input-glass py-2 my-2 w-100" type="submit">Claim</button>
                                 </form>
                             @else
-                                <button class="btn input-glass py-2 px-4 m-2 disabled">Remain {{Carbon::now()->addDay()->diffInHours(Carbon::parse(Auth::user()->setting('daily')))}} hours</button>
+                                <button class="btn input-glass py-2 px-4 m-2 disabled w-100">Remain {{Carbon::now()->addDay()->diffInHours(Carbon::parse(Auth::user()->setting('daily')))}} hours</button>
                             @endif
                         </div>
 

@@ -69,4 +69,5 @@ class Resource extends Model
         $bonus = str_replace('Artefact', 'Artefact Slots', $bonus);
         return $bonus;
     }
+
 }

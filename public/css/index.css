@@ -16,6 +16,9 @@
 .profile-panel-bg{
     height: 425px;
 }
+.daily-panel{
+    width: 50%;
+}
 @media screen and (max-width: 1000px){
     .main{
         flex-direction: column;
@@ -65,5 +68,8 @@
     }
     .profile-panel-bg{
         margin-top: 5px;
+    }
+    .daily-panel{
+        width: 100%;
     }
 }

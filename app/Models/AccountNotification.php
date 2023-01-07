@@ -10,7 +10,7 @@ class AccountNotification extends Model
 {
     use HasFactory;
     protected $table = 'notifications';
-    protected $fillable = ['account', 'value', 'title', 'item', 'created_at'];
+    protected $fillable = ['account', 'value', 'title', 'created_at'];
 
     public static function make(string $title, string $value, string $account = null)
     {
@@ -21,8 +21,8 @@ class AccountNotification extends Model
             'value' => $value,
         ]);
     }
-    public function item()
+    public function lot()
     {
-        return ClaimItem::find($this->item);
+        return Lot::find($this->lot);
     }
 }

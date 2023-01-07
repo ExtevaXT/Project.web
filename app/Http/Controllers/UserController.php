@@ -17,6 +17,7 @@ use App\Models\CharacterTalents;
 use App\Models\ClaimItem;
 use App\Models\Friend;
 use App\Models\CharacterAchievement;
+use App\Models\Lot;
 use App\Models\Resource;
 use Discord\Http\Http;
 use Illuminate\Support\Carbon;
@@ -72,7 +73,7 @@ class UserController extends Controller
                 AccountNotification::make('PhD', 'Got 1 level');
             }
         }
-        $character->setGold($character->gold + $reward);
+        $character->setGold($character->gold + (int)$reward);
         AccountNotification::make('Daily reward', "Claimed $reward ₽");
         return back()->with(['daily'=>true]);
     }
@@ -92,7 +93,6 @@ class UserController extends Controller
         $vars = array_filter($vars, fn($var) => str_contains($var, 'true'));
         return view('users.quests', compact('quests', 'quests_active', 'quests_success','vars'));
     }
-
     public function talentUnlock(Request $request)
     {
         if(!(Auth::user()?->character()?->level < Resource::data('talents')?->firstWhere('m_Name', $request->name))) return back();
@@ -103,7 +103,6 @@ class UserController extends Controller
         ]);
         return back()->with(['talentUnlock'=>true]);
     }
-
     public function talentToggle(Request $request)
     {
         $talent = CharacterTalents::get(Auth::user()->character()->name, $request->name);
@@ -113,12 +112,66 @@ class UserController extends Controller
     }
     public function delete()
     {
-
+        //Talent 'Eraser'
+        $characters = Auth::user()->characters();
+        //cascade for weaklings
+        foreach ($characters as $character)
+            foreach (Character::tables() as $table)
+                DB::delete("DELETE FROM $table WHERE character = ".$character->name);
+        DB::delete('DELETE FROM notifications WHERE account = '.Auth::user()->name);
+        DB::delete('DELETE FROM characters WHERE account = '.Auth::user()->name);
+        Auth::user()->delete();
+    }
+    public function changeFaction()
+    {
+        //Talent 'Renegate'
+        $character = Auth::user()->character();
+        DB::table('characters')->where('name',$character->name)
+            ->update(['faction'=> $character->faction == 'Stalker' ? 'Bandit' : 'Stalker']);
+    }
+    public function transferCharacter(Request $request)
+    {
+        //Talent 'Soul Trader'
+        DB::table('characters')->where('name',Auth::user()->character()->name)
+            ->update(['account'=>$request->validate(['account'=>'required'])['account']]);
+    }
+    public function prefix(Request $request)
+    {
+        //Talent 'Megalomania'
+        Account::auth()->settings($request->validate(['prefix'=>'required']));
+        return back()->with(['success'=>true]);
+    }
+    public function changeName(Request $request)
+    {
+        //Talent 'Many Faces'
+        $name = $request->validate(['name'=>'required'])['name'];
+        $character = Auth::user()->character();
+        foreach (Character::tables() as $table)
+            DB::table($table)->where('name',$character->name)->update(['character'=>$name]);
+        DB::table('characters')->where('name',$character->name)->update(['name'=>$name]);
     }
 
     public function test()
     {
-        //dd(Resource::attachments('12345'));
+        for ($i = 0; $i<72;$i++) {
+            $item = Resource::data('items/artefacts')->random();
+            DB::table('character_personal_storage')->insert([
+                'character' => Auth::user()->character()->name,
+                'slot' => $i,
+                'name' => $item['m_Name'],
+                'amount' => rand(1, $item['maxStack']),
+                'durability' => rand(1, $item['maxDurability']),
+                'ammo' => 0,
+                'metadata' => '00000',
+            ]);
+        }
+        dd(Auth::user()->character()->cps());
+    }
+
+    public function notifications()
+    {
+        $notifications = Auth::user()->notifications();
+        return view('users.notifications', compact('notifications'));
     }
 
     public function profile($name)
@@ -212,7 +265,6 @@ class UserController extends Controller
         return back()->with(['upload'=> true]);
     }
 
-
     //SETTINGS
     public function settings(SettingsValidation $request)
     {
@@ -241,12 +293,7 @@ class UserController extends Controller
         return back()->withErrors(['message'=>'Password is incorrect']);
     }
 
-
-    public function login()
-    {
-        return view('users.login');
-    }
-    public function loginPost(AuthValidation $authValidation)
+    public function login(AuthValidation $authValidation)
     {
 
 //        $user = DB::table('accounts')
@@ -259,12 +306,7 @@ class UserController extends Controller
         }
         return redirect()->route('login')->withErrors(['message'=>'Login or password are incorrect']);
     }
-
-    public function register()
-    {
-        return view('users.register');
-    }
-    public function registerPost(RegisterValidation $registerValidation)
+    public function register(RegisterValidation $registerValidation)
     {
         $validation = $registerValidation->validated();
 //        $validation['password'] = strtoupper(hash_pbkdf2('sha1', $validation['password'], 'at_least_16_byte_with_login', 10000, 40));
@@ -281,7 +323,6 @@ class UserController extends Controller
             ->notify(new DiscordBotMessage('User '.$validation['name'].' has been registered'));
         return redirect('/login')->with(['success'=> true]);
     }
-
     public function logout(Request $request)
     {
         Auth::logout();
@@ -308,7 +349,6 @@ class UserController extends Controller
         });
         return back()->with(['success' => true]);
     }
-
     public function reset(Request $request)
     {
         //Validate input

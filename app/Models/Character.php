@@ -12,6 +12,21 @@ class Character extends Model
     protected $table = 'characters';
     public $timestamps = false;
     protected $fillable = ['gold'];
+    public static function tables()
+    {
+        return [
+            'characters',
+            'character_achievements',
+            'character_dialoguesystem',
+            'character_equipment',
+            'character_hotbar',
+            'character_hotbar_selection',
+            'character_inventory',
+            'character_personal_storage',
+            'character_skills',
+            'character_talents'
+        ];
+    }
     // New high end code for convenience
     public function level($level = null)
     {

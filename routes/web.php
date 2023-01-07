@@ -52,14 +52,15 @@ Route::middleware('auth')->group(function() {
         Route::post('/create', [LotController::class, 'createPost']);
         Route::post('/bid', [LotController::class, 'bid'])->name('bid');
         Route::post('/buyout', [LotController::class, 'buyout'])->name('buyout');
-        Route::post('/claim', [LotController::class, 'lotReceive'])->name('claim');
+        Route::name('claim.')->prefix('claim')->group(function () {
+            Route::post('/item', [LotController::class, 'claimItem'])->name('item');
+            Route::post('/money', [LotController::class, 'claimMoney'])->name('money');
+        });
     });
     Route::post('/daily', [UserController::class, 'daily'])->name('daily');
     Route::get('/quests', [UserController::class, 'quests']);
     //Route::get('/ipa/notifications', fn(Request $request) => Auth::user()->notifications()->toJson());
-    Route::get('/notifications', function () {
-        return view('users.notifications');
-    });
+    Route::get('/notifications', [UserController::class, 'notifications']);
     Route::get('/settings', fn() => view('users.settings'))->name('settings');
     Route::post('/settings', [UserController::class, 'settings']);
     Route::post('/upload', [UserController::class, 'upload'])->name('upload');
@@ -79,10 +80,10 @@ Route::middleware('auth')->group(function() {
 Route::get('/user/{name}', [UserController::class, 'profile']);
 Route::get('/test', [UserController::class, 'test']);
 
-Route::get('/login', [UserController::class, 'login'])->name('login');
-Route::post('/login', [UserController::class, 'loginPost']);
+Route::get('/login', fn() => view('users.login'))->name('login');
+Route::post('/login', [UserController::class, 'login']);
 
-Route::get('/register', [UserController::class, 'register'])->name('register');
+Route::get('/register', fn() => view('users.register'))->name('register');
 Route::post('/register', [UserController::class, 'registerPost']);
 
 //RESET PASSWORD

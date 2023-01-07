@@ -18,6 +18,9 @@
     @if(session()->has('error'))
         <div class="alert alert-danger my-3">Something went wrong</div>
     @endif
+    @if(session()->has('currency'))
+        <div class="alert alert-danger my-3">Not enough currency</div>
+    @endif
     <div class="top-filter my-3">
         <ul class="nav nav-tabs">
             <li class="nav-item"><a class="p-3 nav-link active" data-bs-toggle="tab" href="#all">All lots</a></li>
@@ -47,7 +50,7 @@
                 <x-auction-table id="my_lots" :lots="$lots"/>
                 <x-auction-table id="my_bids" :lots="$lots"/>
             <div id="history" class="tab-pane fade ms-5">
-                <table class="table">
+                <table class="table text-white">
                     <thead>
                     <tr>
                         <th scope="col">#</th>
@@ -108,16 +111,6 @@
 
                     </div>
                     <div class="modal-body">
-
-                            @if ($errors->any())
-                                <div class="alert alert-danger">
-                                    <ul>
-                                        @foreach ($errors->all() as $error)
-                                            <li>{{ $error }}</li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                            @endif
                                 <form method="post" action="{{ route('lot.create') }}" class="d-flex flex-column">
                                     @csrf
                                     <select name="item" class="my-1 p-2 input-glass w-100 form-select">
@@ -141,6 +134,10 @@
                                         <option value="24">24:00</option>
                                         <option value="36">36:00</option>
                                         <option value="48">48:00</option>
+                                        @if(Auth::user()->character()->talent('Longevity'))
+                                            <option value="60">60:00</option>
+                                            <option value="72">72:00</option>
+                                        @endif
                                     </select>
 
                                     <input class="my-1 p-2 input-glass w-100" type="submit" value="Create">
@@ -172,7 +169,6 @@
                 let date = new Date(Math.floor(diff));
                 if (matchMedia('only screen and (max-width: 1000px)').matches) {
                     document.getElementsByClassName('data-countdown')[i].innerHTML = Math.floor(diff/(3600*1000)) + ':' + date.getMinutes() + ':' + date.getSeconds() + ''
-                    // smartphone/iphone... maybe run some small-screen related dom scripting?
                 } else
                 document.getElementsByClassName('data-countdown')[i].innerHTML = Math.floor(diff/(3600*1000)) + ' hours ' + date.getMinutes() + ' minutes ' + date.getSeconds() + ' seconds remaining'
             }

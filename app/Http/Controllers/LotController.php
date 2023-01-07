@@ -27,7 +27,9 @@ class LotController extends Controller
         $filter = $request->query('filter');
         $search = $request->query('search');
         //sort by category from resources
-        $lots = Lot::all()->sort(fn($lot) => Resource::data('items/'.$filter)->firstWhere('m_Name', $lot->item()->name))->reverse();
+        $lots = Lot::all();
+        //this shit starts on every item iterations 500+ files on disk
+        if($filter) $lots = $lots->sort(fn($lot) => Resource::data('items/'.$filter)->firstWhere('m_Name', $lot->item()->name))->reverse();
         // Search
         if($search) $lots = $lots->filter(fn($lot) => false !== stristr($lot->item()->name, $search));
         // other legacy logic
@@ -51,8 +53,17 @@ class LotController extends Controller
         $item = $cps->where('slot', $request['item'])->first();
 
         $validate = $request->validated();
-        $validate['character']= $character->name;
-        $validate['bidder']= $character->name;
+        $validate['character'] = $character->name;
+        $validate['bidder'] = $character->name;
+        $tax = 1000;
+        if(isset($request['price']))
+            $tax = $request['price'] * 0.05;
+        //Talents
+        if($character->talent('Longevity')) $tax *= 3;
+        if($character->talent('Auctioner')) $tax *= 2;
+        if($character->talent('Government')) $tax = 0;
+
+        if($character->gold < $request['bid'] + $tax) return back()->with(['currency'=>true]);
 
         $claim_item = ClaimItem::create([
             'name'=>$item->name,
@@ -68,17 +79,10 @@ class LotController extends Controller
         //RAW SQL FOR DELETING
         $q = 'DELETE FROM character_personal_storage WHERE character = ? AND slot = ?';
         DB::delete($q, [$character->name, $item->slot]);
-
+        $character->setGold($character->gold - (int)$tax);
         $lot = Lot::create($validate);
 
-
-        AccountNotification::create([
-            'account'=>Auth::user()->name,
-            'title' => 'Delivery',
-            'value' =>'Your lot was expired',
-            'item' => $claim_item->id,
-            'created_at' => $lot->endTime(),
-        ]);
+        AccountNotification::make('Auction', "Created lot ". $lot->item()->name);
         return redirect('/auction')->with(['lot'=>true]);
     }
 
@@ -86,7 +90,7 @@ class LotController extends Controller
     public function bid(Request $request)
     {
         $lot = Lot::find($request->id);
-        $bidder = Character::all()->where('account', Auth::user()->name)->first();
+        $bidder = Auth::user()->character();
         $previousBidder = Character::all()->where('name', $lot->bidder)->first();
 
         //validation
@@ -97,8 +101,9 @@ class LotController extends Controller
         //Remove gold from bidder and give gold back to previous bidder
         $bidder->setGold($bidder->gold- $request['bid']);
         $previousBidder->setGold($previousBidder->gold + $request['bid']);
-        AccountNotification::make('Balance update', 'Your bid was outbid', $previousBidder->account);
-
+        if($previousBidder->account != $lot->character)
+            AccountNotification::make('Balance update', 'Your bid was outbid', $previousBidder->account);
+        AccountNotification::make('Auction', "Made bid on lot ". $lot->item()->name);
         $lot->bid = $request->bid;
         $lot->bidder = $bidder->name;
         if($lot->save())
@@ -110,23 +115,41 @@ class LotController extends Controller
         $lot = Lot::find($request->id);
         $bidder = Auth::user()->character();
         $cps = Character_personal_storage::all()->where('character', $bidder->name);
-        //Validation
+
+        if($bidder->name == $lot->character) return 'Cannot buy your lot';
         if($bidder->gold < $lot->price) return 'Not enough currency';
+
         //Remove buyout price from bidder
         $bidder->setGold($bidder->gold - $lot->price);
         //Add bid to lot price to remove display in blade
+        $lot->bidder = $bidder->name;
         $lot->bid = $lot->price;
         $lot->save();
-        //Give item instantly
-        $bidder->claimItem($lot->item());
+//        //Give item instantly
+//        $bidder->claimItem($lot->item());
+//        AccountNotification::make('Auction Delivery', "Item was added to your storage");
         return back()->with(['buyout'=>true]);
     }
 
-    public function lotReceive(Request $request)
+    public function claimItem(Request $request)
     {
-        if(Auth::user()->character()->claimItem($request->id))
-            return redirect()->route('profile');
-        return back();
+        $lot = Lot::find($request->id);
+        if(Auth::user()->character()->claimItem($lot->item()))
+            return back()->with(['item'=>true]);
+        return back()->with(['error'=>true]);
+    }
+    public function claimMoney(Request $request)
+    {
+        $lot = Lot::find($request->id);
+        $character = Auth::user()->character();
+        $bid = $lot->bid;
+        if($character->talent('Auctioner')) rand(0,100) > 10 ?: $bid *= 1.5;
+        if($character->talent('Government')) $bid *= 0.75;
+        $character->setGold($character->gold + $bid);
+        $lot->claimed = true;
+        $lot->save();
+        //claim through notification like item
+        return back()->with(['money'=>true]);
     }
 
 }

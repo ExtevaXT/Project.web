@@ -19,17 +19,13 @@ return new class extends Migration
 
             $table->foreignId('item')->constrained('claim_items');
 
-            //$table->string('item');
-            //$table->integer('amount');
-            //$table->integer('durability');
-            //$table->integer('ammo');
-            //$table->string('metadata');
 
             $table->dateTime('time');
 
             $table->integer('bid');
             $table->integer('price');
             $table->string('bidder');
+            $table->boolean('claimed')->default(false);
             $table->timestamps();
         });
     }

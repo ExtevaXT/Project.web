@@ -27,7 +27,7 @@ class LotValidation extends FormRequest
             'bid' => 'required',
             'price' => 'nullable',
             'item' => 'required',
-            'time' => 'required',
+            'time' => 'required|in:12,24,36,48,60,72',
         ];
     }
 }

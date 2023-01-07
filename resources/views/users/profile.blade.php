@@ -374,8 +374,8 @@
                         <div class="inventory-item bg-glass">
                             <div class="w-100 h-100"
                                  @if($item['name']!='')
-                                 style="background-image:url('{{ asset(data_get($icons, $item['name'], 'img/icon/item.png')) }}');
-                                     background-size: cover;"
+                                     @php($icon =  data_get($icons, $item['name']))
+                                 style="background: {{ $icon ? "url('". asset($icon)."')" : 'rgba(255,0,0,0.1)' }};background-size: cover;"
                                  @endif
                                  data-slot="{{$item['slot']}}"
                                  data-item="{{$item['name']}}"
