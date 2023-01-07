@@ -67,7 +67,7 @@ class Character extends Model
     {
         DB::table('characters')->where('name',$this->name)->update(['gold'=>$gold]);
     }
-    public function setLvl($gold)
+    public function setLvl($level)
     {
         DB::table('characters')->where('name',$this->name)->update(['level'=>$level]);
     }

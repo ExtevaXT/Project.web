@@ -28,10 +28,6 @@ class GuideController extends Controller
                 // Talent 'Library' feature
                 if(!($character = Auth::user()?->character() and $character?->talent('Library')))
                     $items = $items->filter(fn($item) => !$item['hide']);
-                if($character?->gold > 1000) {
-                    $character->setGold($character->gold - 1000);
-                    AccountNotification::make('Balance update', 'Thanks for using our Library™ Categories. Your payment was appreciated.');
-                }
 
 
                 return view('guides.category', [

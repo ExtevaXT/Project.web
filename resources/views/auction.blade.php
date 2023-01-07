@@ -15,9 +15,6 @@
     @if(session()->has('lot'))
         <div class="alert alert-success my-3">Lot was created successfully</div>
     @endif
-    @if(session()->has('error'))
-        <div class="alert alert-danger my-3">Something went wrong</div>
-    @endif
     @if(session()->has('currency'))
         <div class="alert alert-danger my-3">Not enough currency</div>
     @endif

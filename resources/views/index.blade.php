@@ -35,22 +35,22 @@
             </div>
             <div class="d-flex m-2 profile-panel">
                 <div class="d-grid text-center profile-panel-nav">
-                    <div onclick="location.href='/user/{{Auth::user()->name}}'" class="profile-panel-nav-item bg-glass">
+                    <button onclick="location.href='/user/{{Auth::user()->name}}'" class="profile-panel-nav-item input-glass">
                         <i class="icons mdi mdi-slack"></i>
                         <div>Character</div>
-                    </div>
-                    <div onclick="location.href='/quests'" class="profile-panel-nav-item bg-glass">
+                    </button>
+                    <button onclick="location.href='/quests'" class="profile-panel-nav-item input-glass">
                         <i class="icons mdi mdi-creation"></i>
                         <div>Quests</div>
-                    </div>
-                    <div onclick="location.href='/auction'" class="profile-panel-nav-item bg-glass">
+                    </button>
+                    <button onclick="location.href='/auction'" class="profile-panel-nav-item input-glass">
                         <i class="icons mdi mdi-scale-balance"></i>
                         <div>Auction</div>
-                    </div>
-                    <div onclick="location.href='/ranking'" class="profile-panel-nav-item bg-glass">
+                    </button>
+                    <button onclick="location.href='/ranking'" class="profile-panel-nav-item input-glass">
                         <i class="icons mdi mdi-trophy"></i>
                         <div>Ranking</div>
-                    </div>
+                    </button>
                 </div>
                 <div class="bg-glass w-100 d-flex profile-panel-bg">
                     <div class="d-flex m-3 align-self-end justify-content-between w-100 flex-wrap">
@@ -67,7 +67,7 @@
                         </div>
                         <div class="bg-glass p-3 mb-3 daily-panel">
                             <h5 class="text-center">Daily Reward</h5>
-                            @if(Carbon::parse(Auth::user()->setting('daily'))->addDay() < Carbon::now())
+                            @if(Carbon::parse(Auth::user()->setting('daily')) < Carbon::now()->subDay() or !Auth::user()->setting('daily'))
                                 <form action="{{route('daily')}}" method="POST">
                                     @csrf
                                     <button class="input-glass py-2 my-2 w-100" type="submit">Claim</button>

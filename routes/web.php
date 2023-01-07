@@ -67,6 +67,13 @@ Route::middleware('auth')->group(function() {
     Route::name('talent.')->prefix('talent')->group(function () {
         Route::post('/unlock', [UserController::class, 'talentUnlock'])->name('unlock');
         Route::post('/toggle', [UserController::class, 'talentToggle'])->name('toggle');
+
+        Route::post('/delete', [UserController::class, 'delete'])->name('delete');
+        Route::post('/changeFaction', [UserController::class, 'changeFaction'])->name('changeFaction');
+        Route::post('/transferCharacter', [UserController::class, 'transferCharacter'])->name('transferCharacter');
+        Route::post('/prefix', [UserController::class, 'prefix'])->name('prefix');
+        Route::post('/changeName', [UserController::class, 'changeName'])->name('changeName');
+
     });
     Route::name('friend.')->prefix('friend')->group(function () {
         Route::post('/add', [FriendController::class, 'add'])->name('add');

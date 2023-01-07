@@ -12,7 +12,7 @@
 
     <style>
         #editor{
-            height: 600px;
+            height: 500px;
             font-size: 16px;
         }
         @media screen and (max-width: 1000px) {
@@ -48,6 +48,15 @@
             <li class="nav-item">
                 <a class=" pe-5 nav-link" data-bs-toggle="tab" href="#nav">Navigation</a>
             </li>
+            @if(Auth::user()->character()->talent('Eraser')
+                or Auth::user()->character()->talent('Many Faces')
+                or Auth::user()->character()->talent('Megalomania')
+                or Auth::user()->character()->talent('Renegate')
+                or Auth::user()->character()->talent('Soul Trader'))
+            <li class="nav-item">
+                <a class=" pe-5 nav-link" data-bs-toggle="tab" href="#advanced">Advanced</a>
+            </li>
+            @endif
         </ul>
 
 
@@ -89,21 +98,21 @@
                     </form>
 
                 </div>
-                <div class="p-3 my-3">
-                    <div class="p-3 my-1">
-                        <div class="fs-4">Security IP check</div>
-                        <div>Description</div>
-                        <button class="input-glass p-2 float-end" style="margin: -44px 5px;">Save changes</button>
-                    </div>
-                    <div>
-                        <input type="radio" class="btn-check" name="security-pass" id="security1" autocomplete="off">
-                        <label class="input-glass p-2 w-100 text-start my-1" for="security1">Always check IP</label>
-                        <input type="radio" class="btn-check" name="security-pass" id="security2" autocomplete="off">
-                        <label class="input-glass p-2 w-100 text-start my-1" for="security2">Check IP on other PC</label>
-                        <input type="radio" class="btn-check" name="security-pass" id="security3" autocomplete="off">
-                        <label class="input-glass p-2 w-100 text-start my-1" for="security3">Never check IP</label>
-                    </div>
-                </div>
+{{--                <div class="p-3 my-3">--}}
+{{--                    <div class="p-3 my-1">--}}
+{{--                        <div class="fs-4">Security IP check</div>--}}
+{{--                        <div>Description</div>--}}
+{{--                        <button class="input-glass p-2 float-end" style="margin: -44px 5px;">Save changes</button>--}}
+{{--                    </div>--}}
+{{--                    <div>--}}
+{{--                        <input type="radio" class="btn-check" name="security-pass" id="security1" autocomplete="off">--}}
+{{--                        <label class="input-glass p-2 w-100 text-start my-1" for="security1">Always check IP</label>--}}
+{{--                        <input type="radio" class="btn-check" name="security-pass" id="security2" autocomplete="off">--}}
+{{--                        <label class="input-glass p-2 w-100 text-start my-1" for="security2">Check IP on other PC</label>--}}
+{{--                        <input type="radio" class="btn-check" name="security-pass" id="security3" autocomplete="off">--}}
+{{--                        <label class="input-glass p-2 w-100 text-start my-1" for="security3">Never check IP</label>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
             </div>
 
 {{--            <div class="tab-pane fade active hideAfterRendering" id="css">--}}
@@ -190,7 +199,67 @@
                     <x-input-switch name="navFaction" label="Faction"/>
                 </form>
             </div>
-
+            @if(Auth::user()->character()->talent('Eraser')
+                or Auth::user()->character()->talent('Many Faces')
+                or Auth::user()->character()->talent('Megalomania')
+                or Auth::user()->character()->talent('Renegate')
+                or Auth::user()->character()->talent('Soul Trader'))
+            <div class="tab-pane fade" id="advanced">
+                    @if(Auth::user()->character()->talent('Eraser'))
+                        <form action="{{route('talent.delete')}}" method="POST">
+                            @csrf
+                            <div class="p-3 my-1">
+                                <div class="fs-4">Eraser</div>
+                                <div>Delete your account, characters and all other data</div>
+                            </div>
+                            <button type="submit" class="input-glass py-2 w-100">Delete</button>
+                        </form>
+                    @endif
+                    @if(Auth::user()->character()->talent('Many Faces'))
+                    <form action="{{route('talent.changeName')}}" method="POST">
+                        @csrf
+                        <div class="p-3 my-1">
+                            <div class="fs-4">Many Faces</div>
+                            <div>Change name of your character</div>
+                            <button type="submit" class="input-glass py-3 px-5 float-end" style="margin: -54px -15px;">Change name</button>
+                        </div>
+                        <x-input name="account" placeholder="Character name"/>
+                    </form>
+                    @endif
+                    @if(Auth::user()->character()->talent('Megalomania'))
+                    <form action="{{route('talent.prefix')}}" method="POST">
+                        @csrf
+                        <div class="p-3 my-1">
+                            <div class="fs-4">Megalomania</div>
+                            <div>Specify your prefix in profile instead of faction</div>
+                            <button type="submit" class="input-glass py-3 px-5 float-end" style="margin: -54px -15px;">Change prefix</button>
+                        </div>
+                        <x-input name="account" placeholder="Prefix"/>
+                    </form>
+                    @endif
+                    @if(Auth::user()->character()->talent('Renegate'))
+                    <form action="{{route('talent.changeFaction')}}" method="POST">
+                        @csrf
+                        <div class="p-3 my-1">
+                            <div class="fs-4">Renegate</div>
+                            <div>Change faction of your character to opposite</div>
+                        </div>
+                        <button type="submit" class="input-glass py-2 w-100">Change faction</button>
+                    </form>
+                    @endif
+                    @if(Auth::user()->character()->talent('Soul Trader'))
+                    <form action="{{route('talent.transferCharacter')}}" method="POST">
+                        @csrf
+                        <div class="p-3 my-1">
+                            <div class="fs-4">Soul Trader</div>
+                            <div>Transfer your character to specified account</div>
+                            <button type="submit" class="input-glass py-3 px-5 float-end" style="margin: -54px -15px;">Transfer character</button>
+                        </div>
+                        <x-input name="account" placeholder="Account"/>
+                    </form>
+                    @endif
+            </div>
+            @endif
 
 
 

@@ -172,7 +172,10 @@
                 </div>
             </nav>
     @if($errors->has('g-recaptcha-response'))
-        <div class="alert alert-danger">Recaptcha failed</div>
+        <div class="alert alert-danger mt-3">Recaptcha failed</div>
+    @endif
+    @if(session()->has('error'))
+        <div class="alert alert-danger mt-3">Something went wrong</div>
     @endif
     @section('content')
 

@@ -48,7 +48,6 @@ class Account extends Authenticatable
     }
 
 
-
     protected $casts = ["settings" => "array"];
     public function setting(string $name, $default = null)
     {

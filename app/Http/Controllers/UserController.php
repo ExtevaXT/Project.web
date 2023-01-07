@@ -43,7 +43,8 @@ class UserController extends Controller
         $min = 500;
         $max = 25000;
         //1672665331
-        if(Auth::user()->setting('daily') and Carbon::parse(Auth::user()->setting('daily')) < Carbon::now()->addDay()) return back()->with(['daily'=>false]);
+        //1673122553
+        if(Auth::user()->setting('daily') and Carbon::parse(Auth::user()->setting('daily')) > Carbon::now()->subDay()) return back()->with(['error'=>true]);
         Auth::user()->settings(['daily'=>Carbon::now()->timestamp]);
         $character = Auth::user()->character();
         //Maybe make interpolation ((max - min) * level) / Character::max('level') + min
