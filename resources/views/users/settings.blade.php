@@ -126,6 +126,7 @@
                     <select class="form-select my-2 input-glass" name="styleTheme">
                         <option selected disabled>Select theme</option>
                         <option value="null">None</option>
+                        <option value="rainbow" @if(Account::auth()->setting('styleTheme')=='rainbow') selected @endif>Rainbow</option>
                         <option value="hanipaganda" @if(Account::auth()->setting('styleTheme')=='hanipaganda') selected @endif>HANIPAGANDA</option>
                         <option value="consultant" @if(Account::auth()->setting('styleTheme')=='consultant') selected @endif>こ～んさるたん</option>
                     </select>

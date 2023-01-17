@@ -123,17 +123,23 @@
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="mobile-panel"><a class="navbar-brand" href="/">Project.web</a></li>
-                            @auth()
+                            @if(Auth::guest() or Auth::user()->setting('navAuction'))
                             <li class="nav-item"><a class="nav-link" href="/auction">Auction</a></li>
-                            @endauth
+                            @endif
+                            @if(Auth::guest() or Auth::user()->setting('navGuides'))
                             <li class="nav-item"><a class="nav-link" href="/guides">Guides</a></li>
+                            @endif
+                            @if(Auth::guest() or Auth::user()->setting('navMap'))
                             <li class="nav-item"><a class="nav-link" href="/map">Map</a></li>
+                            @endif
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Other
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
+                                    @if(Auth::guest() or Auth::user()->setting('navFaction'))
                                     <li><a class="dropdown-item" href="/faction">Faction</a></li>
+                                    @endif
                                     @auth
                                     <li><a class="dropdown-item" href="/log">Log</a></li>
                                     <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>

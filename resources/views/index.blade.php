@@ -28,11 +28,13 @@
     <div class="@auth d-flex my-2 main @endauth">
         <div class="main-left d-flex flex-column @auth() w-50 @endauth ">
             @auth()
+                @if(Auth::user()->setting('indexAnnouncements'))
             <div class="bg-glass m-2 p-5">
                 <div>Some Announcement</div>
                 <div>Announcement description</div>
                 <div>Time of announcement</div>
             </div>
+                @endif
             <div class="d-flex m-2 profile-panel">
                 <div class="d-grid text-center profile-panel-nav">
                     <button onclick="location.href='/user/{{Auth::user()->name}}'" class="profile-panel-nav-item input-glass">
@@ -102,6 +104,7 @@
                 </div>
             </div>
             @auth
+            @if(Auth::user()->setting('indexOnline'))
             <div class="d-flex flex-column m-2">
                 @if((Character::online()->count()!=0))
                 <h3>Online players</h3>
@@ -109,8 +112,8 @@
                     <div class="my-1 p-2 bg-glass">{{$online_character->name}} <span class="fw-bold">0 Hours</span></div>
                 @endforeach
                 @endif
-
             </div>
+            @endif
             @endauth
 
         </div>
@@ -161,6 +164,7 @@
             </div>
             @endauth
             <div class="m-2 @guest d-flex main gap-3 w-100 @endguest">
+                @if(Auth::user()?->setting('indexWeb') or Auth::guest())
                 <div class="@guest w-50 main-left @endguest">
                     <h3>Last changes .web</h3>
                     <div>
@@ -172,6 +176,8 @@
                         @endforeach
                     </div>
                 </div>
+                @endif
+                    @if(Auth::user()?->setting('indexUnity') or Auth::guest())
                 <div class="@guest w-50 main-right @endguest">
                     <h3>Last changes .unity</h3>
                     <div>
@@ -183,6 +189,7 @@
                         @endforeach
                     </div>
                 </div>
+                    @endif
 
 
 

@@ -21,8 +21,4 @@ class AccountNotification extends Model
             'value' => $value,
         ]);
     }
-    public function lot()
-    {
-        return Lot::find($this->lot);
-    }
 }

@@ -25,7 +25,7 @@ class SettingsValidation extends FormRequest
     {
         return [
             'styleCSS' => 'nullable',
-            'styleTheme' => 'in:hanipaganda,consultant,null',
+            'styleTheme' => 'in:hanipaganda,consultant,rainbow,null',
             'styleThemeShow' => 'in:0,1,2',
 
             'profileColor' => 'size:7',

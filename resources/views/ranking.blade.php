@@ -14,9 +14,9 @@
     @auth()
         <div class="fs-3 p-1 text-center my-3">Player ranking</div>
         <div class="main d-flex">
-            <div class="side-filter main-left me-3">
-                <form action="/ranking">
-                    <input value="{{ app('request')->input('search') }}" name="search" class="p-2 input-glass search" placeholder="Search" onchange="this.form.submit()">
+            <div class="side-filter main-left me-3 mb-3">
+                <form action="/ranking" class="w-100">
+                    <input value="{{ app('request')->input('search') }}" name="search" class="w-100 p-2 input-glass search" placeholder="Search" onchange="this.form.submit()">
                 </form>
                 <div class="p-2 mt-2 w-100 input-glass text-start"><a class="text-link sort" data-sort="level" href="/ranking?filter=level">Level</a></div>
                 <div class="p-2 mt-2 w-100 input-glass text-start"><a class="text-link sort" data-sort=achievements" href="/ranking?filter=achievements">Achievements</a> </div>

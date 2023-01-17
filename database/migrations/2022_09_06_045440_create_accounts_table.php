@@ -23,7 +23,7 @@ return new class extends Migration
             $table->boolean('banned')->default(false);
             $table->string('image')->default('user.png');
             $table->string('banner')->nullable();
-            $table->string('settings')->default('{}');
+            $table->string('settings')->default('{"profileAchievements":"1","profileTalents":"1","profileInventory":"1","profileFriends":"1","indexAnnouncements":"1","indexWeb":"1","indexUnity":"1","indexOnline":"1","navAuction":"1","navGuides":"1","navMap":"1","navFaction":"1"}');
             $table->rememberToken();
             $table->timestamps();
         });

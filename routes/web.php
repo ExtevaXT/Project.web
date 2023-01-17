@@ -43,7 +43,7 @@ Route::post('/contact', [Controller::class, 'contact'])->name('contact');
 Route::get('/ranking', [Controller::class, 'ranking']);
 Route::get('/faction', [Controller::class, 'faction']);
 Route::get('/download', function () {
-    return response()->download(resource_path('malware'));
+    return response()->download(resource_path('game.zip'));
 })->name('download');
 Route::get('/auction', [LotController::class, 'show']);
 Route::middleware('auth')->group(function() {
@@ -87,15 +87,17 @@ Route::middleware('auth')->group(function() {
 Route::get('/user/{name}', [UserController::class, 'profile']);
 Route::get('/test', [UserController::class, 'test']);
 
-Route::get('/login', fn() => view('users.login'))->name('login');
-Route::post('/login', [UserController::class, 'login']);
+Route::middleware('guest')->group(function() {
+    Route::get('/login', fn() => view('users.login'))->name('login');
+    Route::post('/login', [UserController::class, 'login']);
 
-Route::get('/register', fn() => view('users.register'))->name('register');
-Route::post('/register', [UserController::class, 'registerPost']);
+    Route::get('/register', fn() => view('users.register'))->name('register');
+    Route::post('/register', [UserController::class, 'register']);
 
-//RESET PASSWORD
-Route::get('/forgot', fn() => view('users.password.forgot'))->name('forgot');
-Route::post('/forgot', [UserController::class, 'forgot']);
+    Route::get('/forgot', fn() => view('users.password.forgot'))->name('forgot');
+    Route::post('/forgot', [UserController::class, 'forgot']);
 
-Route::get('/reset', fn(Request $request) => view('users.password.reset', ['token'=>$request['token']]))->name('reset');
-Route::post('/reset', [UserController::class, 'reset']);
+    Route::get('/reset', fn(Request $request) => view('users.password.reset', ['token'=>$request['token']]))->name('reset');
+    Route::post('/reset', [UserController::class, 'reset']);
+});
+
