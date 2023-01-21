@@ -128,6 +128,8 @@ class Character extends Model
                     'durability' => $item->durability,
                     'ammo' => $item->ammo,
                     'metadata' => $item->metadata,
+                    // fuck this shit, this shouldn't be personal
+                    'personal' => true,
                 ]);
                 $item->update(['claimed'=>true]);
                 return "Added item to {$_item['slot']} slot";

@@ -16,7 +16,7 @@ MonoBehaviour:
   weight: 1000
   price: 0
   sellable: 0
-  personal: 1
+  personalizable: 0
   maxDurability: 1000
   destroyable: 0
   toolTip: Attachment for weapon
@@ -24,9 +24,14 @@ MonoBehaviour:
   drop: {fileID: -1322884234165360555, guid: 2ab61ba2213782046bdb9b22f6c03840, type: 3}
   modelPrefab: {fileID: 1162793710245078, guid: 0069d05a0cc749d4bb053b35b1599792,
     type: 3}
-  type: 
+  type: Lower rail
   hide: 0
   content: 
   notes: 
   attachmentMetaId: 53
   attachmentMetaGroup: 1
+  silenced: 0
+  magazine: 0
+  recoilHorizontal: 0
+  recoilVertical: 0
+  zoom: 0

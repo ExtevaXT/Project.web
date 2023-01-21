@@ -16,7 +16,7 @@ MonoBehaviour:
   weight: 1000
   price: 0
   sellable: 0
-  personal: 1
+  personalizable: 0
   maxDurability: 1000
   destroyable: 0
   toolTip: Sight for weapon
@@ -24,9 +24,14 @@ MonoBehaviour:
   drop: {fileID: -6072464440341473037, guid: 4b2b212b0c9ac7941b9acd3540e8529c, type: 3}
   modelPrefab: {fileID: 1632117584443096, guid: 14a91c737919303479ee5afd1489ea96,
     type: 3}
-  type: 
+  type: Upper rail
   hide: 0
   content: 
   notes: 
   attachmentMetaId: 105
   attachmentMetaGroup: 2
+  silenced: 0
+  magazine: 0
+  recoilHorizontal: 0
+  recoilVertical: 0
+  zoom: 0

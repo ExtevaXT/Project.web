@@ -16,7 +16,7 @@ MonoBehaviour:
   weight: 100
   price: 0
   sellable: 0
-  personal: 0
+  personalizable: 0
   maxDurability: 1000
   destroyable: 1
   toolTip: '<b>{NAME}</b>
@@ -34,19 +34,21 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: 0a648238eb2d38e40babbc76b8cc9834, type: 3}
   drop: {fileID: 114666906706450464, guid: 48e0d114bba8f4284b6b34b7c4b6ed68, type: 3}
   modelPrefab: {fileID: 0}
-  type: 
+  type: Medical
   hide: 0
   content: 
   notes: 
-  category: 
+  category: Consumable
   keepUsingWhileButtonDown: 0
   successfulUseSound: {fileID: 0}
   failedUseSound: {fileID: 0}
   emptySound: {fileID: 0}
   cooldown: 1
-  _cooldownCategory: Healing
+  _cooldownCategory: Consumable
   shoulderLookAtWhileHolding: 0
   useDirectly: 0
   usageHealth: 50
   usageHydration: 0
   usageNutrition: 0
+  duration: 0
+  usageFov: 0

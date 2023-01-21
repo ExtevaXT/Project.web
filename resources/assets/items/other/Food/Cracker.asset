@@ -16,7 +16,7 @@ MonoBehaviour:
   weight: 100
   price: 0
   sellable: 0
-  personal: 0
+  personalizable: 0
   maxDurability: 0
   destroyable: 1
   toolTip: '<b>{NAME}</b>
@@ -32,11 +32,11 @@ MonoBehaviour:
   image: {fileID: 21300000, guid: b56f6d365a758fc47a8fce4ae5da383a, type: 3}
   drop: {fileID: 114354571381432026, guid: 738a7a03bbd824c238244ee30655b774, type: 3}
   modelPrefab: {fileID: 0}
-  type: 
+  type: Consumable
   hide: 1
   content: 
   notes: 
-  category: 
+  category: Consumable
   keepUsingWhileButtonDown: 0
   successfulUseSound: {fileID: 0}
   failedUseSound: {fileID: 0}
@@ -48,3 +48,5 @@ MonoBehaviour:
   usageHealth: 0
   usageHydration: 150
   usageNutrition: 150
+  duration: 0
+  usageFov: 0

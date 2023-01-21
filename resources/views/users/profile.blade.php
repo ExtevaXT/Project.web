@@ -403,9 +403,9 @@
                     <div class="item-metadata">Metadata</div>
 
                     <div class="w-100">
-                        <div onclick="SellItem()" class="item-sell p-2 my-2 bg-glass text-center">Sell</div>
-                        <div onclick="" class="item-trade p-2 my-2 bg-glass text-center">Trade</div>
-                        <div onclick="" class="item-delete p-2 my-2 bg-glass text-center">Delete</div>
+                        <button onclick="SellItem()" class="item-sell d-block w-100 p-2 my-2 input-glass text-center">Sell</button>
+                        <button onclick="" class="item-trade d-block w-100 p-2 my-2 input-glass text-center">Trade</button>
+                        <button onclick="" class="item-delete d-block w-100 p-2 my-2 input-glass text-center">Delete</button>
                     </div>
 
                 </div>

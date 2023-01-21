@@ -16,7 +16,7 @@ MonoBehaviour:
   weight: 1000
   price: 0
   sellable: 0
-  personal: 1
+  personalizable: 0
   maxDurability: 1000
   destroyable: 0
   toolTip: Stock for weapon
@@ -24,9 +24,14 @@ MonoBehaviour:
   drop: {fileID: -1322884234165360555, guid: 2ab61ba2213782046bdb9b22f6c03840, type: 3}
   modelPrefab: {fileID: 1196161358752670, guid: ac7d381a47e011945a165b4ea7e6cc7a,
     type: 3}
-  type: 
+  type: Stock
   hide: 0
   content: 
   notes: 
   attachmentMetaId: 53
   attachmentMetaGroup: 4
+  silenced: 0
+  magazine: 0
+  recoilHorizontal: 0
+  recoilVertical: 0
+  zoom: 0
