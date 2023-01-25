@@ -17,6 +17,7 @@
     @if(session()->has('money'))
         <div class="alert alert-success mt-4">Balance was updated</div>
     @endif
+    @if(Auth::user()->character())
     <h3 class="my-3">Deliveries</h3>
     @foreach(Lot::bought()->reverse() as $lot)
     <form action="{{route('lot.claim.item', ['id'=>$lot->id])}}" method="POST" class="bg-glass p-3 mt-2 d-flex flex-row gap-3">
@@ -69,6 +70,7 @@
             @endif
         </form>
     @endforeach
+    @endif
     <h3 class="my-3">Info notifications</h3>
     @foreach($notifications->reverse() as $notification)
         <div class="bg-glass p-3 mt-2">

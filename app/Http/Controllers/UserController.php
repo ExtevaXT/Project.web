@@ -81,8 +81,9 @@ class UserController extends Controller
     public function quests()
     {
         //if not null
-        if($data = Account::auth()->character()->quests())
-            $data = $data['data'];
+        if(!Account::auth()->character()) return back();
+        $data = Account::auth()->character()->quests();
+        $data = $data['data'];
         //some awesome logic for parsing custom data serialization type
         // ok so it is lua code
         // here is some pseudo parsing for it

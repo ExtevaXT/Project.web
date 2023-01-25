@@ -15,7 +15,7 @@
         <div class="modal-footer px-0">@endif
         <div class="user-panel-notifications bg-glass p-3 @if($attributes->has('mobile')) w-100 @endif">
             <div><span class="fw-bold">Last notifications</span> <a href="/notifications" class="input-glass text-link p-1 float-end">All notifications</a></div>
-            @if(Lot::unclaimed())
+            @if(Auth::user()->character() and Lot::unclaimed())
                <button class="input-glass w-100 mt-2 py-1" onclick="window.location.href='/notifications'">There are unclaimed deliveries</button>
             @endif
             <div class="notification-panel mt-3" style="height: 300px">

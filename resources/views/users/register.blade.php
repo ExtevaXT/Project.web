@@ -11,7 +11,6 @@
 @endsection
 
 @section('content')
-
     <div class="">
 
         <div class="">

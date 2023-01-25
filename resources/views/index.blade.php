@@ -8,6 +8,7 @@
 @endsection
 
 @section('content')
+
     @guest()
     <div class="text-center py-5 mt-5">
         <div class="fs-3">Project.web - Web interface for Project.unity</div>
@@ -67,6 +68,7 @@
                                 @endif
                             </div>
                         </div>
+                        @if(Auth::user()->character())
                         <div class="bg-glass p-3 mb-3 daily-panel">
                             <h5 class="text-center">Daily Reward</h5>
                             @if(Carbon::parse(Auth::user()->setting('daily')) < Carbon::now()->subDay() or !Auth::user()->setting('daily'))
@@ -78,6 +80,7 @@
                                 <button class="btn input-glass py-2 px-4 m-2 disabled w-100">Remain {{Carbon::now()->addDay()->diffInHours(Carbon::parse(Auth::user()->setting('daily')))}} hours</button>
                             @endif
                         </div>
+                        @endif
 
                     </div>
                 </div>

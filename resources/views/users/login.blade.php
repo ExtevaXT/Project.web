@@ -11,6 +11,9 @@
     @if(session()->has('reset'))
         <div class="alert alert-success">Password has been reset</div>
     @endif
+    @if(session()->has('success'))
+        <div class="alert alert-success my-3">Registered successfully</div>
+    @endif
     <div class="register-panel bg-glass ">
         <div class="fs-3 mb-4">Authorization</div>
         <div class="mt-2">

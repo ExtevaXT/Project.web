@@ -48,11 +48,11 @@
             <li class="nav-item">
                 <a class=" pe-5 nav-link" data-bs-toggle="tab" href="#nav">Navigation</a>
             </li>
-            @if(Auth::user()->character()->talent('Eraser')
+            @if(Auth::user()?->character() and (Auth::user()->character()->talent('Eraser')
                 or Auth::user()->character()->talent('Many Faces')
                 or Auth::user()->character()->talent('Megalomania')
                 or Auth::user()->character()->talent('Renegate')
-                or Auth::user()->character()->talent('Soul Trader'))
+                or Auth::user()->character()->talent('Soul Trader')))
             <li class="nav-item">
                 <a class=" pe-5 nav-link" data-bs-toggle="tab" href="#advanced">Advanced</a>
             </li>
@@ -200,11 +200,11 @@
                     <x-input-switch name="navFaction" label="Faction"/>
                 </form>
             </div>
-            @if(Auth::user()->character()->talent('Eraser')
+            @if(Auth::user()?->character() and (Auth::user()->character()->talent('Eraser')
                 or Auth::user()->character()->talent('Many Faces')
                 or Auth::user()->character()->talent('Megalomania')
                 or Auth::user()->character()->talent('Renegate')
-                or Auth::user()->character()->talent('Soul Trader'))
+                or Auth::user()->character()->talent('Soul Trader')))
             <div class="tab-pane fade" id="advanced">
                     @if(Auth::user()->character()->talent('Eraser'))
                         <form action="{{route('talent.delete')}}" method="POST">
