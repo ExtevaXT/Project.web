@@ -11,7 +11,7 @@
     @if(Auth::check() and $quests)
         <h3 class="my-3">Active quests</h3>
         @forelse($quests_active as $quest)
-            <div class="bg-glass p-3 mb-3">
+            <div class="input-glass p-3 mb-3">
                 <h5>{{Resource::quest($quest)[0]['value'] }}</h5>
                 <h6 class="lead">{{Resource::quest($quest)[2]['value'] }}</h6>
             </div>
@@ -22,7 +22,7 @@
         @endforelse
         <h3 class="mb-3">Finished quests</h3>
         @forelse($quests_success as $quest)
-            <div class="bg-glass p-3 mb-3">
+            <div class="input-glass p-3 mb-3">
                 <h5>{{Resource::quest($quest)[0]['value'] }}</h5>
                 <h6 class="lead">{{Resource::quest($quest)[2]['value'] }}</h6>
             </div>

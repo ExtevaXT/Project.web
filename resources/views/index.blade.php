@@ -30,7 +30,7 @@
         <div class="main-left d-flex flex-column @auth() w-50 @endauth ">
             @auth()
                 @if(Auth::user()->setting('indexAnnouncements'))
-            <div class="bg-glass m-2 p-5">
+            <div class="input-glass m-2 p-5">
                 <div>Some Announcement</div>
                 <div>Announcement description</div>
                 <div>Time of announcement</div>
@@ -112,7 +112,7 @@
                 @if((Character::online()->count()!=0))
                 <h3>Online players</h3>
                 @foreach(Character::online() as $online_character)
-                    <div class="my-1 p-2 bg-glass">{{$online_character->name}} <span class="fw-bold">0 Hours</span></div>
+                    <div class="my-1 p-2 input-glass">{{$online_character->name}} <span class="fw-bold">0 Hours</span></div>
                 @endforeach
                 @endif
             </div>
@@ -126,7 +126,7 @@
 {{--                <div>Player: Some rupor</div>--}}
 {{--            </div>--}}
             <div class="m-2 d-flex flex-row prime-panel2">
-                <div class="bg-glass me-2 w-25 prime-panel d-flex align-items-end pc-panel">
+                <div class="input-glass me-2 w-25 prime-panel d-flex align-items-end pc-panel">
                     <div class="p-3">
                         <h5>Prime panel</h5>
                         <div>Some art idk</div>
@@ -135,14 +135,14 @@
                 </div>
                 <div class="w-100">
                     @if(Auth::user()->character()!=null)
-                    <div class="bg-glass h-50 prime-panel-parent d-flex align-items-end">
+                    <div class="input-glass h-50 prime-panel-parent d-flex align-items-end">
                         <div class="p-3">
                             <h3>Faction </h3>
                             <div><span class="text-uppercase">{{Account::auth()->character()->faction}}</span></div>
                         </div>
                     </div>
                     @else
-                        <div class="bg-glass h-50 prime-panel-parent d-flex align-items-end">
+                        <div class="input-glass h-50 prime-panel-parent d-flex align-items-end">
                             <div class="p-3">
                                 <div>Factions</div>
                                 <div>You can join faction in game</div>
@@ -150,13 +150,13 @@
                         </div>
                     @endif
                     <div class="d-flex flex-row prime-other-panels h-50 prime-panel-parent">
-                        <div class="bg-glass mt-2 w-50 prime-other-panel d-flex align-items-end">
+                        <div class="input-glass mt-2 w-50 prime-other-panel d-flex align-items-end">
                             <div class="p-3">
                                 <div>Discord</div>
                                 <div>https://discord.gg/JMhd6VtVv5</div>
                             </div>
                         </div>
-                        <div class="bg-glass mt-2 ms-2 w-50 prime-other-panel d-flex align-items-end">
+                        <div class="input-glass mt-2 ms-2 w-50 prime-other-panel d-flex align-items-end">
                             <div class="p-3">
                                 <div>Github</div>
                                 <div>https://github.com/ExtevaXT</div>
@@ -172,7 +172,7 @@
                     <h3>Last changes .web</h3>
                     <div>
                         @foreach($web as $commit)
-                            <div class="bg-glass change-item p-4 my-2">
+                            <div class="input-glass change-item p-4 my-2" onclick="window.location.href='{{$commit['html_url']}}'">
                                 <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg')->format('d M Y | H:i') }}</span> {{ $commit['commit']['author']['name']}}</div>
                                 <div>{{ $commit['commit']['message']}}</div>
                             </div>
@@ -185,7 +185,7 @@
                     <h3>Last changes .unity</h3>
                     <div>
                         @foreach($unity as $commit)
-                        <div class="bg-glass change-item p-4 my-2">
+                        <div class="input-glass change-item p-4 my-2" onclick="window.location.href='{{$commit['html_url']}}'">
                             <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg')->format('d M Y | H:i') }}</span> {{ $commit['commit']['author']['name']}}</div>
                             <div>{{ $commit['commit']['message']}}</div>
                         </div>

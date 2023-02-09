@@ -103,7 +103,7 @@
         }
     </style>
     @yield('style')
-
+{{--    @livewireStyles--}}
 </head>
 <body>
 <div id="bg"></div>
@@ -332,5 +332,6 @@
 <script>
 
 </script>
+{{--@livewireScripts--}}
 </body>
 </html>

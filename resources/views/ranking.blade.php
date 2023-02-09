@@ -35,7 +35,7 @@
                 </div>
                 <div class="BlockTable-body sort">
                     @foreach($characters as $player)
-                        <div class="BlockTable-row BT-R4 text-center bg-glass">
+                        <div class="BlockTable-row BT-R4 text-center input-glass">
 {{-- data-bs-placement="left" data-bs-toggle="tooltip" data-bs-html="true" title="" data-bs-original-title="<em>Tooltip</em> <u>with</u> <b>HTML</b>" --}}
                             <div class="BlockTable-data row-player">
                                 <div class="d-flex">

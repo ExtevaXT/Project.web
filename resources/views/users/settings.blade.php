@@ -28,7 +28,6 @@
     @if(session()->has(['success']))
         <div class="alert alert-success my-3">Changes have been saved</div>
     @endif
-
     <div class="main d-flex my-3 gap-2">
         <ul class="nav nav-pills flex-column d-flex collection-nav gap-2" id="pills-tab">
             <li class="fw-bold">Main</li>
@@ -53,9 +52,9 @@
                 or Auth::user()->character()->talent('Megalomania')
                 or Auth::user()->character()->talent('Renegate')
                 or Auth::user()->character()->talent('Soul Trader')))
-            <li class="nav-item">
-                <a class=" pe-5 nav-link" data-bs-toggle="tab" href="#advanced">Advanced</a>
-            </li>
+                <li class="nav-item">
+                    <a class=" pe-5 nav-link" data-bs-toggle="tab" href="#advanced">Advanced</a>
+                </li>
             @endif
         </ul>
 
@@ -72,10 +71,10 @@
                             <button class="input-glass p-2 float-end" style="margin: -44px 5px;">Save changes</button>
                         </div>
                         <div>
-                            <input name="passwordOld" type="password" class="form-control bg-glass my-1 border-0 rounded-0" placeholder="Old password">
+                            <input name="passwordOld" type="password" class="form-control input-glass my-1 border-0 rounded-0" placeholder="Old password">
                             <div class="d-flex">
-                                <input name="password" type="password" class="form-control input-group bg-glass my-1 me-2 border-0 rounded-0" placeholder="New password">
-                                <input name="password_confirmation" type="password" class="form-control input-group bg-glass my-1 ms-2 border-0 rounded-0" placeholder="Password confirm">
+                                <input name="password" type="password" class="form-control input-group input-glass my-1 me-2 border-0 rounded-0" placeholder="New password">
+                                <input name="password_confirmation" type="password" class="form-control input-group input-glass my-1 ms-2 border-0 rounded-0" placeholder="Password confirm">
                             </div>
                         </div>
                     </form>
@@ -89,36 +88,36 @@
                             <button type="submit" class="input-glass p-2 float-end" style="margin: -44px 5px;">Save changes</button>
                         </div>
                         <div>
-                            <input name="password" type="password" class="form-control bg-glass my-1 border-0 rounded-0" placeholder="Password">
+                            <input name="password" type="password" class="form-control input-glass my-1 border-0 rounded-0" placeholder="Password">
                             <div class="d-flex">
-                                <input name="email" type="text" class="form-control input-group bg-glass my-1 me-2 border-0 rounded-0" placeholder="Old E-mail">
-                                <input name="emailNew" type="text" class="form-control input-group bg-glass my-1 ms-2 border-0 rounded-0" placeholder="New E-Mail">
+                                <input name="email" type="text" class="form-control input-group input-glass my-1 me-2 border-0 rounded-0" placeholder="Old E-mail">
+                                <input name="emailNew" type="text" class="form-control input-group input-glass my-1 ms-2 border-0 rounded-0" placeholder="New E-Mail">
                             </div>
                         </div>
                     </form>
 
                 </div>
-{{--                <div class="p-3 my-3">--}}
-{{--                    <div class="p-3 my-1">--}}
-{{--                        <div class="fs-4">Security IP check</div>--}}
-{{--                        <div>Description</div>--}}
-{{--                        <button class="input-glass p-2 float-end" style="margin: -44px 5px;">Save changes</button>--}}
-{{--                    </div>--}}
-{{--                    <div>--}}
-{{--                        <input type="radio" class="btn-check" name="security-pass" id="security1" autocomplete="off">--}}
-{{--                        <label class="input-glass p-2 w-100 text-start my-1" for="security1">Always check IP</label>--}}
-{{--                        <input type="radio" class="btn-check" name="security-pass" id="security2" autocomplete="off">--}}
-{{--                        <label class="input-glass p-2 w-100 text-start my-1" for="security2">Check IP on other PC</label>--}}
-{{--                        <input type="radio" class="btn-check" name="security-pass" id="security3" autocomplete="off">--}}
-{{--                        <label class="input-glass p-2 w-100 text-start my-1" for="security3">Never check IP</label>--}}
-{{--                    </div>--}}
-{{--                </div>--}}
+                {{--                <div class="p-3 my-3">--}}
+                {{--                    <div class="p-3 my-1">--}}
+                {{--                        <div class="fs-4">Security IP check</div>--}}
+                {{--                        <div>Description</div>--}}
+                {{--                        <button class="input-glass p-2 float-end" style="margin: -44px 5px;">Save changes</button>--}}
+                {{--                    </div>--}}
+                {{--                    <div>--}}
+                {{--                        <input type="radio" class="btn-check" name="security-pass" id="security1" autocomplete="off">--}}
+                {{--                        <label class="input-glass p-2 w-100 text-start my-1" for="security1">Always check IP</label>--}}
+                {{--                        <input type="radio" class="btn-check" name="security-pass" id="security2" autocomplete="off">--}}
+                {{--                        <label class="input-glass p-2 w-100 text-start my-1" for="security2">Check IP on other PC</label>--}}
+                {{--                        <input type="radio" class="btn-check" name="security-pass" id="security3" autocomplete="off">--}}
+                {{--                        <label class="input-glass p-2 w-100 text-start my-1" for="security3">Never check IP</label>--}}
+                {{--                    </div>--}}
+                {{--                </div>--}}
             </div>
 
-{{--            <div class="tab-pane fade active hideAfterRendering" id="css">--}}
-{{--                <button class="btn btn-outline-primary bg-glass p-2 my-2 w-100">Save changes</button>--}}
-{{--                <div class="code"></div>--}}
-{{--            </div>--}}
+            {{--            <div class="tab-pane fade active hideAfterRendering" id="css">--}}
+            {{--                <button class="btn btn-outline-primary bg-glass p-2 my-2 w-100">Save changes</button>--}}
+            {{--                <div class="code"></div>--}}
+            {{--            </div>--}}
             <div class="tab-pane fade" id="style">
                 <form id="form" action="{{route('settings')}}" method="POST">
                     @csrf
@@ -132,13 +131,13 @@
                     </select>
                     <div class="mb-2">
                         <input type="radio" class="btn-check" name="styleThemeShow" value="0" id="styleThemeShow1" autocomplete="off"
-                        @if(Account::auth()->setting('styleThemeShow') == 0) checked @endif>
+                               @if(Account::auth()->setting('styleThemeShow') == 0) checked @endif>
                         <label class="btn btn-outline-light bg-glass w-100 text-start my-1" for="styleThemeShow1">Show theme only in profile for everyone</label>
                         <input type="radio" class="btn-check" name="styleThemeShow" value="1" id="styleThemeShow2" autocomplete="off"
-                        @if(Account::auth()->setting('styleThemeShow') == 1) checked @endif>
+                               @if(Account::auth()->setting('styleThemeShow') == 1) checked @endif>
                         <label class="btn btn-outline-light bg-glass w-100 text-start my-1" for="styleThemeShow2">Show theme for yourself only</label>
                         <input type="radio" class="btn-check" name="styleThemeShow" value="2" id="styleThemeShow3" autocomplete="off"
-                        @if(Account::auth()->setting('styleThemeShow') == 2) checked @endif>
+                               @if(Account::auth()->setting('styleThemeShow') == 2) checked @endif>
                         <label class="btn btn-outline-light bg-glass w-100 text-start my-1" for="styleThemeShow3">Show theme always</label>
                     </div>
                     <input name="styleCSS" type="hidden" value="">
@@ -163,7 +162,7 @@
                         </div>
                         <div class="w-50">
                             <label for="character" class="form-label fs-4">Preferred Character</label>
-                            <select id="character" name="character" class="form-select input-glass">
+                            <select wire:change="update" id="character" name="character" class="form-select input-glass">
                                 @forelse(Account::auth()->characters() as $character)
                                     <option @if($character == Account::auth()->character()) selected @endif value="{{$loop->index}}">{{$character->name}}</option>
                                 @empty
@@ -205,7 +204,7 @@
                 or Auth::user()->character()->talent('Megalomania')
                 or Auth::user()->character()->talent('Renegate')
                 or Auth::user()->character()->talent('Soul Trader')))
-            <div class="tab-pane fade" id="advanced">
+                <div class="tab-pane fade" id="advanced">
                     @if(Auth::user()->character()->talent('Eraser'))
                         <form action="{{route('talent.delete')}}" method="POST">
                             @csrf
@@ -217,49 +216,49 @@
                         </form>
                     @endif
                     @if(Auth::user()->character()->talent('Many Faces'))
-                    <form action="{{route('talent.changeName')}}" method="POST">
-                        @csrf
-                        <div class="p-3 my-1">
-                            <div class="fs-4">Many Faces</div>
-                            <div>Change name of your character</div>
-                            <button type="submit" class="input-glass py-3 px-5 float-end" style="margin: -54px -15px;">Change name</button>
-                        </div>
-                        <x-input name="account" placeholder="Character name"/>
-                    </form>
+                        <form action="{{route('talent.changeName')}}" method="POST">
+                            @csrf
+                            <div class="p-3 my-1">
+                                <div class="fs-4">Many Faces</div>
+                                <div>Change name of your character</div>
+                                <button type="submit" class="input-glass py-3 px-5 float-end" style="margin: -54px -15px;">Change name</button>
+                            </div>
+                            <x-input name="account" placeholder="Character name"/>
+                        </form>
                     @endif
                     @if(Auth::user()->character()->talent('Megalomania'))
-                    <form action="{{route('talent.prefix')}}" method="POST">
-                        @csrf
-                        <div class="p-3 my-1">
-                            <div class="fs-4">Megalomania</div>
-                            <div>Specify your prefix in profile instead of faction</div>
-                            <button type="submit" class="input-glass py-3 px-5 float-end" style="margin: -54px -15px;">Change prefix</button>
-                        </div>
-                        <x-input name="account" placeholder="Prefix"/>
-                    </form>
+                        <form action="{{route('talent.prefix')}}" method="POST">
+                            @csrf
+                            <div class="p-3 my-1">
+                                <div class="fs-4">Megalomania</div>
+                                <div>Specify your prefix in profile instead of faction</div>
+                                <button type="submit" class="input-glass py-3 px-5 float-end" style="margin: -54px -15px;">Change prefix</button>
+                            </div>
+                            <x-input name="account" placeholder="Prefix"/>
+                        </form>
                     @endif
                     @if(Auth::user()->character()->talent('Renegate'))
-                    <form action="{{route('talent.changeFaction')}}" method="POST">
-                        @csrf
-                        <div class="p-3 my-1">
-                            <div class="fs-4">Renegate</div>
-                            <div>Change faction of your character to opposite</div>
-                        </div>
-                        <button type="submit" class="input-glass py-2 w-100">Change faction</button>
-                    </form>
+                        <form action="{{route('talent.changeFaction')}}" method="POST">
+                            @csrf
+                            <div class="p-3 my-1">
+                                <div class="fs-4">Renegate</div>
+                                <div>Change faction of your character to opposite</div>
+                            </div>
+                            <button type="submit" class="input-glass py-2 w-100">Change faction</button>
+                        </form>
                     @endif
                     @if(Auth::user()->character()->talent('Soul Trader'))
-                    <form action="{{route('talent.transferCharacter')}}" method="POST">
-                        @csrf
-                        <div class="p-3 my-1">
-                            <div class="fs-4">Soul Trader</div>
-                            <div>Transfer your character to specified account</div>
-                            <button type="submit" class="input-glass py-3 px-5 float-end" style="margin: -54px -15px;">Transfer character</button>
-                        </div>
-                        <x-input name="account" placeholder="Account"/>
-                    </form>
+                        <form action="{{route('talent.transferCharacter')}}" method="POST">
+                            @csrf
+                            <div class="p-3 my-1">
+                                <div class="fs-4">Soul Trader</div>
+                                <div>Transfer your character to specified account</div>
+                                <button type="submit" class="input-glass py-3 px-5 float-end" style="margin: -54px -15px;">Transfer character</button>
+                            </div>
+                            <x-input name="account" placeholder="Account"/>
+                        </form>
                     @endif
-            </div>
+                </div>
             @endif
 
 
@@ -324,5 +323,7 @@
             // });
 
         </script>
+
+    </div>
 
 @endsection

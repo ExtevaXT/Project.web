@@ -17,6 +17,9 @@ body, .modal-content, .dropdown-menu, option{
     background: white;
     color: black;
 }
+div.input-glass{
+    cursor: pointer;
+}
 .input-glass{
     background: rgba(177, 177, 177, 0.07);
     outline: 1px solid rgba(171,171,171,0.16);
