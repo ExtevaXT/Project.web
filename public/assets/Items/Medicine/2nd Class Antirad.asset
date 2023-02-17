@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: VYeJ
+    key: antirad_2
+    fullName: '2nd Class Antirad'
+    pathCategory: Medicine
+    class: Medicine
+    weight: 0.05
+    purpose: 'Radiation Cleansing'
+    duration: 5.0
+    toxicity: 25.0
+    radiationDmgFactor: [75.0]
+    radiationAccumulation: [-50.0]
+    text: 'Removes radiation from the body.'
+    image: { fileID: 21300000, guid: 51dbdec6ec9f4201937976eddd6dba49, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: '2nd Class Antirad'
+    m_Script: { fileID: 11500000, guid: 8fbc25bef1e7c4f4aa348edf964275e9, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

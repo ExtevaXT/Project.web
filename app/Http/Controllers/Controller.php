@@ -71,7 +71,7 @@ class Controller extends BaseController
                 'trophies' =>  CharacterAchievement::where('character', $character->name)->sum('reward'),
                 'online' => Carbon::parse($character->lastsaved)->format('Y.m.d'),
                 'joined' => Carbon::parse(Account::firstWhere('name', $character->account)->created_at)->year,
-                'kda' => round(rand(1, 200)/100, 2)
+                'kda' => $character->deaths != 0 ? $character->kills / $character->deaths : 0
             ];
         }
         $characters = collect($characters)->sortBy($filter, 0, true);

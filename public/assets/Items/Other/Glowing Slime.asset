@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: nnJw
+    key: fallout
+    fullName: 'Glowing Slime'
+    pathCategory: Other
+    rank: Newbie
+    class: Other
+    weight: 0.05
+    text: 'Having been exposed to unimaginable levels of radiation, the body of some mutants begins to produce this strange glowing slime. Certain organizations, which are banned in the civilized world, believe that it can be used to manufacture a state-of-the-art biological weapon.'
+    image: { fileID: 21300000, guid: 94bafb93073c4b66bc143ee87732c6d0, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'Glowing Slime'
+    m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

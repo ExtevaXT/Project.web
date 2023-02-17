@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: yZ08
+    key: dud_buryat
+    fullName: 'Buryat Short Range Detector'
+    pathCategory: Weapon/Device
+    rank: Stalker
+    class: Devices
+    weight: 0.6
+    maxDurability: 100.0
+    charge: 100.0
+    range: 80.0
+    text: 'A detector used to locate zones of anomalous activity. It is equipped with a screen that can show the source of the signals.'
+    image: { fileID: 21300000, guid: 5195ec2f2d0c48a993898e20f44fb230, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'Buryat Short Range Detector'
+    m_Script: { fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

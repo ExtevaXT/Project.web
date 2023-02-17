@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: l3Rr
+    key: npc_add
+    fullName: 'Water Spirit Stone'
+    pathCategory: Other
+    rank: Veteran
+    class: Other
+    weight: 0.025
+    text: 'This bluish stone is encountered less frequently than regular swamp stone. People say that powder made from a Water Spirit stone increases the volume of one’s lungs.'
+    image: { fileID: 21300000, guid: 877160b872754f1db1951deaf628ec83, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'Water Spirit Stone'
+    m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

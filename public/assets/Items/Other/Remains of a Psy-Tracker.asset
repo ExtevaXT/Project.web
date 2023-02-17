@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: kknN
+    key: mining
+    fullName: 'Remains of a Psy-Tracker'
+    pathCategory: Other
+    rank: Newbie
+    class: Other
+    weight: 0.03
+    text: 'Not much is known about the developments made by the Zone’s secret labs, but those who live there were distinctly interested in researching the effect of various types of signal on the human brain. The remains of their developments, even those that are not in a working condition, are the stuff of dreams for any mad scientist.'
+    image: { fileID: 21300000, guid: a7ca0d2b416c4c569e69c5899124dc44, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'Remains of a Psy-Tracker'
+    m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: yd96
+    key: ffa_camp
+    fullName: 'Mobile Camp'
+    pathCategory: Backpack
+    class: Backpacks
+    weight: 25.0
+    text: 'When placed in a tournament location, lets you respawn in the camp.'
+    image: { fileID: 21300000, guid: fedb7898bb20415dbeaea4ad753c065a, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'Mobile Camp'
+    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

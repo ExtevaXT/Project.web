@@ -16,38 +16,7 @@
             </form>
         </div>
         <div class="fs-3 my-3">Categories</div>
-{{--        <a href="/guides/achievements" class="bg-glass p-2 px-5 my-1 text-decoration-none">--}}
-{{--            <div>Achievements</div>--}}
-{{--            <div>Information about achievements</div>--}}
-{{--        </a>--}}
-{{--        <a href="/guides/talents" class="bg-glass p-2 px-5 my-1 text-decoration-none">--}}
-{{--            <div>Talents</div>--}}
-{{--            <div>Information about talents</div>--}}
-{{--        </a>--}}
-{{--        <a href="/guides/ranking" class="bg-glass p-2 px-5 my-1 text-decoration-none">--}}
-{{--            <div>Ranking</div>--}}
-{{--            <div>Information about level and experience</div>--}}
-{{--        </a>--}}
-{{--        <a href="/guides/auction" class="bg-glass p-2 px-5 my-1 text-decoration-none">--}}
-{{--            <div>Auction</div>--}}
-{{--            <div>Information about auction</div>--}}
-{{--        </a>--}}
-{{--        <a href="/guides/anomalies" class="bg-glass p-2 my-1 text-decoration-none d-flex">--}}
-{{--            <div class="me-3" style="--}}
-{{--                width: 48px;--}}
-{{--                height: 48px;--}}
-{{--                background-size: cover;--}}
-{{--                background-position: center;--}}
-{{--                filter: blur(0.6px);--}}
-{{--                background-image:url('{{asset('img/icon/anomalies/anomaly.gif')}}')--}}
-{{--                "></div>--}}
-{{--            <div>--}}
-{{--                <div>Anomalies</div>--}}
-{{--                <div>Information about anomalies</div>--}}
-{{--            </div>--}}
-
-{{--        </a>--}}
-        <a href="/guides/artefacts" class="input-glass p-2 my-1 text-decoration-none d-flex">
+        <a href="/guides/Artefact" class="input-glass p-2 my-1 text-decoration-none d-flex">
             <x-item class="me-3" name="Crystal" size="64"/>
             <div>
                 <div class="fs-4">Artefacts</div>
@@ -55,7 +24,7 @@
             </div>
 
         </a>
-        <a href="/guides/equipment" class="input-glass p-2 my-1 text-decoration-none d-flex">
+        <a href="/guides/Armor" class="input-glass p-2 my-1 text-decoration-none d-flex">
             <x-item class="me-3" name="Ghillie" size="64"/>
             <div>
                 <div class="fs-4">Equipment</div>
@@ -63,7 +32,7 @@
             </div>
 
         </a>
-        <a href="/guides/attachments" class="input-glass p-2 my-1 text-decoration-none d-flex">
+        <a href="/guides/Attachment" class="input-glass p-2 my-1 text-decoration-none d-flex">
             <x-item class="me-3" name="Scope PSO-1" size="64"/>
             <div>
                 <div class="fs-4">Attachments</div>
@@ -71,7 +40,7 @@
             </div>
 
         </a>
-        <a href="/guides/weapons" class="input-glass p-2 my-1 text-decoration-none d-flex">
+        <a href="/guides/Weapon" class="input-glass p-2 my-1 text-decoration-none d-flex">
             <x-item class="me-3" name="AKM" size="64"/>
             <div>
                 <div class="fs-4">Weapons</div>
@@ -79,7 +48,7 @@
             </div>
 
         </a>
-        <a href="/guides/other" class="input-glass p-2 my-1 text-decoration-none d-flex">
+        <a href="/guides/Other" class="input-glass p-2 my-1 text-decoration-none d-flex">
             <x-item class="me-3" name="Bandage" size="64"/>
             <div>
                 <div class="fs-4">Other</div>

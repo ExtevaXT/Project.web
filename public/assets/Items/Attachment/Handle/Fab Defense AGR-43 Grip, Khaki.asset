@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: gJAn
+    key: handle_agr43h
+    fullName: 'Fab Defense AGR-43 Grip, Khaki'
+    pathCategory: Attachment/Handle
+    rank: Stalker
+    class: 'Pistol Grips'
+    weight: 0.096
+    wiggle: -1.9999981
+    reloadTime: -1.9999981
+    recoilGain: -2.9999971
+    suitableFor: [M4A1, M16A3, 'M4 LB', M16A2, LR-300, 'FN SCAR-L', HK416, 'FN SCAR-H', 'FN SCAR SSR', 'McMillan CS5', HK417]
+    image: { fileID: 21300000, guid: ff697c2a92cb4357bfd993c2761db0db, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'Fab Defense AGR-43 Grip, Khaki'
+    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

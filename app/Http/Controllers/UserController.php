@@ -7,6 +7,7 @@ use App\Http\Requests\Settings\EmailValidation;
 use App\Http\Requests\RegisterValidation;
 use App\Http\Requests\Settings\PasswordValidation;
 use App\Http\Requests\Settings\SettingsValidation;
+use App\Libs\SCDB\Converter;
 use App\Models\Account;
 use App\Models\AccountNotification;
 use App\Models\Character;
@@ -192,7 +193,6 @@ class UserController extends Controller
         $talent_data = Resource::data('talents');
         //Items for inventory
         $items = collect();
-
         if($character) {
             $character_personal_storage = Character_personal_storage::all()->where('character', $character['name']);
             //Logic from unity

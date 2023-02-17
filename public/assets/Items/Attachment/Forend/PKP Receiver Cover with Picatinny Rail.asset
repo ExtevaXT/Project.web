@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: JA5Q
+    key: forend_pkp
+    fullName: 'PKP Receiver Cover with Picatinny Rail'
+    pathCategory: Attachment/Forend
+    rank: Veteran
+    class: 'Hanguards and Brackets'
+    weight: 0.28
+    suitableFor: ['PKP Pecheneg']
+    image: { fileID: 21300000, guid: 8b427741bd6641a7ae18e98291abc390, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'PKP Receiver Cover with Picatinny Rail'
+    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

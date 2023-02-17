@@ -23,11 +23,11 @@
                         background-size: cover;
                         background-position: center;
                         filter: blur(0.6px);
-                        background-image:url('{{asset('img/icon/'.$category.'/'.$item['m_Name'].'.png')}}')
+                        background-image:url('{{asset('assets/Icons/'.$item['pathCategory'].'/'.$item['m_Name'].'.png')}}')
                         "></div>
                     <div>
                         <div>{{$item['m_Name']}}</div>
-                        <div>{{$item['type']}}</div>
+                        <div>{{$item['pathCategory']}}</div>
                     </div>
                 </a>
             </div>

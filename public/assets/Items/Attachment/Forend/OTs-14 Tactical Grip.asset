@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: wDG7
+    key: forend_groza
+    fullName: 'OTs-14 Tactical Grip'
+    pathCategory: Attachment/Forend
+    rank: Veteran
+    class: 'Hanguards and Brackets'
+    weight: 0.11
+    suitableFor: ['OTs-14 Groza']
+    image: { fileID: 21300000, guid: 4108a6771c65434a902c45bac166a993, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'OTs-14 Tactical Grip'
+    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

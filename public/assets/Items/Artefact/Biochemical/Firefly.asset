@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: 2XVa
+    key: kisel_svetlyak
+    fullName: Firefly
+    pathCategory: Artefact/Biochemical
+    class: Biochemical
+    weight: 0.2
+    common: 'Not studied'
+    maxDurability: 100.0
+    healthBonus: [2.0, 4.0]
+    regenerationBonus: [1.5, 3.0]
+    psychoAccumulation: [3.0, 8.0]
+    text: 'Affects the owner’s nervous system, thereby increasing pain tolerance. However, it has a negative effect on the human mind, damaging mental stability.'
+    image: { fileID: 21300000, guid: c9d1b65c32414fb2a45ac5c79d875b1a, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: Firefly
+    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

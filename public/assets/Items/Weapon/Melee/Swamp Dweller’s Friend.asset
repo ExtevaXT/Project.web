@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: 5DgM
+    key: bolotnik
+    fullName: 'Swamp Dweller’s Friend'
+    pathCategory: Weapon/Melee
+    rank: Newbie
+    class: 'Melee Weapons'
+    weight: 0.26
+    common: 35.0
+    strong: 100.0
+    piercing: 20.0
+    bloodlustChance: 30.0
+    text: 'This light, easy-to-use knife has changed owners on more than one occasion.'
+    image: { fileID: 21300000, guid: 3493198504eb471db62ccba207e59570, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'Swamp Dweller’s Friend'
+    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

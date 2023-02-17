@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: d06O
+    key: burner
+    fullName: Cauterizer
+    pathCategory: Weapon/Melee
+    rank: Master
+    class: 'Melee Weapons'
+    weight: 0.72
+    burn: 20.0
+    common: 40.0
+    strong: 100.0
+    piercing: 50.0
+    bloodlustChance: 45.0
+    text: 'A small hatchet equipped with a system for heating the blade. It looks stylish and can cook enemies’ wounds into a bloody crisp.'
+    image: { fileID: 21300000, guid: 9be4ea9608184e468c2ca3512127ebc5, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: Cauterizer
+    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0
