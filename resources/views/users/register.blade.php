@@ -8,6 +8,7 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Include script -->
     <x-captcha/>
+    @livewireStyles
 @endsection
 
 @section('content')
@@ -20,15 +21,7 @@
                 <div class="mt-2">
                     <form id="form" method="post" action="{{ route('register') }}" class="d-block">
                         @csrf
-                        <div class="mb-3">
-                            <input name="name"
-                                   class="@error('name') is-invalid @enderror p-2 input-glass d-inline-block w-75 border-end-0"
-                                   type="text"
-                                   placeholder="Login"
-                                   autocomplete="off">
-                            <span class="float-end bg-glass p-2 w-25 text-center">Check</span>
-                            @error('name')<div id="invalidName" class="invalid-feedback">{{$message}}</div>@enderror
-                        </div>
+                        <livewire:login-check/>
                         <x-input name="email" placeholder="E-Mail"/>
                         <x-input name="password" placeholder="Password" type="password"/>
                         <x-input name="password_confirmation" placeholder="Password confirm" type="password"/>
@@ -47,5 +40,5 @@
 
 
     </div>
-
+    @livewireScripts
 @endsection

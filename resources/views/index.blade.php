@@ -172,10 +172,12 @@
                     <h3>Last changes .web</h3>
                     <div>
                         @foreach($web as $commit)
-                            <div class="input-glass change-item p-4 my-2" onclick="window.location.href='{{$commit['html_url']}}'">
-                                <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg')->format('d M Y | H:i') }}</span> {{ $commit['commit']['author']['name']}}</div>
-                                <div>{{ $commit['commit']['message']}}</div>
-                            </div>
+                            <a href="{{$commit['html_url']}}" class="d-block text-link">
+                                <div class="input-glass change-item p-4 my-2" onclick="window.location.href='{{$commit['html_url']}}'">
+                                    <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg')->format('d M Y | H:i') }}</span> {{ $commit['commit']['author']['name']}}</div>
+                                    <div>{{ $commit['commit']['message']}}</div>
+                                </div>
+                            </a>
                         @endforeach
                     </div>
                 </div>
@@ -185,9 +187,11 @@
                     <h3>Last changes .unity</h3>
                     <div>
                         @foreach($unity as $commit)
-                        <div class="input-glass change-item p-4 my-2" onclick="window.location.href='{{$commit['html_url']}}'">
-                            <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg')->format('d M Y | H:i') }}</span> {{ $commit['commit']['author']['name']}}</div>
-                            <div>{{ $commit['commit']['message']}}</div>
+                        <div class="input-glass change-item p-4 my-2">
+                            <a href="{{$commit['html_url']}}" class="d-block text-link">
+                                <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg')->format('d M Y | H:i') }}</span> {{ $commit['commit']['author']['name']}}</div>
+                                <div>{{ $commit['commit']['message']}}</div>
+                            </a>
                         </div>
                         @endforeach
                     </div>

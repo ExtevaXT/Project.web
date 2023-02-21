@@ -149,10 +149,9 @@
                             </li>
 
                         </ul>
-
                     </div>
                     @auth()
-                        <ul class="navbar-nav me-5">
+                        <ul class="navbar-nav me-5" style="height: 40px; margin-top: -10px">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle p-0 nav-user" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <div class="d-flex">
