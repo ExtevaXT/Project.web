@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: gJMm
+    key: '22652'
+    fullName: 'Wooden Skeleton Stock'
+    pathCategory: Attachment/Stock
+    class: Stocks
+    weight: 0.45
+    recoil: -2.9999971
+    wiggle: -19.999998
+    drawTime: 10.000002
+    recoilGain: -19.999998
+    tickSpreadMultiplierReduction: 25.0
+    suitableFor: [AKS-74U, AKS-74, 'SMG-19 Bizon-2-01', AKM, 'SMG-19-01 Vityaz', AK-103, 'Kbk wz. 88 Tantal', AK-105]
+    image: { fileID: 21300000, guid: b413e5b6a9f54e07918d94bfd9f75e9f, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'Wooden Skeleton Stock'
+    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

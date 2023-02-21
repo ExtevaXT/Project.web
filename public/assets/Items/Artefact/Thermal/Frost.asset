@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: Vzr3
+    key: blizzard_frost
+    fullName: Frost
+    pathCategory: Artefact/Thermal
+    class: Thermal
+    weight: 0.3
+    common: 'Not studied'
+    maxDurability: 100.0
+    healEfficiency: [-10.0, -5.0]
+    tearDmgFactor: [5.0, 15.0]
+    thermalDmgFactor: [5.0, 15.0]
+    image: { fileID: 21300000, guid: 19309afae2ff4ea497d5a5afc6de0a3b, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: Frost
+    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

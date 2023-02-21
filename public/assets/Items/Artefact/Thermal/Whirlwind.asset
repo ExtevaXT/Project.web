@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: 0QZb
+    key: blizzard_vortex
+    fullName: Whirlwind
+    pathCategory: Artefact/Thermal
+    class: Thermal
+    weight: 0.1
+    common: 'Not studied'
+    maxDurability: 100.0
+    speedModifier: [3.0, 6.0]
+    staminaRegenerationBonus: [-5.0, -2.5]
+    image: { fileID: 21300000, guid: 40231021940e4936bd44b3a295c42ad6, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: Whirlwind
+    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

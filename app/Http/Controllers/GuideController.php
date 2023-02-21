@@ -12,31 +12,14 @@ class GuideController extends Controller
 {
     public function category($category)
     {
-        switch ($category) {
-            case 'achievements':
-            case 'auction':
-            case 'ranking':
-            case 'talents':
-            case 'anomalies':
-                return view('guides.'.$category);
-            case 'artefacts':
-            case 'equipment':
-            case 'weapons':
-            case 'attachments':
-            case 'other':
-                $items = Resource::data("/items/$category");
-                // Talent 'Library' feature
-                if(!($character = Auth::user()?->character() and $character?->talent('Library')))
-                    $items = $items->filter(fn($item) => !$item['hide']);
-
-
-                return view('guides.category', [
-                    'items' => $items,
-                    'category' => $category
-                ]);
-            default:
-                return abort(404);
-        }
+        $items = Resource::data("/Items/$category");
+        // Talent 'Library' feature
+        if(!($character = Auth::user()?->character() and $character?->talent('Library')))
+            $items = $items->filter(fn($item) => !isset($item['hide']) || !$item['hide']);
+        return view('guides.category', [
+            'items' => $items,
+            'category' => $category
+        ]);
     }
 
 
@@ -44,7 +27,7 @@ class GuideController extends Controller
     {
 
 
-        $items = Resource::data('items/'.$category);
+        $items = Resource::data('Items/'.$category);
         foreach ($items as $item)
             if ($item['m_Name'] == $item_name){
                 // Talent 'Library' feature
@@ -53,7 +36,7 @@ class GuideController extends Controller
                         $character->setGold($character->gold - 500);
                         AccountNotification::make('Balance update', 'Thanks for using our Library™ Items. Your payment was appreciated.');
                     }
-                if(!$item['hide'] or Auth::user()?->character()?->talent('Library'))
+                if(!isset($item['hide']) || !$item['hide'] or Auth::user()?->character()?->talent('Library'))
                     return view('guides.item', ['item' => $item, 'category' => $category]);
                 else return abort(404);
             }

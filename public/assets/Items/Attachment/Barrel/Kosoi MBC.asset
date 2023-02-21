@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: amPr
+    key: barrel_kosoi
+    fullName: 'Kosoi MBC'
+    pathCategory: Attachment/Barrel
+    rank: Newbie
+    class: 'Muzzles and Silencers'
+    weight: 0.019
+    recoil: -2.9999971
+    horizontalRecoil: -6.0
+    spread: -4.000002
+    suitableFor: [AKS-74U, AKS-74, AKM, 'AN-94 Abakan', AK-103, A-545, AEK-971, 'Kbk wz. 88 Tantal', SOK-94, AK-105, RPK, RPK-16, AK-12, AK-308, RPK-74, RPD, Rapier, SKS]
+    image: { fileID: 21300000, guid: dd41c397f389425aa49e5b1cc8c7bd50, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'Kosoi MBC'
+    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

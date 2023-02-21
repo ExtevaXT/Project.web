@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
+use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 
 class Resource extends Model
@@ -14,11 +15,13 @@ class Resource extends Model
     public static function data($path)
     {
         $data = collect();
-        if(!is_dir($path = resource_path()."/assets/$path")) return abort(404);
+        if(!is_dir($path = public_path("/assets/$path"))) return abort(404);
         $it = new RecursiveDirectoryIterator($path);
         foreach(new RecursiveIteratorIterator($it) as $file) {
             if ($file->getExtension() == 'asset') {
-                $data->push(Yaml::parse(str_ireplace(config('app.trim'),'', file_get_contents($file)))['MonoBehaviour']);
+                $asset = str_ireplace("%TAG !u! tag:unity3d.com,2011:",'', file_get_contents($file));
+                $asset = str_ireplace("--- !u!114 &11400000",'', $asset);
+                $data->push(Yaml::parse($asset)['MonoBehaviour']);
             }
         }
         return $data;

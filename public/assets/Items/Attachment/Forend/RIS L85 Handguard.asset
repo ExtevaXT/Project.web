@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: Bk2j
+    key: forend_l85
+    fullName: 'RIS L85 Handguard'
+    pathCategory: Attachment/Forend
+    rank: Newbie
+    class: 'Hanguards and Brackets'
+    weight: 0.2
+    suitableFor: [L85A1]
+    image: { fileID: 21300000, guid: d4641e47c736461b96a474983a483aa8, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'RIS L85 Handguard'
+    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

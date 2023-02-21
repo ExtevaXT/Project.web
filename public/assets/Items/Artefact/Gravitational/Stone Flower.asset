@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: Vzbg
+    key: trampoline_kamencvet
+    fullName: 'Stone Flower'
+    pathCategory: Artefact/Gravitational
+    class: Gravitational
+    weight: 0.3
+    common: 'Not studied'
+    maxDurability: 100.0
+    explosionDmgFactor: [15.0, 25.0]
+    psychoAccumulation: [4.0, 6.0]
+    text: 'Created in a Trampoline anomaly, This artifact can be found in several regions of the Zone. The inset metallic compounds create a beautiful play of light. The artifact creates a weak gravitational field that can affect flying low-speed projectiles. It has a significant effect on the psyche, so it is less valuable than other, similar artifacts.'
+    image: { fileID: 21300000, guid: 17125a9847884d1f8b539ab11a001754, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'Stone Flower'
+    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: PLqE
+    key: '21013'
+    fullName: 'Ice Pick'
+    pathCategory: Weapon/Melee
+    rank: Veteran
+    class: 'Melee Weapons'
+    weight: 0.65
+    common: 40.0
+    strong: 100.0
+    piercing: 70.0
+    bloodlustChance: 55.0
+    text: 'A tool used by mountain climbers for breaking ice when climbing mountain peaks. It’s great for breaking other materials too, not just ice.'
+    image: { fileID: 21300000, guid: 53ada7df0eb54110af19a09998caa3ad, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'Ice Pick'
+    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

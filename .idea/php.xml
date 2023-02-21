@@ -150,6 +150,8 @@
       <path value="$PROJECT_DIR$/vendor/jdenticon/jdenticon" />
       <path value="$PROJECT_DIR$/vendor/_laravel_idea" />
       <path value="$PROJECT_DIR$/vendor/livewire/livewire" />
+      <path value="$PROJECT_DIR$/vendor/vxm/laravel-async" />
+      <path value="$PROJECT_DIR$/vendor/spatie/async" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="8.0" />

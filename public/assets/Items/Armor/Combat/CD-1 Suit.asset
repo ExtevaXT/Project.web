@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: VYXK
+    key: kz1
+    fullName: 'CD-1 Suit'
+    pathCategory: Armor/Combat
+    rank: Newbie
+    class: Combat
+    weight: 5.0
+    maxDurability: 100.0
+    maxWeightBonus: [6.0]
+    bulletDmgFactor: [33.0]
+    tearDmgFactor: [47.0]
+    explosionDmgFactor: [63.0]
+    electraDmgFactor: [53.0]
+    burnDmgFactor: [53.0]
+    chemicalBurnDmgFactor: [53.0]
+    radiationProtection: [60.0]
+    thermalProtection: [45.0]
+    biologicalProtection: [60.0]
+    psychoProtection: [0.0]
+    bleedingProtection: [33.0]
+    compatibleBackpacks: superheavy
+    compatibleContainers: bulky
+    text: 'One of the first suits for the Horizon clan. A mixed, but cheap and comfortable set with properties similar to Zarya.'
+    image: { fileID: 21300000, guid: 63d1b42a02a041c189c00326e5c35ff5, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'CD-1 Suit'
+    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0

@@ -1,0 +1,23 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+    id: N5xJ
+    key: forend_an94
+    fullName: 'AN-94 Udav Handguard'
+    pathCategory: Attachment/Forend
+    rank: Stalker
+    class: 'Hanguards and Brackets'
+    weight: 0.21
+    suitableFor: ['AN-94 Abakan']
+    image: { fileID: 21300000, guid: 63df646d88844d5ebfaf8e81a70ae3c0, type: 3 }
+    m_EditorClassIdentifier: null
+    m_Name: 'AN-94 Udav Handguard'
+    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
+    m_EditorHideFlags: 0
+    m_Enabled: 1
+    m_GameObject: { fileID: 0 }
+    m_PrefabAsset: { fileID: 0 }
+    m_PrefabInstance: { fileID: 0 }
+    m_CorrespondingSourceObject: { fileID: 0 }
+    m_ObjectHideFlags: 0
