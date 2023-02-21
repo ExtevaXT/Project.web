@@ -4,6 +4,7 @@ namespace App\Http\Livewire;
 
 use App\Models\Account;
 use Livewire\Component;
+use function PHPUnit\Framework\isEmpty;
 
 class LoginCheck extends Component
 {
@@ -11,7 +12,8 @@ class LoginCheck extends Component
     public string $login;
     public function check()
     {
-        $this->bool = Account::all()->where('name', $this->login) == null;
+        $this->bool = false;
+        if(isset($this->login)) $this->bool = Account::all()->where('name', $this->login)->isEmpty();
     }
     public function render()
     {
