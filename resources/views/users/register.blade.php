@@ -8,7 +8,6 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <!-- Include script -->
     <x-captcha/>
-    @livewireStyles
 @endsection
 
 @section('content')
@@ -40,5 +39,4 @@
 
 
     </div>
-    @livewireScripts
 @endsection

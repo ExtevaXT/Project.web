@@ -9,12 +9,7 @@
 
 @section('content')
     <div class="d-flex flex-column">
-        <div class="my-2">
-            <form class="my-3 d-inline-flex w-100">
-                <input class="my-1 p-2 input-glass w-75" type="search" placeholder="Search">
-                <button class="input-glass w-25 my-1" type="submit">Search</button>
-            </form>
-        </div>
+        <livewire:guide-search/>
         <div class="fs-3 my-3">Categories</div>
         <a href="/guides/Artefact" class="input-glass p-2 my-1 text-decoration-none d-flex">
             <x-item class="me-3" name="Crystal" size="64"/>

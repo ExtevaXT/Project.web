@@ -1,7 +1,7 @@
 .border-primary{
     border-color: white !important;
 }
-#bg{
+.bg{
     animation: Animation 15s ease infinite;
     background: linear-gradient(
         90deg,

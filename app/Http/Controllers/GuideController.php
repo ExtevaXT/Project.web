@@ -25,8 +25,6 @@ class GuideController extends Controller
 
     public function item($category, $item_name)
     {
-
-
         $items = Resource::data('Items/'.$category);
         foreach ($items as $item)
             if ($item['m_Name'] == $item_name){

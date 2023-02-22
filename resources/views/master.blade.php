@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>@yield('title')</title>
-
+    @livewireStyles()
+    @livewireScripts()
     <link rel="icon" type="image/png" href="{{ asset('img/icon/logo.png')}}">
 
     <link rel="stylesheet" href="{{ asset('css/bs/bootstrap.css')}}">
@@ -106,7 +107,7 @@
 {{--    @livewireStyles--}}
 </head>
 <body>
-<div id="bg"></div>
+<div class="bg"></div>
 <div class="main-content">
             <nav class="navbar navbar-expand-lg navbar-dark bg-glass mt-4">
                 <div class="container-fluid">
