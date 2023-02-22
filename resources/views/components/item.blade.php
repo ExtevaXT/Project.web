@@ -1,4 +1,4 @@
-<div {{ $attributes->merge(['class' => 'item-component']) }} title="{{$name}}" ondblclick="window.location.href='/guides/'">
+<div {{ $attributes->merge(['class' => 'item-component']) }} title="{{$name}}" ondblclick="window.location.href='/item/{{$name}}'">
     <div class="item-component-size" style="width: {{$size}}px; height: {{$size}}px">
         <div class="w-100 h-100"
              style="background-image:url('{{ asset($icon) }}');

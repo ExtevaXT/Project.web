@@ -87,26 +87,13 @@ class Controller extends BaseController
 
     public function faction()
     {
-        $rewards = [
-            ['name' =>'Glock 17', 'amount' => 1, 'metadata'=>'00000'],
-            ['name' =>'Mosin Rifle', 'amount' => 1, 'metadata'=>'00000'],
-            ['name' =>'AKM', 'amount' => 1, 'metadata'=>'00000'],
-            ['name' =>'Desert Eagle Mark XIX', 'amount' => 1, 'metadata'=>'00000'],
-            ['name' =>'Gauss', 'amount' => 1, 'metadata'=>'00000'],
-            ['name' =>'Kolobok', 'amount' => 1, 'metadata'=>'00000'],
-            ['name' =>'Shard', 'amount' => 1, 'metadata'=>'00000'],
-            ['name' =>'Wrenched', 'amount' => 1, 'metadata'=>'00000'],
-            ['name' =>'Dark Jellyfish', 'amount' => 1, 'metadata'=>'00000'],
-            ['name' =>'Silencer KAC', 'amount' => 1, 'metadata'=>'00000'],
-            ['name' =>'Centurion', 'amount' => 1, 'metadata'=>'00000'],
-            ['name' =>'Legion', 'amount' => 1, 'metadata'=>'00000'],
-            ['name' =>'Sausage', 'amount' => 20, 'metadata'=>'00000'],
-            ['name' =>'Jiden', 'amount' => 30, 'metadata'=>'00000'],
-            ['name' =>'IRP', 'amount' => 15, 'metadata'=>'00000'],
-            ['name' =>'Vodka', 'amount' => 100, 'metadata'=>'00000'],
-            ['name' =>'6x4', 'amount' => 1, 'metadata'=>'00000'],
-            ['name' =>'Axe', 'amount' => 1, 'metadata'=>'00000'],
-        ];
+        $rewards = [];
+        for ($i = 0;$i>=18; $i++)
+            $rewards+= [
+                'name'=> Resource::data('Items')->random()['m_Name'],
+                'amount'=> rand(1,5),
+                'metadata'=> '00000',
+            ];
         return view('faction', compact('rewards'));
     }
 

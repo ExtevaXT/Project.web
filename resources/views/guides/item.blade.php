@@ -2,7 +2,7 @@
 
 
 
-@section('title', 'Item')
+@section('title', $item['fullName'])
 @section('style')
     <link rel="stylesheet" href="{{ asset('css/guides.css')}}">
     <link rel="stylesheet" href="{{ asset('css/Custom/BlockTable.css')}}">

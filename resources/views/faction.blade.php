@@ -8,6 +8,7 @@
 @endsection
 
 @section('content')
+    <x-item name="Coat"/>
     <div class="d-flex main">
         <div class="main-left w-50">
             <div class="fs-1">Factions</div>

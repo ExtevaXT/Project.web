@@ -2,7 +2,7 @@
 
 
 
-@section('title', 'Guides page')
+@section('title', 'Guides')
 @section('style')
     <link rel="stylesheet" href="{{ asset('css/guides.css')}}">
 @endsection

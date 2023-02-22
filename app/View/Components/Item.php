@@ -23,7 +23,7 @@ class Item extends Component
         $this->name = $name;
         $this->amount = $amount;
         $this->metadata = $metadata;
-        $this->icon = Resource::icons()[$name];
+        $this->icon = Resource::icon($name);
         $this->size = $size;
     }
 

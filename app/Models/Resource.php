@@ -27,15 +27,15 @@ class Resource extends Model
         return $data;
     }
 
-    public static function icons()
+    public static function icon($name)
     {
-        $item_icons = [];
-        foreach (Storage::disk('public_real')->directories('img/icon') as $category){
-            foreach (Storage::disk('public_real')->files($category) as $icon){
-                $item_icons[basename($icon, '.png')] = $icon;
+        $it = new RecursiveDirectoryIterator(public_path("/assets/Icons"));
+        foreach(new RecursiveIteratorIterator($it) as $file) {
+            if ($file->getExtension() == 'png' and $file->getBasename('.png') == $name) {
+                return explode('public',$file->getPathName())[1];
             }
         }
-        return $item_icons;
+        return abort(404);
     }
     public static function attachments($metadata)
     {
