@@ -8,7 +8,6 @@
 @endsection
 
 @section('content')
-    <x-item name="Coat"/>
     <div class="d-flex main">
         <div class="main-left w-50">
             <div class="fs-1">Factions</div>
@@ -60,7 +59,9 @@
             <div class="d-flex justify-content-center">
                 <div class="d-flex flex-wrap flex justify-content-center" style="width: 400px">
                     @foreach($rewards as $reward)
-                        <x-item class="p-2 m-1 bg-glass" name="{{$reward['name']}}" amount="{{$reward['amount']}}"/>
+                        <div >
+                            <x-item class="p-2 m-1 input-glass" name="{{$reward['name']}}" amount="{{$reward['amount']}}"/>
+                        </div>
                     @endforeach
                 </div>
             </div>

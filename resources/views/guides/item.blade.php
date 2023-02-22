@@ -32,7 +32,7 @@
                         </div>
                         <div class="BlockTable-row">
                             <div class="BlockTable-data">Weight</div>
-                            <div class="BlockTable-data">{{$item['weight']}} kg</div>
+                            <div class="BlockTable-data">{{$item['weight'] ?? 0}} kg</div>
                         </div>
                         @if(preg_match('[Armor|Artefact|Container]', $item['pathCategory']))
                             @foreach($item as $argument => $value)

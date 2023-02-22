@@ -179,8 +179,6 @@ class UserController extends Controller
 
     public function profile($name)
     {
-        //IMAGES ROUTES FOR ALL
-        $item_icons = Resource::icons();
         $account = Account::all()->where('name', $name)->first();
         if($account==null) return abort(404);
         $character = $account->character();
@@ -237,7 +235,6 @@ class UserController extends Controller
             'character' => $character,
             'inventory'=> $items,
             'achievement_data' => $achievement_data,
-            'icons' => $item_icons,
             'talent_data' => $talent_data,
 
             //FRIEND HELPERS

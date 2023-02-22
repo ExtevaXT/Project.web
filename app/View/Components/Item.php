@@ -13,7 +13,6 @@ class Item extends Component
      * @return void
      */
     public $name;
-    public $icon;
     public $amount;
     public $metadata;
 
@@ -23,7 +22,6 @@ class Item extends Component
         $this->name = $name;
         $this->amount = $amount;
         $this->metadata = $metadata;
-        $this->icon = Resource::icon($name);
         $this->size = $size;
     }
 

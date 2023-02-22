@@ -87,13 +87,11 @@ class Controller extends BaseController
 
     public function faction()
     {
-        $rewards = [];
-        for ($i = 0;$i>=18; $i++)
-            $rewards+= [
-                'name'=> Resource::data('Items')->random()['m_Name'],
-                'amount'=> rand(1,5),
-                'metadata'=> '00000',
-            ];
+        $rewards = Resource::data('Items')->random(18)->map(fn($item) => [
+            'name'  => $item['m_Name'],
+            'amount' =>  rand(1, $item['maxStack'] ?? 1),
+            'metadata' =>'00000'
+        ]);
         return view('faction', compact('rewards'));
     }
 

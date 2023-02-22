@@ -33,6 +33,9 @@ Route::get('/guides', function () {
 Route::get('/guides/{category}', [GuideController::class, 'category']);
 Route::get('/guides/{category}/{item_name}', [GuideController::class, 'item']);
 Route::get('/item/{item}', [GuideController::class, 'find']);
+Route::get('/icon/{item}', function ($item){
+    return redirect(\App\Models\Resource::icon($item));
+});
 
 Route::get('/map', function () {
     return view('map');
