@@ -3,6 +3,17 @@
     --glass-solid: #d5d5d5;
     --dark: rgb(26,32,44);
 }
+
+.bg{
+    position: fixed; height: 100%; width: 100%;
+    display: block;
+    filter: blur(15px);
+    transform: scale(1.1);
+    z-index: -1;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
 body, .modal-content, .dropdown-menu, option{
     color: white;
     background: var(--dark);

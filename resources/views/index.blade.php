@@ -8,12 +8,11 @@
 @endsection
 
 @section('content')
-
     @guest()
     <div class="text-center py-5 mt-5">
         <div class="fs-3">Project.web - Web interface for Project.unity</div>
         <div class="text-secondary fs-5">Last update
-            {{Carbon::parse(max($unity[0]['commit']['author']['date'], $web[0]['commit']['author']['date']))->tz('Asia/Yekaterinburg')->format('d M Y | H:i')}}
+            {{Resource::date(max($unity[0]['commit']['author']['date'], $web[0]['commit']['author']['date']))}}
         </div>
         <button class="input-glass py-2 px-4 d-inline-block fs-5 mt-3" onclick="window.location.href='{{route('register')}}'">Register account</button>
         <br>
@@ -30,11 +29,11 @@
         <div class="main-left d-flex flex-column @auth() w-50 @endauth ">
             @auth()
                 @if(Auth::user()->setting('indexAnnouncements'))
-            <div class="input-glass m-2 p-5">
-                <div>Some Announcement</div>
-                <div>Announcement description</div>
-                <div>Time of announcement</div>
-            </div>
+            <a class="input-glass m-2 p-5 text-link d-block" href="{{$announcement['content']}}">
+                <h5 >{{$announcement['embeds'][0]['title'] }}</h5>
+                <div>{{$announcement['content'] }}</div>
+                <div>{{ Resource::date($announcement['timestamp'])  }}</div>
+            </a>
                 @endif
             <div class="d-flex m-2 profile-panel">
                 <div class="d-grid text-center profile-panel-nav">
@@ -71,7 +70,7 @@
                         @if(Auth::user()->character())
                         <div class="bg-glass p-3 mb-3 daily-panel">
                             <h5 class="text-center">Daily Reward</h5>
-                            @if(Carbon::parse(Auth::user()->setting('daily')) < Carbon::now()->subDay() or !Auth::user()->setting('daily'))
+                            @if($claimed = (Carbon::parse(Auth::user()->setting('daily')) < Carbon::now()->subDay() or !Auth::user()->setting('daily')))
                                 <form action="{{route('daily')}}" method="POST">
                                     @csrf
                                     <button class="input-glass py-2 my-2 w-100" type="submit">Claim</button>
@@ -126,21 +125,24 @@
 {{--                <div>Player: Some rupor</div>--}}
 {{--            </div>--}}
             <div class="m-2 d-flex flex-row prime-panel2">
-                <div class="input-glass me-2 w-25 prime-panel d-flex align-items-end pc-panel">
+                <div class="bg-glass me-2 w-25 prime-panel d-flex align-items-end pc-panel">
                     <div class="p-3">
-                        <h5>Prime panel</h5>
-                        <div>Some art idk</div>
+                        <h5>Version Control</h5>
+                        <div>AV0.1.1</div>
                     </div>
 
                 </div>
                 <div class="w-100">
                     @if(Auth::user()->character()!=null)
-                    <div class="input-glass h-50 prime-panel-parent d-flex align-items-end">
+                    <a class="input-glass h-50 prime-panel-parent d-flex align-items-end text-link d-block"
+                       style="background:linear-gradient( rgba(177, 177, 177, 0.07), rgba(177, 177, 177, 0.07) ),
+                           url('{{asset('img/icon/factions/'. strtolower(Account::auth()->character()->faction)).'.svg'}}') 50% / 250px no-repeat"
+                    href="/faction">
                         <div class="p-3">
-                            <h3>Faction </h3>
+                            <h3>Faction</h3>
                             <div><span class="text-uppercase">{{Account::auth()->character()->faction}}</span></div>
                         </div>
-                    </div>
+                    </a>
                     @else
                         <div class="input-glass h-50 prime-panel-parent d-flex align-items-end">
                             <div class="p-3">
@@ -150,18 +152,16 @@
                         </div>
                     @endif
                     <div class="d-flex flex-row prime-other-panels h-50 prime-panel-parent">
-                        <div class="input-glass mt-2 w-50 prime-other-panel d-flex align-items-end">
+                        <a class="input-glass mt-2 w-50 prime-other-panel d-flex align-items-end text-link d-block" href="https://discord.gg/JMhd6VtVv5">
                             <div class="p-3">
-                                <div>Discord</div>
-                                <div>https://discord.gg/JMhd6VtVv5</div>
+                                <h3>Discord</h3>
                             </div>
-                        </div>
-                        <div class="input-glass mt-2 ms-2 w-50 prime-other-panel d-flex align-items-end">
+                        </a>
+                        <a class="input-glass mt-2 ms-2 w-50 prime-other-panel d-flex align-items-end text-link d-block" href="https://github.com/ExtevaXT">
                             <div class="p-3">
-                                <div>Github</div>
-                                <div>https://github.com/ExtevaXT</div>
+                                <h3>Github</h3>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -174,7 +174,7 @@
                         @foreach($web as $commit)
                             <a href="{{$commit['html_url']}}" class="d-block text-link">
                                 <div class="input-glass change-item p-4 my-2" onclick="window.location.href='{{$commit['html_url']}}'">
-                                    <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg')->format('d M Y | H:i') }}</span> {{ $commit['commit']['author']['name']}}</div>
+                                    <div><span>{{ Resource::date($commit['commit']['author']['date']) }}</span> {{ $commit['commit']['author']['name']}}</div>
                                     <div>{{ $commit['commit']['message']}}</div>
                                 </div>
                             </a>
@@ -189,7 +189,7 @@
                         @foreach($unity as $commit)
                         <div class="input-glass change-item p-4 my-2">
                             <a href="{{$commit['html_url']}}" class="d-block text-link">
-                                <div><span>{{ Carbon::parse($commit['commit']['author']['date'])->tz('Asia/Yekaterinburg')->format('d M Y | H:i') }}</span> {{ $commit['commit']['author']['name']}}</div>
+                                <div><span>{{ Resource::date($commit['commit']['author']['date']) }}</span> {{ $commit['commit']['author']['name']}}</div>
                                 <div>{{ $commit['commit']['message']}}</div>
                             </a>
                         </div>

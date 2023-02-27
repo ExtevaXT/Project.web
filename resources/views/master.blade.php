@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <link rel="stylesheet" href="{{ asset('css/Custom/MaterialDesignIcons.min.css')}}">
     <link rel="stylesheet" id="switcher-id" href="">
-    @if(Auth::check() and  Account::auth()->setting('styleTheme') and
+    @if(Auth::check() and $theme = Account::auth()->setting('styleTheme') and
 (Account::auth()->setting('styleThemeShow') == 1 or Account::auth()->setting('styleThemeShow') == 2))
-        <link rel="stylesheet" href="{{asset('js/JS-Theme-Switcher-master/themes/'.Account::auth()->setting('styleTheme').'.css')}}">
+        <link rel="stylesheet" href="{{asset('css/themes/'.($theme != null ? $theme : 'default').'.css')}}">
     @endif
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.11.2/ace.js"></script>
     <script src="{{asset('js/jdenticon/jdenticon-3.2.0.js')}}" defer></script>
@@ -276,7 +276,7 @@
     let style = localStorage.getItem('style');
 
     if (style == null) {
-        setTheme('dark');
+        setTheme('default');
     } else {
         setTheme(style);
     }
@@ -289,14 +289,14 @@
     }
 
     function setTheme(theme) {
-        if (theme == 'light') {
-            document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/light.css')}}';
+        if (theme == 'default') {
+            document.getElementById('switcher-id').href = '{{asset('css/themes/default.css')}}';
             if(typeof editor !=='undefined') editor.setTheme("ace/theme/crimson_editor");
         } else if (theme == 'wireframe') {
-            document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/wireframe.css')}}';
+            document.getElementById('switcher-id').href = '{{asset('css/themes/wireframe.css')}}';
             if(typeof editor !=='undefined') editor.setTheme("ace/theme/crimson_editor");
         } else if (theme == 'dark') {
-            document.getElementById('switcher-id').href = '{{asset('js/JS-Theme-Switcher-master/themes/dark.css')}}';
+            document.getElementById('switcher-id').href = '{{asset('css/themes/dark.css')}}';
             if(typeof editor !=='undefined') editor.setTheme("ace/theme/tomorrow_night");
         }
             localStorage.setItem('style', theme);

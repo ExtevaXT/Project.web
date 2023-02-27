@@ -7,15 +7,7 @@
 }
 .bg{
     background: linear-gradient( rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7) ), url('/img/bg/consultant.gif') no-repeat;
-    position: fixed; height: 100%; width: 100%;
-    display: block;
-    filter: blur(15px);
-    transform: scale(1.1);
     background-size: cover;
-    z-index: -1;
-    left: 0;
-    right: 0;
-    overflow: hidden;
 }
 .dropdown-menu, .modal-content{
     background: #1b1b1b !important;

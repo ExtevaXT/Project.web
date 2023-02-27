@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Storage;
@@ -73,4 +74,8 @@ class Resource extends Model
         return $bonus;
     }
 
+    public static function date($date)
+    {
+        return Carbon::parse($date)->tz('Asia/Yekaterinburg')->format('d M Y | H:i');
+    }
 }
