@@ -146,7 +146,7 @@
                     @else
                         <div class="input-glass h-50 prime-panel-parent d-flex align-items-end">
                             <div class="p-3">
-                                <div>Factions</div>
+                                <h3>Faction</h3>
                                 <div>You can join faction in game</div>
                             </div>
                         </div>

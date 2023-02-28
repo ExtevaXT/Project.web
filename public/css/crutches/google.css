@@ -1,0 +1,15 @@
+.goog-te-banner-frame{
+    display: none;
+}
+
+#goog-gt-tt {
+    display: none !important;
+}
+#goog-gt-tt:hover {
+    display: none !important;
+}
+.goog-text-highlight {
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: none !important;
+}

@@ -19,90 +19,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ace/1.11.2/ace.js"></script>
     <script src="{{asset('js/jdenticon/jdenticon-3.2.0.js')}}" defer></script>
     @if(Auth::user()?->character()?->talent('Mapper'))<style>body{filter: blur(2px)}</style>@endif
-    <style>
-        .goog-te-banner-frame{
-            display: none;
-        }
-
-        #goog-gt-tt {
-            display: none !important;
-        }
-        #goog-gt-tt:hover {
-            display: none !important;
-        }
-        .goog-text-highlight {
-            background-color: transparent !important;
-            border: none !important;
-            box-shadow: none !important;
-        }
-    </style>
-    <style>
-        .dropdown:hover .dropdown-menu {
-            display: block;
-        }
-        .mdi::before {
-            font-size: 24px;
-            line-height: 14px;
-        }
-        .btn .mdi::before {
-            position: relative;
-            top: 4px;
-        }
-        .btn-xs .mdi::before {
-            font-size: 18px;
-            top: 3px;
-        }
-        .btn-sm .mdi::before {
-            font-size: 18px;
-            top: 3px;
-        }
-        .dropdown-menu .mdi {
-            width: 18px;
-        }
-        .dropdown-menu .mdi::before {
-            position: relative;
-            top: 4px;
-            left: -8px;
-        }
-        .nav .mdi::before {
-            position: relative;
-            top: 4px;
-        }
-        .navbar .navbar-toggle .mdi::before {
-            position: relative;
-            top: 4px;
-            color: #FFF;
-        }
-        .breadcrumb .mdi::before {
-            position: relative;
-            top: 4px;
-        }
-        .breadcrumb a:hover {
-            text-decoration: none;
-        }
-        .breadcrumb a:hover span {
-            text-decoration: underline;
-        }
-        .alert .mdi::before {
-            position: relative;
-            top: 4px;
-            margin-right: 2px;
-        }
-        .input-group-addon .mdi::before {
-            position: relative;
-            top: 3px;
-        }
-        .navbar-brand .mdi::before {
-            position: relative;
-            top: 2px;
-            margin-right: 2px;
-        }
-        .list-group-item .mdi::before {
-            position: relative;
-            top: 3px;
-            left: -3px
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset('css/crutches/google.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/crutches/mdi.css')}}">
     @yield('style')
 {{--    @livewireStyles--}}
 </head>
@@ -152,6 +70,7 @@
                         </ul>
                     </div>
                     @auth()
+                        <div class="me-2 mt-2"><i class="switcher mdi mdi-36px mdi-forest"></i></div>
                         <ul class="navbar-nav me-5" style="height: 40px; margin-top: -10px">
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle p-0 nav-user" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -261,6 +180,58 @@
 @endauth
 <script src="{{asset('js/jquery.js')}}"></script>
 <script src="{{asset('js/bootstrap.bundle.js')}}"></script>
+<script>
+    if(document.querySelector('#editor'))
+        var editor = ace.edit("editor");
+    let switches = document.getElementsByClassName('switch');
+    let style = localStorage.getItem('style');
+    let switcher = document.querySelector('.switcher')
+
+    if (style == null || style === 'default') {
+        setTheme('default');
+        switcher.classList.add('opacity-50')
+    } else {
+        setTheme(style);
+        switcher.classList.add('opacity-25')
+    }
+
+    // for (let i of switches) {
+    //     i.addEventListener('click', function () {
+    //         let theme = this.dataset.theme;
+    //         setTheme(theme);
+    //     });
+    // }
+
+    switcher.onclick = function (){
+        if(localStorage.getItem('style') !== 'default'){
+            setTheme('default')
+            switcher.classList.remove('opacity-25')
+            switcher.classList.add('opacity-50')
+        }
+        else {
+            setTheme('dark')
+            switcher.classList.remove('opacity-50')
+            switcher.classList.add('opacity-25')
+        }
+
+    }
+
+
+    function setTheme(theme) {
+        if (theme == 'default') {
+            document.getElementById('switcher-id').href = '/css/themes/default.css';
+            if(typeof editor !=='undefined') editor.setTheme("ace/theme/crimson_editor");
+        } else if (theme == 'wireframe') {
+            document.getElementById('switcher-id').href = '/css/themes/wireframe.css';
+            if(typeof editor !=='undefined') editor.setTheme("ace/theme/crimson_editor");
+        } else if (theme == 'dark') {
+            document.getElementById('switcher-id').href = '/css/themes/dark.css';
+            if(typeof editor !=='undefined') editor.setTheme("ace/theme/tomorrow_night");
+        }
+        localStorage.setItem('style', theme);
+    }
+
+</script>
 
 <script>
     if(window.matchMedia( "(max-width: 1000px)" ).matches) {
@@ -270,45 +241,11 @@
     }
 </script>
 <script>
-    if(document.querySelector('#editor'))
-        var editor = ace.edit("editor");
-    let switches = document.getElementsByClassName('switch');
-    let style = localStorage.getItem('style');
-
-    if (style == null) {
-        setTheme('default');
-    } else {
-        setTheme(style);
-    }
-
-    for (let i of switches) {
-        i.addEventListener('click', function () {
-            let theme = this.dataset.theme;
-            setTheme(theme);
-        });
-    }
-
-    function setTheme(theme) {
-        if (theme == 'default') {
-            document.getElementById('switcher-id').href = '{{asset('css/themes/default.css')}}';
-            if(typeof editor !=='undefined') editor.setTheme("ace/theme/crimson_editor");
-        } else if (theme == 'wireframe') {
-            document.getElementById('switcher-id').href = '{{asset('css/themes/wireframe.css')}}';
-            if(typeof editor !=='undefined') editor.setTheme("ace/theme/crimson_editor");
-        } else if (theme == 'dark') {
-            document.getElementById('switcher-id').href = '{{asset('css/themes/dark.css')}}';
-            if(typeof editor !=='undefined') editor.setTheme("ace/theme/tomorrow_night");
-        }
-            localStorage.setItem('style', theme);
-    }
-
     $('.hideAfterRendering').each( function () {
         let el = document.querySelector('.modal-svg');
         jdenticon.update(el, el.getAttribute('data-jdenticon-value'))
         $(this).removeClass('show');
     });
-
-
 </script>
 <script>
     function googleTranslateElementInit() {

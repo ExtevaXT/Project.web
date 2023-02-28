@@ -266,17 +266,6 @@
         </div>
 
         <script>
-            // var editorContainer = document.querySelector('.code');
-            // editor = CodeMirror(editorContainer, {
-            //     lineNumbers: true,
-            //     mode: 'css',
-            //     value: ''
-            // });
-            // editor.refresh();
-            // $('.hideAfterRendering').each( function () {
-            //     $(this).removeClass('active');
-            //     editor.refresh();
-            // });
             function colorPreview(){
                 document.querySelector('.colorPreview').style.color = document.querySelector('#profileColor').value
             }
@@ -301,26 +290,8 @@
             //THIS FUCKING SHIT WORKS
             const anchor = window.location.hash;
             console.log(anchor)
+            if(anchor)
             new bootstrap.Tab($(`a[href="${anchor}"]`)).show()
-            // $(function($){
-            //     var storage = document.cookie.match(/nav-tabs=(.+?);/);
-            //
-            //     // This crutch somehow works
-            //     if (storage && storage[1] !== "#") {
-            //         document.querySelector('a[href="#security"]').classList.remove('active')
-            //         document.querySelector('#security').classList.remove('show')
-            //         document.querySelector('#security').classList.remove('active')
-            //
-            //         document.querySelector(`a[href="${storage[1]}"]`).classList.add('active')
-            //         document.querySelector(`${storage[1]}`).classList.add('show')
-            //         document.querySelector(`${storage[1]}`).classList.add('active')
-            //     }
-            //
-            //     $('ul.nav li').on('click', function() {
-            //         var id = $(this).find('a').attr('href');
-            //         document.cookie = 'nav-tabs=' + id;
-            //     });
-            // });
 
         </script>
 

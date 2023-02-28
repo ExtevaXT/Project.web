@@ -39,6 +39,23 @@ use Symfony\Component\Yaml\Yaml;
 
 class UserController extends Controller
 {
+    public function test()
+    {
+        for ($i = 0; $i<72;$i++) {
+            $item = Resource::data('items/artefacts')->random();
+            DB::table('character_personal_storage')->insert([
+                'character' => Auth::user()->character()->name,
+                'slot' => $i,
+                'name' => $item['m_Name'],
+                'amount' => rand(1, $item['maxStack']),
+                'durability' => rand(1, $item['maxDurability']),
+                'ammo' => 0,
+                'metadata' => '00000',
+            ]);
+        }
+        dd(Auth::user()->character()->cps());
+    }
+
     public function daily()
     {
         $min = 500;
@@ -94,87 +111,13 @@ class UserController extends Controller
         $quests_active = array_filter($asts, fn($ast) => str_contains($ast, 'State="active"'));
         $vars = explode(', ',trim($asts[0], 'Variable={}'));
         $vars = array_filter($vars, fn($var) => str_contains($var, 'true'));
-        return view('users.quests', compact('quests', 'quests_active', 'quests_success','vars'));
-    }
-    public function talentUnlock(Request $request)
-    {
-        if(!(Auth::user()?->character()?->level < Resource::data('talents')?->firstWhere('m_Name', $request->name))) return back();
-        CharacterTalents::create([
-            'character' => Auth::user()->character()->name,
-            'name' => $request->name,
-            'enabled' => false,
-        ]);
-        return back()->with(['talentUnlock'=>true]);
-    }
-    public function talentToggle(Request $request)
-    {
-        $talent = CharacterTalents::get(Auth::user()->character()->name, $request->name);
-
-        DB::table('character_talents')->where('character',$talent->character)->where('name',$talent->name)->update(['enabled'=>!$talent->enabled]);
-        return back()->with(['talentToggle'=>true]);
-    }
-    public function delete()
-    {
-        //Talent 'Eraser'
-        $characters = Auth::user()->characters();
-        //cascade for weaklings
-        foreach ($characters as $character)
-            foreach (Character::tables() as $table)
-                DB::delete("DELETE FROM $table WHERE character = ".$character->name);
-        DB::delete('DELETE FROM notifications WHERE account = '.Auth::user()->name);
-        DB::delete('DELETE FROM characters WHERE account = '.Auth::user()->name);
-        Auth::user()->delete();
-    }
-    public function changeFaction()
-    {
-        //Talent 'Renegate'
-        $character = Auth::user()->character();
-        DB::table('characters')->where('name',$character->name)
-            ->update(['faction'=> $character->faction == 'Stalker' ? 'Bandit' : 'Stalker']);
-    }
-    public function transferCharacter(Request $request)
-    {
-        //Talent 'Soul Trader'
-        DB::table('characters')->where('name',Auth::user()->character()->name)
-            ->update(['account'=>$request->validate(['account'=>'required'])['account']]);
-    }
-    public function prefix(Request $request)
-    {
-        //Talent 'Megalomania'
-        Account::auth()->settings($request->validate(['prefix'=>'required']));
-        return back()->with(['success'=>true]);
-    }
-    public function changeName(Request $request)
-    {
-        //Talent 'Many Faces'
-        $name = $request->validate(['name'=>'required'])['name'];
-        $character = Auth::user()->character();
-        foreach (Character::tables() as $table)
-            DB::table($table)->where('name',$character->name)->update(['character'=>$name]);
-        DB::table('characters')->where('name',$character->name)->update(['name'=>$name]);
-    }
-
-    public function test()
-    {
-        for ($i = 0; $i<72;$i++) {
-            $item = Resource::data('items/artefacts')->random();
-            DB::table('character_personal_storage')->insert([
-                'character' => Auth::user()->character()->name,
-                'slot' => $i,
-                'name' => $item['m_Name'],
-                'amount' => rand(1, $item['maxStack']),
-                'durability' => rand(1, $item['maxDurability']),
-                'ammo' => 0,
-                'metadata' => '00000',
-            ]);
-        }
-        dd(Auth::user()->character()->cps());
+        return view('user.quests', compact('quests', 'quests_active', 'quests_success','vars'));
     }
 
     public function notifications()
     {
         $notifications = Auth::user()->notifications();
-        return view('users.notifications', compact('notifications'));
+        return view('user.notifications', compact('notifications'));
     }
 
     public function profile($name)
@@ -230,7 +173,7 @@ class UserController extends Controller
 
 
 
-        return view('users.profile', [
+        return view('user.profile', [
             'account' => $account,
             'character' => $character,
             'inventory'=> $items,
@@ -245,134 +188,6 @@ class UserController extends Controller
 
         ]);
     }
-    public function upload(Request $request)
-    {
-        $user = Account::auth();
-        if($request['image']){
-//            $filename = $request['image']->getClientOriginalName();
-//            $request->image->storeAs('images',$filename,'public');
-//            Auth()->user()->update(['image'=>$filename]);
-            //$request->file('image')->store('img/user' ,['disk' => 'public_real'])
-            $user->image = Storage::disk('public_real')->put('img/user', $request->file('image'));
-            $user->save();
-        }
-        else{
-            $user->image = 'user.png';
-            $user->save();
-        }
 
-        return back()->with(['upload'=> true]);
-    }
-
-    //SETTINGS
-    public function settings(SettingsValidation $request)
-    {
-        //return $request->validated();
-        Account::auth()->settings($request->validated());
-        return back()->with(['success'=>true]);
-    }
-    public function email(EmailValidation $request)
-    {
-        $validation = $request->validated();
-        if (Hash::check($validation['password'],Auth::user()->password) and $validation['email'] == Auth::user()->email)
-        {
-            Account::auth()->update(['email' => $validation['emailNew']]);
-            return back()->with(['success'=>true]);
-        }
-        return back()->withErrors(['message'=>'Email or password are incorrect']);
-    }
-    public function password(PasswordValidation $request)
-    {
-        $validation = $request->validated();
-        if (Hash::check($validation['passwordOld'],Auth::user()->password))
-        {
-            Account::auth()->update(['password' => Hash::make($validation['password'])]);
-            return back()->with(['success'=>true]);
-        }
-        return back()->withErrors(['message'=>'Password is incorrect']);
-    }
-
-    public function login(AuthValidation $authValidation)
-    {
-
-//        $user = DB::table('accounts')
-//            ->where('password', strtoupper(hash_pbkdf2('sha1', $authValidation['password'], 'at_least_16_byte_with_login'.$authValidation['name'], 10000, 40)))
-//            ->where('name',$authValidation['name'])
-//            ->first();
-        if(Auth::attempt($authValidation->validated())){
-            $authValidation->session()->regenerate();
-            return back();
-        }
-        return redirect()->route('login')->withErrors(['message'=>'Login or password are incorrect']);
-    }
-    public function register(RegisterValidation $registerValidation)
-    {
-        $validation = $registerValidation->validated();
-//        $validation['password'] = strtoupper(hash_pbkdf2('sha1', $validation['password'], 'at_least_16_byte_with_login', 10000, 40));
-        $validation['password'] = Hash::make($validation['password']);
-        $notification = [
-            'account' => $validation['name'],
-            'title'=>'Welcome',
-            'value'=>'You registered account',
-        ];
-        $validation['image'] ='https://www.gravatar.com/avatar/'. md5($validation['name']).'?d=identicon';
-        AccountNotification::create($notification);
-        Account::create($validation);
-        Notification::route('discord', '1021763702741008435')
-            ->notify(new DiscordBotMessage('User '.$validation['name'].' has been registered'));
-        return redirect('/login')->with(['success'=> true]);
-    }
-    public function logout(Request $request)
-    {
-        Auth::logout();
-        $request->session()->regenerate();
-        return redirect('/');
-    }
-
-    public function forgot(Request $request)
-    {
-        $request->validate([
-            'email' => 'required|email',
-            'g-recaptcha-response' => 'recaptcha',
-        ]);
-        $token = Str::random(60);
-        if(DB::table('password_resets')->where('email', $request['email'])!=null)
-            DB::table('password_resets')->where('email', $request['email'])->delete();
-        DB::table('password_resets')->insert([
-            'email' => $request['email'],
-            'token' => $token,
-            'created_at' => Carbon::now()
-        ]);
-        Mail::raw('https://external.su/reset?token='.$token, function($message) use ($request) {
-            $message->to($request['email'])->subject('Password reset');
-        });
-        return back()->with(['success' => true]);
-    }
-    public function reset(Request $request)
-    {
-        //Validate input
-        $request->validate([
-            'password' => 'required|confirmed',
-            'token' => 'required'
-        ]);
-        $tokenData = DB::table('password_resets')->where('token', $request['token'])->first();
-        // Redirect the user back to the password reset request form if the token is invalid
-        if (!$tokenData) return back();
-        // If 10 minutes passed not available
-        if(Carbon::parse($tokenData->created_at)->addMinutes(10) < Carbon::now()) return redirect()->route('forgot')->withErrors(['timeout'=>'Reset link is not available, try again']);
-        $user = Account::all()->where('email', $tokenData->email)->first();
-        // Redirect the user back if the email is invalid
-        if (!$user) return back()->withErrors(['email' => 'Email not found']);
-        //Hash and update the new password
-        $user->password = Hash::make($request['password']);
-        $user->save();
-        //Delete the token
-        DB::table('password_resets')->where('token', $request['token'])->delete();
-        Mail::raw('Password has been reset', function($message) use ($user) {
-            $message->to($user->email)->subject('Password reset');
-        });
-        return redirect('/login')->with(['reset'=>true]);
-
-    }
 
 }

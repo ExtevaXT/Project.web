@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\AccountController;
 use App\Http\Controllers\Controller;
 use App\Http\Controllers\FriendController;
 use App\Http\Controllers\GuideController;
+use App\Http\Controllers\TalentController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LotController;
 use Carbon\Carbon;
@@ -65,43 +67,44 @@ Route::middleware('auth')->group(function() {
     Route::get('/quests', [UserController::class, 'quests']);
     //Route::get('/ipa/notifications', fn(Request $request) => Auth::user()->notifications()->toJson());
     Route::get('/notifications', [UserController::class, 'notifications']);
-    Route::get('/settings', fn() => view('users.settings'))->name('settings');
-    Route::post('/settings', [UserController::class, 'settings']);
-    Route::post('/upload', [UserController::class, 'upload'])->name('upload');
+    Route::get('/settings', fn() => view('user.settings'))->name('settings');
+    Route::post('/settings', [AccountController::class, 'settings']);
+    Route::post('/upload', [AccountController::class, 'upload'])->name('upload');
     Route::name('talent.')->prefix('talent')->group(function () {
-        Route::post('/unlock', [UserController::class, 'talentUnlock'])->name('unlock');
-        Route::post('/toggle', [UserController::class, 'talentToggle'])->name('toggle');
+        Route::post('/unlock', [TalentController::class, 'talentUnlock'])->name('unlock');
+        Route::post('/toggle', [TalentController::class, 'talentToggle'])->name('toggle');
 
-        Route::post('/delete', [UserController::class, 'delete'])->name('delete');
-        Route::post('/changeFaction', [UserController::class, 'changeFaction'])->name('changeFaction');
-        Route::post('/transferCharacter', [UserController::class, 'transferCharacter'])->name('transferCharacter');
-        Route::post('/prefix', [UserController::class, 'prefix'])->name('prefix');
-        Route::post('/changeName', [UserController::class, 'changeName'])->name('changeName');
+        Route::post('/delete', [TalentController::class, 'delete'])->name('delete');
+        Route::post('/changeFaction', [TalentController::class, 'changeFaction'])->name('changeFaction');
+        Route::post('/transferCharacter', [TalentController::class, 'transferCharacter'])->name('transferCharacter');
+        Route::post('/prefix', [TalentController::class, 'prefix'])->name('prefix');
+        Route::post('/changeName', [TalentController::class, 'changeName'])->name('changeName');
 
     });
     Route::name('friend.')->prefix('friend')->group(function () {
         Route::post('/add', [FriendController::class, 'add'])->name('add');
         Route::post('/accept', [FriendController::class, 'accept'])->name('accept');
     });
-    Route::post('/password', [UserController::class, 'password'])->name('password');
-    Route::post('/email', [UserController::class, 'email'])->name('email');
-    Route::get('/logout', [UserController::class, 'logout'])->name('logout');
+    Route::post('/password', [AccountController::class, 'password'])->name('password');
+    Route::post('/email', [AccountController::class, 'email'])->name('email');
+    Route::get('/logout', [AccountController::class, 'logout'])->name('logout');
     Route::get('/profile', fn() => redirect('/user/'.Auth::user()->name))->name('profile');
 });
 Route::get('/user/{name}', [UserController::class, 'profile']);
 Route::get('/test', [UserController::class, 'test']);
 
 Route::middleware('guest')->group(function() {
-    Route::get('/login', fn() => view('users.login'))->name('login');
-    Route::post('/login', [UserController::class, 'login']);
+    Route::get('/login', fn() => view('user.account.login'))->name('login');
+    Route::post('/login', [AccountController::class, 'login']);
 
-    Route::get('/register', fn() => view('users.register'))->name('register');
-    Route::post('/register', [UserController::class, 'register']);
+    Route::get('/register', fn() => view('user.account.register'))->name('register');
+    Route::post('/register', [AccountController::class, 'register']);
+    Route::get('/verify/{token}', [AccountController::class, 'verify']);
 
-    Route::get('/forgot', fn() => view('users.password.forgot'))->name('forgot');
-    Route::post('/forgot', [UserController::class, 'forgot']);
+    Route::get('/forgot', fn() => view('user.password.forgot'))->name('forgot');
+    Route::post('/forgot', [AccountController::class, 'forgot']);
 
-    Route::get('/reset', fn(Request $request) => view('users.password.reset', ['token'=>$request['token']]))->name('reset');
-    Route::post('/reset', [UserController::class, 'reset']);
+    Route::get('/reset', fn(Request $request) => view('user.password.reset', ['token'=>$request['token']]))->name('reset');
+    Route::post('/reset', [AccountController::class, 'reset']);
 });
 
