@@ -12,10 +12,13 @@
         <div class="alert alert-success">Password has been reset</div>
     @endif
     @if(session()->has('verify'))
-        <div class="alert alert-success my-3">Verification link was sent to <a href="{{explode('@', session()->get('verify'))[1]}}">your email</a></div>
+        <div class="alert alert-success my-3">Verification link was sent to <a href="https://{{explode('@', session()->get('verify'))[1]}}">your email</a></div>
     @endif
     @if(session()->has('success'))
         <div class="alert alert-success my-3">Registered successfully</div>
+    @endif
+    @if ($errors->any())
+        <div class="alert alert-danger my-3">{{$errors->first()}}</div>
     @endif
     <div class="register-panel bg-glass ">
         <div class="fs-3 mb-4">Authorization</div>

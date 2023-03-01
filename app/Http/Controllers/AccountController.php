@@ -98,7 +98,7 @@ class AccountController extends Controller
     {
         $data = DB::table('accounts_verify')->where('token', $token)->first();
         // Redirect the user back to the form if the token is invalid
-        if (!$data) return back();
+        if (!$data) return redirect()->route('login')->withErrors(['message'=>'Link is not available']);
         // If 10 minutes passed not available
         if(Carbon::parse($data->created_at)->addMinutes(10) < Carbon::now()) return redirect()->route('register')->withErrors(['timeout'=>'Verification link is not available, try again']);
         $user = [
@@ -119,8 +119,8 @@ class AccountController extends Controller
 
         //Delete the token
         DB::table('accounts_verify')->where('token', $token)->delete();
-        Mail::raw('Account has been registered', function($message) use ($user) {
-            $message->to($user->email)->subject('Account registration');
+        Mail::raw('Account has been registered', function($message) use ($data) {
+            $message->to($data->email)->subject('Account registration');
         });
         if(Auth::attempt(['name'=>$data->name, 'password' =>$data->password])){
             $request->session()->regenerate();
