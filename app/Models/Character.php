@@ -54,6 +54,13 @@ class Character extends Model
     {
         return CharacterAchievement::all()->where('character', $this->name);
     }
+
+    public function achievement($name)
+    {
+        if($this->achievements()->firstWhere('name', $name))
+            return Resource::data('Achievements')->firstWhere('m_Name', $name);
+        return false;
+    }
     public function trophies()
     {
         $trophies = $this->achievements()->sum('reward');

@@ -29,11 +29,25 @@
         <div class="main-left d-flex flex-column @auth() w-50 @endauth ">
             @auth()
                 @if(Auth::user()->setting('indexAnnouncements'))
-            <a class="input-glass m-2 p-5 text-link d-block" href="{{$announcement['content']}}">
-                <h5 >{{$announcement['embeds'][0]['title'] }}</h5>
-                <div>{{$announcement['content'] }}</div>
-                <div>{{ Resource::date($announcement['timestamp'])  }}</div>
-            </a>
+            <div class="bg-glass m-2 p-4">
+                <div class="m-1">
+                    <h5 >{{$announcement['embeds'][0]['title'] }}</h5>
+                    <div>
+                        @if(str_contains($announcement['content'], 'http'))
+                            <a href="{{$announcement['content']}}" class="text-link">
+                                <!-- fucking html -->
+                                <div class="d-flex gap-1">
+                                    <div>{{$announcement['content'] }}</div>
+                                    <div class="mt-1"><i class="mdi mdi-link"></i></div>
+                                </div>
+                            </a>
+                        @else
+                            {{$announcement['content'] }}
+                        @endif
+                    </div>
+                    <div class="opacity-50">{{ Resource::date($announcement['timestamp'])  }}</div>
+                </div>
+            </div>
                 @endif
             <div class="d-flex m-2 profile-panel">
                 <div class="d-grid text-center profile-panel-nav">
@@ -98,8 +112,8 @@
                     <div class="progress" style="background: transparent">
                         <div class="progress-bar bg-light"
                              role="progressbar"
-                             style="width: {{Character::online()->count()*10}}%"
-                             aria-valuenow="{{Character::online()->count()}}"
+                             style="width: {{ $status ? Character::online()->count()*10 : 0}}%"
+                             aria-valuenow="{{$status ? Character::online()->count() : 0}}"
                              aria-valuemin="0"
                              aria-valuemax="10"></div>
                     </div>

@@ -220,7 +220,7 @@
     function setTheme(theme) {
         if (theme == 'default') {
             document.getElementById('switcher-id').href = '/css/themes/default.css';
-            if(typeof editor !=='undefined') editor.setTheme("ace/theme/crimson_editor");
+            if(typeof editor !=='undefined') editor.setTheme("ace/theme/tomorrow_night");
         } else if (theme == 'wireframe') {
             document.getElementById('switcher-id').href = '/css/themes/wireframe.css';
             if(typeof editor !=='undefined') editor.setTheme("ace/theme/crimson_editor");

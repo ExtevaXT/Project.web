@@ -128,7 +128,7 @@ class UserController extends Controller
         // Talent 'Introvert' feature
         if($character?->talent('Introvert')) return abort(404);
         //Achievements
-        $achievement_data = Resource::data('achievements');;
+        $achievement_data = Resource::data('Achievements');;
         //Skills always create with character (additional fields for character)
         //Talents
         $talent_data = Resource::data('talents');

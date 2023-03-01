@@ -5,8 +5,8 @@
 @section('title', 'Profile page')
 @section('style')
     <link rel="stylesheet" href="{{ asset('css/profile.css')}}">
-    @if($account->setting('styleTheme') and ($account->setting('styleThemeShow') == 0 or $account->setting('styleThemeShow') == 2))
-    <link rel="stylesheet" href="{{asset('js/JS-Theme-Switcher-master/themes/'.$account->setting('styleTheme').'.css')}}">
+    @if(($theme = $account->setting('styleTheme')) and ($account->setting('styleThemeShow') == 0 or $account->setting('styleThemeShow') == 2))
+        <link rel="stylesheet" href="{{asset('css/themes/'.($theme != null ? $theme : 'default').'.css')}}">
     @endif
     <style>
         {{$account->setting('styleCSS')}}

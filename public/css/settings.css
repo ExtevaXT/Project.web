@@ -1,0 +1,19 @@
+.security-save-button{
+    margin: -44px -15px;
+    width: 15%;
+    float: right;
+}
+#editor{
+    height: 500px;
+    font-size: 16px;
+}
+@media screen and (max-width: 1000px) {
+    #editor{
+        height: 400px;
+    }
+    .security-save-button{
+        margin: 10px -13px;
+        width: 110%;
+        float: end;
+    }
+}

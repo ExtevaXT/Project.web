@@ -5,22 +5,14 @@
 @section('title', 'Settings')
 @section('style')
     <link rel="stylesheet" href="{{ asset('css/index.css')}}">
+    <link rel="stylesheet" href="{{ asset('css/settings.css')}}">
     <link href='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.css' rel='stylesheet'>
     <!-- The link above loaded the core css -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.16.0/codemirror.js'></script>
     <!-- The script above loaded the core editor -->
 
-    <style>
-        #editor{
-            height: 500px;
-            font-size: 16px;
-        }
-        @media screen and (max-width: 1000px) {
-            #editor{
-                height: 400px;
-            }
-        }
-    </style>
+
+
 @endsection
 
 @section('content')
@@ -68,13 +60,13 @@
                         <div class="p-3 my-1">
                             <div class="fs-4">Change password</div>
                             <div>Description</div>
-                            <button class="input-glass p-2 float-end" style="margin: -44px 5px;">Save changes</button>
+                            <button class="input-glass p-2 security-save-button">Save changes</button>
                         </div>
                         <div>
                             <input name="passwordOld" type="password" class="form-control input-glass my-1 border-0 rounded-0" placeholder="Old password">
-                            <div class="d-flex">
-                                <input name="password" type="password" class="form-control input-group input-glass my-1 me-2 border-0 rounded-0" placeholder="New password">
-                                <input name="password_confirmation" type="password" class="form-control input-group input-glass my-1 ms-2 border-0 rounded-0" placeholder="Password confirm">
+                            <div class="d-flex gap-2">
+                                <input name="password" type="password" class="form-control input-group input-glass my-1 border-0 rounded-0" placeholder="New password">
+                                <input name="password_confirmation" type="password" class="form-control input-group input-glass my-1 border-0 rounded-0" placeholder="Password confirm">
                             </div>
                         </div>
                     </form>
@@ -85,13 +77,13 @@
                         <div class="p-3 my-1">
                             <div class="fs-4">Change E-Mail</div>
                             <div>Description</div>
-                            <button type="submit" class="input-glass p-2 float-end" style="margin: -44px 5px;">Save changes</button>
+                            <button type="submit" class="input-glass p-2 security-save-button">Save changes</button>
                         </div>
                         <div>
                             <input name="password" type="password" class="form-control input-glass my-1 border-0 rounded-0" placeholder="Password">
-                            <div class="d-flex">
-                                <input name="email" type="text" class="form-control input-group input-glass my-1 me-2 border-0 rounded-0" placeholder="Old E-mail">
-                                <input name="emailNew" type="text" class="form-control input-group input-glass my-1 ms-2 border-0 rounded-0" placeholder="New E-Mail">
+                            <div class="d-flex gap-2">
+                                <input name="email" type="text" class="form-control input-group input-glass my-1 border-0 rounded-0" placeholder="Old E-mail">
+                                <input name="emailNew" type="text" class="form-control input-group input-glass my-1 border-0 rounded-0" placeholder="New E-Mail">
                             </div>
                         </div>
                     </form>
@@ -122,6 +114,7 @@
                 <form id="form" action="{{route('settings')}}" method="POST">
                     @csrf
                     <button type="submit" class="input-glass p-2 my-2 w-100">Save changes</button>
+                    <h4>Background themes</h4>
                     <select class="form-select my-2 input-glass" name="styleTheme">
                         <option selected disabled>Select theme</option>
                         <option value="null">None</option>
@@ -140,8 +133,13 @@
                                @if(Account::auth()->setting('styleThemeShow') == 2) checked @endif>
                         <label class="btn btn-outline-light bg-glass w-100 text-start my-1" for="styleThemeShow3">Show theme always</label>
                     </div>
+                    <h4>CSS Styles</h4>
+                    @if($css = Auth::user()?->character()?->achievement('Style'))
                     <input name="styleCSS" type="hidden" value="">
                     <div id="editor" class="notranslate">{{Account::auth()->setting('styleCSS')}}</div>
+                    @else
+                        <div>Unlocks with achievement</div>
+                    @endif
                 </form>
             </div>
             <div class="tab-pane fade" id="profile">
@@ -150,7 +148,8 @@
                     <button type="submit" class="input-glass p-2 my-2 w-100">Save changes</button>
                     <div class="d-flex justify-content-between">
                         <div>
-                            <label for="profileColor" class="form-label fs-4">Name Color</label>
+                            <label for="profileColor" class="form-label fs-4">Preferred Color</label>
+                            @if(Auth::user()?->character()?->achievement('Colorful'))
                             <div class="d-flex">
                                 <input name="profileColor" onchange="colorPreview()" type="color" class="form-control-color input-glass" id="profileColor"  title="Choose your color"
                                        value="{{Account::auth()->setting('profileColor')}}">
@@ -159,10 +158,14 @@
                                     <span class="colorPreview fw-bold" style="color: {{Account::auth()->setting('profileColor')}}">{{Auth::user()->name}}</span><span>: Hello World!</span>
                                 </div>
                             </div>
+                            @else
+                                <input type="hidden" name="profileColor" id="profileColor"/>
+                                <div>Unlocks with achievement</div>
+                            @endif
                         </div>
                         <div class="w-50">
                             <label for="character" class="form-label fs-4">Preferred Character</label>
-                            <select wire:change="update" id="character" name="character" class="form-select input-glass">
+                            <select id="character" name="character" class="form-select input-glass">
                                 @forelse(Account::auth()->characters() as $character)
                                     <option @if($character == Account::auth()->character()) selected @endif value="{{$loop->index}}">{{$character->name}}</option>
                                 @empty
@@ -199,13 +202,13 @@
                     <x-input-switch name="navFaction" label="Faction"/>
                 </form>
             </div>
-            @if(Auth::user()?->character() and (Auth::user()->character()->talent('Eraser')
-                or Auth::user()->character()->talent('Many Faces')
-                or Auth::user()->character()->talent('Megalomania')
-                or Auth::user()->character()->talent('Renegate')
-                or Auth::user()->character()->talent('Soul Trader')))
+            @if(($character = Auth::user()?->character()) and ($character->talent('Eraser')
+                or $character->talent('Many Faces')
+                or $character->talent('Megalomania')
+                or $character->talent('Renegate')
+                or $character->talent('Soul Trader')))
                 <div class="tab-pane fade" id="advanced">
-                    @if(Auth::user()->character()->talent('Eraser'))
+                    @if($character->talent('Eraser'))
                         <form action="{{route('talent.delete')}}" method="POST">
                             @csrf
                             <div class="p-3 my-1">
@@ -215,7 +218,7 @@
                             <button type="submit" class="input-glass py-2 w-100">Delete</button>
                         </form>
                     @endif
-                    @if(Auth::user()->character()->talent('Many Faces'))
+                    @if($character->talent('Many Faces'))
                         <form action="{{route('talent.changeName')}}" method="POST">
                             @csrf
                             <div class="p-3 my-1">
@@ -226,7 +229,7 @@
                             <x-input name="account" placeholder="Character name"/>
                         </form>
                     @endif
-                    @if(Auth::user()->character()->talent('Megalomania'))
+                    @if($character->talent('Megalomania'))
                         <form action="{{route('talent.prefix')}}" method="POST">
                             @csrf
                             <div class="p-3 my-1">
@@ -237,7 +240,7 @@
                             <x-input name="account" placeholder="Prefix"/>
                         </form>
                     @endif
-                    @if(Auth::user()->character()->talent('Renegate'))
+                    @if($character->talent('Renegate'))
                         <form action="{{route('talent.changeFaction')}}" method="POST">
                             @csrf
                             <div class="p-3 my-1">
@@ -247,7 +250,7 @@
                             <button type="submit" class="input-glass py-2 w-100">Change faction</button>
                         </form>
                     @endif
-                    @if(Auth::user()->character()->talent('Soul Trader'))
+                    @if($character->talent('Soul Trader'))
                         <form action="{{route('talent.transferCharacter')}}" method="POST">
                             @csrf
                             <div class="p-3 my-1">
@@ -272,6 +275,7 @@
         </script>
         <script src="{{asset('js/jquery.js')}}"></script>
         <script src="{{asset('js/bootstrap.js')}}"></script>
+        @if($css)
         <script>
             $( document ).ready(function() {
                 var editor = ace.edit("editor");
@@ -286,13 +290,14 @@
                 document.querySelector('input[name="styleCSS"]').value = editor.getSession().getValue();
                 return true;
             });
-
+        </script>
+        @endif
+        <script>
             //THIS FUCKING SHIT WORKS
             const anchor = window.location.hash;
             console.log(anchor)
             if(anchor)
-            new bootstrap.Tab($(`a[href="${anchor}"]`)).show()
-
+                new bootstrap.Tab($(`a[href="${anchor}"]`)).show()
         </script>
 
     </div>
