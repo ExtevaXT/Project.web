@@ -68,35 +68,7 @@
                         <div>Ranking</div>
                     </button>
                 </div>
-                <div class="bg-glass w-100 d-flex profile-panel-bg">
-                    <div class="d-flex m-3 align-self-end justify-content-between w-100 flex-wrap">
-                        <div class="d-flex">
-                            <x-user-profile name="{{Auth::user()->name}}" size="128" all="0" />
-                            <div class="align-self-center mb-4">
-                                <div class="fs-2">{{Auth::user()->name}}</div>
-                                @if(Account::auth()->character()!=null)
-                                    <div class="fs-5">Balance: {{Account::auth()->character()->gold}}₽</div>
-                                @else
-                                    <div class="fs-5">Character not created</div>
-                                @endif
-                            </div>
-                        </div>
-                        @if(Auth::user()->character())
-                        <div class="bg-glass p-3 mb-3 daily-panel">
-                            <h5 class="text-center">Daily Reward</h5>
-                            @if($claimed = (Carbon::parse(Auth::user()->setting('daily')) < Carbon::now()->subDay() or !Auth::user()->setting('daily')))
-                                <form action="{{route('daily')}}" method="POST">
-                                    @csrf
-                                    <button class="input-glass py-2 my-2 w-100" type="submit">Claim</button>
-                                </form>
-                            @else
-                                <button class="btn input-glass py-2 px-4 m-2 disabled w-100">Remain {{Carbon::now()->addDay()->diffInHours(Carbon::parse(Auth::user()->setting('daily')))}} hours</button>
-                            @endif
-                        </div>
-                        @endif
-
-                    </div>
-                </div>
+               <livewire:profile-panel/>
             </div>
                 <div class="d-flex flex-row m-2 link-panel">
                     <a class="text-decoration-none w-50" href="/user/{{Auth::user()->name}}"><div class="text-center px-5 py-2 input-glass">Profile</div></a>

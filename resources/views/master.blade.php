@@ -164,7 +164,7 @@
     <div class="modal-dialog contact-panel modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title text-center" id="authModalLabel">Report a bug or something VIA DISCORD</h5>
+                <h5 class="modal-title text-center" id="authModalLabel">Report a bug, feature or something</h5>
             </div>
             <div class="modal-body">
                 <form method="post" action="{{ route('contact') }}" class="d-flex flex-column">

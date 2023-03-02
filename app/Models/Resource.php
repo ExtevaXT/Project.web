@@ -3,12 +3,11 @@
 namespace App\Models;
 
 use Carbon\Carbon;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Arr;
+use Illuminate\Support\Str;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
-use Symfony\Component\Yaml\Exception\ParseException;
 use Symfony\Component\Yaml\Yaml;
 
 class Resource extends Model
@@ -59,21 +58,34 @@ class Resource extends Model
         }))[0]['fields'];
     }
 
-    public static function bonus($bonus)
+    public static function item($item)
     {
-        $bonus = ucfirst(str_replace('Bonus', '', $bonus));
-        $bonus = str_replace('Accumulation', 'Emission', $bonus);
-
-        $split = preg_split('/(?=[A-Z])/',$bonus);
-        if(!str_contains($bonus, 'Recovery') and !str_contains($bonus, 'Effiency')) $split = array_reverse($split);
-        $bonus = implode(' ', $split);
-
-        $bonus = str_replace('Factor Damage', 'Damage Factor', $bonus);
-        $bonus = str_replace('Weight', 'Carrying Capacity', $bonus);
-        $bonus = str_replace('Artefact', 'Artefact Slots', $bonus);
-        return $bonus;
+        $args = [
+            'ammoType',
+            'damage',
+            'clipSize',
+            'distance',
+            'rateOfFire',
+            'reloadTime', 'tacticalReloadTime',
+            'spread', 'hipSpread',
+            'recoil', 'horizontalRecoil',
+            'drawTime',
+            'aimSwitch',
+            'startDamage', 'damageDecreaseStart', 'endDamage', 'damageDecreaseEnd', 'startDamage',
+            'recoilGain', 'damageDistant', 'wiggle', 'tickSpreadMultiplierReduction',
+            'Bonus', 'heal', 'speedModifier', 'Protection', 'Accumulation', 'reactionTo', 'DmgFactor',
+            'compatible',
+            'charge','Scan','range',
+            'common','strong','piercing','bloodlustChance',
+            'lifetime','explosion','flashTime',
+            'effectiveness', 'size',
+            'bleeding','stoppingPower','combustion','numBullets','absoluteDamage',
+        ];
+        $item = array_filter($item, function ($value, $argument) use ($args){
+            return (Str::contains($argument, $args) and $value != 0);
+        },ARRAY_FILTER_USE_BOTH);
+        return $item;
     }
-
     public static function date($date)
     {
         return Carbon::parse($date)->tz('Asia/Yekaterinburg')->format('d M Y | H:i');

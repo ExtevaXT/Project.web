@@ -44,7 +44,8 @@ class GuideController extends Controller
     public function find($item)
     {
         if($item = Resource::data('Items')->firstWhere('m_Name', $item)){
-            return view('guides.item', ['item' => $item, 'category' => explode('/',$item['pathCategory'])[0]]);
+            return redirect('/guides/'.explode('/',$item['pathCategory'])[0].'/'.$item['m_Name']);
+            //return view('guides.item', ['item' => $item, 'category' => explode('/',$item['pathCategory'])[0]]);
         }
         return abort(404);
 

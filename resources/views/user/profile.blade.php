@@ -530,14 +530,12 @@
 
 
 <!-- UPLOAD PFP -->
-<div class="modal fade" id="imageModal" tabindex="-1" role="dialog" aria-labelledby="imageLabel" aria-hidden="true">
+<div class="modal fade" id="imageModal" tabindex="-3" role="dialog" aria-labelledby="imageLabel" aria-hidden="true">
     <div class="container">
-        <div class="modal-dialog float-end w-50 authorization-panel" role="document">
+        <div class="modal-dialog upload-modal" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-
                     <h5 class="modal-title text-center" id="imageLabel">Upload profile picture</h5>
-
                 </div>
                 <div class="modal-body">
                     <form method="post" action="{{ route('upload') }}" class="d-flex flex-column" enctype="multipart/form-data">

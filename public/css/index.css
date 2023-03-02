@@ -23,6 +23,13 @@
     background:linear-gradient( rgba(177, 177, 177, 0.07), rgba(177, 177, 177, 0.07) ), url("/img/icon/tree2.png") no-repeat 50%;
     background-size: contain;
 }
+.profile-panel-bg-input{
+    width: 75%;
+    height: 40px;
+}
+.profile-panel-bg-buttons{
+    padding:28px 15px;
+}
 @media screen and (max-width: 1000px){
     .main{
         flex-direction: column;
@@ -72,8 +79,13 @@
     }
     .profile-panel-bg{
         margin-top: 5px;
+        height: 400px;
     }
     .daily-panel{
         width: 100%;
+        margin-left: 35px;
+    }
+    .profile-panel-bg-input{
+        width: 55%;
     }
 }

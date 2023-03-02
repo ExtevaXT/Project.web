@@ -15,7 +15,16 @@
     </div>
     <div class="my-2 main">
         <div class="main-left">
-            <div class="content">{!! $item['text'] ?? 'No description provided' !!}</div>
+            <div class="content">
+            @if(str_contains($item['pathCategory'], 'Attachment'))
+                <h5>Suitable for</h5>
+                @foreach($item['suitableFor'] as $_item)
+                    <div><a href="/item/{{$_item}}" class="text-link">{{$_item}}</a></div>
+                @endforeach
+            @else
+                {!! $item['text'] ?? 'No description provided' !!}
+            @endif
+            </div>
         </div>
         <div class="main-right">
             <div class="image text-center d-flex justify-content-center"><img src="{{asset('assets/Icons/'.$item['pathCategory'].'/'.$item['m_Name'].'.png')}}" alt="..."></div>
@@ -28,89 +37,24 @@
                         </div>
                         <div class="BlockTable-row">
                             <div class="BlockTable-data">Type</div>
-                            <div class="BlockTable-data">{{$item['pathCategory']}}</div>
+                            <div class="BlockTable-data">{{$item['class']}}</div>
                         </div>
                         <div class="BlockTable-row">
                             <div class="BlockTable-data">Weight</div>
                             <div class="BlockTable-data">{{$item['weight'] ?? 0}} kg</div>
                         </div>
-                        @if(preg_match('[Armor|Artefact|Container]', $item['pathCategory']))
-                            @foreach($item as $argument => $value)
-                                @if(false and str_contains($argument,'Bonus') and $value!=0)
-                                    <div class="BlockTable-row">
-                                        <div class="BlockTable-data">{{Resource::bonus($argument)}}</div>
-                                        <div class="BlockTable-data">{{$argument == 'weightBonus' ? sprintf("%+d",$value/1000) . ' kg' : $value}}</div>
-                                    </div>
-                                @endif
-                            @endforeach
-                        @endif
-                        @if(preg_match('[Weapon]', $item['pathCategory']))
-                        <div class="BlockTable-row">
-                            <div class="BlockTable-data">Damage</div>
-                            <div class="BlockTable-data">{{ $item['damage'] }}</div>
-                        </div>
-                        <div class="BlockTable-row">
-                            <div class="BlockTable-data">Max distance</div>
-                            <div class="BlockTable-data">{{ $item['maxDistance'] }}</div>
-                        </div>
-                        <div class="BlockTable-row">
-                            <div class="BlockTable-data">Rate of fire</div>
-                            <div class="BlockTable-data">{{ $item['rateOfFire'] }}</div>
-                        </div>
-                        @if(preg_match('[Melee]', $item['pathCategory']))
-                        <div class="BlockTable-row">
-                            <div class="BlockTable-data">Magazine size</div>
-                            <div class="BlockTable-data">{{ $item['clipSize'] }}</div>
-                        </div>
-                        <div class="BlockTable-row">
-                            <div class="BlockTable-data">Reload speed</div>
-                            <div class="BlockTable-data">{{ $item['reloadTime'] }}</div>
-                        </div>
-                        <div class="BlockTable-row">
-                            <div class="BlockTable-data">Recoil</div>
-                            <div class="BlockTable-data">{{ $item['recoil'] }}</div>
-                        </div>
-                        @endif
-                        @endif
-
-                        @if($item['pathCategory'] == 'Medicine')
-                            @foreach($item as $argument => $value)
-                                @if(str_contains($argument,'usage') and $value!=0)
-                                    <div class="BlockTable-row">
-                                        <div class="BlockTable-data">{{str_replace('usage', 'Usage ', $argument)}}</div>
-                                        <div class="BlockTable-data">{{sprintf("%+d",$value)}}</div>
-                                    </div>
-
-                                @endif
-                            @endforeach
-                        @endif
-                        @isset($item['attachmentMetaId'])
-                            @if($item['zoom'])
+                        @foreach(Resource::item($item) as $argument => $value)
                             <div class="BlockTable-row">
-                                <div class="BlockTable-data">Zoom power</div>
-                                <div class="BlockTable-data">{{$item['zoom']}}x</div>
+                                <div class="BlockTable-data">{{ucfirst(preg_replace('/(?!^)[A-Z]{2,}(?=[A-Z][a-z])|[A-Z][a-z]/', ' $0', $argument))}}</div>
+                                @if($argument != 'suitableFor')
+                                @if(Str::contains($argument,['Bonus', 'heal', 'speedModifier', 'Protection', 'Accumulation', 'reactionTo', 'DmgFactor',]))
+                                <div class="BlockTable-data">{{count($value)>1 ? "[$value[0]; $value[1]]" : $value[0] }}</div>
+                                @else
+                                <div class="BlockTable-data">{{$value}}</div>
+                                @endif
+                                @endif
                             </div>
-                            @endif
-                            @if($item['magazine'])
-                                <div class="BlockTable-row">
-                                    <div class="BlockTable-data">Magazine size</div>
-                                    <div class="BlockTable-data">{{$item['magazine']}}</div>
-                                </div>
-                            @endif
-                            @if($item['recoilHorizontal'])
-                                <div class="BlockTable-row">
-                                    <div class="BlockTable-data">Horizontal recoil</div>
-                                    <div class="BlockTable-data">{{sprintf("%+d",$item['recoilHorizontal'])}}</div>
-                                </div>
-                            @endif
-                            @if($item['recoilVertical'])
-                                <div class="BlockTable-row">
-                                    <div class="BlockTable-data">Vertical recoil</div>
-                                    <div class="BlockTable-data">{{sprintf("%+d",$item['recoilVertical'])}}</div>
-                                </div>
-                            @endif
-                        @endisset
-
+                        @endforeach
                     </div>
                 </div>
             </div>

@@ -30,6 +30,9 @@
     width: 800px;
     height: 400px
 }
+.upload-modal{
+
+}
 @media screen and (max-width: 1000px){
     .main{
         flex-direction: column;
