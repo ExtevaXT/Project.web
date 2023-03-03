@@ -9,6 +9,7 @@
 @endsection
 
 @section('content')
+    <x-search-bar/>
     <div class="my-3">
         <a class="text-link" href="/guides/{{$category}}"><i class="mdi mdi-24px mdi-arrow-left"></i></a>
         <h3 class="d-inline">{{$item['m_Name']}}</h3>
@@ -47,11 +48,11 @@
                             <div class="BlockTable-row">
                                 <div class="BlockTable-data">{{ucfirst(preg_replace('/(?!^)[A-Z]{2,}(?=[A-Z][a-z])|[A-Z][a-z]/', ' $0', $argument))}}</div>
                                 @if($argument != 'suitableFor')
-                                @if(Str::contains($argument,['Bonus', 'heal', 'speedModifier', 'Protection', 'Accumulation', 'reactionTo', 'DmgFactor',]))
-                                <div class="BlockTable-data">{{count($value)>1 ? "[$value[0]; $value[1]]" : $value[0] }}</div>
-                                @else
-                                <div class="BlockTable-data">{{$value}}</div>
-                                @endif
+                                    @if(is_array($value))
+                                        <div class="BlockTable-data">{{(count($value)>1) ? "[$value[0]; $value[1]]" : $value[0] }}</div>
+                                    @else
+                                        <div class="BlockTable-data">{{$value}}</div>
+                                    @endif
                                 @endif
                             </div>
                         @endforeach

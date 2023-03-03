@@ -9,11 +9,11 @@
 
 @section('content')
     <div class="d-flex flex-column">
-        <livewire:guide-search/>
-        <a href="/guides/info" class="text-center p-2 my-1 input-glass text-link">Information</a>
+        <x-search-bar/>
         <div class="fs-3 my-3">Categories</div>
+        <a href="/guides/info" class="text-center p-2 my-1 input-glass text-link">Information</a>
         <a href="/guides/Artefact" class="input-glass p-2 my-1 text-link d-flex">
-            <x-item class="me-3" name="Crystal" size="64"/>
+            <x-item class="me-3" name="Acid Crystal" size="64"/>
             <div>
                 <div class="fs-4">Artefacts</div>
                 <div>Information about artefacts</div>
@@ -59,7 +59,7 @@
 
         </a>
         <a href="/guides/Other" class="input-glass p-2 my-1 text-link d-flex">
-            <x-item class="me-3" name="Alpha Data Block" size="64"/>
+            <x-item class="me-3" name="Gamma Data Block" size="64"/>
             <div>
                 <div class="fs-4">Other</div>
                 <div>Information about other stuff</div>

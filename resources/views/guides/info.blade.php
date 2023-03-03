@@ -8,6 +8,10 @@
 @endsection
 
 @section('content')
+    <div class="my-3">
+        <a class="text-link" href="/guides"><i class="mdi mdi-24px mdi-arrow-left"></i></a>
+        <h3 class="d-inline">Information</h3>
+    </div>
     <div class="d-flex justify-content-between text-center my-5">
         <div>
             <h5>What is this</h5>

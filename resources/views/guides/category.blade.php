@@ -9,6 +9,7 @@
 @endsection
 
 @section('content')
+    <x-search-bar/>
     <div class="my-3">
         <a class="text-link" href="/guides"><i class="mdi mdi-24px mdi-arrow-left"></i></a>
         <h3 class="d-inline">{{ucfirst($category)}}</h3>
