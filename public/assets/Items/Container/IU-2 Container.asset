@@ -14,7 +14,7 @@ MonoBehaviour:
     effectiveness: 80.0
     size: 2.0
     text: 'A device for the Bear Exoskeleton that allows artifacts to be used.'
-    image: { fileID: 21300000, guid: b5472c425254486d8a8e38eff28a8463, type: 3 }
+    image: { fileID: 21300000, guid: d021be2dd29d49d1bae6bf205048ab1c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'IU-2 Container'
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

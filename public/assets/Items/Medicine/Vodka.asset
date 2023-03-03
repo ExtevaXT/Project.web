@@ -20,7 +20,7 @@ MonoBehaviour:
     maxDurability: 1000
     destroyable: 1
     toolTip: "<b>{NAME}</b>\nRestores some health.\n\nRestores {USAGEHEALTH} Health on use.\n\nAmount: {AMOUNT}\nDurability: {DURABILITY}%"
-    image: { fileID: 21300000, guid: 7b764fd3e16d4d9181902a1388901fdf, type: 3 }
+    image: { fileID: 21300000, guid: f61a19c72ebb4feeb8a150c49c01cd00, type: 3 }
     drop: { fileID: 114666906706450464, guid: 48e0d114bba8f4284b6b34b7c4b6ed68, type: 3 }
     modelPrefab: { fileID: 0 }
     type: Medical

@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.15
     text: 'A fragment of data from the Beta group that was obtained from the corresponding anomalous installation.'
-    image: { fileID: 21300000, guid: d02fa2ff6262432ba7212bf85b93f8c2, type: 3 }
+    image: { fileID: 21300000, guid: a51a39e3964748aaa7a179d6e48fc35b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Beta Data Fragment'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

@@ -6,6 +6,8 @@ MonoBehaviour:
     key: '22652'
     fullName: 'Wooden Skeleton Stock'
     pathCategory: Attachment/Stock
+    attachmentMetaGroup: 4
+    attachmentMetaId: G
     class: Stocks
     weight: 0.45
     recoil: -2.9999971
@@ -13,8 +15,8 @@ MonoBehaviour:
     drawTime: 10.000002
     recoilGain: -19.999998
     tickSpreadMultiplierReduction: 25.0
-    suitableFor: [AKS-74U, AKS-74, 'SMG-19 Bizon-2-01', AKM, 'SMG-19-01 Vityaz', AK-103, 'Kbk wz. 88 Tantal', AK-105]
-    image: { fileID: 21300000, guid: b413e5b6a9f54e07918d94bfd9f75e9f, type: 3 }
+    suitableFor: [AKS-74U, AKS-74, 'PP-19 Bizon-2-01', AKM, 'PP-19-01 Vityaz', AK-103, 'Kbk wz. 88 Tantal', AK-105]
+    image: { fileID: 21300000, guid: 7ee7e5ec7e364a128bb9e34520a0f805, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Wooden Skeleton Stock'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -25,3 +27,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 6e061c8424784495b473c336266f2196, type: 2 }, { fileID: 11400000, guid: 6a5d18711638447e831c5e80d921ad3b, type: 2 }, { fileID: 11400000, guid: ebb241c742234e3aa2373ad17f2a9ed1, type: 2 }, { fileID: 11400000, guid: 473a1753ac314080ba75f71352c1fb72, type: 2 }, { fileID: 11400000, guid: 0b4138c0f552446a98d12b5167718749, type: 2 }, { fileID: 11400000, guid: 78ee10e848834b92be4f14fcee969dad, type: 2 }]

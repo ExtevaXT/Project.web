@@ -24,7 +24,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'A variation of the Zarya suit, made from materials that have improved resistance to anomalies, but offer lower protection against physical damage. The gas mask and tank of breathing gas allow this suit to function as a research suit for novice stalkers.'
-    image: { fileID: 21300000, guid: 50246c67a3d549c8bddf8abe57b59801, type: 3 }
+    image: { fileID: 21300000, guid: b6da14f61c1846fa9f5b7ad6d9ab675f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Zarya-B Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

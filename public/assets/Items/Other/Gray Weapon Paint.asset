@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for weapons'
-    image: { fileID: 21300000, guid: b1c3528a6f4a4688aa5e89aaec43a1b6, type: 3 }
+    image: { fileID: 21300000, guid: b3f481edba524d42a7816ee46097e090, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Gray Weapon Paint'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

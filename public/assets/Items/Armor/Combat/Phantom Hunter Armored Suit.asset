@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'A reworked Shade Hunter which adds both increased mobility and more cutting-edge NVG.'
-    image: { fileID: 21300000, guid: 9030becd47824dffbbcf22f5ea5be65f, type: 3 }
+    image: { fileID: 21300000, guid: 4fbde083440c4eeba8264eeae9c8a68d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Phantom Hunter Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

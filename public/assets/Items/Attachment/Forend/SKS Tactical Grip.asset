@@ -6,11 +6,13 @@ MonoBehaviour:
     key: forend_skstop
     fullName: 'SKS Tactical Grip'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Newbie
     class: 'Hanguards and Brackets'
     weight: 0.11
     suitableFor: [SKS]
-    image: { fileID: 21300000, guid: 9277486699bd4a998c1bc2bf75cbc7b3, type: 3 }
+    image: { fileID: 21300000, guid: f986060fca3f425fad3f269be98d1770, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'SKS Tactical Grip'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 88cf20d762604f548111e43b611d85af, type: 2 }]

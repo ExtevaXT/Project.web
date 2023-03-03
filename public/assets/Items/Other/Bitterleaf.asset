@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.01
     text: 'This mutated plant became one of the staples of the diet of mutants in Limansk. Rumor has it that extract of bitterleaf is beneficial for the nervous system.'
-    image: { fileID: 21300000, guid: 1c7a7196bd19459a9bdb3816109ff6a6, type: 3 }
+    image: { fileID: 21300000, guid: f0e10ecb04254fe3b0806320391d2444, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Bitterleaf
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

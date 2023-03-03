@@ -15,7 +15,7 @@ MonoBehaviour:
     radiationAccumulation: [-5.0, -3.0]
     biologicalAccumulation: [-5.0, -3.0]
     text: 'An extremely rare and valuable artifact. Finding it is a big windfall. The few people who own one of these call it their “guardian angel,” as it can protect from negative effects while not having any negative properties of its own.'
-    image: { fileID: 21300000, guid: 66aac4377354481d9806d7a92f9f280f, type: 3 }
+    image: { fileID: 21300000, guid: 95b02aadae3b4da28bb60a08c89ebf75, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Atom
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

@@ -24,7 +24,7 @@ MonoBehaviour:
     aimSwitch: 0.45
     burn: 66.66667
     default: 33.333336
-    image: { fileID: 21300000, guid: 7dd072e1c8704f579fa138312bf70fd9, type: 3 }
+    image: { fileID: 21300000, guid: 19746bd9ccfa4234a502e61ac939e583, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Tinderbox
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

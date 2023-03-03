@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: standard
     text: 'This suit is a good choice for anyone who wants to sneak up behind the enemy unnoticed (even in the middle of the night—it comes with excellent NVG!) and set up a “grenade shower.” The enemy has little chance of survival... unless they’re also equipped with Grenadiers and manage to flee quickly.'
-    image: { fileID: 21300000, guid: 775d706f162d485db7c282ed619194c0, type: 3 }
+    image: { fileID: 21300000, guid: 4d7d2bfa923f4573bcf11da2c49b55f9, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Grenadier Exoskeleton'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

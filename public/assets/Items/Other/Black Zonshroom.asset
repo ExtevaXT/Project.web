@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.015
     text: 'The cap of an older zonshroom takes on a more intense black color than that of younger zonshrooms. It also tastes way better if you cook it with potato in butter...'
-    image: { fileID: 21300000, guid: 72f356bde8cf48ad92778fa5df8c80be, type: 3 }
+    image: { fileID: 21300000, guid: 52cb57e025764d67aecc5609a76ffb08, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Black Zonshroom'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

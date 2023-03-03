@@ -14,7 +14,7 @@ MonoBehaviour:
     reactionToElectroshock: [3.0, 5.0]
     reactionToBurn: [3.0, 5.0]
     reactionToChemicalBurn: [3.0, 5.0]
-    image: { fileID: 21300000, guid: aeb1e309b7fe4c999ddc4fc62d94e2eb, type: 3 }
+    image: { fileID: 21300000, guid: 9df86d4329094f55a05680acc827a7ce, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Chicken God'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

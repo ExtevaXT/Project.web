@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.05
     text: 'Many scientific expeditions have ventured to the north in the quest to find the Zone’s secrets. All that is left of them is the remains of their equipment, which can be dug up and sold for a good price.'
-    image: { fileID: 21300000, guid: e062a01acdd041da9c063d1b330c31f7, type: 3 }
+    image: { fileID: 21300000, guid: 24c5a22821434bdc84398136608fe265, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Remains of Scientific Equipment'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

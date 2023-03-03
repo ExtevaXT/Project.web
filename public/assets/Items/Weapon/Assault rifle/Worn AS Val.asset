@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 50.0
     maxDistance: 140.0
     text: 'This weapon was created on the basis of the special VSS sniper rifle as a silenced weapon for special ops soldiers. It allows the shooter to shoot effectively at an opponent who is protected by body armor, without giving away their own position. One of its main features is its use of an integrated silencer and 9x39 mm caliber ammo with heavy bullets.'
-    image: { fileID: 21300000, guid: 4128048815fe45408458c1a995294516, type: 3 }
+    image: { fileID: 21300000, guid: 4a13eacb35df44249ce840fad2567222, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn AS Val'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

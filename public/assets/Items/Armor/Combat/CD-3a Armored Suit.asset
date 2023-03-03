@@ -26,7 +26,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: '“Combined Defense, model 3, anomalous”—one of the most expensive CD series suits, which combines excellent combat properties, decent anomalous protection and an impressive appearance.'
-    image: { fileID: 21300000, guid: 776079b75df2499f86e8c09584d4d6b8, type: 3 }
+    image: { fileID: 21300000, guid: bbacd63626904104941bb0f8b6230f17, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'CD-3a Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

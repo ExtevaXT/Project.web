@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'A modern military armored suit for assault operations in zones of anomalous activity. Components: PSZ-15 series heavy body armor; Sphere-15 helmet, equipped with induction field suppression; an anomalous protection suit and pressure suit.'
-    image: { fileID: 21300000, guid: 4b7c531d54f44012a4d988f5562af914, type: 3 }
+    image: { fileID: 21300000, guid: ad294fbb194e40328a42abde29f88d5b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'SKAT-10 Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

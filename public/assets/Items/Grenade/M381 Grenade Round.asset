@@ -14,7 +14,7 @@ MonoBehaviour:
     explosionSize: 6.0
     explosionActivationTime: 0.25
     text: 'A fragmentation round for the M203 grenade launcher.'
-    image: { fileID: 21300000, guid: 568241631dc34524ad753bbb523934c8, type: 3 }
+    image: { fileID: 21300000, guid: 8c7ce4c13ba64979b063f8ad648e2656, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'M381 Grenade Round'
     m_Script: { fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3 }

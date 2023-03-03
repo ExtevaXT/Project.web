@@ -25,7 +25,7 @@ MonoBehaviour:
     psychoProtection: [75.0]
     bleedingProtection: [63.0]
     text: 'The Lynx armored suit, equipped with a heavy exoskeleton with additional armoring.'
-    image: { fileID: 21300000, guid: 4c692c81a7204e9d835f9227eca5d3c7, type: 3 }
+    image: { fileID: 21300000, guid: c97a9abed44b4adfbc37c385f2f0ca8c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Bear Exoskeleton'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

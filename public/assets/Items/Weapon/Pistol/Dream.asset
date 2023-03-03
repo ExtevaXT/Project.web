@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 28.0
     maxDistance: 60.0
     text: 'An upgraded trigger, larger magazine capacity, and more reliable parts have made this already-great pistol into a dream weapon for every more or less experienced stalker.'
-    image: { fileID: 21300000, guid: 20feaa1542f34a21b65f1bedf7903680, type: 3 }
+    image: { fileID: 21300000, guid: a1f3fb42f7d445a6ac13d5de975397ac, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Dream
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Virtually the perfect armor for combat. Good protection from bullets and fragmentation, comfortable, the best night-vision goggles—not everyone can afford a masterpiece like this.'
-    image: { fileID: 21300000, guid: cca46d2bf01b4dd88f03123158d96452, type: 3 }
+    image: { fileID: 21300000, guid: 037f32f4c1604ad3928783129d088e23, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Legionnaire Heavy Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

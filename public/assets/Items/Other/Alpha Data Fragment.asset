@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.15
     text: 'A fragment of data from the Alpha group that was obtained from the corresponding anomalous installation.'
-    image: { fileID: 21300000, guid: 4d843a12adf04c7db5a2eca258480765, type: 3 }
+    image: { fileID: 21300000, guid: acc3fd205c5646a4858ee647cb35288b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Alpha Data Fragment'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

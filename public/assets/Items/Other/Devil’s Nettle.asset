@@ -9,7 +9,7 @@ MonoBehaviour:
     rank: Veteran
     class: Other
     text: 'There’s an urban myth that the leader of a certain stalker squad made a cane out of Devil’s Nettles, which he used to punish unruly subordinates. His idea wasn’t particularly successful, however, as the people died of shock after the first blow from his cane.'
-    image: { fileID: 21300000, guid: 4b7e622fc8b64696a96abb34e5da00a9, type: 3 }
+    image: { fileID: 21300000, guid: b0b25727e73b48ae8fe160f5ac16f2f2, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Devil’s Nettle'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

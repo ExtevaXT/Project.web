@@ -11,7 +11,7 @@ MonoBehaviour:
     weight: 1.5
     staminaBonus: [15.0]
     maxWeightBonus: [20.0]
-    image: { fileID: 21300000, guid: 28936d90196045bfb6ab11df01f0c0e0, type: 3 }
+    image: { fileID: 21300000, guid: 0265bfe102904f4bb2dc6b25947e87cd, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Sports Bag'
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'The Huntsman suit, body armor with a utility vest, the Hawk helmet and respirator don’t look like anything special, but in the conditions of the Zone, they make up an incredibly useful pack for an experienced stalker. The wisely selected components don’t hinder movement at all.'
-    image: { fileID: 21300000, guid: 0ce31725c67344949491a3ba68f206d1, type: 3 }
+    image: { fileID: 21300000, guid: 0499b50b87404e2a8d431c5dffe59f1c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Hawk Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

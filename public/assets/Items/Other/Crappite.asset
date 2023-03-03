@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.05
     text: 'Layers of rusted metal, which abound in the Dump, become heated by anomalous activity and turn into a new metal that the diggers named “crappite.”'
-    image: { fileID: 21300000, guid: 02b66e7ce0f94aab9ed2a9239cafcfe4, type: 3 }
+    image: { fileID: 21300000, guid: 068a59f443e4419996a2cc2927affcdd, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Crappite
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

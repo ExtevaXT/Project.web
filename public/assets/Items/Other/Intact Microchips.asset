@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.01
     text: 'Finding more or less intact microchips means that you’re a seriously lucky digger! You’ll have no difficulty finding a buyer for this item.'
-    image: { fileID: 21300000, guid: 6589bec250c847e08a5da87a6262381d, type: 3 }
+    image: { fileID: 21300000, guid: 17c18f1f93994e6699b9798accbd7930, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Intact Microchips'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

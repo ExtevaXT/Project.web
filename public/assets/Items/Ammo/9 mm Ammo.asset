@@ -10,7 +10,7 @@ MonoBehaviour:
     weight: 0.009
     bleeding: 5.0
     stoppingPower: 50.0
-    image: { fileID: 21300000, guid: e0c567cfe50b4d9a94a03ade5c0631af, type: 3 }
+    image: { fileID: 21300000, guid: b26619c1ab5649bca2d7a2a7ab35931a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '9 mm Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

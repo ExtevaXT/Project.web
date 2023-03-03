@@ -30,7 +30,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Every suit has a purpose, and this Expedition Suit is no exception. Initially designed to withstand the conditions of an anomalous blizzard, it is so user-friendly and cheap to produce that it very quickly became popular amongst middle-class stalkers.'
-    image: { fileID: 21300000, guid: 27b6fcbc0736406c82ba9a521f156d24, type: 3 }
+    image: { fileID: 21300000, guid: a8db42d52e13426fa7f5f0313410dcaf, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Expedition Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

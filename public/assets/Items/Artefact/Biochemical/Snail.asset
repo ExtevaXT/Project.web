@@ -14,7 +14,7 @@ MonoBehaviour:
     psychoDmgFactor: [5.0, 15.0]
     psychoAccumulation: [-5.0, -2.0]
     text: 'A small, round formation that resembles a snail’s shell. The shape determined the name, and the effect confirmed it. This artifact emits a weak anomalous field that positively affects brain cells. However, the effect of this field causes muscles to tire much more rapidly.'
-    image: { fileID: 21300000, guid: 03377a2c14c2451594ea53e2b4f4a0dc, type: 3 }
+    image: { fileID: 21300000, guid: a86c6e971e1a46989d204ecbd51efebe, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Snail
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

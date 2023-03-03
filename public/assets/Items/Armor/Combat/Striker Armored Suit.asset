@@ -26,7 +26,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'The direct successor to the Berill. This widely-available soldier’s suit has ended up with various syndicates via the black market. They put together a complete set of gear for their soldiers based on this attire, with upgraded body armor, limb protection, and a more comfortable uniform. The helmet remained unchanged.'
-    image: { fileID: 21300000, guid: 29fc20431200483e8e6a9265837eaf57, type: 3 }
+    image: { fileID: 21300000, guid: 48d6df50f3ab4b09acbb1a0c3a79e2da, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Striker Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

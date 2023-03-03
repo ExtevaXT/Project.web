@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.035
     text: 'The sticky root differs from its brother, the stink root, in that it is actually capable of sticking to any incautious collectors. One day, someone will suggest making grenades out of it...'
-    image: { fileID: 21300000, guid: dd3ab3a9ed604556ab1dab13843118c2, type: 3 }
+    image: { fileID: 21300000, guid: 11a031f7bdaa431ba3696f48bda72bb6, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Sticky Root'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

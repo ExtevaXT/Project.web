@@ -13,7 +13,7 @@ MonoBehaviour:
     strong: 120.0
     piercing: 60.0
     bloodlustChance: 40.0
-    image: { fileID: 21300000, guid: 43c982262656498bb625f151b66e1c4d, type: 3 }
+    image: { fileID: 21300000, guid: cfc1ea8241c14566a8cbca9b7f8581f2, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Ka-Bar BKR3 Tactical Knife'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

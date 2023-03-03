@@ -13,7 +13,7 @@ MonoBehaviour:
     toxicity: 50.0
     biologicalDmgFactor: [35.0]
     text: 'A first-aid treatment used for chemical burns of the larynx and lungs, or chemical poisoning. Does not protect against the direct effects of acid on the body.'
-    image: { fileID: 21300000, guid: febc6366e7ac4cc5a1b3022b12899571, type: 3 }
+    image: { fileID: 21300000, guid: e61bea0bc23a495cbd8c117300db7fa8, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '2nd Class Antidote'
     m_Script: { fileID: 11500000, guid: 8fbc25bef1e7c4f4aa348edf964275e9, type: 3 }

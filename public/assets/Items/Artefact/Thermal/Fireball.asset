@@ -14,7 +14,7 @@ MonoBehaviour:
     radiationAccumulation: [2.0, 5.0]
     thermalAccumulation: [-3.0, -1.0]
     text: 'This artifact got its name from its appearance alone. In fact, it won’t burn you—it has the inexplicable ability to maintain a constant comfortable temperature in a small surrounding area.'
-    image: { fileID: 21300000, guid: 5ca6d064a5604b2aa8ffef0180ac72d7, type: 3 }
+    image: { fileID: 21300000, guid: d854a55370904bb3b054863d1ea4bb2c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Fireball
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

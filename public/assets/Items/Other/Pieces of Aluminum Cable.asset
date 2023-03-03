@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.05
     text: 'Pieces of cable like this are always valuable resources for bartering with.'
-    image: { fileID: 21300000, guid: 3370d07dc7064cdfbbafe04ae9ee06e7, type: 3 }
+    image: { fileID: 21300000, guid: 47907778b7f640b9b12c7aaa5012332d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Pieces of Aluminum Cable'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

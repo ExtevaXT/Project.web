@@ -29,7 +29,7 @@ MonoBehaviour:
     damageDecreaseEnd: 34.0
     maxDistance: 70.0
     text: 'An Italian-made triple-barrel, break-action shotgun. The barrels are arranged in a triangular configuration, with one at the top, and two underneath.'
-    image: { fileID: 21300000, guid: d9d3e7c5e1ed4da4861c8eeb9b303043, type: 3 }
+    image: { fileID: 21300000, guid: 420796e2ed0c4798864893cb013e68eb, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Chiappa Triple Crown'
     m_Script: { fileID: 11500000, guid: bdae6158522d46441a5aace99f60b060, type: 3 }

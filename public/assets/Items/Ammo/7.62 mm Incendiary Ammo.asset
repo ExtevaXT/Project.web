@@ -12,7 +12,7 @@ MonoBehaviour:
     bleeding: -45.0
     combustion: 50.0
     stoppingPower: 40.0
-    image: { fileID: 21300000, guid: d65572c8988a472e93cc35a9f9f8f43a, type: 3 }
+    image: { fileID: 21300000, guid: 8abc4e770f6643198433242c03b2199f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '7.62 mm Incendiary Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

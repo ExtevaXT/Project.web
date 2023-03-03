@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: d0eb85e80569496aa307358a9fea41a6, type: 3 }
+    image: { fileID: 21300000, guid: 5976456a4fc947e7a0cbef730448a617, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Northern Slope Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.03
     text: 'The high iron content in the local soil leads to the growth of this strange rust-colored mold. Maybe scientists can find a use for it.'
-    image: { fileID: 21300000, guid: c3db1e18264842f8af99b96f852c2be1, type: 3 }
+    image: { fileID: 21300000, guid: baadc698a6984b4596f5d9389c940284, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Rusty Mold'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

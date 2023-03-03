@@ -14,7 +14,7 @@ MonoBehaviour:
     bleedingProtection: [5.0, 10.0]
     bleedingAccumulation: [-2.0, -1.0]
     text: 'A slimy artifact that, despite its repulsive texture, is safe to hold without hand protection. When in close contact with a human, it lowers fibrinogen levels in the blood, thickening it. However, the owner becomes more susceptible to different types of burns.'
-    image: { fileID: 21300000, guid: 5707225e34fb4b9b81be363726b49a57, type: 3 }
+    image: { fileID: 21300000, guid: ba6c273c23ed4c31a631660535eb6e1b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Slime
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

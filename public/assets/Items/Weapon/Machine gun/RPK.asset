@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 75.0
     maxDistance: 165.0
     text: 'A Soviet light machine gun based on the AKM assault rifle. When it was entered into service, and indeed for a long time afterwards, it was the lightest machine gun in the world, and established itself as a highly effective weapon compact, simple, and convenient to use.'
-    image: { fileID: 21300000, guid: 38b7a8b4ca2d426aa15fab8604fbe233, type: 3 }
+    image: { fileID: 21300000, guid: 37bd7b25b45b49c1a7aea586549866e2, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: RPK
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

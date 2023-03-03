@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.2
     text: 'A block of data from the Digamma group that was obtained from the corresponding anomalous installation.'
-    image: { fileID: 21300000, guid: 39a0a774968246e59457167b391340aa, type: 3 }
+    image: { fileID: 21300000, guid: 38f31360a71a428499a0bdf123763c3b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Digamma Data Block'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

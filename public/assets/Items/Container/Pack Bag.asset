@@ -17,7 +17,7 @@ MonoBehaviour:
     maxWeightBonus: [10.0]
     biologicalAccumulation: [-1.5]
     text: 'Cursed artifact hunters’ bag with three containers and filter system'
-    image: { fileID: 21300000, guid: 48cd1f9668194405bc41af3c3d60f9cb, type: 3 }
+    image: { fileID: 21300000, guid: 6639b205ee3d4cfcbc01e8b9835ad6d6, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Pack Bag'
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

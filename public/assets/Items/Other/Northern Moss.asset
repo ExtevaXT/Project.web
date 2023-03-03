@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.01
     text: 'This bluish moss is being used on an experimental basis by a couple of German companies for the production of new antibiotics. As a result, it is extremely valuable.'
-    image: { fileID: 21300000, guid: 5dcbfb69aec348d7ac4bceab007e36b0, type: 3 }
+    image: { fileID: 21300000, guid: dfc1247833354056ad866f87a8bc9692, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Northern Moss'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

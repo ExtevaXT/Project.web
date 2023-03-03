@@ -6,13 +6,15 @@ MonoBehaviour:
     key: mag_svu15
     fullName: 'Kobra Extended Clip'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: '['
     rank: Veteran
     class: Clips
     weight: 0.28
     clipSize: 15.0
     reloadTime: 20.000004
     suitableFor: [MTs-116M, Avalanche, SVD, SVU]
-    image: { fileID: 21300000, guid: f4207e841d044d1c91459586dfa376b4, type: 3 }
+    image: { fileID: 21300000, guid: f614f3d826264f2caca0ab8c946f4cf2, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Kobra Extended Clip'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -23,3 +25,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: e9bb5caf793d4678832784ef57c7e108, type: 2 }, { fileID: 11400000, guid: aa8d6b375bff4ef9900be7a7212ebc00, type: 2 }, { fileID: 11400000, guid: f4f3d513157b4f1ca6fccb57acc1ac2d, type: 2 }, { fileID: 11400000, guid: 5a5ea663ec264b778073728ffb220112, type: 2 }]

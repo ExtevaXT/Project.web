@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.03
     text: 'This rare serum is a valuable resource derived from several kinds of artifacts. It is the subject of a number of scientific experiments. Scientists theorize that it could eventually be used to stabilize some of the most dangerous anomalies.'
-    image: { fileID: 21300000, guid: 0cd66b4e5ac54f1299810576eb035dab, type: 3 }
+    image: { fileID: 21300000, guid: b2c909b2228a4f4fbc6ee1fef5e77e6d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Anomalous Serum'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

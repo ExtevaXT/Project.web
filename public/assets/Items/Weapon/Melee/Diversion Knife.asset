@@ -14,7 +14,7 @@ MonoBehaviour:
     piercing: 20.0
     bloodlustChance: 30.0
     text: 'Kochergin’s Diversion Knife'
-    image: { fileID: 21300000, guid: 428e07c376924e699a0cae6c60128e11, type: 3 }
+    image: { fileID: 21300000, guid: 843be04bf4014e7a9bebc8643f00c5ab, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Diversion Knife'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

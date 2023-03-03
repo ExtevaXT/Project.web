@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 60.0
     maxDistance: 140.0
     text: 'A 5.45 mm caliber AK Kalashnikov assault rifle developed in 1970 using Mikhail Kalashnikov’s design, and first used by the armed forces of the USSR in 1974. This model is a further development of the AKM. It was developed as a result of the changeover to new, low-impulse 5.45x39 mm ammo.'
-    image: { fileID: 21300000, guid: f2ec8b1bcf6e4394a873ef02f517048f, type: 3 }
+    image: { fileID: 21300000, guid: d44f9338354e46a286148f81081a63c0, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn AKS-74'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

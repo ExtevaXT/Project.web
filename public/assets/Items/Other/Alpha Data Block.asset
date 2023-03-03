@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.2
     text: 'A block of data from the Alpha group that was obtained from the corresponding anomalous installation.'
-    image: { fileID: 21300000, guid: 86ef32241f5048b5b7e4ba0de99a4c60, type: 3 }
+    image: { fileID: 21300000, guid: 1f2b2576e7e44ab1b0711978c255a23f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Alpha Data Block'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

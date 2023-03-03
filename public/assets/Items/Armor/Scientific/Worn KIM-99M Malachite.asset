@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: standard
     text: 'A modification of the MIS-99 Amber suit. Fitted with upgraded body armor and 2nd-generation NVGs.'
-    image: { fileID: 21300000, guid: a0d83210dfe64ed3bdae3be09783494d, type: 3 }
+    image: { fileID: 21300000, guid: a5016c58e6324715985cd05771500a14, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn KIM-99M Malachite'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

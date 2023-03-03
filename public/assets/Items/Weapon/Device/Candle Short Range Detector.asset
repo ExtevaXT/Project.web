@@ -13,7 +13,7 @@ MonoBehaviour:
     charge: 100.0
     range: 50.0
     text: 'A detector used to locate zones of anomalous activity. It is equipped with a basic tracking device. The wire glows brighter when aimed in the right direction, and it gives off an alarm when in close proximity to a source.'
-    image: { fileID: 21300000, guid: 96c063ad34984b4ea31adea28041b521, type: 3 }
+    image: { fileID: 21300000, guid: e7fb8897b45d4d59b75ac9fb57c1a15e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Candle Short Range Detector'
     m_Script: { fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3 }

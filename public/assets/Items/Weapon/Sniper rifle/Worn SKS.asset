@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 75.0
     maxDistance: 165.0
     text: 'This Soviet semi-automatic carbine that was designed by Sergey Simonov was entered into service in 1949.'
-    image: { fileID: 21300000, guid: 0087f1fd93cb4fdaae071e702d227da8, type: 3 }
+    image: { fileID: 21300000, guid: 8f83af3bfaf14f79b2d5a785c6a1bb5a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn SKS'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

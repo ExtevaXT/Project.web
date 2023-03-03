@@ -9,7 +9,7 @@ MonoBehaviour:
     class: Other
     weight: 0.15
     text: 'An increased concentration of glowing slime sooner or later forms what veteran stalkers call “nuclear gelatin.” You probably won’t find anyone who wants to try marmalade that has been made from it, however...'
-    image: { fileID: 21300000, guid: a13dff495ceb455e8ef756fad43d1a6b, type: 3 }
+    image: { fileID: 21300000, guid: c3c407132b334d19bf0b20a5b934be1d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Nuclear Gelatin'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

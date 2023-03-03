@@ -15,7 +15,7 @@ MonoBehaviour:
     radiationAccumulation: [2.0, 5.0]
     psychoAccumulation: [2.0, 5.0]
     text: 'The next step of development for the evolutionary branch of the Quirk family of gravitational regulator artifacts. It creates a spherical anti-gravity field that reduces the effective weight of any item. Formed in sites of superinteraction of several gravitational fields with exceptionally high intensity levels, which makes it extremely rare. It emits a mixed type of radiation, so you should be careful when using it.'
-    image: { fileID: 21300000, guid: 9efbd6fdb6c84671968c5d8aa6ea83ae, type: 3 }
+    image: { fileID: 21300000, guid: d3a70b62cead4686ab73925440c76723, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Amberite
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

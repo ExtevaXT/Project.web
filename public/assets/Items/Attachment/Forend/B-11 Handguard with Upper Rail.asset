@@ -6,11 +6,13 @@ MonoBehaviour:
     key: forend_b11
     fullName: 'B-11 Handguard with Upper Rail'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Picklock
     class: 'Hanguards and Brackets'
     weight: 0.2
     suitableFor: [AKS-74U]
-    image: { fileID: 21300000, guid: 456f83d308dd4e41a9926151ea3ed201, type: 3 }
+    image: { fileID: 21300000, guid: 1ca957a2ceed458e96d1ea73b5786541, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'B-11 Handguard with Upper Rail'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 6e061c8424784495b473c336266f2196, type: 2 }]

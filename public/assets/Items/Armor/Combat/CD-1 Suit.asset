@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'One of the first suits for the Horizon clan. A mixed, but cheap and comfortable set with properties similar to Zarya.'
-    image: { fileID: 21300000, guid: 63d1b42a02a041c189c00326e5c35ff5, type: 3 }
+    image: { fileID: 21300000, guid: d044b43a38254f7db3ba871eb167c31b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'CD-1 Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

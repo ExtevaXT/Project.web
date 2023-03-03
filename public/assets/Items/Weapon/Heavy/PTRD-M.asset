@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 150.0
     maxDistance: 250.0
     text: 'A single-shot anti-tank weapon with a shortened barrel and an improvised mount for various types of sights. For the sake of accuracy, this weapon should be fired from a prone position.'
-    image: { fileID: 21300000, guid: 06c855055cbc486cbd7eb973642895d4, type: 3 }
+    image: { fileID: 21300000, guid: 8a965581c3b6431889faa8282f1b1d8f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: PTRD-M
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

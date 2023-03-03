@@ -26,7 +26,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Acquiring a good Zarya suit from a stalker or buying a new one gets more difficult every day, and bandits have decided to seek alternatives. Due to its widespread availability and low cost, they opted for the RS-32. PMG gas mask included.'
-    image: { fileID: 21300000, guid: 4eed411bd3024b83baa9166d71a6a994, type: 3 }
+    image: { fileID: 21300000, guid: 07c9b037e14b48108b964260e1f0e33f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Bandit Suit with Gas Mask'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

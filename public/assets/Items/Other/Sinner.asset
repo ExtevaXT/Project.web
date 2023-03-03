@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Unique paint for armor'
-    image: { fileID: 21300000, guid: 219a19606f664618bb97beada7d7df47, type: 3 }
+    image: { fileID: 21300000, guid: 86934e05adbb4dd1a58ef819a6005a77, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Sinner
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

@@ -14,7 +14,7 @@ MonoBehaviour:
     staminaRegenerationBonus: [2.5, 5.0]
     biologicalAccumulation: [2.0, 5.0]
     text: 'The brightest member of the electrostatic family of artifacts. It emits a gas-like substance that causes adrenaline to be released in a human’s blood, but which negatively affects the body if not neutralized. In high demand due to its effectiveness.'
-    image: { fileID: 21300000, guid: 00510a724d4c4aa6baf8b2f27a31119b, type: 3 }
+    image: { fileID: 21300000, guid: 66e0ed42eb17402bb8478fe683789c1f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Helium
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

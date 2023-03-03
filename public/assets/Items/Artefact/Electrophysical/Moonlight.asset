@@ -14,7 +14,7 @@ MonoBehaviour:
     radiationAccumulation: [2.0, 5.0]
     psychoAccumulation: [-3.0, -1.0]
     text: 'Plasma is somehow contained in a cloud similar to the finest glass, yet organic in nature. The artifact has a positive effect on the mind of its owner, despite being radioactive.'
-    image: { fileID: 21300000, guid: 76e25526cd1c4991bcf9f8cf28bb198b, type: 3 }
+    image: { fileID: 21300000, guid: 3f5fa80404d34d58b4c0b8421a3173c9, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Moonlight
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

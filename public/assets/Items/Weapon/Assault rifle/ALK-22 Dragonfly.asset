@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 60.0
     maxDistance: 155.0
     text: 'An assault rifle with variable rate of fire and a block of spinning barrels. The rate of fire increases gradually in automatic firing mode.'
-    image: { fileID: 21300000, guid: 8929dd4f5c8e4bb58d73b7883ff1b3f7, type: 3 }
+    image: { fileID: 21300000, guid: ff2937ecb2154eed8d8bf9349ccb9279, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'ALK-22 Dragonfly'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

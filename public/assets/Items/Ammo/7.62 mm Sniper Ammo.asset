@@ -11,7 +11,7 @@ MonoBehaviour:
     piercing: 27.5
     bleeding: 5.0
     stoppingPower: 25.0
-    image: { fileID: 21300000, guid: b91241ac45134045a865f2e85fa6ba45, type: 3 }
+    image: { fileID: 21300000, guid: 1e3048fe633a44078cfdadd767ec56fd, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '7.62 mm Sniper Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

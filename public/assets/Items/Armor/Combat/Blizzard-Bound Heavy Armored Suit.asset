@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'Noting the popularity of the Shade Hunter amongst middle-class stalkers, several Masters teamed up to make a similar suit for Zone inhabitants, adjusting it to the conditions of anomalous blizzards. It turned out pretty well, but the cost of the materials needed to make it was so high that this Blizzard-Bound was the only such suit ever made.'
-    image: { fileID: 21300000, guid: 0818461735b8453bb97d4d3e1ade1e5f, type: 3 }
+    image: { fileID: 21300000, guid: c67a4c5007f54bb2b08381ee7a57fffc, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Blizzard-Bound Heavy Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

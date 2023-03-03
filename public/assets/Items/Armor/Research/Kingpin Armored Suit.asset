@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'The bandit version of the PSZ-10. Comes in a stylish shade of black.'
-    image: { fileID: 21300000, guid: 4a1e214d7380411caeb39892fe308332, type: 3 }
+    image: { fileID: 21300000, guid: 4f04c426da5742259011b2de5e915263, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Kingpin Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

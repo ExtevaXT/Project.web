@@ -6,11 +6,13 @@ MonoBehaviour:
     key: forend_uziris
     fullName: 'Handguard with Guiding RIS for Uzi'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Picklock
     class: 'Hanguards and Brackets'
     weight: 0.22
     suitableFor: ['IMI Uzi']
-    image: { fileID: 21300000, guid: b47cfb0d799d4f26992139652b4b2cff, type: 3 }
+    image: { fileID: 21300000, guid: 7eaed2d97b0347d78cb2e25fc07db3c5, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Handguard with Guiding RIS for Uzi'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 0707e3adf90446758ca0a8dc45d051b8, type: 2 }]

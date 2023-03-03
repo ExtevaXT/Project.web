@@ -6,12 +6,14 @@ MonoBehaviour:
     key: mag_mc55810
     fullName: 'MTs-558 Extended Clip'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: e
     rank: Master
     class: Clips
     weight: 0.35
     clipSize: 10.0
     suitableFor: [MTs-558]
-    image: { fileID: 21300000, guid: d267f541d7db48f8abc5f2180c1afe22, type: 3 }
+    image: { fileID: 21300000, guid: 01777bcaff6b4a7fa8450184ef366c41, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'MTs-558 Extended Clip'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -22,3 +24,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 4e845df9a2ab44a68438023408380ebd, type: 2 }]

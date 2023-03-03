@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Beneath this thick waterproof cloak is a sweater, which conceals light body armor.'
-    image: { fileID: 21300000, guid: 46d38764634847d8a43b8681e31bde7b, type: 3 }
+    image: { fileID: 21300000, guid: 6f7acac2f3ff4c82812c550d2e4ac91f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Reinforced Cloak'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

@@ -7,7 +7,7 @@ MonoBehaviour:
     fullName: Pine
     pathCategory: Other
     class: 'Skins and Paint'
-    image: { fileID: 21300000, guid: c0bbd418a0e545579e357e3cc368a838, type: 3 }
+    image: { fileID: 21300000, guid: 4145df02c7814890adf8edc444b32b9e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Pine
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

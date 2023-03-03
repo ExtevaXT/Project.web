@@ -13,7 +13,7 @@ MonoBehaviour:
     charge: 100.0
     range: 120.0
     text: 'A detector used to locate zones of anomalous activity. It is equipped with a screen that can show the source of the signals.'
-    image: { fileID: 21300000, guid: f77fa484b7b14a20b5e7480f8bd30a6b, type: 3 }
+    image: { fileID: 21300000, guid: 430b792f383b4026883196bb63e84cd0, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Elbrus Short Range Detector'
     m_Script: { fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3 }

@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.02
     text: 'Beta Group tracker, left behind at the site of an anomalous signal.'
-    image: { fileID: 21300000, guid: a5d31bc2ad0347a18e9654f9f8aa9673, type: 3 }
+    image: { fileID: 21300000, guid: b5254653d8cf490e8edf4a70371ebd26, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Beta Group Tracker'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

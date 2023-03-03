@@ -6,12 +6,14 @@ MonoBehaviour:
     key: mag_fort12
     fullName: 'Fort-12 Extended Clip'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: a
     rank: Newbie
     class: Clips
     weight: 0.06
     additiveClipSize: 3.0
     suitableFor: [Fort-12]
-    image: { fileID: 21300000, guid: bccf8bb7dc1b48f5b6a6db393b6e01f0, type: 3 }
+    image: { fileID: 21300000, guid: e1615c9ee32f4c44adb9cbccb0bb36c8, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Fort-12 Extended Clip'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -22,3 +24,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: afc77c16708845eb96918108f1efc9d1, type: 2 }]

@@ -20,7 +20,7 @@ MonoBehaviour:
     maxDurability: 100.0
     destroyable: 1
     toolTip: "<b>{NAME}</b>\nHazmat costume\n\n{ARTEFACTBONUS} Max artefact amount\nDurability: {DURABILITY}%"
-    image: { fileID: 21300000, guid: 8bfae67085b2434ea22031efb406353b, type: 3 }
+    image: { fileID: 21300000, guid: d3a4fa0754eb42ca9945f4f5c4f5042b, type: 3 }
     drop: { fileID: -3002282694736733961, guid: ec0cb1acb689b7c48b1c86afb7daeeb1, type: 3 }
     modelPrefab: { fileID: 3658017124668526173, guid: b4f053f33fbed574b80d7d0dc6d82173, type: 3 }
     type: Scientific

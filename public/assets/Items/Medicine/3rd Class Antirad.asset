@@ -14,7 +14,7 @@ MonoBehaviour:
     radiationDmgFactor: [100.0]
     radiationAccumulation: [-100.0]
     text: 'Removes radiation from the body.'
-    image: { fileID: 21300000, guid: 1dd777b016964fa7a3faaa1f101d3ad7, type: 3 }
+    image: { fileID: 21300000, guid: 6a2264522dad475cb54e4b9d1c7d87dc, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '3rd Class Antirad'
     m_Script: { fileID: 11500000, guid: 8fbc25bef1e7c4f4aa348edf964275e9, type: 3 }

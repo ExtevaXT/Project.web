@@ -6,12 +6,14 @@ MonoBehaviour:
     key: mag_groza30
     fullName: 'OTs-14 Extended Clip'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: d
     rank: Veteran
     class: Clips
     weight: 0.17
     clipSize: 30.0
     suitableFor: ['OTs-14 Groza']
-    image: { fileID: 21300000, guid: 2e55535ae07e4b5ea44e2534102605b5, type: 3 }
+    image: { fileID: 21300000, guid: f96ad6da34df4b549cb9ec012ce1a658, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'OTs-14 Extended Clip'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -22,3 +24,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: e29bc2d515c14bd2b6f08133294a12b5, type: 2 }]

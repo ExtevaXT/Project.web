@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: standard
     text: 'Virtually the perfect armor for combat. Good protection from bullets and fragmentation, comfortable, the best night-vision goggles—not everyone can afford a masterpiece like this.'
-    image: { fileID: 21300000, guid: 4f22dede2ab0405cbf91a4a89a6b9610, type: 3 }
+    image: { fileID: 21300000, guid: 5cb84e583ba14334825d056f9f2ba5b5, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Damaged Centurion'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

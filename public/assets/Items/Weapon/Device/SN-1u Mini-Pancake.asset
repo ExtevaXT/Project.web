@@ -14,7 +14,7 @@ MonoBehaviour:
     activeScanRadius: 8.0
     activeScanAngle: 60.0
     text: 'Lesser charge usage during active scanning compared to the standard model, but the scanning distance is also decreased.'
-    image: { fileID: 21300000, guid: 6aa6d154a7db444eb6bcf9f87808874e, type: 3 }
+    image: { fileID: 21300000, guid: d2f105738216414997cce855db9b06df, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'SN-1u Mini-Pancake'
     m_Script: { fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3 }

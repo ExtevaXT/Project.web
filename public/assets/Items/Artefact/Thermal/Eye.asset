@@ -14,7 +14,7 @@ MonoBehaviour:
     explosionDmgFactor: [5.0, 15.0]
     radiationAccumulation: [3.0, 5.0]
     text: 'This artifact improves the metabolism of its owner, which means that they recover quicker after damage. Some of the more superstitious stalkers believe that it keeps “watch” over its owner, providing protection against serious injuries—as bullets and fragments won’t hit any vital organs.'
-    image: { fileID: 21300000, guid: 42c9c901f2334398b755bfe9ad721bd0, type: 3 }
+    image: { fileID: 21300000, guid: ccd3b6cfc18f4af28d653d53bfbdf5e4, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Eye
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

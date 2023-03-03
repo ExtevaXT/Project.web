@@ -14,7 +14,7 @@ MonoBehaviour:
     effectiveness: 90.0
     size: 1.0
     text: 'One of the first container models for transporting artifacts. Contains only 1 artifact slot but has good shielding capabilities. Widespread and inexpensive.'
-    image: { fileID: 21300000, guid: 2418dc5c7fb6494bb2872c6bd9de94d1, type: 3 }
+    image: { fileID: 21300000, guid: f461f6ecba904917b3b04eebf58d554f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'KZS-1 Container'
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

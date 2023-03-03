@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: standard
     text: 'When you see soldiers in this armor, be warned—the day of Judgment has come! These Covenant fanatics are bringing suffering to the world. But those who wear this armor are well protected from suffering due to the increased bullet resistance.'
-    image: { fileID: 21300000, guid: 9a17c87444dd402a8eee0aa686099bd8, type: 3 }
+    image: { fileID: 21300000, guid: ab904d94591a4c8b85f2132cf30c821a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Apostle Heavy Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

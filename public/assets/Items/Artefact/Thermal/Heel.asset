@@ -12,7 +12,7 @@ MonoBehaviour:
     maxDurability: 100.0
     staminaBonus: [-50.0, -25.0]
     healEfficiency: [10.0, 25.0]
-    image: { fileID: 21300000, guid: b8635813c40a442b9909e93d6e5067d0, type: 3 }
+    image: { fileID: 21300000, guid: 3ae8bf082bc94b488553d45520885043, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Heel
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

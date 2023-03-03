@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: 01477292ea124da4b3e82ccd560eb5ee, type: 3 }
+    image: { fileID: 21300000, guid: 5bef0fc1fd694678b29da28a6b1a5c07, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'SURPAT—Urban Noise Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

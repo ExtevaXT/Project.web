@@ -12,7 +12,7 @@ MonoBehaviour:
     flashTime: 5.0
     lifetime: 1.5
     text: 'An American flashbang grenade with a short detonation time.'
-    image: { fileID: 21300000, guid: 845f1f17655044e9b413f243a65b0c8c, type: 3 }
+    image: { fileID: 21300000, guid: 16e75c23958e4264a4ed48de583395e8, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'M84 QD'
     m_Script: { fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3 }

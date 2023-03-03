@@ -14,7 +14,7 @@ MonoBehaviour:
     piercing: 80.0
     bloodlustChance: 60.0
     text: 'A dagger with a twisted blade that curves in on itself. Perfectly suited for combat in tight spaces, where standard knives can’t be used.'
-    image: { fileID: 21300000, guid: 173584fe0709499f870e525a0cd61866, type: 3 }
+    image: { fileID: 21300000, guid: 448bc5d4604e47419a407ef52639c819, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Steel Tiger Karambit'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

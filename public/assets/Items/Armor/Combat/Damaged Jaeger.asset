@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'The perfect armor for eliminating mutants and other creatures that inhabit the Zone. Excellent protection against bullets, claws, nails, and knives. This armor is the stuff beast hunters dream about.'
-    image: { fileID: 21300000, guid: 66059d8bcbc54b459512104d85c89229, type: 3 }
+    image: { fileID: 21300000, guid: 4220338e4154409cbab7c6151862d2e8, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Damaged Jaeger'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

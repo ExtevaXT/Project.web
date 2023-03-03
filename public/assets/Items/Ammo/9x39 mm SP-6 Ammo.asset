@@ -11,7 +11,7 @@ MonoBehaviour:
     piercing: 20.0
     bleeding: 5.0
     stoppingPower: 15.0
-    image: { fileID: 21300000, guid: 9492931a0f234fd2a95e8566f230f047, type: 3 }
+    image: { fileID: 21300000, guid: e7ce97e9cf604ec293a18562ab5150e0, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '9x39 mm SP-6 Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

@@ -10,7 +10,7 @@ MonoBehaviour:
     weight: 0.06
     piercing: 62.0
     bleeding: 5.0
-    image: { fileID: 21300000, guid: fdb067d26c594a0f9638a87b083af58c, type: 3 }
+    image: { fileID: 21300000, guid: aa4fe982299b465d93536d839fec4ad3, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Gauss Rifle Charger'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

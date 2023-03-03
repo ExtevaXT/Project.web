@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.015
     text: 'Blue yeast is generally encountered in the vicinity of the Bar. They say you can make a killer drink out of it that makes vodka look like Kolokolchik lemonade.'
-    image: { fileID: 21300000, guid: 2f7de38ac22a46ddaf0b87dead789f66, type: 3 }
+    image: { fileID: 21300000, guid: f567a693a1b54acbaf43e5288abf473d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Blue Yeast'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

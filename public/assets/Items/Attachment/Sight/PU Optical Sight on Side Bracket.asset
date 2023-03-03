@@ -6,13 +6,15 @@ MonoBehaviour:
     key: scope_pu
     fullName: 'PU Optical Sight on Side Bracket'
     pathCategory: Attachment/Sight
+    attachmentMetaGroup: 2
+    attachmentMetaId: P
     rank: Picklock
     class: Sights
     weight: 0.27
     aimSwitchTime: 10.000002
     text: 'A variation of the Soviet optical sight first created in 1940 for use with the sniper model of the Tokarev semi-automatic rifle.'
     suitableFor: ['Mosin’s Carbine', 'Mosin’s Rifle']
-    image: { fileID: 21300000, guid: 55e6fa274582438f921b9d5a83659852, type: 3 }
+    image: { fileID: 21300000, guid: de9dc6bff42f40489c2861b50e928465, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'PU Optical Sight on Side Bracket'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -23,3 +25,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: c83a0f7b789844479eafaeb952b43d12, type: 2 }, { fileID: 11400000, guid: 6592b1e700144eaab5526869fea11c52, type: 2 }]

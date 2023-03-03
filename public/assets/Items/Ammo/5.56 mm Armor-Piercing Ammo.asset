@@ -11,7 +11,7 @@ MonoBehaviour:
     piercing: 10.0
     bleeding: 5.0
     stoppingPower: 15.0
-    image: { fileID: 21300000, guid: 42e58b6f12f8476db57900fd05e9d125, type: 3 }
+    image: { fileID: 21300000, guid: 132b6bc6011b49f0823d7e3a369093f8, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '5.56 mm Armor-Piercing Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

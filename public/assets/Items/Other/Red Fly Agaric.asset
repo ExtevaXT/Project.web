@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.015
     text: 'Rust-colored fungus develops into orange mushrooms with spotted caps that closely resemble fly agaric mushrooms. Various local drunks have been experimenting with making decoctions out of red fly agaric.'
-    image: { fileID: 21300000, guid: ada1ebd7c7164fd3adef5437c0e44b12, type: 3 }
+    image: { fileID: 21300000, guid: 0c652543277044f4a5bd4127e5e4bd49, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Red Fly Agaric'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

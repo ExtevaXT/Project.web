@@ -25,7 +25,7 @@ MonoBehaviour:
     aimSwitch: 0.45
     burn: 66.66667
     default: 33.333336
-    image: { fileID: 21300000, guid: d6b6fe0144c84a15996a624e6201236f, type: 3 }
+    image: { fileID: 21300000, guid: 0fdd0c38c9be41ac9ff12952c82086c7, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Flamethrower
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

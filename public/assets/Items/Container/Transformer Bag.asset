@@ -11,7 +11,7 @@ MonoBehaviour:
     weight: 1.0
     staminaBonus: [10.0]
     maxWeightBonus: [15.0]
-    image: { fileID: 21300000, guid: ebba0e7e54e54dffbf691214c8623ae0, type: 3 }
+    image: { fileID: 21300000, guid: e94edc3b9b8b469f99b643de1e9778ca, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Transformer Bag'
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

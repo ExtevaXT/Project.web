@@ -14,7 +14,7 @@ MonoBehaviour:
     strong: 100.0
     piercing: 50.0
     bloodlustChance: 40.0
-    image: { fileID: 21300000, guid: cfe54260edfd4a668606355c26d78da8, type: 3 }
+    image: { fileID: 21300000, guid: f0b66290dae5455f85f836ff1dc7c472, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Acid Razor'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

@@ -6,6 +6,8 @@ MonoBehaviour:
     key: '22650'
     fullName: 'Izhmash Wooden Stock'
     pathCategory: Attachment/Stock
+    attachmentMetaGroup: 4
+    attachmentMetaId: E
     class: Stocks
     weight: 0.4
     recoil: -1.9999981
@@ -13,8 +15,8 @@ MonoBehaviour:
     drawTime: 2.9999971
     recoilGain: -14.999998
     tickSpreadMultiplierReduction: 14.999998
-    suitableFor: [AKS-74U, AKS-74, 'SMG-19 Bizon-2-01', AKM, 'SMG-19-01 Vityaz', AK-103, 'Kbk wz. 88 Tantal', AK-105, RPK-16, Saiga-12K]
-    image: { fileID: 21300000, guid: e03718c1507c4475ac040595c9b9e1d4, type: 3 }
+    suitableFor: [AKS-74U, AKS-74, 'PP-19 Bizon-2-01', AKM, 'PP-19-01 Vityaz', AK-103, 'Kbk wz. 88 Tantal', AK-105, RPK-16, Saiga-12K]
+    image: { fileID: 21300000, guid: 6a43acb96e5b4132b52a254d9a44cc88, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Izhmash Wooden Stock'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -25,3 +27,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 6e061c8424784495b473c336266f2196, type: 2 }, { fileID: 11400000, guid: 6a5d18711638447e831c5e80d921ad3b, type: 2 }, { fileID: 11400000, guid: ebb241c742234e3aa2373ad17f2a9ed1, type: 2 }, { fileID: 11400000, guid: 473a1753ac314080ba75f71352c1fb72, type: 2 }, { fileID: 11400000, guid: 0b4138c0f552446a98d12b5167718749, type: 2 }, { fileID: 11400000, guid: 78ee10e848834b92be4f14fcee969dad, type: 2 }, { fileID: 11400000, guid: 072d5ce3fae84ea8a31a03fc8860d31a, type: 2 }, { fileID: 11400000, guid: b39e0e8e826b4d64882ad242d4efd5db, type: 2 }]

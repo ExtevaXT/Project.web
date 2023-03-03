@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: 9edaa66fbce64f90aa28c1f41d0d95ff, type: 3 }
+    image: { fileID: 21300000, guid: 4a8e8dbbf2da4667bd9c40296d966de6, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Russian Digital Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

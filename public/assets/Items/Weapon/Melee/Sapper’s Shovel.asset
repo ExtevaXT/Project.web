@@ -14,7 +14,7 @@ MonoBehaviour:
     piercing: 40.0
     bloodlustChance: 25.0
     text: 'A wearable trench tool intended for digging a single trench while under enemy fire. It does a pretty decent job in close combat, too.'
-    image: { fileID: 21300000, guid: c4f6a715b1524aba9f445d5919f17da4, type: 3 }
+    image: { fileID: 21300000, guid: 501ac77d93b948128b292e56d7e13915, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Sapper’s Shovel'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

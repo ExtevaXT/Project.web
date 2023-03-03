@@ -6,6 +6,8 @@ MonoBehaviour:
     key: barrel_ash12
     fullName: 'ASh-12 Standard Barrel'
     pathCategory: Attachment/Barrel
+    attachmentMetaGroup: 0
+    attachmentMetaId: Q
     rank: Master
     class: 'Muzzles and Silencers'
     weight: 0.16
@@ -13,7 +15,7 @@ MonoBehaviour:
     horizontalRecoil: -10.000002
     drawTime: 10.000002
     suitableFor: [ASh-12]
-    image: { fileID: 21300000, guid: 810d3f6af9ed4a0eb127823e6036746a, type: 3 }
+    image: { fileID: 21300000, guid: 1b4e49b545f444418ad3d2caab9e4156, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'ASh-12 Standard Barrel'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: b82f55b8b3d1455e8784b7fed65054c8, type: 2 }]

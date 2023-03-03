@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'The perfect armor for eliminating mutants and other creatures that inhabit the Zone. Excellent protection against bullets, claws, nails, and knives. This armor is the stuff beast hunters dream about.'
-    image: { fileID: 21300000, guid: 40c10d275cd94c57b18225be06d3e3c0, type: 3 }
+    image: { fileID: 21300000, guid: ecb268cdd9244350926b85993960ce1e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Jaeger Exoarmor'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

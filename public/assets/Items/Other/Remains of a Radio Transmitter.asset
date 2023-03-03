@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.05
     text: 'In some areas of the Zone, you can come across quite a lot of old radio equipment. Any marauder will gladly scavenge the remains of it.'
-    image: { fileID: 21300000, guid: 7d801d9c7be64c66aa9b7db004c2c2fb, type: 3 }
+    image: { fileID: 21300000, guid: 8059f6c291cf488bbc9e3151676554ec, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Remains of a Radio Transmitter'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

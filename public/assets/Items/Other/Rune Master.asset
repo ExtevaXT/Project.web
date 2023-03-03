@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Unique paint for armor'
-    image: { fileID: 21300000, guid: 348373ea9420404188660d583cfd9c66, type: 3 }
+    image: { fileID: 21300000, guid: 95d67b9d9c3a4c51b28b51f0deca437a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Rune Master'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

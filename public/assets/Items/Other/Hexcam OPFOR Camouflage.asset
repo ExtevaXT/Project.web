@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: 8dd2375dacb642bca8d3c4bed06dbc14, type: 3 }
+    image: { fileID: 21300000, guid: 0eb96f23db2e4f93b6186e00e9791b49, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Hexcam OPFOR Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

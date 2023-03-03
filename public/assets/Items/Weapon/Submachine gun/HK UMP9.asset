@@ -20,7 +20,7 @@ MonoBehaviour:
     maxDurability: 100.0
     destroyable: 1
     toolTip: "<b>{NAME}</b>\nSome weapon description\n{PERSONAL}\n\n{DAMAGE} Damage\nFire Interval: {COOLDOWN}s\nRequires: {REQUIREDAMMO}\n\nAmmo: {AMMO} / {MAGAZINESIZE}\nDurability: {DURABILITY}%\nWeight: {WEIGHT}g"
-    image: { fileID: 21300000, guid: cde970b4570f4196b21ed7fb64efdd81, type: 3 }
+    image: { fileID: 21300000, guid: 5e58d70c91c54196a89e1808b391d355, type: 3 }
     drop: { fileID: -5240774679397780539, guid: 366e75f3b2f4ba34e9b1cbbe42515e8f, type: 3 }
     modelPrefab: { fileID: 1555594515587678, guid: f7005a4c8935e504eb636a264903c4bc, type: 3 }
     type: SMG

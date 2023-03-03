@@ -30,7 +30,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'This exo-suit is an excellent purchase for a sniper working in the Zone. High mobility is combined with the ability to lie for hours in a radioactive swamp, waiting for the enemy. Masters of ambush from Freedom approve!'
-    image: { fileID: 21300000, guid: a472c3abbc5749e9a1a377c5e856f4b0, type: 3 }
+    image: { fileID: 21300000, guid: fccfaa175917451697c504c5283cfced, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Hounds Exoskeleton'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

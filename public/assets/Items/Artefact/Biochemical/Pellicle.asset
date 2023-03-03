@@ -13,7 +13,7 @@ MonoBehaviour:
     chemicalBurnDmgFactor: [15.0, 30.0]
     radiationAccumulation: [1.0, 3.0]
     text: 'The only artifact that scientists have been able to replicate in laboratory conditions. It envelops nearby surfaces and neutralizes chemical reagents upon contact.'
-    image: { fileID: 21300000, guid: 82be1bb5986d4ba8ad48202aefcc4e28, type: 3 }
+    image: { fileID: 21300000, guid: 9ac77608391e49d08226b6df14e1e14c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Pellicle
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

@@ -14,7 +14,7 @@ MonoBehaviour:
     radiationAccumulation: [2.0, 5.0]
     reactionToTear: [1.0, 2.0]
     text: 'An unknown gas is emitted from the “pores” of this artifact. It speeds up tissue regeneration from scratches and injuries. The artifact is radioactive, easy to find, and inexpensive.'
-    image: { fileID: 21300000, guid: 560c91797f4646c59fca502f1206769e, type: 3 }
+    image: { fileID: 21300000, guid: dcf128fe640e401f8a144ba81360317d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Quirk
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

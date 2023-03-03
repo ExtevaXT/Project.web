@@ -13,7 +13,7 @@ MonoBehaviour:
     strong: 100.0
     piercing: 40.0
     bloodlustChance: 35.0
-    image: { fileID: 21300000, guid: 4ead98b1e7c748e0a7a9bfd64b74fc41, type: 3 }
+    image: { fileID: 21300000, guid: 29ebe56dd7b647bd88c2ec7d31c18df9, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Reverse-Grip Knife'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

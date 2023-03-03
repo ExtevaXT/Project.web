@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.02
     text: 'Wood that has been heated up in anomalies turns into what the locals call “infernal coal.” Paradoxically, this coal remains cool even when subjected to intense heat.'
-    image: { fileID: 21300000, guid: e43048ec1f8c43559cb50d2d0fcb4c26, type: 3 }
+    image: { fileID: 21300000, guid: 2212c65521184ebfa7a19ebe79e8be5a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Piece of Infernal Coal'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

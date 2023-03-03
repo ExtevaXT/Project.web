@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Unique paint for armor'
-    image: { fileID: 21300000, guid: 9c53142aad60491f81116ff577f849b9, type: 3 }
+    image: { fileID: 21300000, guid: 970989203ddb400185193d859e3d0c0e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Hell Rider'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

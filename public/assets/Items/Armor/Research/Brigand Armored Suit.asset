@@ -29,7 +29,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'A consignment of protection gear sets, intended for a group of foreign mercenaries, was intercepted by parties unknown, eventually falling into the hands of Masters. The latter took advantage of the components and, inspired by the Pack of common PSZ-10s and Kingpins, developed a new armored suit. Of particular note are the quality of the fabric, which distributes heat, and the compact healing module similar to the one installed in the AH-2 Nomad.'
-    image: { fileID: 21300000, guid: 0df856eba0a94d8fa0c14c89609fafe7, type: 3 }
+    image: { fileID: 21300000, guid: f1e759b612d54c7bae93620d2258a3d7, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Brigand Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

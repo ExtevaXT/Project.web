@@ -20,7 +20,7 @@ MonoBehaviour:
     maxDurability: 1000
     destroyable: 1
     toolTip: "Used for chopping wood and Zombies.\n\n{DAMAGE} Damage\nAttack Interval: {COOLDOWN}s\nDurability: {DURABILITY}%"
-    image: { fileID: 21300000, guid: 900d4d5b06954e97a7d5b110f1bb46df, type: 3 }
+    image: { fileID: 21300000, guid: ac6a960999d4437fb9d961fb8d234c5c, type: 3 }
     drop: { fileID: 114467341209362586, guid: b4d9da8abb53e484ea95bf0acd7ad0de, type: 3 }
     modelPrefab: { fileID: 1757649641268646, guid: 8579504e705a67a44afa9ead2d6d823e, type: 3 }
     type: Melee

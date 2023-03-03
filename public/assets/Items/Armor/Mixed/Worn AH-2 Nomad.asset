@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'The AH-1 suit enjoyed amazing popularity, and so an improved modification was launched: the AH-2. It differs in terms of its increased protection from all sources of damage.'
-    image: { fileID: 21300000, guid: 9e479a2e0cd441fc84a9fa0e0172bb0f, type: 3 }
+    image: { fileID: 21300000, guid: 4c6d15c45c374c418bae9142a2943e8b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn AH-2 Nomad'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

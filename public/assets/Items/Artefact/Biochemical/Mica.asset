@@ -14,7 +14,7 @@ MonoBehaviour:
     biologicalAccumulation: [2.0, 5.0]
     reactionToTear: [1.5, 3.0]
     text: 'A rare artifact that mitigates some types of damage by gradually enveloping the owner’s tissues in a thin, barely noticeable layer of regenerative substance.'
-    image: { fileID: 21300000, guid: 159db49bb939418cbd56778fddef5997, type: 3 }
+    image: { fileID: 21300000, guid: fcc6bb5dc8c242c2a83cde4d690d646e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Mica
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

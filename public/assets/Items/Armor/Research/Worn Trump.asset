@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: standard
     text: 'Ever since chumps started hanging around in exoskeletons, crooks decided not to sit on the sidelines, and ordered their own versions called the Trump. It moves fast with upgraded, lightened servomotors. It helps avoid the riffraff, but its protection against bullets leaves something to be desired.'
-    image: { fileID: 21300000, guid: 17fdc71d49164160a17d9cb49f826bf0, type: 3 }
+    image: { fileID: 21300000, guid: e7a9c0cbc7544935bd937eff1b16a558, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn Trump'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

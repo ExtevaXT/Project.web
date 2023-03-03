@@ -29,7 +29,7 @@ MonoBehaviour:
     damageDecreaseEnd: 25.0
     maxDistance: 80.0
     text: 'Upgraded SMG-91 KEDR. Thanks to its improved ammo feeding system and lighter breech mechanism, it has a higher firing rate and close-range stopping power, but it is less effective at range.'
-    image: { fileID: 21300000, guid: 9b18ee2f482a4f62aa07befff78ea659, type: 3 }
+    image: { fileID: 21300000, guid: fbafcdeb25784f1abd018d8f50695631, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Tsunami
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

@@ -6,11 +6,13 @@ MonoBehaviour:
     key: forend_valris3
     fullName: 'Clamp with 3 RIS Rails'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Veteran
     class: 'Hanguards and Brackets'
     weight: 0.24
     suitableFor: ['AS Val', VSK-94, 'VSS Vintorez']
-    image: { fileID: 21300000, guid: 37eab988b16447c19a755c9b8041820a, type: 3 }
+    image: { fileID: 21300000, guid: 41d917a48b634c9bad5ceb5ee0f97913, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Clamp with 3 RIS Rails'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 32a377c6479c4cc3bef22c391cccb967, type: 2 }, { fileID: 11400000, guid: 17b5cba0b23f41fa91ba56513b164595, type: 2 }, { fileID: 11400000, guid: 251f821a15f6472f9cbc7a416b4324a4, type: 2 }]

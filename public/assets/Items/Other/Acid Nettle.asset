@@ -9,7 +9,7 @@ MonoBehaviour:
     rank: Newbie
     class: Other
     text: 'The Acid Nettle, which grows in some mutants’ dens in the north, needs neither sun nor water. Little is known about this plant, probably because it leaves you with terrible burns if you touch it.'
-    image: { fileID: 21300000, guid: 058ec01153cf494783ead1d44b19025f, type: 3 }
+    image: { fileID: 21300000, guid: f47ff0cd0d364048bd16e802ccd14964, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Acid Nettle'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

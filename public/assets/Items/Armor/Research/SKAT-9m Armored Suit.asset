@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'A modern army armored suit for assault operations in zones of anomalous activity. Components: PSZ-12p series heavy body armor, Sphere-12m helmet, equipped with induction field suppression, an anomalous protection suit and pressure suit.'
-    image: { fileID: 21300000, guid: db2a25c47119476c8b70d19951484e80, type: 3 }
+    image: { fileID: 21300000, guid: a83c295987a24f27841efea34a6e7525, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'SKAT-9m Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

@@ -13,7 +13,7 @@ MonoBehaviour:
     radiationDmgFactor: [5.0, 15.0]
     psychoDmgFactor: [5.0, 15.0]
     bleedingDmgFactor: [-50.0, -25.0]
-    image: { fileID: 21300000, guid: 44eeb0daf5a84676906bc79cfa4203ad, type: 3 }
+    image: { fileID: 21300000, guid: c3ebb981793e4392aae4fd653aca96f3, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Crystal
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

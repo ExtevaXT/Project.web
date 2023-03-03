@@ -12,7 +12,7 @@ MonoBehaviour:
     common: 40.0
     strong: 100.0
     bloodlustChance: 50.0
-    image: { fileID: 21300000, guid: 198768fd7d8740b18655a55da5391573, type: 3 }
+    image: { fileID: 21300000, guid: 294348d4e0c9429b845a164f136806df, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Icicle
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

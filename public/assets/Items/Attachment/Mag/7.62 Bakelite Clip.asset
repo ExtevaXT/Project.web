@@ -6,6 +6,8 @@ MonoBehaviour:
     key: mag_rumag762b
     fullName: '7.62 Bakelite Clip'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: ^
     rank: Newbie
     class: Clips
     weight: 0.32
@@ -13,7 +15,7 @@ MonoBehaviour:
     drawTime: 20.000004
     reloadTime: 4.999995
     suitableFor: [AKM, AK-103, SOK-94, RPK]
-    image: { fileID: 21300000, guid: 090a3cfdff124007b59dac0aa46929e7, type: 3 }
+    image: { fileID: 21300000, guid: ba71a0966c53497b8aab8c000c6cca80, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '7.62 Bakelite Clip'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: ebb241c742234e3aa2373ad17f2a9ed1, type: 2 }, { fileID: 11400000, guid: 473a1753ac314080ba75f71352c1fb72, type: 2 }, { fileID: 11400000, guid: 9dfb1adf5ebe41179cc7ea969f6883ed, type: 2 }, { fileID: 11400000, guid: 4dec623e3d0447fb8ad07242910b79d0, type: 2 }]

@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'An example of the Zarya series that has been reworked by some freak or other. The upgraded body armor provides additional protection against bullets and the smartly chosen utility vest allows the wearer to carry a lot of weight.'
-    image: { fileID: 21300000, guid: 8fc18ace5f304050a6abe3198448c6bf, type: 3 }
+    image: { fileID: 21300000, guid: 6ae12dbc07934486b15f916c82bfcbd8, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn Tourist'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

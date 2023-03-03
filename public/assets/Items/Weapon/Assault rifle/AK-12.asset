@@ -20,7 +20,7 @@ MonoBehaviour:
     maxDurability: 100.0
     destroyable: 1
     toolTip: "<b>{NAME}</b>\nSome weapon description\n{PERSONAL}\n\n{DAMAGE} Damage\nFire Interval: {COOLDOWN}s\nRequires: {REQUIREDAMMO}\n\nAmmo: {AMMO} / {MAGAZINESIZE}\nDurability: {DURABILITY}%\nWeight: {WEIGHT}g"
-    image: { fileID: 21300000, guid: dc1467be316b4d508bc4e5cee9ea9a4e, type: 3 }
+    image: { fileID: 21300000, guid: eb5831993fa24561898da130920ccb1a, type: 3 }
     drop: { fileID: 4724983406357909044, guid: 2854e6cdbcdaaec44a8e9ec49ae145fb, type: 3 }
     modelPrefab: { fileID: 1428701504022370, guid: c2a14a7492b824e408d4a35a42a0665e, type: 3 }
     type: 'Assault Rifle'

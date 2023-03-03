@@ -26,7 +26,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'A crude ghillie suit with a utility vest. The most suitable suit for snipers.'
-    image: { fileID: 21300000, guid: f4c0c1f2d085442ca5548f29acd1efdc, type: 3 }
+    image: { fileID: 21300000, guid: 6c55b5316dec4ae3bb31e316e71457b7, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Ghillie Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

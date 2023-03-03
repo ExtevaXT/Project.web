@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 70.0
     maxDistance: 150.0
     text: 'A modern assault rifle developed to replace the then-aging AK-74. One of its main features is the ability to fire bursts of two shots with high accuracy (at a range of 100 meters, both bullets hit the same point). This substantially increases the chances of taking down a target thanks to the combined penetrative and stopping power of the bullets.'
-    image: { fileID: 21300000, guid: a9847000531b439e9303a9cef5a42ece, type: 3 }
+    image: { fileID: 21300000, guid: 71492e338a754de0a8fd60c9923a1322, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn AN-94 Abakan'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

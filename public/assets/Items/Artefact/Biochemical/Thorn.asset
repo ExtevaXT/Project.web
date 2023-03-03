@@ -13,7 +13,7 @@ MonoBehaviour:
     bleedingProtection: [-100.0, -50.0]
     radiationAccumulation: [-4.0, -2.0]
     text: 'An artifact that forms inside the Burnt Fuzz anomaly. In appearance it resembles a rusty sphere with needles. If worn, it slowly but effectively cleanses the body of radiation. The artifact affects the tissues of the blood vessels, and as a side effect, they become thinner, which increases the risk of bleeding when injured.'
-    image: { fileID: 21300000, guid: b4e9f4d5f0e74eae9fb144e9f12a7007, type: 3 }
+    image: { fileID: 21300000, guid: 38b43d56e0404f749da15f3290510adb, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Thorn
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

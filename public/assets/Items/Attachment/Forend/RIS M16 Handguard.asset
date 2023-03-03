@@ -6,11 +6,13 @@ MonoBehaviour:
     key: forend_m16ris
     fullName: 'RIS M16 Handguard'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Stalker
     class: 'Hanguards and Brackets'
     weight: 0.25
     suitableFor: [M16A3, M16A2]
-    image: { fileID: 21300000, guid: 9ea08393c07846e39d9b5c1d77f8be46, type: 3 }
+    image: { fileID: 21300000, guid: be75968a2ebd4e0a9cd3032f533b0482, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'RIS M16 Handguard'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 45c72c32a22d4eb4a605295e404c0c17, type: 2 }, { fileID: 11400000, guid: eedb133410934056a17df10d5d65df96, type: 2 }]

@@ -6,12 +6,14 @@ MonoBehaviour:
     key: mag_ak30830
     fullName: '30-Round Clip for AK-308'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: g
     rank: Master
     class: Clips
     weight: 0.42
     clipSize: 30.0
     suitableFor: [AK-308]
-    image: { fileID: 21300000, guid: 27501a4019e840f69c2f8ab584ede34a, type: 3 }
+    image: { fileID: 21300000, guid: 5a6446ac0710474991e255214524e36b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '30-Round Clip for AK-308'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -22,3 +24,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 69418dc108f34512a8527e9029c48960, type: 2 }]

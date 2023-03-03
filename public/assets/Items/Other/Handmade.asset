@@ -7,7 +7,7 @@ MonoBehaviour:
     fullName: Handmade
     pathCategory: Other
     class: 'Skins and Paint'
-    image: { fileID: 21300000, guid: 17e5904ef05846cca58b329948e9a2cd, type: 3 }
+    image: { fileID: 21300000, guid: e0299ab6018a44aab84c48c2905b525e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Handmade
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

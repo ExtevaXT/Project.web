@@ -14,7 +14,7 @@ MonoBehaviour:
     piercing: 40.0
     bloodlustChance: 25.0
     text: 'For shoveling snowdrifts. Decent in close combat, too.'
-    image: { fileID: 21300000, guid: e8fd24e6645d4ee59df21f2da03f5a81, type: 3 }
+    image: { fileID: 21300000, guid: bd692aa968d1411cb62137d6eb4fc46f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'New Year’s Shovel'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

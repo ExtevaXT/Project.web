@@ -7,7 +7,7 @@ MonoBehaviour:
     fullName: Legend
     pathCategory: Other
     class: 'Skins and Paint'
-    image: { fileID: 21300000, guid: 09a06fe30d4c40d9ae391d475521d30d, type: 3 }
+    image: { fileID: 21300000, guid: b81e28b2a652443e8f2ada898915a716, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Legend
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

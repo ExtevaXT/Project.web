@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'The unknown craftsman who made the Zarya suit also created this modification for Voshod. Oxygen tanks, a good utility vest, upgraded armor, and cutting-edge NVG.'
-    image: { fileID: 21300000, guid: 69ca4377afea4464be2ee5814a8e4007, type: 3 }
+    image: { fileID: 21300000, guid: 641e13e868624c16ac001f2deb982a73, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Shade Hunter Heavy Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

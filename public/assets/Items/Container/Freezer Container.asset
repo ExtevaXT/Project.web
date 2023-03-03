@@ -15,7 +15,7 @@ MonoBehaviour:
     speedModifier: [-1.5]
     thermalAccumulation: [-3.0]
     biologicalAccumulation: [1.5]
-    image: { fileID: 21300000, guid: 26e6f7ac77b04cd7b1d40f82de12ea4d, type: 3 }
+    image: { fileID: 21300000, guid: 472c070104e54cb2866e9d23394a2629, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Freezer Container'
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

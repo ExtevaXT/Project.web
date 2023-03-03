@@ -13,7 +13,7 @@ MonoBehaviour:
     regenerationBonus: [3.0, 5.0]
     radiationAccumulation: [3.0, 6.0]
     text: 'Legend says this artifact contains the souls of dead swamp dwellers. It has the ability to significantly speed up the wearer’s physical regeneration rate. Radioactive.'
-    image: { fileID: 21300000, guid: 143a5870ce7a42a2b6616c69c2576de5, type: 3 }
+    image: { fileID: 21300000, guid: 1d36b3f1a3fe4526b1ad6781e4aa8721, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Soul
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

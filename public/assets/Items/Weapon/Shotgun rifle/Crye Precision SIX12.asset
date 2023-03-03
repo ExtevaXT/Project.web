@@ -29,7 +29,7 @@ MonoBehaviour:
     damageDecreaseEnd: 28.0
     maxDistance: 55.0
     text: 'The SIX12 smoothbore revolver-type shotgun was developed by the American company Crye Precision and was first revealed to the general public at the start of 2014. It was designed with a revolver-type bullpup configuration.'
-    image: { fileID: 21300000, guid: 2f6a3fd94bfd4b16b476e454db2f347a, type: 3 }
+    image: { fileID: 21300000, guid: bcc4e4eb13694c2cba4dce6cdd4b336d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Crye Precision SIX12'
     m_Script: { fileID: 11500000, guid: bdae6158522d46441a5aace99f60b060, type: 3 }

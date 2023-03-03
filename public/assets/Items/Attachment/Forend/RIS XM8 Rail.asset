@@ -6,11 +6,13 @@ MonoBehaviour:
     key: mount_xm8ris
     fullName: 'RIS XM8 Rail'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Veteran
     class: 'Hanguards and Brackets'
     weight: 0.13
     suitableFor: ['HK XM8']
-    image: { fileID: 21300000, guid: 6e6d8216871d4c208747f88676341de3, type: 3 }
+    image: { fileID: 21300000, guid: 0889c81d7907466cb938260a08ff602f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'RIS XM8 Rail'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: c8bb9572f3934bf88bf99a64680998b4, type: 2 }]

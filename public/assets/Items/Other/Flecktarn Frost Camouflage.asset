@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: bbfff60fdede4fcaa0c379093b22d5bd, type: 3 }
+    image: { fileID: 21300000, guid: 02b207950059439a8b0a91025dc7c736, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Flecktarn Frost Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

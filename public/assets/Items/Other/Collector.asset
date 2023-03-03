@@ -7,7 +7,7 @@ MonoBehaviour:
     fullName: Collector
     pathCategory: Other
     class: 'Skins and Paint'
-    image: { fileID: 21300000, guid: d13beabccaee4fb9844ce99b9969bc2e, type: 3 }
+    image: { fileID: 21300000, guid: 66caa72c57cc4e029f2bbe21f275a326, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Collector
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

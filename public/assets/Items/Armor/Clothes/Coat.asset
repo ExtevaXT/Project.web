@@ -24,7 +24,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'A regular polyester coat. Polyester is water resistant, so it can resist the effect of chemical reagents very well, but it cannot withstand high temperatures. It melts and can cause serious harm to whoever is wearing it.'
-    image: { fileID: 21300000, guid: a2897282bd934e58bbf4a246d1385d49, type: 3 }
+    image: { fileID: 21300000, guid: ec81b2b3095e457c8aeaf5e509b3e40d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Coat
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

@@ -6,11 +6,13 @@ MonoBehaviour:
     key: forend_pkp
     fullName: 'PKP Receiver Cover with Picatinny Rail'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Veteran
     class: 'Hanguards and Brackets'
     weight: 0.28
     suitableFor: ['PKP Pecheneg']
-    image: { fileID: 21300000, guid: 8b427741bd6641a7ae18e98291abc390, type: 3 }
+    image: { fileID: 21300000, guid: 302a1951e48046f7855e287965b7db62, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'PKP Receiver Cover with Picatinny Rail'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 45ec672435444e55af01aa7f7215e228, type: 2 }]

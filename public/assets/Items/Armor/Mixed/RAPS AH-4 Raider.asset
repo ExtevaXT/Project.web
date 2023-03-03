@@ -29,7 +29,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'A reinforced anomalous protection suit, the logical next stage in the development of the Artifact Hunters range, which requires both physical and anomalous protection. The RAPS is the perfect choice for getting past Electros and for zones with increased psy-emissions.'
-    image: { fileID: 21300000, guid: fc026c2c886942afa09fc3570176d99b, type: 3 }
+    image: { fileID: 21300000, guid: 3782f3cdce734733b6ed10ede1d8fbe9, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'RAPS AH-4 Raider'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

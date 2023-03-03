@@ -14,7 +14,7 @@ MonoBehaviour:
     activeScanRadius: 25.0
     activeScanAngle: 30.0
     text: 'Lesser charge usage during active scanning compared to the standard model, but the scanning distance is also decreased.'
-    image: { fileID: 21300000, guid: c093ab9bc7bb43729ab1cbf5ca5db9d3, type: 3 }
+    image: { fileID: 21300000, guid: 3142449487e24300b74f6ce5c24c31d1, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'SN-2u Leglet'
     m_Script: { fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3 }

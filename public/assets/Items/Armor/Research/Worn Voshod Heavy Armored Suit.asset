@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Exoskeletons with irreparable actuators get a second life when they’re made into these suits. However, you can order one of these suits from the outset. The heavy plates are replaced with lighter ones, and the places where the actuators used to be are reinforced.'
-    image: { fileID: 21300000, guid: c6bf9910b6764d18a24971749bbe13c0, type: 3 }
+    image: { fileID: 21300000, guid: fda1c9c51ef449da9b7c3041d418746d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn Voshod Heavy Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

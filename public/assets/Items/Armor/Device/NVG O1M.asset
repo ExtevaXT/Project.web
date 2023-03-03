@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Armor/Device
     class: Devices
     weight: 1.6
-    image: { fileID: 21300000, guid: cddac993611741279dbb6a90401dfb31, type: 3 }
+    image: { fileID: 21300000, guid: 8191017e1aeb4dc38b71706040cbc7e0, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'NVG O1M'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

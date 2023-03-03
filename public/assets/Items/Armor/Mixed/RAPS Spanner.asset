@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: spacious
     text: 'A reinforced anomalous protection suit inspired by the AH-4. It has the same psy-emission offset device and absorbent capacitor, but the design of the suit has been reworked. An advanced air-filtration system and a frame to fit bulky backpacks were added, the armor was strengthened.'
-    image: { fileID: 21300000, guid: a96cf3b6a1df431c89c743088deb4efc, type: 3 }
+    image: { fileID: 21300000, guid: 1f0d75654d4e485c84018f75f3373982, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'RAPS Spanner'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

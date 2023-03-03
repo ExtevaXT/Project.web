@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: 812f4b4283d64f69a1cccd3da4e32384, type: 3 }
+    image: { fileID: 21300000, guid: 0114d2cf06d349098a5dde9e9bd5f1e9, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Birch Tree Camouflage 1943 Model'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

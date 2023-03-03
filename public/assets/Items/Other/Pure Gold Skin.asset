@@ -7,7 +7,7 @@ MonoBehaviour:
     fullName: 'Pure Gold Skin'
     pathCategory: Other
     class: 'Skins and Paint'
-    image: { fileID: 21300000, guid: 37aa829e41644e52b28e3644faddece5, type: 3 }
+    image: { fileID: 21300000, guid: 7d56abb60a514a149e8ca81bf6fbdac9, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Pure Gold Skin'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

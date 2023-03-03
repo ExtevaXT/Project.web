@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.018
     text: 'These large black mushrooms can occasionally be found in the north. They barely resemble the other members of their species. Veterans of the Zone jokingly called them “zonshrooms,” that is, mushrooms that grew within the dome of the Zone.'
-    image: { fileID: 21300000, guid: 1dd8120cb4c64f858384a68fb3962caf, type: 3 }
+    image: { fileID: 21300000, guid: 59d9bc0755c1420ca58da72d299398c0, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Zonshroom
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

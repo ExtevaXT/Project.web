@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.05
     text: 'When actively mining crappite, the inhabitants of the Dump once noticed that some samples of it have the ability to spontaneously heat up. They use sheets of burning crappite to make makeshift heaters.'
-    image: { fileID: 21300000, guid: 22ae183f12334c93af2427bc24d70fb3, type: 3 }
+    image: { fileID: 21300000, guid: a91613caa81c47caadf55a6abc444d77, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Burning Crappite'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

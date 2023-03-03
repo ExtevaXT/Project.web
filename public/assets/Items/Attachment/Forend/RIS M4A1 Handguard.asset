@@ -6,11 +6,13 @@ MonoBehaviour:
     key: forend_m4ris
     fullName: 'RIS M4A1 Handguard'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Stalker
     class: 'Hanguards and Brackets'
     weight: 0.2
     suitableFor: [M4A1, 'M4 LB']
-    image: { fileID: 21300000, guid: f2d94403eb334d8bb70879707b6e2d68, type: 3 }
+    image: { fileID: 21300000, guid: af678ac5d281402f9d9243e58e12d634, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'RIS M4A1 Handguard'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 77b46f033e30450698a96080f9af3cf6, type: 2 }, { fileID: 11400000, guid: 3557b71d3d36444b8930df3819e053ab, type: 2 }]

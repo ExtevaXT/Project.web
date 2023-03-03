@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: d88748aea6df481da108545398daf2aa, type: 3 }
+    image: { fileID: 21300000, guid: fdd4c0b105d94c93b821d11edf81a6ff, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Belgian Jigsaw Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

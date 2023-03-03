@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.02
     text: 'This compound with a high chlorine content is often found in the north of the Zone and is widely used by stalkers in their daily lives.'
-    image: { fileID: 21300000, guid: ae4f4ed5377347d8bc14745636252aca, type: 3 }
+    image: { fileID: 21300000, guid: 461316450e3744a1a395cea5d2c7aadb, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Chlorinex
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

@@ -13,7 +13,7 @@ MonoBehaviour:
     staminaBonus: [-50.0, -25.0]
     bulletDmgFactor: [15.0, 20.0]
     tearDmgFactor: [15.0, 20.0]
-    image: { fileID: 21300000, guid: 69e42f3d5d44410bb80be2ed21d47e42, type: 3 }
+    image: { fileID: 21300000, guid: 09578a81c4764982a16bbfd7f905b9c9, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Crust
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

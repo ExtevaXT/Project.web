@@ -26,7 +26,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Tactical armor worn by the Horizon clan, not released for mass production. Most stalkers prefer the CD-3a, as it has better overall properties, but this armored suit has found owners among fans of protection from bandit bullets and mutant claws.'
-    image: { fileID: 21300000, guid: b8526cb55f114f8c9a9660af279a7e0a, type: 3 }
+    image: { fileID: 21300000, guid: f8b4e902994943edbe24596c1c8a09da, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'CD-3b Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

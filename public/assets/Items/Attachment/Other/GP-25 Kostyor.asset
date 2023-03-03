@@ -6,12 +6,14 @@ MonoBehaviour:
     key: launcher_gp25
     fullName: 'GP-25 Kostyor'
     pathCategory: Attachment/Other
+    attachmentMetaGroup: 1
+    attachmentMetaId: A
     rank: Veteran
     class: 'Other Attachments'
     weight: 1.5
     text: 'Russian 40 mm Underbarrel Grenade Launcher'
     suitableFor: [AKS-74, AKM, 'AN-94 Abakan', 'Kbk wz. 88 Tantal', AK-105, TKB-0146M, AK-12, AK-308, 'AKM Wooden Handguard, Black', 'Fab Defense AK Handguard', 'B-10M Handguard and B-33 Receiver Cover', 'B-10M Handguard (Bottom Rail)']
-    image: { fileID: 21300000, guid: 96da0553ee734cefbc85728c621c8e17, type: 3 }
+    image: { fileID: 21300000, guid: 1227ba27ca124bd2aca339ad15bba41f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'GP-25 Kostyor'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }
@@ -22,3 +24,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 6a5d18711638447e831c5e80d921ad3b, type: 2 }, { fileID: 11400000, guid: ebb241c742234e3aa2373ad17f2a9ed1, type: 2 }, { fileID: 11400000, guid: 64f565e6ccc040bc810d4c4cad0103fa, type: 2 }, { fileID: 11400000, guid: 0b4138c0f552446a98d12b5167718749, type: 2 }, { fileID: 11400000, guid: 78ee10e848834b92be4f14fcee969dad, type: 2 }, { fileID: 11400000, guid: 8777593067f64bd4810960977d18bc34, type: 2 }, { fileID: 11400000, guid: 3f7b75414d5e44538fccd02b875af575, type: 2 }, { fileID: 11400000, guid: 69418dc108f34512a8527e9029c48960, type: 2 }, { fileID: 11400000, guid: b38e13f4aefc469fa5dd3e9433ed4e71, type: 2 }, { fileID: 11400000, guid: 2a3fcedcbab348adb363edf833bdd40d, type: 2 }, { fileID: 11400000, guid: 4884480e25f94582928eea121281bf8a, type: 2 }, { fileID: 11400000, guid: ac2b07df60b2419488d2180478a760cd, type: 2 }]

@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'The set includes a SSh-60 helmet, utility vest and body armor.'
-    image: { fileID: 21300000, guid: 87e67fe3422c4fbdbf10ed70a5f7d253, type: 3 }
+    image: { fileID: 21300000, guid: ab3a1c6181ff429cb1d3f8eeec46d035, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Lynx Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

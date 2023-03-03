@@ -6,14 +6,16 @@ MonoBehaviour:
     key: scope_1p77
     fullName: '1P77 Optical Sight'
     pathCategory: Attachment/Sight
+    attachmentMetaGroup: 2
+    attachmentMetaId: 'N'
     rank: Newbie
     class: Sights
     weight: 0.95
     aimSwitchTime: 10.000002
     drawTime: 4.999995
     text: 'Model: 1P77'
-    suitableFor: [AKS-74U, AKS-74, 'SMG-19 Bizon-2-01', AKM, 'SMG-19-01 Vityaz', 'AS Val', 'AN-94 Abakan', AK-103, AEK-971, 'Kbk wz. 88 Tantal', SOK-94, AK-105, RPK, 9А-91, VSK-94, Saiga-12K, RPK-74, 'PKP Pecheneg', Rapier, Avalanche, SVD, 'VSS Vintorez', SVU, 'SKS Bracket—Dovetail Joint']
-    image: { fileID: 21300000, guid: 9b2c6308c63646198ad79ea9b1ea474f, type: 3 }
+    suitableFor: [AKS-74U, AKS-74, 'PP-19 Bizon-2-01', AKM, 'PP-19-01 Vityaz', 'AS Val', 'AN-94 Abakan', AK-103, AEK-971, 'Kbk wz. 88 Tantal', SOK-94, AK-105, RPK, 9А-91, VSK-94, Saiga-12K, RPK-74, 'PKP Pecheneg', Rapier, Avalanche, SVD, 'VSS Vintorez', SVU, 'SKS Bracket—Dovetail Joint']
+    image: { fileID: 21300000, guid: 6ae620c4d24f4778baebae028157c11e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '1P77 Optical Sight'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 6e061c8424784495b473c336266f2196, type: 2 }, { fileID: 11400000, guid: 6a5d18711638447e831c5e80d921ad3b, type: 2 }, { fileID: 11400000, guid: ebb241c742234e3aa2373ad17f2a9ed1, type: 2 }, { fileID: 11400000, guid: 32a377c6479c4cc3bef22c391cccb967, type: 2 }, { fileID: 11400000, guid: 64f565e6ccc040bc810d4c4cad0103fa, type: 2 }, { fileID: 11400000, guid: 473a1753ac314080ba75f71352c1fb72, type: 2 }, { fileID: 11400000, guid: cba26f26a7d2445ea71c111e085195b1, type: 2 }, { fileID: 11400000, guid: 0b4138c0f552446a98d12b5167718749, type: 2 }, { fileID: 11400000, guid: 9dfb1adf5ebe41179cc7ea969f6883ed, type: 2 }, { fileID: 11400000, guid: 78ee10e848834b92be4f14fcee969dad, type: 2 }, { fileID: 11400000, guid: 4dec623e3d0447fb8ad07242910b79d0, type: 2 }, { fileID: 11400000, guid: 0b4d5b4a8de24eae987da9810259b0e1, type: 2 }, { fileID: 11400000, guid: 17b5cba0b23f41fa91ba56513b164595, type: 2 }, { fileID: 11400000, guid: b39e0e8e826b4d64882ad242d4efd5db, type: 2 }, { fileID: 11400000, guid: 493f0724b69442698a991472fab0472c, type: 2 }, { fileID: 11400000, guid: 45ec672435444e55af01aa7f7215e228, type: 2 }, { fileID: 11400000, guid: 5202b5c71aa547de93c4f367cfc0a03f, type: 2 }, { fileID: 11400000, guid: aa8d6b375bff4ef9900be7a7212ebc00, type: 2 }, { fileID: 11400000, guid: f4f3d513157b4f1ca6fccb57acc1ac2d, type: 2 }, { fileID: 11400000, guid: 251f821a15f6472f9cbc7a416b4324a4, type: 2 }, { fileID: 11400000, guid: 5a5ea663ec264b778073728ffb220112, type: 2 }, { fileID: 11400000, guid: fa67967e38504e24aa77fe9ff6161e7a, type: 2 }]

@@ -6,6 +6,8 @@ MonoBehaviour:
     key: '22655'
     fullName: 'APS Stock'
     pathCategory: Attachment/Stock
+    attachmentMetaGroup: 4
+    attachmentMetaId: J
     class: Stocks
     weight: 0.18
     wiggle: -25.0
@@ -13,7 +15,7 @@ MonoBehaviour:
     recoilGain: -19.999998
     tickSpreadMultiplierReduction: 25.0
     suitableFor: [APS]
-    image: { fileID: 21300000, guid: a327c3d6410b422c8b00c729ea915ddc, type: 3 }
+    image: { fileID: 21300000, guid: efaccdb1b132443d834521f674c16fce, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'APS Stock'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 80cc50e54d084ea1bc024827fb03a407, type: 2 }]

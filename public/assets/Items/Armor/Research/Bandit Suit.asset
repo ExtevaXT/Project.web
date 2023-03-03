@@ -26,7 +26,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Acquiring a good Zarya suit from a stalker or buying a new one gets more difficult every day, and bandits have decided to seek alternatives. Due to its widespread availability and low cost, they opted for the RS-32. The trendy hat really complements its appearance.'
-    image: { fileID: 21300000, guid: 6950f57c68b44ea18d0a3917ac14cad0, type: 3 }
+    image: { fileID: 21300000, guid: 6638d7e1f29c40e4b3dffcada5ce3f94, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Bandit Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

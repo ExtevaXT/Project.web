@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: standard
     text: 'An exoskeleton modification made by an unknown craftsman. By all appearances, this model was upgraded using anomalous tools and acquired unique capabilities. Among the various upgrades, the advanced servomotors, the unlimited freedom of movement, the cutting-edge NVG and the upgraded shielding helmet stand out.'
-    image: { fileID: 21300000, guid: 214f036683924eb29244589d4a399512, type: 3 }
+    image: { fileID: 21300000, guid: 460aff3cf41348aeba08fabbaa139c5c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Nord-22 Group Exoskeleton'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

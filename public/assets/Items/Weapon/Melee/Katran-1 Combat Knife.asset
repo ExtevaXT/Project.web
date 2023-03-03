@@ -14,7 +14,7 @@ MonoBehaviour:
     piercing: 80.0
     bloodlustChance: 50.0
     text: 'A universal weapon and tool that is suitable both for combat and for survival. Made on orders from the Russian Navy to replace the obsolete diver’s knife.'
-    image: { fileID: 21300000, guid: 28a7b760709f4bc39049cb6e216e8d62, type: 3 }
+    image: { fileID: 21300000, guid: 01e9dd46cbd4497cb7e17dd93b30640a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Katran-1 Combat Knife'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

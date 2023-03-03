@@ -11,7 +11,7 @@ MonoBehaviour:
     weight: 2.0
     staminaBonus: [25.0]
     maxWeightBonus: [30.0]
-    image: { fileID: 21300000, guid: 8f6dfb604dc946d289db79891298b7d7, type: 3 }
+    image: { fileID: 21300000, guid: 6a8bcf05dfb0409b993ad1277056c278, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'MBSS Backpack'
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

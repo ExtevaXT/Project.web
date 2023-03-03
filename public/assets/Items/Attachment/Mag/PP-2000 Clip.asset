@@ -6,14 +6,16 @@ MonoBehaviour:
     key: mag_pp200040
     fullName: 'PP-2000 Clip'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: \
     rank: Newbie
     class: Clips
     weight: 0.26
     clipSize: 40.0
     drawTime: 4.999995
     reloadTime: 4.999995
-    suitableFor: [SMG-2000]
-    image: { fileID: 21300000, guid: 4a3abfa2aa174adbba35e93520194c1e, type: 3 }
+    suitableFor: [PP-2000]
+    image: { fileID: 21300000, guid: 65ed0bcddbee4d72babbdc04d12a1d42, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'PP-2000 Clip'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }

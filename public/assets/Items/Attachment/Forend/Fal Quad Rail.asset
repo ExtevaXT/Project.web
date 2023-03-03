@@ -6,11 +6,13 @@ MonoBehaviour:
     key: forend_falris
     fullName: 'Fal Quad Rail'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Master
     class: 'Hanguards and Brackets'
     weight: 0.43
     suitableFor: ['FN FAL']
-    image: { fileID: 21300000, guid: b21ce3acff9544298cf5f566f0c571cd, type: 3 }
+    image: { fileID: 21300000, guid: 1cd95020235646a7956ed4b6dde3caed, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Fal Quad Rail'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: e943fe9d471747c6a8fa392392a870ff, type: 2 }]

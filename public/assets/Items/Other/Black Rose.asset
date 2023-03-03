@@ -7,7 +7,7 @@ MonoBehaviour:
     fullName: 'Black Rose'
     pathCategory: Other
     class: 'Skins and Paint'
-    image: { fileID: 21300000, guid: 3ab7f261f27c4d74b206d1578ac253d0, type: 3 }
+    image: { fileID: 21300000, guid: 6e788a6113564773b8ddcf0a1bf3fa60, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Black Rose'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

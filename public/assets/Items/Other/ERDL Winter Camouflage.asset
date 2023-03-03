@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: 6f68f0ca56524462969826787f607760, type: 3 }
+    image: { fileID: 21300000, guid: 3450fb3fecd842e4950ddb5a67f9bccd, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'ERDL Winter Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

@@ -29,7 +29,7 @@ MonoBehaviour:
     damageDecreaseEnd: 24.0
     maxDistance: 30.0
     text: 'An American smoothbore, single-shot shotgun. It has never enjoyed widespread use, but thanks to its simple construction, it is now often made by hand in the Zone as a cheap and reliable “boomstick.”'
-    image: { fileID: 21300000, guid: 4d96d4922eb1455bac589b5f96cd2007, type: 3 }
+    image: { fileID: 21300000, guid: 95a1796ba13446a7b9b15b56aea1f218, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Cobray Terminator'
     m_Script: { fileID: 11500000, guid: bdae6158522d46441a5aace99f60b060, type: 3 }

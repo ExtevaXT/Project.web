@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Exoskeletons with irreparable actuators get a second life when they’re made into these suits. However, you can order one of these suits from the outset. The heavy plates are replaced with lighter ones, and the places where the actuators used to be are reinforced.'
-    image: { fileID: 21300000, guid: 28cc4d3852bc4d93b30c08f0983e3713, type: 3 }
+    image: { fileID: 21300000, guid: 5ce91ebd716c43cda7dfd4e13e598739, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Thug Heavy Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

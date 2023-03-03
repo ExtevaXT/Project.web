@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 65.0
     maxDistance: 150.0
     text: 'A compact assault rifle manufactured in the Tulsky Instrument Design Bureau in 1992 as a more technical alternative to (and competitor for) the SR-3 Vikhr assault rifle.'
-    image: { fileID: 21300000, guid: e9f9619216db4ea4810e1b74a3418977, type: 3 }
+    image: { fileID: 21300000, guid: 036d9106dd74400990c88c4f8d05afe9, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 9А-91
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

@@ -6,12 +6,14 @@ MonoBehaviour:
     key: launcher_groza
     fullName: 'Grenade Launcher for OTs-14 Groza'
     pathCategory: Attachment/Other
+    attachmentMetaGroup: 1
+    attachmentMetaId: C
     rank: Veteran
     class: 'Other Attachments'
     weight: 1.6
     text: 'Russian 40 mm Underbarrel Grenade Launcher'
     suitableFor: ['OTs-14 Groza', 'OTs-14 Tactical Grip']
-    image: { fileID: 21300000, guid: cf1f853a2228444cbf6778fee945f35b, type: 3 }
+    image: { fileID: 21300000, guid: 568bcd10615c4a1c894461b70d30fa8a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Grenade Launcher for OTs-14 Groza'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }
@@ -22,3 +24,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: e29bc2d515c14bd2b6f08133294a12b5, type: 2 }, { fileID: 11400000, guid: 0c1d2a03e11f4dfe8b929356a00ef531, type: 2 }]

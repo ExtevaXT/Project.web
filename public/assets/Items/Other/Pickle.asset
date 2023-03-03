@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.02
     text: 'This yellowy-green mineral was first discovered in the Rostok Factory. If you pour boiling water into it and leave it for a couple of hours, the resulting decoction can alleviate a hangover. It goes without saying that it’s a really valuable resource!'
-    image: { fileID: 21300000, guid: 62f912e587ce47338277b81295dcb680, type: 3 }
+    image: { fileID: 21300000, guid: ecb7fe646d0547c9b111629c30a9914e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Pickle
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

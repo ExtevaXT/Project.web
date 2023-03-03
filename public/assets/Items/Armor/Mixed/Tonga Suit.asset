@@ -30,7 +30,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'A suit named in honor of the archipelago in the Pacific Ocean. Outwardly it resembles a diving suit, but more technologically advanced. Equipped with a cheap but reliable life-support system.'
-    image: { fileID: 21300000, guid: ffb3801afcb14ce5b263b5d40b6e91f9, type: 3 }
+    image: { fileID: 21300000, guid: e8f956916b11496d92261fe7d064f5d4, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Tonga Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

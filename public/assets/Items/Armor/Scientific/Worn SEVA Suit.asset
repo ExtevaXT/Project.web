@@ -26,7 +26,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'Having obtained a shipment of decommissioned body armor, the Chernobyl Research Institute decided to get a decisive foothold in a newly forming market segment: wealthy stalkers. This suit was the result. The closed breathing system gave it excellent performance and an eye-watering price. Fitted with 2nd-generation NVGs.'
-    image: { fileID: 21300000, guid: 7f6a8f0b6d78433ca0f8145218b8aad7, type: 3 }
+    image: { fileID: 21300000, guid: 90726f37912a421abb658ca130b7fb8c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn SEVA Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

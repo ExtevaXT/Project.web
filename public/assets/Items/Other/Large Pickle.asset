@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.05
     text: 'The more serious the bender they’re planning, the larger the pickle that stalkers look for, so that everyone can take the edge off their hangover and no one leaves offended!'
-    image: { fileID: 21300000, guid: 62b29a2daf4e469bbad54986a259b93a, type: 3 }
+    image: { fileID: 21300000, guid: 944b051700424ccbbf035e2a36c8318e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Large Pickle'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

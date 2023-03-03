@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 80.0
     maxDistance: 170.0
     text: 'A German assault rifle entered into service by the Federal Republic of Germany in 1959.'
-    image: { fileID: 21300000, guid: 950d686400804282ba0ca55a47556221, type: 3 }
+    image: { fileID: 21300000, guid: ede13b4a2a4b4b6982ecd3123d6c213a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Old HK G3A1'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

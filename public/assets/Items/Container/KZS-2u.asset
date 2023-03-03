@@ -14,7 +14,7 @@ MonoBehaviour:
     effectiveness: 100.0
     size: 2.0
     text: 'A set of two KZS-1u containers. Lets you carry two artifacts and, obviously, has good shielding capabilities.'
-    image: { fileID: 21300000, guid: 76c388b41b1d4a77a9a8aa30676e4ef2, type: 3 }
+    image: { fileID: 21300000, guid: 9a30ae0272ec4651b7f9ef6fd60a0ac5, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: KZS-2u
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

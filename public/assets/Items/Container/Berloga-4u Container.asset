@@ -15,7 +15,7 @@ MonoBehaviour:
     size: 4.0
     speedModifier: [-1.5]
     text: 'A reinforced artifact container model. Has weak shielding capabilities but is easy to produce, reliable, and lets you carry four artifacts. These factors had a strong influence on this model’s popularity.'
-    image: { fileID: 21300000, guid: 8dd02274241b4dad9c65ea0f3507bf92, type: 3 }
+    image: { fileID: 21300000, guid: a48153d70a1e4c3ea8276de9866b173d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Berloga-4u Container'
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

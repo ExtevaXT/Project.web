@@ -12,7 +12,7 @@ MonoBehaviour:
     flashTime: 4.0
     lifetime: 2.5
     text: 'A flash grenade produced in the Zone. It is popular due to its price and lightness, and it allows you to scare small mutants.'
-    image: { fileID: 21300000, guid: 31110ef72a8a408aa1ee6dfd865a389d, type: 3 }
+    image: { fileID: 21300000, guid: 968573fd2ba842f6936ba9a8b09e0d78, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Flare Grenade'
     m_Script: { fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3 }

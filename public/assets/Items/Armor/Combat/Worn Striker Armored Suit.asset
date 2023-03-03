@@ -26,7 +26,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'The direct successor to the Berill. This widely-available soldier’s suit has ended up with various syndicates via the black market. They put together a complete set of gear for their soldiers based on this attire, with upgraded body armor, limb protection, and a more comfortable uniform. The helmet remained unchanged.'
-    image: { fileID: 21300000, guid: e4b08564f444482d8345ea4576462ba7, type: 3 }
+    image: { fileID: 21300000, guid: e642796e67dd40008c7bc08cc43a2c6d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn Striker Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

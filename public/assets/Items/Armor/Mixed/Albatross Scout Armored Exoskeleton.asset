@@ -30,7 +30,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Use of cheaper protection made it possible to lower the cost of the main Albatross series. The first modification to this armored exoskeleton was the Albatross Scout.'
-    image: { fileID: 21300000, guid: b07b1f8ad1054a48b41a4b1977aea39a, type: 3 }
+    image: { fileID: 21300000, guid: 4e96d23be7ed4203bdcc325e0ed009a8, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Albatross Scout Armored Exoskeleton'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

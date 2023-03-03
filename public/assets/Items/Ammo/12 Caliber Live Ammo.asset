@@ -12,7 +12,7 @@ MonoBehaviour:
     bleeding: 10.0
     spread: -60.000004
     stoppingPower: 75.0
-    image: { fileID: 21300000, guid: 92d53d0cfa5e40fda71ca768b90ba7fa, type: 3 }
+    image: { fileID: 21300000, guid: c0eaf6c3b3fe4fe4bb770421276e7983, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '12 Caliber Live Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

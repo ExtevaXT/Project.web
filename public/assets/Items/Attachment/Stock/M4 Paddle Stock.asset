@@ -6,6 +6,8 @@ MonoBehaviour:
     key: '22604'
     fullName: 'M4 Paddle Stock'
     pathCategory: Attachment/Stock
+    attachmentMetaGroup: 4
+    attachmentMetaId: C
     class: Stocks
     weight: 0.35
     recoil: -2.9999971
@@ -14,7 +16,7 @@ MonoBehaviour:
     recoilGain: -19.999998
     tickSpreadMultiplierReduction: 20.000004
     suitableFor: [M4A1, 'M4 LB', LR-300]
-    image: { fileID: 21300000, guid: 9a0dcbf7f0d94b3f87818f57a2631516, type: 3 }
+    image: { fileID: 21300000, guid: a7fa6feba4aa48108f7d804efd3cf284, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'M4 Paddle Stock'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -25,3 +27,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 77b46f033e30450698a96080f9af3cf6, type: 2 }, { fileID: 11400000, guid: 3557b71d3d36444b8930df3819e053ab, type: 2 }, { fileID: 11400000, guid: b10adf3b927c4040a73f3de593efa08d, type: 2 }]

@@ -14,7 +14,7 @@ MonoBehaviour:
     biologicalAccumulation: [-5.0, -2.0]
     reactionToChemicalBurn: [2.0, 3.0]
     text: 'An organic artifact that resembles the Meat Chunk and the Soul artifacts, but which differs radically in its properties. This artifact decreases the body’s susceptibility to biological agents, but increases energy expenditure when moving.'
-    image: { fileID: 21300000, guid: b0fa36c5ad044856a86aa779bbf4e767, type: 3 }
+    image: { fileID: 21300000, guid: dc13164917fa4bdaa194de79a9d21661, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Swamp Rot'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

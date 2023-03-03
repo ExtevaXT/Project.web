@@ -39,4 +39,9 @@
         @endif
 
     </div>
+    <script defer>
+        window.livewire.on('change', () => {
+            jdenticon.updateSvg('.avatar', '{{Auth::user()->name}}')
+        });
+    </script>
 </div>

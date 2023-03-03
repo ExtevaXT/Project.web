@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'The RS-72 Punisher is a universal armored suit supplied to various private military companies operating in the Zone. Mercenaries need a multipurpose suit to confidently perform any tasks assigned to them.'
-    image: { fileID: 21300000, guid: 4d922baaf7804c70b35b6c8caecc2133, type: 3 }
+    image: { fileID: 21300000, guid: e02c7ad8d15d40848a5c9970c7ffb642, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Punisher Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

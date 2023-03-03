@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.2
     text: 'A block of data from the Delta group that was obtained from the corresponding anomalous installation.'
-    image: { fileID: 21300000, guid: f2033d8751734696b2303affcf3ba263, type: 3 }
+    image: { fileID: 21300000, guid: 05bab1f6b503413e91d47e22305473e2, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Delta Data Block'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

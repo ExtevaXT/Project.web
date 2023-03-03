@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: standard
     text: 'At some point, a military invention fell into the hands of a brainy stalker technician, who put a lot of effort into crafting this item. The quality of the piece isn’t particularly high, due to the presence of fatal flaws in the original planning stage.'
-    image: { fileID: 21300000, guid: 486097df17d2436a99bb1acf02bca7d2, type: 3 }
+    image: { fileID: 21300000, guid: 6ea71c2ee92e4da5b416e2ca1dbe4fce, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn Exoskeleton'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

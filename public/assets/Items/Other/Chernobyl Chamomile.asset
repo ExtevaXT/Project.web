@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.005
     text: 'Large Chernobyl chamomile plants are extremely poisonous, to the extent that people even recommend plugging your nose when gathering them.'
-    image: { fileID: 21300000, guid: a4edfc01704a4b0a919dba98e3f9b781, type: 3 }
+    image: { fileID: 21300000, guid: 732887e45ee64a9eb3aa347d73949c5b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Chernobyl Chamomile'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

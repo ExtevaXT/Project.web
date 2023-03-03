@@ -11,7 +11,7 @@ MonoBehaviour:
     default: 20.0
     bleeding: 5.0
     stoppingPower: 25.0
-    image: { fileID: 21300000, guid: fef7c5924efe43089224d25587b28d6b, type: 3 }
+    image: { fileID: 21300000, guid: 204bf3506d604a149677bd8cfce3a0a9, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '5.56 mm Silver Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

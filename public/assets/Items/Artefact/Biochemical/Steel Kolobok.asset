@@ -14,7 +14,7 @@ MonoBehaviour:
     tearDmgFactor: [15.0, 25.0]
     psychoAccumulation: [4.0, 6.0]
     text: 'An anomaly even among artifacts. Appearing in the Burnt Fuzz anomaly under an unknown set of conditions, this artifact lowers susceptibility to lacerations and increases fatigue tolerance, but it also has a negative effect on the psyche.'
-    image: { fileID: 21300000, guid: 0422e56965824f619bbc3d26f35e9a46, type: 3 }
+    image: { fileID: 21300000, guid: 7a2fef09ac964102b7ca41f1a0ea03b3, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Steel Kolobok'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

@@ -9,7 +9,7 @@
             background-image:url('{{ asset($account->image)}}')
             "></div>
     @else
-        <svg class="me-3 mb-2" data-jdenticon-value="{{$account->name}}" width="{{$size}}" height="{{$size}}"></svg>
+        <svg class="me-3 mb-2 avatar" data-jdenticon-value="{{$account->name}}" width="{{$size}}" height="{{$size}}"></svg>
     @endif
     @if($all)
         <div>

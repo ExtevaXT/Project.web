@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'The stalker’s Hawk, but instead of the regular suit, this is a hunter’s suit. Other pieces of gear are chosen to match. A true bandit has to look stylish.'
-    image: { fileID: 21300000, guid: 8f72a6eea9b44b5d99a9f8f1d88e97ee, type: 3 }
+    image: { fileID: 21300000, guid: b6bebceb0f624f609ad62e4c3ad84e95, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn Mockingbird Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

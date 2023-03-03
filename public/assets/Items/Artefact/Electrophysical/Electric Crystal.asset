@@ -14,7 +14,7 @@ MonoBehaviour:
     psychoAccumulation: [-2.0, -1.0]
     reactionToElectroshock: [1.0, 3.0]
     text: 'A crystal that was caught in an electrical anomaly.'
-    image: { fileID: 21300000, guid: 9727560aab284fe28a52086b39967de8, type: 3 }
+    image: { fileID: 21300000, guid: 6a6bfa32c4ef47c688fe463e0fdd926f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Electric Crystal'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

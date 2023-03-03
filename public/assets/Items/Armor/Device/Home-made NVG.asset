@@ -9,7 +9,7 @@ MonoBehaviour:
     rank: Picklock
     class: Devices
     weight: 1.25
-    image: { fileID: 21300000, guid: 8aa836d74cc7453595aec7881a2034d1, type: 3 }
+    image: { fileID: 21300000, guid: d3e2be84f71b406f98912a53e8df7139, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Home-made NVG'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

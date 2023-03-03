@@ -24,7 +24,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'An artifact hunter’s suit, offering decent protection from damage and the effect of anomalies.'
-    image: { fileID: 21300000, guid: 7000c99e7ce74a73bd6c6704d304e3ed, type: 3 }
+    image: { fileID: 21300000, guid: c506603e493a4acbaaacb39420789dd9, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'AH-1 Drifter Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

@@ -13,7 +13,7 @@ MonoBehaviour:
     toxicity: 50.0
     psychoDmgFactor: [50.0]
     text: 'A pill that reduces the effects of psy-emissions. Frequent use has a negative effect on brainpower.'
-    image: { fileID: 21300000, guid: 80badba229a641eab865548122b4687f, type: 3 }
+    image: { fileID: 21300000, guid: 8a48ecf158bf482587df058fd1ef9170, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '3rd Class Psy-Blocker'
     m_Script: { fileID: 11500000, guid: 8fbc25bef1e7c4f4aa348edf964275e9, type: 3 }

@@ -6,13 +6,15 @@ MonoBehaviour:
     key: barrel_diamondhead
     fullName: 'Diamondhead Compensator'
     pathCategory: Attachment/Barrel
+    attachmentMetaGroup: 0
+    attachmentMetaId: C
     rank: Stalker
     class: 'Muzzles and Silencers'
     weight: 0.141
     horizontalRecoil: -6.0
     spread: -14.999998
-    suitableFor: [L85A1, M4A1, 'SIG SG 550', M16A3, 'M4 LB', M16A2, 'HK G36C', 'HK G3A1', 'FN F2000 Tactical', 'FN F2000', LR-300, 'FN SCAR-L', 'M249 SAW', 'Steyr AUG A1', HK416, 'Steyr AUG A2', 'Steyr AUG A3', 'SIG SG 550 Sniper', 'FN FAL', 'HK XM8', 'FN SCAR-H', 'FN SCAR SSR', 'FAMAS G2', 'HK XM8S', HK417, DSA-58, 'IWI Tavor X95', L86A1, 'M1A FA', WA2000]
-    image: { fileID: 21300000, guid: 1af8a31f691c47bdb3d0f1aa50dd030c, type: 3 }
+    suitableFor: [L85A1, M4A1, 'SIG SG 550', M16A3, 'M4 LB', M16A2, 'HK G36C', 'HK G3A1', 'FN F2000 Tactical', 'FN F2000', LR-300, 'FN SCAR-L', 'M249 SAW', 'Steyr AUG A1', HK416, 'Steyr AUG A2', 'Steyr AUG A3', 'SIG SG 550 Sniper', 'FN FAL', 'HK XM8', 'FN SCAR-H', 'FN SCAR SSR', 'FAMAS G2', 'HK XM8S', HK417, DSA-58, 'IWI Tavor X95', L86A1, 'M1A FA', 'WA 2000']
+    image: { fileID: 21300000, guid: 9883ac5a3ee542019eb8b7ffec65947d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Diamondhead Compensator'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -23,3 +25,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: cce94f45edd144c79dd0d9194a23a817, type: 2 }, { fileID: 11400000, guid: 77b46f033e30450698a96080f9af3cf6, type: 2 }, { fileID: 11400000, guid: 29dd930975564e2e86e6adf36e169626, type: 2 }, { fileID: 11400000, guid: 45c72c32a22d4eb4a605295e404c0c17, type: 2 }, { fileID: 11400000, guid: 3557b71d3d36444b8930df3819e053ab, type: 2 }, { fileID: 11400000, guid: eedb133410934056a17df10d5d65df96, type: 2 }, { fileID: 11400000, guid: dc2bc8cdbcc64593aadebe604484e423, type: 2 }, { fileID: 11400000, guid: a72a73f65c3f49169e031afeb042f464, type: 2 }, { fileID: 11400000, guid: a0f3b4eb762248e7a0e9b9897a3eb028, type: 2 }, { fileID: 11400000, guid: 428addaaf33240f8a6477e6a796f6c2d, type: 2 }, { fileID: 11400000, guid: b10adf3b927c4040a73f3de593efa08d, type: 2 }, { fileID: 11400000, guid: 10ccffcd2cf24697a9eaded376382b27, type: 2 }, { fileID: 11400000, guid: 926f8012f1f147bca2e3d8ab2f7b4a3f, type: 2 }, { fileID: 11400000, guid: ccbe142eaf2743bf932d32856592ba2c, type: 2 }, { fileID: 11400000, guid: 113352d4da17408b9709f068d8a9cc79, type: 2 }, { fileID: 11400000, guid: 364550d1cd93417b9c993e46e571a087, type: 2 }, { fileID: 11400000, guid: 4c7aad940392434cbbe10ee4b2065e17, type: 2 }, { fileID: 11400000, guid: 4774a58b6c424140a9d8511918ac3c98, type: 2 }, { fileID: 11400000, guid: e943fe9d471747c6a8fa392392a870ff, type: 2 }, { fileID: 11400000, guid: c8bb9572f3934bf88bf99a64680998b4, type: 2 }, { fileID: 11400000, guid: 0bd3d41a5c5a4998b5393a879549d0af, type: 2 }, { fileID: 11400000, guid: 901a5e50707843ad8787b4ca17b7f7d5, type: 2 }, { fileID: 11400000, guid: fc36323a5f4c4c088dd6fa88e75abc31, type: 2 }, { fileID: 11400000, guid: c28c131d1a8a4923b356aa0de47019b1, type: 2 }, { fileID: 11400000, guid: be5712e186884240bc90065ad3c08b0e, type: 2 }, { fileID: 11400000, guid: 9f688ae35ce743e89a92a280a4f9cf8e, type: 2 }, { fileID: 11400000, guid: b6cc5f395b0c46b8a7c4c28cd9bc6f6d, type: 2 }, { fileID: 11400000, guid: 3b8db3be285a4b458c0166f1ec936121, type: 2 }, { fileID: 11400000, guid: f0765e2ab99545c19478025eec9fafe6, type: 2 }]

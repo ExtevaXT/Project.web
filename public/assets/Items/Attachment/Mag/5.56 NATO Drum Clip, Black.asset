@@ -6,6 +6,8 @@ MonoBehaviour:
     key: mag_cmag100b
     fullName: '5.56 NATO Drum Clip, Black'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: H
     rank: Master
     class: Clips
     weight: 1.0
@@ -15,7 +17,7 @@ MonoBehaviour:
     drawTime: 22.000004
     reloadTime: 60.000004
     suitableFor: [L85A1, M4A1, M16A3, 'M4 LB', M16A2, LR-300, 'FN SCAR-L', 'Steyr AUG A1', HK416, 'Steyr AUG A2', 'Steyr AUG A3', 'FAMAS G2', L86A1]
-    image: { fileID: 21300000, guid: a4850a3a79fc4602b796c8bd44962ad7, type: 3 }
+    image: { fileID: 21300000, guid: 74338767882949dea073a734727193e2, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '5.56 NATO Drum Clip, Black'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -26,3 +28,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: cce94f45edd144c79dd0d9194a23a817, type: 2 }, { fileID: 11400000, guid: 77b46f033e30450698a96080f9af3cf6, type: 2 }, { fileID: 11400000, guid: 45c72c32a22d4eb4a605295e404c0c17, type: 2 }, { fileID: 11400000, guid: 3557b71d3d36444b8930df3819e053ab, type: 2 }, { fileID: 11400000, guid: eedb133410934056a17df10d5d65df96, type: 2 }, { fileID: 11400000, guid: b10adf3b927c4040a73f3de593efa08d, type: 2 }, { fileID: 11400000, guid: 10ccffcd2cf24697a9eaded376382b27, type: 2 }, { fileID: 11400000, guid: ccbe142eaf2743bf932d32856592ba2c, type: 2 }, { fileID: 11400000, guid: 113352d4da17408b9709f068d8a9cc79, type: 2 }, { fileID: 11400000, guid: 364550d1cd93417b9c993e46e571a087, type: 2 }, { fileID: 11400000, guid: 4c7aad940392434cbbe10ee4b2065e17, type: 2 }, { fileID: 11400000, guid: fc36323a5f4c4c088dd6fa88e75abc31, type: 2 }, { fileID: 11400000, guid: 3b8db3be285a4b458c0166f1ec936121, type: 2 }]

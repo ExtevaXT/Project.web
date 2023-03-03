@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: d4ce2bea5e1a4c41a52f57ad17dbf1db, type: 3 }
+    image: { fileID: 21300000, guid: df15fda51e61459385800a69f11e99e4, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Fissure Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

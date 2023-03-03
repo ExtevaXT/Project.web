@@ -29,7 +29,7 @@ MonoBehaviour:
     damageDecreaseEnd: 34.0
     maxDistance: 65.0
     text: 'A Russian smoothbore semi-automatic shotgun of the so-called “Murka” type used for various types of hunting, shooting sports, and self-defense, as well as by law-enforcement and security personnel.'
-    image: { fileID: 21300000, guid: 599cf956157c4680a78b1e226a495f43, type: 3 }
+    image: { fileID: 21300000, guid: a21b3d223dda42379853d40acff56313, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: МР-153
     m_Script: { fileID: 11500000, guid: bdae6158522d46441a5aace99f60b060, type: 3 }

@@ -15,7 +15,7 @@ MonoBehaviour:
     thermalDmgFactor: [10.0, 25.0]
     thermalAccumulation: [-7.0, -4.0]
     text: 'An artifact that is formed only under an extremely rare set of circumstances. Its initial formation is similar to that of Amberite, but the anomalous substance, after undergoing several fluctuations in pressure, eventually loses energy and begins to intensively absorb it from the surrounding oxygen, cooling a small area around itself. This results in the body of the owner also cooling down, which slows regeneration and movement speed.'
-    image: { fileID: 21300000, guid: ae5433ec8548474cb92dd7f6bb1cee68, type: 3 }
+    image: { fileID: 21300000, guid: 38b0d1275076424cb3f37009e2d3fd9f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Cryogen
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

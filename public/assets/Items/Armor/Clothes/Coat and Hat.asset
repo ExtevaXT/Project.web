@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'I just want a peaceful life.'
-    image: { fileID: 21300000, guid: ef8ca050223a41ac98561523bc27a5b2, type: 3 }
+    image: { fileID: 21300000, guid: 43688100265c42629db0319ca2246ff6, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Coat and Hat'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

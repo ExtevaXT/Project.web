@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: 80c1274325b243fc8e0106e206c090b0, type: 3 }
+    image: { fileID: 21300000, guid: 303473bb9e884237b4eea9ce5e3bdb60, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Palm Amoeba Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

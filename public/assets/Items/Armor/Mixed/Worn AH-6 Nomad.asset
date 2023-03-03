@@ -29,7 +29,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'The best model in the Artifact Hunters range. The main emphasis was placed on increasing ease of use and fixing errors from previous versions.'
-    image: { fileID: 21300000, guid: ace1c7c8b9dd4ad1a87fcd5eb0772c87, type: 3 }
+    image: { fileID: 21300000, guid: 52930478ccee45919c0c453893f543e0, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn AH-6 Nomad'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

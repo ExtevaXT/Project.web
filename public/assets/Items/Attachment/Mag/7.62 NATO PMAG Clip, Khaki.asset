@@ -6,12 +6,14 @@ MonoBehaviour:
     key: mag_pmag76230h
     fullName: '7.62 NATO PMAG Clip, Khaki'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: K
     rank: Master
     class: Clips
     weight: 0.38
     clipSize: 30.0
     suitableFor: ['FN FAL', 'FN SCAR-H', 'FN SCAR SSR', HK417, DSA-58]
-    image: { fileID: 21300000, guid: f999ca7440bb486f84e00d2ddc7d10d9, type: 3 }
+    image: { fileID: 21300000, guid: eec8eaf3af774f0188668b6dce067666, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '7.62 NATO PMAG Clip, Khaki'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -22,3 +24,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: e943fe9d471747c6a8fa392392a870ff, type: 2 }, { fileID: 11400000, guid: 0bd3d41a5c5a4998b5393a879549d0af, type: 2 }, { fileID: 11400000, guid: 901a5e50707843ad8787b4ca17b7f7d5, type: 2 }, { fileID: 11400000, guid: be5712e186884240bc90065ad3c08b0e, type: 2 }, { fileID: 11400000, guid: 9f688ae35ce743e89a92a280a4f9cf8e, type: 2 }]

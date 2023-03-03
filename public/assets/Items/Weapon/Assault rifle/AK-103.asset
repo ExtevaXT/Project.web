@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 70.0
     maxDistance: 165.0
     text: ''
-    image: { fileID: 21300000, guid: 2e9326586c724b52a149f8a726625bb1, type: 3 }
+    image: { fileID: 21300000, guid: 51ffa273dce243bfa9f30f342134e47d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: AK-103
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

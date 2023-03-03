@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.03
     text: 'The spread of this rare plant across the north of the Zone began from the Red Forest. Red ferns can be turned into extremely effective combat stimulants, so soldiers from all over the world are interested in buying them.'
-    image: { fileID: 21300000, guid: f60a0e44230a400883a3bf504093e8f0, type: 3 }
+    image: { fileID: 21300000, guid: a1968f27879d4d5d8b72f788dc887e34, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Red Fern'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

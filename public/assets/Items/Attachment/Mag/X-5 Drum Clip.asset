@@ -6,6 +6,8 @@ MonoBehaviour:
     key: mag_x550
     fullName: 'X-5 Drum Clip'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: I
     rank: Newbie
     class: Clips
     weight: 0.64
@@ -14,7 +16,7 @@ MonoBehaviour:
     drawTime: 14.999998
     reloadTime: 20.000004
     suitableFor: ['HK MP5', 'HK UMP9', 'HK MP5K', Viper]
-    image: { fileID: 21300000, guid: 4eb3f50e95644f0d9ae765b2a2bbe3a2, type: 3 }
+    image: { fileID: 21300000, guid: 66be97d8b1ce4a57a6ed71b728b4e576, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'X-5 Drum Clip'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -25,3 +27,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 6d009c23746d4a04b35882242617b303, type: 2 }, { fileID: 11400000, guid: 73b5f36dac7a4ae38440102c9a1bfe31, type: 2 }, { fileID: 11400000, guid: b722b4dae5964625acdac2b50fc6c707, type: 2 }, { fileID: 11400000, guid: d8a466b8007049d69d8646c7b638228c, type: 2 }]

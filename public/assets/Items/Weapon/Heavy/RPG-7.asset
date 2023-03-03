@@ -24,7 +24,7 @@ MonoBehaviour:
     drawTime: 1.4
     aimSwitch: 0.35
     text: 'A reusable Soviet handheld anti-tank grenade launcher. It is intended for dealing with tanks, self-propelled artillery, and other armored vehicles. It can be used to eliminate personnel behind cover and also counter low-flying, low-speed airborne targets.'
-    image: { fileID: 21300000, guid: 0785d72561a144ea9c22ef64eea4eb4e, type: 3 }
+    image: { fileID: 21300000, guid: 7c856d6a0d1e4a1f9d1438bd8c379132, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: RPG-7
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

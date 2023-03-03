@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.25
     text: 'There isn’t a lot of copper wire around, but if you come across it, you can sell it for a huge profit to the diggers!'
-    image: { fileID: 21300000, guid: b2ed62403da649378f0bdb26829684a4, type: 3 }
+    image: { fileID: 21300000, guid: 002ab9d4ad45434f877e820b983532ab, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Spool of Copper Wire'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

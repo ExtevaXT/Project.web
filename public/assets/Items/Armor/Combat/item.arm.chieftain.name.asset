@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: standard
     text: item.arm.chieftain.additional_stats_tip
-    image: { fileID: 21300000, guid: a278f9846a3e4e60aef1f6110b1f6788, type: 3 }
+    image: { fileID: 21300000, guid: e62acfd628024989b64581cbf3d348f9, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: item.arm.chieftain.name
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

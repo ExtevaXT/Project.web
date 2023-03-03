@@ -6,12 +6,14 @@ MonoBehaviour:
     key: mag_beretta
     fullName: 'Beretta Extended Clip'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: Q
     rank: Stalker
     class: Clips
     weight: 0.075
     additiveClipSize: 2.0
     suitableFor: ['Beretta 92FS']
-    image: { fileID: 21300000, guid: 4713294bc5d441b393186f78dd408893, type: 3 }
+    image: { fileID: 21300000, guid: 2d6c6decd3d24fdfbb32b4035819f118, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Beretta Extended Clip'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -22,3 +24,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 15847c7cbdf6403f81a5948a555cccba, type: 2 }]

@@ -6,12 +6,14 @@ MonoBehaviour:
     key: mag_mr133
     fullName: 'MP-133 MP-153 Clip Extender'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: b
     rank: Newbie
     class: Clips
     weight: 0.124
     additiveClipSize: 2.0
     suitableFor: [МР-133, МР-153]
-    image: { fileID: 21300000, guid: 8b2e881f9c4145b0bc31367533e17b22, type: 3 }
+    image: { fileID: 21300000, guid: c57d5b40b8f7497d90671bf4a8809b6a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'MP-133 MP-153 Clip Extender'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -22,3 +24,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: c660355d857e407a9430ba342a6b19a4, type: 2 }, { fileID: 11400000, guid: ffe80b0618ad428881c51c685fd8f099, type: 2 }]

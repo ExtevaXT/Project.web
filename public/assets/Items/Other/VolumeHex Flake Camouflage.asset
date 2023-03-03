@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: e7227dbbd3714437a7e09abd781801be, type: 3 }
+    image: { fileID: 21300000, guid: 73b91b1d5f0c4c0d9cf25ce295da4ec0, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'VolumeHex Flake Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.25
     text: 'The longer the cable, the easier it is to sell it for a good price. Or to strangle a greedy shopkeeper with, as some inhabitants of the Zone are not averse to doing.'
-    image: { fileID: 21300000, guid: 536a17ec64bf467a82d7e14a72f2ceee, type: 3 }
+    image: { fileID: 21300000, guid: f19a12b02cd8433a91de05c9f54aa04f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Aluminum Cable'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 84.0
     maxDistance: 175.0
     text: 'A Russian general-purpose machine gun, based on the RMB. It was intended for attacking enemy personnel, gun batteries, transport, and airborne targets.'
-    image: { fileID: 21300000, guid: f5d0721e1f8347baacfa2b0a0540ca46, type: 3 }
+    image: { fileID: 21300000, guid: 79a6c9f9ac1745ca8deb78cec0d2c071, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn PKP'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

@@ -31,7 +31,7 @@ MonoBehaviour:
     damageDecreaseEnd: 110.0
     maxDistance: 165.0
     text: 'A shortened version of the Mosin’s rifle. This carbine was intended for use by various branches of the military, in particular artillery, sappers, cavalry, liaison units, and logistical support operatives such as transport drivers, who needed a light, easy-to-use weapon, primarily for self-defense.'
-    image: { fileID: 21300000, guid: 51d44df4282744caaa1038255942ac6a, type: 3 }
+    image: { fileID: 21300000, guid: 4493ce7127ae48c7b0231facbc15e811, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Mosin’s Carbine'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

@@ -6,6 +6,8 @@ MonoBehaviour:
     key: '22657'
     fullName: 'OTs-33 Stock'
     pathCategory: Attachment/Stock
+    attachmentMetaGroup: 4
+    attachmentMetaId: L
     class: Stocks
     weight: 0.27
     wiggle: -25.0
@@ -13,7 +15,7 @@ MonoBehaviour:
     recoilGain: -19.999998
     tickSpreadMultiplierReduction: 25.0
     suitableFor: ['OTs-33 Pernach']
-    image: { fileID: 21300000, guid: 6ba6c3de54d04d5cb6e64a0ffb74d999, type: 3 }
+    image: { fileID: 21300000, guid: 0945b89404c44e0cb4817db8d126810d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'OTs-33 Stock'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: b4e0366347774207aca704f8b79f87a8, type: 2 }]

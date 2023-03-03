@@ -12,7 +12,7 @@ MonoBehaviour:
     bleeding: -45.0
     combustion: 50.0
     stoppingPower: 10.0
-    image: { fileID: 21300000, guid: cc86b7375545442d982dd21e8612b6a2, type: 3 }
+    image: { fileID: 21300000, guid: 4deb14a1cab04fcfa7d18ec052adc7b8, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '10 mm Incendiary Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

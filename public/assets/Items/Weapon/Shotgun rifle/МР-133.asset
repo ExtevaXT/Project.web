@@ -29,7 +29,7 @@ MonoBehaviour:
     damageDecreaseEnd: 32.0
     maxDistance: 60.0
     text: 'A Russian smoothbore pump-action shotgun used for various types of hunting, shooting sports, and self-defense, as well as by security personnel.'
-    image: { fileID: 21300000, guid: 3d4ee4ce09f54ac6a439e587aeb649c3, type: 3 }
+    image: { fileID: 21300000, guid: f4a9b87dd6f84f318c0ed3a4f2e7967f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: МР-133
     m_Script: { fileID: 11500000, guid: bdae6158522d46441a5aace99f60b060, type: 3 }

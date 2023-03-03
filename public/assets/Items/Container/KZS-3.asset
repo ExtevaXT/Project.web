@@ -15,7 +15,7 @@ MonoBehaviour:
     size: 3.0
     speedModifier: [-1.0]
     text: 'A set of three KZS-1 containers. Lets you carry three artifacts and, obviously, has good shielding capabilities.'
-    image: { fileID: 21300000, guid: 1d050bdc7d2244e1a017ae8f0b974e9a, type: 3 }
+    image: { fileID: 21300000, guid: b6556d0c59e24bcfb652d0448f0a748d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: KZS-3
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

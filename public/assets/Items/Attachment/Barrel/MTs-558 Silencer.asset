@@ -6,13 +6,15 @@ MonoBehaviour:
     key: silencer_mc558
     fullName: 'MTs-558 Silencer'
     pathCategory: Attachment/Barrel
+    attachmentMetaGroup: 0
+    attachmentMetaId: ^
     rank: Master
     class: 'Muzzles and Silencers'
     weight: 1.1
     drawTime: 20.000004
     damageDistant: -10.000002
     suitableFor: [MTs-558]
-    image: { fileID: 21300000, guid: ee13fbab4d32437489a599383419b9bb, type: 3 }
+    image: { fileID: 21300000, guid: 7cd32c35f29c496bb21522977e88745e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'MTs-558 Silencer'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -23,3 +25,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 4e845df9a2ab44a68438023408380ebd, type: 2 }]

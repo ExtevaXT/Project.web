@@ -11,6 +11,7 @@ class ProfilePanel extends Component
     public function change()
     {
         Auth::user()->settings(['indexProfilePanel' => $this->url]);
+        $this->emit('change');
     }
     public function render()
     {

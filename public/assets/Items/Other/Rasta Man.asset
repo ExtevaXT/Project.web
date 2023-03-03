@@ -7,7 +7,7 @@ MonoBehaviour:
     fullName: 'Rasta Man'
     pathCategory: Other
     class: 'Skins and Paint'
-    image: { fileID: 21300000, guid: bae93b23d6a74b1183c93bbca930931c, type: 3 }
+    image: { fileID: 21300000, guid: ee5f8481e9a149f4ab2fd531c553b90e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Rasta Man'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

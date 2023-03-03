@@ -6,6 +6,8 @@ MonoBehaviour:
     key: mag_g350
     fullName: 'G3 M1A Drum Clip'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: R
     rank: Master
     class: Clips
     weight: 0.8
@@ -14,7 +16,7 @@ MonoBehaviour:
     drawTime: 20.000004
     reloadTime: 39.999996
     suitableFor: ['HK G3A1', 'M1A FA']
-    image: { fileID: 21300000, guid: 10c2ebddd54f49329afe7a0c59a56aa6, type: 3 }
+    image: { fileID: 21300000, guid: 75fbfd09219e433aa0e8f97dddb55e6e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'G3 M1A Drum Clip'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -25,3 +27,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: a72a73f65c3f49169e031afeb042f464, type: 2 }, { fileID: 11400000, guid: f0765e2ab99545c19478025eec9fafe6, type: 2 }]

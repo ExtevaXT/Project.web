@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 70.0
     maxDistance: 150.0
     text: 'A modified AEK-971 that differs mainly in the construction of the receiver (the AEK-971 has a removable cover). This allows a Picatinny rail to be equipped to the rifle for installing various types of sights. It also has rails on the handguard to equip additional modules.'
-    image: { fileID: 21300000, guid: c3471f99bdc1478bada4f68af9dd919f, type: 3 }
+    image: { fileID: 21300000, guid: 0b9e1c6f769a4410aefa70cfceedb994, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: A-545
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

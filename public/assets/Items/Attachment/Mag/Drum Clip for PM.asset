@@ -6,6 +6,8 @@ MonoBehaviour:
     key: mag_pmdrum
     fullName: 'Drum Clip for PM'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: X
     rank: Veteran
     class: Clips
     weight: 0.364
@@ -13,7 +15,7 @@ MonoBehaviour:
     drawTime: 20.000004
     reloadTime: 60.000004
     suitableFor: [PMM, 'Eternal Novice’s PM', PM]
-    image: { fileID: 21300000, guid: f7c11467dbe84fdba35db76e21761e06, type: 3 }
+    image: { fileID: 21300000, guid: bb65acb6b956410aadbba902be8ecf42, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Drum Clip for PM'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: cda2d25d54fb46dc9946e2a485d3824c, type: 2 }, { fileID: 11400000, guid: 2650f75a16424991bd0d56222c01e407, type: 2 }, { fileID: 11400000, guid: 2d6656879c5f433e9953710ea595b43e, type: 2 }]

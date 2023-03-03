@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'A suit that is purchased by mercenaries on the Mainland. It is popular due to its lightness and comfort. It isn’t well suited to the conditions of the Zone, but it offers good protection against bullets.'
-    image: { fileID: 21300000, guid: a8af46613e674bf985f3e6106d36e012, type: 3 }
+    image: { fileID: 21300000, guid: 52e6cc5b586e428bb004c1935e235431, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Scout Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

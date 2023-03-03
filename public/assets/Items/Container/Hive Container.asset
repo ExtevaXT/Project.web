@@ -15,7 +15,7 @@ MonoBehaviour:
     size: 5.0
     speedModifier: [-1.5]
     text: 'While the Bear’s Den was much more compact than the KZS bundle, it was still fairly cumbersome. Scientists conducted a series of projects to improve popular containers. This led to the Hive, a compact, spacious, reliable, but fairly expensive option.'
-    image: { fileID: 21300000, guid: 5da0192de9774198a72a1c1e1668966a, type: 3 }
+    image: { fileID: 21300000, guid: c789264ea3cb4295880a88b5b80749ae, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Hive Container'
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

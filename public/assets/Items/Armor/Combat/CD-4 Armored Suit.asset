@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Horizon clan tactical armor. The developers based this suit on the SKAT series during production, and, by and large, they were successful. Despite a few minor differences, the cost of this armored suit is notably lower.'
-    image: { fileID: 21300000, guid: 52437d0530e440ffa09dfc1a61e3aa80, type: 3 }
+    image: { fileID: 21300000, guid: d6d729de398a4695b1daff2de4688ee0, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'CD-4 Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

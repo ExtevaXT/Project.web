@@ -6,14 +6,16 @@ MonoBehaviour:
     key: handle_ag47g
     fullName: 'Fab Defense AG-47 Grip, Green'
     pathCategory: Attachment/Handle
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Stalker
     class: 'Pistol Grips'
     weight: 0.093
     wiggle: -1.9999981
     reloadTime: -1.9999981
     recoilGain: -2.9999971
-    suitableFor: [AKS-74U, AKS-74, 'SMG-19 Bizon-2-01', AKM, 'SMG-19-01 Vityaz', AK-103, 'Kbk wz. 88 Tantal', AK-105, RPK, RPK-16, AK-12, 'Gauss Rifle', AK-308, Saiga-12K, RPK-74, 'PKP Pecheneg']
-    image: { fileID: 21300000, guid: d0c20487b41b4a94896b00f31e2d9863, type: 3 }
+    suitableFor: [AKS-74U, AKS-74, 'PP-19 Bizon-2-01', AKM, 'PP-19-01 Vityaz', AK-103, 'Kbk wz. 88 Tantal', AK-105, RPK, RPK-16, AK-12, 'Gauss Rifle', AK-308, Saiga-12K, RPK-74, 'PKP Pecheneg']
+    image: { fileID: 21300000, guid: d2a836e46d34465e9ffa413c88e4a34c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Fab Defense AG-47 Grip, Green'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 6e061c8424784495b473c336266f2196, type: 2 }, { fileID: 11400000, guid: 6a5d18711638447e831c5e80d921ad3b, type: 2 }, { fileID: 11400000, guid: ebb241c742234e3aa2373ad17f2a9ed1, type: 2 }, { fileID: 11400000, guid: 473a1753ac314080ba75f71352c1fb72, type: 2 }, { fileID: 11400000, guid: 0b4138c0f552446a98d12b5167718749, type: 2 }, { fileID: 11400000, guid: 78ee10e848834b92be4f14fcee969dad, type: 2 }, { fileID: 11400000, guid: 4dec623e3d0447fb8ad07242910b79d0, type: 2 }, { fileID: 11400000, guid: 072d5ce3fae84ea8a31a03fc8860d31a, type: 2 }, { fileID: 11400000, guid: 3f7b75414d5e44538fccd02b875af575, type: 2 }, { fileID: 11400000, guid: 28d39f39699446d982eae3baa22b7536, type: 2 }, { fileID: 11400000, guid: 69418dc108f34512a8527e9029c48960, type: 2 }, { fileID: 11400000, guid: b39e0e8e826b4d64882ad242d4efd5db, type: 2 }, { fileID: 11400000, guid: 493f0724b69442698a991472fab0472c, type: 2 }, { fileID: 11400000, guid: 45ec672435444e55af01aa7f7215e228, type: 2 }]

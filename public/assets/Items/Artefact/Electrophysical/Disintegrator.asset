@@ -13,7 +13,7 @@ MonoBehaviour:
     electraDmgFactor: [-100.0, -50.0]
     psychoAccumulation: [-5.0, -2.0]
     text: 'An intriguing electrostatic Moonlight artifact with no covering. If an electrical current interacts with the artifact, it is greatly strengthened, but this can have lethal side effects.'
-    image: { fileID: 21300000, guid: 7c039aa100a94451aac8e2f90ba2e23f, type: 3 }
+    image: { fileID: 21300000, guid: a387422a452848c68c70ac0c8a80811a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Disintegrator
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

@@ -10,7 +10,7 @@ MonoBehaviour:
     weight: 0.015
     numBullets: 10.0
     stoppingPower: 50.0
-    image: { fileID: 21300000, guid: d2c9e4226e164240ad1f5989069a1fdb, type: 3 }
+    image: { fileID: 21300000, guid: 50f8d55d167644be87bcdf596aa7869e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Frost Shot'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

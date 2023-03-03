@@ -32,7 +32,7 @@ MonoBehaviour:
     damageDecreaseEnd: 115.0
     maxDistance: 190.0
     text: 'The M40 is an American sniper rifle that was constructed based on the Remington 40ХВ.'
-    image: { fileID: 21300000, guid: a7e54d980fc04f22b9f9c4e1a2038f89, type: 3 }
+    image: { fileID: 21300000, guid: b3d665d2b1a84a6790fca9be6ac9fd7c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn M40A5'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'An improved version of the “Houndmaster.” Its protection is equally distributed across the whole body, which prevents any loss of mobility. The hockey mask was replaced with a hybrid of a ballistic mask and a respirator.'
-    image: { fileID: 21300000, guid: d217c1901522443cbf193bd652388775, type: 3 }
+    image: { fileID: 21300000, guid: ad78f08ef63646e9a66182f0378a2a29, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Fleece Protective Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

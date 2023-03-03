@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'A suit with an exoskeleton. A direct descendant of the SEVA, it does not have any focused specialization. Instead, the Rigel provides comprehensive protection from nearly all dangers in the Zone.'
-    image: { fileID: 21300000, guid: aebb85da41444218a0b664dcc519c235, type: 3 }
+    image: { fileID: 21300000, guid: c4a687e3bf5a4854ad9b3a87604d076e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Rigel Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

@@ -12,7 +12,7 @@ MonoBehaviour:
     piercing: 60.0
     bleeding: 100.0
     stoppingPower: 100.0
-    image: { fileID: 21300000, guid: 8cfa2f6a94794bac840a6746229f84c5, type: 3 }
+    image: { fileID: 21300000, guid: b20062cd484340df812ffecd1a81dcbe, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Large-Caliber Silver Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

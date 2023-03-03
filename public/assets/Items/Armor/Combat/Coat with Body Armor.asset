@@ -24,7 +24,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'A coat with a comfortable and reliable body armor. Does not hinder movement.'
-    image: { fileID: 21300000, guid: 0d182e50add141b49f5ebcd9e4ce50e8, type: 3 }
+    image: { fileID: 21300000, guid: 49018dd71df34685b9cd35886ee81781, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Coat with Body Armor'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

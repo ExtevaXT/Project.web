@@ -29,7 +29,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: standard
     text: 'The result of long, arduous work on the MIS series. A multi-functional suit that protects from the majority of anomalous effects. Judging from the marks on the armor, this suit belonged to someone.'
-    image: { fileID: 21300000, guid: adc98ece927540b3bf67b8503f5dc92e, type: 3 }
+    image: { fileID: 21300000, guid: 3f972bf3b8fc447d8b4980db49582399, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'KIM-X ATLAS'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

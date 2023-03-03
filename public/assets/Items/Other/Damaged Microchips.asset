@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.01
     text: 'The diggers have not yet reached a consensus regarding whether these damaged microchips are part of the equipment of scientists who got lost in the Zone, or whether they belonged to the mysterious inhabitants of the Laboratories in which those very scientists disappeared.'
-    image: { fileID: 21300000, guid: eded0911ec214bd18029820211fbfd22, type: 3 }
+    image: { fileID: 21300000, guid: be3b3da5aa6f4ddbbd22676916b2398a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Damaged Microchips'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

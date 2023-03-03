@@ -6,11 +6,13 @@ MonoBehaviour:
     key: mount_svt
     fullName: 'Picatinny Rail for SVT'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     class: 'Hanguards and Brackets'
     weight: 0.12
     text: 'Picatinny rail for mounting sights on an SVT'
     suitableFor: [AVT-40, SVT-40]
-    image: { fileID: 21300000, guid: 5b311f3c5f0c4d69a3b6e3bcc10b3967, type: 3 }
+    image: { fileID: 21300000, guid: 0e14d25e774a48069ba1d6a1fa2a262f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Picatinny Rail for SVT'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: d3b524e3663b463980c651a01a58f259, type: 2 }, { fileID: 11400000, guid: d531a64d3b8d45f88d5958798581cb1d, type: 2 }]

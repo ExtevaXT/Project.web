@@ -26,7 +26,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'Beast Slayer'
-    image: { fileID: 21300000, guid: 542574701d0a4e568301637a3156669d, type: 3 }
+    image: { fileID: 21300000, guid: 62e5ca91be984e88bfa15d54e04a09f2, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Beast Slayer Exoarmor'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'A multipurpose platform made from various types of components and modules. Assembled by tinkerers from the remains of broken armor sets. Surprisingly, this system came out very well, although it’s not particularly reliable. The main engineering feature of this set is the external electrical impulse dissipation system. Made up of external bolt surge dischargers combined into a single system, it creates a kind of Faraday cage. The bolts sticking out on top also provide excellent protection from most local fauna and give this suit a unique and eye-catching appearance.'
-    image: { fileID: 21300000, guid: 776591b1225048759b567982475a84c8, type: 3 }
+    image: { fileID: 21300000, guid: efd185ee926844fc98d3b9bb5f52c763, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Yorsh Protective Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

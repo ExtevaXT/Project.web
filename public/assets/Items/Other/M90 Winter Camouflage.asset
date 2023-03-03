@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: 2b8484b058f0440da92f9150e8cc4651, type: 3 }
+    image: { fileID: 21300000, guid: 949f21aef9994d53847f057c6c362932, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'M90 Winter Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

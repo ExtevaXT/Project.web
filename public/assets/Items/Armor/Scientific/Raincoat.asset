@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Only protects the user against slight acid rain and mosquito bites.'
-    image: { fileID: 21300000, guid: fa02425052594792ba6cdc3dd7b0387e, type: 3 }
+    image: { fileID: 21300000, guid: 68fa6023548d4f8daaa4e619337b9140, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Raincoat
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

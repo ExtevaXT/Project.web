@@ -13,7 +13,7 @@ MonoBehaviour:
     lifetime: 8.0
     explosionSize: 6.0
     explosionActivationTime: 0.25
-    image: { fileID: 21300000, guid: bfda5513b9f64089bf3405160093b68b, type: 3 }
+    image: { fileID: 21300000, guid: 58ece8ac0da34846ad52c09586c71d9a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'M2 Grenade Round'
     m_Script: { fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3 }

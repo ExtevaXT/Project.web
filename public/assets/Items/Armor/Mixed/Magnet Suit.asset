@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'A patched-up, darned, but reliable suit. It’s saved its owner’s hide more than once. The owner repaid it in full, by outfitting it with drives, replacing the dying breathing circuit with a new, compact one, which required sacrificing one of the batteries. Stalkers say that this suit literally draws artifacts to it, which is where it gets its name. Others say that all it attracts is mutants. The owner of this suit went missing during one of his trips. Curious fact: only the owner went missing—the suit was found in the same condition it was in before the trip. Rumor has it that the Zone was terribly fond of the owner of the Magnet, and it took him for itself. But rumors have a way of staying rumors, right?'
-    image: { fileID: 21300000, guid: 7eb5acc68e054b4384964e5fa3dc704d, type: 3 }
+    image: { fileID: 21300000, guid: 3d532fc1744d4450acd20d0c08cf0841, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Magnet Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

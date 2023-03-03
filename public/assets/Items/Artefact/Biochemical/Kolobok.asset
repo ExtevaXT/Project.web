@@ -14,7 +14,7 @@ MonoBehaviour:
     radiationAccumulation: [-5.0, -2.0]
     biologicalAccumulation: [2.0, 5.0]
     text: 'An artifact that is made by the Burnt Fuzz anomaly. When worn, it absorbs and neutralizes radioactive particles, but as a result it releases toxic substances.'
-    image: { fileID: 21300000, guid: 674f5c8020124b29ab4d9d279c873077, type: 3 }
+    image: { fileID: 21300000, guid: 9f6aa811cb334aa8a9f852341b8e959f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Kolobok
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

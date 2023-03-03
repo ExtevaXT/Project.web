@@ -31,7 +31,7 @@ MonoBehaviour:
     damageDecreaseEnd: 110.0
     maxDistance: 180.0
     text: 'This type of sniper rifle has been on the arms market for a good half a century, and in that time it has established itself as an extremely reliable and easy-to-use weapon. In the military, it is used mainly for attacking distant targets that cannot be hit by an assault rifle. However, stalkers value the SVD primarily because bullets shot from it can penetrate even the thickest of mutant’s skin or the toughest body armor.'
-    image: { fileID: 21300000, guid: 30682c6adc3e46ae955c9e349952b0b3, type: 3 }
+    image: { fileID: 21300000, guid: 8cba470503a04a2aae16fdc084247b87, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn SVD'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

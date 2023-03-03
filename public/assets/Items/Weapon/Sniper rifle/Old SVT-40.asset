@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 100.0
     maxDistance: 165.0
     text: 'This 1940 example of a semi-automatic rifle using the Tokarev system was developed as a replacement for the Simonov assault rifle and was subsequently entered into service in the Red Army. Due to its various shortcomings, particularly its low reliability, it was not particularly widely used after the war. Nonetheless, a substantial number of examples can be found with merchants—this rifle’s low price made it popular among novice stalkers.'
-    image: { fileID: 21300000, guid: e4c7b64bada243f8834779bc9ef35959, type: 3 }
+    image: { fileID: 21300000, guid: f5e2f677324d4a6096e471389f9f0112, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Old SVT-40'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

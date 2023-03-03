@@ -29,7 +29,7 @@ MonoBehaviour:
     damageDecreaseEnd: 36.0
     maxDistance: 65.0
     text: 'A Russian-made revolver that uses .357 Smith & Wesson Magnum ammo (9x33 mm). It was developed at the Izhevsk Mechanical Plant at the end of the 1990s.'
-    image: { fileID: 21300000, guid: 1ff743ebd5af48958639dbbc3514ad02, type: 3 }
+    image: { fileID: 21300000, guid: 8332cbbf63a047a8ab9ff290c378a302, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: МР-412
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

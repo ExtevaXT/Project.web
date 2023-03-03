@@ -6,11 +6,13 @@ MonoBehaviour:
     key: mount_shotgunris
     fullName: 'Guiding RIS for Shotgun'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Newbie
     class: 'Hanguards and Brackets'
     weight: 0.14
     suitableFor: [AA-12, M1014, 'Grizzly 8.5', 'Mossberg 590A1', 'Shorty 590', МР-133, RMB-93, 'Franchi SPAS-12', МР-153]
-    image: { fileID: 21300000, guid: ebb10fc93936411f9a309d2771e4dcb9, type: 3 }
+    image: { fileID: 21300000, guid: 8d4edf0129e646c29c0be973328026dd, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Guiding RIS for Shotgun'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 13271f00095b458e98cb092b18239ba4, type: 2 }, { fileID: 11400000, guid: 0a32d3bc2bbc4eeb94d5417fb0433554, type: 2 }, { fileID: 11400000, guid: fbe4b17f2390413e9066768862cd9fea, type: 2 }, { fileID: 11400000, guid: f3efc26379e7436bba73795f518cbc87, type: 2 }, { fileID: 11400000, guid: 68e41fbc1dc34f31a6a47d575dfa0454, type: 2 }, { fileID: 11400000, guid: c660355d857e407a9430ba342a6b19a4, type: 2 }, { fileID: 11400000, guid: df71683c92d942d3b2d0d42cbbd1cd81, type: 2 }, { fileID: 11400000, guid: 594ae0108ac644d69fe62a7db94c951a, type: 2 }, { fileID: 11400000, guid: ffe80b0618ad428881c51c685fd8f099, type: 2 }]

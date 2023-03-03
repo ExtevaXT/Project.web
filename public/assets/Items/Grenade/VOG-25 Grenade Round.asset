@@ -14,7 +14,7 @@ MonoBehaviour:
     explosionSize: 6.0
     explosionActivationTime: 0.25
     text: 'A fragmentation round for the GP-25 Kostyor grenade launcher.'
-    image: { fileID: 21300000, guid: 2edd6e83925d44ea8425d4d970b2a41f, type: 3 }
+    image: { fileID: 21300000, guid: aa5e1a2664654ac39c5867917a374aa3, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'VOG-25 Grenade Round'
     m_Script: { fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3 }

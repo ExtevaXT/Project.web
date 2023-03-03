@@ -13,7 +13,7 @@ MonoBehaviour:
     lifetime: 3.25
     explosionSize: 12.0
     text: 'An antipersonnel defensive fragmentation grenade.'
-    image: { fileID: 21300000, guid: fca6b1d674cc4d9082d87aeefc20744f, type: 3 }
+    image: { fileID: 21300000, guid: 7d28a8090e9042cda2d8799a4ef3e6e8, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: F-1
     m_Script: { fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3 }

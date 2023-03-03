@@ -6,13 +6,15 @@ MonoBehaviour:
     key: barrel_lonewolf
     fullName: 'LoneWolf Flash Suppressor'
     pathCategory: Attachment/Barrel
+    attachmentMetaGroup: 0
+    attachmentMetaId: F
     rank: Newbie
     class: 'Muzzles and Silencers'
     weight: 0.031
     spread: -12.0
     recoilGain: -5.000001
-    suitableFor: ['SMG-91 KEDR', 'HK MP5', 'IMI Uzi', 'AEK-919K Kashtan', 'Walther MPK', 'SMG-19 Bizon-2-01', 'SMG-19-01 Vityaz', 'FN P90', SMG-2000, 'SR-2M Veresk', 'Spectre M4', 'TDI KRISS Vector', 'HK UMP9', 'IMI Mini Uzi', 'IMI Micro Uzi', PMM, 'HK MP5K', 'Ingram MAC-10', APS, 'Glock 18C', 'Steyr AUG 9 mm', Tsunami, Viper, 'Eternal Novice’s PM', Bee, Dream, PB, PM, Fort-12, 'Walther P99', R-92, 'Beretta 92FS', 'Browning Hi-Power', 'Mauser C96', 'Beretta 93R', SW1911, 'Glock 17', 'Desert Eagle Mark XIX', 'SR-1 Gyurza', 'OTs-33 Pernach']
-    image: { fileID: 21300000, guid: 6422969c77964c8cbc1b65146a5c32ba, type: 3 }
+    suitableFor: ['PP-91 KEDR', 'HK MP5', 'IMI Uzi', 'AEK-919K Kashtan', 'Walther MPK', 'PP-19 Bizon-2-01', 'PP-19-01 Vityaz', 'FN P90', PP-2000, 'SR-2M Veresk', 'Spectre M4', 'TDI KRISS Vector', 'HK UMP9', 'IMI Mini Uzi', 'IMI Micro Uzi', PMM, 'HK MP5K', 'Ingram MAC-10', APS, 'Glock 18C', 'Steyr AUG 9 mm', Tsunami, Viper, 'Eternal Novice’s PM', Bee, Dream, PB, PM, Fort-12, 'Walther P99', R-92, 'Beretta 92FS', 'Browning Hi-Power', 'Mauser C96', 'Beretta 93R', SW1911, 'Glock 17', 'Desert Eagle Mark XIX', 'SR-1 Gyurza', 'OTs-33 Pernach']
+    image: { fileID: 21300000, guid: 62709766a8384cf2b8d5a2936d8c28fd, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'LoneWolf Flash Suppressor'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -23,3 +25,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 6d009c23746d4a04b35882242617b303, type: 2 }, { fileID: 11400000, guid: 0707e3adf90446758ca0a8dc45d051b8, type: 2 }, { fileID: 11400000, guid: 3b9ab1dcbcb44df6b289fc172bdd395d, type: 2 }, { fileID: 11400000, guid: 9d993b4b98d240c5ba45cc4fb8634f2c, type: 2 }, { fileID: 11400000, guid: a7679bcfa6924ffaa9854fe947829fce, type: 2 }, { fileID: 11400000, guid: a3946b0b299f4672abe5968a5fbefe97, type: 2 }, { fileID: 11400000, guid: d556eab092954364952ecfcb5f1fc66c, type: 2 }, { fileID: 11400000, guid: 366938c050c84ce28d0d8588a5ec1c9c, type: 2 }, { fileID: 11400000, guid: 73b5f36dac7a4ae38440102c9a1bfe31, type: 2 }, { fileID: 11400000, guid: 2d75564640e243cca8b6e34a3feb42b1, type: 2 }, { fileID: 11400000, guid: 74af252a0ee345d2a1d5a8b9e36cd8ae, type: 2 }, { fileID: 11400000, guid: cda2d25d54fb46dc9946e2a485d3824c, type: 2 }, { fileID: 11400000, guid: b722b4dae5964625acdac2b50fc6c707, type: 2 }, { fileID: 11400000, guid: 65d4b0cc8de44e98a46e3efe69b59b13, type: 2 }, { fileID: 11400000, guid: 80cc50e54d084ea1bc024827fb03a407, type: 2 }, { fileID: 11400000, guid: 5f90f00c58cf4cf8bed1efcfea703d9c, type: 2 }, { fileID: 11400000, guid: afe3efb88728407981ad7d7b14242b52, type: 2 }, { fileID: 11400000, guid: be775675cc1c4738a5747a73a8b59af2, type: 2 }, { fileID: 11400000, guid: d8a466b8007049d69d8646c7b638228c, type: 2 }, { fileID: 11400000, guid: 2650f75a16424991bd0d56222c01e407, type: 2 }, { fileID: 11400000, guid: 2cb0058fc5e5477c8ef1574d94418435, type: 2 }, { fileID: 11400000, guid: bef038da090a460faafa55c1b5a63fa1, type: 2 }, { fileID: 11400000, guid: 2e779a7b428e42d5bcc7040bbb5ecd41, type: 2 }, { fileID: 11400000, guid: 2d6656879c5f433e9953710ea595b43e, type: 2 }, { fileID: 11400000, guid: afc77c16708845eb96918108f1efc9d1, type: 2 }, { fileID: 11400000, guid: 4219c9fbba1b4ba184228139b92c9b8e, type: 2 }, { fileID: 11400000, guid: 719f5794ea044c0e82ac6c707bc894b3, type: 2 }, { fileID: 11400000, guid: 15847c7cbdf6403f81a5948a555cccba, type: 2 }, { fileID: 11400000, guid: 29bd4c8275374e8b8d833ea2fb6969c7, type: 2 }, { fileID: 11400000, guid: d7cc38f8d8e94578826eb24ae1059101, type: 2 }, { fileID: 11400000, guid: fca4d70f1a984b1a8e0acb4afdcb720e, type: 2 }, { fileID: 11400000, guid: b70e9ed945d74562bb9359d10ea53ae0, type: 2 }, { fileID: 11400000, guid: 3df3e2af82c54c4987edd92709c77b50, type: 2 }, { fileID: 11400000, guid: 21bf4c3c36c14e1ba2fb03ddeb8196f5, type: 2 }, { fileID: 11400000, guid: 1acb5a892c774be9a62236ff45cba0ae, type: 2 }, { fileID: 11400000, guid: b4e0366347774207aca704f8b79f87a8, type: 2 }]

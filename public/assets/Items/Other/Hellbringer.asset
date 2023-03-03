@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Unique paint for weapons'
-    image: { fileID: 21300000, guid: 384bc43e0f3b4c07a6e5530f33630b22, type: 3 }
+    image: { fileID: 21300000, guid: 632eb86edff24d7bbe779b57a8951f4f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Hellbringer
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

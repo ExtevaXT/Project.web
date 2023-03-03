@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.02
     text: 'These large chunks of infernal coal are of great interest to scientists, who believe that the coal can be used to create modern cooling systems.'
-    image: { fileID: 21300000, guid: 24d8ad2ce761496ab7a08d6c2ccabc92, type: 3 }
+    image: { fileID: 21300000, guid: bea973b290c547cc89bb839e07993110, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Infernal Coal'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

@@ -6,6 +6,8 @@ MonoBehaviour:
     key: silencer_groza
     fullName: 'Silencer for OTs-14 Groza'
     pathCategory: Attachment/Barrel
+    attachmentMetaGroup: 0
+    attachmentMetaId: '['
     rank: Veteran
     class: 'Muzzles and Silencers'
     weight: 0.48
@@ -14,7 +16,7 @@ MonoBehaviour:
     damageDistant: -10.000002
     text: 'ATTENTION: if you use a silencer, the enemy won’t know where you are firing from.'
     suitableFor: ['OTs-14 Groza', 'OTs-14 Tactical Grip']
-    image: { fileID: 21300000, guid: be64e5cb0e494880a574394dff9bdc46, type: 3 }
+    image: { fileID: 21300000, guid: 54b8e8650d6d4cb8bda6c6ab10053fd6, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Silencer for OTs-14 Groza'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -25,3 +27,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: e29bc2d515c14bd2b6f08133294a12b5, type: 2 }, { fileID: 11400000, guid: 0c1d2a03e11f4dfe8b929356a00ef531, type: 2 }]

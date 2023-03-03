@@ -6,6 +6,8 @@ MonoBehaviour:
     key: '22600'
     fullName: 'Mossberg Stock'
     pathCategory: Attachment/Stock
+    attachmentMetaGroup: 4
+    attachmentMetaId: A
     class: Stocks
     weight: 0.25
     recoil: -14.999998
@@ -13,7 +15,7 @@ MonoBehaviour:
     drawTime: 14.999998
     tickSpreadMultiplierReduction: 25.0
     suitableFor: ['Mossberg 590A1', 'Shorty 590']
-    image: { fileID: 21300000, guid: adec1ae12ce34e00a506e5a297917fe0, type: 3 }
+    image: { fileID: 21300000, guid: 4a898c85c9aa4471b21d8f6a315ab2cb, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Mossberg Stock'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: f3efc26379e7436bba73795f518cbc87, type: 2 }, { fileID: 11400000, guid: 68e41fbc1dc34f31a6a47d575dfa0454, type: 2 }]

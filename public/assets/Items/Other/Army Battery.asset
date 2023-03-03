@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.15
     text: 'Reasonably well preserved army batteries are highly valued among merchants.'
-    image: { fileID: 21300000, guid: bae076bd658d449293254a2229a0df00, type: 3 }
+    image: { fileID: 21300000, guid: 8c2b49d3e7784707b6867dc729417bfa, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Army Battery'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

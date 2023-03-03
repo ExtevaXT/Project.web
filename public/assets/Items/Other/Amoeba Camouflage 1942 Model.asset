@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: cbfc6af9446f4850a004be208ac56ab8, type: 3 }
+    image: { fileID: 21300000, guid: b6d9b9e7d4414ab182cbfe46e12a4a1c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Amoeba Camouflage 1942 Model'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

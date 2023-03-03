@@ -14,7 +14,7 @@ MonoBehaviour:
     piercing: 60.0
     bloodlustChance: 40.0
     text: 'A knife intended for use by military stalkers. It stands out due to its aggressive, contemporary design. It allows you to quickly perform slashing attacks.'
-    image: { fileID: 21300000, guid: d93ac4a08cb64be59d5e803f6512f8ac, type: 3 }
+    image: { fileID: 21300000, guid: 24ac7583156945fea78ba1ece455c00f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Military Stalkers’ Hatchet'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

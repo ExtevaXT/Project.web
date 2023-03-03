@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Developed by the ZIVCAS Research Institute, this armored exoskeleton has excellent properties, but every modification is very specific. This model is intended for combat in the extreme conditions of the Chernobyl Exclusion Zone. Equipped with an experimental life-support system and cutting-edge night-vision goggles that are virtually unaffected by daylight.'
-    image: { fileID: 21300000, guid: efccc15ef91442028fc6449957df9f5f, type: 3 }
+    image: { fileID: 21300000, guid: 781da68b239d4bd1a0f4b895bbdd353d, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Nord Group Assault Trooper'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

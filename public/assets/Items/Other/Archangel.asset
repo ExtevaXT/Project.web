@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Unique paint for armor'
-    image: { fileID: 21300000, guid: e54a6cd27df04d8b96defa86fd81b182, type: 3 }
+    image: { fileID: 21300000, guid: d65b0f3206a04d49aba51d58ae56dfb0, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Archangel
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Armor/Device
     class: Devices
     weight: 1.75
-    image: { fileID: 21300000, guid: 539a1472f5214cf0bd9465fb8d5e51c1, type: 3 }
+    image: { fileID: 21300000, guid: 9d4cdac320c74f80906e4c2976c9c87a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'NVD-11 Export'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

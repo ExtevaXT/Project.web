@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Unique paint for weapons'
-    image: { fileID: 21300000, guid: 98a30131405a4b04a475960da7243ca7, type: 3 }
+    image: { fileID: 21300000, guid: a45f9432cfb24c52994ee460ea8fff7b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Test Prototype TKB-0146M'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

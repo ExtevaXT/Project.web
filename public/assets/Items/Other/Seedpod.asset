@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.1
     text: 'They say that this large, black cone-shaped stone was formed from a whole plethora of smaller “seeds” that were repeatedly exposed to the effect of anomalies. They also possess great durability.'
-    image: { fileID: 21300000, guid: b058a2bfee2143eb8072f9b744691557, type: 3 }
+    image: { fileID: 21300000, guid: b1c6643f08074937937b55e441b0ad4c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Seedpod
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

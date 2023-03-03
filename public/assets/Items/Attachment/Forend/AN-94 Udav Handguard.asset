@@ -6,11 +6,13 @@ MonoBehaviour:
     key: forend_an94
     fullName: 'AN-94 Udav Handguard'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Stalker
     class: 'Hanguards and Brackets'
     weight: 0.21
     suitableFor: ['AN-94 Abakan']
-    image: { fileID: 21300000, guid: 63df646d88844d5ebfaf8e81a70ae3c0, type: 3 }
+    image: { fileID: 21300000, guid: 1dc4713bdca54aaa81665dd791d8ce61, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'AN-94 Udav Handguard'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 64f565e6ccc040bc810d4c4cad0103fa, type: 2 }]

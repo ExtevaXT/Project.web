@@ -9,7 +9,7 @@ MonoBehaviour:
     class: Backpacks
     weight: 25.0
     text: 'When placed in a tournament location, lets you respawn in the camp.'
-    image: { fileID: 21300000, guid: fedb7898bb20415dbeaea4ad753c065a, type: 3 }
+    image: { fileID: 21300000, guid: 60bbaa15cdbf4294a907ec8015ced594, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Mobile Camp'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

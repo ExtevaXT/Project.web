@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: standard
     text: 'A set of army gear adapted to Duty’s requirements. The Vanguard Armored Suit provides exceptional protection from mutants’ claws and teeth, and good bullet resistance makes it a reliable aid in the war for influence in the Zone.'
-    image: { fileID: 21300000, guid: 44feae62f39c42a18e69e28324d20561, type: 3 }
+    image: { fileID: 21300000, guid: 1a7597e43f9d4755a8274aa8f14c2ee6, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Vanguard Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

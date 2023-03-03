@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: 1d529e4dd8384466a24e8e87915951bc, type: 3 }
+    image: { fileID: 21300000, guid: c8c2bdc41a7a442da72461512c584472, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Captured Sumpfmuster Camouflage 1943 model'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

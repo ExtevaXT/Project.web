@@ -31,7 +31,7 @@ MonoBehaviour:
     damageDecreaseEnd: 115.0
     maxDistance: 170.0
     text: 'A 7.62 mm (three-line) rifle from 1891. This magazine-fed rifle was entered into service by the Russian Imperial Army of the Russian armed forces in 1891.'
-    image: { fileID: 21300000, guid: 39cf21765bd544bebfc640b3b0a30dcd, type: 3 }
+    image: { fileID: 21300000, guid: f86275e441c24994ae1d54ed6c2032c9, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Mosin’s Rifle'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'A high-quality ghillie suit with a utility vest. The sensible weight distribution and decent protection against damage make it a good choice for a hunter who lies in wait.'
-    image: { fileID: 21300000, guid: 83045181862f463b90819f44d5f15336, type: 3 }
+    image: { fileID: 21300000, guid: 783676d814774c819b9a61817100654b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Currant Ghillie Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

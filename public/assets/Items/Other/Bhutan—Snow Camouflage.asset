@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: 883ba588191c498493f2d71d57feefd6, type: 3 }
+    image: { fileID: 21300000, guid: ee1434e3ba5d43a28f81056fac074e79, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Bhutan—Snow Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

@@ -26,7 +26,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Over this thick, waterproof cloak, one can wear a large utility vest with body armor, which allows you to increase the amount of resources that can be carried.'
-    image: { fileID: 21300000, guid: 1f9e79c1c82148b7a2f8f4c9c1ceecfa, type: 3 }
+    image: { fileID: 21300000, guid: 5ac1513b38c1449b9baa540e1ed4a400, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Hunter’s Cloak'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

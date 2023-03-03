@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 60.0
     maxDistance: 150.0
     text: 'An American 5.56 mm assault rifle developed and put into operational service in the 1960s. It lacks a fully automatic firing mode, but the handguard and clip have been replaced with those from the M16A1 in order to reduce the cost.'
-    image: { fileID: 21300000, guid: 8153b8e34d994db59fb73ed0f4e0b7e3, type: 3 }
+    image: { fileID: 21300000, guid: 84957ab4b0da4583a5b99dd29c8411b8, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn M16A2'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

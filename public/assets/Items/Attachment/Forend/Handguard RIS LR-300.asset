@@ -6,11 +6,13 @@ MonoBehaviour:
     key: forend_lr300ris
     fullName: 'Handguard RIS LR-300'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Veteran
     class: 'Hanguards and Brackets'
     weight: 0.25
     suitableFor: [LR-300]
-    image: { fileID: 21300000, guid: e0c07d875c4c4aecaf9c48e1fefeadaf, type: 3 }
+    image: { fileID: 21300000, guid: e5771057462c4d95a73520e8e04013c7, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Handguard RIS LR-300'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: b10adf3b927c4040a73f3de593efa08d, type: 2 }]

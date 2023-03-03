@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.1
     text: 'Rumor has it that formations of this smooth mercury-colored metal are nothing more than scrap metal that, due to the “relocation” of Limansk, was compacted into lim.'
-    image: { fileID: 21300000, guid: 1cd3f49145ed47c082732c6a9e374f9b, type: 3 }
+    image: { fileID: 21300000, guid: 58353e5fcb4d44f79386bcfa03e2ec89, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Lim
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

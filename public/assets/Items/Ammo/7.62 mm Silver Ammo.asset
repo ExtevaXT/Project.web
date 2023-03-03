@@ -12,7 +12,7 @@ MonoBehaviour:
     piercing: 7.5
     bleeding: 5.0
     stoppingPower: 25.0
-    image: { fileID: 21300000, guid: 936bcd859e5f439aa85a08a5ad2c1716, type: 3 }
+    image: { fileID: 21300000, guid: 668092816dbe4b99bb8b713e3acb9342, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '7.62 mm Silver Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

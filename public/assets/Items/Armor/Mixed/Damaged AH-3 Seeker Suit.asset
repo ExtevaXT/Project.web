@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'A further development of the Artifact Hunters line. This version was produced using light composite materials and some innovations. It is expensive, but this protective suit wholly justified its price.'
-    image: { fileID: 21300000, guid: d482cc3535db49f18c900f39c07b1072, type: 3 }
+    image: { fileID: 21300000, guid: cdf2e624499347a0bf5fcb1e4b66cbaf, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Damaged AH-3 Seeker Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

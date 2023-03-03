@@ -11,7 +11,7 @@ MonoBehaviour:
     piercing: 27.5
     bleeding: 5.0
     stoppingPower: 15.0
-    image: { fileID: 21300000, guid: a98cd026b4e746e9a82bc7f5f86ac445, type: 3 }
+    image: { fileID: 21300000, guid: 57bbee8bc8ea4566acadb1d71fec5a75, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '7.62 mm SBP Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.02
     text: 'Alpha group tracker left behind at the site of an anomalous signal.'
-    image: { fileID: 21300000, guid: fca24199d80f49e7a0049b8265647326, type: 3 }
+    image: { fileID: 21300000, guid: a5a0881710af436e829df4494f07a768, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Alpha Group Tracker'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

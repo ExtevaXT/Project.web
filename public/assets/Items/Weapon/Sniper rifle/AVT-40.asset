@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 100.0
     maxDistance: 170.0
     text: 'This assault rifle looks exactly the same as the SVT-40, with just a small alteration to the trigger mechanism. In terms of its weight and size, the AVT-40 is indistinguishable from the SVT-40. Due to some structural flaws, it wears out quickly, as continuous automatic fire can deform the receiver.'
-    image: { fileID: 21300000, guid: d7070d6c05474523adc7d305905861ba, type: 3 }
+    image: { fileID: 21300000, guid: 2f40c06a2ead47cf9bbd97d947660037, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: AVT-40
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

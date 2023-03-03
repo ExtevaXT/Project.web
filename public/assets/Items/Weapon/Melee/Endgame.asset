@@ -15,7 +15,7 @@ MonoBehaviour:
     piercing: 50.0
     bloodlustChance: 40.0
     text: 'This imposing weapon is filled with anomalous energy from the Underbelly. Rumor has it that anyone killed with this blade is reborn as a ghost in the Underbelly.'
-    image: { fileID: 21300000, guid: a46e87b11cbb48369b2e939a4f06832d, type: 3 }
+    image: { fileID: 21300000, guid: 8dd5e90e8d2a453b9a52e8499380b46f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Endgame
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

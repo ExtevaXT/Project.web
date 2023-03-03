@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.05
     text: 'This may seem paradoxical, but when bitterleaf flowers, it turns from being a medicine into a dangerous poison that can completely paralyze a human’s nervous system.'
-    image: { fileID: 21300000, guid: de0a38be4ae645a3936980704e287fe5, type: 3 }
+    image: { fileID: 21300000, guid: 0d017fc53ced408396090dc56ae42533, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Flowering Bitterleaf'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

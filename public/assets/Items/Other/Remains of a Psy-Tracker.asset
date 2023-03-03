@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.03
     text: 'Not much is known about the developments made by the Zone’s secret labs, but those who live there were distinctly interested in researching the effect of various types of signal on the human brain. The remains of their developments, even those that are not in a working condition, are the stuff of dreams for any mad scientist.'
-    image: { fileID: 21300000, guid: a7ca0d2b416c4c569e69c5899124dc44, type: 3 }
+    image: { fileID: 21300000, guid: bba72a66db2a45f1a85372061faf71df, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Remains of a Psy-Tracker'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

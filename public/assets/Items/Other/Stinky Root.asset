@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.03
     text: 'It’s difficult to describe the odor of the stinky root, which grows primarily at the Cordon. Imagine a mixture of the smells of cilantro, cat urine, and rush hour traffic...'
-    image: { fileID: 21300000, guid: 9f861af356b74a8aabdd8889f440bbf7, type: 3 }
+    image: { fileID: 21300000, guid: 4d10de8d5b364811ac2aa0c6ab92ae15, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Stinky Root'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

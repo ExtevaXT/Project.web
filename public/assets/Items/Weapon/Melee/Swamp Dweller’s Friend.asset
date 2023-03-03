@@ -14,7 +14,7 @@ MonoBehaviour:
     piercing: 20.0
     bloodlustChance: 30.0
     text: 'This light, easy-to-use knife has changed owners on more than one occasion.'
-    image: { fileID: 21300000, guid: 3493198504eb471db62ccba207e59570, type: 3 }
+    image: { fileID: 21300000, guid: 85ec750f41de4541b5862e0393688382, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Swamp Dweller’s Friend'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

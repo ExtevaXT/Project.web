@@ -26,7 +26,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'A further development of the SEVA, this combines very good protection against anomalous with decent physical protection.'
-    image: { fileID: 21300000, guid: 40193ad7169e44c9b517617c96ed8201, type: 3 }
+    image: { fileID: 21300000, guid: 12377176ac614812806a0bc6d8703146, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Saturn Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

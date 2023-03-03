@@ -6,13 +6,15 @@ MonoBehaviour:
     key: scope_svt
     fullName: 'PU Optical Sight for SVT'
     pathCategory: Attachment/Sight
+    attachmentMetaGroup: 2
+    attachmentMetaId: R
     rank: Picklock
     class: Sights
     weight: 0.27
     aimSwitchTime: 10.000002
     text: 'A Soviet optical sight first created in 1940 for use with the sniper model of the Tokarev semi-automatic rifle.'
     suitableFor: [AVT-40, SVT-40]
-    image: { fileID: 21300000, guid: 33f88ba7218040bb95b5ec6980fead61, type: 3 }
+    image: { fileID: 21300000, guid: 0e53d84242614e91af89a24c6ba6a49a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'PU Optical Sight for SVT'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -23,3 +25,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: d3b524e3663b463980c651a01a58f259, type: 2 }, { fileID: 11400000, guid: d531a64d3b8d45f88d5958798581cb1d, type: 2 }]

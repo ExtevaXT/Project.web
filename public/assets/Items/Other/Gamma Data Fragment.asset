@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.15
     text: 'A fragment of data from the Gamma group that was obtained from the corresponding anomalous installation.'
-    image: { fileID: 21300000, guid: 090e02ba0efe4163ad78d035398cdbb7, type: 3 }
+    image: { fileID: 21300000, guid: 5e32ad760ccc4a6888b07e2d7fe3ec95, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Gamma Data Fragment'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

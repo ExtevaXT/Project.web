@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: standard
     text: 'An indigo research suit. One of the masterpieces of the Chernobyl Research Institute. Can be worn in areas with high psychic influence.'
-    image: { fileID: 21300000, guid: b8257395889746758e98c9486a4c113e, type: 3 }
+    image: { fileID: 21300000, guid: 623c6d11995c40d88bf24949e4f62757, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn Amethyst'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

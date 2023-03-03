@@ -29,7 +29,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'Virtually the best model in the Artifact Hunters range. Combines all the benefits of the previous versions and comes equipped with a closed breathing circuit.'
-    image: { fileID: 21300000, guid: 9de4bf7cd2a146a088946b55d2aa1e63, type: 3 }
+    image: { fileID: 21300000, guid: 1eac551bbbf747f6a483afedd9a0b47b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'RAPS AH-5 Pilgrim'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

@@ -14,7 +14,7 @@ MonoBehaviour:
     activeScanRadius: 30.0
     activeScanAngle: 30.0
     text: 'Standard charge usage, scanning distance: 60 meters.'
-    image: { fileID: 21300000, guid: 2f3c1af534f24cc9bbfd98ddca988e73, type: 3 }
+    image: { fileID: 21300000, guid: a0000ab50c8f45d7af73966f4124d682, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'SN-2 Leg'
     m_Script: { fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3 }

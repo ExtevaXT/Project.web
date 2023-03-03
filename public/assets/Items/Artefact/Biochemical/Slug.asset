@@ -14,7 +14,7 @@ MonoBehaviour:
     bleedingProtection: [7.5, 15.0]
     bleedingAccumulation: [-3.0, -1.5]
     text: 'A Slime artifact that has been exposed to the effects of external forces. It still has the same properties and the same unpleasant texture, just a little bit more solid.'
-    image: { fileID: 21300000, guid: 445b194f45af4f019cf22b830a763cdc, type: 3 }
+    image: { fileID: 21300000, guid: 44b9b4a4cc8d4616a79c7525a9f1e9e1, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Slug
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

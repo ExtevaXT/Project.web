@@ -12,7 +12,7 @@ MonoBehaviour:
     maxDurability: 100.0
     speedModifier: [3.0, 6.0]
     staminaRegenerationBonus: [-5.0, -2.5]
-    image: { fileID: 21300000, guid: 40231021940e4936bd44b3a295c42ad6, type: 3 }
+    image: { fileID: 21300000, guid: f7e9a1c284a7456c9ee93e23dd6af038, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Whirlwind
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

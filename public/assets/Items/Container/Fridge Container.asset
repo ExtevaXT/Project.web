@@ -15,7 +15,7 @@ MonoBehaviour:
     size: 3.0
     speedModifier: [-1.0]
     thermalAccumulation: [-1.5]
-    image: { fileID: 21300000, guid: 29b8ce685d5449d7ad628b3424147f13, type: 3 }
+    image: { fileID: 21300000, guid: 3935073b396549bb8a8f9f00bfb1fb65, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Fridge Container'
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

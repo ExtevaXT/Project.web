@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: standard
     text: 'A turquoise research suit. One of the Chernobyl Research Institute’s true masterpieces. The special composition of the suit’s lining protects against high levels of radiation.'
-    image: { fileID: 21300000, guid: aa72bcbf16a4430091e7442dd6b7af66, type: 3 }
+    image: { fileID: 21300000, guid: ea5da84b157447fb848f0829fc8b2b36, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'KIM-113 Iolite'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

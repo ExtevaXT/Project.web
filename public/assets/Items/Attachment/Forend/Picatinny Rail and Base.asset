@@ -6,11 +6,13 @@ MonoBehaviour:
     key: mount_tozris
     fullName: 'Picatinny Rail and Base'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Newbie
     class: 'Hanguards and Brackets'
     weight: 0.15
     suitableFor: [TOZ-34]
-    image: { fileID: 21300000, guid: 6d5d1f1542ce4be192815e826b82ef6f, type: 3 }
+    image: { fileID: 21300000, guid: 9ead1bbdf35741d78e5a4d862dd67d90, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Picatinny Rail and Base'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 959a628dfdbc4b7a82553746dfe64803, type: 2 }]

@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 60.0
     maxDistance: 145.0
     text: 'A combination of an assault rifle and a grenade launcher, 70% based on AK-74-type assault rifles (the main differences are the 9x39 mm caliber, the bullpup configuration, and greater possibilities for modernization). It was developed as an armament for rapid reaction units. It is highly valued by stalkers and soldiers, due to the fact that it is capable of reliably eliminating an opponent in body armor, even behind cover.'
-    image: { fileID: 21300000, guid: 3dcaa435d7d44b9890e28fd2a85865da, type: 3 }
+    image: { fileID: 21300000, guid: bf87ce4d9c6541d1a6c27354f8947aca, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn Groza'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

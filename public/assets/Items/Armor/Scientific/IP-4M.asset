@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'This gas mask with an IP-4M closed breathing system is a really handy gizmo. The most comfortable way to wear it is with a hazmat suit. Someone decided to multiply the benefit of wearing this suit a tenfold by creating a lining made of light plates that improve protection against bullets and other forms of physical damage. What they ended up with was a good suit for a novice stalker who has grown out of wearing a jacket, but can’t yet afford a suit like the Zarya model.'
-    image: { fileID: 21300000, guid: 7ecf407058314a6b94f17b2345f252fe, type: 3 }
+    image: { fileID: 21300000, guid: 5ae1b285c1434cde8bd532b6fbfb7281, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: IP-4M
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

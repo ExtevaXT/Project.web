@@ -6,11 +6,13 @@ MonoBehaviour:
     key: launcher_eglm
     fullName: 'FN EGLM Grenade Launcher'
     pathCategory: Attachment/Other
+    attachmentMetaGroup: 1
+    attachmentMetaId: D
     rank: Veteran
     class: 'Other Attachments'
     weight: 1.35
     suitableFor: ['FN SCAR-L', 'FN SCAR-H']
-    image: { fileID: 21300000, guid: 94c12e2330ba4c9896ac856864a9f1bb, type: 3 }
+    image: { fileID: 21300000, guid: b8b9c0760fa843f3b0ab01df3f06c03f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'FN EGLM Grenade Launcher'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 10ccffcd2cf24697a9eaded376382b27, type: 2 }, { fileID: 11400000, guid: 0bd3d41a5c5a4998b5393a879549d0af, type: 2 }]

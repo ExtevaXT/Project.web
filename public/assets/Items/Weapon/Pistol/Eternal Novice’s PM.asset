@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 25.0
     maxDistance: 50.0
     text: 'There are rumors going round in the Zone about a newbie who couldn’t even make it from the Swamps to the Cordon. He was armed only with a PM, unable to afford anything better. Eventually, he persuaded one of the stalkers to give him a better weapon, and offered his PM and a small amount of cash as payment. The stalker turned out to have sense of humor: he simply took the pistol to a mechanic, who modified it. As it turned out, the modification was fairly successful. The improved bullet feeding mechanism increased the pistol’s rate of fire, and the altered shape of the clip increased its ammo capacity. In all other respects, the pistol was no different from how it had been originally. No one know what came of this Newbie, but modifications of this kind became popular. Nowadays, anyone can get their hands on one.'
-    image: { fileID: 21300000, guid: d593c1b814614838880ceaa067f1a68f, type: 3 }
+    image: { fileID: 21300000, guid: 792a485c38a5439aa67fa7ca1948cb71, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Eternal Novice’s PM'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

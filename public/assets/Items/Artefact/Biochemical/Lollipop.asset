@@ -13,7 +13,7 @@ MonoBehaviour:
     radiationAccumulation: [-6.0, -3.0]
     biologicalAccumulation: [5.0, 15.0]
     text: 'A proto-artifact and gelatinous substance (colloid gas) that forms the basis of the Kissel anomaly. Absorbs radioactive elements from the surrounding oxygen, while also releasing dangerous toxins. This makes it almost impossible to use as intended.'
-    image: { fileID: 21300000, guid: ab569c43307b43d09dd865d8eca73b83, type: 3 }
+    image: { fileID: 21300000, guid: 12c600fbbe6d47dcb952fc76101d8881, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Lollipop
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

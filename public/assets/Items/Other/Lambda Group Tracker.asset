@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.02
     text: 'Lambda Group tracker, left behind at the site of an anomalous signal.'
-    image: { fileID: 21300000, guid: d6afc6a9f32d469ab00e269bdde11e55, type: 3 }
+    image: { fileID: 21300000, guid: 2ceb63ea88144476a9333a41b56bb3a3, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Lambda Group Tracker'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

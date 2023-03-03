@@ -31,7 +31,7 @@ MonoBehaviour:
     damageDecreaseEnd: 110.0
     maxDistance: 195.0
     text: 'A modification of the SVU with a restored automatic fire feature. Known among stalkers as Avalanche. Due to the jury-rigged nature of the modification, the weapon’s accuracy and muzzle velocity have decreased.'
-    image: { fileID: 21300000, guid: e21b3d189ec24d94bc38dfc850c5d472, type: 3 }
+    image: { fileID: 21300000, guid: 252ae0e463124affb5ef7b34efdfd766, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Avalanche
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

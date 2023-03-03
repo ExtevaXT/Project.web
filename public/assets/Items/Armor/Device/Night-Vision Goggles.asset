@@ -9,7 +9,7 @@ MonoBehaviour:
     rank: Newbie
     class: Devices
     weight: 1.5
-    image: { fileID: 21300000, guid: ff21990eeb1441c8a69c68bb2128b934, type: 3 }
+    image: { fileID: 21300000, guid: dd08e63ee3d748ba8fa2e74739ef2498, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Night-Vision Goggles'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

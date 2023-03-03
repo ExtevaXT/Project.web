@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: Other
     weight: 0.01
-    image: { fileID: 21300000, guid: dd80ba21d30d48d2a19059a3d5e44fcb, type: 3 }
+    image: { fileID: 21300000, guid: de1164badb3f4a2c930dcfd847b99e0f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Special Tools'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

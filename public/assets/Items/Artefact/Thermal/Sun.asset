@@ -13,7 +13,7 @@ MonoBehaviour:
     healthBonus: [3.0, 5.0]
     thermalAccumulation: [4.0, 8.0]
     text: 'A fairly rare artifact that increases pain tolerance. However, its high thermal radiation levels can make it dangerous to use.'
-    image: { fileID: 21300000, guid: d3d8b3494c9942459b7aa1d9e29bbd49, type: 3 }
+    image: { fileID: 21300000, guid: b261ea2239ee46d6b434a747a5289b12, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Sun
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

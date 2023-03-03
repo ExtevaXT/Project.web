@@ -6,11 +6,13 @@ MonoBehaviour:
     key: forend_caars
     fullName: 'CAA RS-21 Handguard'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Stalker
     class: 'Hanguards and Brackets'
     weight: 0.43
     suitableFor: [AKS-74, AKM, AK-103, 'Kbk wz. 88 Tantal', AK-105, RPK, RPK-74]
-    image: { fileID: 21300000, guid: 4164a9ae59064883994194744e7cff13, type: 3 }
+    image: { fileID: 21300000, guid: 44b83f68b2824844868ee64ed68a151c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'CAA RS-21 Handguard'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 6a5d18711638447e831c5e80d921ad3b, type: 2 }, { fileID: 11400000, guid: ebb241c742234e3aa2373ad17f2a9ed1, type: 2 }, { fileID: 11400000, guid: 473a1753ac314080ba75f71352c1fb72, type: 2 }, { fileID: 11400000, guid: 0b4138c0f552446a98d12b5167718749, type: 2 }, { fileID: 11400000, guid: 78ee10e848834b92be4f14fcee969dad, type: 2 }, { fileID: 11400000, guid: 4dec623e3d0447fb8ad07242910b79d0, type: 2 }, { fileID: 11400000, guid: 493f0724b69442698a991472fab0472c, type: 2 }]

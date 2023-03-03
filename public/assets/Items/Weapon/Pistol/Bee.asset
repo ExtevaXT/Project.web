@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 24.0
     maxDistance: 50.0
     text: 'This widely available modification of the P99 pistol, which is popular in the Zone, allows it to fire in fully automatic mode. It is cheap, easy to use, effective, and sometimes makes a “pop” sound while being fired—isn’t that all you need for a perfect weapon?'
-    image: { fileID: 21300000, guid: 286303316133468aa2b41c465f0bbc37, type: 3 }
+    image: { fileID: 21300000, guid: 60468ddb809d447db722baa99acdc9fc, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Bee
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

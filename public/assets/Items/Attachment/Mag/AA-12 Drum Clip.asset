@@ -6,6 +6,8 @@ MonoBehaviour:
     key: mag_aa1220
     fullName: 'AA-12 Drum Clip'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: J
     rank: Master
     class: Clips
     weight: 0.73
@@ -13,7 +15,7 @@ MonoBehaviour:
     drawTime: 20.000004
     reloadTime: 39.999996
     suitableFor: [AA-12]
-    image: { fileID: 21300000, guid: df15c56ac5e9417e92a67d4546b38176, type: 3 }
+    image: { fileID: 21300000, guid: 259d334321434b70991ac2b34ef54925, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'AA-12 Drum Clip'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 13271f00095b458e98cb092b18239ba4, type: 2 }]

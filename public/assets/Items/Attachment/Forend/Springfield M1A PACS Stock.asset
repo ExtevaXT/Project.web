@@ -6,6 +6,8 @@ MonoBehaviour:
     key: forend_m1pacs
     fullName: 'Springfield M1A PACS Stock'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Veteran
     class: 'Hanguards and Brackets'
     weight: 1.9
@@ -13,7 +15,7 @@ MonoBehaviour:
     drawTime: -10.000002
     reloadTime: -5.000001
     suitableFor: ['M1A FA']
-    image: { fileID: 21300000, guid: cab03ede60eb4a0bb764271909a458ab, type: 3 }
+    image: { fileID: 21300000, guid: cd6dbe8c908649619b523db486821576, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Springfield M1A PACS Stock'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: f0765e2ab99545c19478025eec9fafe6, type: 2 }]

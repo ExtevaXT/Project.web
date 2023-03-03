@@ -24,7 +24,7 @@ MonoBehaviour:
     drawTime: 1.4
     aimSwitch: 0.35
     text: 'A handheld revolver-type grenade launcher. It has a range of 55 meters.'
-    image: { fileID: 21300000, guid: 4e07237dda3f458b907087bc5228df23, type: 3 }
+    image: { fileID: 21300000, guid: 163242fb3be64fc0ab606d81e0c4a68c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: RG-6
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

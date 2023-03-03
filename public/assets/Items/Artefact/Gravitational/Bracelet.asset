@@ -14,7 +14,7 @@ MonoBehaviour:
     staminaRegenerationBonus: [5.0, 7.5]
     psychoAccumulation: [3.0, 8.0]
     text: 'An artifact that looks like a bracelet on a wrist, which is where it gets its name. It helps keep the body energized and increases regeneration speed after exertion, while also positively affecting the psyche. You might say that, to some extent, the effects are similar to a weak anabolic steroid.'
-    image: { fileID: 21300000, guid: dd7dd5e748274d63a74f4d1b787acda9, type: 3 }
+    image: { fileID: 21300000, guid: 03d94335b98f4505a7b2acdc93ba2480, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Bracelet
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

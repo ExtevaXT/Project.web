@@ -13,7 +13,7 @@ MonoBehaviour:
     tearDmgFactor: [-60.0, -30.0]
     burnDmgFactor: [15.0, 30.0]
     chemicalBurnDmgFactor: [15.0, 30.0]
-    image: { fileID: 21300000, guid: bc06b541ba234fa4b7708a13a60bd21d, type: 3 }
+    image: { fileID: 21300000, guid: ba85851241764bc6b27195adda86462e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Razor
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

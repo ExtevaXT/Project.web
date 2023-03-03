@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Ammo
     class: Ammo
     weight: 1.2
-    image: { fileID: 21300000, guid: 3ae73c47c2e74d25850fc898e4448ffd, type: 3 }
+    image: { fileID: 21300000, guid: 0a01249390e7446298d25669b3ec7e01, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Tank of Combustible Mixture'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

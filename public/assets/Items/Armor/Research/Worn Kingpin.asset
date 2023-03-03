@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Army body armor and pressure suit. A Sphere-4 shielding helmet. While these items are hard to acquire, the wide reach of the black market makes it easy to find them.'
-    image: { fileID: 21300000, guid: f623605464dc411381ffcfca23b3afd0, type: 3 }
+    image: { fileID: 21300000, guid: 62f6051f90594a5face6f816407262f6, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn Kingpin'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

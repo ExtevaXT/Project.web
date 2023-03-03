@@ -14,7 +14,7 @@ MonoBehaviour:
     maxWeightBonus: [10.0, 15.0]
     radiationAccumulation: [4.0, 8.0]
     text: 'A gravity regulator artifact of a split-off evolutionary branch of the Quirk family. Formed in a Blackhole alongside the Goldfish, but in a totally different way. This artifact creates a sustained field of negative gravity, which makes both the wearer’s backpack and the wearer themselves much lighter. Due to its rarity, not all of its properties are well-studied.'
-    image: { fileID: 21300000, guid: d6ed5ffe7eda407fb561bd9be515fe84, type: 3 }
+    image: { fileID: 21300000, guid: b6b157efcc954be78a63020cce2302ff, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Gold Gravi'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

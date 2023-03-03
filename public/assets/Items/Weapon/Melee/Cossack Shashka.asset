@@ -14,7 +14,7 @@ MonoBehaviour:
     piercing: 80.0
     bloodlustChance: 45.0
     text: 'A classic Cossack shashka. A long, heavy blade intended for offensive combat. Excellent for chopping off limbs!'
-    image: { fileID: 21300000, guid: 8f2c9990741a4f819783256e8b997968, type: 3 }
+    image: { fileID: 21300000, guid: b97439d237b14fb4bdb638987e3146c1, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Cossack Shashka'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

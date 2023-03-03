@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: standard
     text: 'With an exclusive carrying capacity, the Mule frame exoskeleton was created specifically for high-class couriers. It allows the wearer to not only carry bulky loads, but to also survive in conditions of increased anomalous activity.'
-    image: { fileID: 21300000, guid: 3a2c152f0cb941b9b5734d58ae9cbf5f, type: 3 }
+    image: { fileID: 21300000, guid: d4da8a4194984ec78e7cebb8c746a8fa, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn Mule'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

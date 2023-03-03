@@ -28,7 +28,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: spacious
     text: 'One version of the legendary exoarmor prototype. Combines all the benefits of cutting-edge research suits and army armored exoskeleton. Comes with a special covering that prevents damage from chemical substances.'
-    image: { fileID: 21300000, guid: d77fe326173d4a9a8a4bbdebf0d1070d, type: 3 }
+    image: { fileID: 21300000, guid: fbbd00d518ca4f7ebae64ebe74bff538, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Khors Group ZIVCAS'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

@@ -14,7 +14,7 @@ MonoBehaviour:
     healEfficiency: [5.0, 15.0]
     biologicalAccumulation: [3.0, 8.0]
     text: 'An artifact that resembles a shard of cheap crystal. Don’t let its appearance deceive you, though—this artifact increases the owner’s vitality, allowing them to survive nearly fatal wounds. However, the artifact is made of toxic substances and could be dangerous without the necessary protection.'
-    image: { fileID: 21300000, guid: 0041ce54df9048dc980d07856df52703, type: 3 }
+    image: { fileID: 21300000, guid: f3b891ccf79144e2b4b57c00124d09ac, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Shard
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

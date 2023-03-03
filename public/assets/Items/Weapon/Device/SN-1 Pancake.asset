@@ -14,7 +14,7 @@ MonoBehaviour:
     activeScanRadius: 10.0
     activeScanAngle: 60.0
     text: 'Standard charge usage, scanning distance: 40 meters.'
-    image: { fileID: 21300000, guid: 93429eca3a854048ada6fb32f3428397, type: 3 }
+    image: { fileID: 21300000, guid: e57457c7af02498db8e9727fd7ca7401, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'SN-1 Pancake'
     m_Script: { fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3 }

@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'An excellent utility vest with body armor, a reliable helmet, and a gas mask. It is an excellent choice for any true firearms connoisseur. But don’t forget that in the Zone, you need more than just protection from bullets.'
-    image: { fileID: 21300000, guid: b65dc6eaab6b4d06bccc4718df54dcec, type: 3 }
+    image: { fileID: 21300000, guid: e3eb9d4e9c8f4c2cb47a575dd89a6ef2, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Hoplite Armored Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

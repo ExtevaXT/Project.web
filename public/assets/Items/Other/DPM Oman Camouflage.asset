@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: f1c95453476446419a18d99ee5acf1db, type: 3 }
+    image: { fileID: 21300000, guid: 3809836ee2784b3d8386301637ae3877, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'DPM Oman Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

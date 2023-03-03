@@ -6,13 +6,15 @@ MonoBehaviour:
     key: silencer_ash12_mc558
     fullName: 'ASh-12 MTs-558 Silencer'
     pathCategory: Attachment/Barrel
+    attachmentMetaGroup: 0
+    attachmentMetaId: ']'
     rank: Master
     class: 'Muzzles and Silencers'
     weight: 0.7
     drawTime: 10.000002
     damageDistant: -14.999998
     suitableFor: [ASh-12, MTs-558]
-    image: { fileID: 21300000, guid: 7cf68658b11a45349c76d29974b4711c, type: 3 }
+    image: { fileID: 21300000, guid: bf2f66944aa243b49de8c7e41d75a785, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'ASh-12 MTs-558 Silencer'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -23,3 +25,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: b82f55b8b3d1455e8784b7fed65054c8, type: 2 }, { fileID: 11400000, guid: 4e845df9a2ab44a68438023408380ebd, type: 2 }]

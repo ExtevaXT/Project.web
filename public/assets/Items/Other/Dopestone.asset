@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.01
     text: 'Once, anomalies sprung up all over a large Freedom hideout containing weed... I mean, er... artifacts. That’s where the first forms of dopestone appeared.'
-    image: { fileID: 21300000, guid: b02a1e4e728849718552fd97b55976fc, type: 3 }
+    image: { fileID: 21300000, guid: 11bfdd8d73814b1bb14b5fd731c7591e, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Dopestone
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

@@ -26,7 +26,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: spacious
     text: 'Beast Slayer'
-    image: { fileID: 21300000, guid: 3965c36a4cff4288a44472f9e7453683, type: 3 }
+    image: { fileID: 21300000, guid: a8c47b6f10ee496c83cd200a391c6e89, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn Beast Slayer'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

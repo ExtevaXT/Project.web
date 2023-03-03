@@ -13,7 +13,7 @@ MonoBehaviour:
     lifetime: 2.0
     explosionSize: 5.0
     text: 'A fragmentation hand grenade produced in the Netherlands. Despite its small size, it is lethal within a range of several meters.'
-    image: { fileID: 21300000, guid: 838478a4a93941f39f533f7150c395e9, type: 3 }
+    image: { fileID: 21300000, guid: aaa3f681811b4b8390c9ca36fba5f3d2, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'V40 Mini-Grenade'
     m_Script: { fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3 }

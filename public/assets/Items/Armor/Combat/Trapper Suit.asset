@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'A comfortable suit that is good for actively tracking mutants and for fleeing from them. Its average damage protection is offset by its base resistance to anomalies.'
-    image: { fileID: 21300000, guid: 4c44c4739ac946488df73adffc602322, type: 3 }
+    image: { fileID: 21300000, guid: ee88676d75c64a8497bc7d70f33b7879, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Trapper Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

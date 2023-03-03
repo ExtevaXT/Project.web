@@ -14,7 +14,7 @@ MonoBehaviour:
     radiationProtection: [10.0, 15.0]
     psychoProtection: [10.0, 15.0]
     text: 'An artifact produced by the Stasis anomaly that possesses shielding properties, and can partially deflect ionizing emissions. It has a negative effect on the nervous system and increases pain tolerance.'
-    image: { fileID: 21300000, guid: 6152dd46aae1473797b9ff0be4f43727, type: 3 }
+    image: { fileID: 21300000, guid: 1bdad02d549b420cba2839b732b8cae7, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Mirror
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

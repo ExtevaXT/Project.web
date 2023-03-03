@@ -15,7 +15,7 @@ MonoBehaviour:
     electraDmgFactor: [10.0, 15.0]
     psychoAccumulation: [-3.0, -1.0]
     text: 'An extremely rare artifact. Like other “jellyfish,” it is formed in the Trampoline anomaly. For a long time, this artifact was thought not to exist at all. Its properties place it somewhere between a Dark Jellyfish and a Night Star, but it is not radioactive. While it has a positive effect on the mind, rumor has it that the side effects lead to a decrease in pain tolerance.'
-    image: { fileID: 21300000, guid: a73ccf1e4ec4410d9282782270e89163, type: 3 }
+    image: { fileID: 21300000, guid: bf0e02c6921d49328f84a6e88be09d66, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Veiner
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

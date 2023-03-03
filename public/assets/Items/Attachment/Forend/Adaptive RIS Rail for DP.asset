@@ -6,11 +6,13 @@ MonoBehaviour:
     key: mount_dpris
     fullName: 'Adaptive RIS Rail for DP'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Newbie
     class: 'Hanguards and Brackets'
     weight: 0.1
     suitableFor: [DP]
-    image: { fileID: 21300000, guid: 4cebaea541b94f9dafbce814e1bd5045, type: 3 }
+    image: { fileID: 21300000, guid: 08bd8fabc41844a191237383c27918ae, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Adaptive RIS Rail for DP'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: b85b2917a92a444b8d0d97f057f79d3d, type: 2 }]

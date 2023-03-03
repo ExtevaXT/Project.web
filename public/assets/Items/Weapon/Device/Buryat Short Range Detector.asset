@@ -13,7 +13,7 @@ MonoBehaviour:
     charge: 100.0
     range: 80.0
     text: 'A detector used to locate zones of anomalous activity. It is equipped with a screen that can show the source of the signals.'
-    image: { fileID: 21300000, guid: 5195ec2f2d0c48a993898e20f44fb230, type: 3 }
+    image: { fileID: 21300000, guid: f2dd649266b644c4a094cd4ec30d1f38, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Buryat Short Range Detector'
     m_Script: { fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3 }

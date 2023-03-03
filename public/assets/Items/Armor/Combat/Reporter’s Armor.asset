@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Protection set for reporters.'
-    image: { fileID: 21300000, guid: bf1b359548964bd79da0d62b2d2a340a, type: 3 }
+    image: { fileID: 21300000, guid: dcc76f2dd84d471885ed874f91cb99ad, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Reporter’s Armor'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

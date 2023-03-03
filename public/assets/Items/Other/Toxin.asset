@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Unique paint for weapons'
-    image: { fileID: 21300000, guid: cd237edc3bf647a7bfe8d4ebe914c6f4, type: 3 }
+    image: { fileID: 21300000, guid: 0de3093aab5c48b78bd7765beec688b1, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Toxin
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

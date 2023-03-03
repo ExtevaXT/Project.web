@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.25
     text: 'These experimental developments can currently only be found on the black market, as official production of them has been deemed illegal. The principle according to which these batteries function is based on the use of the Zone’s anomalous energy. Representatives of the scientific community assure us that anomalous batteries are not safe to use.'
-    image: { fileID: 21300000, guid: 45dd2544eaa74a7aa8b556e0e350d7e9, type: 3 }
+    image: { fileID: 21300000, guid: 02a56918ea044eabbe89dbca9008cc65, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Anomalous Battery'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

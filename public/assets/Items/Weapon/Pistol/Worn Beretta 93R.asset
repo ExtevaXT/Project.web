@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 28.0
     maxDistance: 48.0
     text: 'An Italian automatic pistol that was developed by the Beretta company based on the semi-automatic Beretta 92 pistol in the 1970s for law enforcement agencies and the military.'
-    image: { fileID: 21300000, guid: 199f77a1192a4e7da1d7359aa97d4753, type: 3 }
+    image: { fileID: 21300000, guid: f366b22413ec480797cae8fd9e68953a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn Beretta 93R'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

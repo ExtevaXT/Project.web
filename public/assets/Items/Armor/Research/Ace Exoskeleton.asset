@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: standard
     text: 'The thieves’ elite decided that they needed an equivalent to the stalker Mule, which is why the Ace Exoskeleton was created. The key difference is that it has increased mobility and weighs less.'
-    image: { fileID: 21300000, guid: a03fe33e199944dea4fd8979b343d204, type: 3 }
+    image: { fileID: 21300000, guid: f2b52ac230b2479caf88af0ec5d0b847, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Ace Exoskeleton'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

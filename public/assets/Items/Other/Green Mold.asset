@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.012
     text: 'A mixture of radiation and the moist conditions of the Swamps gave rise to this mold, which often grows in mutants’ hiding places.'
-    image: { fileID: 21300000, guid: f2010a535ac143578af88558252f4254, type: 3 }
+    image: { fileID: 21300000, guid: daf7c9ece06e449697ec7693e5540359, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Green Mold'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

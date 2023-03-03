@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.05
     text: 'Particularly large examples of “shrimp” have acquired the name “barberry.” Barberries come up all over the world in private jewelry auctions.'
-    image: { fileID: 21300000, guid: 08b6a8ce999c4e2ba484101af0ab61bf, type: 3 }
+    image: { fileID: 21300000, guid: 5b37c68504804f029e760aaf3560b017, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Barberry
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: 'Skins and Paint'
     text: 'Paint for armor'
-    image: { fileID: 21300000, guid: 0f9c0ece9f5c4b4a817a08d6c7cf7d7a, type: 3 }
+    image: { fileID: 21300000, guid: 1269eaa48ca0444da1de8014c79ce9b2, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'DPM Woodland A Camouflage'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

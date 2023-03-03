@@ -6,6 +6,8 @@ MonoBehaviour:
     key: '22603'
     fullName: 'MP5 Fixed Stock'
     pathCategory: Attachment/Stock
+    attachmentMetaGroup: 4
+    attachmentMetaId: B
     class: Stocks
     weight: 0.25
     recoil: -2.9999971
@@ -13,7 +15,7 @@ MonoBehaviour:
     recoilGain: -19.999998
     tickSpreadMultiplierReduction: 14.999998
     suitableFor: ['HK MP5', Viper]
-    image: { fileID: 21300000, guid: a1c9a5ac72f64798942ab344a90b43ba, type: 3 }
+    image: { fileID: 21300000, guid: fef334248c214ca785a31a2bc2c9e337, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'MP5 Fixed Stock'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 6d009c23746d4a04b35882242617b303, type: 2 }, { fileID: 11400000, guid: d8a466b8007049d69d8646c7b638228c, type: 2 }]

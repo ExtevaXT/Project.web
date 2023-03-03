@@ -14,7 +14,7 @@ MonoBehaviour:
     piercing: 30.0
     bloodlustChance: 25.0
     text: 'You can sometimes find useful stuff in a junkyard.'
-    image: { fileID: 21300000, guid: ca98bae9ee764829b61d2192a9032041, type: 3 }
+    image: { fileID: 21300000, guid: 279d47dedc634ff584450e49da74bf0f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Piece of Pipe'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

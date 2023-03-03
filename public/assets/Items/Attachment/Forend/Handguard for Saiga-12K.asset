@@ -6,11 +6,13 @@ MonoBehaviour:
     key: forend_saiga
     fullName: 'Handguard for Saiga-12K'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Veteran
     class: 'Hanguards and Brackets'
     weight: 0.2
     suitableFor: [Saiga-12K]
-    image: { fileID: 21300000, guid: 484b32498f3545fa9f9a2040bdf1abd0, type: 3 }
+    image: { fileID: 21300000, guid: a9a8e4b9ca9c489e85609cbfd5e779dd, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Handguard for Saiga-12K'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: b39e0e8e826b4d64882ad242d4efd5db, type: 2 }]

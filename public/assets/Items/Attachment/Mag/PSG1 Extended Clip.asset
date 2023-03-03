@@ -6,12 +6,14 @@ MonoBehaviour:
     key: mag_psg1
     fullName: 'PSG1 Extended Clip'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: f
     rank: Veteran
     class: Clips
     weight: 0.24
     clipSize: 10.0
     suitableFor: ['HK PSG1']
-    image: { fileID: 21300000, guid: d62c4af286284703beb08bb095585e00, type: 3 }
+    image: { fileID: 21300000, guid: edcd866e5a124f368a10337ad0442b9f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'PSG1 Extended Clip'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -22,3 +24,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 5e60114ec63c4c13bade04371eb06708, type: 2 }]

@@ -14,7 +14,7 @@ MonoBehaviour:
     piercing: 70.0
     bloodlustChance: 55.0
     text: 'A tool used by mountain climbers for breaking ice when climbing mountain peaks. It’s great for breaking other materials too, not just ice.'
-    image: { fileID: 21300000, guid: 53ada7df0eb54110af19a09998caa3ad, type: 3 }
+    image: { fileID: 21300000, guid: f1b498b43f3e44898da5f8d0270aad1c, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Ice Pick'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

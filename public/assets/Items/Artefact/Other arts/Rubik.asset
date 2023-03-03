@@ -11,7 +11,7 @@ MonoBehaviour:
     common: 'Not studied'
     maxDurability: 100.0
     text: 'A mysterious artifact born from the Underbelly, which can have unpredictable attributes when under raised potential.'
-    image: { fileID: 21300000, guid: fd28f21dc18f4be29f33ca4c3fad81cf, type: 3 }
+    image: { fileID: 21300000, guid: edb45a2078824660b77e931917c94cdc, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Rubik
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

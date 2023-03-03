@@ -12,7 +12,7 @@ MonoBehaviour:
     piercing: -25.0
     bleeding: 15.000001
     stoppingPower: 75.0
-    image: { fileID: 21300000, guid: 3e9f6870fa0049f9900858daf48a044f, type: 3 }
+    image: { fileID: 21300000, guid: 080ed9b6005b4ca1812d6683ae3f9218, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '9 mm Expanding Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

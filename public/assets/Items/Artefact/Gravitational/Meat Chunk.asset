@@ -13,7 +13,7 @@ MonoBehaviour:
     healthBonus: [-5.0, -3.0]
     regenerationBonus: [2.0, 3.0]
     text: 'This artifact has the consistency of a medium-cooked steak—but don’t get any ideas about tasting it! It may be the degraded form of Stone Blood.'
-    image: { fileID: 21300000, guid: 97dd227f79c845cfa4b48ee40a2b3e12, type: 3 }
+    image: { fileID: 21300000, guid: 43ed2b3520ec49ccab50264b698c64d5, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Meat Chunk'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

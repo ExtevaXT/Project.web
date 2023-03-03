@@ -6,6 +6,8 @@ MonoBehaviour:
     key: handle_agr43g
     fullName: 'Fab Defense AGR-43 Grip, Green'
     pathCategory: Attachment/Handle
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Stalker
     class: 'Pistol Grips'
     weight: 0.096
@@ -13,7 +15,7 @@ MonoBehaviour:
     reloadTime: -1.9999981
     recoilGain: -2.9999971
     suitableFor: [M4A1, M16A3, 'M4 LB', M16A2, LR-300, 'FN SCAR-L', HK416, 'FN SCAR-H', 'FN SCAR SSR', 'McMillan CS5', HK417]
-    image: { fileID: 21300000, guid: b66ed59de7e04123b61fa63895fcfaa0, type: 3 }
+    image: { fileID: 21300000, guid: 84c60923e5cf4cf4bd4cb5563a5a0de8, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Fab Defense AGR-43 Grip, Green'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 77b46f033e30450698a96080f9af3cf6, type: 2 }, { fileID: 11400000, guid: 45c72c32a22d4eb4a605295e404c0c17, type: 2 }, { fileID: 11400000, guid: 3557b71d3d36444b8930df3819e053ab, type: 2 }, { fileID: 11400000, guid: eedb133410934056a17df10d5d65df96, type: 2 }, { fileID: 11400000, guid: b10adf3b927c4040a73f3de593efa08d, type: 2 }, { fileID: 11400000, guid: 10ccffcd2cf24697a9eaded376382b27, type: 2 }, { fileID: 11400000, guid: 113352d4da17408b9709f068d8a9cc79, type: 2 }, { fileID: 11400000, guid: 0bd3d41a5c5a4998b5393a879549d0af, type: 2 }, { fileID: 11400000, guid: 901a5e50707843ad8787b4ca17b7f7d5, type: 2 }, { fileID: 11400000, guid: c3f3143c89fe4d7f83ed1740b75aebe8, type: 2 }, { fileID: 11400000, guid: be5712e186884240bc90065ad3c08b0e, type: 2 }]

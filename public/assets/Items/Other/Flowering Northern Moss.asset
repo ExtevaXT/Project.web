@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.05
     text: 'Flowering northern moss is considered much more valuable than regular northern moss, but it is very difficult to find.'
-    image: { fileID: 21300000, guid: 8c350f4275f643b5bc10ab67ab18e35a, type: 3 }
+    image: { fileID: 21300000, guid: fec2348e6e124c10a9f5e1faba118a80, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Flowering Northern Moss'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

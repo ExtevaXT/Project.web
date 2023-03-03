@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.15
     text: 'A fragment of data from the Digamma group that was obtained from the corresponding anomalous installation.'
-    image: { fileID: 21300000, guid: 85cabc4e6d364b31878c3da13ba110c2, type: 3 }
+    image: { fileID: 21300000, guid: 263a8703898845d08c40f77e14c8c335, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Digamma Data Fragment'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

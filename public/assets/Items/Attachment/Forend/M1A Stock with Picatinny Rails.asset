@@ -6,11 +6,13 @@ MonoBehaviour:
     key: forend_m1ris2
     fullName: 'M1A Stock with Picatinny Rails'
     pathCategory: Attachment/Forend
+    attachmentMetaGroup: -1
+    attachmentMetaId: A
     rank: Stalker
     class: 'Hanguards and Brackets'
     weight: 0.96
     suitableFor: ['M1A FA']
-    image: { fileID: 21300000, guid: f4c543896e7644688873b4f6cc42703b, type: 3 }
+    image: { fileID: 21300000, guid: 818fd565f1724022aded2d554066e4ff, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'M1A Stock with Picatinny Rails'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -21,3 +23,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: f0765e2ab99545c19478025eec9fafe6, type: 2 }]

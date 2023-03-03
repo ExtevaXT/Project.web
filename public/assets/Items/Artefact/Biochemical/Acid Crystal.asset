@@ -14,7 +14,7 @@ MonoBehaviour:
     biologicalAccumulation: [-2.0, -1.0]
     reactionToChemicalBurn: [1.0, 3.0]
     text: 'A crystal that has undergone the effects of a chemical anomaly.'
-    image: { fileID: 21300000, guid: 98d87e15f9504e34a5ce6972827ace83, type: 3 }
+    image: { fileID: 21300000, guid: f4791ca15fc24de88f7e1e3aa8ea2eed, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Acid Crystal'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

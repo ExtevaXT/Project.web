@@ -13,7 +13,7 @@ MonoBehaviour:
     burnDmgFactor: [15.0, 30.0]
     radiationAccumulation: [1.0, 3.0]
     text: 'When this artifact comes into contact with heated plasma, it absorbs part of it, working in a similar way as a Battery. It may be a Battery that has undergone an unknown mutation inside an anomaly. Radioactive.'
-    image: { fileID: 21300000, guid: 8c21cea6b1b849ad81621ca535a4414d, type: 3 }
+    image: { fileID: 21300000, guid: 586a5856f3de4f269d5697ed8af50a0b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: Shell
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

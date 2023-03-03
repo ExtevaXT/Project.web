@@ -6,6 +6,8 @@ MonoBehaviour:
     key: '22605'
     fullName: 'M4 Lightweight Stock'
     pathCategory: Attachment/Stock
+    attachmentMetaGroup: 4
+    attachmentMetaId: D
     class: Stocks
     weight: 0.15
     recoil: -1.9999981
@@ -13,7 +15,7 @@ MonoBehaviour:
     recoilGain: -14.999998
     tickSpreadMultiplierReduction: 29.999996
     suitableFor: [M4A1, 'M4 LB', LR-300]
-    image: { fileID: 21300000, guid: e071b3e15dd746f59f4ab3f72a7c725f, type: 3 }
+    image: { fileID: 21300000, guid: 60bca02def60402db6eea3c020fb26f4, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'M4 Lightweight Stock'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 77b46f033e30450698a96080f9af3cf6, type: 2 }, { fileID: 11400000, guid: 3557b71d3d36444b8930df3819e053ab, type: 2 }, { fileID: 11400000, guid: b10adf3b927c4040a73f3de593efa08d, type: 2 }]

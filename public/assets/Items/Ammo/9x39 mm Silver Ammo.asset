@@ -12,7 +12,7 @@ MonoBehaviour:
     piercing: 10.0
     bleeding: 5.0
     stoppingPower: 20.0
-    image: { fileID: 21300000, guid: 04a65fa2f96e4001a373bb7c12340cb3, type: 3 }
+    image: { fileID: 21300000, guid: 52b0de38da634f27a8ebd30cb1da5c62, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '9x39 mm Silver Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

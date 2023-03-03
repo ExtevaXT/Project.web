@@ -15,7 +15,7 @@ MonoBehaviour:
     piercing: 50.0
     bloodlustChance: 40.0
     text: 'Covered in ice, this kukri is used by Frost Hunters.'
-    image: { fileID: 21300000, guid: ab5ffc45e7c8455782ba1decf4e415f9, type: 3 }
+    image: { fileID: 21300000, guid: b5fd8a7fe1434b75aeaec4cfb4092976, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Icy Kukri'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

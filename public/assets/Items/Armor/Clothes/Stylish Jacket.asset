@@ -25,7 +25,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Well-connected guys like to stand out, too. In unusual ways, sometimes. This jacket model became very popular outside the Zone. The light body armor does not hinder movement and grants additional protection.'
-    image: { fileID: 21300000, guid: 64ecdbacc16649e986ce45ecbca9bb6e, type: 3 }
+    image: { fileID: 21300000, guid: 1c2acbb3d83d4e478b04c644c648fcea, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Stylish Jacket'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

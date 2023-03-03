@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.05
     text: 'Everyone knows that ferns don’t flower. The red fern in the Exclusion Zone is one interesting exception to this, however.'
-    image: { fileID: 21300000, guid: cea6f18c20424084b3d993d7b55c3a34, type: 3 }
+    image: { fileID: 21300000, guid: 92d5677124024942b0b6ff48bba5e614, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Flowering Red Fern'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

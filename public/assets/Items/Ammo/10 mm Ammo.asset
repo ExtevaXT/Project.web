@@ -11,7 +11,7 @@ MonoBehaviour:
     numBullets: 5.0
     bleeding: 1.0
     stoppingPower: 10.0
-    image: { fileID: 21300000, guid: b3694abe49c94469aeab00750d751aa4, type: 3 }
+    image: { fileID: 21300000, guid: 2e36b2e525104dd19d019ee4dbeef408, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: '10 mm Ammo'
     m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }

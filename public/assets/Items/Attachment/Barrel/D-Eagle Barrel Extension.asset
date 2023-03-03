@@ -6,6 +6,8 @@ MonoBehaviour:
     key: barrel_longdeagle
     fullName: 'D-Eagle Barrel Extension'
     pathCategory: Attachment/Barrel
+    attachmentMetaGroup: 0
+    attachmentMetaId: J
     rank: Veteran
     class: 'Muzzles and Silencers'
     weight: 0.96
@@ -13,7 +15,7 @@ MonoBehaviour:
     recoil: 25.0
     spread: -10.000002
     suitableFor: ['Desert Eagle Mark XIX']
-    image: { fileID: 21300000, guid: dcebe6611db74637ac788a0f8c7fd134, type: 3 }
+    image: { fileID: 21300000, guid: 334525db2c994f9abe6e385a904e8659, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'D-Eagle Barrel Extension'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: 21bf4c3c36c14e1ba2fb03ddeb8196f5, type: 2 }]

@@ -33,6 +33,7 @@ Route::get('/', [Controller::class, 'index']);
 Route::get('/guides', function () {
     return view('guides');
 });
+Route::get('/guides/info', fn() => view('guides.info'));
 Route::get('/guides/{category}', [GuideController::class, 'category']);
 Route::get('/guides/{category}/{item_name}', [GuideController::class, 'item']);
 Route::get('/item/{item}', [GuideController::class, 'find']);

@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: superheavy
     compatibleContainers: bulky
     text: 'Similar in appearance to a suit used for training dogs or a quilted jacket, the Osh is good to have around during fights with mutant teeth and claws. Its protection against bullets is only average, but mutants don’t know how to shoot yet, do they?'
-    image: { fileID: 21300000, guid: 65170115e2c448e9843520968628580b, type: 3 }
+    image: { fileID: 21300000, guid: e36ce40b1fc34923bd8d7306097014a3, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Osh Protective Suit'
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

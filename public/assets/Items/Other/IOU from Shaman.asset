@@ -8,7 +8,7 @@ MonoBehaviour:
     pathCategory: Other
     class: Other
     text: 'I received this IOU as a reward from Shaman. I can use it to get an AKS from the merchant at the Cordon.'
-    image: { fileID: 21300000, guid: b492f39843d04a7b8c57469994d9c667, type: 3 }
+    image: { fileID: 21300000, guid: c4c8dd9f6083462189f8445c02491a73, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'IOU from Shaman'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

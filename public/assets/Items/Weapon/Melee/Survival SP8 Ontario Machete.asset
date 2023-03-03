@@ -14,7 +14,7 @@ MonoBehaviour:
     piercing: 40.0
     bloodlustChance: 35.0
     text: 'Intended for rescue work and surviving in the wilderness.'
-    image: { fileID: 21300000, guid: 7397103e229d4c9d8c3982e601c2ddef, type: 3 }
+    image: { fileID: 21300000, guid: 5b43623c89f8435a99b5478977fdf6c4, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Survival SP8 Ontario Machete'
     m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }

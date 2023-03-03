@@ -16,7 +16,7 @@ MonoBehaviour:
     staminaBonus: [20.0]
     maxWeightBonus: [28.0]
     text: 'A fairly spacious backpack that comes equipped with two average-sized artifact containers. It gets its name from its visual similarity to the character of the same name.'
-    image: { fileID: 21300000, guid: a265a5ed80604b6d9f7cb9d467c90275, type: 3 }
+    image: { fileID: 21300000, guid: 47d0bda671e54b55ac8b028333af2f2b, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Hellboy Backpack'
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

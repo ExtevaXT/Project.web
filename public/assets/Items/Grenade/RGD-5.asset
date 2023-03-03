@@ -20,7 +20,7 @@ MonoBehaviour:
     maxDurability: 1000
     destroyable: 0
     toolTip: Grenade
-    image: { fileID: 21300000, guid: f3ec6955b38d4aeab6a455e9ab55cdb6, type: 3 }
+    image: { fileID: 21300000, guid: 19fc15659d7d40f092a97de91b5c6a28, type: 3 }
     drop: { fileID: 114890139362544706, guid: 03ca005a5faa08d4a8aaef2bc1850024, type: 3 }
     modelPrefab: { fileID: 1187654204942760, guid: 6f06206ea0570704e8808b34e81e4a1e, type: 3 }
     type: Grenade

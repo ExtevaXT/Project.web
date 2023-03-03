@@ -33,7 +33,7 @@ MonoBehaviour:
     damageDecreaseEnd: 120.0
     maxDistance: 215.0
     text: 'A British-made sniper rifle that was developed by the company Accuracy International. In the mid-1980s, this rifle was entered into service in the British Army under the designation L96. Modifications of this rifle also exist, used by the police and special forces.'
-    image: { fileID: 21300000, guid: 5b21068f39144a57b2cf678078303ddc, type: 3 }
+    image: { fileID: 21300000, guid: adc64e2a741a4ccdaac5fbbdf36ebd68, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Worn L96A1'
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }

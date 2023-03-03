@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.1
     text: 'Smuggled into the Zone as contraband, these new batteries based on quantum technology assist scientific expeditions and large clans to work with hi-tech equipment within the Chernobyl Exclusion Zone.'
-    image: { fileID: 21300000, guid: 771b3bca27d04903b109588b9f3fae5c, type: 3 }
+    image: { fileID: 21300000, guid: 9731f2e73cfd435187de1954793e932f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Quantum Battery'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

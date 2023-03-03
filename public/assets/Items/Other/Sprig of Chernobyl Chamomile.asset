@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.015
     text: 'Somewhat reminiscent of chamomile, this flower with dark petals grows in mutants’ dens further north. Given that it is extremely poisonous, it’s probably best not to make tea out of it...'
-    image: { fileID: 21300000, guid: da7b28c3ccee41d2bb1d673cde2de798, type: 3 }
+    image: { fileID: 21300000, guid: c5bfd396011147cc88267a2ca88530b3, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Sprig of Chernobyl Chamomile'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

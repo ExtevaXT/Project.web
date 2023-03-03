@@ -11,7 +11,7 @@ MonoBehaviour:
     weight: 2.5
     staminaBonus: [40.0]
     maxWeightBonus: [45.0]
-    image: { fileID: 21300000, guid: e8deb0dbcd374ff4954d55e1216f08de, type: 3 }
+    image: { fileID: 21300000, guid: 656136425e774818ad71c31c018ea28f, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'NPA Backpack'
     m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }

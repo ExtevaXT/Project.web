@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.05
     text: 'Copper wire is the bedrock of the Dump diggers’ economy.'
-    image: { fileID: 21300000, guid: 7b5d64f1f1c14ad080c01669f41183f6, type: 3 }
+    image: { fileID: 21300000, guid: c89965d19aad4ec3a0d16416025f7ebd, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Pieces of Copper Wire'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

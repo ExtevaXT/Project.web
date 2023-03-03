@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.025
     text: 'This bluish stone is encountered less frequently than regular swamp stone. People say that powder made from a Water Spirit stone increases the volume of one’s lungs.'
-    image: { fileID: 21300000, guid: 877160b872754f1db1951deaf628ec83, type: 3 }
+    image: { fileID: 21300000, guid: a3a9e83a32684cf3aaa1d955c15d5007, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Water Spirit Stone'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

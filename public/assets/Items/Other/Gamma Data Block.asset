@@ -10,7 +10,7 @@ MonoBehaviour:
     class: Other
     weight: 0.2
     text: 'A block of data from the Gamma group that was obtained from the corresponding anomalous installation.'
-    image: { fileID: 21300000, guid: f77cc0ad260c4acaa54084b017e6be97, type: 3 }
+    image: { fileID: 21300000, guid: ead14c0d516b4c72af807ade1cabe4f2, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Gamma Data Block'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

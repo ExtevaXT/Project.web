@@ -6,14 +6,16 @@ MonoBehaviour:
     key: mag_kedr40
     fullName: 'PP-91 Clip'
     pathCategory: Attachment/Mag
+    attachmentMetaGroup: 3
+    attachmentMetaId: Z
     rank: Picklock
     class: Clips
     weight: 0.128
     clipSize: 40.0
     drawTime: 4.999995
     reloadTime: 4.999995
-    suitableFor: ['SMG-91 KEDR', Tsunami]
-    image: { fileID: 21300000, guid: 04b31c8b7a314ff1a455a59e0c6dd783, type: 3 }
+    suitableFor: ['PP-91 KEDR', Tsunami]
+    image: { fileID: 21300000, guid: ee845e02f7e34a05bed17cea96f2eeb8, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'PP-91 Clip'
     m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
@@ -24,3 +26,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    _suitableFor: [{ fileID: 11400000, guid: be775675cc1c4738a5747a73a8b59af2, type: 2 }]
