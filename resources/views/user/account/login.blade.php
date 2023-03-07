@@ -15,7 +15,7 @@
         <div class="alert alert-success my-3">Verification link was sent to <a href="https://{{explode('@', session()->get('verify'))[1]}}">your email</a></div>
     @endif
     @if(session()->has('success'))
-        <div class="alert alert-success my-3">Registered successfully</div>
+        <div class="alert alert-success my-3">Verified successfully</div>
     @endif
     @if ($errors->any())
         <div class="alert alert-danger my-3">{{$errors->first()}}</div>

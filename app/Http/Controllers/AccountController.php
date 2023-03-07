@@ -122,11 +122,7 @@ class AccountController extends Controller
         Mail::raw('Account has been registered', function($message) use ($data) {
             $message->to($data->email)->subject('Account registration');
         });
-        if(Auth::attempt(['name'=>$data->name, 'password' =>$data->password])){
-            $request->session()->regenerate();
-            return redirect('/');
-        }
-        return redirect()->route('register')->withErrors(['message'=>'Verification not successful']);
+        return redirect()->route('login')->with(['success'=>true]);
     }
     public function logout(Request $request)
     {

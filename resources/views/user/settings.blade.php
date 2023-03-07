@@ -20,6 +20,9 @@
     @if(session()->has(['success']))
         <div class="alert alert-success my-3">Changes have been saved</div>
     @endif
+    @if ($errors->any())
+        <div class="alert alert-danger my-3">{{$errors->first()}}</div>
+    @endif
     <div class="main d-flex my-3 gap-2">
         <ul class="nav nav-pills flex-column d-flex collection-nav gap-2" id="pills-tab">
             <li class="fw-bold">Main</li>

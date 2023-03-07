@@ -100,9 +100,10 @@ class LotController extends Controller
 
         //Remove gold from bidder and give gold back to previous bidder
         $bidder->setGold($bidder->gold- $request['bid']);
-        $previousBidder->setGold($previousBidder->gold + $request['bid']);
-        if($previousBidder->account != $lot->character)
+        if($previousBidder->account != $lot->character){
+            $previousBidder->setGold($previousBidder->gold + $lot->bid);
             AccountNotification::make('Balance update', 'Your bid was outbid', $previousBidder->account);
+        }
         AccountNotification::make('Auction', "Made bid on lot ". $lot->item()->name);
         $lot->bid = $request->bid;
         $lot->bidder = $bidder->name;
@@ -118,6 +119,13 @@ class LotController extends Controller
 
         if($bidder->name == $lot->character) return 'Cannot buy your lot';
         if($bidder->gold < $lot->price) return 'Not enough currency';
+
+        //give previous bidder money back if he exists
+        $previousBidder = Character::all()->where('name', $lot->bidder)->first();
+        if($previousBidder->account != $lot->character){
+            $previousBidder->setGold($previousBidder->gold + $lot->bid);
+            AccountNotification::make('Balance update', 'Your bid was outbid', $previousBidder->account);
+        }
 
         //Remove buyout price from bidder
         $bidder->setGold($bidder->gold - $lot->price);
