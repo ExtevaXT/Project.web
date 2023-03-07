@@ -17,7 +17,7 @@ class Bot extends Command
      *
      * @var string
      */
-    protected $signature = 'bot:fill';
+    protected $signature = 'bot';
 
     /**
      * The console command description.
@@ -44,7 +44,7 @@ class Bot extends Command
                 'experience' => '0',
                 'gold' => '999999999',
                 'faction' => 'Neutral',
-                'online' => '1',
+                'online' => '0',
                 'deleted' => '0',
             ]);
             DB::table('character_skills')->updateOrInsert([

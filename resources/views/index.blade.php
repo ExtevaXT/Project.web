@@ -96,9 +96,12 @@
             <div class="d-flex flex-column m-2">
                 @if((Character::online()->count()!=0))
                 <h3>Online players</h3>
-                @foreach(Character::online() as $online_character)
+                @foreach(Character::online()->take(7) as $online_character)
                     <div class="my-1 p-2 input-glass">{{$online_character->name}} <span class="fw-bold">0 Hours</span></div>
                 @endforeach
+                    @if(Character::online()->count() > 7)
+                        <div>And {{Character::online()->count() - 7}} other</div>
+                    @endif
                 @endif
             </div>
             @endif
@@ -161,7 +164,7 @@
                             <a href="{{$commit['html_url']}}" class="d-block text-link">
                                 <div class="input-glass change-item p-4 my-2" onclick="window.location.href='{{$commit['html_url']}}'">
                                     <div><span>{{ Resource::date($commit['commit']['author']['date']) }}</span> {{ $commit['commit']['author']['name']}}</div>
-                                    <div>{{ $commit['commit']['message']}}</div>
+                                    <div title="{{$commit['commit']['message']}}">{{ explode("\n",$commit['commit']['message'])[0] }}</div>
                                 </div>
                             </a>
                         @endforeach
@@ -176,7 +179,7 @@
                         <div class="input-glass change-item p-4 my-2">
                             <a href="{{$commit['html_url']}}" class="d-block text-link">
                                 <div><span>{{ Resource::date($commit['commit']['author']['date']) }}</span> {{ $commit['commit']['author']['name']}}</div>
-                                <div>{{ $commit['commit']['message']}}</div>
+                                <div title="{{$commit['commit']['message']}}">{{ explode("\n",$commit['commit']['message'])[0] }}</div>
                             </a>
                         </div>
                         @endforeach
