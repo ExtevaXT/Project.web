@@ -18,6 +18,8 @@ class BotLotBid extends Command
      * @var string
      */
     protected $signature = 'bot:lot-bid';
+    //TODO remove
+    public int $DEF_PRICE = 1000;
 
     /**
      * The console command description.
@@ -37,7 +39,12 @@ class BotLotBid extends Command
         $name = str_replace(array("\r", "\n"), '', collect($bots)->random());
 
         $lot = Lot::all()->filter(fn($lot) => $lot->endTime() > Carbon::now() and $lot->bid != $lot->price)->random();
-        $bid = rand(1, $lot->price-1);
+        $bid = rand($lot->bid + 1, $lot->price-1);
+        if($bid >= $lot->price) return Command::INVALID;
+        //Do not bid too much
+        $item = Resource::data('Items')->firstWhere('m_Name', $lot->item()->name);
+        if($bid >= ($item->price ?? $this->DEF_PRICE) * 1.5) return Command::INVALID;
+
         $previousBidder = Character::all()->where('name', $lot->bidder)->first();
         if(!in_array($previousBidder->name, $bots)){
             if($previousBidder->account != $lot->character){

@@ -374,7 +374,7 @@
                         <div class="inventory-item bg-glass">
                             <div class="w-100 h-100"
                                  @if($item['name']!='')
-                                 style="background:'/icon/{{$item['name']}}';background-size: cover;"
+                                 style="background:url('/icon/{{$item['name']}}');background-size: cover;"
                                  @endif
                                  data-slot="{{$item['slot']}}"
                                  data-item="{{$item['name']}}"
@@ -394,13 +394,28 @@
                 </div>
                 <div class="mx-5 inventory-selector">
                     <div class="bg-glass"><div class="p-5 item-icon" style="background-size: cover; width: 256px; height: 256px"></div></div>
-
-                    <div class="item-name">Name</div>
-                    <div class="item-amount">Amount</div>
-                    <div class="item-ammo">Ammo</div>
-                    <div class="item-durability">Durability</div>
-                    <div class="item-metadata">Metadata</div>
-
+                    <div class="text-center">
+                        <span class="item-name"></span>
+                    </div>
+                    <div class="d-flex gap-3 justify-content-between">
+                        <div><span class="item-amount"></span>x</div>
+                        <div>
+                            <span class="item-ammo"></span>
+                            <i class="mdi mdi-bullet mdi-18px"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <span>Durability <span class="item-durability"></span> / 1000</span>
+                        <div class="progress" style="background: transparent">
+                            <div class="progress-bar bg-light durability-bar"
+                                 role="progressbar">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <span>Metadata</span>
+                        <span class="item-metadata"></span>
+                    </div>
                     <div class="w-100">
                         <button onclick="SellItem()" class="item-sell d-block w-100 p-2 my-2 input-glass text-center">Sell</button>
                         <button onclick="" class="item-trade d-block w-100 p-2 my-2 input-glass text-center">Trade</button>
@@ -575,11 +590,32 @@
                 selectedSlot = slot;
 
 
-                name_out.forEach(x => x.innerHTML ='Name: ' + selected.getAttribute('data-item'));
-                amount_out.forEach(x => x.innerHTML ='Amount: ' + selected.getAttribute('data-amount'));
-                ammo_out.forEach(x => x.innerHTML ='Ammo: ' + selected.getAttribute('data-ammo'));
-                durability_out.forEach(x => x.innerHTML ='Durability: ' + selected.getAttribute('data-durability'));
-                metadata_out.forEach(x => x.innerHTML ='Meta: ' + selected.getAttribute('data-metadata'));
+                name_out.forEach(x => x.innerHTML = selected.getAttribute('data-item'));
+                amount_out.forEach(function (x){
+                    if(selected.getAttribute('data-amount') !== '1'){
+                        x.innerHTML = selected.getAttribute('data-amount')
+                        x.parentElement.classList.remove('d-none')
+                    }
+                    else x.parentElement.classList.add('d-none')
+                })
+                ammo_out.forEach(function (x){
+                    if(selected.getAttribute('data-ammo') !== '0'){
+                        x.innerHTML = selected.getAttribute('data-ammo')
+                        x.parentElement.classList.remove('d-none')
+                    }
+                    else x.parentElement.classList.add('d-none')
+                })
+                //need to calculate max durability
+                durability_out.forEach(x => x.innerHTML = selected.getAttribute('data-durability'));
+                document.querySelector('.durability-bar').style.width = selected.getAttribute('data-durability')/10 + '%'
+
+                metadata_out.forEach(function (x){
+                    if(selected.getAttribute('data-metadata') !== '00000'){
+                        x.innerHTML = selected.getAttribute('data-metadata')
+                        x.parentElement.classList.remove('d-none')
+                    }
+                    else x.parentElement.classList.add('d-none')
+                })
                 icon_out.forEach(x => x.style.backgroundImage = selected.style.backgroundImage);
 
                 document.querySelectorAll('[data-slot]').forEach(x => x.classList.remove('selected-item'));

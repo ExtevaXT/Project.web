@@ -15,6 +15,8 @@ class BotLotCreate extends Command
      * @var string
      */
     protected $signature = 'bot:lot-create';
+    //TODO remove
+    public int $DEF_PRICE = 10000;
 
     /**
      * The console command description.
@@ -43,7 +45,7 @@ class BotLotCreate extends Command
         ]);
         $time = [12,24,36,48];
         $multiplier = rand(5, 15) / 10;
-        $price = $item?->price ?? 10000 * $multiplier;
+        $price = $item?->price ?? $this->DEF_PRICE * $multiplier;
         Lot::create([
             'character' => $name,
             'item'=> $claim_item->id,

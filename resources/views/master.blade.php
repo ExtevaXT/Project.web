@@ -22,7 +22,6 @@
     <link rel="stylesheet" href="{{ asset('css/crutches/google.css')}}">
     <link rel="stylesheet" href="{{ asset('css/crutches/mdi.css')}}">
     @yield('style')
-{{--    @livewireStyles--}}
 </head>
 <body>
 <div class="bg"></div>
@@ -32,43 +31,14 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <i class="ms-1 mdi mdi-menu-open mdi-36px"></i>
                     </button>
-                    <a class="navbar-brand pc-panel ms-4" href="/">Project.web</a>
+                    <a class="navbar-brand pc-panel ms-4 text-center" href="/">Project.web</a>
                     @guest()
                     <div class="d-flex mobile-panel">
                         <div class="py-2 px-4 text-link" data-bs-toggle="modal" data-bs-target="#authModal">Login</div>
                         <a class="text-decoration-none" href="{{route('register')}}"><button class="input-glass py-2 px-4">Register</button></a>
                     </div>
                     @endguest
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                            <li class="mobile-panel"><a class="navbar-brand" href="/">Project.web</a></li>
-                            @if(Auth::guest() or Auth::user()->setting('navAuction'))
-                            <li class="nav-item"><a class="nav-link" href="/auction">Auction</a></li>
-                            @endif
-                            @if(Auth::guest() or Auth::user()->setting('navGuides'))
-                            <li class="nav-item"><a class="nav-link" href="/guides">Guides</a></li>
-                            @endif
-                            @if(Auth::guest() or Auth::user()->setting('navMap'))
-                            <li class="nav-item"><a class="nav-link" href="/map">Map</a></li>
-                            @endif
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Other
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink2">
-                                    @if(Auth::guest() or Auth::user()->setting('navFaction'))
-                                    <li><a class="dropdown-item" href="/faction">Faction</a></li>
-                                    @endif
-                                    @auth
-                                    <li><a class="dropdown-item" href="/log">Log</a></li>
-                                    <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#contactModal">Contact</a></li>
-                                    @endauth
-                                    <li><a class="dropdown-item"><div id="google_translate_element"></div></a></li>
-                                </ul>
-                            </li>
-
-                        </ul>
-                    </div>
+                    <x-navigation/>
                     @auth()
                         <div class="me-2 mt-2"><i class="switcher mdi mdi-36px mdi-forest"></i></div>
                         <ul class="navbar-nav me-5" style="height: 40px; margin-top: -10px">
@@ -88,6 +58,7 @@
                             </li>
                         </ul>
                     @endauth
+                    <div class="mobile-navigation-parent"></div>
                     @guest()
                     <div class="d-flex pc-panel">
                         <div class="py-2 px-4 text-link" data-bs-toggle="modal" data-bs-target="#authModal">Login</div>
@@ -238,7 +209,9 @@
         document.querySelector('.nav-user').parentElement.classList.remove('dropdown')
         document.querySelector('.nav-user').setAttribute('data-bs-toggle','modal')
         document.querySelector('.nav-user').setAttribute('data-bs-target','#userModal')
+        document.querySelector('.mobile-navigation-parent').appendChild(document.querySelector('#navbarSupportedContent'))
     }
+
 </script>
 <script>
     $('.hideAfterRendering').each( function () {
@@ -269,6 +242,5 @@
 <script>
 
 </script>
-{{--@livewireScripts--}}
 </body>
 </html>

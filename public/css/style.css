@@ -7,6 +7,9 @@
 /*    background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8) ), url('https://picsum.photos/1920/1080') no-repeat !important;*/
 /*    background-size: cover !important;*/
 /*}*/
+.navbar-toggler:focus{
+    box-shadow: none;
+}
 .bg{
     position: fixed; height: 100%; width: 100%;
     display: block;
@@ -127,6 +130,9 @@ div.input-glass{
     outline: 1px solid rgba(171,171,171,0.16);
     border-radius: 0;
 }
+.selected-item{
+    outline: 1px solid rgba(171,171,171,0.16);
+}
 .bg-glass-success{
     background: rgba(40, 167, 69, 0.07);
     outline: 1px solid rgba(34, 161, 63,0.16);
@@ -140,9 +146,6 @@ div.input-glass{
 /**{*/
 /*    !*font-family:  var(--bs-font-monospace);*!*/
 /*    color: #0d6efd;*/
-/*}*/
-/*.selected-item{*/
-/*    background-color: rgba(13, 110, 253, 0.1) !important;*/
 /*}*/
 /*.alert li{*/
 /*    color: initial !important;*/
@@ -235,5 +238,35 @@ font{
     }
     .pc-panel{
         display: none;
+    }
+    .mobile-navigation-parent, .dropdown-other{
+        width: 100%;
+    }
+    .dropdown-menu{
+        background: none;
+    }
+    .navbar-brand{
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+    /*why*/
+    .nav-main-link, .dropdown-other-item{
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+        background: rgba(177, 177, 177, 0.07);
+        outline: 1px solid rgba(171,171,171,0.16);
+        border:none;
+        color: var(--glass-solid);
+    }
+    .nav-main-link:hover, .dropdown-other-item:hover, .nav-main-link:focus, .dropdown-other-item:focus{
+        transition: 0.25s;
+        background: rgba(177, 177, 177, 0.15);
+        outline: 1px solid rgba(171,171,171,0.3);
+        color: white;
+    }
+    .btn-close{
+        filter: invert(1);
     }
 }
