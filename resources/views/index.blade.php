@@ -28,10 +28,10 @@
     <div class="@auth d-flex my-2 main @endauth">
         <div class="main-left d-flex flex-column @auth() w-50 @endauth ">
             @auth()
-                @if(Auth::user()->setting('indexAnnouncements'))
+                @if(Auth::user()->setting('indexAnnouncements') and Carbon::parse($announcement['timestamp'])->addMonths(3) > Carbon::now())
             <div class="bg-glass m-2 p-4">
                 <div class="m-1">
-                    <h5 >{{$announcement['embeds'][0]['title'] }}</h5>
+                    <h5 >{{ $announcement['embeds'] ?  $announcement['embeds'][0]['title'] : $announcement['content']}}</h5>
                     <div>
                         @if(str_contains($announcement['content'], 'http'))
                             <a href="{{$announcement['content']}}" class="text-link">
@@ -117,7 +117,7 @@
                 <div class="bg-glass me-2 w-25 prime-panel d-flex align-items-end pc-panel">
                     <div class="p-3">
                         <h5>Version Control</h5>
-                        <div>AV0.1.1</div>
+                        <div>{{$release['name']}}</div>
                     </div>
 
                 </div>

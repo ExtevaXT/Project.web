@@ -118,11 +118,13 @@ class Controller extends BaseController
         // CHECK PROCESS ON SERVER
         $status = (bool)shell_exec('pidof ./headless.x86_64');
         $announcements = $this->messages(1042157595386970132);
+        $releases = GitHub::repo()->releases()->all('ExtevaXT','Project.unity', []);
         return view('index', [
             'unity' => collect(GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []))->take(3) ,
             'web' => collect(GitHub::repo()->commits()->all('ExtevaXT','Project.web', []))->take(3),
             'status' => $status,
-            'announcement' =>  end($announcements)
+            'announcement' =>  end($announcements),
+            'release' =>  end($releases)
         ]);
     }
 
