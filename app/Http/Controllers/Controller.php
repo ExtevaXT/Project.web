@@ -14,6 +14,7 @@ use Illuminate\Foundation\Bus\DispatchesJobs;
 use Illuminate\Foundation\Validation\ValidatesRequests;
 use Illuminate\Routing\Controller as BaseController;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Str;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Config;
 use Illuminate\Support\Facades\Notification;
@@ -62,7 +63,7 @@ class Controller extends BaseController
             'name' =>'required',
             'message' =>'required',
         ]);
-        if(str_contains($val['message'], 'http')) return 'Fuck you';
+        if(Str::contains($val['message'], ['http','href'])) return 'Fuck you';
         Notification::route('discord', '1029657585177079838')
             ->notify(new DiscordBotMessage($val['name'].': '. $val['message'].
                 "\n IP: ". $request->ip() .
