@@ -2,25 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: n8Bk
-    key: kisel_kisel
-    fullName: Lollipop
-    pathCategory: Artefact/Biochemical
-    class: Biochemical
-    weight: 0.02
-    common: 'Not studied'
-    maxDurability: 100.0
-    radiationAccumulation: [-6.0, -3.0]
-    biologicalAccumulation: [5.0, 15.0]
-    text: 'A proto-artifact and gelatinous substance (colloid gas) that forms the basis of the Kissel anomaly. Absorbs radioactive elements from the surrounding oxygen, while also releasing dangerous toxins. This makes it almost impossible to use as intended.'
-    image: { fileID: 21300000, guid: 12c600fbbe6d47dcb952fc76101d8881, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Lollipop
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Lollipop
+  m_EditorClassIdentifier: null
+  id: n8Bk
+  key: kisel_kisel
+  fullName: Lollipop
+  pathCategory: Artefact/Biochemical
+  weight: 0.02
+  text: A proto-artifact and gelatinous substance (colloid gas) that forms the basis
+    of the Kissel anomaly. Absorbs radioactive elements from the surrounding oxygen,
+    while also releasing dangerous toxins. This makes it almost impossible to use
+    as intended.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 9448a9600e00436698c57ce6154b216d, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: fafffffffdffffff
+  biologicalAccumulation: 050000000f000000
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

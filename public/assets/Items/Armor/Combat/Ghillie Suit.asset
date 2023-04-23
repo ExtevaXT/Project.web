@@ -2,38 +2,83 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: wQww
-    key: ghillie
-    fullName: 'Ghillie Suit'
-    pathCategory: Armor/Combat
-    rank: Newbie
-    class: Combat
-    weight: 9.0
-    maxDurability: 100.0
-    speedModifier: [8.0]
-    maxWeightBonus: [10.0]
-    bulletDmgFactor: [55.0]
-    tearDmgFactor: [71.0]
-    explosionDmgFactor: [77.0]
-    electraDmgFactor: [27.0]
-    burnDmgFactor: [0.0]
-    chemicalBurnDmgFactor: [22.0]
-    radiationProtection: [100.0]
-    thermalProtection: [0.0]
-    biologicalProtection: [90.0]
-    psychoProtection: [50.0]
-    bleedingProtection: [42.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'A crude ghillie suit with a utility vest. The most suitable suit for snipers.'
-    image: { fileID: 21300000, guid: 6c55b5316dec4ae3bb31e316e71457b7, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Ghillie Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Ghillie Suit
+  m_EditorClassIdentifier: null
+  id: wQww
+  key: ghillie
+  fullName: Ghillie Suit
+  pathCategory: Armor/Combat
+  weight: 9
+  text: A crude ghillie suit with a utility vest. The most suitable suit for snipers.
+  maxStack: 1
+  price: 150000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 5d3959b6635a4c819f83c3484fd5d188, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Newbie
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 08000000
+  maxWeightBonus: 0a000000
+  bleedingProtection: 2a000000
+  radiationProtection: 64000000
+  psychoProtection: 32000000
+  thermalProtection: 00000000
+  biologicalProtection: 5a000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 37000000
+  tearDmgFactor: 47000000
+  explosionDmgFactor: 4d000000
+  electraDmgFactor: 1b000000
+  burnDmgFactor: 00000000
+  chemicalBurnDmgFactor: 16000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

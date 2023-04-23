@@ -2,25 +2,51 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: l03r
-    key: v40
-    fullName: 'V40 Mini-Grenade'
-    pathCategory: Grenade
-    class: Grenades
-    weight: 0.136
-    explosionStrength: 400.0
-    explosionStrengthMin: 75.0
-    lifetime: 2.0
-    explosionSize: 5.0
-    text: 'A fragmentation hand grenade produced in the Netherlands. Despite its small size, it is lethal within a range of several meters.'
-    image: { fileID: 21300000, guid: aaa3f681811b4b8390c9ca36fba5f3d2, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'V40 Mini-Grenade'
-    m_Script: { fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3}
+  m_Name: V40 Mini-Grenade
+  m_EditorClassIdentifier: null
+  id: l03r
+  key: v40
+  fullName: V40 Mini-Grenade
+  pathCategory: Grenade
+  weight: 0.136
+  text: A fragmentation hand grenade produced in the Netherlands. Despite its small
+    size, it is lethal within a range of several meters.
+  maxStack: 1
+  price: 250
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 6c444dd8b3f84b6897ae5224e472b96d, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  lifetime: 2
+  explosionStrengthMin: 75
+  explosionStrength: 400
+  explosionSize: 5
+  explosionActivationTime: 0
+  flashTime: 0

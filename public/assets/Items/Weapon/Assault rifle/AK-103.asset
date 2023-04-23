@@ -2,42 +2,142 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: aVb0
-    key: ak103
-    fullName: AK-103
-    pathCategory: 'Weapon/Assault rifle'
-    rank: Veteran
-    class: 'Assault Rifles'
-    weight: 3.15
-    maxDurability: 100.0
-    ammoType: '7.62'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 41.0
-    clipSize: 30.0
-    distance: 165.0
-    rateOfFire: 650.0
-    reloadTime: 3.5
-    tacticalReloadTime: 2.95
-    spread: 0.806
-    hipSpread: 3.0
-    recoil: 0.56
-    horizontalRecoil: 0.22
-    drawTime: 1.0
-    aimSwitch: 0.25
-    startDamage: 41.0
-    damageDecreaseStart: 15.0
-    endDamage: 27.0
-    damageDecreaseEnd: 70.0
-    maxDistance: 165.0
-    text: ''
-    image: { fileID: 21300000, guid: 51ffa273dce243bfa9f30f342134e47d, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: AK-103
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: AK-103
+  m_EditorClassIdentifier: null
+  id: aVb0
+  key: ak103
+  fullName: AK-103
+  pathCategory: Weapon/Assault rifle
+  weight: 3.15
+  text: 
+  maxStack: 1
+  price: 750000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: b94183c419b5419ba9e22cc20ad62405, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 1
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 41
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 4e825045109a47439fa2cab276607e3d, type: 2}
+  - {fileID: 11400000, guid: 5b4fed90c48d4adea8d795a5e8c2aee4, type: 2}
+  - {fileID: 11400000, guid: 640a59c7c880454ba7e4a677f4a1e3bf, type: 2}
+  - {fileID: 11400000, guid: 19e938fce365425487030f9bd543773c, type: 2}
+  - {fileID: 11400000, guid: a96098295e444ef7857e76b3dc06af56, type: 2}
+  - {fileID: 11400000, guid: 9f81e49ecb214879883daf860c8fab8d, type: 2}
+  - {fileID: 11400000, guid: c025d82f225b44bb937a18835f34cddc, type: 2}
+  - {fileID: 11400000, guid: b1dd65f1bf204aac8a873598ace1e69b, type: 2}
+  - {fileID: 11400000, guid: c1561cd5f79b4aa7863948518bcd7277, type: 2}
+  - {fileID: 11400000, guid: 6e9b9a9332fc46bf966bdb6826021e85, type: 2}
+  - {fileID: 11400000, guid: d71faad3f3384b55bce1a74d33c87726, type: 2}
+  - {fileID: 11400000, guid: 675163e3ff2a4707b965e09aef177856, type: 2}
+  - {fileID: 11400000, guid: 437865ab669f48818cd5f10803bbf55c, type: 2}
+  - {fileID: 11400000, guid: 6a35f0c9433541d79c0ffcaa4657b01e, type: 2}
+  - {fileID: 11400000, guid: 5e011b960cc342feb3a86c760cbf31b5, type: 2}
+  - {fileID: 11400000, guid: 1c9ddaa0176647df9ad23a44cc65e885, type: 2}
+  - {fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2}
+  - {fileID: 11400000, guid: ee95ff84830d47eda2db11e99c8f6211, type: 2}
+  - {fileID: 11400000, guid: 43b407fe72f045a7b79441611f0e386a, type: 2}
+  - {fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2}
+  - {fileID: 11400000, guid: a0c887024b5f4d439402fb4b6e59409d, type: 2}
+  - {fileID: 11400000, guid: de9a9f999d014fef96f29da069fb36ff, type: 2}
+  - {fileID: 11400000, guid: 22690b8a27144053aa55849bf9417715, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 944b6744d038411a8836325862acdd86, type: 2}
+  - {fileID: 11400000, guid: f5b1ed6024fd4daab9ad5010a24b773e, type: 2}
+  - {fileID: 11400000, guid: c78e55768d7b4af0adc75135d2081822, type: 2}
+  - {fileID: 11400000, guid: de8f52803c534c9aafd4ae838f90df72, type: 2}
+  - {fileID: 11400000, guid: 1274ece71a4d4d449af041038407d8f1, type: 2}
+  - {fileID: 11400000, guid: 4defbae542964468ab1bc92182270eb1, type: 2}
+  - {fileID: 11400000, guid: 5b80956c630c4570b29332d6bbee0408, type: 2}
+  - {fileID: 11400000, guid: a01b8cea0e78440e829d538d7a79aa24, type: 2}
+  - {fileID: 11400000, guid: 92f1ba6f2157403ebe9fdceca145f65d, type: 2}
+  - {fileID: 11400000, guid: 072f7d795bcb48639d1a90dc23ed2f4e, type: 2}
+  - {fileID: 11400000, guid: 8630028b697f4257b6cc2f791dda4ba7, type: 2}
+  - {fileID: 11400000, guid: eeded40a88314b02856fe766ab1fcb89, type: 2}
+  - {fileID: 11400000, guid: 53c3a28e6bde497f984c78a08e4cd497, type: 2}
+  - {fileID: 11400000, guid: e26f00189d5643c48de417dd268596ec, type: 2}
+  - {fileID: 11400000, guid: 5fd8945432c043c8ad871a77925ef337, type: 2}
+  - {fileID: 11400000, guid: 53d5b55fdc8548499f12f037357d11d2, type: 2}
+  - {fileID: 11400000, guid: 0c437101963344509a8062165df0d80f, type: 2}
+  - {fileID: 11400000, guid: 2dc555fc95444ec881aab8657a04c896, type: 2}
+  - {fileID: 11400000, guid: 6ffd9cb6f9f249c498ed9e1da1bba9ad, type: 2}
+  - {fileID: 11400000, guid: bea4b2222a904c85a941bee82ad8b2c6, type: 2}
+  - {fileID: 11400000, guid: a0dac5f71d4743b7a858346a7cd67a9b, type: 2}
+  - {fileID: 11400000, guid: c14dcdbdb28e4e90b34003df30d827cf, type: 2}
+  - {fileID: 11400000, guid: be20bf30fdb0406687b1e3299bd4040a, type: 2}
+  - {fileID: 11400000, guid: 69866dd21db04430a94b65d2b6951393, type: 2}
+  - {fileID: 11400000, guid: a466043e1cd942689cf48ca23225953f, type: 2}
+  - {fileID: 11400000, guid: 777af43c40614e1a861c8801bc28b9f1, type: 2}
+  - {fileID: 11400000, guid: d8314acc8ade46b880688a72069a972b, type: 2}
+  - {fileID: 11400000, guid: 4a749dec988d442eae068fbae8bde2f6, type: 2}
+  - {fileID: 11400000, guid: 7aeab0c1d4584b98a840b8eea53ce8d9, type: 2}
+  - {fileID: 11400000, guid: e3e4d9f1d3cc43839dce27541c582329, type: 2}
+  - {fileID: 11400000, guid: 4cad2640285f4cd7a1ba245281201ee8, type: 2}
+  - {fileID: 11400000, guid: f6b4b3b4871f4c1799717f99b1a0f3b1, type: 2}
+  - {fileID: 11400000, guid: 19cea63cef0c48c4b82c3330cfe76445, type: 2}
+  - {fileID: 11400000, guid: 63c1613e78d1405dbc56cedbe7d3b6cf, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2.95
+  reloadTime: 3.5
+  clipSize: 30
+  ammoType: 7.62
+  spread: 0.806
+  hipSpread: 3
+  recoil: 0.56
+  horizontalRecoil: 0.22
+  aimSwitch: 0.25
+  startDamage: 41
+  damageDecreaseStart: 15
+  endDamage: 27
+  damageDecreaseEnd: 70
+  distance: 165
+  maxDistance: 165
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

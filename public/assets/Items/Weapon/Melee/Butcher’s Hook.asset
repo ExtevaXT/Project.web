@@ -2,25 +2,53 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 32VB
-    key: '21049'
-    fullName: 'Butcher’s Hook'
-    pathCategory: Weapon/Melee
-    rank: Stalker
-    class: 'Melee Weapons'
-    weight: 0.735
-    common: 40.0
-    strong: 100.0
-    piercing: 50.0
-    bloodlustChance: 50.0
-    image: { fileID: 21300000, guid: 4ed583414604422a8ffb8194d8e22f60, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Butcher’s Hook'
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: "Butcher\u2019s Hook"
+  m_EditorClassIdentifier: null
+  id: 32VB
+  key: 21049
+  fullName: "Butcher\u2019s Hook"
+  pathCategory: Weapon/Melee
+  weight: 0.735
+  text: 
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 76d7e69fe7d846c8baf47c9bded84901, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 40
+  strong: 100
+  piercing: 50
+  bloodlustChance: 50

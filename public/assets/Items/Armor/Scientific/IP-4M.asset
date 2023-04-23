@@ -2,37 +2,89 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: drgm
-    key: ip4m
-    fullName: IP-4M
-    pathCategory: Armor/Scientific
-    rank: Picklock
-    class: Scientist
-    weight: 3.3
-    maxDurability: 100.0
-    staminaBonus: [-15.0]
-    bulletDmgFactor: [10.0]
-    tearDmgFactor: [15.0]
-    explosionDmgFactor: [19.0]
-    electraDmgFactor: [148.0]
-    burnDmgFactor: [148.0]
-    chemicalBurnDmgFactor: [148.0]
-    radiationProtection: [100.0]
-    thermalProtection: [100.0]
-    biologicalProtection: [100.0]
-    psychoProtection: [0.0]
-    bleedingProtection: [10.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'This gas mask with an IP-4M closed breathing system is a really handy gizmo. The most comfortable way to wear it is with a hazmat suit. Someone decided to multiply the benefit of wearing this suit a tenfold by creating a lining made of light plates that improve protection against bullets and other forms of physical damage. What they ended up with was a good suit for a novice stalker who has grown out of wearing a jacket, but can’t yet afford a suit like the Zarya model.'
-    image: { fileID: 21300000, guid: 5ae1b285c1434cde8bd532b6fbfb7281, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: IP-4M
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: IP-4M
+  m_EditorClassIdentifier: null
+  id: drgm
+  key: ip4m
+  fullName: IP-4M
+  pathCategory: Armor/Scientific
+  weight: 3.3
+  text: "This gas mask with an IP-4M closed breathing system is a really handy gizmo.
+    The most comfortable way to wear it is with a hazmat suit. Someone decided to
+    multiply the benefit of wearing this suit a tenfold by creating a lining made
+    of light plates that improve protection against bullets and other forms of physical
+    damage. What they ended up with was a good suit for a novice stalker who has
+    grown out of wearing a jacket, but can\u2019t yet afford a suit like the Zarya
+    model."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 686dead1ab8c444abe8c3127163b9b09, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Picklock
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f1ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 0a000000
+  radiationProtection: 64000000
+  psychoProtection: 00000000
+  thermalProtection: 64000000
+  biologicalProtection: 64000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 0a000000
+  tearDmgFactor: 0f000000
+  explosionDmgFactor: 13000000
+  electraDmgFactor: 94000000
+  burnDmgFactor: 94000000
+  chemicalBurnDmgFactor: 94000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

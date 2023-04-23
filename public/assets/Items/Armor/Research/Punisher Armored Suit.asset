@@ -2,39 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: qD00
-    key: punisher
-    fullName: 'Punisher Armored Suit'
-    pathCategory: Armor/Research
-    rank: Master
-    class: Explorer
-    weight: 22.0
-    maxDurability: 100.0
-    speedModifier: [8.0]
-    maxWeightBonus: [20.0]
-    nightVision: 1
-    bulletDmgFactor: [135.0]
-    tearDmgFactor: [160.0]
-    explosionDmgFactor: [206.0]
-    electraDmgFactor: [178.0]
-    burnDmgFactor: [178.0]
-    chemicalBurnDmgFactor: [178.0]
-    radiationProtection: [210.0]
-    thermalProtection: [160.0]
-    biologicalProtection: [300.0]
-    psychoProtection: [200.0]
-    bleedingProtection: [61.5]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'The RS-72 Punisher is a universal armored suit supplied to various private military companies operating in the Zone. Mercenaries need a multipurpose suit to confidently perform any tasks assigned to them.'
-    image: { fileID: 21300000, guid: e02c7ad8d15d40848a5c9970c7ffb642, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Punisher Armored Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Punisher Armored Suit
+  m_EditorClassIdentifier: null
+  id: qD00
+  key: punisher
+  fullName: Punisher Armored Suit
+  pathCategory: Armor/Research
+  weight: 22
+  text: The RS-72 Punisher is a universal armored suit supplied to various private
+    military companies operating in the Zone. Mercenaries need a multipurpose suit
+    to confidently perform any tasks assigned to them.
+  maxStack: 1
+  price: 1200000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 1a708a64dabd4b6f9f89f8d6e03c24b6, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 08000000
+  maxWeightBonus: 14000000
+  bleedingProtection: 3d000000
+  radiationProtection: d2000000
+  psychoProtection: c8000000
+  thermalProtection: a0000000
+  biologicalProtection: 2c010000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 87000000
+  tearDmgFactor: a0000000
+  explosionDmgFactor: ce000000
+  electraDmgFactor: b2000000
+  burnDmgFactor: b2000000
+  chemicalBurnDmgFactor: b2000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

@@ -2,42 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Xn11
-    key: m16a2-1
-    fullName: 'Worn M16A2'
-    pathCategory: 'Weapon/Assault rifle'
-    rank: Picklock
-    class: 'Assault Rifles'
-    weight: 3.25
-    maxDurability: 100.0
-    ammoType: '5.56'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 34.0
-    clipSize: 20.0
-    distance: 150.0
-    rateOfFire: 450.0
-    reloadTime: 3.5
-    tacticalReloadTime: 2.95
-    spread: 0.671
-    hipSpread: 3.02
-    recoil: 0.4
-    horizontalRecoil: 0.1
-    drawTime: 1.0
-    aimSwitch: 0.25
-    startDamage: 34.0
-    damageDecreaseStart: 15.0
-    endDamage: 26.0
-    damageDecreaseEnd: 60.0
-    maxDistance: 150.0
-    text: 'An American 5.56 mm assault rifle developed and put into operational service in the 1960s. It lacks a fully automatic firing mode, but the handguard and clip have been replaced with those from the M16A1 in order to reduce the cost.'
-    image: { fileID: 21300000, guid: 84957ab4b0da4583a5b99dd29c8411b8, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn M16A2'
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Worn M16A2
+  m_EditorClassIdentifier: null
+  id: Xn11
+  key: m16a2-1
+  fullName: Worn M16A2
+  pathCategory: Weapon/Assault rifle
+  weight: 3.25
+  text: 
+  maxStack: 1
+  price: 70000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 46f6f3f1db144b8f8812af1a744fb120, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Picklock
+  drawTime: 1
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 34
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2.95
+  reloadTime: 3.5
+  clipSize: 20
+  ammoType: 5.56
+  spread: 0.671
+  hipSpread: 3.02
+  recoil: 0.4
+  horizontalRecoil: 0.1
+  aimSwitch: 0.25
+  startDamage: 34
+  damageDecreaseStart: 15
+  endDamage: 26
+  damageDecreaseEnd: 60
+  distance: 150
+  maxDistance: 150
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

@@ -2,91 +2,170 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    m_ObjectHideFlags: 0
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_GameObject: { fileID: 0 }
-    m_Enabled: 1
-    m_EditorHideFlags: 0
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_Name: 'TDI KRISS Vector'
-    m_EditorClassIdentifier: null
-    maxStack: 1
-    weight: 2.71
-    price: 0
-    sellable: 0
-    personalizable: 0
-    maxDurability: 100.0
-    destroyable: 1
-    toolTip: "<b>{NAME}</b>\nSome weapon description\n{PERSONAL}\n\n{DAMAGE} Damage\nFire Interval: {COOLDOWN}s\nRequires: {REQUIREDAMMO}\n\nAmmo: {AMMO} / {MAGAZINESIZE}\nDurability: {DURABILITY}%\nWeight: {WEIGHT}g"
-    image: { fileID: 21300000, guid: af523597f2ba4fbb83c17ee06a7553d0, type: 3 }
-    drop: { fileID: -5240774679397780539, guid: 366e75f3b2f4ba34e9b1cbbe42515e8f, type: 3 }
-    modelPrefab: { fileID: 1555594515587678, guid: f7005a4c8935e504eb636a264903c4bc, type: 3 }
-    type: SMG
-    hide: 0
-    content: 'A submachine gun developed by Transformational Defense Industries. It uses a semi-rigid bolt system, which directs the recoil-driven bolt group downward at a steep angle.'
-    notes: null
-    category: WeaponTwohand
-    keepUsingWhileButtonDown: 1
-    successfulUseSound: [{ fileID: 8300000, guid: e38294bed4017d24b957c859ca90dbc2, type: 3 }, { fileID: 8300000, guid: 7015650fdb5345947b138c4bbc710573, type: 3 }]
-    failedUseSound: { fileID: 0 }
-    emptySound: { fileID: 8300000, guid: 1f45a2e427e44b6449b127f3e4b112f2, type: 3 }
-    drawSound: { fileID: 8300000, guid: c1221a94d3a73c740bd50043d55e9a60, type: 3 }
-    cooldown: 0.1
-    _cooldownCategory: null
-    shoulderLookAtWhileHolding: 1
-    useDirectly: 0
-    attackRange: 140
-    damage: 41.0
-    damageType: Bullet
-    upperBodyAnimationParameter: UPPERBODY_RIFLE
-    attachmentsAllowed: {  }
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    magazineSize: 30
-    reloadTime: 3.5
-    reloadTimeFull: 3.2
-    zoom: 20
-    decalPrefab: { fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28, type: 3 }
-    decalSound: { fileID: 0 }
-    decalOffset: 0.01
-    Ejection: { fileID: 0 }
-    reloadSound: { fileID: 8300000, guid: 870c8dfab16361a4a9d21556b6ea8699, type: 3 }
-    reloadSound0: { fileID: 8300000, guid: 487e8759b5206e943b16c8a121a07afc, type: 3 }
-    reloadBolt: { fileID: 0 }
-    reloadIn: { fileID: 0 }
-    reloadOut: { fileID: 0 }
-    reloadOpen: { fileID: 0 }
-    reloadClose: { fileID: 0 }
-    reloadBegin: { fileID: 0 }
-    reloadBegin0: { fileID: 0 }
-    reloadEnd: { fileID: 0 }
-    reloadStep: { fileID: 0 }
-    silencedSound: { fileID: 8300000, guid: 4aeee17c3552e2f40a8c3baf4234a0e7, type: 3 }
-    silencedSound0: { fileID: 0 }
-    successfulUseSound0: { fileID: 0 }
-    recoilHorizontal: 2
-    recoilVertical: 4
-    id: 92lL
-    key: kriss
-    fullName: 'TDI KRISS Vector'
-    pathCategory: 'Weapon/Submachine gun'
-    rank: Veteran
-    class: 'Submachine Guns'
-    ammoType: '9 mm'
-    clipSize: 30.0
-    distance: 100.0
-    rateOfFire: 900.0
-    tacticalReloadTime: 2.75
-    spread: 0.928
-    hipSpread: 2.4
-    recoil: 0.2
-    horizontalRecoil: 0.08
-    drawTime: 0.8
-    aimSwitch: 0.2
-    startDamage: 41.0
-    damageDecreaseStart: 16.0
-    endDamage: 19.0
-    damageDecreaseEnd: 40.0
-    maxDistance: 100.0
-    text: 'A submachine gun developed by the Transformational Defense Industries company. It uses a semi-free slide system, which directs the breech down by a large angle under recoil.'
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: TDI KRISS Vector
+  m_EditorClassIdentifier: null
+  id: 92lL
+  key: kriss
+  fullName: TDI KRISS Vector
+  pathCategory: Weapon/Submachine gun
+  weight: 2.71
+  text: A submachine gun developed by the Transformational Defense Industries company.
+    It uses a semi-free slide system, which directs the breech down by a large angle
+    under recoil.
+  maxStack: 1
+  price: 1200000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 1
+  toolTip: '<b>{NAME}</b>
+
+    Some weapon description
+
+    {PERSONAL}
+
+
+    {DAMAGE}
+    Damage
+
+    Fire Interval: {COOLDOWN}s
+
+    Requires: {REQUIREDAMMO}
+
+
+    Ammo:
+    {AMMO} / {MAGAZINESIZE}
+
+    Durability: {DURABILITY}%
+
+    Weight: {WEIGHT}g'
+  image: {fileID: 21300000, guid: 1c9fb45e27a6435990201d8f3f19594d, type: 3}
+  drop: {fileID: -5240774679397780539, guid: 366e75f3b2f4ba34e9b1cbbe42515e8f, type: 3}
+  modelPrefab: {fileID: 1555594515587678, guid: f7005a4c8935e504eb636a264903c4bc,
+    type: 3}
+  hide: 0
+  content: A submachine gun developed by Transformational Defense Industries. It
+    uses a semi-rigid bolt system, which directs the recoil-driven bolt group downward
+    at a steep angle.
+  notes: null
+  rank: Veteran
+  drawTime: 0.8
+  category: WeaponTwohand
+  keepUsingWhileButtonDown: 1
+  successfulUseSound:
+  - {fileID: 8300000, guid: e38294bed4017d24b957c859ca90dbc2, type: 3}
+  - {fileID: 8300000, guid: 7015650fdb5345947b138c4bbc710573, type: 3}
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 8300000, guid: 1f45a2e427e44b6449b127f3e4b112f2, type: 3}
+  drawSound: {fileID: 8300000, guid: c1221a94d3a73c740bd50043d55e9a60, type: 3}
+  cooldown: 0.1
+  _cooldownCategory: null
+  shoulderLookAtWhileHolding: 1
+  useDirectly: 0
+  attackRange: 140
+  damage: 41
+  damageType: 0
+  upperBodyAnimationParameter: UPPERBODY_RIFLE
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 9f81e49ecb214879883daf860c8fab8d, type: 2}
+  - {fileID: 11400000, guid: b1dd65f1bf204aac8a873598ace1e69b, type: 2}
+  - {fileID: 11400000, guid: c1561cd5f79b4aa7863948518bcd7277, type: 2}
+  - {fileID: 11400000, guid: 6e9b9a9332fc46bf966bdb6826021e85, type: 2}
+  - {fileID: 11400000, guid: d71faad3f3384b55bce1a74d33c87726, type: 2}
+  - {fileID: 11400000, guid: 675163e3ff2a4707b965e09aef177856, type: 2}
+  - {fileID: 11400000, guid: 437865ab669f48818cd5f10803bbf55c, type: 2}
+  - {fileID: 11400000, guid: 6a35f0c9433541d79c0ffcaa4657b01e, type: 2}
+  - {fileID: 11400000, guid: 5e011b960cc342feb3a86c760cbf31b5, type: 2}
+  - {fileID: 11400000, guid: 3b5dff3347f94bf0a77ab8b29a3c4693, type: 2}
+  - {fileID: 11400000, guid: c6980573024d4f529e3920810d728053, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 6a1bfe554ff547ebbc053a575599a616, type: 2}
+  - {fileID: 11400000, guid: da40486fc5f5497497213584b058d065, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 199f2624bbc945f6b040294ab4950538, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: b6c2e38596364c718a4136c321a6fc5b, type: 2}
+  - {fileID: 11400000, guid: 29a88496ed2048cbbb17c75fe8c931b2, type: 2}
+  - {fileID: 11400000, guid: 27bbf9e0c36147f2bb31255beb3ab690, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: f7bdc342377a4873abdcd988d5ad0fb7, type: 2}
+  - {fileID: 11400000, guid: 5a738ed6648e4e44b58a8116f4ec42b4, type: 2}
+  - {fileID: 11400000, guid: e9b12fa0d066499aa8c4a51b81716482, type: 2}
+  - {fileID: 11400000, guid: 153f84525cdd45cda65c4aa9608008df, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: b7972612339443a6a3be403c2f8a4556, type: 2}
+  - {fileID: 11400000, guid: 81626b4e21364f5d8c904daa71c9cb16, type: 2}
+  - {fileID: 11400000, guid: ea55a20c27b846f9976d71645185c196, type: 2}
+  - {fileID: 11400000, guid: 383a0c6afc5d4d588cfbb07942633ab7, type: 2}
+  - {fileID: 11400000, guid: 5547cd0d522d477cb7f5e9345da06ccb, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 9ac9861931a74f93ab319f21df1e3c68, type: 2}
+  - {fileID: 11400000, guid: f5b1ed6024fd4daab9ad5010a24b773e, type: 2}
+  - {fileID: 11400000, guid: c78e55768d7b4af0adc75135d2081822, type: 2}
+  - {fileID: 11400000, guid: de8f52803c534c9aafd4ae838f90df72, type: 2}
+  - {fileID: 11400000, guid: 1274ece71a4d4d449af041038407d8f1, type: 2}
+  - {fileID: 11400000, guid: 4defbae542964468ab1bc92182270eb1, type: 2}
+  - {fileID: 11400000, guid: 5b80956c630c4570b29332d6bbee0408, type: 2}
+  - {fileID: 11400000, guid: 0d80a32bffa547ed99d5b10170273b68, type: 2}
+  - {fileID: 11400000, guid: a81414a2f146433fa1d53ae5c3702ccb, type: 2}
+  - {fileID: 11400000, guid: 777054dc7e7d404ca67e5abd3de49f31, type: 2}
+  - {fileID: 11400000, guid: 42f57625538e416ca47d9e95a8542b17, type: 2}
+  - {fileID: 11400000, guid: 005da9550b7f4969a5aa65332cba8332, type: 2}
+  - {fileID: 11400000, guid: d8314acc8ade46b880688a72069a972b, type: 2}
+  - {fileID: 11400000, guid: 4a749dec988d442eae068fbae8bde2f6, type: 2}
+  - {fileID: 11400000, guid: 7aeab0c1d4584b98a840b8eea53ce8d9, type: 2}
+  - {fileID: 11400000, guid: b85278778eb643c0803600802dde8ccf, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28,
+    type: 3}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2.75
+  reloadTime: 3.5
+  clipSize: 30
+  ammoType: 9 mm
+  spread: 0.928
+  hipSpread: 2.4
+  recoil: 0.2
+  horizontalRecoil: 0.08
+  aimSwitch: 0.2
+  startDamage: 41
+  damageDecreaseStart: 16
+  endDamage: 19
+  damageDecreaseEnd: 40
+  distance: 100
+  maxDistance: 100
+  reloadSound: {fileID: 8300000, guid: 870c8dfab16361a4a9d21556b6ea8699, type: 3}
+  reloadSound0: {fileID: 8300000, guid: 487e8759b5206e943b16c8a121a07afc, type: 3}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 8300000, guid: 4aeee17c3552e2f40a8c3baf4234a0e7, type: 3}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

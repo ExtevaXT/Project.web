@@ -2,27 +2,54 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: aVNN
-    key: endgame
-    fullName: Endgame
-    pathCategory: Weapon/Melee
-    rank: Veteran
-    class: 'Melee Weapons'
-    weight: 0.8
-    default: 10.0
-    common: 45.0
-    strong: 110.0
-    piercing: 50.0
-    bloodlustChance: 40.0
-    text: 'This imposing weapon is filled with anomalous energy from the Underbelly. Rumor has it that anyone killed with this blade is reborn as a ghost in the Underbelly.'
-    image: { fileID: 21300000, guid: 8dd5e90e8d2a453b9a52e8499380b46f, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Endgame
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: Endgame
+  m_EditorClassIdentifier: null
+  id: aVNN
+  key: endgame
+  fullName: Endgame
+  pathCategory: Weapon/Melee
+  weight: 0.8
+  text: This imposing weapon is filled with anomalous energy from the Underbelly.
+    Rumor has it that anyone killed with this blade is reborn as a ghost in the Underbelly.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 5b54bcf746464f8e83ae1ced9ec4a715, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 45
+  strong: 110
+  piercing: 50
+  bloodlustChance: 40

@@ -2,41 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: zxzq
-    key: atlas
-    fullName: 'KIM-X ATLAS'
-    pathCategory: Armor/Scientific
-    rank: Master
-    class: Scientist
-    weight: 9.0
-    maxDurability: 100.0
-    staminaBonus: [-15.0]
-    maxWeightBonus: [4.0]
-    radiationAccumulation: [-2.0]
-    bleedingAccumulation: [-0.5]
-    nightVision: 1
-    bulletDmgFactor: [64.0]
-    tearDmgFactor: [81.0]
-    explosionDmgFactor: [80.0]
-    electraDmgFactor: [840.0]
-    burnDmgFactor: [840.0]
-    chemicalBurnDmgFactor: [840.0]
-    radiationProtection: [385.0]
-    thermalProtection: [370.0]
-    biologicalProtection: [400.0]
-    psychoProtection: [310.0]
-    bleedingProtection: [35.0]
-    compatibleBackpacks: light
-    compatibleContainers: standard
-    text: 'The result of long, arduous work on the MIS series. A multi-functional suit that protects from the majority of anomalous effects. Judging from the marks on the armor, this suit belonged to someone.'
-    image: { fileID: 21300000, guid: 3f972bf3b8fc447d8b4980db49582399, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'KIM-X ATLAS'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: KIM-X ATLAS
+  m_EditorClassIdentifier: null
+  id: zxzq
+  key: atlas
+  fullName: KIM-X ATLAS
+  pathCategory: Armor/Scientific
+  weight: 9
+  text: The result of long, arduous work on the MIS series. A multi-functional suit
+    that protects from the majority of anomalous effects. Judging from the marks
+    on the armor, this suit belonged to someone.
+  maxStack: 1
+  price: 2500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: ece8945e45f04ba9aafeb06f4d4a270b, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f1ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 04000000
+  bleedingProtection: 23000000
+  radiationProtection: 81010000
+  psychoProtection: 36010000
+  thermalProtection: 72010000
+  biologicalProtection: 90010000
+  psychoAccumulation: 
+  radiationAccumulation: feffffff
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 00000000
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 40000000
+  tearDmgFactor: 51000000
+  explosionDmgFactor: 50000000
+  electraDmgFactor: 48030000
+  burnDmgFactor: 48030000
+  chemicalBurnDmgFactor: 48030000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: standard

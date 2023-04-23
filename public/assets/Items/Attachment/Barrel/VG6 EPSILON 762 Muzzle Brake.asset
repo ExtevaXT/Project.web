@@ -2,28 +2,74 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: nxaD
-    key: barrel_vg6762
-    fullName: 'VG6 EPSILON 762 Muzzle Brake'
-    pathCategory: Attachment/Barrel
-    attachmentMetaGroup: 0
-    attachmentMetaId: I
-    rank: Veteran
-    class: 'Muzzles and Silencers'
-    weight: 0.075
-    recoil: -1.9999981
-    horizontalRecoil: -11.000002
-    spread: -22.000004
-    suitableFor: [AKM, AK-103, 'HK G3A1', SOK-94, RPK, SV-98, MTs-116M, 'FN FAL', 'FN SCAR-H', 'FN SCAR SSR', 'HK PSG1', HK417, DSA-58, AK-308, RPD, 'PKP Pecheneg', 'Mosin’s Carbine', SKS, SVD, 'M1A FA', 'WA 2000', L96A1, 'Mosin’s Rifle']
-    image: { fileID: 21300000, guid: b3e42166b56a487caaab57b787fc1759, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'VG6 EPSILON 762 Muzzle Brake'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: ebb241c742234e3aa2373ad17f2a9ed1, type: 2 }, { fileID: 11400000, guid: 473a1753ac314080ba75f71352c1fb72, type: 2 }, { fileID: 11400000, guid: a72a73f65c3f49169e031afeb042f464, type: 2 }, { fileID: 11400000, guid: 9dfb1adf5ebe41179cc7ea969f6883ed, type: 2 }, { fileID: 11400000, guid: 4dec623e3d0447fb8ad07242910b79d0, type: 2 }, { fileID: 11400000, guid: fa0dc23f379a47f8ade14823c6a140f8, type: 2 }, { fileID: 11400000, guid: e9bb5caf793d4678832784ef57c7e108, type: 2 }, { fileID: 11400000, guid: e943fe9d471747c6a8fa392392a870ff, type: 2 }, { fileID: 11400000, guid: 0bd3d41a5c5a4998b5393a879549d0af, type: 2 }, { fileID: 11400000, guid: 901a5e50707843ad8787b4ca17b7f7d5, type: 2 }, { fileID: 11400000, guid: 5e60114ec63c4c13bade04371eb06708, type: 2 }, { fileID: 11400000, guid: be5712e186884240bc90065ad3c08b0e, type: 2 }, { fileID: 11400000, guid: 9f688ae35ce743e89a92a280a4f9cf8e, type: 2 }, { fileID: 11400000, guid: 69418dc108f34512a8527e9029c48960, type: 2 }, { fileID: 11400000, guid: cbaea863319242d998b7bc972108701c, type: 2 }, { fileID: 11400000, guid: 45ec672435444e55af01aa7f7215e228, type: 2 }, { fileID: 11400000, guid: c83a0f7b789844479eafaeb952b43d12, type: 2 }, { fileID: 11400000, guid: 88cf20d762604f548111e43b611d85af, type: 2 }, { fileID: 11400000, guid: f4f3d513157b4f1ca6fccb57acc1ac2d, type: 2 }, { fileID: 11400000, guid: f0765e2ab99545c19478025eec9fafe6, type: 2 }, { fileID: 11400000, guid: 07d131d85df44d788dfcf091f17ba280, type: 2 }, { fileID: 11400000, guid: 6592b1e700144eaab5526869fea11c52, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: VG6 EPSILON 762 Muzzle Brake
+  m_EditorClassIdentifier: null
+  id: nxaD
+  key: barrel_vg6762
+  fullName: VG6 EPSILON 762 Muzzle Brake
+  pathCategory: Attachment/Barrel
+  weight: 0.075
+  text: 
+  maxStack: 1
+  price: 100000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: c790af68fc0e450193bc2a0053fcc051, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 73
+  attachmentMetaGroup: 0
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - AKM
+  - AK-103
+  - HK G3A1
+  - SOK-94
+  - RPK
+  - SV-98
+  - MTs-116M
+  - FN FAL
+  - FN SCAR-H
+  - FN SCAR SSR
+  - HK PSG1
+  - HK417
+  - DSA-58
+  - AK-308
+  - RPD
+  - PKP Pecheneg
+  - "Mosin\u2019s Carbine"
+  - SKS
+  - SVD
+  - M1A FA
+  - WA 2000
+  - L96A1
+  - "Mosin\u2019s Rifle"
+  clipSize: 0
+  spread: -22.000004
+  recoil: -1.9999981
+  horizontalRecoil: -11.000002
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

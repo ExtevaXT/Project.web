@@ -2,26 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: JkdV
-    key: kisel_ulitka
-    fullName: Snail
-    pathCategory: Artefact/Biochemical
-    class: Biochemical
-    weight: 0.3
-    common: 'Not studied'
-    maxDurability: 100.0
-    staminaBonus: [-20.0, -10.0]
-    psychoDmgFactor: [5.0, 15.0]
-    psychoAccumulation: [-5.0, -2.0]
-    text: 'A small, round formation that resembles a snail’s shell. The shape determined the name, and the effect confirmed it. This artifact emits a weak anomalous field that positively affects brain cells. However, the effect of this field causes muscles to tire much more rapidly.'
-    image: { fileID: 21300000, guid: a86c6e971e1a46989d204ecbd51efebe, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Snail
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Snail
+  m_EditorClassIdentifier: null
+  id: JkdV
+  key: kisel_ulitka
+  fullName: Snail
+  pathCategory: Artefact/Biochemical
+  weight: 0.3
+  text: "A small, round formation that resembles a snail\u2019s shell. The shape
+    determined the name, and the effect confirmed it. This artifact emits a weak
+    anomalous field that positively affects brain cells. However, the effect of this
+    field causes muscles to tire much more rapidly."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: a8d1fb1d5c6d400da04861b4ab135a22, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: ecfffffff6ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: fbfffffffeffffff
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 050000000f000000
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

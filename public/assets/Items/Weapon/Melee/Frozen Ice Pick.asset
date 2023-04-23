@@ -2,27 +2,53 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 92JD
-    key: iceaxe_f
-    fullName: 'Frozen Ice Pick'
-    pathCategory: Weapon/Melee
-    rank: Veteran
-    class: 'Melee Weapons'
-    weight: 0.65
-    frost: 10.0
-    common: 35.0
-    strong: 90.0
-    piercing: 55.0
-    bloodlustChance: 55.0
-    text: 'Covered in ice, this ice pick is used by Frost Hunters.'
-    image: { fileID: 21300000, guid: 47967463d4c4489aa9867980e6dda02c, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Frozen Ice Pick'
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: Frozen Ice Pick
+  m_EditorClassIdentifier: null
+  id: 92JD
+  key: iceaxe_f
+  fullName: Frozen Ice Pick
+  pathCategory: Weapon/Melee
+  weight: 0.65
+  text: Covered in ice, this ice pick is used by Frost Hunters.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: d89f4ec9222246ff9058be9192cba516, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 35
+  strong: 90
+  piercing: 55
+  bloodlustChance: 55

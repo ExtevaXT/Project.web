@@ -2,20 +2,83 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: kqQN
-    key: '25504'
-    fullName: 'NVD-11 Export'
-    pathCategory: Armor/Device
-    class: Devices
-    weight: 1.75
-    image: { fileID: 21300000, guid: 9d4cdac320c74f80906e4c2976c9c87a, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'NVD-11 Export'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: NVD-11 Export
+  m_EditorClassIdentifier: null
+  id: kqQN
+  key: 25504
+  fullName: NVD-11 Export
+  pathCategory: Armor/Device
+  weight: 1.75
+  text: 
+  maxStack: 1
+  price: 525000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: f821e450441f4fd892e7d2df4132a50b, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

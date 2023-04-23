@@ -2,27 +2,53 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 620V
-    key: boneknife
-    fullName: 'Bone Knife'
-    pathCategory: Weapon/Melee
-    rank: Veteran
-    class: 'Melee Weapons'
-    weight: 0.3
-    default: 10.0
-    common: 40.0
-    strong: 100.0
-    piercing: 50.0
-    bloodlustChance: 40.0
-    text: 'Adept ceremonial knife that can pierce any armor'
-    image: { fileID: 21300000, guid: 6770c2331755495c9ee32912c7943f9f, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Bone Knife'
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: Bone Knife
+  m_EditorClassIdentifier: null
+  id: 620V
+  key: boneknife
+  fullName: Bone Knife
+  pathCategory: Weapon/Melee
+  weight: 0.3
+  text: Adept ceremonial knife that can pierce any armor
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 480bd35a388148fb8faa0c940828ca60, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 40
+  strong: 100
+  piercing: 50
+  bloodlustChance: 40

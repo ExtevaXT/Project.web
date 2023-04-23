@@ -2,24 +2,53 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: nqok
-    key: '21051'
-    fullName: Icicle
-    pathCategory: Weapon/Melee
-    rank: Picklock
-    class: 'Melee Weapons'
-    weight: 0.32
-    common: 40.0
-    strong: 100.0
-    bloodlustChance: 50.0
-    image: { fileID: 21300000, guid: 294348d4e0c9429b845a164f136806df, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Icicle
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: Icicle
+  m_EditorClassIdentifier: null
+  id: nqok
+  key: 21051
+  fullName: Icicle
+  pathCategory: Weapon/Melee
+  weight: 0.32
+  text: 
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 613f414c8e3647c1b9598eff74c8d3b7, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Picklock
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 40
+  strong: 100
+  piercing: 0
+  bloodlustChance: 50

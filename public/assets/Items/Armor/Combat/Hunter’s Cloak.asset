@@ -2,38 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: xQ1j
-    key: vestcoat
-    fullName: 'Hunter’s Cloak'
-    pathCategory: Armor/Combat
-    rank: Picklock
-    class: Combat
-    weight: 3.0
-    maxDurability: 100.0
-    staminaBonus: [-5.0]
-    maxWeightBonus: [5.0]
-    bulletDmgFactor: [24.0]
-    tearDmgFactor: [73.0]
-    explosionDmgFactor: [33.0]
-    electraDmgFactor: [15.0]
-    burnDmgFactor: [15.0]
-    chemicalBurnDmgFactor: [15.0]
-    radiationProtection: [30.0]
-    thermalProtection: [0.0]
-    biologicalProtection: [30.0]
-    psychoProtection: [0.0]
-    bleedingProtection: [42.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'Over this thick, waterproof cloak, one can wear a large utility vest with body armor, which allows you to increase the amount of resources that can be carried.'
-    image: { fileID: 21300000, guid: 5ac1513b38c1449b9baa540e1ed4a400, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Hunter’s Cloak'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: "Hunter\u2019s Cloak"
+  m_EditorClassIdentifier: null
+  id: xQ1j
+  key: vestcoat
+  fullName: "Hunter\u2019s Cloak"
+  pathCategory: Armor/Combat
+  weight: 3
+  text: Over this thick, waterproof cloak, one can wear a large utility vest with
+    body armor, which allows you to increase the amount of resources that can be
+    carried.
+  maxStack: 1
+  price: 25000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: fe701cd00ed84363bf8e8f3fd3d95852, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Picklock
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: fbffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 05000000
+  bleedingProtection: 2a000000
+  radiationProtection: 1e000000
+  psychoProtection: 00000000
+  thermalProtection: 00000000
+  biologicalProtection: 1e000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 18000000
+  tearDmgFactor: 49000000
+  explosionDmgFactor: 21000000
+  electraDmgFactor: 0f000000
+  burnDmgFactor: 0f000000
+  chemicalBurnDmgFactor: 0f000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

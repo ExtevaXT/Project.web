@@ -2,42 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: LJ3Z
-    key: sig-1
-    fullName: 'Worn SIG SG 550'
-    pathCategory: 'Weapon/Assault rifle'
-    rank: Stalker
-    class: 'Assault Rifles'
-    weight: 4.84
-    maxDurability: 100.0
-    ammoType: '5.56'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 36.0
-    clipSize: 30.0
-    distance: 160.0
-    rateOfFire: 680.0
-    reloadTime: 3.5
-    tacticalReloadTime: 2.95
-    spread: 0.584
-    hipSpread: 3.0900002
-    recoil: 0.39
-    horizontalRecoil: 0.14
-    drawTime: 1.05
-    aimSwitch: 0.3
-    startDamage: 36.0
-    damageDecreaseStart: 16.0
-    endDamage: 27.0
-    damageDecreaseEnd: 68.0
-    maxDistance: 160.0
-    text: 'A representative of a new family of assault rifles. Thanks to its high reliability, accuracy, and ease of handling, it is one of the best examples of a weapon in its class. It is not frequently encountered in the Zone, and it costs a pretty penny. It is usually seasoned stalkers who order one of these specially for themselves.'
-    image: { fileID: 21300000, guid: 8a03ad755c8648e3bb3e5e0e1e46cc2f, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn SIG SG 550'
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Worn SIG SG 550
+  m_EditorClassIdentifier: null
+  id: LJ3Z
+  key: sig-1
+  fullName: Worn SIG SG 550
+  pathCategory: Weapon/Assault rifle
+  weight: 4.84
+  text: 
+  maxStack: 1
+  price: 270000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: be5d6a178aef40798463c52de72a341f, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 1.05
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 36
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2.95
+  reloadTime: 3.5
+  clipSize: 30
+  ammoType: 5.56
+  spread: 0.584
+  hipSpread: 3.0900002
+  recoil: 0.39
+  horizontalRecoil: 0.14
+  aimSwitch: 0.3
+  startDamage: 36
+  damageDecreaseStart: 16
+  endDamage: 27
+  damageDecreaseEnd: 68
+  distance: 160
+  maxDistance: 160
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

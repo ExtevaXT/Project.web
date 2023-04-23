@@ -2,25 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 61k0
-    key: mount_m16ris
-    fullName: 'Sight Mount for M16A2'
-    pathCategory: Attachment/Forend
-    attachmentMetaGroup: -1
-    attachmentMetaId: A
-    rank: Newbie
-    class: 'Hanguards and Brackets'
-    weight: 0.05
-    suitableFor: [M16A2]
-    image: { fileID: 21300000, guid: c8bef0893b2b45bf9dc38e442dd5762b, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Sight Mount for M16A2'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: eedb133410934056a17df10d5d65df96, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: Sight Mount for M16A2
+  m_EditorClassIdentifier: null
+  id: 61k0
+  key: mount_m16ris
+  fullName: Sight Mount for M16A2
+  pathCategory: Attachment/Forend
+  weight: 0.05
+  text: 
+  maxStack: 1
+  price: 250000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 4a5e8decb01d43998052a42007e6706c, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 65
+  attachmentMetaGroup: -1
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 3b5dff3347f94bf0a77ab8b29a3c4693, type: 2}
+  - {fileID: 11400000, guid: c6980573024d4f529e3920810d728053, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 6a1bfe554ff547ebbc053a575599a616, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 199f2624bbc945f6b040294ab4950538, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: b6c2e38596364c718a4136c321a6fc5b, type: 2}
+  - {fileID: 11400000, guid: 29a88496ed2048cbbb17c75fe8c931b2, type: 2}
+  - {fileID: 11400000, guid: 27bbf9e0c36147f2bb31255beb3ab690, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: f7bdc342377a4873abdcd988d5ad0fb7, type: 2}
+  - {fileID: 11400000, guid: 5a738ed6648e4e44b58a8116f4ec42b4, type: 2}
+  - {fileID: 11400000, guid: e9b12fa0d066499aa8c4a51b81716482, type: 2}
+  - {fileID: 11400000, guid: 153f84525cdd45cda65c4aa9608008df, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: b7972612339443a6a3be403c2f8a4556, type: 2}
+  - {fileID: 11400000, guid: 81626b4e21364f5d8c904daa71c9cb16, type: 2}
+  - {fileID: 11400000, guid: ea55a20c27b846f9976d71645185c196, type: 2}
+  - {fileID: 11400000, guid: 383a0c6afc5d4d588cfbb07942633ab7, type: 2}
+  - {fileID: 11400000, guid: 5547cd0d522d477cb7f5e9345da06ccb, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 9ac9861931a74f93ab319f21df1e3c68, type: 2}
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - M16A2
+  clipSize: 0
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

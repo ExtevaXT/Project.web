@@ -30,7 +30,7 @@ MonoBehaviour:
     damageDecreaseEnd: 75.0
     maxDistance: 165.0
     text: 'A Soviet light machine gun based on the AKM assault rifle. When it was entered into service, and indeed for a long time afterwards, it was the lightest machine gun in the world, and established itself as a highly effective weapon compact, simple, and convenient to use.'
-    image: { fileID: 21300000, guid: 37bd7b25b45b49c1a7aea586549866e2, type: 3 }
+    image: { fileID: 21300000, guid: 3cf769dbc54b4150899a04225ef518a8, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: RPK
     m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
@@ -41,3 +41,4 @@ MonoBehaviour:
     m_PrefabInstance: { fileID: 0 }
     m_CorrespondingSourceObject: { fileID: 0 }
     m_ObjectHideFlags: 0
+    attachmentsAllowed: [{ fileID: 11400000, guid: 640a59c7c880454ba7e4a677f4a1e3bf, type: 2 }, { fileID: 11400000, guid: 1c9ddaa0176647df9ad23a44cc65e885, type: 2 }, { fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2 }, { fileID: 11400000, guid: ee95ff84830d47eda2db11e99c8f6211, type: 2 }, { fileID: 11400000, guid: 43b407fe72f045a7b79441611f0e386a, type: 2 }, { fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2 }, { fileID: 11400000, guid: a0c887024b5f4d439402fb4b6e59409d, type: 2 }, { fileID: 11400000, guid: de9a9f999d014fef96f29da069fb36ff, type: 2 }, { fileID: 11400000, guid: 22690b8a27144053aa55849bf9417715, type: 2 }, { fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2 }, { fileID: 11400000, guid: 944b6744d038411a8836325862acdd86, type: 2 }, { fileID: 11400000, guid: a01b8cea0e78440e829d538d7a79aa24, type: 2 }, { fileID: 11400000, guid: 92f1ba6f2157403ebe9fdceca145f65d, type: 2 }, { fileID: 11400000, guid: 072f7d795bcb48639d1a90dc23ed2f4e, type: 2 }, { fileID: 11400000, guid: 8630028b697f4257b6cc2f791dda4ba7, type: 2 }, { fileID: 11400000, guid: eeded40a88314b02856fe766ab1fcb89, type: 2 }, { fileID: 11400000, guid: 53c3a28e6bde497f984c78a08e4cd497, type: 2 }, { fileID: 11400000, guid: e26f00189d5643c48de417dd268596ec, type: 2 }, { fileID: 11400000, guid: 5fd8945432c043c8ad871a77925ef337, type: 2 }, { fileID: 11400000, guid: a0dac5f71d4743b7a858346a7cd67a9b, type: 2 }, { fileID: 11400000, guid: c14dcdbdb28e4e90b34003df30d827cf, type: 2 }, { fileID: 11400000, guid: be20bf30fdb0406687b1e3299bd4040a, type: 2 }, { fileID: 11400000, guid: e3e4d9f1d3cc43839dce27541c582329, type: 2 }, { fileID: 11400000, guid: 4cad2640285f4cd7a1ba245281201ee8, type: 2 }, { fileID: 11400000, guid: f6b4b3b4871f4c1799717f99b1a0f3b1, type: 2 }, { fileID: 11400000, guid: 19cea63cef0c48c4b82c3330cfe76445, type: 2 }, { fileID: 11400000, guid: 63c1613e78d1405dbc56cedbe7d3b6cf, type: 2 }]

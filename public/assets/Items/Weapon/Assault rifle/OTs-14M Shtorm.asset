@@ -2,41 +2,124 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 20z7
-    key: storm
-    fullName: 'OTs-14M Shtorm'
-    pathCategory: 'Weapon/Assault rifle'
-    rank: Veteran
-    class: 'Assault Rifles'
-    weight: 4.0
-    maxDurability: 100.0
-    ammoType: '5.45'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 36.0
-    clipSize: 30.0
-    distance: 150.0
-    rateOfFire: 750.0
-    reloadTime: 3.75
-    spread: 0.629
-    hipSpread: 3.0
-    recoil: 0.34
-    horizontalRecoil: 0.14
-    drawTime: 0.95
-    aimSwitch: 0.2
-    startDamage: 36.0
-    damageDecreaseStart: 12.0
-    endDamage: 26.0
-    damageDecreaseEnd: 70.0
-    maxDistance: 150.0
-    text: 'A modification of the Groza with an integrated grenade launcher. It has been converted to take 5.45 mm ammo. It is unknown who produced these modifications, but the sheer number of these weapons that can be seen around would suggest that they were mass-produced.'
-    image: { fileID: 21300000, guid: 7cbdcda4feb34edab1488aa0c05cdd1f, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'OTs-14M Shtorm'
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: OTs-14M Shtorm
+  m_EditorClassIdentifier: null
+  id: 20z7
+  key: storm
+  fullName: OTs-14M Shtorm
+  pathCategory: Weapon/Assault rifle
+  weight: 4
+  text: 
+  maxStack: 1
+  price: 1100000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 7d636a4fe4b94739ae4110dfcb3ed6e8, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.95
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 36
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 3b5dff3347f94bf0a77ab8b29a3c4693, type: 2}
+  - {fileID: 11400000, guid: c6980573024d4f529e3920810d728053, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 6a1bfe554ff547ebbc053a575599a616, type: 2}
+  - {fileID: 11400000, guid: da40486fc5f5497497213584b058d065, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 199f2624bbc945f6b040294ab4950538, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: b6c2e38596364c718a4136c321a6fc5b, type: 2}
+  - {fileID: 11400000, guid: 29a88496ed2048cbbb17c75fe8c931b2, type: 2}
+  - {fileID: 11400000, guid: 27bbf9e0c36147f2bb31255beb3ab690, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: f7bdc342377a4873abdcd988d5ad0fb7, type: 2}
+  - {fileID: 11400000, guid: 5a738ed6648e4e44b58a8116f4ec42b4, type: 2}
+  - {fileID: 11400000, guid: e9b12fa0d066499aa8c4a51b81716482, type: 2}
+  - {fileID: 11400000, guid: 153f84525cdd45cda65c4aa9608008df, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: b7972612339443a6a3be403c2f8a4556, type: 2}
+  - {fileID: 11400000, guid: 81626b4e21364f5d8c904daa71c9cb16, type: 2}
+  - {fileID: 11400000, guid: ea55a20c27b846f9976d71645185c196, type: 2}
+  - {fileID: 11400000, guid: 383a0c6afc5d4d588cfbb07942633ab7, type: 2}
+  - {fileID: 11400000, guid: 5547cd0d522d477cb7f5e9345da06ccb, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 9ac9861931a74f93ab319f21df1e3c68, type: 2}
+  - {fileID: 11400000, guid: c39784f441e84bd392761e5b2495bf6a, type: 2}
+  - {fileID: 11400000, guid: 9ce04392ae5748748d212c8638aff83e, type: 2}
+  - {fileID: 11400000, guid: 39e7f8f7eb07431382cab2ab5b6076e7, type: 2}
+  - {fileID: 11400000, guid: fcce0fb92af34d8e9a98c843fca4475b, type: 2}
+  - {fileID: 11400000, guid: bc6ccf5235af4be08a8e0b0434ccd36d, type: 2}
+  - {fileID: 11400000, guid: b85278778eb643c0803600802dde8ccf, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 3.75
+  clipSize: 30
+  ammoType: 5.45
+  spread: 0.629
+  hipSpread: 3
+  recoil: 0.34
+  horizontalRecoil: 0.14
+  aimSwitch: 0.2
+  startDamage: 36
+  damageDecreaseStart: 12
+  endDamage: 26
+  damageDecreaseEnd: 70
+  distance: 150
+  maxDistance: 150
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

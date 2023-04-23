@@ -2,42 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: AMRw
-    key: g3a1-2
-    fullName: 'Old HK G3A1'
-    pathCategory: 'Weapon/Assault rifle'
-    rank: Stalker
-    class: 'Assault Rifles'
-    weight: 5.4900002
-    maxDurability: 100.0
-    ammoType: '7.62'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 44.0
-    clipSize: 20.0
-    distance: 170.0
-    rateOfFire: 540.0
-    reloadTime: 3.4
-    tacticalReloadTime: 2.7
-    spread: 0.549
-    hipSpread: 2.93
-    recoil: 0.64
-    horizontalRecoil: 0.16
-    drawTime: 0.8
-    aimSwitch: 0.25
-    startDamage: 44.0
-    damageDecreaseStart: 16.0
-    endDamage: 30.0
-    damageDecreaseEnd: 80.0
-    maxDistance: 170.0
-    text: 'A German assault rifle entered into service by the Federal Republic of Germany in 1959.'
-    image: { fileID: 21300000, guid: ede13b4a2a4b4b6982ecd3123d6c213a, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Old HK G3A1'
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Old HK G3A1
+  m_EditorClassIdentifier: null
+  id: AMRw
+  key: g3a1-2
+  fullName: Old HK G3A1
+  pathCategory: Weapon/Assault rifle
+  weight: 5.4900002
+  text: 
+  maxStack: 1
+  price: 650000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 8519313086fe4882b99ba3ed9e461162, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.8
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 44
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2.7
+  reloadTime: 3.4
+  clipSize: 20
+  ammoType: 7.62
+  spread: 0.549
+  hipSpread: 2.93
+  recoil: 0.64
+  horizontalRecoil: 0.16
+  aimSwitch: 0.25
+  startDamage: 44
+  damageDecreaseStart: 16
+  endDamage: 30
+  damageDecreaseEnd: 80
+  distance: 170
+  maxDistance: 170
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

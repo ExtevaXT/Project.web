@@ -9,7 +9,7 @@ MonoBehaviour:
     class: Other
     weight: 5.0
     text: 'A strange crate. Despite its ordinary appearance, you can sense that this came from another world.'
-    image: { fileID: 21300000, guid: 9ade224046ea4957812364a4834c90e1, type: 3 }
+    image: { fileID: 21300000, guid: 1bff44cd60384ec792df303511826947, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Strange Crate'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

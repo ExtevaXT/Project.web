@@ -2,25 +2,72 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: mxwo
-    key: mount_dpris
-    fullName: 'Adaptive RIS Rail for DP'
-    pathCategory: Attachment/Forend
-    attachmentMetaGroup: -1
-    attachmentMetaId: A
-    rank: Newbie
-    class: 'Hanguards and Brackets'
-    weight: 0.1
-    suitableFor: [DP]
-    image: { fileID: 21300000, guid: 08bd8fabc41844a191237383c27918ae, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Adaptive RIS Rail for DP'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: b85b2917a92a444b8d0d97f057f79d3d, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: Adaptive RIS Rail for DP
+  m_EditorClassIdentifier: null
+  id: mxwo
+  key: mount_dpris
+  fullName: Adaptive RIS Rail for DP
+  pathCategory: Attachment/Forend
+  weight: 0.1
+  text: 
+  maxStack: 1
+  price: 250000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 871f9faf299b4e5482e5650d8e8b63e4, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 65
+  attachmentMetaGroup: -1
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 27bbf9e0c36147f2bb31255beb3ab690, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: f7bdc342377a4873abdcd988d5ad0fb7, type: 2}
+  - {fileID: 11400000, guid: 5a738ed6648e4e44b58a8116f4ec42b4, type: 2}
+  - {fileID: 11400000, guid: e9b12fa0d066499aa8c4a51b81716482, type: 2}
+  - {fileID: 11400000, guid: 153f84525cdd45cda65c4aa9608008df, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: b7972612339443a6a3be403c2f8a4556, type: 2}
+  - {fileID: 11400000, guid: 81626b4e21364f5d8c904daa71c9cb16, type: 2}
+  - {fileID: 11400000, guid: ea55a20c27b846f9976d71645185c196, type: 2}
+  - {fileID: 11400000, guid: 383a0c6afc5d4d588cfbb07942633ab7, type: 2}
+  - {fileID: 11400000, guid: 5547cd0d522d477cb7f5e9345da06ccb, type: 2}
+  - {fileID: 11400000, guid: 9ac9861931a74f93ab319f21df1e3c68, type: 2}
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - DP
+  clipSize: 0
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

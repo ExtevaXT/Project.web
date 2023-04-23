@@ -2,42 +2,154 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: r62d
-    key: a545
-    fullName: A-545
-    pathCategory: 'Weapon/Assault rifle'
-    rank: Master
-    class: 'Assault Rifles'
-    weight: 3.3000002
-    maxDurability: 100.0
-    ammoType: '5.45'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 36.0
-    clipSize: 30.0
-    distance: 150.0
-    rateOfFire: 900.0
-    reloadTime: 3.5
-    tacticalReloadTime: 2.95
-    spread: 0.566
-    hipSpread: 3.0
-    recoil: 0.32
-    horizontalRecoil: 0.15
-    drawTime: 0.95
-    aimSwitch: 0.25
-    startDamage: 36.0
-    damageDecreaseStart: 15.0
-    endDamage: 25.0
-    damageDecreaseEnd: 70.0
-    maxDistance: 150.0
-    text: 'A modified AEK-971 that differs mainly in the construction of the receiver (the AEK-971 has a removable cover). This allows a Picatinny rail to be equipped to the rifle for installing various types of sights. It also has rails on the handguard to equip additional modules.'
-    image: { fileID: 21300000, guid: 0b9e1c6f769a4410aefa70cfceedb994, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: A-545
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: A-545
+  m_EditorClassIdentifier: null
+  id: r62d
+  key: a545
+  fullName: A-545
+  pathCategory: Weapon/Assault rifle
+  weight: 3.3000002
+  text: 
+  maxStack: 1
+  price: 1250000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 6b25c30759374eca9f62f7e9ecbecc56, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.95
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 36
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 9f81e49ecb214879883daf860c8fab8d, type: 2}
+  - {fileID: 11400000, guid: c025d82f225b44bb937a18835f34cddc, type: 2}
+  - {fileID: 11400000, guid: b1dd65f1bf204aac8a873598ace1e69b, type: 2}
+  - {fileID: 11400000, guid: c1561cd5f79b4aa7863948518bcd7277, type: 2}
+  - {fileID: 11400000, guid: 6e9b9a9332fc46bf966bdb6826021e85, type: 2}
+  - {fileID: 11400000, guid: d71faad3f3384b55bce1a74d33c87726, type: 2}
+  - {fileID: 11400000, guid: 675163e3ff2a4707b965e09aef177856, type: 2}
+  - {fileID: 11400000, guid: 437865ab669f48818cd5f10803bbf55c, type: 2}
+  - {fileID: 11400000, guid: 6a35f0c9433541d79c0ffcaa4657b01e, type: 2}
+  - {fileID: 11400000, guid: 5e011b960cc342feb3a86c760cbf31b5, type: 2}
+  - {fileID: 11400000, guid: 3b5dff3347f94bf0a77ab8b29a3c4693, type: 2}
+  - {fileID: 11400000, guid: c6980573024d4f529e3920810d728053, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 6a1bfe554ff547ebbc053a575599a616, type: 2}
+  - {fileID: 11400000, guid: da40486fc5f5497497213584b058d065, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 199f2624bbc945f6b040294ab4950538, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: b6c2e38596364c718a4136c321a6fc5b, type: 2}
+  - {fileID: 11400000, guid: 29a88496ed2048cbbb17c75fe8c931b2, type: 2}
+  - {fileID: 11400000, guid: 27bbf9e0c36147f2bb31255beb3ab690, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: f7bdc342377a4873abdcd988d5ad0fb7, type: 2}
+  - {fileID: 11400000, guid: 5a738ed6648e4e44b58a8116f4ec42b4, type: 2}
+  - {fileID: 11400000, guid: e9b12fa0d066499aa8c4a51b81716482, type: 2}
+  - {fileID: 11400000, guid: 153f84525cdd45cda65c4aa9608008df, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: b7972612339443a6a3be403c2f8a4556, type: 2}
+  - {fileID: 11400000, guid: 81626b4e21364f5d8c904daa71c9cb16, type: 2}
+  - {fileID: 11400000, guid: ea55a20c27b846f9976d71645185c196, type: 2}
+  - {fileID: 11400000, guid: 383a0c6afc5d4d588cfbb07942633ab7, type: 2}
+  - {fileID: 11400000, guid: 5547cd0d522d477cb7f5e9345da06ccb, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 9ac9861931a74f93ab319f21df1e3c68, type: 2}
+  - {fileID: 11400000, guid: f5b1ed6024fd4daab9ad5010a24b773e, type: 2}
+  - {fileID: 11400000, guid: c78e55768d7b4af0adc75135d2081822, type: 2}
+  - {fileID: 11400000, guid: de8f52803c534c9aafd4ae838f90df72, type: 2}
+  - {fileID: 11400000, guid: 1274ece71a4d4d449af041038407d8f1, type: 2}
+  - {fileID: 11400000, guid: 4defbae542964468ab1bc92182270eb1, type: 2}
+  - {fileID: 11400000, guid: 5b80956c630c4570b29332d6bbee0408, type: 2}
+  - {fileID: 11400000, guid: 92f1ba6f2157403ebe9fdceca145f65d, type: 2}
+  - {fileID: 11400000, guid: 072f7d795bcb48639d1a90dc23ed2f4e, type: 2}
+  - {fileID: 11400000, guid: 8630028b697f4257b6cc2f791dda4ba7, type: 2}
+  - {fileID: 11400000, guid: eeded40a88314b02856fe766ab1fcb89, type: 2}
+  - {fileID: 11400000, guid: 09c139dde4d54ac590c01bc903cc7afd, type: 2}
+  - {fileID: 11400000, guid: 53c3a28e6bde497f984c78a08e4cd497, type: 2}
+  - {fileID: 11400000, guid: e26f00189d5643c48de417dd268596ec, type: 2}
+  - {fileID: 11400000, guid: 5fd8945432c043c8ad871a77925ef337, type: 2}
+  - {fileID: 11400000, guid: c39784f441e84bd392761e5b2495bf6a, type: 2}
+  - {fileID: 11400000, guid: 9ce04392ae5748748d212c8638aff83e, type: 2}
+  - {fileID: 11400000, guid: 39e7f8f7eb07431382cab2ab5b6076e7, type: 2}
+  - {fileID: 11400000, guid: fcce0fb92af34d8e9a98c843fca4475b, type: 2}
+  - {fileID: 11400000, guid: bc6ccf5235af4be08a8e0b0434ccd36d, type: 2}
+  - {fileID: 11400000, guid: 69866dd21db04430a94b65d2b6951393, type: 2}
+  - {fileID: 11400000, guid: a466043e1cd942689cf48ca23225953f, type: 2}
+  - {fileID: 11400000, guid: 777af43c40614e1a861c8801bc28b9f1, type: 2}
+  - {fileID: 11400000, guid: d8314acc8ade46b880688a72069a972b, type: 2}
+  - {fileID: 11400000, guid: 4a749dec988d442eae068fbae8bde2f6, type: 2}
+  - {fileID: 11400000, guid: 7aeab0c1d4584b98a840b8eea53ce8d9, type: 2}
+  - {fileID: 11400000, guid: b85278778eb643c0803600802dde8ccf, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2.95
+  reloadTime: 3.5
+  clipSize: 30
+  ammoType: 5.45
+  spread: 0.566
+  hipSpread: 3
+  recoil: 0.32
+  horizontalRecoil: 0.15
+  aimSwitch: 0.25
+  startDamage: 36
+  damageDecreaseStart: 15
+  endDamage: 25
+  damageDecreaseEnd: 70
+  distance: 150
+  maxDistance: 150
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

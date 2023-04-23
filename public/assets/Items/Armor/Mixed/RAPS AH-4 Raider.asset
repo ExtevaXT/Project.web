@@ -2,41 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 8jZn
-    key: ao4
-    fullName: 'RAPS AH-4 Raider'
-    pathCategory: Armor/Mixed
-    rank: Veteran
-    class: Combo
-    weight: 28.0
-    maxDurability: 100.0
-    staminaBonus: [-10.0]
-    speedModifier: [-2.0]
-    maxWeightBonus: [10.0]
-    heal: [2.0]
-    nightVision: 1
-    bulletDmgFactor: [79.0]
-    tearDmgFactor: [93.0]
-    explosionDmgFactor: [111.0]
-    electraDmgFactor: [533.0]
-    burnDmgFactor: [533.0]
-    chemicalBurnDmgFactor: [533.0]
-    radiationProtection: [210.0]
-    thermalProtection: [210.0]
-    biologicalProtection: [270.0]
-    psychoProtection: [210.0]
-    bleedingProtection: [44.0]
-    compatibleBackpacks: light
-    compatibleContainers: spacious
-    text: 'A reinforced anomalous protection suit, the logical next stage in the development of the Artifact Hunters range, which requires both physical and anomalous protection. The RAPS is the perfect choice for getting past Electros and for zones with increased psy-emissions.'
-    image: { fileID: 21300000, guid: 3782f3cdce734733b6ed10ede1d8fbe9, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'RAPS AH-4 Raider'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: RAPS AH-4 Raider
+  m_EditorClassIdentifier: null
+  id: 8jZn
+  key: ao4
+  fullName: RAPS AH-4 Raider
+  pathCategory: Armor/Mixed
+  weight: 28
+  text: A reinforced anomalous protection suit, the logical next stage in the development
+    of the Artifact Hunters range, which requires both physical and anomalous protection.
+    The RAPS is the perfect choice for getting past Electros and for zones with increased
+    psy-emissions.
+  maxStack: 1
+  price: 500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 551709326b67451aae131b9ad23b9f3d, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f6ffffff
+  staminaRegenerationBonus: 
+  heal: 02000000
+  healEfficiency: 
+  speedModifier: feffffff
+  maxWeightBonus: 0a000000
+  bleedingProtection: 2c000000
+  radiationProtection: d2000000
+  psychoProtection: d2000000
+  thermalProtection: d2000000
+  biologicalProtection: 0e010000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 4f000000
+  tearDmgFactor: 5d000000
+  explosionDmgFactor: 6f000000
+  electraDmgFactor: 15020000
+  burnDmgFactor: 15020000
+  chemicalBurnDmgFactor: 15020000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: spacious

@@ -2,37 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: yLx9
-    key: smorodina
-    fullName: 'Currant Ghillie Suit'
-    pathCategory: Armor/Combat
-    rank: Picklock
-    class: Combat
-    weight: 3.2
-    maxDurability: 100.0
-    maxWeightBonus: [3.0]
-    bulletDmgFactor: [38.0]
-    tearDmgFactor: [40.0]
-    explosionDmgFactor: [52.0]
-    electraDmgFactor: [15.0]
-    burnDmgFactor: [15.0]
-    chemicalBurnDmgFactor: [15.0]
-    radiationProtection: [30.0]
-    thermalProtection: [0.0]
-    biologicalProtection: [30.0]
-    psychoProtection: [0.0]
-    bleedingProtection: [31.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'A high-quality ghillie suit with a utility vest. The sensible weight distribution and decent protection against damage make it a good choice for a hunter who lies in wait.'
-    image: { fileID: 21300000, guid: 783676d814774c819b9a61817100654b, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Currant Ghillie Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Currant Ghillie Suit
+  m_EditorClassIdentifier: null
+  id: yLx9
+  key: smorodina
+  fullName: Currant Ghillie Suit
+  pathCategory: Armor/Combat
+  weight: 3.2
+  text: A high-quality ghillie suit with a utility vest. The sensible weight distribution
+    and decent protection against damage make it a good choice for a hunter who lies
+    in wait.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: b78f71c49e724ac99ee10e237a872bc8, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Picklock
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 03000000
+  bleedingProtection: 1f000000
+  radiationProtection: 1e000000
+  psychoProtection: 00000000
+  thermalProtection: 00000000
+  biologicalProtection: 1e000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 26000000
+  tearDmgFactor: 28000000
+  explosionDmgFactor: 34000000
+  electraDmgFactor: 0f000000
+  burnDmgFactor: 0f000000
+  chemicalBurnDmgFactor: 0f000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

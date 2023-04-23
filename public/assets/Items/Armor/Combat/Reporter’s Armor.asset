@@ -2,39 +2,83 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: gw2B
-    key: bronj_press
-    fullName: 'Reporter’s Armor'
-    pathCategory: Armor/Combat
-    rank: Stalker
-    class: Combat
-    weight: 10.0
-    maxDurability: 100.0
-    staminaBonus: [-8.0]
-    speedModifier: [-1.0]
-    maxWeightBonus: [5.0]
-    bulletDmgFactor: [106.0]
-    tearDmgFactor: [106.0]
-    explosionDmgFactor: [147.0]
-    electraDmgFactor: [41.0]
-    burnDmgFactor: [41.0]
-    chemicalBurnDmgFactor: [41.0]
-    radiationProtection: [170.0]
-    thermalProtection: [20.0]
-    biologicalProtection: [140.0]
-    psychoProtection: [75.0]
-    bleedingProtection: [52.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'Protection set for reporters.'
-    image: { fileID: 21300000, guid: dcc76f2dd84d471885ed874f91cb99ad, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Reporter’s Armor'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: "Reporter\u2019s Armor"
+  m_EditorClassIdentifier: null
+  id: gw2B
+  key: bronj_press
+  fullName: "Reporter\u2019s Armor"
+  pathCategory: Armor/Combat
+  weight: 10
+  text: Protection set for reporters.
+  maxStack: 1
+  price: 75000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 6a429dfff5104dfe95ecefdc5b766163, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f8ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: ffffffff
+  maxWeightBonus: 05000000
+  bleedingProtection: 34000000
+  radiationProtection: aa000000
+  psychoProtection: 4b000000
+  thermalProtection: 14000000
+  biologicalProtection: 8c000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 6a000000
+  tearDmgFactor: 6a000000
+  explosionDmgFactor: 93000000
+  electraDmgFactor: 29000000
+  burnDmgFactor: 29000000
+  chemicalBurnDmgFactor: 29000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

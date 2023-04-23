@@ -2,20 +2,41 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: BOEy
-    key: gas_small
-    fullName: 'Tank of Combustible Mixture'
-    pathCategory: Ammo
-    class: Ammo
-    weight: 1.2
-    image: { fileID: 21300000, guid: 0a01249390e7446298d25669b3ec7e01, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Tank of Combustible Mixture'
-    m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3}
+  m_Name: Tank of Combustible Mixture
+  m_EditorClassIdentifier: null
+  id: BOEy
+  key: gas_small
+  fullName: Tank of Combustible Mixture
+  pathCategory: Ammo
+  weight: 1.2
+  text: 
+  maxStack: 1
+  price: 1000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: e71d9fa554444afdbdd90f080cbc6289, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  bleeding: 0
+  stoppingPower: 0
+  piercing: 0
+  damage: 0
+  combustion: 0
+  numBullets: 0
+  damageDistant: 0
+  spread: 0
+  absoluteDamage: 0

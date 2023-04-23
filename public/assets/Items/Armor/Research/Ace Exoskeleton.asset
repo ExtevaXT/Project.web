@@ -2,39 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: oDwX
-    key: tuz
-    fullName: 'Ace Exoskeleton'
-    pathCategory: Armor/Research
-    rank: Master
-    class: Explorer
-    weight: 32.0
-    maxDurability: 100.0
-    staminaBonus: [-9.0]
-    maxWeightBonus: [45.0]
-    nightVision: 1
-    bulletDmgFactor: [149.0]
-    tearDmgFactor: [160.0]
-    explosionDmgFactor: [229.0]
-    electraDmgFactor: [107.0]
-    burnDmgFactor: [107.0]
-    chemicalBurnDmgFactor: [107.0]
-    radiationProtection: [200.0]
-    thermalProtection: [80.0]
-    biologicalProtection: [200.0]
-    psychoProtection: [200.0]
-    bleedingProtection: [65.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: standard
-    text: 'The thieves’ elite decided that they needed an equivalent to the stalker Mule, which is why the Ace Exoskeleton was created. The key difference is that it has increased mobility and weighs less.'
-    image: { fileID: 21300000, guid: f2b52ac230b2479caf88af0ec5d0b847, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Ace Exoskeleton'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Ace Exoskeleton
+  m_EditorClassIdentifier: null
+  id: oDwX
+  key: tuz
+  fullName: Ace Exoskeleton
+  pathCategory: Armor/Research
+  weight: 32
+  text: "The thieves\u2019 elite decided that they needed an equivalent to the stalker
+    Mule, which is why the Ace Exoskeleton was created. The key difference is that
+    it has increased mobility and weighs less."
+  maxStack: 1
+  price: 1000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: a44c90d39504436ea8b7bcadedcb4c3d, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f7ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 2d000000
+  bleedingProtection: 41000000
+  radiationProtection: c8000000
+  psychoProtection: c8000000
+  thermalProtection: 50000000
+  biologicalProtection: c8000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 95000000
+  tearDmgFactor: a0000000
+  explosionDmgFactor: e5000000
+  electraDmgFactor: 6b000000
+  burnDmgFactor: 6b000000
+  chemicalBurnDmgFactor: 6b000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: superheavy
+  compatibleContainers: standard

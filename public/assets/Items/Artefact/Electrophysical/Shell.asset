@@ -2,25 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 31K1
-    key: electra_pustishka
-    fullName: Shell
-    pathCategory: Artefact/Electrophysical
-    class: Electrophysical
-    weight: 0.3
-    common: 'Not studied'
-    maxDurability: 100.0
-    burnDmgFactor: [15.0, 30.0]
-    radiationAccumulation: [1.0, 3.0]
-    text: 'When this artifact comes into contact with heated plasma, it absorbs part of it, working in a similar way as a Battery. It may be a Battery that has undergone an unknown mutation inside an anomaly. Radioactive.'
-    image: { fileID: 21300000, guid: 586a5856f3de4f269d5697ed8af50a0b, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Shell
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Shell
+  m_EditorClassIdentifier: null
+  id: 31K1
+  key: electra_pustishka
+  fullName: Shell
+  pathCategory: Artefact/Electrophysical
+  weight: 0.3
+  text: When this artifact comes into contact with heated plasma, it absorbs part
+    of it, working in a similar way as a Battery. It may be a Battery that has undergone
+    an unknown mutation inside an anomaly. Radioactive.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: ce6c209448aa4a6a979bd13080406650, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 0100000003000000
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 0f0000001e000000
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

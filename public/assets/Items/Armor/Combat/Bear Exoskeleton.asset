@@ -2,37 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: PQ7K
-    key: bear
-    fullName: 'Bear Exoskeleton'
-    pathCategory: Armor/Combat
-    rank: Veteran
-    class: Combat
-    weight: 35.0
-    maxDurability: 100.0
-    staminaBonus: [-10.0]
-    speedModifier: [-4.0]
-    maxWeightBonus: [35.0]
-    bulletDmgFactor: [144.0]
-    tearDmgFactor: [161.0]
-    explosionDmgFactor: [199.0]
-    electraDmgFactor: [47.0]
-    burnDmgFactor: [47.0]
-    chemicalBurnDmgFactor: [47.0]
-    radiationProtection: [200.0]
-    thermalProtection: [0.0]
-    biologicalProtection: [100.0]
-    psychoProtection: [75.0]
-    bleedingProtection: [63.0]
-    text: 'The Lynx armored suit, equipped with a heavy exoskeleton with additional armoring.'
-    image: { fileID: 21300000, guid: c97a9abed44b4adfbc37c385f2f0ca8c, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Bear Exoskeleton'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Bear Exoskeleton
+  m_EditorClassIdentifier: null
+  id: PQ7K
+  key: bear
+  fullName: Bear Exoskeleton
+  pathCategory: Armor/Combat
+  weight: 35
+  text: The Lynx armored suit, equipped with a heavy exoskeleton with additional
+    armoring.
+  maxStack: 1
+  price: 500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 351a12b810154658acc4aadbf186e588, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f6ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: fcffffff
+  maxWeightBonus: 23000000
+  bleedingProtection: 3f000000
+  radiationProtection: c8000000
+  psychoProtection: 4b000000
+  thermalProtection: 00000000
+  biologicalProtection: 64000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 90000000
+  tearDmgFactor: a1000000
+  explosionDmgFactor: c7000000
+  electraDmgFactor: 2f000000
+  burnDmgFactor: 2f000000
+  chemicalBurnDmgFactor: 2f000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

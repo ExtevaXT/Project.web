@@ -2,42 +2,95 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: mqM8
-    key: 9a91
-    fullName: 9А-91
-    pathCategory: 'Weapon/Assault rifle'
-    rank: Veteran
-    class: 'Assault Rifles'
-    weight: 2.29
-    maxDurability: 100.0
-    ammoType: 9x39
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 42.0
-    clipSize: 20.0
-    distance: 150.0
-    rateOfFire: 700.0
-    reloadTime: 3.5
-    tacticalReloadTime: 2.6
-    spread: 0.514
-    hipSpread: 3.0
-    recoil: 0.27
-    horizontalRecoil: 0.14
-    drawTime: 0.9
-    aimSwitch: 0.2
-    startDamage: 42.0
-    damageDecreaseStart: 16.0
-    endDamage: 27.0
-    damageDecreaseEnd: 65.0
-    maxDistance: 150.0
-    text: 'A compact assault rifle manufactured in the Tulsky Instrument Design Bureau in 1992 as a more technical alternative to (and competitor for) the SR-3 Vikhr assault rifle.'
-    image: { fileID: 21300000, guid: 036d9106dd74400990c88c4f8d05afe9, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 9А-91
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: "9\u0410-91"
+  m_EditorClassIdentifier: null
+  id: mqM8
+  key: 9a91
+  fullName: "9\u0410-91"
+  pathCategory: Weapon/Assault rifle
+  weight: 2.29
+  text: 
+  maxStack: 1
+  price: 1750000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 191dc9c8fbcb45259ec4849c953418b0, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.9
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 42
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 1c9ddaa0176647df9ad23a44cc65e885, type: 2}
+  - {fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2}
+  - {fileID: 11400000, guid: ee95ff84830d47eda2db11e99c8f6211, type: 2}
+  - {fileID: 11400000, guid: 43b407fe72f045a7b79441611f0e386a, type: 2}
+  - {fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2}
+  - {fileID: 11400000, guid: a0c887024b5f4d439402fb4b6e59409d, type: 2}
+  - {fileID: 11400000, guid: de9a9f999d014fef96f29da069fb36ff, type: 2}
+  - {fileID: 11400000, guid: 22690b8a27144053aa55849bf9417715, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 944b6744d038411a8836325862acdd86, type: 2}
+  - {fileID: 11400000, guid: e3e4d9f1d3cc43839dce27541c582329, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2.6
+  reloadTime: 3.5
+  clipSize: 20
+  ammoType: 9x39
+  spread: 0.514
+  hipSpread: 3
+  recoil: 0.27
+  horizontalRecoil: 0.14
+  aimSwitch: 0.2
+  startDamage: 42
+  damageDecreaseStart: 16
+  endDamage: 27
+  damageDecreaseEnd: 65
+  distance: 150
+  maxDistance: 150
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

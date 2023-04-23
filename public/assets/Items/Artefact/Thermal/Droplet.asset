@@ -2,25 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: gKQn
-    key: jarka_kaplya
-    fullName: Droplet
-    pathCategory: Artefact/Thermal
-    class: Thermal
-    weight: 0.05
-    common: 'Not studied'
-    maxDurability: 100.0
-    staminaBonus: [-10.0, -5.0]
-    radiationAccumulation: [-3.0, -1.0]
-    text: 'It is likely that all these droplets are the product of certain chemicals consumed by the Lighter anomaly. No-one can tell which ones exactly, though.'
-    image: { fileID: 21300000, guid: 53efb76e5ad0422fb4d4565edc1aea33, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Droplet
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Droplet
+  m_EditorClassIdentifier: null
+  id: gKQn
+  key: jarka_kaplya
+  fullName: Droplet
+  pathCategory: Artefact/Thermal
+  weight: 0.05
+  text: It is likely that all these droplets are the product of certain chemicals
+    consumed by the Lighter anomaly. No-one can tell which ones exactly, though.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 20eec2cb9c6841d2bfce3e4fe746c39c, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f6fffffffbffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: fdffffffffffffff
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

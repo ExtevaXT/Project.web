@@ -2,42 +2,88 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: aVzY
-    key: hp_mod
-    fullName: Dream
-    pathCategory: Weapon/Pistol
-    rank: Stalker
-    class: Pistols
-    weight: 0.88
-    maxDurability: 100.0
-    ammoType: '9 mm'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 56.0
-    clipSize: 15.0
-    distance: 60.0
-    rateOfFire: 420.0
-    reloadTime: 2.25
-    tacticalReloadTime: 1.85
-    spread: 1.211
-    hipSpread: 2.6999998
-    recoil: 0.4
-    horizontalRecoil: 0.35
-    drawTime: 0.45
-    aimSwitch: 0.15
-    startDamage: 56.0
-    damageDecreaseStart: 12.0
-    endDamage: 19.0
-    damageDecreaseEnd: 28.0
-    maxDistance: 60.0
-    text: 'An upgraded trigger, larger magazine capacity, and more reliable parts have made this already-great pistol into a dream weapon for every more or less experienced stalker.'
-    image: { fileID: 21300000, guid: a1f3fb42f7d445a6ac13d5de975397ac, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Dream
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Dream
+  m_EditorClassIdentifier: null
+  id: aVzY
+  key: hp_mod
+  fullName: Dream
+  pathCategory: Weapon/Pistol
+  weight: 0.88
+  maxStack: 1
+  price: 400000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 1c1d353c96a04a808a9e85fae1123585, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.45
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 56
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 0d80a32bffa547ed99d5b10170273b68, type: 2}
+  - {fileID: 11400000, guid: a81414a2f146433fa1d53ae5c3702ccb, type: 2}
+  - {fileID: 11400000, guid: 42f57625538e416ca47d9e95a8542b17, type: 2}
+  - {fileID: 11400000, guid: 005da9550b7f4969a5aa65332cba8332, type: 2}
+  - {fileID: 11400000, guid: 4f57bec61c99413f9bc11e8620f9f4e8, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 1.85
+  reloadTime: 2.25
+  clipSize: 15
+  ammoType: 9 mm
+  spread: 1.211
+  hipSpread: 2.6999998
+  recoil: 0.4
+  horizontalRecoil: 0.35
+  aimSwitch: 0.15
+  startDamage: 56
+  damageDecreaseStart: 12
+  endDamage: 19
+  damageDecreaseEnd: 28
+  distance: 60
+  maxDistance: 60
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

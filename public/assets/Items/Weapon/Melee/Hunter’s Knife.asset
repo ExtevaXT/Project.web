@@ -2,26 +2,54 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: BMqn
-    key: '21000'
-    fullName: 'Hunter’s Knife'
-    pathCategory: Weapon/Melee
-    rank: Newbie
-    class: 'Melee Weapons'
-    weight: 0.19
-    common: 35.0
-    strong: 100.0
-    piercing: 20.0
-    bloodlustChance: 30.0
-    text: 'A knife forged from 95x18 steel with a handle made from valuable species of tree.'
-    image: { fileID: 21300000, guid: 0b568176e7f14cfda452ce85bc1f038a, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Hunter’s Knife'
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: "Hunter\u2019s Knife"
+  m_EditorClassIdentifier: null
+  id: BMqn
+  key: 21000
+  fullName: "Hunter\u2019s Knife"
+  pathCategory: Weapon/Melee
+  weight: 0.19
+  text: A knife forged from 95x18 steel with a handle made from valuable species
+    of tree.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 5ad7bc165afd47a99463d4dd8d489b6e, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Newbie
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 35
+  strong: 100
+  piercing: 20
+  bloodlustChance: 30

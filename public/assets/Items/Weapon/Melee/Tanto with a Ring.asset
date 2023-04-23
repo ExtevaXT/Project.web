@@ -2,26 +2,55 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: RyB7
-    key: '21010'
-    fullName: 'Tanto with a Ring'
-    pathCategory: Weapon/Melee
-    rank: Veteran
-    class: 'Melee Weapons'
-    weight: 0.22
-    common: 40.0
-    strong: 100.0
-    piercing: 60.0
-    bloodlustChance: 55.0
-    text: 'Although this knife vaguely resembles a karambit, it isn’t actually one. The length of the blade and its shape speak volumes about this weapon’s true nature.'
-    image: { fileID: 21300000, guid: f38cfd7e9431468491d054f113584bb9, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Tanto with a Ring'
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: Tanto with a Ring
+  m_EditorClassIdentifier: null
+  id: RyB7
+  key: 21010
+  fullName: Tanto with a Ring
+  pathCategory: Weapon/Melee
+  weight: 0.22
+  text: "Although this knife vaguely resembles a karambit, it isn\u2019t actually
+    one. The length of the blade and its shape speak volumes about this weapon\u2019s
+    true nature."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: fd7e708160914aaea51e18438eda3c37, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 40
+  strong: 100
+  piercing: 60
+  bloodlustChance: 55

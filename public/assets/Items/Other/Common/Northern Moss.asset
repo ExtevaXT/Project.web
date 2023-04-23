@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3}
+  m_Name: Northern Moss
+  m_EditorClassIdentifier: null
+  id: ogL9
+  key: mob
+  fullName: Northern Moss
+  pathCategory: Other
+  weight: 0.01
+  text: This bluish moss is being used on an experimental basis by a couple of German
+    companies for the production of new antibiotics. As a result, it is extremely
+    valuable.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: ca4d09f9e4794698906d4f7ec6f006f0, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 

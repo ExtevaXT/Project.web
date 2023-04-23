@@ -2,39 +2,83 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: jqkN
-    key: pahan
-    fullName: 'Kingpin Armored Suit'
-    pathCategory: Armor/Research
-    rank: Veteran
-    class: Explorer
-    weight: 9.0
-    maxDurability: 100.0
-    staminaBonus: [-4.0]
-    maxWeightBonus: [10.0]
-    nightVision: 1
-    bulletDmgFactor: [106.0]
-    tearDmgFactor: [115.0]
-    explosionDmgFactor: [154.0]
-    electraDmgFactor: [267.0]
-    burnDmgFactor: [267.0]
-    chemicalBurnDmgFactor: [267.0]
-    radiationProtection: [200.0]
-    thermalProtection: [90.0]
-    biologicalProtection: [200.0]
-    psychoProtection: [160.0]
-    bleedingProtection: [53.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'The bandit version of the PSZ-10. Comes in a stylish shade of black.'
-    image: { fileID: 21300000, guid: 4f04c426da5742259011b2de5e915263, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Kingpin Armored Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Kingpin Armored Suit
+  m_EditorClassIdentifier: null
+  id: jqkN
+  key: pahan
+  fullName: Kingpin Armored Suit
+  pathCategory: Armor/Research
+  weight: 9
+  text: The bandit version of the PSZ-10. Comes in a stylish shade of black.
+  maxStack: 1
+  price: 600000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 9db1347b282a40bd9260628f0904f4fc, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: fcffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 0a000000
+  bleedingProtection: 35000000
+  radiationProtection: c8000000
+  psychoProtection: a0000000
+  thermalProtection: 5a000000
+  biologicalProtection: c8000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 6a000000
+  tearDmgFactor: 73000000
+  explosionDmgFactor: 9a000000
+  electraDmgFactor: 0b010000
+  burnDmgFactor: 0b010000
+  chemicalBurnDmgFactor: 0b010000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

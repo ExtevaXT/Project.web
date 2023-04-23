@@ -2,42 +2,89 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: y1R2
-    key: pm_mod
-    fullName: 'Eternal Novice’s PM'
-    pathCategory: Weapon/Pistol
-    rank: Newbie
-    class: Pistols
-    weight: 0.73
-    maxDurability: 100.0
-    ammoType: '9 mm'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 50.0
-    clipSize: 12.0
-    distance: 50.0
-    rateOfFire: 450.0
-    reloadTime: 2.5
-    tacticalReloadTime: 2.0
-    spread: 1.553
-    hipSpread: 2.701
-    recoil: 0.4
-    horizontalRecoil: 0.4
-    drawTime: 0.45
-    aimSwitch: 0.25
-    startDamage: 50.0
-    damageDecreaseStart: 10.0
-    endDamage: 17.0
-    damageDecreaseEnd: 25.0
-    maxDistance: 50.0
-    text: 'There are rumors going round in the Zone about a newbie who couldn’t even make it from the Swamps to the Cordon. He was armed only with a PM, unable to afford anything better. Eventually, he persuaded one of the stalkers to give him a better weapon, and offered his PM and a small amount of cash as payment. The stalker turned out to have sense of humor: he simply took the pistol to a mechanic, who modified it. As it turned out, the modification was fairly successful. The improved bullet feeding mechanism increased the pistol’s rate of fire, and the altered shape of the clip increased its ammo capacity. In all other respects, the pistol was no different from how it had been originally. No one know what came of this Newbie, but modifications of this kind became popular. Nowadays, anyone can get their hands on one.'
-    image: { fileID: 21300000, guid: 792a485c38a5439aa67fa7ca1948cb71, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Eternal Novice’s PM'
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: "Eternal Novice\u2019s PM"
+  m_EditorClassIdentifier: null
+  id: y1R2
+  key: pm_mod
+  fullName: "Eternal Novice\u2019s PM"
+  pathCategory: Weapon/Pistol
+  weight: 0.73
+  maxStack: 1
+  price: 10000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 5f6051efe8194eff872b33dc750c475a, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Newbie
+  drawTime: 0.45
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 50
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 0d80a32bffa547ed99d5b10170273b68, type: 2}
+  - {fileID: 11400000, guid: a81414a2f146433fa1d53ae5c3702ccb, type: 2}
+  - {fileID: 11400000, guid: 42f57625538e416ca47d9e95a8542b17, type: 2}
+  - {fileID: 11400000, guid: 005da9550b7f4969a5aa65332cba8332, type: 2}
+  - {fileID: 11400000, guid: d16c0a504cf74a158f7ea6a03ca0756e, type: 2}
+  - {fileID: 11400000, guid: ceed687dcbda440686e46a418ea3a686, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2
+  reloadTime: 2.5
+  clipSize: 12
+  ammoType: 9 mm
+  spread: 1.553
+  hipSpread: 2.701
+  recoil: 0.4
+  horizontalRecoil: 0.4
+  aimSwitch: 0.25
+  startDamage: 50
+  damageDecreaseStart: 10
+  endDamage: 17
+  damageDecreaseEnd: 25
+  distance: 50
+  maxDistance: 50
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

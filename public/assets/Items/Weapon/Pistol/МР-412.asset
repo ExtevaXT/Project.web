@@ -2,41 +2,83 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: z1jL
-    key: mr412
-    fullName: МР-412
-    pathCategory: Weapon/Pistol
-    rank: Veteran
-    class: Pistols
-    weight: 0.9
-    maxDurability: 100.0
-    ammoType: '9 mm'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 73.0
-    clipSize: 6.0
-    distance: 65.0
-    rateOfFire: 500.0
-    reloadTime: 2.0
-    spread: 1.142
-    hipSpread: 2.25
-    recoil: 0.75
-    horizontalRecoil: 0.5
-    drawTime: 0.3
-    aimSwitch: 0.15
-    startDamage: 73.0
-    damageDecreaseStart: 15.0
-    endDamage: 30.0
-    damageDecreaseEnd: 36.0
-    maxDistance: 65.0
-    text: 'A Russian-made revolver that uses .357 Smith & Wesson Magnum ammo (9x33 mm). It was developed at the Izhevsk Mechanical Plant at the end of the 1990s.'
-    image: { fileID: 21300000, guid: 8332cbbf63a047a8ab9ff290c378a302, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: МР-412
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: "\u041C\u0420-412"
+  m_EditorClassIdentifier: null
+  id: z1jL
+  key: mr412
+  fullName: "\u041C\u0420-412"
+  pathCategory: Weapon/Pistol
+  weight: 0.9
+  maxStack: 1
+  price: 1000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 977c6c2a300c4be8b7e34bf11f413869, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.3
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 73
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 2
+  clipSize: 6
+  ammoType: 9 mm
+  spread: 1.142
+  hipSpread: 2.25
+  recoil: 0.75
+  horizontalRecoil: 0.5
+  aimSwitch: 0.15
+  startDamage: 73
+  damageDecreaseStart: 15
+  endDamage: 30
+  damageDecreaseEnd: 36
+  distance: 65
+  maxDistance: 65
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

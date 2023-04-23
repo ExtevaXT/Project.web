@@ -2,42 +2,83 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: RyNO
-    key: beretta93-1
-    fullName: 'Worn Beretta 93R'
-    pathCategory: Weapon/Pistol
-    rank: Stalker
-    class: Pistols
-    weight: 1.2500001
-    maxDurability: 100.0
-    ammoType: '9 mm'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 46.0
-    clipSize: 20.0
-    distance: 48.0
-    rateOfFire: 420.0
-    reloadTime: 2.25
-    tacticalReloadTime: 1.75
-    spread: 1.125
-    hipSpread: 3.0
-    recoil: 0.3
-    horizontalRecoil: 0.25
-    drawTime: 0.45
-    aimSwitch: 0.15
-    startDamage: 46.0
-    damageDecreaseStart: 10.0
-    endDamage: 14.0
-    damageDecreaseEnd: 28.0
-    maxDistance: 48.0
-    text: 'An Italian automatic pistol that was developed by the Beretta company based on the semi-automatic Beretta 92 pistol in the 1970s for law enforcement agencies and the military.'
-    image: { fileID: 21300000, guid: f366b22413ec480797cae8fd9e68953a, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn Beretta 93R'
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Worn Beretta 93R
+  m_EditorClassIdentifier: null
+  id: RyNO
+  key: beretta93-1
+  fullName: Worn Beretta 93R
+  pathCategory: Weapon/Pistol
+  weight: 1.2500001
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 0100ed7ed03d496c8bb93947d0d0d916, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.45
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 46
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 1.75
+  reloadTime: 2.25
+  clipSize: 20
+  ammoType: 9 mm
+  spread: 1.125
+  hipSpread: 3
+  recoil: 0.3
+  horizontalRecoil: 0.25
+  aimSwitch: 0.15
+  startDamage: 46
+  damageDecreaseStart: 10
+  endDamage: 14
+  damageDecreaseEnd: 28
+  distance: 48
+  maxDistance: 48
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

@@ -2,25 +2,108 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: K5MK
-    key: mount_lastris
-    fullName: 'Side Bracket with Picatinny Rail'
-    pathCategory: Attachment/Forend
-    attachmentMetaGroup: -1
-    attachmentMetaId: A
-    rank: Stalker
-    class: 'Hanguards and Brackets'
-    weight: 0.26
-    suitableFor: [AKS-74U, AKS-74, 'PP-19 Bizon-2-01', AKM, 'PP-19-01 Vityaz', 'AS Val', 'AN-94 Abakan', AK-103, AEK-971, 'Kbk wz. 88 Tantal', SOK-94, AK-105, RPK, 9А-91, VSK-94, Saiga-12K, RPK-74, 'PKP Pecheneg', Rapier, Avalanche, SVD, 'VSS Vintorez', SVU]
-    image: { fileID: 21300000, guid: 2d5ba55007174dfe99ffc528672b90e1, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Side Bracket with Picatinny Rail'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: 6e061c8424784495b473c336266f2196, type: 2 }, { fileID: 11400000, guid: 6a5d18711638447e831c5e80d921ad3b, type: 2 }, { fileID: 11400000, guid: ebb241c742234e3aa2373ad17f2a9ed1, type: 2 }, { fileID: 11400000, guid: 32a377c6479c4cc3bef22c391cccb967, type: 2 }, { fileID: 11400000, guid: 64f565e6ccc040bc810d4c4cad0103fa, type: 2 }, { fileID: 11400000, guid: 473a1753ac314080ba75f71352c1fb72, type: 2 }, { fileID: 11400000, guid: cba26f26a7d2445ea71c111e085195b1, type: 2 }, { fileID: 11400000, guid: 0b4138c0f552446a98d12b5167718749, type: 2 }, { fileID: 11400000, guid: 9dfb1adf5ebe41179cc7ea969f6883ed, type: 2 }, { fileID: 11400000, guid: 78ee10e848834b92be4f14fcee969dad, type: 2 }, { fileID: 11400000, guid: 4dec623e3d0447fb8ad07242910b79d0, type: 2 }, { fileID: 11400000, guid: 0b4d5b4a8de24eae987da9810259b0e1, type: 2 }, { fileID: 11400000, guid: 17b5cba0b23f41fa91ba56513b164595, type: 2 }, { fileID: 11400000, guid: b39e0e8e826b4d64882ad242d4efd5db, type: 2 }, { fileID: 11400000, guid: 493f0724b69442698a991472fab0472c, type: 2 }, { fileID: 11400000, guid: 45ec672435444e55af01aa7f7215e228, type: 2 }, { fileID: 11400000, guid: 5202b5c71aa547de93c4f367cfc0a03f, type: 2 }, { fileID: 11400000, guid: aa8d6b375bff4ef9900be7a7212ebc00, type: 2 }, { fileID: 11400000, guid: f4f3d513157b4f1ca6fccb57acc1ac2d, type: 2 }, { fileID: 11400000, guid: 251f821a15f6472f9cbc7a416b4324a4, type: 2 }, { fileID: 11400000, guid: 5a5ea663ec264b778073728ffb220112, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: Side Bracket with Picatinny Rail
+  m_EditorClassIdentifier: null
+  id: K5MK
+  key: mount_lastris
+  fullName: Side Bracket with Picatinny Rail
+  pathCategory: Attachment/Forend
+  weight: 0.26
+  text: 
+  maxStack: 1
+  price: 250000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: c447adb38a774d62806033d7e077f133, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 65
+  attachmentMetaGroup: -1
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 3b5dff3347f94bf0a77ab8b29a3c4693, type: 2}
+  - {fileID: 11400000, guid: c6980573024d4f529e3920810d728053, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 6a1bfe554ff547ebbc053a575599a616, type: 2}
+  - {fileID: 11400000, guid: da40486fc5f5497497213584b058d065, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 199f2624bbc945f6b040294ab4950538, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: b6c2e38596364c718a4136c321a6fc5b, type: 2}
+  - {fileID: 11400000, guid: 29a88496ed2048cbbb17c75fe8c931b2, type: 2}
+  - {fileID: 11400000, guid: 27bbf9e0c36147f2bb31255beb3ab690, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: f7bdc342377a4873abdcd988d5ad0fb7, type: 2}
+  - {fileID: 11400000, guid: 5a738ed6648e4e44b58a8116f4ec42b4, type: 2}
+  - {fileID: 11400000, guid: e9b12fa0d066499aa8c4a51b81716482, type: 2}
+  - {fileID: 11400000, guid: 153f84525cdd45cda65c4aa9608008df, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: b7972612339443a6a3be403c2f8a4556, type: 2}
+  - {fileID: 11400000, guid: 81626b4e21364f5d8c904daa71c9cb16, type: 2}
+  - {fileID: 11400000, guid: ea55a20c27b846f9976d71645185c196, type: 2}
+  - {fileID: 11400000, guid: 383a0c6afc5d4d588cfbb07942633ab7, type: 2}
+  - {fileID: 11400000, guid: 5547cd0d522d477cb7f5e9345da06ccb, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 9ac9861931a74f93ab319f21df1e3c68, type: 2}
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - AKS-74U
+  - AKS-74
+  - PP-19 Bizon-2-01
+  - AKM
+  - PP-19-01 Vityaz
+  - AS Val
+  - AN-94 Abakan
+  - AK-103
+  - AEK-971
+  - Kbk wz. 88 Tantal
+  - SOK-94
+  - AK-105
+  - RPK
+  - "9\u0410-91"
+  - VSK-94
+  - Saiga-12K
+  - RPK-74
+  - PKP Pecheneg
+  - Rapier
+  - Avalanche
+  - SVD
+  - VSS Vintorez
+  - SVU
+  clipSize: 0
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

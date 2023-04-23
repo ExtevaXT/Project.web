@@ -2,27 +2,53 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: KPdA
-    key: '21047'
-    fullName: 'Corrosive Saw'
-    pathCategory: Weapon/Melee
-    rank: Veteran
-    class: 'Melee Weapons'
-    weight: 0.1
-    chemicalBurn: 20.0
-    common: 40.0
-    strong: 100.0
-    piercing: 50.0
-    bloodlustChance: 40.0
-    text: 'A saw covered in a substance from zombies in Boral'
-    image: { fileID: 21300000, guid: 2a22cb83bd7443789d28d1a26968f583, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Corrosive Saw'
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: Corrosive Saw
+  m_EditorClassIdentifier: null
+  id: KPdA
+  key: 21047
+  fullName: Corrosive Saw
+  pathCategory: Weapon/Melee
+  weight: 0.1
+  text: A saw covered in a substance from zombies in Boral
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 382337d570384825b0e7cfa2e3418c97, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 40
+  strong: 100
+  piercing: 50
+  bloodlustChance: 40

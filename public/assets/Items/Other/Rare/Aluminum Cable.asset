@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3}
+  m_Name: Aluminum Cable
+  m_EditorClassIdentifier: null
+  id: 9lDL
+  key: mining_add
+  fullName: Aluminum Cable
+  pathCategory: Other
+  weight: 0.25
+  text: The longer the cable, the easier it is to sell it for a good price. Or to
+    strangle a greedy shopkeeper with, as some inhabitants of the Zone are not averse
+    to doing.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: aea8f2ee8ec343c784beec29f7d834a3, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 

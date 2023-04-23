@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3}
+  m_Name: Pieces of Copper Wire
+  m_EditorClassIdentifier: null
+  id: JK9e
+  key: mining
+  fullName: Pieces of Copper Wire
+  pathCategory: Other
+  weight: 0.05
+  text: "Copper wire is the bedrock of the Dump diggers\u2019 economy."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 0a1fbcbbc36b433fbae35345ba5e1188, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 

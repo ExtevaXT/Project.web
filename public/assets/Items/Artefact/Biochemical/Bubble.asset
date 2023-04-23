@@ -2,26 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: PRKE
-    key: kisel_puzir
-    fullName: Bubble
-    pathCategory: Artefact/Biochemical
-    class: Biochemical
-    weight: 0.2
-    common: 'Not studied'
-    maxDurability: 100.0
-    radiationDmgFactor: [5.0, 10.0]
-    radiationAccumulation: [-9.0, -3.0]
-    thermalAccumulation: [1.0, 3.0]
-    text: 'This artifact takes the shape of several hollow formations of an organic nature, combined into one. It releases a gas-like substance that can neutralize radioactive particles in the human body. When used actively, it starts to overheat.'
-    image: { fileID: 21300000, guid: a0e8f14c977346c98cc794c401ba252a, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Bubble
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Bubble
+  m_EditorClassIdentifier: null
+  id: PRKE
+  key: kisel_puzir
+  fullName: Bubble
+  pathCategory: Artefact/Biochemical
+  weight: 0.2
+  text: This artifact takes the shape of several hollow formations of an organic
+    nature, combined into one. It releases a gas-like substance that can neutralize
+    radioactive particles in the human body. When used actively, it starts to overheat.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 05ddceb7067a4eab8cc745ee9bfee911, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: f7fffffffdffffff
+  biologicalAccumulation: 
+  thermalAccumulation: 0100000003000000
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 050000000a000000
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

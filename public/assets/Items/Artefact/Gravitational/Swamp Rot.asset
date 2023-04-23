@@ -2,26 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Km1A
-    key: karousel_gnilec
-    fullName: 'Swamp Rot'
-    pathCategory: Artefact/Gravitational
-    class: Gravitational
-    weight: 0.3
-    common: 'Not studied'
-    maxDurability: 100.0
-    staminaBonus: [-15.0, -5.0]
-    biologicalAccumulation: [-5.0, -2.0]
-    reactionToChemicalBurn: [2.0, 3.0]
-    text: 'An organic artifact that resembles the Meat Chunk and the Soul artifacts, but which differs radically in its properties. This artifact decreases the body’s susceptibility to biological agents, but increases energy expenditure when moving.'
-    image: { fileID: 21300000, guid: dc13164917fa4bdaa194de79a9d21661, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Swamp Rot'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Swamp Rot
+  m_EditorClassIdentifier: null
+  id: Km1A
+  key: karousel_gnilec
+  fullName: Swamp Rot
+  pathCategory: Artefact/Gravitational
+  weight: 0.3
+  text: "An organic artifact that resembles the Meat Chunk and the Soul artifacts,
+    but which differs radically in its properties. This artifact decreases the body\u2019s
+    susceptibility to biological agents, but increases energy expenditure when moving."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 5f15a4a70a014ba9afbaa7414e8da149, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f1fffffffbffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: fbfffffffeffffff
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 0200000003000000
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

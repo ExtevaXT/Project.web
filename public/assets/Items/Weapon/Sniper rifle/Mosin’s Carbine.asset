@@ -2,43 +2,89 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: y1DZ
-    key: mosinkar
-    fullName: 'Mosin’s Carbine'
-    pathCategory: 'Weapon/Sniper rifle'
-    rank: Picklock
-    class: 'Sniper Rifles'
-    weight: 3.45
-    maxDurability: 100.0
-    ammoType: '7.62'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 70.0
-    clipSize: 5.0
-    distance: 165.0
-    rateOfFire: 30.0
-    reloadTime: 4.5
-    spread: 0.1
-    hipSpread: 5.0
-    recoil: 2.0
-    horizontalRecoil: 0.7
-    drawTime: 1.25
-    aimSwitch: 0.5
-    bleeding: 95.0
-    stoppingPower: 100.0
-    startDamage: 70.0
-    damageDecreaseStart: 28.0
-    endDamage: 70.0
-    damageDecreaseEnd: 110.0
-    maxDistance: 165.0
-    text: 'A shortened version of the Mosin’s rifle. This carbine was intended for use by various branches of the military, in particular artillery, sappers, cavalry, liaison units, and logistical support operatives such as transport drivers, who needed a light, easy-to-use weapon, primarily for self-defense.'
-    image: { fileID: 21300000, guid: 4493ce7127ae48c7b0231facbc15e811, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Mosin’s Carbine'
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: "Mosin\u2019s Carbine"
+  m_EditorClassIdentifier: null
+  id: y1DZ
+  key: mosinkar
+  fullName: "Mosin\u2019s Carbine"
+  pathCategory: Weapon/Sniper rifle
+  weight: 3.45
+  text: 
+  maxStack: 1
+  price: 25000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 6c2efae8731247d28a05fbf5a923b85d, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Picklock
+  drawTime: 1.25
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 70
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: d52a3febbe73454aacf18b5fc0232edd, type: 2}
+  - {fileID: 11400000, guid: a01b8cea0e78440e829d538d7a79aa24, type: 2}
+  - {fileID: 11400000, guid: e26f00189d5643c48de417dd268596ec, type: 2}
+  - {fileID: 11400000, guid: 5fd8945432c043c8ad871a77925ef337, type: 2}
+  - {fileID: 11400000, guid: 04e0abdc44254655bd350a6c82d0a45d, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 4.5
+  clipSize: 5
+  ammoType: 7.62
+  spread: 0.1
+  hipSpread: 5
+  recoil: 2
+  horizontalRecoil: 0.7
+  aimSwitch: 0.5
+  startDamage: 70
+  damageDecreaseStart: 28
+  endDamage: 70
+  damageDecreaseEnd: 110
+  distance: 165
+  maxDistance: 165
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

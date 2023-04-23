@@ -2,28 +2,56 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: xL0K
-    key: mag_sig40
-    fullName: '40-Ammo EMAG Clip'
-    pathCategory: Attachment/Mag
-    attachmentMetaGroup: 3
-    attachmentMetaId: S
-    rank: Stalker
-    class: Clips
-    weight: 0.22
-    clipSize: 40.0
-    drawTime: 14.999998
-    reloadTime: 4.999995
-    suitableFor: ['SIG SG 550', 'HK G36C', 'SIG SG 550 Sniper', 'HK XM8', 'HK XM8S']
-    image: { fileID: 21300000, guid: a633b94906424b64813b0a15919e56e3, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: '40-Ammo EMAG Clip'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: 29dd930975564e2e86e6adf36e169626, type: 2 }, { fileID: 11400000, guid: dc2bc8cdbcc64593aadebe604484e423, type: 2 }, { fileID: 11400000, guid: 4774a58b6c424140a9d8511918ac3c98, type: 2 }, { fileID: 11400000, guid: c8bb9572f3934bf88bf99a64680998b4, type: 2 }, { fileID: 11400000, guid: c28c131d1a8a4923b356aa0de47019b1, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: 40-Ammo EMAG Clip
+  m_EditorClassIdentifier: null
+  id: xL0K
+  key: mag_sig40
+  fullName: 40-Ammo EMAG Clip
+  pathCategory: Attachment/Mag
+  weight: 0.22
+  text: 
+  maxStack: 1
+  price: 500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: a01d0ff1bc464faaa6c1e8ebae81040e, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 83
+  attachmentMetaGroup: 3
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - SIG SG 550
+  - HK G36C
+  - SIG SG 550 Sniper
+  - HK XM8
+  - HK XM8S
+  clipSize: 40
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 14.999998
+  damageDistant: 0
+  reloadTime: 4.999995
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

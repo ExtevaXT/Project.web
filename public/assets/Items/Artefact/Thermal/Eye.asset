@@ -2,26 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 2XMR
-    key: jarka_glaz
-    fullName: Eye
-    pathCategory: Artefact/Thermal
-    class: Thermal
-    weight: 0.1
-    common: 'Not studied'
-    maxDurability: 100.0
-    bulletDmgFactor: [5.0, 15.0]
-    explosionDmgFactor: [5.0, 15.0]
-    radiationAccumulation: [3.0, 5.0]
-    text: 'This artifact improves the metabolism of its owner, which means that they recover quicker after damage. Some of the more superstitious stalkers believe that it keeps “watch” over its owner, providing protection against serious injuries—as bullets and fragments won’t hit any vital organs.'
-    image: { fileID: 21300000, guid: ccd3b6cfc18f4af28d653d53bfbdf5e4, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Eye
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Eye
+  m_EditorClassIdentifier: null
+  id: 2XMR
+  key: jarka_glaz
+  fullName: Eye
+  pathCategory: Artefact/Thermal
+  weight: 0.1
+  text: "This artifact improves the metabolism of its owner, which means that they
+    recover quicker after damage. Some of the more superstitious stalkers believe
+    that it keeps \u201Cwatch\u201D over its owner, providing protection against
+    serious injuries\u2014as bullets and fragments won\u2019t hit any vital organs."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 0801eeadc5614331841140e50c751baa, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 0300000005000000
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 050000000f000000
+  tearDmgFactor: 
+  explosionDmgFactor: 050000000f000000
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

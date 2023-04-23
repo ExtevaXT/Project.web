@@ -2,36 +2,83 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Ryjy
-    key: flamepistol
-    fullName: Tinderbox
-    pathCategory: Weapon/Heavy
-    rank: Veteran
-    class: 'Other Weapons'
-    weight: 4.3
-    maxDurability: 100.0
-    ammoType: 'Flammable Mixture'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 10.0
-    clipSize: 50.0
-    distance: 6.0
-    rateOfFire: 600.0
-    reloadTime: 5.65
-    spread: 1.0
-    hipSpread: 1.0
-    recoil: 0.05
-    drawTime: 0.75
-    aimSwitch: 0.45
-    burn: 66.66667
-    default: 33.333336
-    image: { fileID: 21300000, guid: 19746bd9ccfa4234a502e61ac939e583, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Tinderbox
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Tinderbox
+  m_EditorClassIdentifier: null
+  id: Ryjy
+  key: flamepistol
+  fullName: Tinderbox
+  pathCategory: Weapon/Heavy
+  weight: 4.3
+  maxStack: 1
+  price: 10000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: e143cbc6fd75498882c4f91741463c99, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.75
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 5.65
+  clipSize: 50
+  ammoType: Flammable Mixture
+  spread: 1
+  hipSpread: 1
+  recoil: 0.05
+  horizontalRecoil: 0
+  aimSwitch: 0.45
+  startDamage: 0
+  damageDecreaseStart: 0
+  endDamage: 0
+  damageDecreaseEnd: 0
+  distance: 6
+  maxDistance: 0
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3}
+  m_Name: Substance 07270
+  m_EditorClassIdentifier: null
+  id: l3wr
+  key: npc
+  fullName: Substance 07270
+  pathCategory: Other
+  weight: 0.04
+  text: This mineral has excited the minds of many people from the Mainland. They
+    think that Substance 07270 could be the perfect fuel of the future. The problem
+    is that it can only be found in the northernmost area of the Zone and only in
+    tiny quantities.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 5e98362344a74681b63c33413f0028fd, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 

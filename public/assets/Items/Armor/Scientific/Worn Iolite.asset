@@ -2,37 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 0joE
-    key: iolit-1
-    fullName: 'Worn Iolite'
-    pathCategory: Armor/Scientific
-    rank: Stalker
-    class: Scientist
-    weight: 7.3
-    maxDurability: 100.0
-    nightVision: 1
-    bulletDmgFactor: [49.0]
-    tearDmgFactor: [55.0]
-    explosionDmgFactor: [67.0]
-    electraDmgFactor: [1111.0]
-    burnDmgFactor: [500.0]
-    chemicalBurnDmgFactor: [500.0]
-    radiationProtection: [400.0]
-    thermalProtection: [310.0]
-    biologicalProtection: [400.0]
-    psychoProtection: [310.0]
-    bleedingProtection: [35.0]
-    compatibleBackpacks: light
-    compatibleContainers: standard
-    text: 'A turquoise research suit. One of the Chernobyl Research Institute’s true masterpieces. The special composition of the suit’s lining protects against high levels of radiation.'
-    image: { fileID: 21300000, guid: 94480040227a409f9a8d9b0362538960, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn Iolite'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Worn Iolite
+  m_EditorClassIdentifier: null
+  id: 0joE
+  key: iolit-1
+  fullName: Worn Iolite
+  pathCategory: Armor/Scientific
+  weight: 7.3
+  text: "A turquoise research suit. One of the Chernobyl Research Institute\u2019s
+    true masterpieces. The special composition of the suit\u2019s lining protects
+    against high levels of radiation."
+  maxStack: 1
+  price: 400000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 3a5f88b51a4240979a7a46b741f14c06, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 23000000
+  radiationProtection: 90010000
+  psychoProtection: 36010000
+  thermalProtection: 36010000
+  biologicalProtection: 90010000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 31000000
+  tearDmgFactor: 37000000
+  explosionDmgFactor: 43000000
+  electraDmgFactor: 57040000
+  burnDmgFactor: f4010000
+  chemicalBurnDmgFactor: f4010000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: standard

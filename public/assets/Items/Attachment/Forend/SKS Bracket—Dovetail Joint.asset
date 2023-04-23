@@ -2,25 +2,61 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 0grE
-    key: mount_skslast
-    fullName: 'SKS Bracket—Dovetail Joint'
-    pathCategory: Attachment/Forend
-    attachmentMetaGroup: -1
-    attachmentMetaId: A
-    rank: Newbie
-    class: 'Hanguards and Brackets'
-    weight: 0.15
-    suitableFor: [SKS]
-    image: { fileID: 21300000, guid: 5ad652636aee49fe91e3f467dd6f05f3, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'SKS Bracket—Dovetail Joint'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: 88cf20d762604f548111e43b611d85af, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: "SKS Bracket\u2014Dovetail Joint"
+  m_EditorClassIdentifier: null
+  id: 0grE
+  key: mount_skslast
+  fullName: "SKS Bracket\u2014Dovetail Joint"
+  pathCategory: Attachment/Forend
+  weight: 0.15
+  text: 
+  maxStack: 1
+  price: 250000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 7a48eb2774cf4753afcdd50b1a809b8f, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 65
+  attachmentMetaGroup: -1
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 1c9ddaa0176647df9ad23a44cc65e885, type: 2}
+  - {fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2}
+  - {fileID: 11400000, guid: ee95ff84830d47eda2db11e99c8f6211, type: 2}
+  - {fileID: 11400000, guid: 43b407fe72f045a7b79441611f0e386a, type: 2}
+  - {fileID: 11400000, guid: a0c887024b5f4d439402fb4b6e59409d, type: 2}
+  - {fileID: 11400000, guid: de9a9f999d014fef96f29da069fb36ff, type: 2}
+  - {fileID: 11400000, guid: 22690b8a27144053aa55849bf9417715, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 944b6744d038411a8836325862acdd86, type: 2}
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - SKS
+  clipSize: 0
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

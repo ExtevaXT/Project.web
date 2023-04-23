@@ -2,26 +2,56 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: RoKb
-    key: mag_pmag76230h
-    fullName: '7.62 NATO PMAG Clip, Khaki'
-    pathCategory: Attachment/Mag
-    attachmentMetaGroup: 3
-    attachmentMetaId: K
-    rank: Master
-    class: Clips
-    weight: 0.38
-    clipSize: 30.0
-    suitableFor: ['FN FAL', 'FN SCAR-H', 'FN SCAR SSR', HK417, DSA-58]
-    image: { fileID: 21300000, guid: eec8eaf3af774f0188668b6dce067666, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: '7.62 NATO PMAG Clip, Khaki'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: e943fe9d471747c6a8fa392392a870ff, type: 2 }, { fileID: 11400000, guid: 0bd3d41a5c5a4998b5393a879549d0af, type: 2 }, { fileID: 11400000, guid: 901a5e50707843ad8787b4ca17b7f7d5, type: 2 }, { fileID: 11400000, guid: be5712e186884240bc90065ad3c08b0e, type: 2 }, { fileID: 11400000, guid: 9f688ae35ce743e89a92a280a4f9cf8e, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: 7.62 NATO PMAG Clip, Khaki
+  m_EditorClassIdentifier: null
+  id: RoKb
+  key: mag_pmag76230h
+  fullName: 7.62 NATO PMAG Clip, Khaki
+  pathCategory: Attachment/Mag
+  weight: 0.38
+  text: 
+  maxStack: 1
+  price: 500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: a317359cad7243beb9b5173438d8645b, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 75
+  attachmentMetaGroup: 3
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - FN FAL
+  - FN SCAR-H
+  - FN SCAR SSR
+  - HK417
+  - DSA-58
+  clipSize: 30
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

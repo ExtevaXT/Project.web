@@ -2,42 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 62J9
-    key: val-1
-    fullName: 'Worn AS Val'
-    pathCategory: 'Weapon/Assault rifle'
-    rank: Stalker
-    class: 'Assault Rifles'
-    weight: 3.5200002
-    maxDurability: 100.0
-    ammoType: 9x39
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 38.0
-    clipSize: 20.0
-    distance: 140.0
-    rateOfFire: 750.0
-    reloadTime: 3.5
-    tacticalReloadTime: 2.6
-    spread: 0.634
-    hipSpread: 3.058
-    recoil: 0.3
-    horizontalRecoil: 0.1
-    drawTime: 1.0
-    aimSwitch: 0.25
-    startDamage: 38.0
-    damageDecreaseStart: 14.0
-    endDamage: 25.0
-    damageDecreaseEnd: 50.0
-    maxDistance: 140.0
-    text: 'This weapon was created on the basis of the special VSS sniper rifle as a silenced weapon for special ops soldiers. It allows the shooter to shoot effectively at an opponent who is protected by body armor, without giving away their own position. One of its main features is its use of an integrated silencer and 9x39 mm caliber ammo with heavy bullets.'
-    image: { fileID: 21300000, guid: 4a13eacb35df44249ce840fad2567222, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn AS Val'
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Worn AS Val
+  m_EditorClassIdentifier: null
+  id: 62J9
+  key: val-1
+  fullName: Worn AS Val
+  pathCategory: Weapon/Assault rifle
+  weight: 3.5200002
+  text: 
+  maxStack: 1
+  price: 180000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 434a6703377c4e7c8810d56a41955f62, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 1
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 38
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2.6
+  reloadTime: 3.5
+  clipSize: 20
+  ammoType: 9x39
+  spread: 0.634
+  hipSpread: 3.058
+  recoil: 0.3
+  horizontalRecoil: 0.1
+  aimSwitch: 0.25
+  startDamage: 38
+  damageDecreaseStart: 14
+  endDamage: 25
+  damageDecreaseEnd: 50
+  distance: 140
+  maxDistance: 140
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

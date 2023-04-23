@@ -2,42 +2,83 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Xn5y
-    key: ptrd
-    fullName: PTRD-M
-    pathCategory: Weapon/Heavy
-    rank: Veteran
-    class: 'Other Weapons'
-    weight: 17.3
-    maxDurability: 100.0
-    ammoType: 'High Caliber'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 220.0
-    clipSize: 1.0
-    distance: 250.0
-    rateOfFire: 50.0
-    reloadTime: 5.0
-    spread: 4.0
-    hipSpread: 8.0
-    recoil: 10.0
-    horizontalRecoil: 3.0
-    drawTime: 2.5
-    aimSwitch: 0.8
-    stoppingPower: 200.0
-    startDamage: 220.0
-    damageDecreaseStart: 50.0
-    endDamage: 220.0
-    damageDecreaseEnd: 150.0
-    maxDistance: 250.0
-    text: 'A single-shot anti-tank weapon with a shortened barrel and an improvised mount for various types of sights. For the sake of accuracy, this weapon should be fired from a prone position.'
-    image: { fileID: 21300000, guid: 8a965581c3b6431889faa8282f1b1d8f, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: PTRD-M
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: PTRD-M
+  m_EditorClassIdentifier: null
+  id: Xn5y
+  key: ptrd
+  fullName: PTRD-M
+  pathCategory: Weapon/Heavy
+  weight: 17.3
+  maxStack: 1
+  price: 10000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: c87f2712bdd94805a7e5f0cac3afc308, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 2.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 220
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 5
+  clipSize: 1
+  ammoType: High Caliber
+  spread: 4
+  hipSpread: 8
+  recoil: 10
+  horizontalRecoil: 3
+  aimSwitch: 0.8
+  startDamage: 220
+  damageDecreaseStart: 50
+  endDamage: 220
+  damageDecreaseEnd: 150
+  distance: 250
+  maxDistance: 250
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

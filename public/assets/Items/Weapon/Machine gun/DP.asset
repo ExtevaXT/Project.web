@@ -20,7 +20,7 @@ MonoBehaviour:
     maxDurability: 100.0
     destroyable: 1
     toolTip: "<b>{NAME}</b>\nSome weapon description\n{PERSONAL}\n\n{DAMAGE} Damage\nFire Interval: {COOLDOWN}s\nRequires: {REQUIREDAMMO}\n\nAmmo: {AMMO} / {MAGAZINESIZE}\nDurability: {DURABILITY}%\nWeight: {WEIGHT}g"
-    image: { fileID: 21300000, guid: 8f515fe7c09247f9af86466b0f0efdfd, type: 3 }
+    image: { fileID: 21300000, guid: e640fdd6930e478681eb219e3f19a5b1, type: 3 }
     drop: { fileID: -674074274231560322, guid: 89476fd57f4d15348a40d89bcdc9b9e0, type: 3 }
     modelPrefab: { fileID: 1726046159356512, guid: c0c945cf84c075748ab0c5119436c12b, type: 3 }
     type: Machinegun
@@ -41,7 +41,7 @@ MonoBehaviour:
     damage: 44.0
     damageType: Bullet
     upperBodyAnimationParameter: UPPERBODY_RIFLE
-    attachmentsAllowed: {  }
+    attachmentsAllowed: [{ fileID: 11400000, guid: 5447d055ecd6422fb689aa5d8468652b, type: 2 }]
     requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
     magazineSize: 30
     reloadTime: 6.0

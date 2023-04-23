@@ -2,36 +2,87 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Yq1A
-    key: bover_balon
-    fullName: 'Bandit Suit with Gas Tanks'
-    pathCategory: Armor/Scientific
-    rank: Newbie
-    class: Scientist
-    weight: 5.2
-    maxDurability: 100.0
-    bulletDmgFactor: [21.0]
-    tearDmgFactor: [24.0]
-    explosionDmgFactor: [29.0]
-    electraDmgFactor: [178.0]
-    burnDmgFactor: [178.0]
-    chemicalBurnDmgFactor: [178.0]
-    radiationProtection: [120.0]
-    thermalProtection: [105.0]
-    biologicalProtection: [180.0]
-    psychoProtection: [90.0]
-    bleedingProtection: [18.0]
-    compatibleBackpacks: light
-    compatibleContainers: spacious
-    text: 'Getting an undamaged Zarya-A from a stalker is pretty difficult, so the kingpins decided to order a shipment of RS-33s, which are more resistant to the effects of anomalies, on the black market. A PMG gas mask and oxygen tanks are included in the suit. To compensate for the weight of the tanks, they decided to use lighter materials for the body armor.'
-    image: { fileID: 21300000, guid: 1808bfb4156147498aeb9c9feff090de, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Bandit Suit with Gas Tanks'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Bandit Suit with Gas Tanks
+  m_EditorClassIdentifier: null
+  id: Yq1A
+  key: bover_balon
+  fullName: Bandit Suit with Gas Tanks
+  pathCategory: Armor/Scientific
+  weight: 5.2
+  text: Getting an undamaged Zarya-A from a stalker is pretty difficult, so the kingpins
+    decided to order a shipment of RS-33s, which are more resistant to the effects
+    of anomalies, on the black market. A PMG gas mask and oxygen tanks are included
+    in the suit. To compensate for the weight of the tanks, they decided to use lighter
+    materials for the body armor.
+  maxStack: 1
+  price: 75000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: a00cf6d0d2de43c7bff5aa93fdf3ea47, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Newbie
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 12000000
+  radiationProtection: 78000000
+  psychoProtection: 5a000000
+  thermalProtection: 69000000
+  biologicalProtection: b4000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 15000000
+  tearDmgFactor: 18000000
+  explosionDmgFactor: 1d000000
+  electraDmgFactor: b2000000
+  burnDmgFactor: b2000000
+  chemicalBurnDmgFactor: b2000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: light
+  compatibleContainers: spacious

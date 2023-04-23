@@ -2,25 +2,50 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: BO2r
-    key: f1
-    fullName: F-1
-    pathCategory: Grenade
-    class: Grenades
-    weight: 0.6
-    explosionStrength: 500.0
-    explosionStrengthMin: 35.0
-    lifetime: 3.25
-    explosionSize: 12.0
-    text: 'An antipersonnel defensive fragmentation grenade.'
-    image: { fileID: 21300000, guid: 7d28a8090e9042cda2d8799a4ef3e6e8, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: F-1
-    m_Script: { fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3}
+  m_Name: F-1
+  m_EditorClassIdentifier: null
+  id: BO2r
+  key: f1
+  fullName: F-1
+  pathCategory: Grenade
+  weight: 0.6
+  text: An antipersonnel defensive fragmentation grenade.
+  maxStack: 1
+  price: 2500
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 68f4537ccbeb401b8cb5547c113f8b5e, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  lifetime: 3.25
+  explosionStrengthMin: 35
+  explosionStrength: 500
+  explosionSize: 12
+  explosionActivationTime: 0
+  flashTime: 0

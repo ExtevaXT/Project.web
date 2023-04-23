@@ -2,85 +2,165 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    m_ObjectHideFlags: 0
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_GameObject: { fileID: 0 }
-    m_Enabled: 1
-    m_EditorHideFlags: 0
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_Name: AK-105
-    m_EditorClassIdentifier: null
-    maxStack: 1
-    weight: 3.15
-    price: 100
-    sellable: 0
-    personalizable: 0
-    maxDurability: 100.0
-    destroyable: 1
-    toolTip: "<b>{NAME}</b>\nSome weapon description\n{PERSONAL}\n\n{DAMAGE} Damage\nFire Interval: {COOLDOWN}s\nRequires: {REQUIREDAMMO}\n\nAmmo: {AMMO} / {MAGAZINESIZE}\nDurability: {DURABILITY}%\nWeight: {WEIGHT}g"
-    image: { fileID: 21300000, guid: 5e0489d9e45f46b085cc89ec6f458421, type: 3 }
-    drop: { fileID: 0 }
-    modelPrefab: { fileID: 1523676449047648, guid: 579f5357527bcff4f9b459258a266dde, type: 3 }
-    type: 'Assault Rifle'
-    hide: 0
-    content: 'Автомат Калашникова АК-12 является перспективным индивидуальным стрелковым оружием Российской армии и других силовых ведомств, обеспечивающим еще большую боевую эффективность оружия, универсальность применения, точность и кучность стрельбы.'
-    notes: null
-    category: WeaponTwohand
-    keepUsingWhileButtonDown: 1
-    successfulUseSound: [{ fileID: 8300000, guid: 9d85b878db6089b4fabe8fc42e84afaa, type: 3 }]
-    failedUseSound: { fileID: 8300000, guid: b31eb5362790c5d4485dfe985a93b716, type: 3 }
-    emptySound: { fileID: 8300000, guid: b31eb5362790c5d4485dfe985a93b716, type: 3 }
-    drawSound: { fileID: 8300000, guid: a0ac02d6e0ab96241aeb08537ceeb4e4, type: 3 }
-    cooldown: 700
-    _cooldownCategory: null
-    shoulderLookAtWhileHolding: 1
-    useDirectly: 0
-    attackRange: 150
-    damage: 37.0
-    damageType: Bullet
-    upperBodyAnimationParameter: UPPERBODY_RIFLE
-    attachmentsAllowed: [{ fileID: 11400000, guid: 6b06e4556f5aaa440ae26c6a12ae0393, type: 2 }, { fileID: 11400000, guid: 98ecd94d0fd0bc7418ed7ba8a7f0f4f5, type: 2 }, { fileID: 11400000, guid: eaa8cd30265ade145b38de6333cfa867, type: 2 }, { fileID: 11400000, guid: 8d4d357dc64ca9d42bf2a81854d8a5c9, type: 2 }, { fileID: 11400000, guid: 2dbd76f3ece4bcc46863c535cd6666f9, type: 2 }, { fileID: 11400000, guid: 2ad4f4e73c582bd4d8c85ad230bbce6f, type: 2 }, { fileID: 11400000, guid: 8b0ab0820d1a1874b83b0a204af36ee0, type: 2 }, { fileID: 11400000, guid: b1a2d4c0a580e4a4f8c2b424de7b6215, type: 2 }]
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    magazineSize: 30
-    reloadTime: 3.5
-    reloadTimeFull: 3.5
-    zoom: 20
-    decalPrefab: { fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28, type: 3 }
-    decalSound: { fileID: 0 }
-    decalOffset: 0.01
-    Ejection: { fileID: 0 }
-    reloadSound: { fileID: 8300000, guid: f815c79c0f3215a4dba1c4b45caf2a1a, type: 3 }
-    reloadSound0: { fileID: 8300000, guid: 80a06629307c4fe4d9c2654b9c04f5aa, type: 3 }
-    reloadBolt: { fileID: 0 }
-    reloadIn: { fileID: 0 }
-    reloadOut: { fileID: 0 }
-    silencedSound: { fileID: 8300000, guid: 6158b1129c5afbf4aa908cdf2e986f26, type: 3 }
-    silencedSound0: { fileID: 0 }
-    successfulUseSound0: { fileID: 0 }
-    recoilHorizontal: 2
-    recoilVertical: 4
-    id: nqa2
-    key: ak105
-    fullName: AK-105
-    pathCategory: 'Weapon/Assault rifle'
-    rank: Stalker
-    class: 'Assault Rifles'
-    ammoType: '5.45'
-    clipSize: 30.0
-    distance: 150.0
-    rateOfFire: 700.0
-    tacticalReloadTime: 3.0
-    spread: 0.692
-    hipSpread: 3.0
-    recoil: 0.38
-    horizontalRecoil: 0.16
-    drawTime: 1.0
-    aimSwitch: 0.25
-    startDamage: 37.0
-    damageDecreaseStart: 12.0
-    endDamage: 26.0
-    damageDecreaseEnd: 70.0
-    maxDistance: 150.0
-    text: 'The AK-105 is a modification of the AK-101, AK-103, and the AK-74M, with a barrel that has been shortened to 101 mm in length. The intermediate barrel length (between that of the AK-74M and the AK-74U) allowed the size of the weapon to be reduced, while leaving the gas chamber in the same place in relation to the face of the breech, as in the AK-74M, and not moving it backward (as with the AKS-74U). This further unified the entire “AK-10x” family of rifles.'
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: AK-105
+  m_EditorClassIdentifier: null
+  id: nqa2
+  key: ak105
+  fullName: AK-105
+  pathCategory: Weapon/Assault rifle
+  weight: 3.15
+  text: 
+  maxStack: 1
+  price: 250000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 1
+  toolTip: '<b>{NAME}</b>
+
+    Some weapon description
+
+    {PERSONAL}
+
+
+    {DAMAGE}
+    Damage
+
+    Fire Interval: {COOLDOWN}s
+
+    Requires: {REQUIREDAMMO}
+
+
+    Ammo:
+    {AMMO} / {MAGAZINESIZE}
+
+    Durability: {DURABILITY}%
+
+    Weight: {WEIGHT}g'
+  image: {fileID: 21300000, guid: a23f41708f1d4443a209c3476539c027, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 1523676449047648, guid: 579f5357527bcff4f9b459258a266dde,
+    type: 3}
+  hide: 0
+  content: "\u0410\u0432\u0442\u043E\u043C\u0430\u0442 \u041A\u0430\u043B\u0430\u0448\u043D\u0438\u043A\u043E\u0432\u0430
+    \u0410\u041A-12 \u044F\u0432\u043B\u044F\u0435\u0442\u0441\u044F \u043F\u0435\u0440\u0441\u043F\u0435\u043A\u0442\u0438\u0432\u043D\u044B\u043C
+    \u0438\u043D\u0434\u0438\u0432\u0438\u0434\u0443\u0430\u043B\u044C\u043D\u044B\u043C
+    \u0441\u0442\u0440\u0435\u043B\u043A\u043E\u0432\u044B\u043C \u043E\u0440\u0443\u0436\u0438\u0435\u043C
+    \u0420\u043E\u0441\u0441\u0438\u0439\u0441\u043A\u043E\u0439 \u0430\u0440\u043C\u0438\u0438
+    \u0438 \u0434\u0440\u0443\u0433\u0438\u0445 \u0441\u0438\u043B\u043E\u0432\u044B\u0445
+    \u0432\u0435\u0434\u043E\u043C\u0441\u0442\u0432, \u043E\u0431\u0435\u0441\u043F\u0435\u0447\u0438\u0432\u0430\u044E\u0449\u0438\u043C
+    \u0435\u0449\u0435 \u0431\u043E\u043B\u044C\u0448\u0443\u044E \u0431\u043E\u0435\u0432\u0443\u044E
+    \u044D\u0444\u0444\u0435\u043A\u0442\u0438\u0432\u043D\u043E\u0441\u0442\u044C
+    \u043E\u0440\u0443\u0436\u0438\u044F, \u0443\u043D\u0438\u0432\u0435\u0440\u0441\u0430\u043B\u044C\u043D\u043E\u0441\u0442\u044C
+    \u043F\u0440\u0438\u043C\u0435\u043D\u0435\u043D\u0438\u044F, \u0442\u043E\u0447\u043D\u043E\u0441\u0442\u044C
+    \u0438 \u043A\u0443\u0447\u043D\u043E\u0441\u0442\u044C \u0441\u0442\u0440\u0435\u043B\u044C\u0431\u044B."
+  notes: null
+  rank: Stalker
+  drawTime: 1
+  category: WeaponTwohand
+  keepUsingWhileButtonDown: 1
+  successfulUseSound:
+  - {fileID: 8300000, guid: 9d85b878db6089b4fabe8fc42e84afaa, type: 3}
+  failedUseSound: {fileID: 8300000, guid: b31eb5362790c5d4485dfe985a93b716, type: 3}
+  emptySound: {fileID: 8300000, guid: b31eb5362790c5d4485dfe985a93b716, type: 3}
+  drawSound: {fileID: 8300000, guid: a0ac02d6e0ab96241aeb08537ceeb4e4, type: 3}
+  cooldown: 700
+  _cooldownCategory: null
+  shoulderLookAtWhileHolding: 1
+  useDirectly: 0
+  attackRange: 150
+  damage: 37
+  damageType: 0
+  upperBodyAnimationParameter: UPPERBODY_RIFLE
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 6b06e4556f5aaa440ae26c6a12ae0393, type: 2}
+  - {fileID: 11400000, guid: 98ecd94d0fd0bc7418ed7ba8a7f0f4f5, type: 2}
+  - {fileID: 11400000, guid: eaa8cd30265ade145b38de6333cfa867, type: 2}
+  - {fileID: 11400000, guid: 8d4d357dc64ca9d42bf2a81854d8a5c9, type: 2}
+  - {fileID: 11400000, guid: 2dbd76f3ece4bcc46863c535cd6666f9, type: 2}
+  - {fileID: 11400000, guid: 2ad4f4e73c582bd4d8c85ad230bbce6f, type: 2}
+  - {fileID: 11400000, guid: 8b0ab0820d1a1874b83b0a204af36ee0, type: 2}
+  - {fileID: 11400000, guid: b1a2d4c0a580e4a4f8c2b424de7b6215, type: 2}
+  - {fileID: 11400000, guid: 55e37ec8d3d44445bd25598539efe47a, type: 2}
+  - {fileID: 11400000, guid: 4e825045109a47439fa2cab276607e3d, type: 2}
+  - {fileID: 11400000, guid: 5b4fed90c48d4adea8d795a5e8c2aee4, type: 2}
+  - {fileID: 11400000, guid: 640a59c7c880454ba7e4a677f4a1e3bf, type: 2}
+  - {fileID: 11400000, guid: 19e938fce365425487030f9bd543773c, type: 2}
+  - {fileID: 11400000, guid: a96098295e444ef7857e76b3dc06af56, type: 2}
+  - {fileID: 11400000, guid: 1c9ddaa0176647df9ad23a44cc65e885, type: 2}
+  - {fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2}
+  - {fileID: 11400000, guid: ee95ff84830d47eda2db11e99c8f6211, type: 2}
+  - {fileID: 11400000, guid: 43b407fe72f045a7b79441611f0e386a, type: 2}
+  - {fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2}
+  - {fileID: 11400000, guid: a0c887024b5f4d439402fb4b6e59409d, type: 2}
+  - {fileID: 11400000, guid: de9a9f999d014fef96f29da069fb36ff, type: 2}
+  - {fileID: 11400000, guid: 22690b8a27144053aa55849bf9417715, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 944b6744d038411a8836325862acdd86, type: 2}
+  - {fileID: 11400000, guid: 92f1ba6f2157403ebe9fdceca145f65d, type: 2}
+  - {fileID: 11400000, guid: 072f7d795bcb48639d1a90dc23ed2f4e, type: 2}
+  - {fileID: 11400000, guid: 8630028b697f4257b6cc2f791dda4ba7, type: 2}
+  - {fileID: 11400000, guid: eeded40a88314b02856fe766ab1fcb89, type: 2}
+  - {fileID: 11400000, guid: 09c139dde4d54ac590c01bc903cc7afd, type: 2}
+  - {fileID: 11400000, guid: 53c3a28e6bde497f984c78a08e4cd497, type: 2}
+  - {fileID: 11400000, guid: e26f00189d5643c48de417dd268596ec, type: 2}
+  - {fileID: 11400000, guid: 5fd8945432c043c8ad871a77925ef337, type: 2}
+  - {fileID: 11400000, guid: 53d5b55fdc8548499f12f037357d11d2, type: 2}
+  - {fileID: 11400000, guid: 0c437101963344509a8062165df0d80f, type: 2}
+  - {fileID: 11400000, guid: 2dc555fc95444ec881aab8657a04c896, type: 2}
+  - {fileID: 11400000, guid: 6ffd9cb6f9f249c498ed9e1da1bba9ad, type: 2}
+  - {fileID: 11400000, guid: bea4b2222a904c85a941bee82ad8b2c6, type: 2}
+  - {fileID: 11400000, guid: c39784f441e84bd392761e5b2495bf6a, type: 2}
+  - {fileID: 11400000, guid: 9ce04392ae5748748d212c8638aff83e, type: 2}
+  - {fileID: 11400000, guid: 39e7f8f7eb07431382cab2ab5b6076e7, type: 2}
+  - {fileID: 11400000, guid: fcce0fb92af34d8e9a98c843fca4475b, type: 2}
+  - {fileID: 11400000, guid: bc6ccf5235af4be08a8e0b0434ccd36d, type: 2}
+  - {fileID: 11400000, guid: e3e4d9f1d3cc43839dce27541c582329, type: 2}
+  - {fileID: 11400000, guid: 4cad2640285f4cd7a1ba245281201ee8, type: 2}
+  - {fileID: 11400000, guid: f6b4b3b4871f4c1799717f99b1a0f3b1, type: 2}
+  - {fileID: 11400000, guid: 19cea63cef0c48c4b82c3330cfe76445, type: 2}
+  - {fileID: 11400000, guid: 63c1613e78d1405dbc56cedbe7d3b6cf, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28,
+    type: 3}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 3
+  reloadTime: 3.5
+  clipSize: 30
+  ammoType: 5.45
+  spread: 0.692
+  hipSpread: 3
+  recoil: 0.38
+  horizontalRecoil: 0.16
+  aimSwitch: 0.25
+  startDamage: 37
+  damageDecreaseStart: 12
+  endDamage: 26
+  damageDecreaseEnd: 70
+  distance: 150
+  maxDistance: 150
+  reloadSound: {fileID: 8300000, guid: f815c79c0f3215a4dba1c4b45caf2a1a, type: 3}
+  reloadSound0: {fileID: 8300000, guid: 80a06629307c4fe4d9c2654b9c04f5aa, type: 3}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 8300000, guid: 6158b1129c5afbf4aa908cdf2e986f26, type: 3}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

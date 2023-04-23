@@ -2,27 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: BLoN
-    key: apt_i
-    fullName: 'Personal First-Aid Kit'
-    pathCategory: Medicine
-    class: Medicine
-    weight: 0.2
-    purpose: Healing
-    duration: 7.0
-    heal: [5.0]
-    radiationAccumulation: [-3.0]
-    biologicalAccumulation: [-3.0]
-    bleedingAccumulation: [-1.0]
-    text: 'A multipurpose medical kit.'
-    image: { fileID: 21300000, guid: 39f468ee24684a16b7c286960c23fa45, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Personal First-Aid Kit'
-    m_Script: { fileID: 11500000, guid: 8fbc25bef1e7c4f4aa348edf964275e9, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbc25bef1e7c4f4aa348edf964275e9, type: 3}
+  m_Name: Personal First-Aid Kit
+  m_EditorClassIdentifier: null
+  id: BLoN
+  key: apt_i
+  fullName: Personal First-Aid Kit
+  pathCategory: Medicine
+  weight: 0.2
+  text: A multipurpose medical kit.
+  maxStack: 1
+  price: 100
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 401c5c7c3e1f4656a0a769a72861370e, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 05000000
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: fdffffff
+  biologicalAccumulation: fdffffff
+  thermalAccumulation: 
+  bleedingAccumulation: ffffffff
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  usageHealth: 0
+  usageHydration: 0
+  usageNutrition: 0
+  usageFov: 0
+  purpose: Healing
+  duration: 7
+  toxicity: 0

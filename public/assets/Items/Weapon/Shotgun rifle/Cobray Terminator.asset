@@ -2,41 +2,91 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: oqrQ
-    key: terminator
-    fullName: 'Cobray Terminator'
-    pathCategory: 'Weapon/Shotgun rifle'
-    rank: Picklock
-    class: 'Shotguns and Rifles'
-    weight: 2.175
-    maxDurability: 100.0
-    ammoType: '12 caliber'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 220.0
-    clipSize: 1.0
-    distance: 30.0
-    rateOfFire: 150.0
-    reloadTime: 2.5
-    spread: 2.0
-    hipSpread: 3.5
-    recoil: 12.0
-    horizontalRecoil: 2.0
-    drawTime: 0.7
-    aimSwitch: 0.25
-    startDamage: 220.0
-    damageDecreaseStart: 4.0
-    endDamage: 24.0
-    damageDecreaseEnd: 24.0
-    maxDistance: 30.0
-    text: 'An American smoothbore, single-shot shotgun. It has never enjoyed widespread use, but thanks to its simple construction, it is now often made by hand in the Zone as a cheap and reliable “boomstick.”'
-    image: { fileID: 21300000, guid: 95a1796ba13446a7b9b15b56aea1f218, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Cobray Terminator'
-    m_Script: { fileID: 11500000, guid: bdae6158522d46441a5aace99f60b060, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdae6158522d46441a5aace99f60b060, type: 3}
+  m_Name: Cobray Terminator
+  m_EditorClassIdentifier: null
+  id: oqrQ
+  key: terminator
+  fullName: Cobray Terminator
+  pathCategory: Weapon/Shotgun rifle
+  weight: 2.175
+  maxStack: 1
+  price: 100000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 64742b8b7b314d6b820980386ed4a00a, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Picklock
+  drawTime: 0.7
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 220
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 580c63294cf64f30a08c706eb06af7b6, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 2.5
+  clipSize: 1
+  ammoType: 12 caliber
+  spread: 2
+  hipSpread: 3.5
+  recoil: 12
+  horizontalRecoil: 2
+  aimSwitch: 0.25
+  startDamage: 220
+  damageDecreaseStart: 4
+  endDamage: 24
+  damageDecreaseEnd: 24
+  distance: 30
+  maxDistance: 30
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}
+  damageLossDistanceMin: 12
+  damageLossDistanceMax: 60
+  damageMin: 10
+  amountOfProjectiles: 8
+  distanceMultiplier: 0
+  spreadHorizontal: 10
+  spreadVertical: 10

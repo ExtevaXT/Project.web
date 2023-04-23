@@ -2,26 +2,54 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: mqal
-    key: fireknuckle
-    fullName: 'Fiery Greeting'
-    pathCategory: Weapon/Melee
-    rank: Stalker
-    class: 'Melee Weapons'
-    weight: 0.7
-    burn: 50.0
-    common: 18.0
-    strong: 48.0
-    bloodlustChance: 2.5
-    text: 'This Knuckleduster used to belong to the Frost Fighters’ leader, nicknamed Vodka. Obtained for saving him and the whole Zone from the Anomalous Blizzard.'
-    image: { fileID: 21300000, guid: 47520de5e06947b1b5b59e63e9098a4e, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Fiery Greeting'
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: Fiery Greeting
+  m_EditorClassIdentifier: null
+  id: mqal
+  key: fireknuckle
+  fullName: Fiery Greeting
+  pathCategory: Weapon/Melee
+  weight: 0.7
+  text: "This Knuckleduster used to belong to the Frost Fighters\u2019 leader, nicknamed
+    Vodka. Obtained for saving him and the whole Zone from the Anomalous Blizzard."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 0721dcd28bd4483ba23fbc284ef95a4c, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 18
+  strong: 48
+  piercing: 0
+  bloodlustChance: 2

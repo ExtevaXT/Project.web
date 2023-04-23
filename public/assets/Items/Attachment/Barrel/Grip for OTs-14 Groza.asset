@@ -2,30 +2,53 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 3mJB
-    key: handgrip_groza
-    fullName: 'Grip for OTs-14 Groza'
-    pathCategory: Attachment/Barrel
-    attachmentMetaGroup: 0
-    attachmentMetaId: A
-    rank: Veteran
-    class: 'Muzzles and Silencers'
-    weight: 0.1
-    horizontalRecoil: -14.999998
-    spread: -10.000002
-    wiggle: -14.999998
-    drawTime: 4.999995
-    damageDistant: 4.999995
-    suitableFor: ['OTs-14 Groza', 'OTs-14 Tactical Grip']
-    image: { fileID: 21300000, guid: 7b03b78424e04693b7c2f4a581591b32, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Grip for OTs-14 Groza'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: e29bc2d515c14bd2b6f08133294a12b5, type: 2 }, { fileID: 11400000, guid: 0c1d2a03e11f4dfe8b929356a00ef531, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: Grip for OTs-14 Groza
+  m_EditorClassIdentifier: null
+  id: 3mJB
+  key: handgrip_groza
+  fullName: Grip for OTs-14 Groza
+  pathCategory: Attachment/Barrel
+  weight: 0.1
+  text: 
+  maxStack: 1
+  price: 100000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: a1cde51f809547ea9be2d9c0b85ea6c4, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 65
+  attachmentMetaGroup: 0
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - OTs-14 Groza
+  - OTs-14 Tactical Grip
+  clipSize: 0
+  spread: -10.000002
+  recoil: 0
+  horizontalRecoil: -14.999998
+  recoilGain: 0
+  drawTime: 4.999995
+  damageDistant: 4
+  reloadTime: 0
+  wiggle: -14.999998
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

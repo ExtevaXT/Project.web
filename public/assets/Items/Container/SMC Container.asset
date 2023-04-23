@@ -2,27 +2,88 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: rBNm
-    key: ksm
-    fullName: 'SMC Container'
-    pathCategory: Container
-    rank: Master
-    class: 'Backpacks and Containers'
-    weight: 7.0
-    maxDurability: 100.0
-    innerProtection: 93.0
-    effectiveness: 100.0
-    size: 4.0
-    speedModifier: [-1.5]
-    text: 'A special multipurpose container, one of the latest models created by Zone craftsmen. Quality materials are combined with skillfully arranged boxes to hold 4 artifacts in the container whilst providing reliable inner protection.'
-    image: { fileID: 21300000, guid: 58a81f5406eb476ea661d3e0adcd722a, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'SMC Container'
-    m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3}
+  m_Name: SMC Container
+  m_EditorClassIdentifier: null
+  id: rBNm
+  key: ksm
+  fullName: SMC Container
+  pathCategory: Container
+  weight: 7
+  text: A special multipurpose container, one of the latest models created by Zone
+    craftsmen. Quality materials are combined with skillfully arranged boxes to hold
+    4 artifacts in the container whilst providing reliable inner protection.
+  maxStack: 1
+  price: 5500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 533aecde26ae4f3db3f424bfe4e17b10, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: ffffffff
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 
+  innerProtection: 93
+  effectiveness: 100
+  size: 4

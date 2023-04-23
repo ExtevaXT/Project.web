@@ -2,42 +2,87 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: JJd9
-    key: p99_mod
-    fullName: Bee
-    pathCategory: Weapon/Pistol
-    rank: Newbie
-    class: Pistols
-    weight: 0.7
-    maxDurability: 100.0
-    ammoType: '9 mm'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 48.0
-    clipSize: 16.0
-    distance: 50.0
-    rateOfFire: 460.0
-    reloadTime: 2.4
-    tacticalReloadTime: 2.1
-    spread: 1.368
-    hipSpread: 2.7
-    recoil: 0.25
-    horizontalRecoil: 0.2
-    drawTime: 0.6
-    aimSwitch: 0.15
-    startDamage: 48.0
-    damageDecreaseStart: 10.0
-    endDamage: 17.0
-    damageDecreaseEnd: 24.0
-    maxDistance: 50.0
-    text: 'This widely available modification of the P99 pistol, which is popular in the Zone, allows it to fire in fully automatic mode. It is cheap, easy to use, effective, and sometimes makes a “pop” sound while being fired—isn’t that all you need for a perfect weapon?'
-    image: { fileID: 21300000, guid: 60468ddb809d447db722baa99acdc9fc, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Bee
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Bee
+  m_EditorClassIdentifier: null
+  id: JJd9
+  key: p99_mod
+  fullName: Bee
+  pathCategory: Weapon/Pistol
+  weight: 0.7
+  maxStack: 1
+  price: 150000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: ad55a7523ba3479986887e1b038f3a94, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Newbie
+  drawTime: 0.6
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 48
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 0d80a32bffa547ed99d5b10170273b68, type: 2}
+  - {fileID: 11400000, guid: a81414a2f146433fa1d53ae5c3702ccb, type: 2}
+  - {fileID: 11400000, guid: 42f57625538e416ca47d9e95a8542b17, type: 2}
+  - {fileID: 11400000, guid: 005da9550b7f4969a5aa65332cba8332, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2.1
+  reloadTime: 2.4
+  clipSize: 16
+  ammoType: 9 mm
+  spread: 1.368
+  hipSpread: 2.7
+  recoil: 0.25
+  horizontalRecoil: 0.2
+  aimSwitch: 0.15
+  startDamage: 48
+  damageDecreaseStart: 10
+  endDamage: 17
+  damageDecreaseEnd: 24
+  distance: 50
+  maxDistance: 50
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

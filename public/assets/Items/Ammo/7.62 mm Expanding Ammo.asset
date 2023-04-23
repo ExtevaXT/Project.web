@@ -2,24 +2,41 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: oPo7
-    key: 762exp
-    fullName: '7.62 mm Expanding Ammo'
-    pathCategory: Ammo
-    class: Ammo
-    weight: 0.016
-    damage: 10.000002
-    piercing: -20.0
-    bleeding: 15.000001
-    stoppingPower: 40.0
-    image: { fileID: 21300000, guid: 9c864fa45d824ff89061e54a8ef848cc, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: '7.62 mm Expanding Ammo'
-    m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3}
+  m_Name: 7.62 mm Expanding Ammo
+  m_EditorClassIdentifier: null
+  id: oPo7
+  key: 762exp
+  fullName: 7.62 mm Expanding Ammo
+  pathCategory: Ammo
+  weight: 0.016
+  text: 
+  maxStack: 1
+  price: 300
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: d32e5fed04124e14b2c3f56b32d4ebd8, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  bleeding: 15
+  stoppingPower: 40
+  piercing: -20
+  damage: 10
+  combustion: 0
+  numBullets: 0
+  damageDistant: 0
+  spread: 0
+  absoluteDamage: 0

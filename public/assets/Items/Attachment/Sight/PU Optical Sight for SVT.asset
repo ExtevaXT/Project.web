@@ -2,27 +2,54 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: JAye
-    key: scope_svt
-    fullName: 'PU Optical Sight for SVT'
-    pathCategory: Attachment/Sight
-    attachmentMetaGroup: 2
-    attachmentMetaId: R
-    rank: Picklock
-    class: Sights
-    weight: 0.27
-    aimSwitchTime: 10.000002
-    text: 'A Soviet optical sight first created in 1940 for use with the sniper model of the Tokarev semi-automatic rifle.'
-    suitableFor: [AVT-40, SVT-40]
-    image: { fileID: 21300000, guid: 0e53d84242614e91af89a24c6ba6a49a, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'PU Optical Sight for SVT'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: d3b524e3663b463980c651a01a58f259, type: 2 }, { fileID: 11400000, guid: d531a64d3b8d45f88d5958798581cb1d, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: PU Optical Sight for SVT
+  m_EditorClassIdentifier: null
+  id: JAye
+  key: scope_svt
+  fullName: PU Optical Sight for SVT
+  pathCategory: Attachment/Sight
+  weight: 0.27
+  text: A Soviet optical sight first created in 1940 for use with the sniper model
+    of the Tokarev semi-automatic rifle.
+  maxStack: 1
+  price: 200000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: a2f183a24fcd419e9c3b29a12af8325c, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 82
+  attachmentMetaGroup: 2
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - AVT-40
+  - SVT-40
+  clipSize: 0
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 10.000002
+  tickSpreadMultiplierReduction: 0

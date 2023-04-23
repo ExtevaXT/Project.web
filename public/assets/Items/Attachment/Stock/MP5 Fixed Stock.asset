@@ -2,28 +2,53 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: K5ax
-    key: '22603'
-    fullName: 'MP5 Fixed Stock'
-    pathCategory: Attachment/Stock
-    attachmentMetaGroup: 4
-    attachmentMetaId: B
-    class: Stocks
-    weight: 0.25
-    recoil: -2.9999971
-    wiggle: -14.999998
-    recoilGain: -19.999998
-    tickSpreadMultiplierReduction: 14.999998
-    suitableFor: ['HK MP5', Viper]
-    image: { fileID: 21300000, guid: fef334248c214ca785a31a2bc2c9e337, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'MP5 Fixed Stock'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: 6d009c23746d4a04b35882242617b303, type: 2 }, { fileID: 11400000, guid: d8a466b8007049d69d8646c7b638228c, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: MP5 Fixed Stock
+  m_EditorClassIdentifier: null
+  id: K5ax
+  key: 22603
+  fullName: MP5 Fixed Stock
+  pathCategory: Attachment/Stock
+  weight: 0.25
+  text: 
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: c1d32e79958344bdb7282eed2d0a35fe, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 66
+  attachmentMetaGroup: 4
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - HK MP5
+  - Viper
+  clipSize: 0
+  spread: 0
+  recoil: -2.9999971
+  horizontalRecoil: 0
+  recoilGain: -19.999998
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: -14.999998
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 14.999998

@@ -2,43 +2,96 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: JJao
-    key: svu_mod
-    fullName: Avalanche
-    pathCategory: 'Weapon/Sniper rifle'
-    rank: Veteran
-    class: 'Sniper Rifles'
-    weight: 5.2000003
-    maxDurability: 100.0
-    ammoType: '7.62'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 90.0
-    clipSize: 12.0
-    distance: 195.0
-    rateOfFire: 280.0
-    reloadTime: 3.75
-    tacticalReloadTime: 3.1
-    spread: 0.2
-    hipSpread: 3.888
-    recoil: 1.0
-    horizontalRecoil: 0.4
-    drawTime: 1.15
-    aimSwitch: 0.5
-    stoppingPower: 60.0
-    startDamage: 90.0
-    damageDecreaseStart: 34.0
-    endDamage: 72.0
-    damageDecreaseEnd: 110.0
-    maxDistance: 195.0
-    text: 'A modification of the SVU with a restored automatic fire feature. Known among stalkers as Avalanche. Due to the jury-rigged nature of the modification, the weapon’s accuracy and muzzle velocity have decreased.'
-    image: { fileID: 21300000, guid: 252ae0e463124affb5ef7b34efdfd766, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Avalanche
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Avalanche
+  m_EditorClassIdentifier: null
+  id: JJao
+  key: svu_mod
+  fullName: Avalanche
+  pathCategory: Weapon/Sniper rifle
+  weight: 5.2000003
+  text: 
+  maxStack: 1
+  price: 2500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 60fc7ac2a5d8463381d5583c91a55c6c, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 1.15
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 90
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 1c9ddaa0176647df9ad23a44cc65e885, type: 2}
+  - {fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2}
+  - {fileID: 11400000, guid: ee95ff84830d47eda2db11e99c8f6211, type: 2}
+  - {fileID: 11400000, guid: 43b407fe72f045a7b79441611f0e386a, type: 2}
+  - {fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2}
+  - {fileID: 11400000, guid: a0c887024b5f4d439402fb4b6e59409d, type: 2}
+  - {fileID: 11400000, guid: de9a9f999d014fef96f29da069fb36ff, type: 2}
+  - {fileID: 11400000, guid: 22690b8a27144053aa55849bf9417715, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 944b6744d038411a8836325862acdd86, type: 2}
+  - {fileID: 11400000, guid: 35f9420795344d4095837c9464990acf, type: 2}
+  - {fileID: 11400000, guid: e3e4d9f1d3cc43839dce27541c582329, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 3.1
+  reloadTime: 3.75
+  clipSize: 12
+  ammoType: 7.62
+  spread: 0.2
+  hipSpread: 3.888
+  recoil: 1
+  horizontalRecoil: 0.4
+  aimSwitch: 0.5
+  startDamage: 90
+  damageDecreaseStart: 34
+  endDamage: 72
+  damageDecreaseEnd: 110
+  distance: 195
+  maxDistance: 195
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

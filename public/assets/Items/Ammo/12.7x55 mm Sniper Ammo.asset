@@ -2,23 +2,41 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: KrEx
-    key: 127snp
-    fullName: '12.7x55 mm Sniper Ammo'
-    pathCategory: Ammo
-    class: Ammo
-    weight: 0.03
-    piercing: 30.0
-    bleeding: 5.0
-    stoppingPower: 40.0
-    image: { fileID: 21300000, guid: ef9c618111ec4ac497a1f2671d069087, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: '12.7x55 mm Sniper Ammo'
-    m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3}
+  m_Name: 12.7x55 mm Sniper Ammo
+  m_EditorClassIdentifier: null
+  id: KrEx
+  key: 127snp
+  fullName: 12.7x55 mm Sniper Ammo
+  pathCategory: Ammo
+  weight: 0.03
+  text: 
+  maxStack: 1
+  price: 500
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: db8234ec7790488ab55281fc7f481164, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  bleeding: 5
+  stoppingPower: 40
+  piercing: 30
+  damage: 0
+  combustion: 0
+  numBullets: 0
+  damageDistant: 0
+  spread: 0
+  absoluteDamage: 0

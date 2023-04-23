@@ -2,26 +2,49 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: VzQG
-    key: cn1
-    fullName: 'SN-1 Pancake'
-    pathCategory: Weapon/Device
-    class: Devices
-    weight: 4.5
-    maxDurability: 100.0
-    charge: 100.0
-    passiveScanRadius: 25.0
-    activeScanRadius: 10.0
-    activeScanAngle: 60.0
-    text: 'Standard charge usage, scanning distance: 40 meters.'
-    image: { fileID: 21300000, guid: e57457c7af02498db8e9727fd7ca7401, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'SN-1 Pancake'
-    m_Script: { fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3}
+  m_Name: SN-1 Pancake
+  m_EditorClassIdentifier: null
+  id: VzQG
+  key: cn1
+  fullName: SN-1 Pancake
+  pathCategory: Weapon/Device
+  weight: 4.5
+  text: 
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 9db8cca7f36947d5ab8d068cbc81e5ed, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  charge: 100
+  passiveScanRadius: 25
+  activeScanRadius: 10
+  activeScanAngle: 60
+  range: 0

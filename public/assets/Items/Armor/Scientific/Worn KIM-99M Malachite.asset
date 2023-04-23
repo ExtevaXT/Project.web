@@ -2,37 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: OLQj
-    key: kimm-1
-    fullName: 'Worn KIM-99M Malachite'
-    pathCategory: Armor/Scientific
-    rank: Stalker
-    class: Scientist
-    weight: 7.3
-    maxDurability: 100.0
-    nightVision: 1
-    bulletDmgFactor: [42.0]
-    tearDmgFactor: [47.0]
-    explosionDmgFactor: [57.0]
-    electraDmgFactor: [516.0]
-    burnDmgFactor: [516.0]
-    chemicalBurnDmgFactor: [516.0]
-    radiationProtection: [210.0]
-    thermalProtection: [210.0]
-    biologicalProtection: [300.0]
-    psychoProtection: [120.0]
-    bleedingProtection: [31.0]
-    compatibleBackpacks: light
-    compatibleContainers: standard
-    text: 'A modification of the MIS-99 Amber suit. Fitted with upgraded body armor and 2nd-generation NVGs.'
-    image: { fileID: 21300000, guid: a5016c58e6324715985cd05771500a14, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn KIM-99M Malachite'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Worn KIM-99M Malachite
+  m_EditorClassIdentifier: null
+  id: OLQj
+  key: kimm-1
+  fullName: Worn KIM-99M Malachite
+  pathCategory: Armor/Scientific
+  weight: 7.3
+  text: A modification of the MIS-99 Amber suit. Fitted with upgraded body armor
+    and 2nd-generation NVGs.
+  maxStack: 1
+  price: 250000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 8d4e40f21456406d877cf05b7dd3dc63, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 1f000000
+  radiationProtection: d2000000
+  psychoProtection: 78000000
+  thermalProtection: d2000000
+  biologicalProtection: 2c010000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 2a000000
+  tearDmgFactor: 2f000000
+  explosionDmgFactor: 39000000
+  electraDmgFactor: 04020000
+  burnDmgFactor: 04020000
+  chemicalBurnDmgFactor: 04020000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: standard

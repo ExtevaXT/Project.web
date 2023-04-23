@@ -2,51 +2,96 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    m_ObjectHideFlags: 0
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_GameObject: { fileID: 0 }
-    m_Enabled: 1
-    m_EditorHideFlags: 0
-    m_Script: { fileID: 11500000, guid: 8fbc25bef1e7c4f4aa348edf964275e9, type: 3 }
-    m_Name: Vodka
-    m_EditorClassIdentifier: null
-    maxStack: 1
-    weight: 0.5
-    price: 0
-    sellable: 0
-    personalizable: 0
-    maxDurability: 1000
-    destroyable: 1
-    toolTip: "<b>{NAME}</b>\nRestores some health.\n\nRestores {USAGEHEALTH} Health on use.\n\nAmount: {AMOUNT}\nDurability: {DURABILITY}%"
-    image: { fileID: 21300000, guid: f61a19c72ebb4feeb8a150c49c01cd00, type: 3 }
-    drop: { fileID: 114666906706450464, guid: 48e0d114bba8f4284b6b34b7c4b6ed68, type: 3 }
-    modelPrefab: { fileID: 0 }
-    type: Medical
-    hide: 0
-    content: null
-    notes: null
-    category: Consumable
-    keepUsingWhileButtonDown: 0
-    successfulUseSound: { fileID: 0 }
-    failedUseSound: { fileID: 0 }
-    emptySound: { fileID: 0 }
-    cooldown: 1
-    _cooldownCategory: Consumable
-    shoulderLookAtWhileHolding: 0
-    useDirectly: 0
-    usageHealth: 50
-    usageHydration: 0
-    usageNutrition: 0
-    duration: 600.0
-    usageFov: 0
-    id: 8EM3
-    key: vodka
-    fullName: Vodka
-    pathCategory: Medicine
-    class: Medicine
-    purpose: 'Weak Radiation Cleansing'
-    toxicity: 25.0
-    radiationAccumulation: [-1.5]
-    text: 'Warms and slowly removes radiation from the body, but has side effects.'
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbc25bef1e7c4f4aa348edf964275e9, type: 3}
+  m_Name: Vodka
+  m_EditorClassIdentifier: null
+  id: 8EM3
+  key: vodka
+  fullName: Vodka
+  pathCategory: Medicine
+  weight: 0.5
+  text: Warms and slowly removes radiation from the body, but has side effects.
+  maxStack: 1
+  price: 200
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 1
+  toolTip: '<b>{NAME}</b>
+
+    Restores some health.
+
+
+    Restores {USAGEHEALTH}
+    Health on use.
+
+
+    Amount: {AMOUNT}
+
+    Durability: {DURABILITY}%'
+  image: {fileID: 21300000, guid: 35c35c65f0fd4ae1a5350b1c972d3199, type: 3}
+  drop: {fileID: 114666906706450464, guid: 48e0d114bba8f4284b6b34b7c4b6ed68, type: 3}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: null
+  notes: null
+  rank: 
+  drawTime: 0.5
+  category: Consumable
+  keepUsingWhileButtonDown: 0
+  successfulUseSound:
+  - {fileID: 0}
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 1
+  _cooldownCategory: Consumable
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: ffffffff
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  usageHealth: 50
+  usageHydration: 0
+  usageNutrition: 0
+  usageFov: 0
+  purpose: Weak Radiation Cleansing
+  duration: 600
+  toxicity: 25

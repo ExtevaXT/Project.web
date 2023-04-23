@@ -2,26 +2,53 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: wD0P
-    key: mag_val30
-    fullName: '30-Round Clip for VSS Val'
-    pathCategory: Attachment/Mag
-    attachmentMetaGroup: 3
-    attachmentMetaId: c
-    rank: Veteran
-    class: Clips
-    weight: 0.45
-    clipSize: 30.0
-    suitableFor: ['AS Val', 'VSS Vintorez']
-    image: { fileID: 21300000, guid: a6dfcedf01ad4d3d8a4c6ee0774f1d37, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: '30-Round Clip for VSS Val'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: 32a377c6479c4cc3bef22c391cccb967, type: 2 }, { fileID: 11400000, guid: 251f821a15f6472f9cbc7a416b4324a4, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: 30-Round Clip for VSS Val
+  m_EditorClassIdentifier: null
+  id: wD0P
+  key: mag_val30
+  fullName: 30-Round Clip for VSS Val
+  pathCategory: Attachment/Mag
+  weight: 0.45
+  text: 
+  maxStack: 1
+  price: 500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: fcbf120f30a74ddda9db92c0def88deb, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 99
+  attachmentMetaGroup: 3
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - AS Val
+  - VSS Vintorez
+  clipSize: 30
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

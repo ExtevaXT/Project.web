@@ -25,6 +25,23 @@
             @else
                 {!! $item['text'] ?? 'No description provided' !!}
             @endif
+            @if(file_exists(public_path($model = 'assets/Models/'.$item['pathCategory'].'/'.$item['m_Name'].'.glb')))
+                <h4 class="text-center mt-3">Model viewer</h4>
+                <model-viewer
+                    alt=""
+                    src="{{asset($model)}}"
+                    ar
+                    shadow-intensity="1"
+                    shadow-softness="1"
+                    exposure="0.5"
+                    camera-controls
+                    touch-action="pan-y"
+                    class="model-size"
+                    interaction-prompt="none"
+                >
+                    <!-- Import the component -->
+                    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+            @endif
             </div>
         </div>
         <div class="main-right">
@@ -36,10 +53,12 @@
                             <div class="BlockTable-data">Name</div>
                             <div class="BlockTable-data">{{$item['fullName']}}</div>
                         </div>
+                        @isset($item['class'])
                         <div class="BlockTable-row">
                             <div class="BlockTable-data">Type</div>
                             <div class="BlockTable-data">{{$item['class']}}</div>
                         </div>
+                        @endisset
                         <div class="BlockTable-row">
                             <div class="BlockTable-data">Weight</div>
                             <div class="BlockTable-data">{{$item['weight'] ?? 0}} kg</div>

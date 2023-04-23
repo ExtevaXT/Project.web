@@ -2,26 +2,55 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 20Aa
-    key: '21011'
-    fullName: 'Hunter’s Machete'
-    pathCategory: Weapon/Melee
-    rank: Stalker
-    class: 'Melee Weapons'
-    weight: 0.42
-    common: 50.0
-    strong: 120.0
-    piercing: 40.0
-    bloodlustChance: 35.0
-    text: 'This machete, with its strong steel blade and attached wooden hilt, was intended for hunting and tourism. The construction, which is entirely made of metal, allows for high durability.'
-    image: { fileID: 21300000, guid: 5109756f40de486d90cf7748d2fc9c16, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Hunter’s Machete'
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: "Hunter\u2019s Machete"
+  m_EditorClassIdentifier: null
+  id: 20Aa
+  key: 21011
+  fullName: "Hunter\u2019s Machete"
+  pathCategory: Weapon/Melee
+  weight: 0.42
+  text: This machete, with its strong steel blade and attached wooden hilt, was intended
+    for hunting and tourism. The construction, which is entirely made of metal, allows
+    for high durability.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: f22d0e0c1f40444c99852fb038f77267, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 50
+  strong: 120
+  piercing: 40
+  bloodlustChance: 35

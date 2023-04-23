@@ -2,25 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: XYXy
-    key: antidot_3
-    fullName: '3rd Class Antidote'
-    pathCategory: Medicine
-    class: Medicine
-    weight: 0.1
-    purpose: 'Bioinfection Protection'
-    duration: 240.0
-    toxicity: 50.0
-    biologicalDmgFactor: [50.0]
-    text: 'A first-aid treatment used for chemical burns of the larynx and lungs, or chemical poisoning. Does not protect against the direct effects of acid on the body.'
-    image: { fileID: 21300000, guid: 7df774f1c3ce4d19a4aa31b78e392e9c, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: '3rd Class Antidote'
-    m_Script: { fileID: 11500000, guid: 8fbc25bef1e7c4f4aa348edf964275e9, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbc25bef1e7c4f4aa348edf964275e9, type: 3}
+  m_Name: 3rd Class Antidote
+  m_EditorClassIdentifier: null
+  id: XYXy
+  key: antidot_3
+  fullName: 3rd Class Antidote
+  pathCategory: Medicine
+  weight: 0.1
+  text: A first-aid treatment used for chemical burns of the larynx and lungs, or
+    chemical poisoning. Does not protect against the direct effects of acid on the
+    body.
+  maxStack: 1
+  price: 1500
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: de8b3cee293e4f37b24d90c549062baf, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 32000000
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  usageHealth: 0
+  usageHydration: 0
+  usageNutrition: 0
+  usageFov: 0
+  purpose: Bioinfection Protection
+  duration: 240
+  toxicity: 50

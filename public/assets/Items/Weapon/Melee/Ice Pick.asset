@@ -2,26 +2,54 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: PLqE
-    key: '21013'
-    fullName: 'Ice Pick'
-    pathCategory: Weapon/Melee
-    rank: Veteran
-    class: 'Melee Weapons'
-    weight: 0.65
-    common: 40.0
-    strong: 100.0
-    piercing: 70.0
-    bloodlustChance: 55.0
-    text: 'A tool used by mountain climbers for breaking ice when climbing mountain peaks. It’s great for breaking other materials too, not just ice.'
-    image: { fileID: 21300000, guid: f1b498b43f3e44898da5f8d0270aad1c, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Ice Pick'
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: Ice Pick
+  m_EditorClassIdentifier: null
+  id: PLqE
+  key: 21013
+  fullName: Ice Pick
+  pathCategory: Weapon/Melee
+  weight: 0.65
+  text: "A tool used by mountain climbers for breaking ice when climbing mountain
+    peaks. It\u2019s great for breaking other materials too, not just ice."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 299bd5bdcd66422d9ae62bbe48cff21d, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 40
+  strong: 100
+  piercing: 70
+  bloodlustChance: 55

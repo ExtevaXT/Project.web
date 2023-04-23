@@ -2,27 +2,52 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Q8k1
-    key: mag_pp200040
-    fullName: 'PP-2000 Clip'
-    pathCategory: Attachment/Mag
-    attachmentMetaGroup: 3
-    attachmentMetaId: \
-    rank: Newbie
-    class: Clips
-    weight: 0.26
-    clipSize: 40.0
-    drawTime: 4.999995
-    reloadTime: 4.999995
-    suitableFor: [PP-2000]
-    image: { fileID: 21300000, guid: 65ed0bcddbee4d72babbdc04d12a1d42, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'PP-2000 Clip'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: PP-2000 Clip
+  m_EditorClassIdentifier: null
+  id: Q8k1
+  key: mag_pp200040
+  fullName: PP-2000 Clip
+  pathCategory: Attachment/Mag
+  weight: 0.26
+  text: 
+  maxStack: 1
+  price: 500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 0e5ec728142344e9a530dc70da386512, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 92
+  attachmentMetaGroup: 3
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - PP-2000
+  clipSize: 40
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 4.999995
+  damageDistant: 0
+  reloadTime: 4.999995
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

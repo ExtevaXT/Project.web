@@ -2,42 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: OOgx
-    key: groza-1
-    fullName: 'Worn Groza'
-    pathCategory: 'Weapon/Assault rifle'
-    rank: Veteran
-    class: 'Assault Rifles'
-    weight: 2.9100003
-    maxDurability: 100.0
-    ammoType: 9x39
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 42.0
-    clipSize: 20.0
-    distance: 145.0
-    rateOfFire: 680.0
-    reloadTime: 3.75
-    tacticalReloadTime: 3.1
-    spread: 0.628
-    hipSpread: 2.747
-    recoil: 0.4
-    horizontalRecoil: 0.17
-    drawTime: 0.95
-    aimSwitch: 0.2
-    startDamage: 42.0
-    damageDecreaseStart: 15.0
-    endDamage: 26.0
-    damageDecreaseEnd: 60.0
-    maxDistance: 145.0
-    text: 'A combination of an assault rifle and a grenade launcher, 70% based on AK-74-type assault rifles (the main differences are the 9x39 mm caliber, the bullpup configuration, and greater possibilities for modernization). It was developed as an armament for rapid reaction units. It is highly valued by stalkers and soldiers, due to the fact that it is capable of reliably eliminating an opponent in body armor, even behind cover.'
-    image: { fileID: 21300000, guid: bf87ce4d9c6541d1a6c27354f8947aca, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn Groza'
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Worn Groza
+  m_EditorClassIdentifier: null
+  id: OOgx
+  key: groza-1
+  fullName: Worn Groza
+  pathCategory: Weapon/Assault rifle
+  weight: 2.9100003
+  text: 
+  maxStack: 1
+  price: 280000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 27e52bb64e454efbadd39e30a9b9b113, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.95
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 42
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 3.1
+  reloadTime: 3.75
+  clipSize: 20
+  ammoType: 9x39
+  spread: 0.628
+  hipSpread: 2.747
+  recoil: 0.4
+  horizontalRecoil: 0.17
+  aimSwitch: 0.2
+  startDamage: 42
+  damageDecreaseStart: 15
+  endDamage: 26
+  damageDecreaseEnd: 60
+  distance: 145
+  maxDistance: 145
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

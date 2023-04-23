@@ -9,7 +9,7 @@ MonoBehaviour:
     class: Other
     weight: 0.1
     text: 'When used while upgrading an item, these allow you to prevent the item from losing its current level if the upgrade fails.'
-    image: { fileID: 21300000, guid: d731f262bd3244cf8d627f43cda22a34, type: 3 }
+    image: { fileID: 21300000, guid: 40f696ee26cd481597f7c7974cc97b0a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Spare Parts'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

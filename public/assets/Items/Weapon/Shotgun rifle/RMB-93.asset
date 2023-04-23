@@ -2,41 +2,91 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Ry7n
-    key: rmo93
-    fullName: RMB-93
-    pathCategory: 'Weapon/Shotgun rifle'
-    rank: Stalker
-    class: 'Shotguns and Rifles'
-    weight: 2.7
-    maxDurability: 100.0
-    ammoType: '12 caliber'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 195.0
-    clipSize: 7.0
-    distance: 60.0
-    rateOfFire: 80.0
-    reloadTime: 4.8
-    spread: 2.75
-    hipSpread: 4.5
-    recoil: 4.0
-    horizontalRecoil: 1.5
-    drawTime: 0.75
-    aimSwitch: 0.25
-    startDamage: 195.0
-    damageDecreaseStart: 8.0
-    endDamage: 34.0
-    damageDecreaseEnd: 36.0
-    maxDistance: 60.0
-    text: 'The hunting version of the combat pump-action shotgun. It was developed in 1993 for special units of Russia’s law-enforcement agencies.'
-    image: { fileID: 21300000, guid: 2445490be5784e6bbd5ecf6f03eb3564, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: RMB-93
-    m_Script: { fileID: 11500000, guid: bdae6158522d46441a5aace99f60b060, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdae6158522d46441a5aace99f60b060, type: 3}
+  m_Name: RMB-93
+  m_EditorClassIdentifier: null
+  id: Ry7n
+  key: rmo93
+  fullName: RMB-93
+  pathCategory: Weapon/Shotgun rifle
+  weight: 2.7
+  maxStack: 1
+  price: 750000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 95bcc9d333594117a11c8ea86fe7226a, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.75
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 195
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 3d302f9bac424b1fb8863785f4434704, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 4.8
+  clipSize: 7
+  ammoType: 12 caliber
+  spread: 2.75
+  hipSpread: 4.5
+  recoil: 4
+  horizontalRecoil: 1.5
+  aimSwitch: 0.25
+  startDamage: 195
+  damageDecreaseStart: 8
+  endDamage: 34
+  damageDecreaseEnd: 36
+  distance: 60
+  maxDistance: 60
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}
+  damageLossDistanceMin: 12
+  damageLossDistanceMax: 60
+  damageMin: 10
+  amountOfProjectiles: 8
+  distanceMultiplier: 0
+  spreadHorizontal: 10
+  spreadVertical: 10

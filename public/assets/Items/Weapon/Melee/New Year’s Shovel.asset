@@ -2,26 +2,53 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: aVDN
-    key: '21026'
-    fullName: 'New Year’s Shovel'
-    pathCategory: Weapon/Melee
-    rank: Stalker
-    class: 'Melee Weapons'
-    weight: 0.6
-    common: 55.0
-    strong: 130.0
-    piercing: 40.0
-    bloodlustChance: 25.0
-    text: 'For shoveling snowdrifts. Decent in close combat, too.'
-    image: { fileID: 21300000, guid: bd692aa968d1411cb62137d6eb4fc46f, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'New Year’s Shovel'
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: "New Year\u2019s Shovel"
+  m_EditorClassIdentifier: null
+  id: aVDN
+  key: 21026
+  fullName: "New Year\u2019s Shovel"
+  pathCategory: Weapon/Melee
+  weight: 0.6
+  text: For shoveling snowdrifts. Decent in close combat, too.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 324425200d464b59895cdb9d10c2519b, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 55
+  strong: 130
+  piercing: 40
+  bloodlustChance: 25

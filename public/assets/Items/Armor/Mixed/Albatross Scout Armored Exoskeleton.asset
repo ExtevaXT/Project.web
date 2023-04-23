@@ -2,42 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: gD6n
-    key: albatros_scout
-    fullName: 'Albatross Scout Armored Exoskeleton'
-    pathCategory: Armor/Mixed
-    rank: Veteran
-    class: Combo
-    weight: 18.0
-    maxDurability: 100.0
-    speedModifier: [15.0]
-    maxWeightBonus: [20.0]
-    radiationAccumulation: [-1.0]
-    psychoAccumulation: [-1.0]
-    bleedingAccumulation: [-0.5]
-    nightVision: 1
-    bulletDmgFactor: [73.0]
-    tearDmgFactor: [121.0]
-    explosionDmgFactor: [124.0]
-    electraDmgFactor: [278.0]
-    burnDmgFactor: [278.0]
-    chemicalBurnDmgFactor: [278.0]
-    radiationProtection: [240.0]
-    thermalProtection: [100.0]
-    biologicalProtection: [300.0]
-    psychoProtection: [240.0]
-    bleedingProtection: [56.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'Use of cheaper protection made it possible to lower the cost of the main Albatross series. The first modification to this armored exoskeleton was the Albatross Scout.'
-    image: { fileID: 21300000, guid: 4e96d23be7ed4203bdcc325e0ed009a8, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Albatross Scout Armored Exoskeleton'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Albatross Scout Armored Exoskeleton
+  m_EditorClassIdentifier: null
+  id: gD6n
+  key: albatros_scout
+  fullName: Albatross Scout Armored Exoskeleton
+  pathCategory: Armor/Mixed
+  weight: 18
+  text: Use of cheaper protection made it possible to lower the cost of the main
+    Albatross series. The first modification to this armored exoskeleton was the
+    Albatross Scout.
+  maxStack: 1
+  price: 5000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: c3ec9703d5e749119628725dfdeab07e, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 0f000000
+  maxWeightBonus: 14000000
+  bleedingProtection: 38000000
+  radiationProtection: f0000000
+  psychoProtection: f0000000
+  thermalProtection: 64000000
+  biologicalProtection: 2c010000
+  psychoAccumulation: ffffffff
+  radiationAccumulation: ffffffff
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 00000000
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 49000000
+  tearDmgFactor: 79000000
+  explosionDmgFactor: 7c000000
+  electraDmgFactor: 16010000
+  burnDmgFactor: 16010000
+  chemicalBurnDmgFactor: 16010000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

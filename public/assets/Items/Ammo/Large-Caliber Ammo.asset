@@ -2,23 +2,41 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 9r8V
-    key: 12st
-    fullName: 'Large-Caliber Ammo'
-    pathCategory: Ammo
-    class: Ammo
-    weight: 0.2
-    piercing: 60.0
-    bleeding: 100.0
-    stoppingPower: 100.0
-    image: { fileID: 21300000, guid: b7913380281b4a9b85998a8c180c312a, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Large-Caliber Ammo'
-    m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3}
+  m_Name: Large-Caliber Ammo
+  m_EditorClassIdentifier: null
+  id: 9r8V
+  key: 12st
+  fullName: Large-Caliber Ammo
+  pathCategory: Ammo
+  weight: 0.2
+  text: 
+  maxStack: 1
+  price: 1000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 395cd7fa8d294bc99b9cb77503400b64, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  bleeding: 100
+  stoppingPower: 100
+  piercing: 60
+  damage: 0
+  combustion: 0
+  numBullets: 0
+  damageDistant: 0
+  spread: 0
+  absoluteDamage: 0

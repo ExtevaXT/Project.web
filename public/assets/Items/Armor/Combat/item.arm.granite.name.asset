@@ -27,7 +27,7 @@ MonoBehaviour:
     compatibleBackpacks: light
     compatibleContainers: standard
     text: item.arm.granite.additional_stats_tip
-    image: { fileID: 21300000, guid: 92ceaaaf7db24b3f9b49a3b529b4677c, type: 3 }
+    image: { fileID: 21300000, guid: f3840247919b49ebb500c24d1f308780, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: item.arm.granite.name
     m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }

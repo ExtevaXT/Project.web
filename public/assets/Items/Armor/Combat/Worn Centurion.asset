@@ -2,40 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: nb5a
-    key: centurion-1
-    fullName: 'Worn Centurion'
-    pathCategory: Armor/Combat
-    rank: Master
-    class: Combat
-    weight: 40.0
-    maxDurability: 100.0
-    staminaBonus: [-15.0]
-    speedModifier: [-3.0]
-    maxWeightBonus: [25.0]
-    nightVision: 1
-    bulletDmgFactor: [167.0]
-    tearDmgFactor: [167.0]
-    explosionDmgFactor: [230.0]
-    electraDmgFactor: [65.0]
-    burnDmgFactor: [65.0]
-    chemicalBurnDmgFactor: [65.0]
-    radiationProtection: [200.0]
-    thermalProtection: [40.0]
-    biologicalProtection: [200.0]
-    psychoProtection: [180.0]
-    bleedingProtection: [63.0]
-    compatibleBackpacks: light
-    compatibleContainers: standard
-    text: 'Virtually the perfect armor for combat. Good protection from bullets and fragmentation, comfortable, the best night-vision goggles—not everyone can afford a masterpiece like this.'
-    image: { fileID: 21300000, guid: 3408811de6914465b6f88783b00712ae, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn Centurion'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Worn Centurion
+  m_EditorClassIdentifier: null
+  id: nb5a
+  key: centurion-1
+  fullName: Worn Centurion
+  pathCategory: Armor/Combat
+  weight: 40
+  text: "Virtually the perfect armor for combat. Good protection from bullets and
+    fragmentation, comfortable, the best night-vision goggles\u2014not everyone can
+    afford a masterpiece like this."
+  maxStack: 1
+  price: 1200000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: eb8e3a2aff454314a803de0af977a3d0, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f1ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: fdffffff
+  maxWeightBonus: 19000000
+  bleedingProtection: 3f000000
+  radiationProtection: c8000000
+  psychoProtection: b4000000
+  thermalProtection: 28000000
+  biologicalProtection: c8000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: a7000000
+  tearDmgFactor: a7000000
+  explosionDmgFactor: e6000000
+  electraDmgFactor: 41000000
+  burnDmgFactor: 41000000
+  chemicalBurnDmgFactor: 41000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: standard

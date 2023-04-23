@@ -2,37 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: zxdq
-    key: vorsa
-    fullName: 'Fleece Protective Suit'
-    pathCategory: Armor/Combat
-    rank: Stalker
-    class: Combat
-    weight: 8.0
-    maxDurability: 100.0
-    maxWeightBonus: [7.0]
-    bulletDmgFactor: [68.0]
-    tearDmgFactor: [204.0]
-    explosionDmgFactor: [93.0]
-    electraDmgFactor: [41.0]
-    burnDmgFactor: [41.0]
-    chemicalBurnDmgFactor: [41.0]
-    radiationProtection: [180.0]
-    thermalProtection: [20.0]
-    biologicalProtection: [140.0]
-    psychoProtection: [75.0]
-    bleedingProtection: [72.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'An improved version of the “Houndmaster.” Its protection is equally distributed across the whole body, which prevents any loss of mobility. The hockey mask was replaced with a hybrid of a ballistic mask and a respirator.'
-    image: { fileID: 21300000, guid: ad78f08ef63646e9a66182f0378a2a29, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Fleece Protective Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Fleece Protective Suit
+  m_EditorClassIdentifier: null
+  id: zxdq
+  key: vorsa
+  fullName: Fleece Protective Suit
+  pathCategory: Armor/Combat
+  weight: 8
+  text: "An improved version of the \u201CHoundmaster.\u201D Its protection is equally
+    distributed across the whole body, which prevents any loss of mobility. The hockey
+    mask was replaced with a hybrid of a ballistic mask and a respirator."
+  maxStack: 1
+  price: 450000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: fea30ccc1d484ed19afde16d2b193085, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 07000000
+  bleedingProtection: 48000000
+  radiationProtection: b4000000
+  psychoProtection: 4b000000
+  thermalProtection: 14000000
+  biologicalProtection: 8c000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 44000000
+  tearDmgFactor: cc000000
+  explosionDmgFactor: 5d000000
+  electraDmgFactor: 29000000
+  burnDmgFactor: 29000000
+  chemicalBurnDmgFactor: 29000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

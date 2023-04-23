@@ -2,40 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 0jRE
-    key: spanner
-    fullName: 'RAPS Spanner'
-    pathCategory: Armor/Mixed
-    rank: Veteran
-    class: Combo
-    weight: 28.0
-    maxDurability: 100.0
-    staminaBonus: [-10.0]
-    maxWeightBonus: [10.0]
-    heal: [2.25]
-    nightVision: 1
-    bulletDmgFactor: [90.0]
-    tearDmgFactor: [105.0]
-    explosionDmgFactor: [125.0]
-    electraDmgFactor: [533.0]
-    burnDmgFactor: [533.0]
-    chemicalBurnDmgFactor: [533.0]
-    radiationProtection: [225.0]
-    thermalProtection: [225.0]
-    biologicalProtection: [285.0]
-    psychoProtection: [225.0]
-    bleedingProtection: [47.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: spacious
-    text: 'A reinforced anomalous protection suit inspired by the AH-4. It has the same psy-emission offset device and absorbent capacitor, but the design of the suit has been reworked. An advanced air-filtration system and a frame to fit bulky backpacks were added, the armor was strengthened.'
-    image: { fileID: 21300000, guid: 1f0d75654d4e485c84018f75f3373982, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'RAPS Spanner'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: RAPS Spanner
+  m_EditorClassIdentifier: null
+  id: 0jRE
+  key: spanner
+  fullName: RAPS Spanner
+  pathCategory: Armor/Mixed
+  weight: 28
+  text: A reinforced anomalous protection suit inspired by the AH-4. It has the same
+    psy-emission offset device and absorbent capacitor, but the design of the suit
+    has been reworked. An advanced air-filtration system and a frame to fit bulky
+    backpacks were added, the armor was strengthened.
+  maxStack: 1
+  price: 2500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 68ee1804209041d2b0b4e552763b46cf, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f6ffffff
+  staminaRegenerationBonus: 
+  heal: 02000000
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 0a000000
+  bleedingProtection: 2f000000
+  radiationProtection: e1000000
+  psychoProtection: e1000000
+  thermalProtection: e1000000
+  biologicalProtection: 1d010000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 5a000000
+  tearDmgFactor: 69000000
+  explosionDmgFactor: 7d000000
+  electraDmgFactor: 15020000
+  burnDmgFactor: 15020000
+  chemicalBurnDmgFactor: 15020000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: superheavy
+  compatibleContainers: spacious

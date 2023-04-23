@@ -2,39 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: NQmA
-    key: ao2
-    fullName: 'AH-2 Nomad Suit'
-    pathCategory: Armor/Mixed
-    rank: Newbie
-    class: Combo
-    weight: 4.5
-    maxDurability: 100.0
-    staminaBonus: [-5.0]
-    heal: [1.25]
-    nightVision: 1
-    bulletDmgFactor: [40.0]
-    tearDmgFactor: [46.0]
-    explosionDmgFactor: [56.0]
-    electraDmgFactor: [267.0]
-    burnDmgFactor: [267.0]
-    chemicalBurnDmgFactor: [267.0]
-    radiationProtection: [135.0]
-    thermalProtection: [135.0]
-    biologicalProtection: [135.0]
-    psychoProtection: [90.0]
-    bleedingProtection: [28.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'The AH-1 suit enjoyed amazing popularity, and so an improved modification was launched: the AH-2. It differs in terms of its increased protection from all sources of damage.'
-    image: { fileID: 21300000, guid: 871917b21efb401f8e03c238e535f48e, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'AH-2 Nomad Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: AH-2 Nomad Suit
+  m_EditorClassIdentifier: null
+  id: NQmA
+  key: ao2
+  fullName: AH-2 Nomad Suit
+  pathCategory: Armor/Mixed
+  weight: 4.5
+  text: 'The AH-1 suit enjoyed amazing popularity, and so an improved modification
+    was launched: the AH-2. It differs in terms of its increased protection from
+    all sources of damage.'
+  maxStack: 1
+  price: 150000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: cbccb8026cd9427ab5b924f9ba4acc16, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Newbie
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: fbffffff
+  staminaRegenerationBonus: 
+  heal: 01000000
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 1c000000
+  radiationProtection: 87000000
+  psychoProtection: 5a000000
+  thermalProtection: 87000000
+  biologicalProtection: 87000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 28000000
+  tearDmgFactor: 2e000000
+  explosionDmgFactor: 38000000
+  electraDmgFactor: 0b010000
+  burnDmgFactor: 0b010000
+  chemicalBurnDmgFactor: 0b010000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

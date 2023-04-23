@@ -2,37 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Q1bP
-    key: mocking-1
-    fullName: 'Worn Mockingbird Armored Suit'
-    pathCategory: Armor/Research
-    rank: Stalker
-    class: Explorer
-    weight: 9.0
-    maxDurability: 100.0
-    maxWeightBonus: [10.0]
-    bulletDmgFactor: [75.0]
-    tearDmgFactor: [80.0]
-    explosionDmgFactor: [114.0]
-    electraDmgFactor: [53.0]
-    burnDmgFactor: [53.0]
-    chemicalBurnDmgFactor: [53.0]
-    radiationProtection: [150.0]
-    thermalProtection: [90.0]
-    biologicalProtection: [150.0]
-    psychoProtection: [100.0]
-    bleedingProtection: [46.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'The stalker’s Hawk, but instead of the regular suit, this is a hunter’s suit. Other pieces of gear are chosen to match. A true bandit has to look stylish.'
-    image: { fileID: 21300000, guid: b6bebceb0f624f609ad62e4c3ad84e95, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn Mockingbird Armored Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Worn Mockingbird Armored Suit
+  m_EditorClassIdentifier: null
+  id: Q1bP
+  key: mocking-1
+  fullName: Worn Mockingbird Armored Suit
+  pathCategory: Armor/Research
+  weight: 9
+  text: "The stalker\u2019s Hawk, but instead of the regular suit, this is a hunter\u2019s
+    suit. Other pieces of gear are chosen to match. A true bandit has to look stylish."
+  maxStack: 1
+  price: 150000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 57c802e6d5ad4882b2646c4fcb5a060f, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 0a000000
+  bleedingProtection: 2e000000
+  radiationProtection: 96000000
+  psychoProtection: 64000000
+  thermalProtection: 5a000000
+  biologicalProtection: 96000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 4b000000
+  tearDmgFactor: 50000000
+  explosionDmgFactor: 72000000
+  electraDmgFactor: 35000000
+  burnDmgFactor: 35000000
+  chemicalBurnDmgFactor: 35000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

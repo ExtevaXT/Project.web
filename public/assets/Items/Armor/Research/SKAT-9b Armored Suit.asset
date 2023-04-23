@@ -2,39 +2,87 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: MAQB
-    key: skat9b
-    fullName: 'SKAT-9b Armored Suit'
-    pathCategory: Armor/Research
-    rank: Master
-    class: Explorer
-    weight: 14.0
-    maxDurability: 100.0
-    staminaBonus: [-8.0]
-    maxWeightBonus: [10.0]
-    nightVision: 1
-    bulletDmgFactor: [130.0]
-    tearDmgFactor: [140.0]
-    explosionDmgFactor: [189.0]
-    electraDmgFactor: [326.0]
-    burnDmgFactor: [326.0]
-    chemicalBurnDmgFactor: [326.0]
-    radiationProtection: [215.0]
-    thermalProtection: [150.0]
-    biologicalProtection: [300.0]
-    psychoProtection: [200.0]
-    bleedingProtection: [58.0]
-    compatibleBackpacks: light
-    compatibleContainers: spacious
-    text: 'An armored suit made from components analogous to those in the SKAT-9m suit. The expensive NVG has been replaced with a more widespread model. The resulting cost reduction made it possible to install oxygen tanks and an advanced air-filtration system. This means the armor is maximally adapted for working in areas of the Zone with high levels of radiation and biological infection.'
-    image: { fileID: 21300000, guid: 3a30cbed4ecb4caaafe155a72a6d6dc7, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'SKAT-9b Armored Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: SKAT-9b Armored Suit
+  m_EditorClassIdentifier: null
+  id: MAQB
+  key: skat9b
+  fullName: SKAT-9b Armored Suit
+  pathCategory: Armor/Research
+  weight: 14
+  text: An armored suit made from components analogous to those in the SKAT-9m suit.
+    The expensive NVG has been replaced with a more widespread model. The resulting
+    cost reduction made it possible to install oxygen tanks and an advanced air-filtration
+    system. This means the armor is maximally adapted for working in areas of the
+    Zone with high levels of radiation and biological infection.
+  maxStack: 1
+  price: 2000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 7ade177477fe4647a603686c519bb61b, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f8ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 0a000000
+  bleedingProtection: 3a000000
+  radiationProtection: d7000000
+  psychoProtection: c8000000
+  thermalProtection: 96000000
+  biologicalProtection: 2c010000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 82000000
+  tearDmgFactor: 8c000000
+  explosionDmgFactor: bd000000
+  electraDmgFactor: 46010000
+  burnDmgFactor: 46010000
+  chemicalBurnDmgFactor: 46010000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: spacious

@@ -2,26 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: n8w9
-    key: jarka_fireball
-    fullName: Fireball
-    pathCategory: Artefact/Thermal
-    class: Thermal
-    weight: 0.3
-    common: 'Not studied'
-    maxDurability: 100.0
-    thermalDmgFactor: [5.0, 15.0]
-    radiationAccumulation: [2.0, 5.0]
-    thermalAccumulation: [-3.0, -1.0]
-    text: 'This artifact got its name from its appearance alone. In fact, it won’t burn you—it has the inexplicable ability to maintain a constant comfortable temperature in a small surrounding area.'
-    image: { fileID: 21300000, guid: d854a55370904bb3b054863d1ea4bb2c, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Fireball
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Fireball
+  m_EditorClassIdentifier: null
+  id: n8w9
+  key: jarka_fireball
+  fullName: Fireball
+  pathCategory: Artefact/Thermal
+  weight: 0.3
+  text: "This artifact got its name from its appearance alone. In fact, it won\u2019t
+    burn you\u2014it has the inexplicable ability to maintain a constant comfortable
+    temperature in a small surrounding area."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: db6accd220bb4de3b8445b791a0ac3d9, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 0200000005000000
+  biologicalAccumulation: 
+  thermalAccumulation: fdffffffffffffff
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 050000000f000000
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

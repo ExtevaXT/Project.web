@@ -2,29 +2,70 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: j7YO
-    key: silencer_pbs4
-    fullName: PBS-4
-    pathCategory: Attachment/Barrel
-    attachmentMetaGroup: 0
-    attachmentMetaId: 'Y'
-    rank: Stalker
-    class: 'Muzzles and Silencers'
-    weight: 0.61
-    spread: -9.000004
-    drawTime: 10.000002
-    damageDistant: -22.000004
-    text: 'ATTENTION: if you use a silencer, the enemy won’t know where you are firing from.'
-    suitableFor: [AKS-74U, AKS-74, AKM, 'AN-94 Abakan', AK-103, A-545, AEK-971, 'Kbk wz. 88 Tantal', SOK-94, AK-105, RPK, RPK-16, MTs-116M, AK-12, AK-308, Rapier, SKS, SVD]
-    image: { fileID: 21300000, guid: 074817065f444b089d147c79f4450fb6, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: PBS-4
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: 6e061c8424784495b473c336266f2196, type: 2 }, { fileID: 11400000, guid: 6a5d18711638447e831c5e80d921ad3b, type: 2 }, { fileID: 11400000, guid: ebb241c742234e3aa2373ad17f2a9ed1, type: 2 }, { fileID: 11400000, guid: 64f565e6ccc040bc810d4c4cad0103fa, type: 2 }, { fileID: 11400000, guid: 473a1753ac314080ba75f71352c1fb72, type: 2 }, { fileID: 11400000, guid: 353549dbb516496e80e2d8d479eb67f2, type: 2 }, { fileID: 11400000, guid: cba26f26a7d2445ea71c111e085195b1, type: 2 }, { fileID: 11400000, guid: 0b4138c0f552446a98d12b5167718749, type: 2 }, { fileID: 11400000, guid: 9dfb1adf5ebe41179cc7ea969f6883ed, type: 2 }, { fileID: 11400000, guid: 78ee10e848834b92be4f14fcee969dad, type: 2 }, { fileID: 11400000, guid: 4dec623e3d0447fb8ad07242910b79d0, type: 2 }, { fileID: 11400000, guid: 072d5ce3fae84ea8a31a03fc8860d31a, type: 2 }, { fileID: 11400000, guid: e9bb5caf793d4678832784ef57c7e108, type: 2 }, { fileID: 11400000, guid: 3f7b75414d5e44538fccd02b875af575, type: 2 }, { fileID: 11400000, guid: 69418dc108f34512a8527e9029c48960, type: 2 }, { fileID: 11400000, guid: 5202b5c71aa547de93c4f367cfc0a03f, type: 2 }, { fileID: 11400000, guid: 88cf20d762604f548111e43b611d85af, type: 2 }, { fileID: 11400000, guid: f4f3d513157b4f1ca6fccb57acc1ac2d, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: PBS-4
+  m_EditorClassIdentifier: null
+  id: j7YO
+  key: silencer_pbs4
+  fullName: PBS-4
+  pathCategory: Attachment/Barrel
+  weight: 0.61
+  text: "ATTENTION: if you use a silencer, the enemy won\u2019t know where you are
+    firing from."
+  maxStack: 1
+  price: 100000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 1c3dd4c674c84c9fa5e5c44481d2f33f, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 89
+  attachmentMetaGroup: 0
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - AKS-74U
+  - AKS-74
+  - AKM
+  - AN-94 Abakan
+  - AK-103
+  - A-545
+  - AEK-971
+  - Kbk wz. 88 Tantal
+  - SOK-94
+  - AK-105
+  - RPK
+  - RPK-16
+  - MTs-116M
+  - AK-12
+  - AK-308
+  - Rapier
+  - SKS
+  - SVD
+  clipSize: 0
+  spread: -9.000004
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 10.000002
+  damageDistant: -22
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

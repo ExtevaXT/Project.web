@@ -2,29 +2,64 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Ro3b
-    key: mag_rumag54560
-    fullName: '5.45 Clip'
-    pathCategory: Attachment/Mag
-    attachmentMetaGroup: 3
-    attachmentMetaId: V
-    rank: Veteran
-    class: Clips
-    weight: 0.3
-    clipSize: 60.0
-    jamming: 0.006
-    drawTime: 14.999998
-    reloadTime: 20.000004
-    suitableFor: [AKS-74U, AKS-74, 'AN-94 Abakan', A-545, AEK-971, 'Kbk wz. 88 Tantal', AK-105, 'OTs-14M Shtorm', RPK-16, TKB-0146M, AK-12, RPK-74, Rapier]
-    image: { fileID: 21300000, guid: c4aa9b656acd4173b81f61a110686fff, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: '5.45 Clip'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: 6e061c8424784495b473c336266f2196, type: 2 }, { fileID: 11400000, guid: 6a5d18711638447e831c5e80d921ad3b, type: 2 }, { fileID: 11400000, guid: 64f565e6ccc040bc810d4c4cad0103fa, type: 2 }, { fileID: 11400000, guid: 353549dbb516496e80e2d8d479eb67f2, type: 2 }, { fileID: 11400000, guid: cba26f26a7d2445ea71c111e085195b1, type: 2 }, { fileID: 11400000, guid: 0b4138c0f552446a98d12b5167718749, type: 2 }, { fileID: 11400000, guid: 78ee10e848834b92be4f14fcee969dad, type: 2 }, { fileID: 11400000, guid: 4608a553c4ac4ba4900c405702ce3797, type: 2 }, { fileID: 11400000, guid: 072d5ce3fae84ea8a31a03fc8860d31a, type: 2 }, { fileID: 11400000, guid: 8777593067f64bd4810960977d18bc34, type: 2 }, { fileID: 11400000, guid: 3f7b75414d5e44538fccd02b875af575, type: 2 }, { fileID: 11400000, guid: 493f0724b69442698a991472fab0472c, type: 2 }, { fileID: 11400000, guid: 5202b5c71aa547de93c4f367cfc0a03f, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: 5.45 Clip
+  m_EditorClassIdentifier: null
+  id: Ro3b
+  key: mag_rumag54560
+  fullName: 5.45 Clip
+  pathCategory: Attachment/Mag
+  weight: 0.3
+  text: 
+  maxStack: 1
+  price: 500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 8bed450bef0043d98c31810e548bae41, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 86
+  attachmentMetaGroup: 3
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - AKS-74U
+  - AKS-74
+  - AN-94 Abakan
+  - A-545
+  - AEK-971
+  - Kbk wz. 88 Tantal
+  - AK-105
+  - OTs-14M Shtorm
+  - RPK-16
+  - TKB-0146M
+  - AK-12
+  - RPK-74
+  - Rapier
+  clipSize: 60
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 14.999998
+  damageDistant: 0
+  reloadTime: 20.000004
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

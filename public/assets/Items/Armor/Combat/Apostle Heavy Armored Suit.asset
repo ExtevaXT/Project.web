@@ -2,39 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: XY9j
-    key: apostle
-    fullName: 'Apostle Heavy Armored Suit'
-    pathCategory: Armor/Combat
-    rank: Master
-    class: Combat
-    weight: 65.0
-    maxDurability: 100.0
-    staminaBonus: [-40.0]
-    speedModifier: [-20.0]
-    nightVision: 1
-    bulletDmgFactor: [256.0]
-    tearDmgFactor: [300.0]
-    explosionDmgFactor: [300.0]
-    electraDmgFactor: [53.0]
-    burnDmgFactor: [53.0]
-    chemicalBurnDmgFactor: [53.0]
-    radiationProtection: [200.0]
-    thermalProtection: [50.0]
-    biologicalProtection: [200.0]
-    psychoProtection: [170.0]
-    bleedingProtection: [75.0]
-    compatibleBackpacks: light
-    compatibleContainers: standard
-    text: 'When you see soldiers in this armor, be warned—the day of Judgment has come! These Covenant fanatics are bringing suffering to the world. But those who wear this armor are well protected from suffering due to the increased bullet resistance.'
-    image: { fileID: 21300000, guid: ab904d94591a4c8b85f2132cf30c821a, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Apostle Heavy Armored Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Apostle Heavy Armored Suit
+  m_EditorClassIdentifier: null
+  id: XY9j
+  key: apostle
+  fullName: Apostle Heavy Armored Suit
+  pathCategory: Armor/Combat
+  weight: 65
+  text: "When you see soldiers in this armor, be warned\u2014the day of Judgment
+    has come! These Covenant fanatics are bringing suffering to the world. But those
+    who wear this armor are well protected from suffering due to the increased bullet
+    resistance."
+  maxStack: 1
+  price: 5000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 28f19acf9c074b168ffd3bf352f1c09b, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: d8ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: ecffffff
+  maxWeightBonus: 
+  bleedingProtection: 4b000000
+  radiationProtection: c8000000
+  psychoProtection: aa000000
+  thermalProtection: 32000000
+  biologicalProtection: c8000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 00010000
+  tearDmgFactor: 2c010000
+  explosionDmgFactor: 2c010000
+  electraDmgFactor: 35000000
+  burnDmgFactor: 35000000
+  chemicalBurnDmgFactor: 35000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: standard

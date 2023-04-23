@@ -2,91 +2,126 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    m_ObjectHideFlags: 0
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_GameObject: { fileID: 0 }
-    m_Enabled: 1
-    m_EditorHideFlags: 0
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_Name: 'AS Val'
-    m_EditorClassIdentifier: null
-    maxStack: 1
-    weight: 2.6100001
-    price: 100
-    sellable: 0
-    personalizable: 0
-    maxDurability: 100.0
-    destroyable: 1
-    toolTip: "<b>{NAME}</b>\nSome weapon description\n{PERSONAL}\n\n{DAMAGE} Damage\nFire Interval: {COOLDOWN}s\nRequires: {REQUIREDAMMO}\n\nAmmo: {AMMO} / {MAGAZINESIZE}\nDurability: {DURABILITY}%\nWeight: {WEIGHT}g"
-    image: { fileID: 21300000, guid: 194c18c52f7c452580f875e75425820a, type: 3 }
-    drop: { fileID: 4724983406357909044, guid: 2854e6cdbcdaaec44a8e9ec49ae145fb, type: 3 }
-    modelPrefab: { fileID: 1523676449047648, guid: 31e4400f3be9c4d4fbe89d94c0cbe0cc, type: 3 }
-    type: 'Assault Rifle'
-    hide: 0
-    content: 'The AK-47, officially known as the Avtomat Kalashnikova, is a gas-operated assault rifle that is chambered for the 7.62×39mm cartridge. Developed in the Soviet Union by Russian small-arms designer Mikhail Kalashnikov, it is the originating firearm of the Kalashnikov (or "AK") family of rifles.'
-    notes: null
-    category: WeaponTwohand
-    keepUsingWhileButtonDown: 1
-    successfulUseSound: [{ fileID: 8300000, guid: 3c596fc56ff99d74582b08b5cf1cacce, type: 3 }]
-    failedUseSound: { fileID: 8300000, guid: 2eb3609e6c29e744f8957f30c37ecb2e, type: 3 }
-    emptySound: { fileID: 8300000, guid: 2eb3609e6c29e744f8957f30c37ecb2e, type: 3 }
-    drawSound: { fileID: 8300000, guid: 6395708cc0a36d443bb54b0232233968, type: 3 }
-    cooldown: 0.13
-    _cooldownCategory: null
-    shoulderLookAtWhileHolding: 1
-    useDirectly: 0
-    attackRange: 150
-    damage: 40.0
-    damageType: Tear
-    upperBodyAnimationParameter: UPPERBODY_RIFLE
-    attachmentsAllowed: {  }
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    magazineSize: 20
-    reloadTime: 3.5
-    reloadTimeFull: 3.5
-    zoom: 20
-    decalPrefab: { fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28, type: 3 }
-    decalSound: { fileID: 0 }
-    decalOffset: 0.01
-    Ejection: { fileID: 0 }
-    reloadSound: { fileID: 8300000, guid: de81514b19f0c884b9f8ab879e75d48d, type: 3 }
-    reloadSound0: { fileID: 8300000, guid: e8b29c8c5d3b43a4f8ca0c6cd817f035, type: 3 }
-    reloadBolt: { fileID: 8300000, guid: d23e32992fe45994ca2b17e1b2c132f4, type: 3 }
-    reloadIn: { fileID: 8300000, guid: 45dfe865c2adc924ab2ffe1ed60f4be3, type: 3 }
-    reloadOut: { fileID: 8300000, guid: 743c7b03a56c63a45a60d23f43525ff4, type: 3 }
-    reloadOpen: { fileID: 0 }
-    reloadClose: { fileID: 0 }
-    reloadBegin: { fileID: 0 }
-    reloadBegin0: { fileID: 0 }
-    reloadEnd: { fileID: 0 }
-    reloadStep: { fileID: 0 }
-    silencedSound: { fileID: 8300000, guid: 3c596fc56ff99d74582b08b5cf1cacce, type: 3 }
-    silencedSound0: { fileID: 0 }
-    successfulUseSound0: { fileID: 0 }
-    recoilHorizontal: 1
-    recoilVertical: 2
-    id: 0nVk
-    key: val
-    fullName: 'AS Val'
-    pathCategory: 'Weapon/Assault rifle'
-    rank: Veteran
-    class: 'Assault Rifles'
-    ammoType: 9x39
-    clipSize: 20.0
-    distance: 140.0
-    rateOfFire: 750.0
-    tacticalReloadTime: 2.6
-    spread: 0.576
-    hipSpread: 3.0
-    recoil: 0.3
-    horizontalRecoil: 0.1
-    drawTime: 1.0
-    aimSwitch: 0.25
-    startDamage: 40.0
-    damageDecreaseStart: 15.0
-    endDamage: 25.0
-    damageDecreaseEnd: 55.0
-    maxDistance: 140.0
-    text: 'This weapon was created on the basis of the special VSS sniper rifle as a silenced weapon for special ops soldiers. It allows the shooter to shoot effectively at an opponent who is protected by body armor, without giving away their own position. One of its main features is its use of an integrated silencer and 9x39 mm caliber ammo with heavy bullets.'
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: AS Val
+  m_EditorClassIdentifier: null
+  id: 0nVk
+  key: val
+  fullName: AS Val
+  pathCategory: Weapon/Assault rifle
+  weight: 2.6100001
+  text: 
+  maxStack: 1
+  price: 900000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 1
+  toolTip: '<b>{NAME}</b>
+
+    Some weapon description
+
+    {PERSONAL}
+
+
+    {DAMAGE}
+    Damage
+
+    Fire Interval: {COOLDOWN}s
+
+    Requires: {REQUIREDAMMO}
+
+
+    Ammo:
+    {AMMO} / {MAGAZINESIZE}
+
+    Durability: {DURABILITY}%
+
+    Weight: {WEIGHT}g'
+  image: {fileID: 21300000, guid: 9139e65fde8540a1902f458bd6fda0b4, type: 3}
+  drop: {fileID: 4724983406357909044, guid: 2854e6cdbcdaaec44a8e9ec49ae145fb, type: 3}
+  modelPrefab: {fileID: 1523676449047648, guid: 31e4400f3be9c4d4fbe89d94c0cbe0cc,
+    type: 3}
+  hide: 0
+  content: "The AK-47, officially known as the Avtomat Kalashnikova, is a gas-operated
+    assault rifle that is chambered for the 7.62\xD739mm cartridge. Developed in
+    the Soviet Union by Russian small-arms designer Mikhail Kalashnikov, it is the
+    originating firearm of the Kalashnikov (or \"AK\") family of rifles."
+  notes: null
+  rank: Veteran
+  drawTime: 1
+  category: WeaponTwohand
+  keepUsingWhileButtonDown: 1
+  successfulUseSound:
+  - {fileID: 8300000, guid: 3c596fc56ff99d74582b08b5cf1cacce, type: 3}
+  failedUseSound: {fileID: 8300000, guid: 2eb3609e6c29e744f8957f30c37ecb2e, type: 3}
+  emptySound: {fileID: 8300000, guid: 2eb3609e6c29e744f8957f30c37ecb2e, type: 3}
+  drawSound: {fileID: 8300000, guid: 6395708cc0a36d443bb54b0232233968, type: 3}
+  cooldown: 0.13
+  _cooldownCategory: null
+  shoulderLookAtWhileHolding: 1
+  useDirectly: 0
+  attackRange: 150
+  damage: 40
+  damageType: 0
+  upperBodyAnimationParameter: UPPERBODY_RIFLE
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: de1abab8bc3b4a7f84d0a3358b39f91e, type: 2}
+  - {fileID: 11400000, guid: 1c9ddaa0176647df9ad23a44cc65e885, type: 2}
+  - {fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2}
+  - {fileID: 11400000, guid: ee95ff84830d47eda2db11e99c8f6211, type: 2}
+  - {fileID: 11400000, guid: 43b407fe72f045a7b79441611f0e386a, type: 2}
+  - {fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2}
+  - {fileID: 11400000, guid: a0c887024b5f4d439402fb4b6e59409d, type: 2}
+  - {fileID: 11400000, guid: de9a9f999d014fef96f29da069fb36ff, type: 2}
+  - {fileID: 11400000, guid: 22690b8a27144053aa55849bf9417715, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 944b6744d038411a8836325862acdd86, type: 2}
+  - {fileID: 11400000, guid: f8961583237e4bfba36c489df8b2dadd, type: 2}
+  - {fileID: 11400000, guid: 8c248b00cf9443c5acecabe3daa18de5, type: 2}
+  - {fileID: 11400000, guid: e3e4d9f1d3cc43839dce27541c582329, type: 2}
+  - {fileID: 11400000, guid: e8a302687da349d0b932858512bdf113, type: 2}
+  - {fileID: 11400000, guid: dcb720d9a741479fbaf95fc507dd5a37, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28,
+    type: 3}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2.6
+  reloadTime: 3.5
+  clipSize: 20
+  ammoType: 9x39
+  spread: 0.576
+  hipSpread: 3
+  recoil: 0.3
+  horizontalRecoil: 0.1
+  aimSwitch: 0.25
+  startDamage: 40
+  damageDecreaseStart: 15
+  endDamage: 25
+  damageDecreaseEnd: 55
+  distance: 140
+  maxDistance: 140
+  reloadSound: {fileID: 8300000, guid: de81514b19f0c884b9f8ab879e75d48d, type: 3}
+  reloadSound0: {fileID: 8300000, guid: e8b29c8c5d3b43a4f8ca0c6cd817f035, type: 3}
+  reloadBolt: {fileID: 8300000, guid: d23e32992fe45994ca2b17e1b2c132f4, type: 3}
+  reloadIn: {fileID: 8300000, guid: 45dfe865c2adc924ab2ffe1ed60f4be3, type: 3}
+  reloadOut: {fileID: 8300000, guid: 743c7b03a56c63a45a60d23f43525ff4, type: 3}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 8300000, guid: 3c596fc56ff99d74582b08b5cf1cacce, type: 3}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

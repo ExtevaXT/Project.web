@@ -2,91 +2,154 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    m_ObjectHideFlags: 0
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_GameObject: { fileID: 0 }
-    m_Enabled: 1
-    m_EditorHideFlags: 0
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_Name: AKS-74
-    m_EditorClassIdentifier: null
-    maxStack: 1
-    weight: 3.3000002
-    price: 100
-    sellable: 0
-    personalizable: 0
-    maxDurability: 100.0
-    destroyable: 1
-    toolTip: "<b>{NAME}</b>\nSome weapon description\n{PERSONAL}\n\n{DAMAGE} Damage\nFire Interval: {COOLDOWN}s\nRequires: {REQUIREDAMMO}\n\nAmmo: {AMMO} / {MAGAZINESIZE}\nDurability: {DURABILITY}%\nWeight: {WEIGHT}g"
-    image: { fileID: 21300000, guid: d0c9594fcc56446fa3339393a08f4b8c, type: 3 }
-    drop: { fileID: -3932647816788466835, guid: 29f3cdfeb207e7d4292bbeaced6c8989, type: 3 }
-    modelPrefab: { fileID: 1523676449047648, guid: 3fa5d32ada477284aaa10adea3e1c943, type: 3 }
-    type: 'Assault Rifle'
-    hide: 0
-    content: 'A folding assault rifle, model 1974, chambered in 5.45 × 39 ammunition. It is a simple and reliable weapon, although its cheapness in production somewhat affected the ease of use and accuracy of combat. It is the main weapon of the military, stalkers, and many loners in the Zone.'
-    notes: null
-    category: WeaponTwohand
-    keepUsingWhileButtonDown: 1
-    successfulUseSound: [{ fileID: 8300000, guid: 8ce91c5b4bf367a4ba6bc6b91218ddb1, type: 3 }, { fileID: 8300000, guid: ccb5ae0597a64db4087e0bbe31616ecc, type: 3 }, { fileID: 8300000, guid: e9875a89dcc0365498825723e7d84a7c, type: 3 }, { fileID: 8300000, guid: af306ffc0ae136744b4be2192b29d874, type: 3 }, { fileID: 8300000, guid: 966d89c611652124c919f42aa7915dfe, type: 3 }, { fileID: 8300000, guid: ddda84b860da2b748b9577ffb2366531, type: 3 }]
-    failedUseSound: { fileID: 8300000, guid: b31eb5362790c5d4485dfe985a93b716, type: 3 }
-    emptySound: { fileID: 8300000, guid: b31eb5362790c5d4485dfe985a93b716, type: 3 }
-    drawSound: { fileID: 8300000, guid: 3769a13ada6b53c4c953ea2fbed78090, type: 3 }
-    cooldown: 0.13
-    _cooldownCategory: null
-    shoulderLookAtWhileHolding: 1
-    useDirectly: 0
-    attackRange: 150
-    damage: 36.0
-    damageType: Tear
-    upperBodyAnimationParameter: UPPERBODY_RIFLE
-    attachmentsAllowed: {  }
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    magazineSize: 20
-    reloadTime: 3.5
-    reloadTimeFull: 3.5
-    zoom: 20
-    decalPrefab: { fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28, type: 3 }
-    decalSound: { fileID: 0 }
-    decalOffset: 0.01
-    Ejection: { fileID: 0 }
-    reloadSound: { fileID: 8300000, guid: f815c79c0f3215a4dba1c4b45caf2a1a, type: 3 }
-    reloadSound0: { fileID: 8300000, guid: 80a06629307c4fe4d9c2654b9c04f5aa, type: 3 }
-    reloadBolt: { fileID: 0 }
-    reloadIn: { fileID: 0 }
-    reloadOut: { fileID: 0 }
-    reloadOpen: { fileID: 0 }
-    reloadClose: { fileID: 0 }
-    reloadBegin: { fileID: 0 }
-    reloadBegin0: { fileID: 0 }
-    reloadEnd: { fileID: 0 }
-    reloadStep: { fileID: 0 }
-    silencedSound: { fileID: 8300000, guid: 6158b1129c5afbf4aa908cdf2e986f26, type: 3 }
-    silencedSound0: { fileID: 0 }
-    successfulUseSound0: { fileID: 0 }
-    recoilHorizontal: 1
-    recoilVertical: 2
-    id: MOwn
-    key: aks74
-    fullName: AKS-74
-    pathCategory: 'Weapon/Assault rifle'
-    rank: Newbie
-    class: 'Assault Rifles'
-    ammoType: '5.45'
-    clipSize: 30.0
-    distance: 150.0
-    rateOfFire: 600.0
-    tacticalReloadTime: 2.95
-    spread: 0.858
-    hipSpread: 3.0
-    recoil: 0.45
-    horizontalRecoil: 0.2
-    drawTime: 1.0
-    aimSwitch: 0.25
-    startDamage: 36.0
-    damageDecreaseStart: 12.0
-    endDamage: 25.0
-    damageDecreaseEnd: 70.0
-    maxDistance: 150.0
-    text: 'A 5.45 mm caliber AK Kalashnikov assault rifle developed in 1970 using Mikhail Kalashnikov’s design, and first used by the armed forces of the USSR in 1974. This model is a further development of the AKM. It was developed as a result of the changeover to new, low-impulse 5.45x39 mm ammo.'
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: AKS-74
+  m_EditorClassIdentifier: null
+  id: MOwn
+  key: aks74
+  fullName: AKS-74
+  pathCategory: Weapon/Assault rifle
+  weight: 3.3000002
+  text: 
+  maxStack: 1
+  price: 75000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 1
+  toolTip: '<b>{NAME}</b>
+
+    Some weapon description
+
+    {PERSONAL}
+
+
+    {DAMAGE}
+    Damage
+
+    Fire Interval: {COOLDOWN}s
+
+    Requires: {REQUIREDAMMO}
+
+
+    Ammo:
+    {AMMO} / {MAGAZINESIZE}
+
+    Durability: {DURABILITY}%
+
+    Weight: {WEIGHT}g'
+  image: {fileID: 21300000, guid: d9bc478153454d36ad3f6dc712010ad5, type: 3}
+  drop: {fileID: -3932647816788466835, guid: 29f3cdfeb207e7d4292bbeaced6c8989, type: 3}
+  modelPrefab: {fileID: 1523676449047648, guid: 3fa5d32ada477284aaa10adea3e1c943,
+    type: 3}
+  hide: 0
+  content: "A folding assault rifle, model 1974, chambered in 5.45 \xD7 39 ammunition.
+    It is a simple and reliable weapon, although its cheapness in production somewhat
+    affected the ease of use and accuracy of combat. It is the main weapon of the
+    military, stalkers, and many loners in the Zone."
+  notes: null
+  rank: Newbie
+  drawTime: 1
+  category: WeaponTwohand
+  keepUsingWhileButtonDown: 1
+  successfulUseSound:
+  - {fileID: 8300000, guid: 8ce91c5b4bf367a4ba6bc6b91218ddb1, type: 3}
+  - {fileID: 8300000, guid: ccb5ae0597a64db4087e0bbe31616ecc, type: 3}
+  - {fileID: 8300000, guid: e9875a89dcc0365498825723e7d84a7c, type: 3}
+  - {fileID: 8300000, guid: af306ffc0ae136744b4be2192b29d874, type: 3}
+  - {fileID: 8300000, guid: 966d89c611652124c919f42aa7915dfe, type: 3}
+  - {fileID: 8300000, guid: ddda84b860da2b748b9577ffb2366531, type: 3}
+  failedUseSound: {fileID: 8300000, guid: b31eb5362790c5d4485dfe985a93b716, type: 3}
+  emptySound: {fileID: 8300000, guid: b31eb5362790c5d4485dfe985a93b716, type: 3}
+  drawSound: {fileID: 8300000, guid: 3769a13ada6b53c4c953ea2fbed78090, type: 3}
+  cooldown: 0.13
+  _cooldownCategory: null
+  shoulderLookAtWhileHolding: 1
+  useDirectly: 0
+  attackRange: 150
+  damage: 36
+  damageType: 0
+  upperBodyAnimationParameter: UPPERBODY_RIFLE
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 55e37ec8d3d44445bd25598539efe47a, type: 2}
+  - {fileID: 11400000, guid: 4e825045109a47439fa2cab276607e3d, type: 2}
+  - {fileID: 11400000, guid: 5b4fed90c48d4adea8d795a5e8c2aee4, type: 2}
+  - {fileID: 11400000, guid: 640a59c7c880454ba7e4a677f4a1e3bf, type: 2}
+  - {fileID: 11400000, guid: 19e938fce365425487030f9bd543773c, type: 2}
+  - {fileID: 11400000, guid: a96098295e444ef7857e76b3dc06af56, type: 2}
+  - {fileID: 11400000, guid: 1c9ddaa0176647df9ad23a44cc65e885, type: 2}
+  - {fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2}
+  - {fileID: 11400000, guid: ee95ff84830d47eda2db11e99c8f6211, type: 2}
+  - {fileID: 11400000, guid: 43b407fe72f045a7b79441611f0e386a, type: 2}
+  - {fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2}
+  - {fileID: 11400000, guid: a0c887024b5f4d439402fb4b6e59409d, type: 2}
+  - {fileID: 11400000, guid: de9a9f999d014fef96f29da069fb36ff, type: 2}
+  - {fileID: 11400000, guid: 22690b8a27144053aa55849bf9417715, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 944b6744d038411a8836325862acdd86, type: 2}
+  - {fileID: 11400000, guid: 92f1ba6f2157403ebe9fdceca145f65d, type: 2}
+  - {fileID: 11400000, guid: 072f7d795bcb48639d1a90dc23ed2f4e, type: 2}
+  - {fileID: 11400000, guid: 8630028b697f4257b6cc2f791dda4ba7, type: 2}
+  - {fileID: 11400000, guid: eeded40a88314b02856fe766ab1fcb89, type: 2}
+  - {fileID: 11400000, guid: 09c139dde4d54ac590c01bc903cc7afd, type: 2}
+  - {fileID: 11400000, guid: 53c3a28e6bde497f984c78a08e4cd497, type: 2}
+  - {fileID: 11400000, guid: e26f00189d5643c48de417dd268596ec, type: 2}
+  - {fileID: 11400000, guid: 5fd8945432c043c8ad871a77925ef337, type: 2}
+  - {fileID: 11400000, guid: 53d5b55fdc8548499f12f037357d11d2, type: 2}
+  - {fileID: 11400000, guid: 0c437101963344509a8062165df0d80f, type: 2}
+  - {fileID: 11400000, guid: 2dc555fc95444ec881aab8657a04c896, type: 2}
+  - {fileID: 11400000, guid: 6ffd9cb6f9f249c498ed9e1da1bba9ad, type: 2}
+  - {fileID: 11400000, guid: bea4b2222a904c85a941bee82ad8b2c6, type: 2}
+  - {fileID: 11400000, guid: c39784f441e84bd392761e5b2495bf6a, type: 2}
+  - {fileID: 11400000, guid: 9ce04392ae5748748d212c8638aff83e, type: 2}
+  - {fileID: 11400000, guid: 39e7f8f7eb07431382cab2ab5b6076e7, type: 2}
+  - {fileID: 11400000, guid: fcce0fb92af34d8e9a98c843fca4475b, type: 2}
+  - {fileID: 11400000, guid: bc6ccf5235af4be08a8e0b0434ccd36d, type: 2}
+  - {fileID: 11400000, guid: e3e4d9f1d3cc43839dce27541c582329, type: 2}
+  - {fileID: 11400000, guid: 4cad2640285f4cd7a1ba245281201ee8, type: 2}
+  - {fileID: 11400000, guid: f6b4b3b4871f4c1799717f99b1a0f3b1, type: 2}
+  - {fileID: 11400000, guid: 19cea63cef0c48c4b82c3330cfe76445, type: 2}
+  - {fileID: 11400000, guid: 63c1613e78d1405dbc56cedbe7d3b6cf, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28,
+    type: 3}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2.95
+  reloadTime: 3.5
+  clipSize: 30
+  ammoType: 5.45
+  spread: 0.858
+  hipSpread: 3
+  recoil: 0.45
+  horizontalRecoil: 0.2
+  aimSwitch: 0.25
+  startDamage: 36
+  damageDecreaseStart: 12
+  endDamage: 25
+  damageDecreaseEnd: 70
+  distance: 150
+  maxDistance: 150
+  reloadSound: {fileID: 8300000, guid: f815c79c0f3215a4dba1c4b45caf2a1a, type: 3}
+  reloadSound0: {fileID: 8300000, guid: 80a06629307c4fe4d9c2654b9c04f5aa, type: 3}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 8300000, guid: 6158b1129c5afbf4aa908cdf2e986f26, type: 3}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

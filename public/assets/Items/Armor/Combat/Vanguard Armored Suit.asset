@@ -2,40 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: OYZz
-    key: vanguard
-    fullName: 'Vanguard Armored Suit'
-    pathCategory: Armor/Combat
-    rank: Master
-    class: Combat
-    weight: 30.0
-    maxDurability: 100.0
-    staminaBonus: [-25.0]
-    speedModifier: [-6.0]
-    maxWeightBonus: [25.0]
-    nightVision: 1
-    bulletDmgFactor: [192.0]
-    tearDmgFactor: [255.0]
-    explosionDmgFactor: [229.0]
-    electraDmgFactor: [44.0]
-    burnDmgFactor: [44.0]
-    chemicalBurnDmgFactor: [44.0]
-    radiationProtection: [200.0]
-    thermalProtection: [50.0]
-    biologicalProtection: [200.0]
-    psychoProtection: [200.0]
-    bleedingProtection: [69.2]
-    compatibleBackpacks: light
-    compatibleContainers: standard
-    text: 'A set of army gear adapted to Duty’s requirements. The Vanguard Armored Suit provides exceptional protection from mutants’ claws and teeth, and good bullet resistance makes it a reliable aid in the war for influence in the Zone.'
-    image: { fileID: 21300000, guid: 1a7597e43f9d4755a8274aa8f14c2ee6, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Vanguard Armored Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Vanguard Armored Suit
+  m_EditorClassIdentifier: null
+  id: OYZz
+  key: vanguard
+  fullName: Vanguard Armored Suit
+  pathCategory: Armor/Combat
+  weight: 30
+  text: "A set of army gear adapted to Duty\u2019s requirements. The Vanguard Armored
+    Suit provides exceptional protection from mutants\u2019 claws and teeth, and
+    good bullet resistance makes it a reliable aid in the war for influence in the
+    Zone."
+  maxStack: 1
+  price: 200000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: fecb47eb68384c0d802375a2d85103a1, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: e7ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: faffffff
+  maxWeightBonus: 19000000
+  bleedingProtection: 45000000
+  radiationProtection: c8000000
+  psychoProtection: c8000000
+  thermalProtection: 32000000
+  biologicalProtection: c8000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: c0000000
+  tearDmgFactor: ff000000
+  explosionDmgFactor: e5000000
+  electraDmgFactor: 2c000000
+  burnDmgFactor: 2c000000
+  chemicalBurnDmgFactor: 2c000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: standard

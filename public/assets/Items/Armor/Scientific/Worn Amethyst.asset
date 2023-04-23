@@ -2,37 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 2jbM
-    key: ametist-1
-    fullName: 'Worn Amethyst'
-    pathCategory: Armor/Scientific
-    rank: Veteran
-    class: Scientist
-    weight: 7.3
-    maxDurability: 100.0
-    nightVision: 1
-    bulletDmgFactor: [53.0]
-    tearDmgFactor: [63.0]
-    explosionDmgFactor: [76.0]
-    electraDmgFactor: [800.0]
-    burnDmgFactor: [800.0]
-    chemicalBurnDmgFactor: [800.0]
-    radiationProtection: [370.0]
-    thermalProtection: [370.0]
-    biologicalProtection: [400.0]
-    psychoProtection: [370.0]
-    bleedingProtection: [38.0]
-    compatibleBackpacks: light
-    compatibleContainers: standard
-    text: 'An indigo research suit. One of the masterpieces of the Chernobyl Research Institute. Can be worn in areas with high psychic influence.'
-    image: { fileID: 21300000, guid: 623c6d11995c40d88bf24949e4f62757, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn Amethyst'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Worn Amethyst
+  m_EditorClassIdentifier: null
+  id: 2jbM
+  key: ametist-1
+  fullName: Worn Amethyst
+  pathCategory: Armor/Scientific
+  weight: 7.3
+  text: An indigo research suit. One of the masterpieces of the Chernobyl Research
+    Institute. Can be worn in areas with high psychic influence.
+  maxStack: 1
+  price: 400000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: a8952a2216744738a0484e350f9b8964, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 26000000
+  radiationProtection: 72010000
+  psychoProtection: 72010000
+  thermalProtection: 72010000
+  biologicalProtection: 90010000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 35000000
+  tearDmgFactor: 3f000000
+  explosionDmgFactor: 4c000000
+  electraDmgFactor: 20030000
+  burnDmgFactor: 20030000
+  chemicalBurnDmgFactor: 20030000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: standard

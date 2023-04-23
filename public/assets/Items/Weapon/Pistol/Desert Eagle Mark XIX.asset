@@ -2,91 +2,135 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    m_ObjectHideFlags: 0
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_GameObject: { fileID: 0 }
-    m_Enabled: 1
-    m_EditorHideFlags: 0
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_Name: 'Desert Eagle Mark XIX'
-    m_EditorClassIdentifier: null
-    maxStack: 1
-    weight: 1.9000001
-    price: 0
-    sellable: 0
-    personalizable: 0
-    maxDurability: 100.0
-    destroyable: 1
-    toolTip: "<b>{NAME}</b>\nSome weapon description\n{PERSONAL}\n\n{DAMAGE} Damage\nFire Interval: {COOLDOWN}s\nRequires: {REQUIREDAMMO}\n\nAmmo: {AMMO} / {MAGAZINESIZE}\nDurability: {DURABILITY}%\nWeight: {WEIGHT}g"
-    image: { fileID: 21300000, guid: 7aa95cc521524aba95c97d6e380e4e49, type: 3 }
-    drop: { fileID: 3630844629187145047, guid: e2b38f09f2c70ba4988d747f13065150, type: 3 }
-    modelPrefab: { fileID: 1508934165754910, guid: 0767a7f22b086d441905f619b2315de9, type: 3 }
-    type: Pistol
-    hide: 0
-    content: 'A real pocket cannon - large, heavy and with extremely high killing power. It was developed as a specialized weapon for hunting medium and large game, as well as for sport shooting at silhouette targets at ranges of fifty meters or more. Because of the price, weight, and impressive size, it was not particularly popular in the Zone.'
-    notes: null
-    category: WeaponOnehand
-    keepUsingWhileButtonDown: 0
-    successfulUseSound: [{ fileID: 8300000, guid: b14adbfe685fd7342be518611e8df732, type: 3 }]
-    failedUseSound: { fileID: 8300000, guid: 5b05a94d0bd37e2439f9331c242b53e2, type: 3 }
-    emptySound: { fileID: 8300000, guid: 5b05a94d0bd37e2439f9331c242b53e2, type: 3 }
-    drawSound: { fileID: 8300000, guid: 353aa1ef83971114eaa6f556be4fc17e, type: 3 }
-    cooldown: 0.375
-    _cooldownCategory: null
-    shoulderLookAtWhileHolding: 1
-    useDirectly: 0
-    attackRange: 30
-    damage: 72.0
-    damageType: Tear
-    upperBodyAnimationParameter: UPPERBODY_PISTOL
-    attachmentsAllowed: {  }
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    magazineSize: 12
-    reloadTime: 2.3
-    reloadTimeFull: 2
-    zoom: 20
-    decalPrefab: { fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28, type: 3 }
-    decalSound: { fileID: 0 }
-    decalOffset: 0.01
-    Ejection: { fileID: 0 }
-    reloadSound: { fileID: 8300000, guid: 7450499e8d33a47d8b5db0c4650b7f18, type: 3 }
-    reloadSound0: { fileID: 0 }
-    reloadBolt: { fileID: 8300000, guid: 150d4341a93f37a4f8e5d69ba0919ced, type: 3 }
-    reloadIn: { fileID: 8300000, guid: 092e25067d3f8434991a8428ab44dedd, type: 3 }
-    reloadOut: { fileID: 8300000, guid: a90dd94339826074d9b00abd68a4c175, type: 3 }
-    reloadOpen: { fileID: 0 }
-    reloadClose: { fileID: 0 }
-    reloadBegin: { fileID: 0 }
-    reloadBegin0: { fileID: 0 }
-    reloadEnd: { fileID: 0 }
-    reloadStep: { fileID: 0 }
-    silencedSound: { fileID: 8300000, guid: c5512a10ea688d1448dd4eda75125649, type: 3 }
-    silencedSound0: { fileID: 0 }
-    successfulUseSound0: { fileID: 0 }
-    recoilHorizontal: 1
-    recoilVertical: 4
-    id: 928V
-    key: deagle
-    fullName: 'Desert Eagle Mark XIX'
-    pathCategory: Weapon/Pistol
-    rank: Veteran
-    class: Pistols
-    ammoType: '9 mm'
-    clipSize: 7.0
-    distance: 65.0
-    rateOfFire: 350.0
-    tacticalReloadTime: 1.95
-    spread: 0.857
-    hipSpread: 2.7
-    recoil: 0.8
-    horizontalRecoil: 0.5
-    drawTime: 0.5
-    aimSwitch: 0.2
-    startDamage: 72.0
-    damageDecreaseStart: 15.0
-    endDamage: 30.0
-    damageDecreaseEnd: 38.0
-    maxDistance: 65.0
-    text: 'A true pocket cannon, this weapon is large and heavy and possesses extremely high stopping power. It was developed as a specialized weapon for hunting medium-sized and large animals, and also for shooting sports using silhouette targets at a range of over 50 meters. Due to its price, weight, and huge dimensions, it has never been widely used in the Zone.'
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Desert Eagle Mark XIX
+  m_EditorClassIdentifier: null
+  id: 928V
+  key: deagle
+  fullName: Desert Eagle Mark XIX
+  pathCategory: Weapon/Pistol
+  weight: 1.9000001
+  maxStack: 1
+  price: 4000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 1
+  toolTip: '<b>{NAME}</b>
+
+    Some weapon description
+
+    {PERSONAL}
+
+
+    {DAMAGE}
+    Damage
+
+    Fire Interval: {COOLDOWN}s
+
+    Requires: {REQUIREDAMMO}
+
+
+    Ammo:
+    {AMMO} / {MAGAZINESIZE}
+
+    Durability: {DURABILITY}%
+
+    Weight: {WEIGHT}g'
+  image: {fileID: 21300000, guid: a78c1df4e11b49898e280af2129fc4c9, type: 3}
+  drop: {fileID: 3630844629187145047, guid: e2b38f09f2c70ba4988d747f13065150, type: 3}
+  modelPrefab: {fileID: 1508934165754910, guid: 0767a7f22b086d441905f619b2315de9,
+    type: 3}
+  hide: 0
+  content: A real pocket cannon - large, heavy and with extremely high killing power.
+    It was developed as a specialized weapon for hunting medium and large game, as
+    well as for sport shooting at silhouette targets at ranges of fifty meters or
+    more. Because of the price, weight, and impressive size, it was not particularly
+    popular in the Zone.
+  notes: null
+  rank: Veteran
+  drawTime: 0.5
+  category: WeaponOnehand
+  keepUsingWhileButtonDown: 0
+  successfulUseSound:
+  - {fileID: 8300000, guid: b14adbfe685fd7342be518611e8df732, type: 3}
+  failedUseSound: {fileID: 8300000, guid: 5b05a94d0bd37e2439f9331c242b53e2, type: 3}
+  emptySound: {fileID: 8300000, guid: 5b05a94d0bd37e2439f9331c242b53e2, type: 3}
+  drawSound: {fileID: 8300000, guid: 353aa1ef83971114eaa6f556be4fc17e, type: 3}
+  cooldown: 0.375
+  _cooldownCategory: null
+  shoulderLookAtWhileHolding: 1
+  useDirectly: 0
+  attackRange: 30
+  damage: 72
+  damageType: 0
+  upperBodyAnimationParameter: UPPERBODY_PISTOL
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 27bbf9e0c36147f2bb31255beb3ab690, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: f7bdc342377a4873abdcd988d5ad0fb7, type: 2}
+  - {fileID: 11400000, guid: 5a738ed6648e4e44b58a8116f4ec42b4, type: 2}
+  - {fileID: 11400000, guid: 153f84525cdd45cda65c4aa9608008df, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: b7972612339443a6a3be403c2f8a4556, type: 2}
+  - {fileID: 11400000, guid: 81626b4e21364f5d8c904daa71c9cb16, type: 2}
+  - {fileID: 11400000, guid: ea55a20c27b846f9976d71645185c196, type: 2}
+  - {fileID: 11400000, guid: 383a0c6afc5d4d588cfbb07942633ab7, type: 2}
+  - {fileID: 11400000, guid: 5547cd0d522d477cb7f5e9345da06ccb, type: 2}
+  - {fileID: 11400000, guid: 9ac9861931a74f93ab319f21df1e3c68, type: 2}
+  - {fileID: 11400000, guid: 0d80a32bffa547ed99d5b10170273b68, type: 2}
+  - {fileID: 11400000, guid: a81414a2f146433fa1d53ae5c3702ccb, type: 2}
+  - {fileID: 11400000, guid: 139ae8f6e1cd4da5bee17c92a9dc05f2, type: 2}
+  - {fileID: 11400000, guid: 42f57625538e416ca47d9e95a8542b17, type: 2}
+  - {fileID: 11400000, guid: 005da9550b7f4969a5aa65332cba8332, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28,
+    type: 3}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 1.95
+  reloadTime: 2.3
+  clipSize: 7
+  ammoType: 9 mm
+  spread: 0.857
+  hipSpread: 2.7
+  recoil: 0.8
+  horizontalRecoil: 0.5
+  aimSwitch: 0.2
+  startDamage: 72
+  damageDecreaseStart: 15
+  endDamage: 30
+  damageDecreaseEnd: 38
+  distance: 65
+  maxDistance: 65
+  reloadSound: {fileID: 8300000, guid: 7450499e8d33a47d8b5db0c4650b7f18, type: 3}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 8300000, guid: 150d4341a93f37a4f8e5d69ba0919ced, type: 3}
+  reloadIn: {fileID: 8300000, guid: 092e25067d3f8434991a8428ab44dedd, type: 3}
+  reloadOut: {fileID: 8300000, guid: a90dd94339826074d9b00abd68a4c175, type: 3}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 8300000, guid: c5512a10ea688d1448dd4eda75125649, type: 3}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

@@ -2,26 +2,89 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 2X11
-    key: trampoline_protomeduza
-    fullName: Proto-Jellyfish
-    pathCategory: Artefact/Gravitational
-    class: Gravitational
-    weight: 0.2
-    common: 'Not studied'
-    maxDurability: 100.0
-    regenerationBonus: [-1.5, -0.75]
-    staminaRegenerationBonus: [-3.0, -1.5]
-    radiationAccumulation: [-10.0, -5.0]
-    text: 'A “blank” for a future artifact, the Proto-Jellyfish absorbs radioactive particles from the surrounding area and uses them as “fuel” for its own development. Maturing inside an anomaly, it eventually becomes a fully-fledged artifact, most often a Jellyfish. If this artifact is extracted from an anomaly in time, its development stops. It will never become a true Jellyfish, but it retains its ability to absorb and contain radiation. However, the side effect of wearing this artifact is a slight feeling of fatigue.'
-    image: { fileID: 21300000, guid: aa683778a6aa46d4bf6bb4ccf61f0377, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Proto-Jellyfish
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Proto-Jellyfish
+  m_EditorClassIdentifier: null
+  id: 2X11
+  key: trampoline_protomeduza
+  fullName: Proto-Jellyfish
+  pathCategory: Artefact/Gravitational
+  weight: 0.2
+  text: "A \u201Cblank\u201D for a future artifact, the Proto-Jellyfish absorbs radioactive
+    particles from the surrounding area and uses them as \u201Cfuel\u201D for its
+    own development. Maturing inside an anomaly, it eventually becomes a fully-fledged
+    artifact, most often a Jellyfish. If this artifact is extracted from an anomaly
+    in time, its development stops. It will never become a true Jellyfish, but it
+    retains its ability to absorb and contain radiation. However, the side effect
+    of wearing this artifact is a slight feeling of fatigue."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: d8c9cbfe56614892b85bc00c32b1496b, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: ffffffff00000000
+  staminaBonus: 
+  staminaRegenerationBonus: fdffffffffffffff
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: f6fffffffbffffff
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

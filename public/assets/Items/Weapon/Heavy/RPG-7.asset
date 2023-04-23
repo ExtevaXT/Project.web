@@ -2,36 +2,83 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 753d
-    key: rpg7
-    fullName: RPG-7
-    pathCategory: Weapon/Heavy
-    rank: Master
-    class: 'Other Weapons'
-    weight: 6.3
-    maxDurability: 100.0
-    ammoType: 'RPG Round'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 500.0
-    clipSize: 1.0
-    distance: 200.0
-    rateOfFire: 75.0
-    reloadTime: 2.5
-    spread: 1.0
-    hipSpread: 1.0
-    recoil: 2.0
-    horizontalRecoil: 1.0
-    drawTime: 1.4
-    aimSwitch: 0.35
-    text: 'A reusable Soviet handheld anti-tank grenade launcher. It is intended for dealing with tanks, self-propelled artillery, and other armored vehicles. It can be used to eliminate personnel behind cover and also counter low-flying, low-speed airborne targets.'
-    image: { fileID: 21300000, guid: 7c856d6a0d1e4a1f9d1438bd8c379132, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: RPG-7
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: RPG-7
+  m_EditorClassIdentifier: null
+  id: 753d
+  key: rpg7
+  fullName: RPG-7
+  pathCategory: Weapon/Heavy
+  weight: 6.3
+  maxStack: 1
+  price: 10000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: f822c8c39ef848df81e143b9d61ccde6, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 1.4
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 500
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 2.5
+  clipSize: 1
+  ammoType: RPG Round
+  spread: 1
+  hipSpread: 1
+  recoil: 2
+  horizontalRecoil: 1
+  aimSwitch: 0.35
+  startDamage: 0
+  damageDecreaseStart: 0
+  endDamage: 0
+  damageDecreaseEnd: 0
+  distance: 200
+  maxDistance: 0
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

@@ -2,27 +2,54 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Ro0D
-    key: scope_pu
-    fullName: 'PU Optical Sight on Side Bracket'
-    pathCategory: Attachment/Sight
-    attachmentMetaGroup: 2
-    attachmentMetaId: P
-    rank: Picklock
-    class: Sights
-    weight: 0.27
-    aimSwitchTime: 10.000002
-    text: 'A variation of the Soviet optical sight first created in 1940 for use with the sniper model of the Tokarev semi-automatic rifle.'
-    suitableFor: ['Mosin’s Carbine', 'Mosin’s Rifle']
-    image: { fileID: 21300000, guid: de9dc6bff42f40489c2861b50e928465, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'PU Optical Sight on Side Bracket'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: c83a0f7b789844479eafaeb952b43d12, type: 2 }, { fileID: 11400000, guid: 6592b1e700144eaab5526869fea11c52, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: PU Optical Sight on Side Bracket
+  m_EditorClassIdentifier: null
+  id: Ro0D
+  key: scope_pu
+  fullName: PU Optical Sight on Side Bracket
+  pathCategory: Attachment/Sight
+  weight: 0.27
+  text: A variation of the Soviet optical sight first created in 1940 for use with
+    the sniper model of the Tokarev semi-automatic rifle.
+  maxStack: 1
+  price: 200000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 9a5ff3f1d3d349559c3b29ad54106868, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 80
+  attachmentMetaGroup: 2
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - "Mosin\u2019s Carbine"
+  - "Mosin\u2019s Rifle"
+  clipSize: 0
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 10.000002
+  tickSpreadMultiplierReduction: 0

@@ -2,26 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: lLGM
-    key: voronka_goldfish
-    fullName: Goldfish
-    pathCategory: Artefact/Gravitational
-    class: Gravitational
-    weight: 0.2
-    common: 'Not studied'
-    maxDurability: 100.0
-    maxWeightBonus: [5.0, 10.0]
-    bulletDmgFactor: [5.0, 15.0]
-    psychoAccumulation: [3.0, 8.0]
-    text: 'Many artifact hunters lose their minds at the sight of this artifact. And not in a good way. A member of the gravitational family of artifacts, it can create a small energy field, but you’ll need to somehow protect yourself from the resulting psy-emissions.'
-    image: { fileID: 21300000, guid: 667e93ebd55a4e17bf5f86b3df5929af, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Goldfish
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Goldfish
+  m_EditorClassIdentifier: null
+  id: lLGM
+  key: voronka_goldfish
+  fullName: Goldfish
+  pathCategory: Artefact/Gravitational
+  weight: 0.2
+  text: "Many artifact hunters lose their minds at the sight of this artifact. And
+    not in a good way. A member of the gravitational family of artifacts, it can
+    create a small energy field, but you\u2019ll need to somehow protect yourself
+    from the resulting psy-emissions."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 1fe7e21ea3d548fc90af483eaebea308, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 050000000a000000
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 0300000008000000
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 050000000f000000
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

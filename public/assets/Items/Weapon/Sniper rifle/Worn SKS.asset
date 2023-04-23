@@ -2,42 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: BMzV
-    key: sks-1
-    fullName: 'Worn SKS'
-    pathCategory: 'Weapon/Sniper rifle'
-    rank: Picklock
-    class: 'Sniper Rifles'
-    weight: 3.75
-    maxDurability: 100.0
-    ammoType: '7.62'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 44.0
-    clipSize: 10.0
-    distance: 165.0
-    rateOfFire: 350.0
-    reloadTime: 3.75
-    spread: 0.313
-    hipSpread: 3.812
-    recoil: 0.7
-    horizontalRecoil: 0.3
-    drawTime: 1.1
-    aimSwitch: 0.45
-    stoppingPower: 20.0
-    startDamage: 44.0
-    damageDecreaseStart: 22.0
-    endDamage: 35.2
-    damageDecreaseEnd: 75.0
-    maxDistance: 165.0
-    text: 'This Soviet semi-automatic carbine that was designed by Sergey Simonov was entered into service in 1949.'
-    image: { fileID: 21300000, guid: 8f83af3bfaf14f79b2d5a785c6a1bb5a, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn SKS'
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Worn SKS
+  m_EditorClassIdentifier: null
+  id: BMzV
+  key: sks-1
+  fullName: Worn SKS
+  pathCategory: Weapon/Sniper rifle
+  weight: 3.75
+  text: 
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: a6aaae7012ae4b539abc2540199b43d0, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Picklock
+  drawTime: 1.1
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 44
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 3.75
+  clipSize: 10
+  ammoType: 7.62
+  spread: 0.313
+  hipSpread: 3.812
+  recoil: 0.7
+  horizontalRecoil: 0.3
+  aimSwitch: 0.45
+  startDamage: 44
+  damageDecreaseStart: 22
+  endDamage: 35.2
+  damageDecreaseEnd: 75
+  distance: 165
+  maxDistance: 165
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

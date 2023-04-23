@@ -2,42 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: MOe1
-    key: svt40-2
-    fullName: 'Old SVT-40'
-    pathCategory: 'Weapon/Sniper rifle'
-    rank: Picklock
-    class: 'Sniper Rifles'
-    weight: 3.8
-    maxDurability: 100.0
-    ammoType: '7.62'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 69.0
-    clipSize: 10.0
-    distance: 165.0
-    rateOfFire: 180.0
-    reloadTime: 3.75
-    spread: 0.187
-    hipSpread: 4.5829997
-    recoil: 1.05
-    horizontalRecoil: 0.45
-    drawTime: 1.15
-    aimSwitch: 0.5
-    stoppingPower: 20.0
-    startDamage: 69.0
-    damageDecreaseStart: 26.0
-    endDamage: 55.2
-    damageDecreaseEnd: 100.0
-    maxDistance: 165.0
-    text: 'This 1940 example of a semi-automatic rifle using the Tokarev system was developed as a replacement for the Simonov assault rifle and was subsequently entered into service in the Red Army. Due to its various shortcomings, particularly its low reliability, it was not particularly widely used after the war. Nonetheless, a substantial number of examples can be found with merchants—this rifle’s low price made it popular among novice stalkers.'
-    image: { fileID: 21300000, guid: f5e2f677324d4a6096e471389f9f0112, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Old SVT-40'
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Old SVT-40
+  m_EditorClassIdentifier: null
+  id: MOe1
+  key: svt40-2
+  fullName: Old SVT-40
+  pathCategory: Weapon/Sniper rifle
+  weight: 3.8
+  text: 
+  maxStack: 1
+  price: 15000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: b1786b6dd89a4efdb872deec95812671, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Picklock
+  drawTime: 1.15
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 69
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 3.75
+  clipSize: 10
+  ammoType: 7.62
+  spread: 0.187
+  hipSpread: 4.5829997
+  recoil: 1.05
+  horizontalRecoil: 0.45
+  aimSwitch: 0.5
+  startDamage: 69
+  damageDecreaseStart: 26
+  endDamage: 55.2
+  damageDecreaseEnd: 100
+  distance: 165
+  maxDistance: 165
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

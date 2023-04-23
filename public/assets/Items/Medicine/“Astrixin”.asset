@@ -2,27 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: MYek
-    key: astrikcin
-    fullName: “Astrixin”
-    pathCategory: Medicine
-    class: Medicine
-    weight: 0.05
-    purpose: 'Bleeding Protection'
-    duration: 300.0
-    toxicity: 25.0
-    regenerationBonus: [2.5]
-    bleedingProtection: [15.0]
-    bleedingAccumulation: [-1.0]
-    text: 'A medicinal drug that replaced Vinca, which comprehensively contributes to the coagulation and clotting of the blood. Actively used by soldiers, it gets good reviews as it is less toxic.'
-    image: { fileID: 21300000, guid: 252a12b9ea6b4eaa91dbd71c1c70d5f5, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: “Astrixin”
-    m_Script: { fileID: 11500000, guid: 8fbc25bef1e7c4f4aa348edf964275e9, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8fbc25bef1e7c4f4aa348edf964275e9, type: 3}
+  m_Name: "\u201CAstrixin\u201D"
+  m_EditorClassIdentifier: null
+  id: MYek
+  key: astrikcin
+  fullName: "\u201CAstrixin\u201D"
+  pathCategory: Medicine
+  weight: 0.05
+  text: A medicinal drug that replaced Vinca, which comprehensively contributes to
+    the coagulation and clotting of the blood. Actively used by soldiers, it gets
+    good reviews as it is less toxic.
+  maxStack: 1
+  price: 1000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 71b1c9bf33324556bef07155b7cea019, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 02000000
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 0f000000
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: ffffffff
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  usageHealth: 0
+  usageHydration: 0
+  usageNutrition: 0
+  usageFov: 0
+  purpose: Bleeding Protection
+  duration: 300
+  toxicity: 25

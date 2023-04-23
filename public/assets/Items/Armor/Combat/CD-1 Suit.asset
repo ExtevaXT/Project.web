@@ -2,37 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: VYXK
-    key: kz1
-    fullName: 'CD-1 Suit'
-    pathCategory: Armor/Combat
-    rank: Newbie
-    class: Combat
-    weight: 5.0
-    maxDurability: 100.0
-    maxWeightBonus: [6.0]
-    bulletDmgFactor: [33.0]
-    tearDmgFactor: [47.0]
-    explosionDmgFactor: [63.0]
-    electraDmgFactor: [53.0]
-    burnDmgFactor: [53.0]
-    chemicalBurnDmgFactor: [53.0]
-    radiationProtection: [60.0]
-    thermalProtection: [45.0]
-    biologicalProtection: [60.0]
-    psychoProtection: [0.0]
-    bleedingProtection: [33.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'One of the first suits for the Horizon clan. A mixed, but cheap and comfortable set with properties similar to Zarya.'
-    image: { fileID: 21300000, guid: d044b43a38254f7db3ba871eb167c31b, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'CD-1 Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: CD-1 Suit
+  m_EditorClassIdentifier: null
+  id: VYXK
+  key: kz1
+  fullName: CD-1 Suit
+  pathCategory: Armor/Combat
+  weight: 5
+  text: One of the first suits for the Horizon clan. A mixed, but cheap and comfortable
+    set with properties similar to Zarya.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: ba9e028bf1574b9d98ee025d4227afd6, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Newbie
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 06000000
+  bleedingProtection: 21000000
+  radiationProtection: 3c000000
+  psychoProtection: 00000000
+  thermalProtection: 2d000000
+  biologicalProtection: 3c000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 21000000
+  tearDmgFactor: 2f000000
+  explosionDmgFactor: 3f000000
+  electraDmgFactor: 35000000
+  burnDmgFactor: 35000000
+  chemicalBurnDmgFactor: 35000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

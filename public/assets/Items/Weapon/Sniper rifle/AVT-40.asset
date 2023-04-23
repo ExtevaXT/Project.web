@@ -2,42 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: V3g2
-    key: svt40_mod
-    fullName: AVT-40
-    pathCategory: 'Weapon/Sniper rifle'
-    rank: Stalker
-    class: 'Sniper Rifles'
-    weight: 3.8
-    maxDurability: 100.0
-    ammoType: '7.62'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 75.0
-    clipSize: 10.0
-    distance: 170.0
-    rateOfFire: 260.0
-    reloadTime: 3.75
-    spread: 0.104
-    hipSpread: 4.5
-    recoil: 1.05
-    horizontalRecoil: 0.45
-    drawTime: 1.15
-    aimSwitch: 0.5
-    stoppingPower: 30.0
-    startDamage: 75.0
-    damageDecreaseStart: 30.0
-    endDamage: 60.0
-    damageDecreaseEnd: 100.0
-    maxDistance: 170.0
-    text: 'This assault rifle looks exactly the same as the SVT-40, with just a small alteration to the trigger mechanism. In terms of its weight and size, the AVT-40 is indistinguishable from the SVT-40. Due to some structural flaws, it wears out quickly, as continuous automatic fire can deform the receiver.'
-    image: { fileID: 21300000, guid: 2f40c06a2ead47cf9bbd97d947660037, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: AVT-40
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: AVT-40
+  m_EditorClassIdentifier: null
+  id: V3g2
+  key: svt40_mod
+  fullName: AVT-40
+  pathCategory: Weapon/Sniper rifle
+  weight: 3.8
+  text: 
+  maxStack: 1
+  price: 500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 55f99517ce90449e9167424d96b0597b, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 1.15
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 75
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 970e989caa39422982c87bca6de98a00, type: 2}
+  - {fileID: 11400000, guid: 4b7280b6a2bb4258bee87fbe4de3dd84, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 3.75
+  clipSize: 10
+  ammoType: 7.62
+  spread: 0.104
+  hipSpread: 4.5
+  recoil: 1.05
+  horizontalRecoil: 0.45
+  aimSwitch: 0.5
+  startDamage: 75
+  damageDecreaseStart: 30
+  endDamage: 60
+  damageDecreaseEnd: 100
+  distance: 170
+  maxDistance: 170
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

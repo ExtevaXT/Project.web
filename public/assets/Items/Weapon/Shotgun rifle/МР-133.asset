@@ -2,41 +2,93 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 0nmJ
-    key: mr133
-    fullName: МР-133
-    pathCategory: 'Weapon/Shotgun rifle'
-    rank: Newbie
-    class: 'Shotguns and Rifles'
-    weight: 3.3000002
-    maxDurability: 100.0
-    ammoType: '12 caliber'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 175.0
-    clipSize: 4.0
-    distance: 60.0
-    rateOfFire: 80.0
-    reloadTime: 3.1
-    spread: 2.75
-    hipSpread: 4.5
-    recoil: 6.0
-    horizontalRecoil: 2.0
-    drawTime: 0.75
-    aimSwitch: 0.25
-    startDamage: 175.0
-    damageDecreaseStart: 10.0
-    endDamage: 36.0
-    damageDecreaseEnd: 32.0
-    maxDistance: 60.0
-    text: 'A Russian smoothbore pump-action shotgun used for various types of hunting, shooting sports, and self-defense, as well as by security personnel.'
-    image: { fileID: 21300000, guid: f4a9b87dd6f84f318c0ed3a4f2e7967f, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: МР-133
-    m_Script: { fileID: 11500000, guid: bdae6158522d46441a5aace99f60b060, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdae6158522d46441a5aace99f60b060, type: 3}
+  m_Name: "\u041C\u0420-133"
+  m_EditorClassIdentifier: null
+  id: 0nmJ
+  key: mr133
+  fullName: "\u041C\u0420-133"
+  pathCategory: Weapon/Shotgun rifle
+  weight: 3.3000002
+  maxStack: 1
+  price: 150000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 75219e67846e4305b3f5bf907f2cb4be, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Newbie
+  drawTime: 0.75
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 175
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 580c63294cf64f30a08c706eb06af7b6, type: 2}
+  - {fileID: 11400000, guid: e33437771f2d4295af2f01cc0076671d, type: 2}
+  - {fileID: 11400000, guid: 3d302f9bac424b1fb8863785f4434704, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 3.1
+  clipSize: 4
+  ammoType: 12 caliber
+  spread: 2.75
+  hipSpread: 4.5
+  recoil: 6
+  horizontalRecoil: 2
+  aimSwitch: 0.25
+  startDamage: 175
+  damageDecreaseStart: 10
+  endDamage: 36
+  damageDecreaseEnd: 32
+  distance: 60
+  maxDistance: 60
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}
+  damageLossDistanceMin: 12
+  damageLossDistanceMax: 60
+  damageMin: 10
+  amountOfProjectiles: 8
+  distanceMultiplier: 0
+  spreadHorizontal: 10
+  spreadVertical: 10

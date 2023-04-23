@@ -2,39 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Bn5l
-    key: osh-1
-    fullName: 'Worn Osh Protective Suit'
-    pathCategory: Armor/Combat
-    rank: Veteran
-    class: Combat
-    weight: 8.0
-    maxDurability: 100.0
-    staminaBonus: [-10.0]
-    speedModifier: [-1.0]
-    maxWeightBonus: [8.0]
-    bulletDmgFactor: [78.0]
-    tearDmgFactor: [233.0]
-    explosionDmgFactor: [107.0]
-    electraDmgFactor: [47.0]
-    burnDmgFactor: [47.0]
-    chemicalBurnDmgFactor: [47.0]
-    radiationProtection: [200.0]
-    thermalProtection: [30.0]
-    biologicalProtection: [170.0]
-    psychoProtection: [105.0]
-    bleedingProtection: [73.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'Similar in appearance to a suit used for training dogs or a quilted jacket, the Osh is good to have around during fights with mutant teeth and claws. Its protection against bullets is only average, but mutants don’t know how to shoot yet, do they?'
-    image: { fileID: 21300000, guid: 92e27e2be0414a5b918a034b247af623, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn Osh Protective Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Worn Osh Protective Suit
+  m_EditorClassIdentifier: null
+  id: Bn5l
+  key: osh-1
+  fullName: Worn Osh Protective Suit
+  pathCategory: Armor/Combat
+  weight: 8
+  text: "Similar in appearance to a suit used for training dogs or a quilted jacket,
+    the Osh is good to have around during fights with mutant teeth and claws. Its
+    protection against bullets is only average, but mutants don\u2019t know how to
+    shoot yet, do they?"
+  maxStack: 1
+  price: 450000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: ceddc6ce57d1400c868f297cefef5e5c, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f6ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: ffffffff
+  maxWeightBonus: 08000000
+  bleedingProtection: 49000000
+  radiationProtection: c8000000
+  psychoProtection: 69000000
+  thermalProtection: 1e000000
+  biologicalProtection: aa000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 4e000000
+  tearDmgFactor: e9000000
+  explosionDmgFactor: 6b000000
+  electraDmgFactor: 2f000000
+  burnDmgFactor: 2f000000
+  chemicalBurnDmgFactor: 2f000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

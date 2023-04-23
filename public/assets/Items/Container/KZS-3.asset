@@ -2,27 +2,87 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: zg6l
-    key: kzs3
-    fullName: KZS-3
-    pathCategory: Container
-    rank: Stalker
-    class: 'Backpacks and Containers'
-    weight: 5.25
-    maxDurability: 100.0
-    innerProtection: 75.0
-    effectiveness: 90.0
-    size: 3.0
-    speedModifier: [-1.0]
-    text: 'A set of three KZS-1 containers. Lets you carry three artifacts and, obviously, has good shielding capabilities.'
-    image: { fileID: 21300000, guid: b6556d0c59e24bcfb652d0448f0a748d, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: KZS-3
-    m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3}
+  m_Name: KZS-3
+  m_EditorClassIdentifier: null
+  id: zg6l
+  key: kzs3
+  fullName: KZS-3
+  pathCategory: Container
+  weight: 5.25
+  text: A set of three KZS-1 containers. Lets you carry three artifacts and, obviously,
+    has good shielding capabilities.
+  maxStack: 1
+  price: 200000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: f40166ba42f44fafb6601e220f935491, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: ffffffff
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 
+  innerProtection: 75
+  effectiveness: 90
+  size: 3

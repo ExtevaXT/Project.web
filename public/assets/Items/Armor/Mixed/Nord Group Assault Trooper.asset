@@ -2,40 +2,87 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: D0n2
-    key: ny_heavy
-    fullName: 'Nord Group Assault Trooper'
-    pathCategory: Armor/Mixed
-    rank: Legend
-    class: Combo
-    weight: 37.0
-    maxDurability: 100.0
-    maxWeightBonus: [30.0]
-    radiationAccumulation: [-1.0]
-    bleedingAccumulation: [-1.0]
-    nightVision: 1
-    bulletDmgFactor: [167.0]
-    tearDmgFactor: [167.0]
-    explosionDmgFactor: [238.0]
-    electraDmgFactor: [278.0]
-    burnDmgFactor: [278.0]
-    chemicalBurnDmgFactor: [278.0]
-    radiationProtection: [210.0]
-    thermalProtection: [210.0]
-    biologicalProtection: [300.0]
-    psychoProtection: [210.0]
-    bleedingProtection: [65.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'Developed by the ZIVCAS Research Institute, this armored exoskeleton has excellent properties, but every modification is very specific. This model is intended for combat in the extreme conditions of the Chernobyl Exclusion Zone. Equipped with an experimental life-support system and cutting-edge night-vision goggles that are virtually unaffected by daylight.'
-    image: { fileID: 21300000, guid: 781da68b239d4bd1a0f4b895bbdd353d, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Nord Group Assault Trooper'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Nord Group Assault Trooper
+  m_EditorClassIdentifier: null
+  id: D0n2
+  key: ny_heavy
+  fullName: Nord Group Assault Trooper
+  pathCategory: Armor/Mixed
+  weight: 37
+  text: Developed by the ZIVCAS Research Institute, this armored exoskeleton has
+    excellent properties, but every modification is very specific. This model is
+    intended for combat in the extreme conditions of the Chernobyl Exclusion Zone.
+    Equipped with an experimental life-support system and cutting-edge night-vision
+    goggles that are virtually unaffected by daylight.
+  maxStack: 1
+  price: 10000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 0302344eb17d49158dbc6cd8ee63f316, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Legend
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 1e000000
+  bleedingProtection: 41000000
+  radiationProtection: d2000000
+  psychoProtection: d2000000
+  thermalProtection: d2000000
+  biologicalProtection: 2c010000
+  psychoAccumulation: 
+  radiationAccumulation: ffffffff
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: ffffffff
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: a7000000
+  tearDmgFactor: a7000000
+  explosionDmgFactor: ee000000
+  electraDmgFactor: 16010000
+  burnDmgFactor: 16010000
+  chemicalBurnDmgFactor: 16010000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

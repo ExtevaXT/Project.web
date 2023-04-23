@@ -2,25 +2,49 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: B17n
-    key: dud_svecha
-    fullName: 'Candle Short Range Detector'
-    pathCategory: Weapon/Device
-    rank: Newbie
-    class: Devices
-    weight: 0.7
-    maxDurability: 100.0
-    charge: 100.0
-    range: 50.0
-    text: 'A detector used to locate zones of anomalous activity. It is equipped with a basic tracking device. The wire glows brighter when aimed in the right direction, and it gives off an alarm when in close proximity to a source.'
-    image: { fileID: 21300000, guid: e7fb8897b45d4d59b75ac9fb57c1a15e, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Candle Short Range Detector'
-    m_Script: { fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3}
+  m_Name: Candle Short Range Detector
+  m_EditorClassIdentifier: null
+  id: B17n
+  key: dud_svecha
+  fullName: Candle Short Range Detector
+  pathCategory: Weapon/Device
+  weight: 0.7
+  text: 
+  maxStack: 1
+  price: 250000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 8c9402c65398461286a772dc2ebbc1cb, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Newbie
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  charge: 100
+  passiveScanRadius: 0
+  activeScanRadius: 0
+  activeScanAngle: 0
+  range: 50

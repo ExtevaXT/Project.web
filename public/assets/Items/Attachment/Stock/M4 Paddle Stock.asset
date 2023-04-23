@@ -2,29 +2,54 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: kxB1
-    key: '22604'
-    fullName: 'M4 Paddle Stock'
-    pathCategory: Attachment/Stock
-    attachmentMetaGroup: 4
-    attachmentMetaId: C
-    class: Stocks
-    weight: 0.35
-    recoil: -2.9999971
-    wiggle: -14.999998
-    drawTime: 4.999995
-    recoilGain: -19.999998
-    tickSpreadMultiplierReduction: 20.000004
-    suitableFor: [M4A1, 'M4 LB', LR-300]
-    image: { fileID: 21300000, guid: a7fa6feba4aa48108f7d804efd3cf284, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'M4 Paddle Stock'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: 77b46f033e30450698a96080f9af3cf6, type: 2 }, { fileID: 11400000, guid: 3557b71d3d36444b8930df3819e053ab, type: 2 }, { fileID: 11400000, guid: b10adf3b927c4040a73f3de593efa08d, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: M4 Paddle Stock
+  m_EditorClassIdentifier: null
+  id: kxB1
+  key: 22604
+  fullName: M4 Paddle Stock
+  pathCategory: Attachment/Stock
+  weight: 0.35
+  text: 
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: d5ce714833a5481a86b53634a6421e55, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 67
+  attachmentMetaGroup: 4
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - M4A1
+  - M4 LB
+  - LR-300
+  clipSize: 0
+  spread: 0
+  recoil: -2.9999971
+  horizontalRecoil: 0
+  recoilGain: -19.999998
+  drawTime: 4.999995
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: -14.999998
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 20.000004

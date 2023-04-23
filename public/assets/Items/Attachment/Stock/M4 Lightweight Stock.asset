@@ -2,28 +2,54 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 3mln
-    key: '22605'
-    fullName: 'M4 Lightweight Stock'
-    pathCategory: Attachment/Stock
-    attachmentMetaGroup: 4
-    attachmentMetaId: D
-    class: Stocks
-    weight: 0.15
-    recoil: -1.9999981
-    wiggle: -10.000002
-    recoilGain: -14.999998
-    tickSpreadMultiplierReduction: 29.999996
-    suitableFor: [M4A1, 'M4 LB', LR-300]
-    image: { fileID: 21300000, guid: 60bca02def60402db6eea3c020fb26f4, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'M4 Lightweight Stock'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: 77b46f033e30450698a96080f9af3cf6, type: 2 }, { fileID: 11400000, guid: 3557b71d3d36444b8930df3819e053ab, type: 2 }, { fileID: 11400000, guid: b10adf3b927c4040a73f3de593efa08d, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: M4 Lightweight Stock
+  m_EditorClassIdentifier: null
+  id: 3mln
+  key: 22605
+  fullName: M4 Lightweight Stock
+  pathCategory: Attachment/Stock
+  weight: 0.15
+  text: 
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 8311c703f6d2429ca5a310f5f190fb61, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 68
+  attachmentMetaGroup: 4
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - M4A1
+  - M4 LB
+  - LR-300
+  clipSize: 0
+  spread: 0
+  recoil: -1.9999981
+  horizontalRecoil: 0
+  recoilGain: -14.999998
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: -10.000002
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 29.999996

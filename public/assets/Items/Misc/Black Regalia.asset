@@ -9,7 +9,7 @@ MonoBehaviour:
     class: Other
     weight: 0.4
     text: 'An unknown artifact. The aura that emanates from it suggests that it has significant value.'
-    image: { fileID: 21300000, guid: 4c30cbaf650a43de9b33593da72c251b, type: 3 }
+    image: { fileID: 21300000, guid: ecbaec8c1d6a416ca1a0e6b75576c53a, type: 3 }
     m_EditorClassIdentifier: null
     m_Name: 'Black Regalia'
     m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }

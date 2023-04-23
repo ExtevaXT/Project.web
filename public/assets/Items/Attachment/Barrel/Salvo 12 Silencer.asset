@@ -2,29 +2,59 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Romn
-    key: silencer_salvo12
-    fullName: 'Salvo 12 Silencer'
-    pathCategory: Attachment/Barrel
-    attachmentMetaGroup: 0
-    attachmentMetaId: V
-    rank: Veteran
-    class: 'Muzzles and Silencers'
-    weight: 0.96
-    spread: -11.000002
-    drawTime: 10.000002
-    damageDistant: -25.0
-    text: 'ATTENTION: if you use a silencer, the enemy won’t know where you are firing from.'
-    suitableFor: ['Cobray Terminator', AA-12, 'Mossberg 590A1', МР-133, 'Franchi SPAS-12', Saiga-12K, МР-153]
-    image: { fileID: 21300000, guid: b690cd2b7c264e828e04a7612cd4d405, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Salvo 12 Silencer'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: 703638317d2043d5931b1b63aced9f39, type: 2 }, { fileID: 11400000, guid: 13271f00095b458e98cb092b18239ba4, type: 2 }, { fileID: 11400000, guid: f3efc26379e7436bba73795f518cbc87, type: 2 }, { fileID: 11400000, guid: c660355d857e407a9430ba342a6b19a4, type: 2 }, { fileID: 11400000, guid: 594ae0108ac644d69fe62a7db94c951a, type: 2 }, { fileID: 11400000, guid: b39e0e8e826b4d64882ad242d4efd5db, type: 2 }, { fileID: 11400000, guid: ffe80b0618ad428881c51c685fd8f099, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: Salvo 12 Silencer
+  m_EditorClassIdentifier: null
+  id: Romn
+  key: silencer_salvo12
+  fullName: Salvo 12 Silencer
+  pathCategory: Attachment/Barrel
+  weight: 0.96
+  text: "ATTENTION: if you use a silencer, the enemy won\u2019t know where you are
+    firing from."
+  maxStack: 1
+  price: 100000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: fe054f34bfda4457944544596fc9d31a, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 86
+  attachmentMetaGroup: 0
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - Cobray Terminator
+  - AA-12
+  - Mossberg 590A1
+  - "\u041C\u0420-133"
+  - Franchi SPAS-12
+  - Saiga-12K
+  - "\u041C\u0420-153"
+  clipSize: 0
+  spread: -11.000002
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 10.000002
+  damageDistant: -25
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

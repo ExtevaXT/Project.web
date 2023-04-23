@@ -2,26 +2,55 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: z5JL
-    key: mag_pm
-    fullName: 'PM PB Extended Clip'
-    pathCategory: Attachment/Mag
-    attachmentMetaGroup: 3
-    attachmentMetaId: '`'
-    rank: Picklock
-    class: Clips
-    weight: 0.05
-    additiveClipSize: 2.0
-    suitableFor: [PMM, 'Eternal Novice’s PM', PB, PM]
-    image: { fileID: 21300000, guid: c15b9157ce4d41118a809f923f0e326c, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'PM PB Extended Clip'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: cda2d25d54fb46dc9946e2a485d3824c, type: 2 }, { fileID: 11400000, guid: 2650f75a16424991bd0d56222c01e407, type: 2 }, { fileID: 11400000, guid: 2e779a7b428e42d5bcc7040bbb5ecd41, type: 2 }, { fileID: 11400000, guid: 2d6656879c5f433e9953710ea595b43e, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: PM PB Extended Clip
+  m_EditorClassIdentifier: null
+  id: z5JL
+  key: mag_pm
+  fullName: PM PB Extended Clip
+  pathCategory: Attachment/Mag
+  weight: 0.05
+  text: 
+  maxStack: 1
+  price: 500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: d450af37872646a5b9225a79d282bbbb, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 96
+  attachmentMetaGroup: 3
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - PMM
+  - "Eternal Novice\u2019s PM"
+  - PB
+  - PM
+  clipSize: 0
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

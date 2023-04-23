@@ -2,26 +2,62 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: yyzG
-    key: launcher_m203
-    fullName: M203
-    pathCategory: Attachment/Other
-    attachmentMetaGroup: 1
-    attachmentMetaId: B
-    rank: Veteran
-    class: 'Other Attachments'
-    weight: 1.36
-    text: 'American 40 mm Underbarrel Grenade Launcher'
-    suitableFor: [M4A1, 'M4 LB', LR-300, HK416, 'HK XM8S', HK417, 'RIS M4A1 Handguard', 'RIS M16 Handguard', 'SIG SG 550 Handguard 4x NAR', 'Handguard with Guiding RIS for SIG SG 550', 'Handguard RIS LR-300']
-    image: { fileID: 21300000, guid: 98bb80b491144b9d96efdebbcaf7b34d, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: M203
-    m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: 77b46f033e30450698a96080f9af3cf6, type: 2 }, { fileID: 11400000, guid: 3557b71d3d36444b8930df3819e053ab, type: 2 }, { fileID: 11400000, guid: b10adf3b927c4040a73f3de593efa08d, type: 2 }, { fileID: 11400000, guid: 113352d4da17408b9709f068d8a9cc79, type: 2 }, { fileID: 11400000, guid: c28c131d1a8a4923b356aa0de47019b1, type: 2 }, { fileID: 11400000, guid: be5712e186884240bc90065ad3c08b0e, type: 2 }, { fileID: 11400000, guid: 4527654f94c04624a560da549158dbd2, type: 2 }, { fileID: 11400000, guid: 2d4e51e1d5b247be8993616029bb1b61, type: 2 }, { fileID: 11400000, guid: 373d0f6995ec41bb8600d77e0504c7eb, type: 2 }, { fileID: 11400000, guid: 6e8cb504a22440ec8c76244ad10cf2d7, type: 2 }, { fileID: 11400000, guid: ed97ca82e9584b4ca4d02673e3ed4c49, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: M203
+  m_EditorClassIdentifier: null
+  id: yyzG
+  key: launcher_m203
+  fullName: M203
+  pathCategory: Attachment/Other
+  weight: 1.36
+  text: American 40 mm Underbarrel Grenade Launcher
+  maxStack: 1
+  price: 100000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 62110869d4ba4eb1a55c5ea9e76fcb43, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 66
+  attachmentMetaGroup: 1
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - M4A1
+  - M4 LB
+  - LR-300
+  - HK416
+  - HK XM8S
+  - HK417
+  - RIS M4A1 Handguard
+  - RIS M16 Handguard
+  - SIG SG 550 Handguard 4x NAR
+  - Handguard with Guiding RIS for SIG SG 550
+  - Handguard RIS LR-300
+  clipSize: 0
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

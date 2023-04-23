@@ -2,26 +2,54 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: z1y2
-    key: steeltiger
-    fullName: 'Steel Tiger Karambit'
-    pathCategory: Weapon/Melee
-    rank: Master
-    class: 'Melee Weapons'
-    weight: 0.153
-    common: 40.0
-    strong: 100.0
-    piercing: 80.0
-    bloodlustChance: 60.0
-    text: 'A dagger with a twisted blade that curves in on itself. Perfectly suited for combat in tight spaces, where standard knives can’t be used.'
-    image: { fileID: 21300000, guid: 448bc5d4604e47419a407ef52639c819, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Steel Tiger Karambit'
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: Steel Tiger Karambit
+  m_EditorClassIdentifier: null
+  id: z1y2
+  key: steeltiger
+  fullName: Steel Tiger Karambit
+  pathCategory: Weapon/Melee
+  weight: 0.153
+  text: "A dagger with a twisted blade that curves in on itself. Perfectly suited
+    for combat in tight spaces, where standard knives can\u2019t be used."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: bcb1ef3ef7934ce5bd98e09ef2e1070e, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 40
+  strong: 100
+  piercing: 80
+  bloodlustChance: 60

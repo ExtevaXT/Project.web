@@ -2,27 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: RgOz
-    key: puzir_atom
-    fullName: Atom
-    pathCategory: Artefact/Electrophysical
-    class: Electrophysical
-    weight: 0.1
-    common: 'Not studied'
-    maxDurability: 100.0
-    radiationDmgFactor: [10.0, 25.0]
-    biologicalDmgFactor: [10.0, 25.0]
-    radiationAccumulation: [-5.0, -3.0]
-    biologicalAccumulation: [-5.0, -3.0]
-    text: 'An extremely rare and valuable artifact. Finding it is a big windfall. The few people who own one of these call it their “guardian angel,” as it can protect from negative effects while not having any negative properties of its own.'
-    image: { fileID: 21300000, guid: 95b02aadae3b4da28bb60a08c89ebf75, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Atom
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Atom
+  m_EditorClassIdentifier: null
+  id: RgOz
+  key: puzir_atom
+  fullName: Atom
+  pathCategory: Artefact/Electrophysical
+  weight: 0.1
+  text: "An extremely rare and valuable artifact. Finding it is a big windfall. The
+    few people who own one of these call it their \u201Cguardian angel,\u201D as
+    it can protect from negative effects while not having any negative properties
+    of its own."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 868be95cf7664df2b22c540a7f5fbee5, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: fbfffffffdffffff
+  biologicalAccumulation: fbfffffffdffffff
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 0a00000019000000
+  bleedingDmgFactor: 
+  radiationDmgFactor: 0a00000019000000
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

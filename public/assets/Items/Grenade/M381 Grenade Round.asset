@@ -2,26 +2,50 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 3grl
-    key: m381
-    fullName: 'M381 Grenade Round'
-    pathCategory: Grenade
-    class: Grenades
-    weight: 0.23
-    explosionStrength: 450.0
-    explosionStrengthMin: 25.0
-    lifetime: 8.0
-    explosionSize: 6.0
-    explosionActivationTime: 0.25
-    text: 'A fragmentation round for the M203 grenade launcher.'
-    image: { fileID: 21300000, guid: 8c7ce4c13ba64979b063f8ad648e2656, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'M381 Grenade Round'
-    m_Script: { fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3}
+  m_Name: M381 Grenade Round
+  m_EditorClassIdentifier: null
+  id: 3grl
+  key: m381
+  fullName: M381 Grenade Round
+  pathCategory: Grenade
+  weight: 0.23
+  text: A fragmentation round for the M203 grenade launcher.
+  maxStack: 1
+  price: 5000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: c31c9021501c46479dde6ca41d5cbea2, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  lifetime: 8
+  explosionStrengthMin: 25
+  explosionStrength: 450
+  explosionSize: 6
+  explosionActivationTime: 0.25
+  flashTime: 0

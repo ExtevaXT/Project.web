@@ -2,41 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 1LNO
-    key: ao6
-    fullName: 'RAPS AH-6 Nomad'
-    pathCategory: Armor/Mixed
-    rank: Master
-    class: Combo
-    weight: 24.0
-    maxDurability: 100.0
-    staminaBonus: [-10.0]
-    speedModifier: [-2.0]
-    maxWeightBonus: [15.0]
-    heal: [3.0]
-    nightVision: 1
-    bulletDmgFactor: [105.0]
-    tearDmgFactor: [124.0]
-    explosionDmgFactor: [149.0]
-    electraDmgFactor: [711.0]
-    burnDmgFactor: [711.0]
-    chemicalBurnDmgFactor: [711.0]
-    radiationProtection: [240.0]
-    thermalProtection: [240.0]
-    biologicalProtection: [300.0]
-    psychoProtection: [240.0]
-    bleedingProtection: [53.0]
-    compatibleBackpacks: light
-    compatibleContainers: spacious
-    text: 'The best model in the Artifact Hunters range. The main emphasis was placed on increasing ease of use and fixing errors from previous versions.'
-    image: { fileID: 21300000, guid: 65dc7d57df664832b4aafc8d0af52791, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'RAPS AH-6 Nomad'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: RAPS AH-6 Nomad
+  m_EditorClassIdentifier: null
+  id: 1LNO
+  key: ao6
+  fullName: RAPS AH-6 Nomad
+  pathCategory: Armor/Mixed
+  weight: 24
+  text: The best model in the Artifact Hunters range. The main emphasis was placed
+    on increasing ease of use and fixing errors from previous versions.
+  maxStack: 1
+  price: 10000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: da707c312e4f43b6bcda33d02d5980a4, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f6ffffff
+  staminaRegenerationBonus: 
+  heal: 03000000
+  healEfficiency: 
+  speedModifier: feffffff
+  maxWeightBonus: 0f000000
+  bleedingProtection: 35000000
+  radiationProtection: f0000000
+  psychoProtection: f0000000
+  thermalProtection: f0000000
+  biologicalProtection: 2c010000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 69000000
+  tearDmgFactor: 7c000000
+  explosionDmgFactor: 95000000
+  electraDmgFactor: c7020000
+  burnDmgFactor: c7020000
+  chemicalBurnDmgFactor: c7020000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: spacious

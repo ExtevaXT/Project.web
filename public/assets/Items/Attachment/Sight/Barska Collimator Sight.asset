@@ -2,26 +2,136 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: RoRz
-    key: sight_barska_closed
-    fullName: 'Barska Collimator Sight'
-    pathCategory: Attachment/Sight
-    attachmentMetaGroup: 2
-    attachmentMetaId: ^
-    rank: Veteran
-    class: Sights
-    weight: 0.386
-    text: 'Model: Multi-reticle AR-X 1x35@Reticle: circle with cutaways, dot in the center, red'
-    suitableFor: [L85A1, M4A1, 'FN P90', 'SIG SG 550', PP-2000, M16A3, 'M4 LB', 'ALK-22 Dragonfly', 'HK G36C', 'TDI KRISS Vector', A-545, 'HK G3A1', 'FN F2000 Tactical', ASh-12, 'FN F2000', 'HK UMP9', LR-300, 'FN SCAR-L', 'OTs-14M Shtorm', SV-98, 'M249 SAW', HK416, RPK-16, TKB-0146M, 'Steyr AUG A2', 'Steyr AUG A3', AK-12, 'SIG SG 550 Sniper', 'FN FAL', 'FN SCAR-H', 'Gauss Rifle', 'FN SCAR SSR', 'FAMAS G2', 'McMillan CS5', 'Crye Precision SIX12', 'HK PSG1', 'HK XM8S', HK417, DSA-58, AK-308, 'IWI Tavor X95', 'Chiappa Triple Crown', Protecta, L86A1, Rapier, 'PP Oreh', 'Desert Eagle Mark XIX', RSh-12, 'Winchester M70', 'Steyr Scout', M40A5, 'Alpine TPG-1', 'FG-42 Whip', 'WA 2000', L96A1, MTs-558, 'Karbach OTL-03', 'RIS L85 Handguard', 'RIS M4A1 Handguard', 'RIS M16 Handguard', 'Fal Quad Rail', 'SIG SG 550 Handguard 4x NAR', 'Handguard RIS LR-300', 'B-11 Handguard with Upper Rail', 'CAA RS-21 Handguard', 'B-10M Handguard and B-33 Receiver Cover', 'PKP Receiver Cover with Picatinny Rail', 'SKS Tactical Grip', 'RPD Tactical Handguard', 'OTs-14 Tactical Grip', 'Val VSS Receiver Cover', 'BM Barrel Mount', 'D-Eagle Barrel Extension', 'M1A with Picatinny Rail Handguard', 'RIS Bracket-Rail', 'Picatinny Rail and Base', 'Side Bracket with Picatinny Rail', 'RIS XM8 Rail', 'Guiding RIS for Shotgun', 'Kochetov Mount for Patriot with Picatinny Rail', 'Adaptive RIS Rail for DP', 'Sight Mount for M16A2', 'Increasing RIS-Rail', 'Picatinny Rail for SVT']
-    image: { fileID: 21300000, guid: c8d5b8070958432594ab194e39232fc0, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Barska Collimator Sight'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: cce94f45edd144c79dd0d9194a23a817, type: 2 }, { fileID: 11400000, guid: 77b46f033e30450698a96080f9af3cf6, type: 2 }, { fileID: 11400000, guid: a7679bcfa6924ffaa9854fe947829fce, type: 2 }, { fileID: 11400000, guid: 29dd930975564e2e86e6adf36e169626, type: 2 }, { fileID: 11400000, guid: 45c72c32a22d4eb4a605295e404c0c17, type: 2 }, { fileID: 11400000, guid: 3557b71d3d36444b8930df3819e053ab, type: 2 }, { fileID: 11400000, guid: f73b4aa30f204ff8b84cd116cd7e86f3, type: 2 }, { fileID: 11400000, guid: dc2bc8cdbcc64593aadebe604484e423, type: 2 }, { fileID: 11400000, guid: 366938c050c84ce28d0d8588a5ec1c9c, type: 2 }, { fileID: 11400000, guid: 353549dbb516496e80e2d8d479eb67f2, type: 2 }, { fileID: 11400000, guid: a72a73f65c3f49169e031afeb042f464, type: 2 }, { fileID: 11400000, guid: a0f3b4eb762248e7a0e9b9897a3eb028, type: 2 }, { fileID: 11400000, guid: b82f55b8b3d1455e8784b7fed65054c8, type: 2 }, { fileID: 11400000, guid: 428addaaf33240f8a6477e6a796f6c2d, type: 2 }, { fileID: 11400000, guid: 73b5f36dac7a4ae38440102c9a1bfe31, type: 2 }, { fileID: 11400000, guid: b10adf3b927c4040a73f3de593efa08d, type: 2 }, { fileID: 11400000, guid: 10ccffcd2cf24697a9eaded376382b27, type: 2 }, { fileID: 11400000, guid: 4608a553c4ac4ba4900c405702ce3797, type: 2 }, { fileID: 11400000, guid: fa0dc23f379a47f8ade14823c6a140f8, type: 2 }, { fileID: 11400000, guid: 926f8012f1f147bca2e3d8ab2f7b4a3f, type: 2 }, { fileID: 11400000, guid: 113352d4da17408b9709f068d8a9cc79, type: 2 }, { fileID: 11400000, guid: 072d5ce3fae84ea8a31a03fc8860d31a, type: 2 }, { fileID: 11400000, guid: 8777593067f64bd4810960977d18bc34, type: 2 }, { fileID: 11400000, guid: 364550d1cd93417b9c993e46e571a087, type: 2 }, { fileID: 11400000, guid: 4c7aad940392434cbbe10ee4b2065e17, type: 2 }, { fileID: 11400000, guid: 3f7b75414d5e44538fccd02b875af575, type: 2 }, { fileID: 11400000, guid: 4774a58b6c424140a9d8511918ac3c98, type: 2 }, { fileID: 11400000, guid: e943fe9d471747c6a8fa392392a870ff, type: 2 }, { fileID: 11400000, guid: 0bd3d41a5c5a4998b5393a879549d0af, type: 2 }, { fileID: 11400000, guid: 28d39f39699446d982eae3baa22b7536, type: 2 }, { fileID: 11400000, guid: 901a5e50707843ad8787b4ca17b7f7d5, type: 2 }, { fileID: 11400000, guid: fc36323a5f4c4c088dd6fa88e75abc31, type: 2 }, { fileID: 11400000, guid: c3f3143c89fe4d7f83ed1740b75aebe8, type: 2 }, { fileID: 11400000, guid: 79815205844740bfbd22e903238a182b, type: 2 }, { fileID: 11400000, guid: 5e60114ec63c4c13bade04371eb06708, type: 2 }, { fileID: 11400000, guid: c28c131d1a8a4923b356aa0de47019b1, type: 2 }, { fileID: 11400000, guid: be5712e186884240bc90065ad3c08b0e, type: 2 }, { fileID: 11400000, guid: 9f688ae35ce743e89a92a280a4f9cf8e, type: 2 }, { fileID: 11400000, guid: 69418dc108f34512a8527e9029c48960, type: 2 }, { fileID: 11400000, guid: b6cc5f395b0c46b8a7c4c28cd9bc6f6d, type: 2 }, { fileID: 11400000, guid: 28cd1bad325d42d3b663f8e6ef0a1511, type: 2 }, { fileID: 11400000, guid: ba293b19b708445b97f6485ff83f0a0d, type: 2 }, { fileID: 11400000, guid: 3b8db3be285a4b458c0166f1ec936121, type: 2 }, { fileID: 11400000, guid: 5202b5c71aa547de93c4f367cfc0a03f, type: 2 }, { fileID: 11400000, guid: 21bf4c3c36c14e1ba2fb03ddeb8196f5, type: 2 }, { fileID: 11400000, guid: 1b8b6bf0404140668ddca91e2d6ea637, type: 2 }, { fileID: 11400000, guid: dae9f641d88b4e1f9832606bc5f08738, type: 2 }, { fileID: 11400000, guid: f3aa826e153f4f448bf152579ebce607, type: 2 }, { fileID: 11400000, guid: a2d069a33d004b8a806769898f87a0a0, type: 2 }, { fileID: 11400000, guid: 00177ac2c5f3494590153a048180ad3d, type: 2 }, { fileID: 11400000, guid: f56158bc48454997b63d74b74f53a471, type: 2 }, { fileID: 11400000, guid: 07d131d85df44d788dfcf091f17ba280, type: 2 }, { fileID: 11400000, guid: 4e845df9a2ab44a68438023408380ebd, type: 2 }, { fileID: 11400000, guid: ec85465d46ff417190b2ee9e3f8ae721, type: 2 }, { fileID: 11400000, guid: df46123800564162825fbf21b44cdd72, type: 2 }, { fileID: 11400000, guid: 4527654f94c04624a560da549158dbd2, type: 2 }, { fileID: 11400000, guid: 2d4e51e1d5b247be8993616029bb1b61, type: 2 }, { fileID: 11400000, guid: 1b58d2f8e92441efa80bfe2255ee30f3, type: 2 }, { fileID: 11400000, guid: 373d0f6995ec41bb8600d77e0504c7eb, type: 2 }, { fileID: 11400000, guid: ed97ca82e9584b4ca4d02673e3ed4c49, type: 2 }, { fileID: 11400000, guid: b0993d9d0b8a407299431496efc54fdc, type: 2 }, { fileID: 11400000, guid: 80c03cc47d664075b1892f770b40097e, type: 2 }, { fileID: 11400000, guid: 4884480e25f94582928eea121281bf8a, type: 2 }, { fileID: 11400000, guid: 4fd3398f458648f58a2ec527afe1b1b4, type: 2 }, { fileID: 11400000, guid: 15559016d1b742fba6cfc572b4a11992, type: 2 }, { fileID: 11400000, guid: 4913249a2b464f068326d0f8e1be618d, type: 2 }, { fileID: 11400000, guid: 0c1d2a03e11f4dfe8b929356a00ef531, type: 2 }, { fileID: 11400000, guid: 7c887b5d10564d81b3240fbcb0f6465e, type: 2 }, { fileID: 11400000, guid: 1bd2e9414c75423d988b2a540d97852b, type: 2 }, { fileID: 11400000, guid: 4c902c0afc374788b8a8fd01c22aef10, type: 2 }, { fileID: 11400000, guid: 63eff341bc764009894ad0e4f1adbbb8, type: 2 }, { fileID: 11400000, guid: 97de9b94ad53410da7b2ffd595fabdf0, type: 2 }, { fileID: 11400000, guid: 23cfb46a64ec4ef3a1de8951c04c06e9, type: 2 }, { fileID: 11400000, guid: e92e39fc545d4ecdaf3399fdc9b0ad8c, type: 2 }, { fileID: 11400000, guid: ad60b3431075420db4b9a06f08c188ef, type: 2 }, { fileID: 11400000, guid: b550fcb7d1a548af80ae82e02acb6506, type: 2 }, { fileID: 11400000, guid: a6934f5e2c834b5ab2118ec214734f3a, type: 2 }, { fileID: 11400000, guid: 28d13135783649a9be41638d8c9e8021, type: 2 }, { fileID: 11400000, guid: 8d9b2c90a21d454e9ec91c4363625e7d, type: 2 }, { fileID: 11400000, guid: 1bfcb2030f6a4b76b436918e621e3490, type: 2 }, { fileID: 11400000, guid: cce94f45edd144c79dd0d9194a23a817, type: 2 }, { fileID: 11400000, guid: 77b46f033e30450698a96080f9af3cf6, type: 2 }, { fileID: 11400000, guid: a7679bcfa6924ffaa9854fe947829fce, type: 2 }, { fileID: 11400000, guid: 29dd930975564e2e86e6adf36e169626, type: 2 }, { fileID: 11400000, guid: 45c72c32a22d4eb4a605295e404c0c17, type: 2 }, { fileID: 11400000, guid: 3557b71d3d36444b8930df3819e053ab, type: 2 }, { fileID: 11400000, guid: f73b4aa30f204ff8b84cd116cd7e86f3, type: 2 }, { fileID: 11400000, guid: dc2bc8cdbcc64593aadebe604484e423, type: 2 }, { fileID: 11400000, guid: 366938c050c84ce28d0d8588a5ec1c9c, type: 2 }, { fileID: 11400000, guid: 353549dbb516496e80e2d8d479eb67f2, type: 2 }, { fileID: 11400000, guid: a72a73f65c3f49169e031afeb042f464, type: 2 }, { fileID: 11400000, guid: a0f3b4eb762248e7a0e9b9897a3eb028, type: 2 }, { fileID: 11400000, guid: b82f55b8b3d1455e8784b7fed65054c8, type: 2 }, { fileID: 11400000, guid: 428addaaf33240f8a6477e6a796f6c2d, type: 2 }, { fileID: 11400000, guid: 73b5f36dac7a4ae38440102c9a1bfe31, type: 2 }, { fileID: 11400000, guid: b10adf3b927c4040a73f3de593efa08d, type: 2 }, { fileID: 11400000, guid: 10ccffcd2cf24697a9eaded376382b27, type: 2 }, { fileID: 11400000, guid: 4608a553c4ac4ba4900c405702ce3797, type: 2 }, { fileID: 11400000, guid: fa0dc23f379a47f8ade14823c6a140f8, type: 2 }, { fileID: 11400000, guid: 926f8012f1f147bca2e3d8ab2f7b4a3f, type: 2 }, { fileID: 11400000, guid: 113352d4da17408b9709f068d8a9cc79, type: 2 }, { fileID: 11400000, guid: 072d5ce3fae84ea8a31a03fc8860d31a, type: 2 }, { fileID: 11400000, guid: 8777593067f64bd4810960977d18bc34, type: 2 }, { fileID: 11400000, guid: 364550d1cd93417b9c993e46e571a087, type: 2 }, { fileID: 11400000, guid: 4c7aad940392434cbbe10ee4b2065e17, type: 2 }, { fileID: 11400000, guid: 3f7b75414d5e44538fccd02b875af575, type: 2 }, { fileID: 11400000, guid: 4774a58b6c424140a9d8511918ac3c98, type: 2 }, { fileID: 11400000, guid: e943fe9d471747c6a8fa392392a870ff, type: 2 }, { fileID: 11400000, guid: 0bd3d41a5c5a4998b5393a879549d0af, type: 2 }, { fileID: 11400000, guid: 28d39f39699446d982eae3baa22b7536, type: 2 }, { fileID: 11400000, guid: 901a5e50707843ad8787b4ca17b7f7d5, type: 2 }, { fileID: 11400000, guid: fc36323a5f4c4c088dd6fa88e75abc31, type: 2 }, { fileID: 11400000, guid: c3f3143c89fe4d7f83ed1740b75aebe8, type: 2 }, { fileID: 11400000, guid: 79815205844740bfbd22e903238a182b, type: 2 }, { fileID: 11400000, guid: 5e60114ec63c4c13bade04371eb06708, type: 2 }, { fileID: 11400000, guid: c28c131d1a8a4923b356aa0de47019b1, type: 2 }, { fileID: 11400000, guid: be5712e186884240bc90065ad3c08b0e, type: 2 }, { fileID: 11400000, guid: 9f688ae35ce743e89a92a280a4f9cf8e, type: 2 }, { fileID: 11400000, guid: 69418dc108f34512a8527e9029c48960, type: 2 }, { fileID: 11400000, guid: b6cc5f395b0c46b8a7c4c28cd9bc6f6d, type: 2 }, { fileID: 11400000, guid: 28cd1bad325d42d3b663f8e6ef0a1511, type: 2 }, { fileID: 11400000, guid: ba293b19b708445b97f6485ff83f0a0d, type: 2 }, { fileID: 11400000, guid: 3b8db3be285a4b458c0166f1ec936121, type: 2 }, { fileID: 11400000, guid: 5202b5c71aa547de93c4f367cfc0a03f, type: 2 }, { fileID: 11400000, guid: 21bf4c3c36c14e1ba2fb03ddeb8196f5, type: 2 }, { fileID: 11400000, guid: 1b8b6bf0404140668ddca91e2d6ea637, type: 2 }, { fileID: 11400000, guid: dae9f641d88b4e1f9832606bc5f08738, type: 2 }, { fileID: 11400000, guid: f3aa826e153f4f448bf152579ebce607, type: 2 }, { fileID: 11400000, guid: a2d069a33d004b8a806769898f87a0a0, type: 2 }, { fileID: 11400000, guid: 00177ac2c5f3494590153a048180ad3d, type: 2 }, { fileID: 11400000, guid: f56158bc48454997b63d74b74f53a471, type: 2 }, { fileID: 11400000, guid: 07d131d85df44d788dfcf091f17ba280, type: 2 }, { fileID: 11400000, guid: 4e845df9a2ab44a68438023408380ebd, type: 2 }, { fileID: 11400000, guid: ec85465d46ff417190b2ee9e3f8ae721, type: 2 }, { fileID: 11400000, guid: df46123800564162825fbf21b44cdd72, type: 2 }, { fileID: 11400000, guid: 4527654f94c04624a560da549158dbd2, type: 2 }, { fileID: 11400000, guid: 2d4e51e1d5b247be8993616029bb1b61, type: 2 }, { fileID: 11400000, guid: 1b58d2f8e92441efa80bfe2255ee30f3, type: 2 }, { fileID: 11400000, guid: 373d0f6995ec41bb8600d77e0504c7eb, type: 2 }, { fileID: 11400000, guid: ed97ca82e9584b4ca4d02673e3ed4c49, type: 2 }, { fileID: 11400000, guid: b0993d9d0b8a407299431496efc54fdc, type: 2 }, { fileID: 11400000, guid: 80c03cc47d664075b1892f770b40097e, type: 2 }, { fileID: 11400000, guid: 4884480e25f94582928eea121281bf8a, type: 2 }, { fileID: 11400000, guid: 4fd3398f458648f58a2ec527afe1b1b4, type: 2 }, { fileID: 11400000, guid: 15559016d1b742fba6cfc572b4a11992, type: 2 }, { fileID: 11400000, guid: 4913249a2b464f068326d0f8e1be618d, type: 2 }, { fileID: 11400000, guid: 0c1d2a03e11f4dfe8b929356a00ef531, type: 2 }, { fileID: 11400000, guid: 7c887b5d10564d81b3240fbcb0f6465e, type: 2 }, { fileID: 11400000, guid: 1bd2e9414c75423d988b2a540d97852b, type: 2 }, { fileID: 11400000, guid: 4c902c0afc374788b8a8fd01c22aef10, type: 2 }, { fileID: 11400000, guid: 63eff341bc764009894ad0e4f1adbbb8, type: 2 }, { fileID: 11400000, guid: 97de9b94ad53410da7b2ffd595fabdf0, type: 2 }, { fileID: 11400000, guid: 23cfb46a64ec4ef3a1de8951c04c06e9, type: 2 }, { fileID: 11400000, guid: e92e39fc545d4ecdaf3399fdc9b0ad8c, type: 2 }, { fileID: 11400000, guid: ad60b3431075420db4b9a06f08c188ef, type: 2 }, { fileID: 11400000, guid: b550fcb7d1a548af80ae82e02acb6506, type: 2 }, { fileID: 11400000, guid: a6934f5e2c834b5ab2118ec214734f3a, type: 2 }, { fileID: 11400000, guid: 28d13135783649a9be41638d8c9e8021, type: 2 }, { fileID: 11400000, guid: 8d9b2c90a21d454e9ec91c4363625e7d, type: 2 }, { fileID: 11400000, guid: 1bfcb2030f6a4b76b436918e621e3490, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: Barska Collimator Sight
+  m_EditorClassIdentifier: null
+  id: RoRz
+  key: sight_barska_closed
+  fullName: Barska Collimator Sight
+  pathCategory: Attachment/Sight
+  weight: 0.386
+  text: 'Model: Multi-reticle AR-X 1x35@Reticle: circle with cutaways, dot in the
+    center, red'
+  maxStack: 1
+  price: 200000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 7b8e1a573d0e4e6097434d52b6629753, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 94
+  attachmentMetaGroup: 2
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - L85A1
+  - M4A1
+  - FN P90
+  - SIG SG 550
+  - PP-2000
+  - M16A3
+  - M4 LB
+  - ALK-22 Dragonfly
+  - HK G36C
+  - TDI KRISS Vector
+  - A-545
+  - HK G3A1
+  - FN F2000 Tactical
+  - ASh-12
+  - FN F2000
+  - HK UMP9
+  - LR-300
+  - FN SCAR-L
+  - OTs-14M Shtorm
+  - SV-98
+  - M249 SAW
+  - HK416
+  - RPK-16
+  - TKB-0146M
+  - Steyr AUG A2
+  - Steyr AUG A3
+  - AK-12
+  - SIG SG 550 Sniper
+  - FN FAL
+  - FN SCAR-H
+  - Gauss Rifle
+  - FN SCAR SSR
+  - FAMAS G2
+  - McMillan CS5
+  - Crye Precision SIX12
+  - HK PSG1
+  - HK XM8S
+  - HK417
+  - DSA-58
+  - AK-308
+  - IWI Tavor X95
+  - Chiappa Triple Crown
+  - Protecta
+  - L86A1
+  - Rapier
+  - PP Oreh
+  - Desert Eagle Mark XIX
+  - RSh-12
+  - Winchester M70
+  - Steyr Scout
+  - M40A5
+  - Alpine TPG-1
+  - FG-42 Whip
+  - WA 2000
+  - L96A1
+  - MTs-558
+  - Karbach OTL-03
+  - RIS L85 Handguard
+  - RIS M4A1 Handguard
+  - RIS M16 Handguard
+  - Fal Quad Rail
+  - SIG SG 550 Handguard 4x NAR
+  - Handguard RIS LR-300
+  - B-11 Handguard with Upper Rail
+  - CAA RS-21 Handguard
+  - B-10M Handguard and B-33 Receiver Cover
+  - PKP Receiver Cover with Picatinny Rail
+  - SKS Tactical Grip
+  - RPD Tactical Handguard
+  - OTs-14 Tactical Grip
+  - Val VSS Receiver Cover
+  - BM Barrel Mount
+  - D-Eagle Barrel Extension
+  - M1A with Picatinny Rail Handguard
+  - RIS Bracket-Rail
+  - Picatinny Rail and Base
+  - Side Bracket with Picatinny Rail
+  - RIS XM8 Rail
+  - Guiding RIS for Shotgun
+  - Kochetov Mount for Patriot with Picatinny Rail
+  - Adaptive RIS Rail for DP
+  - Sight Mount for M16A2
+  - Increasing RIS-Rail
+  - Picatinny Rail for SVT
+  clipSize: 0
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

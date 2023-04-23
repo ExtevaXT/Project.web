@@ -2,25 +2,132 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: xLr3
-    key: mount_riselevator
-    fullName: 'Increasing RIS-Rail'
-    pathCategory: Attachment/Forend
-    attachmentMetaGroup: -1
-    attachmentMetaId: A
-    rank: Stalker
-    class: 'Hanguards and Brackets'
-    weight: 0.05
-    suitableFor: [L85A1, M4A1, 'SIG SG 550', M16A3, 'M4 LB', 'ALK-22 Dragonfly', 'HK G36C', 'TDI KRISS Vector', A-545, 'HK G3A1', 'FN F2000 Tactical', ASh-12, 'FN F2000', LR-300, 'FN SCAR-L', 'OTs-14M Shtorm', SV-98, 'M249 SAW', HK416, RPK-16, 'Steyr AUG A2', 'Steyr AUG A3', AK-12, 'SIG SG 550 Sniper', 'FN FAL', 'FN SCAR-H', 'Gauss Rifle', 'FN SCAR SSR', 'FAMAS G2', 'McMillan CS5', 'Crye Precision SIX12', 'HK PSG1', 'HK XM8S', HK417, DSA-58, AK-308, 'IWI Tavor X95', 'Chiappa Triple Crown', L86A1, 'Winchester M70', 'Steyr Scout', M40A5, 'Alpine TPG-1', 'FG-42 Whip', 'WA 2000', L96A1, MTs-558, 'Karbach OTL-03']
-    image: { fileID: 21300000, guid: fbc9a210c888477eb991f8ec9b3fb667, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Increasing RIS-Rail'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: cce94f45edd144c79dd0d9194a23a817, type: 2 }, { fileID: 11400000, guid: 77b46f033e30450698a96080f9af3cf6, type: 2 }, { fileID: 11400000, guid: 29dd930975564e2e86e6adf36e169626, type: 2 }, { fileID: 11400000, guid: 45c72c32a22d4eb4a605295e404c0c17, type: 2 }, { fileID: 11400000, guid: 3557b71d3d36444b8930df3819e053ab, type: 2 }, { fileID: 11400000, guid: f73b4aa30f204ff8b84cd116cd7e86f3, type: 2 }, { fileID: 11400000, guid: dc2bc8cdbcc64593aadebe604484e423, type: 2 }, { fileID: 11400000, guid: 366938c050c84ce28d0d8588a5ec1c9c, type: 2 }, { fileID: 11400000, guid: 353549dbb516496e80e2d8d479eb67f2, type: 2 }, { fileID: 11400000, guid: a72a73f65c3f49169e031afeb042f464, type: 2 }, { fileID: 11400000, guid: a0f3b4eb762248e7a0e9b9897a3eb028, type: 2 }, { fileID: 11400000, guid: b82f55b8b3d1455e8784b7fed65054c8, type: 2 }, { fileID: 11400000, guid: 428addaaf33240f8a6477e6a796f6c2d, type: 2 }, { fileID: 11400000, guid: b10adf3b927c4040a73f3de593efa08d, type: 2 }, { fileID: 11400000, guid: 10ccffcd2cf24697a9eaded376382b27, type: 2 }, { fileID: 11400000, guid: 4608a553c4ac4ba4900c405702ce3797, type: 2 }, { fileID: 11400000, guid: fa0dc23f379a47f8ade14823c6a140f8, type: 2 }, { fileID: 11400000, guid: 926f8012f1f147bca2e3d8ab2f7b4a3f, type: 2 }, { fileID: 11400000, guid: 113352d4da17408b9709f068d8a9cc79, type: 2 }, { fileID: 11400000, guid: 072d5ce3fae84ea8a31a03fc8860d31a, type: 2 }, { fileID: 11400000, guid: 364550d1cd93417b9c993e46e571a087, type: 2 }, { fileID: 11400000, guid: 4c7aad940392434cbbe10ee4b2065e17, type: 2 }, { fileID: 11400000, guid: 3f7b75414d5e44538fccd02b875af575, type: 2 }, { fileID: 11400000, guid: 4774a58b6c424140a9d8511918ac3c98, type: 2 }, { fileID: 11400000, guid: e943fe9d471747c6a8fa392392a870ff, type: 2 }, { fileID: 11400000, guid: 0bd3d41a5c5a4998b5393a879549d0af, type: 2 }, { fileID: 11400000, guid: 28d39f39699446d982eae3baa22b7536, type: 2 }, { fileID: 11400000, guid: 901a5e50707843ad8787b4ca17b7f7d5, type: 2 }, { fileID: 11400000, guid: fc36323a5f4c4c088dd6fa88e75abc31, type: 2 }, { fileID: 11400000, guid: c3f3143c89fe4d7f83ed1740b75aebe8, type: 2 }, { fileID: 11400000, guid: 79815205844740bfbd22e903238a182b, type: 2 }, { fileID: 11400000, guid: 5e60114ec63c4c13bade04371eb06708, type: 2 }, { fileID: 11400000, guid: c28c131d1a8a4923b356aa0de47019b1, type: 2 }, { fileID: 11400000, guid: be5712e186884240bc90065ad3c08b0e, type: 2 }, { fileID: 11400000, guid: 9f688ae35ce743e89a92a280a4f9cf8e, type: 2 }, { fileID: 11400000, guid: 69418dc108f34512a8527e9029c48960, type: 2 }, { fileID: 11400000, guid: b6cc5f395b0c46b8a7c4c28cd9bc6f6d, type: 2 }, { fileID: 11400000, guid: 28cd1bad325d42d3b663f8e6ef0a1511, type: 2 }, { fileID: 11400000, guid: 3b8db3be285a4b458c0166f1ec936121, type: 2 }, { fileID: 11400000, guid: dae9f641d88b4e1f9832606bc5f08738, type: 2 }, { fileID: 11400000, guid: f3aa826e153f4f448bf152579ebce607, type: 2 }, { fileID: 11400000, guid: a2d069a33d004b8a806769898f87a0a0, type: 2 }, { fileID: 11400000, guid: 00177ac2c5f3494590153a048180ad3d, type: 2 }, { fileID: 11400000, guid: f56158bc48454997b63d74b74f53a471, type: 2 }, { fileID: 11400000, guid: 07d131d85df44d788dfcf091f17ba280, type: 2 }, { fileID: 11400000, guid: 4e845df9a2ab44a68438023408380ebd, type: 2 }, { fileID: 11400000, guid: ec85465d46ff417190b2ee9e3f8ae721, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: Increasing RIS-Rail
+  m_EditorClassIdentifier: null
+  id: xLr3
+  key: mount_riselevator
+  fullName: Increasing RIS-Rail
+  pathCategory: Attachment/Forend
+  weight: 0.05
+  text: 
+  maxStack: 1
+  price: 250000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 8cff708c3740429682c87047799d47d4, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 65
+  attachmentMetaGroup: -1
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 3b5dff3347f94bf0a77ab8b29a3c4693, type: 2}
+  - {fileID: 11400000, guid: c6980573024d4f529e3920810d728053, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 6a1bfe554ff547ebbc053a575599a616, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 199f2624bbc945f6b040294ab4950538, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: b6c2e38596364c718a4136c321a6fc5b, type: 2}
+  - {fileID: 11400000, guid: 29a88496ed2048cbbb17c75fe8c931b2, type: 2}
+  - {fileID: 11400000, guid: 27bbf9e0c36147f2bb31255beb3ab690, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: f7bdc342377a4873abdcd988d5ad0fb7, type: 2}
+  - {fileID: 11400000, guid: 5a738ed6648e4e44b58a8116f4ec42b4, type: 2}
+  - {fileID: 11400000, guid: e9b12fa0d066499aa8c4a51b81716482, type: 2}
+  - {fileID: 11400000, guid: 153f84525cdd45cda65c4aa9608008df, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: b7972612339443a6a3be403c2f8a4556, type: 2}
+  - {fileID: 11400000, guid: 81626b4e21364f5d8c904daa71c9cb16, type: 2}
+  - {fileID: 11400000, guid: ea55a20c27b846f9976d71645185c196, type: 2}
+  - {fileID: 11400000, guid: 383a0c6afc5d4d588cfbb07942633ab7, type: 2}
+  - {fileID: 11400000, guid: 5547cd0d522d477cb7f5e9345da06ccb, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 9ac9861931a74f93ab319f21df1e3c68, type: 2}
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - L85A1
+  - M4A1
+  - SIG SG 550
+  - M16A3
+  - M4 LB
+  - ALK-22 Dragonfly
+  - HK G36C
+  - TDI KRISS Vector
+  - A-545
+  - HK G3A1
+  - FN F2000 Tactical
+  - ASh-12
+  - FN F2000
+  - LR-300
+  - FN SCAR-L
+  - OTs-14M Shtorm
+  - SV-98
+  - M249 SAW
+  - HK416
+  - RPK-16
+  - Steyr AUG A2
+  - Steyr AUG A3
+  - AK-12
+  - SIG SG 550 Sniper
+  - FN FAL
+  - FN SCAR-H
+  - Gauss Rifle
+  - FN SCAR SSR
+  - FAMAS G2
+  - McMillan CS5
+  - Crye Precision SIX12
+  - HK PSG1
+  - HK XM8S
+  - HK417
+  - DSA-58
+  - AK-308
+  - IWI Tavor X95
+  - Chiappa Triple Crown
+  - L86A1
+  - Winchester M70
+  - Steyr Scout
+  - M40A5
+  - Alpine TPG-1
+  - FG-42 Whip
+  - WA 2000
+  - L96A1
+  - MTs-558
+  - Karbach OTL-03
+  clipSize: 0
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

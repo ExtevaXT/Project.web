@@ -2,29 +2,55 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: gJeG
-    key: mag_x550
-    fullName: 'X-5 Drum Clip'
-    pathCategory: Attachment/Mag
-    attachmentMetaGroup: 3
-    attachmentMetaId: I
-    rank: Newbie
-    class: Clips
-    weight: 0.64
-    clipSize: 50.0
-    jamming: 0.005
-    drawTime: 14.999998
-    reloadTime: 20.000004
-    suitableFor: ['HK MP5', 'HK UMP9', 'HK MP5K', Viper]
-    image: { fileID: 21300000, guid: 66be97d8b1ce4a57a6ed71b728b4e576, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'X-5 Drum Clip'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: 6d009c23746d4a04b35882242617b303, type: 2 }, { fileID: 11400000, guid: 73b5f36dac7a4ae38440102c9a1bfe31, type: 2 }, { fileID: 11400000, guid: b722b4dae5964625acdac2b50fc6c707, type: 2 }, { fileID: 11400000, guid: d8a466b8007049d69d8646c7b638228c, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: X-5 Drum Clip
+  m_EditorClassIdentifier: null
+  id: gJeG
+  key: mag_x550
+  fullName: X-5 Drum Clip
+  pathCategory: Attachment/Mag
+  weight: 0.64
+  text: 
+  maxStack: 1
+  price: 500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 0dbfa3536486499d8010c516094e04ea, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 73
+  attachmentMetaGroup: 3
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - HK MP5
+  - HK UMP9
+  - HK MP5K
+  - Viper
+  clipSize: 50
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 14.999998
+  damageDistant: 0
+  reloadTime: 20.000004
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

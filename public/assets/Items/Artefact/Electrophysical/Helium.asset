@@ -2,26 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: gKMn
-    key: electra_helium
-    fullName: Helium
-    pathCategory: Artefact/Electrophysical
-    class: Electrophysical
-    weight: 0.1
-    common: 'Not studied'
-    maxDurability: 100.0
-    speedModifier: [2.0, 4.0]
-    staminaRegenerationBonus: [2.5, 5.0]
-    biologicalAccumulation: [2.0, 5.0]
-    text: 'The brightest member of the electrostatic family of artifacts. It emits a gas-like substance that causes adrenaline to be released in a human’s blood, but which negatively affects the body if not neutralized. In high demand due to its effectiveness.'
-    image: { fileID: 21300000, guid: 66e0ed42eb17402bb8478fe683789c1f, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Helium
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Helium
+  m_EditorClassIdentifier: null
+  id: gKMn
+  key: electra_helium
+  fullName: Helium
+  pathCategory: Artefact/Electrophysical
+  weight: 0.1
+  text: "The brightest member of the electrostatic family of artifacts. It emits
+    a gas-like substance that causes adrenaline to be released in a human\u2019s
+    blood, but which negatively affects the body if not neutralized. In high demand
+    due to its effectiveness."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 599d101105224c849e79093964687ade, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 0200000005000000
+  heal: 
+  healEfficiency: 
+  speedModifier: 0200000004000000
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 0200000005000000
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

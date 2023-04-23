@@ -2,41 +2,90 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: qw6w
-    key: ots62
-    fullName: OTs-62
-    pathCategory: 'Weapon/Shotgun rifle'
-    rank: Veteran
-    class: 'Shotguns and Rifles'
-    weight: 2.5
-    maxDurability: 100.0
-    ammoType: '12 caliber'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 160.0
-    clipSize: 5.0
-    distance: 40.0
-    rateOfFire: 250.0
-    reloadTime: 4.75
-    spread: 4.5
-    hipSpread: 5.5
-    recoil: 7.0
-    horizontalRecoil: 1.0
-    drawTime: 0.85
-    aimSwitch: 0.3
-    startDamage: 160.0
-    damageDecreaseStart: 6.0
-    endDamage: 32.0
-    damageDecreaseEnd: 22.0
-    maxDistance: 40.0
-    text: 'This revolver is the next generation of MTs255 single-barrel revolving rifle'
-    image: { fileID: 21300000, guid: 8e26c043a5594093bc4973fb0b69eaec, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: OTs-62
-    m_Script: { fileID: 11500000, guid: bdae6158522d46441a5aace99f60b060, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdae6158522d46441a5aace99f60b060, type: 3}
+  m_Name: OTs-62
+  m_EditorClassIdentifier: null
+  id: qw6w
+  key: ots62
+  fullName: OTs-62
+  pathCategory: Weapon/Shotgun rifle
+  weight: 2.5
+  maxStack: 1
+  price: 1000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: afd51704a5ec412f8cebea42eee93130, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.85
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 160
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 4.75
+  clipSize: 5
+  ammoType: 12 caliber
+  spread: 4.5
+  hipSpread: 5.5
+  recoil: 7
+  horizontalRecoil: 1
+  aimSwitch: 0.3
+  startDamage: 160
+  damageDecreaseStart: 6
+  endDamage: 32
+  damageDecreaseEnd: 22
+  distance: 40
+  maxDistance: 40
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}
+  damageLossDistanceMin: 12
+  damageLossDistanceMax: 60
+  damageMin: 10
+  amountOfProjectiles: 8
+  distanceMultiplier: 0
+  spreadHorizontal: 10
+  spreadVertical: 10

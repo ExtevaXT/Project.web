@@ -2,20 +2,33 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Gn39
-    key: '16122'
-    fullName: 'IOU from Shaman'
-    pathCategory: Other
-    class: Other
-    text: 'I received this IOU as a reward from Shaman. I can use it to get an AKS from the merchant at the Cordon.'
-    image: { fileID: 21300000, guid: c4c8dd9f6083462189f8445c02491a73, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'IOU from Shaman'
-    m_Script: { fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3}
+  m_Name: IOU from Shaman
+  m_EditorClassIdentifier: null
+  id: Gn39
+  key: 16122
+  fullName: IOU from Shaman
+  pathCategory: Other
+  weight: 0
+  text: I received this IOU as a reward from Shaman. I can use it to get an AKS from
+    the merchant at the Cordon.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: cf517f8689704c56b664dbed406a6fa8, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 

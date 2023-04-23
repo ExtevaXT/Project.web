@@ -2,37 +2,83 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: VqrV
-    key: raincoat
-    fullName: Raincoat
-    pathCategory: Armor/Scientific
-    rank: Picklock
-    class: Scientist
-    weight: 0.5
-    maxDurability: 100.0
-    staminaBonus: [-10.0]
-    bulletDmgFactor: [0.0]
-    tearDmgFactor: [8.0]
-    explosionDmgFactor: [0.0]
-    electraDmgFactor: [40.0]
-    burnDmgFactor: [40.0]
-    chemicalBurnDmgFactor: [40.0]
-    radiationProtection: [40.0]
-    thermalProtection: [15.0]
-    biologicalProtection: [40.0]
-    psychoProtection: [0.0]
-    bleedingProtection: [0.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'Only protects the user against slight acid rain and mosquito bites.'
-    image: { fileID: 21300000, guid: 68fa6023548d4f8daaa4e619337b9140, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Raincoat
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Raincoat
+  m_EditorClassIdentifier: null
+  id: VqrV
+  key: raincoat
+  fullName: Raincoat
+  pathCategory: Armor/Scientific
+  weight: 0.5
+  text: Only protects the user against slight acid rain and mosquito bites.
+  maxStack: 1
+  price: 25000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: eb2d4f1e8b644b03b1e0e5062de64004, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Picklock
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f6ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 00000000
+  radiationProtection: 28000000
+  psychoProtection: 00000000
+  thermalProtection: 0f000000
+  biologicalProtection: 28000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 00000000
+  tearDmgFactor: 08000000
+  explosionDmgFactor: 00000000
+  electraDmgFactor: 28000000
+  burnDmgFactor: 28000000
+  chemicalBurnDmgFactor: 28000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

@@ -2,27 +2,88 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 31y7
-    key: voronka_kriogen
-    fullName: Cryogen
-    pathCategory: Artefact/Gravitational
-    class: Gravitational
-    weight: 0.4
-    common: 'Not studied'
-    maxDurability: 100.0
-    staminaBonus: [-20.0, -10.0]
-    regenerationBonus: [-2.5, -1.0]
-    thermalDmgFactor: [10.0, 25.0]
-    thermalAccumulation: [-7.0, -4.0]
-    text: 'An artifact that is formed only under an extremely rare set of circumstances. Its initial formation is similar to that of Amberite, but the anomalous substance, after undergoing several fluctuations in pressure, eventually loses energy and begins to intensively absorb it from the surrounding oxygen, cooling a small area around itself. This results in the body of the owner also cooling down, which slows regeneration and movement speed.'
-    image: { fileID: 21300000, guid: 38b0d1275076424cb3f37009e2d3fd9f, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Cryogen
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Cryogen
+  m_EditorClassIdentifier: null
+  id: 31y7
+  key: voronka_kriogen
+  fullName: Cryogen
+  pathCategory: Artefact/Gravitational
+  weight: 0.4
+  text: An artifact that is formed only under an extremely rare set of circumstances.
+    Its initial formation is similar to that of Amberite, but the anomalous substance,
+    after undergoing several fluctuations in pressure, eventually loses energy and
+    begins to intensively absorb it from the surrounding oxygen, cooling a small
+    area around itself. This results in the body of the owner also cooling down,
+    which slows regeneration and movement speed.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 0e469813c602440ab118c1465750bb6f, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: feffffffffffffff
+  staminaBonus: ecfffffff6ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: f9fffffffcffffff
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 0a00000019000000
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

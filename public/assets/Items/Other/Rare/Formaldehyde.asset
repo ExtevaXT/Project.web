@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ca52a2d0c310fc4ca4d26b3c6ed943a, type: 3}
+  m_Name: Formaldehyde
+  m_EditorClassIdentifier: null
+  id: zL9R
+  key: npc_add
+  fullName: Formaldehyde
+  pathCategory: Other
+  weight: 0.04
+  text: "It has been argued that this mineral, which has a very specific smell, is
+    not actually the result of the Zone\u2019s anomalous activity, but rather of
+    experiments that were conducted on a more common mineral\u2014chlorinex."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 7e05b6cf3a344fb48112ba8492ea6f21, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 

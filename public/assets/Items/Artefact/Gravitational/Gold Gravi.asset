@@ -2,26 +2,87 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: KmMq
-    key: voronka_goldgravi
-    fullName: 'Gold Gravi'
-    pathCategory: Artefact/Gravitational
-    class: Gravitational
-    weight: 0.2
-    common: 'Not studied'
-    maxDurability: 100.0
-    speedModifier: [1.0, 3.0]
-    maxWeightBonus: [10.0, 15.0]
-    radiationAccumulation: [4.0, 8.0]
-    text: 'A gravity regulator artifact of a split-off evolutionary branch of the Quirk family. Formed in a Blackhole alongside the Goldfish, but in a totally different way. This artifact creates a sustained field of negative gravity, which makes both the wearer’s backpack and the wearer themselves much lighter. Due to its rarity, not all of its properties are well-studied.'
-    image: { fileID: 21300000, guid: b6b157efcc954be78a63020cce2302ff, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Gold Gravi'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Gold Gravi
+  m_EditorClassIdentifier: null
+  id: KmMq
+  key: voronka_goldgravi
+  fullName: Gold Gravi
+  pathCategory: Artefact/Gravitational
+  weight: 0.2
+  text: "A gravity regulator artifact of a split-off evolutionary branch of the Quirk
+    family. Formed in a Blackhole alongside the Goldfish, but in a totally different
+    way. This artifact creates a sustained field of negative gravity, which makes
+    both the wearer\u2019s backpack and the wearer themselves much lighter. Due to
+    its rarity, not all of its properties are well-studied."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 75e15c195d204489872717433d283bea, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 0100000003000000
+  maxWeightBonus: 0a0000000f000000
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 0400000008000000
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

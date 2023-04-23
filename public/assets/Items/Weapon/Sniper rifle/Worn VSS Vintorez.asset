@@ -2,43 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: JJ3K
-    key: vss-1
-    fullName: 'Worn VSS Vintorez'
-    pathCategory: 'Weapon/Sniper rifle'
-    rank: Veteran
-    class: 'Sniper Rifles'
-    weight: 3.9099998
-    maxDurability: 100.0
-    ammoType: 9x39
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 39.0
-    clipSize: 20.0
-    distance: 165.0
-    rateOfFire: 590.0
-    reloadTime: 3.5
-    tacticalReloadTime: 2.6
-    spread: 0.23
-    hipSpread: 3.771
-    recoil: 0.3
-    horizontalRecoil: 0.14
-    drawTime: 1.0
-    aimSwitch: 0.25
-    stoppingPower: 20.0
-    startDamage: 39.0
-    damageDecreaseStart: 20.0
-    endDamage: 29.0
-    damageDecreaseEnd: 65.0
-    maxDistance: 165.0
-    text: 'This 9 mm special sniper rifle (a VSS that was developed under the title Vintorez, a name that has remained in use) is a silenced sniper rifle. It was created in the Tochmash Central Scientific Research Institute for Precision Machine Engineering in Klimovsk at the start of the 1980s under the leadership of Pyotr Ivanovich Serdyukov. It was intended for use by special ops units.'
-    image: { fileID: 21300000, guid: c8a95cba76dd489ba0f66064e1deafa1, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn VSS Vintorez'
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Worn VSS Vintorez
+  m_EditorClassIdentifier: null
+  id: JJ3K
+  key: vss-1
+  fullName: Worn VSS Vintorez
+  pathCategory: Weapon/Sniper rifle
+  weight: 3.9099998
+  text: 
+  maxStack: 1
+  price: 300000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 265e359ad77248c5a8e74e0eddc31b3e, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 1
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 39
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2.6
+  reloadTime: 3.5
+  clipSize: 20
+  ammoType: 9x39
+  spread: 0.23
+  hipSpread: 3.771
+  recoil: 0.3
+  horizontalRecoil: 0.14
+  aimSwitch: 0.25
+  startDamage: 39
+  damageDecreaseStart: 20
+  endDamage: 29
+  damageDecreaseEnd: 65
+  distance: 165
+  maxDistance: 165
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

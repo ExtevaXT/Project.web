@@ -2,38 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: kqo2
-    key: kz3b
-    fullName: 'CD-3b Armored Suit'
-    pathCategory: Armor/Combat
-    rank: Veteran
-    class: Combat
-    weight: 11.0
-    maxDurability: 100.0
-    staminaBonus: [-10.0]
-    maxWeightBonus: [10.0]
-    bulletDmgFactor: [136.0]
-    tearDmgFactor: [158.0]
-    explosionDmgFactor: [189.0]
-    electraDmgFactor: [93.0]
-    burnDmgFactor: [93.0]
-    chemicalBurnDmgFactor: [93.0]
-    radiationProtection: [200.0]
-    thermalProtection: [75.0]
-    biologicalProtection: [100.0]
-    psychoProtection: [100.0]
-    bleedingProtection: [60.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'Tactical armor worn by the Horizon clan, not released for mass production. Most stalkers prefer the CD-3a, as it has better overall properties, but this armored suit has found owners among fans of protection from bandit bullets and mutant claws.'
-    image: { fileID: 21300000, guid: f8b4e902994943edbe24596c1c8a09da, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'CD-3b Armored Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: CD-3b Armored Suit
+  m_EditorClassIdentifier: null
+  id: kqo2
+  key: kz3b
+  fullName: CD-3b Armored Suit
+  pathCategory: Armor/Combat
+  weight: 11
+  text: Tactical armor worn by the Horizon clan, not released for mass production.
+    Most stalkers prefer the CD-3a, as it has better overall properties, but this
+    armored suit has found owners among fans of protection from bandit bullets and
+    mutant claws.
+  maxStack: 1
+  price: 195000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 55bf82498d454ee0b400ad606bff67e4, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f6ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 0a000000
+  bleedingProtection: 3c000000
+  radiationProtection: c8000000
+  psychoProtection: 64000000
+  thermalProtection: 4b000000
+  biologicalProtection: 64000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 88000000
+  tearDmgFactor: 9e000000
+  explosionDmgFactor: bd000000
+  electraDmgFactor: 5d000000
+  burnDmgFactor: 5d000000
+  chemicalBurnDmgFactor: 5d000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

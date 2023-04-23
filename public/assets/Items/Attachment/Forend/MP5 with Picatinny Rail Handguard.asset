@@ -2,25 +2,74 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: K5kj
-    key: forend_mp5ris
-    fullName: 'MP5 with Picatinny Rail Handguard'
-    pathCategory: Attachment/Forend
-    attachmentMetaGroup: -1
-    attachmentMetaId: A
-    rank: Newbie
-    class: 'Hanguards and Brackets'
-    weight: 0.18
-    suitableFor: ['HK MP5']
-    image: { fileID: 21300000, guid: 06e8722835c34f319f1c33d00948e3d3, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'MP5 with Picatinny Rail Handguard'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: 6d009c23746d4a04b35882242617b303, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: MP5 with Picatinny Rail Handguard
+  m_EditorClassIdentifier: null
+  id: K5kj
+  key: forend_mp5ris
+  fullName: MP5 with Picatinny Rail Handguard
+  pathCategory: Attachment/Forend
+  weight: 0.18
+  text: 
+  maxStack: 1
+  price: 250000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: fbcba2ccf87c40628fac996f82bf1782, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 65
+  attachmentMetaGroup: -1
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 9f81e49ecb214879883daf860c8fab8d, type: 2}
+  - {fileID: 11400000, guid: c025d82f225b44bb937a18835f34cddc, type: 2}
+  - {fileID: 11400000, guid: b1dd65f1bf204aac8a873598ace1e69b, type: 2}
+  - {fileID: 11400000, guid: c1561cd5f79b4aa7863948518bcd7277, type: 2}
+  - {fileID: 11400000, guid: 6e9b9a9332fc46bf966bdb6826021e85, type: 2}
+  - {fileID: 11400000, guid: d71faad3f3384b55bce1a74d33c87726, type: 2}
+  - {fileID: 11400000, guid: 675163e3ff2a4707b965e09aef177856, type: 2}
+  - {fileID: 11400000, guid: 437865ab669f48818cd5f10803bbf55c, type: 2}
+  - {fileID: 11400000, guid: 6a35f0c9433541d79c0ffcaa4657b01e, type: 2}
+  - {fileID: 11400000, guid: 5e011b960cc342feb3a86c760cbf31b5, type: 2}
+  - {fileID: 11400000, guid: f5b1ed6024fd4daab9ad5010a24b773e, type: 2}
+  - {fileID: 11400000, guid: c78e55768d7b4af0adc75135d2081822, type: 2}
+  - {fileID: 11400000, guid: de8f52803c534c9aafd4ae838f90df72, type: 2}
+  - {fileID: 11400000, guid: 1274ece71a4d4d449af041038407d8f1, type: 2}
+  - {fileID: 11400000, guid: 4defbae542964468ab1bc92182270eb1, type: 2}
+  - {fileID: 11400000, guid: 5b80956c630c4570b29332d6bbee0408, type: 2}
+  - {fileID: 11400000, guid: 69866dd21db04430a94b65d2b6951393, type: 2}
+  - {fileID: 11400000, guid: a466043e1cd942689cf48ca23225953f, type: 2}
+  - {fileID: 11400000, guid: 777af43c40614e1a861c8801bc28b9f1, type: 2}
+  - {fileID: 11400000, guid: d8314acc8ade46b880688a72069a972b, type: 2}
+  - {fileID: 11400000, guid: 4a749dec988d442eae068fbae8bde2f6, type: 2}
+  - {fileID: 11400000, guid: 7aeab0c1d4584b98a840b8eea53ce8d9, type: 2}
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - HK MP5
+  clipSize: 0
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

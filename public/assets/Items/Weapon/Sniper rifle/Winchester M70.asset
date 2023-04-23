@@ -2,93 +2,147 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    m_ObjectHideFlags: 0
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_GameObject: { fileID: 0 }
-    m_Enabled: 1
-    m_EditorHideFlags: 0
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_Name: 'Winchester M70'
-    m_EditorClassIdentifier: null
-    maxStack: 1
-    weight: 3.63
-    price: 0
-    sellable: 0
-    personalizable: 0
-    maxDurability: 100.0
-    destroyable: 1
-    toolTip: "<b>{NAME}</b>\nSome weapon description\n{PERSONAL}\n\n{DAMAGE} Damage\nFire Interval: {COOLDOWN}s\nRequires: {REQUIREDAMMO}\n\nAmmo: {AMMO} / {MAGAZINESIZE}\nDurability: {DURABILITY}%\nWeight: {WEIGHT}g"
-    image: { fileID: 21300000, guid: a7be8899188d469db9322212280f19cf, type: 3 }
-    drop: { fileID: -4885421634399960166, guid: 2bf2bb5c63be55a4bb27034c986a2363, type: 3 }
-    modelPrefab: { fileID: 1775407650306278, guid: 5e2db7648bb918c48bfed455dd9e4dcb, type: 3 }
-    type: Rifle
-    hide: 0
-    content: 'This type of sniper rifle has been on the arms market for half a century and during this time has managed to prove itself as an extremely reliable and easy to handle weapon. In the army it is mainly used to hit distant targets that cannot be hit with a machine gun, but stalkers appreciated the SVD in many ways because the bullet from it can penetrate even the thickest mutant skin or armor vest.'
-    notes: null
-    category: WeaponTwohand
-    keepUsingWhileButtonDown: 1
-    successfulUseSound: [{ fileID: 8300000, guid: 28a8c671b4e1b6b48b52912f6a704d08, type: 3 }]
-    failedUseSound: { fileID: 0 }
-    emptySound: { fileID: 8300000, guid: 733fe413007e0b04e966c8e58e74210a, type: 3 }
-    drawSound: { fileID: 8300000, guid: a0ac02d6e0ab96241aeb08537ceeb4e4, type: 3 }
-    cooldown: 0.1
-    _cooldownCategory: null
-    shoulderLookAtWhileHolding: 1
-    useDirectly: 0
-    attackRange: 140
-    damage: 86.0
-    damageType: Bullet
-    upperBodyAnimationParameter: UPPERBODY_RIFLE
-    attachmentsAllowed: {  }
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    magazineSize: 30
-    reloadTime: 4.5
-    reloadTimeFull: 3.2
-    zoom: 20
-    decalPrefab: { fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28, type: 3 }
-    decalSound: { fileID: 0 }
-    decalOffset: 0.01
-    Ejection: { fileID: 0 }
-    reloadSound: { fileID: 8300000, guid: 09c8d31ec80bb3a46b471dd5325713f9, type: 3 }
-    reloadSound0: { fileID: 8300000, guid: c90445f59e66a224c94cf9109adff648, type: 3 }
-    reloadBolt: { fileID: 0 }
-    reloadIn: { fileID: 0 }
-    reloadOut: { fileID: 0 }
-    reloadOpen: { fileID: 0 }
-    reloadClose: { fileID: 0 }
-    reloadBegin: { fileID: 8300000, guid: ab77afd2919170c48bd062fe882c900a, type: 3 }
-    reloadBegin0: { fileID: 8300000, guid: b757a995e7110454da2eee104beed224, type: 3 }
-    reloadEnd: { fileID: 8300000, guid: 70e46beeca6b43a41a65eec4265f0802, type: 3 }
-    reloadStep: { fileID: 8300000, guid: db34da70f26d6f94c971664873df4f3e, type: 3 }
-    silencedSound: { fileID: 8300000, guid: f08b94c75473af641ac3ef35f91dbc33, type: 3 }
-    silencedSound0: { fileID: 0 }
-    successfulUseSound0: { fileID: 8300000, guid: fca8cdfa7358dc24da9a64e645120acf, type: 3 }
-    recoilHorizontal: 2
-    recoilVertical: 4
-    id: aV7x
-    key: winchester
-    fullName: 'Winchester M70'
-    pathCategory: 'Weapon/Sniper rifle'
-    rank: Stalker
-    class: 'Sniper Rifles'
-    ammoType: '7.62'
-    clipSize: 5.0
-    distance: 180.0
-    rateOfFire: 35.0
-    spread: 0.075
-    hipSpread: 5.0
-    recoil: 2.3
-    horizontalRecoil: 0.6
-    drawTime: 1.25
-    aimSwitch: 0.5
-    piercing: 5.0
-    bleeding: 95.0
-    stoppingPower: 140.0
-    startDamage: 86.0
-    damageDecreaseStart: 32.0
-    endDamage: 86.0
-    damageDecreaseEnd: 115.0
-    maxDistance: 180.0
-    text: 'An American rifle with a longitudinally sliding bolt introduced in 1936. Its impressive effectiveness along with its low cost made it popular among many gunmen, and, as a result, it became widely distributed all over the world. The rail, which was added by a repairman, doesn’t look particularly aesthetic, but doesn’t interfere with the aiming line either, allowing it to be aimed with open sights.'
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Winchester M70
+  m_EditorClassIdentifier: null
+  id: aV7x
+  key: winchester
+  fullName: Winchester M70
+  pathCategory: Weapon/Sniper rifle
+  weight: 3.63
+  text: 
+  maxStack: 1
+  price: 650000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 1
+  toolTip: '<b>{NAME}</b>
+
+    Some weapon description
+
+    {PERSONAL}
+
+
+    {DAMAGE}
+    Damage
+
+    Fire Interval: {COOLDOWN}s
+
+    Requires: {REQUIREDAMMO}
+
+
+    Ammo:
+    {AMMO} / {MAGAZINESIZE}
+
+    Durability: {DURABILITY}%
+
+    Weight: {WEIGHT}g'
+  image: {fileID: 21300000, guid: 0210499b3ba947d6bd33a4b71383e7ea, type: 3}
+  drop: {fileID: -4885421634399960166, guid: 2bf2bb5c63be55a4bb27034c986a2363, type: 3}
+  modelPrefab: {fileID: 1775407650306278, guid: 5e2db7648bb918c48bfed455dd9e4dcb,
+    type: 3}
+  hide: 0
+  content: This type of sniper rifle has been on the arms market for half a century
+    and during this time has managed to prove itself as an extremely reliable and
+    easy to handle weapon. In the army it is mainly used to hit distant targets that
+    cannot be hit with a machine gun, but stalkers appreciated the SVD in many ways
+    because the bullet from it can penetrate even the thickest mutant skin or armor
+    vest.
+  notes: null
+  rank: Stalker
+  drawTime: 1.25
+  category: WeaponTwohand
+  keepUsingWhileButtonDown: 1
+  successfulUseSound:
+  - {fileID: 8300000, guid: 28a8c671b4e1b6b48b52912f6a704d08, type: 3}
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 8300000, guid: 733fe413007e0b04e966c8e58e74210a, type: 3}
+  drawSound: {fileID: 8300000, guid: a0ac02d6e0ab96241aeb08537ceeb4e4, type: 3}
+  cooldown: 0.1
+  _cooldownCategory: null
+  shoulderLookAtWhileHolding: 1
+  useDirectly: 0
+  attackRange: 140
+  damage: 86
+  damageType: 0
+  upperBodyAnimationParameter: UPPERBODY_RIFLE
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 3b5dff3347f94bf0a77ab8b29a3c4693, type: 2}
+  - {fileID: 11400000, guid: c6980573024d4f529e3920810d728053, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 6a1bfe554ff547ebbc053a575599a616, type: 2}
+  - {fileID: 11400000, guid: da40486fc5f5497497213584b058d065, type: 2}
+  - {fileID: 11400000, guid: 767a66b0465c40cb86f18a7836cecfd6, type: 2}
+  - {fileID: 11400000, guid: 199f2624bbc945f6b040294ab4950538, type: 2}
+  - {fileID: 11400000, guid: 896c2dc930024929a70a973c3b2653bb, type: 2}
+  - {fileID: 11400000, guid: b6c2e38596364c718a4136c321a6fc5b, type: 2}
+  - {fileID: 11400000, guid: 29a88496ed2048cbbb17c75fe8c931b2, type: 2}
+  - {fileID: 11400000, guid: 27bbf9e0c36147f2bb31255beb3ab690, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 4c90719e0beb4556abd04732843d659f, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: f7bdc342377a4873abdcd988d5ad0fb7, type: 2}
+  - {fileID: 11400000, guid: 5a738ed6648e4e44b58a8116f4ec42b4, type: 2}
+  - {fileID: 11400000, guid: e9b12fa0d066499aa8c4a51b81716482, type: 2}
+  - {fileID: 11400000, guid: 153f84525cdd45cda65c4aa9608008df, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 8d10c1144bc54f428f0fd515157b4131, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 03d324692d3b4786b015338bc6de3fa0, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 05095c93b96a4ae093fd329727205ed9, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: 6713aa77b6434d2aaa25fbb7d3be6544, type: 2}
+  - {fileID: 11400000, guid: b7972612339443a6a3be403c2f8a4556, type: 2}
+  - {fileID: 11400000, guid: 81626b4e21364f5d8c904daa71c9cb16, type: 2}
+  - {fileID: 11400000, guid: ea55a20c27b846f9976d71645185c196, type: 2}
+  - {fileID: 11400000, guid: 383a0c6afc5d4d588cfbb07942633ab7, type: 2}
+  - {fileID: 11400000, guid: 5547cd0d522d477cb7f5e9345da06ccb, type: 2}
+  - {fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2}
+  - {fileID: 11400000, guid: 9ac9861931a74f93ab319f21df1e3c68, type: 2}
+  - {fileID: 11400000, guid: b85278778eb643c0803600802dde8ccf, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28,
+    type: 3}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 4.5
+  clipSize: 5
+  ammoType: 7.62
+  spread: 0.075
+  hipSpread: 5
+  recoil: 2.3
+  horizontalRecoil: 0.6
+  aimSwitch: 0.5
+  startDamage: 86
+  damageDecreaseStart: 32
+  endDamage: 86
+  damageDecreaseEnd: 115
+  distance: 180
+  maxDistance: 180
+  reloadSound: {fileID: 8300000, guid: 09c8d31ec80bb3a46b471dd5325713f9, type: 3}
+  reloadSound0: {fileID: 8300000, guid: c90445f59e66a224c94cf9109adff648, type: 3}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 8300000, guid: ab77afd2919170c48bd062fe882c900a, type: 3}
+  reloadBegin0: {fileID: 8300000, guid: b757a995e7110454da2eee104beed224, type: 3}
+  reloadEnd: {fileID: 8300000, guid: 70e46beeca6b43a41a65eec4265f0802, type: 3}
+  reloadStep: {fileID: 8300000, guid: db34da70f26d6f94c971664873df4f3e, type: 3}
+  silencedSound: {fileID: 8300000, guid: f08b94c75473af641ac3ef35f91dbc33, type: 3}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 8300000, guid: fca8cdfa7358dc24da9a64e645120acf, type: 3}

@@ -2,25 +2,49 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: lLod
-    key: dud_elbrus
-    fullName: 'Elbrus Short Range Detector'
-    pathCategory: Weapon/Device
-    rank: Veteran
-    class: Devices
-    weight: 0.6
-    maxDurability: 100.0
-    charge: 100.0
-    range: 120.0
-    text: 'A detector used to locate zones of anomalous activity. It is equipped with a screen that can show the source of the signals.'
-    image: { fileID: 21300000, guid: 430b792f383b4026883196bb63e84cd0, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Elbrus Short Range Detector'
-    m_Script: { fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07dbc71676f2aaf44a61ae8a445d9051, type: 3}
+  m_Name: Elbrus Short Range Detector
+  m_EditorClassIdentifier: null
+  id: lLod
+  key: dud_elbrus
+  fullName: Elbrus Short Range Detector
+  pathCategory: Weapon/Device
+  weight: 0.6
+  text: 
+  maxStack: 1
+  price: 1750000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 3e69da3e5600440c9c57f7a87540ccb0, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  charge: 100
+  passiveScanRadius: 0
+  activeScanRadius: 0
+  activeScanAngle: 0
+  range: 120

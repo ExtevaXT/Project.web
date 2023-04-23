@@ -2,40 +2,87 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 0b8O
-    key: frostwalker
-    fullName: 'Blizzard-Bound Heavy Armored Suit'
-    pathCategory: Armor/Combat
-    rank: Veteran
-    class: Combat
-    weight: 18.0
-    maxDurability: 100.0
-    staminaBonus: [-15.0]
-    speedModifier: [-5.0]
-    maxWeightBonus: [25.0]
-    nightVision: 1
-    bulletDmgFactor: [138.0]
-    tearDmgFactor: [184.0]
-    explosionDmgFactor: [181.0]
-    electraDmgFactor: [70.0]
-    burnDmgFactor: [70.0]
-    chemicalBurnDmgFactor: [70.0]
-    radiationProtection: [200.0]
-    thermalProtection: [50.0]
-    biologicalProtection: [200.0]
-    psychoProtection: [200.0]
-    bleedingProtection: [65.0]
-    compatibleBackpacks: light
-    compatibleContainers: spacious
-    text: 'Noting the popularity of the Shade Hunter amongst middle-class stalkers, several Masters teamed up to make a similar suit for Zone inhabitants, adjusting it to the conditions of anomalous blizzards. It turned out pretty well, but the cost of the materials needed to make it was so high that this Blizzard-Bound was the only such suit ever made.'
-    image: { fileID: 21300000, guid: c67a4c5007f54bb2b08381ee7a57fffc, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Blizzard-Bound Heavy Armored Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Blizzard-Bound Heavy Armored Suit
+  m_EditorClassIdentifier: null
+  id: 0b8O
+  key: frostwalker
+  fullName: Blizzard-Bound Heavy Armored Suit
+  pathCategory: Armor/Combat
+  weight: 18
+  text: Noting the popularity of the Shade Hunter amongst middle-class stalkers,
+    several Masters teamed up to make a similar suit for Zone inhabitants, adjusting
+    it to the conditions of anomalous blizzards. It turned out pretty well, but the
+    cost of the materials needed to make it was so high that this Blizzard-Bound
+    was the only such suit ever made.
+  maxStack: 1
+  price: 1000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: e92ff0afb8794daca999c52b26d1d72a, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f1ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: fbffffff
+  maxWeightBonus: 19000000
+  bleedingProtection: 41000000
+  radiationProtection: c8000000
+  psychoProtection: c8000000
+  thermalProtection: 32000000
+  biologicalProtection: c8000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 8a000000
+  tearDmgFactor: b8000000
+  explosionDmgFactor: b5000000
+  electraDmgFactor: 46000000
+  burnDmgFactor: 46000000
+  chemicalBurnDmgFactor: 46000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: spacious

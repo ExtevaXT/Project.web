@@ -2,41 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: KQJK
-    key: ao5-1
-    fullName: 'Worn AH-5 Pilgrim'
-    pathCategory: Armor/Mixed
-    rank: Veteran
-    class: Combo
-    weight: 30.0
-    maxDurability: 100.0
-    staminaBonus: [-10.0]
-    speedModifier: [-2.0]
-    maxWeightBonus: [15.0]
-    heal: [2.25]
-    nightVision: 1
-    bulletDmgFactor: [83.0]
-    tearDmgFactor: [98.0]
-    explosionDmgFactor: [118.0]
-    electraDmgFactor: [563.0]
-    burnDmgFactor: [563.0]
-    chemicalBurnDmgFactor: [563.0]
-    radiationProtection: [225.0]
-    thermalProtection: [225.0]
-    biologicalProtection: [290.0]
-    psychoProtection: [210.0]
-    bleedingProtection: [50.0]
-    compatibleBackpacks: light
-    compatibleContainers: spacious
-    text: 'Virtually the best model in the Artifact Hunters range. Combines all the benefits of the previous versions and comes equipped with a closed breathing circuit.'
-    image: { fileID: 21300000, guid: c5a57d33a0a54131833514020f2299e6, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn AH-5 Pilgrim'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Worn AH-5 Pilgrim
+  m_EditorClassIdentifier: null
+  id: KQJK
+  key: ao5-1
+  fullName: Worn AH-5 Pilgrim
+  pathCategory: Armor/Mixed
+  weight: 30
+  text: Virtually the best model in the Artifact Hunters range. Combines all the
+    benefits of the previous versions and comes equipped with a closed breathing
+    circuit.
+  maxStack: 1
+  price: 700000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 98c200674b3a4d2ab94fa42041b2e4fe, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f6ffffff
+  staminaRegenerationBonus: 
+  heal: 02000000
+  healEfficiency: 
+  speedModifier: feffffff
+  maxWeightBonus: 0f000000
+  bleedingProtection: 32000000
+  radiationProtection: e1000000
+  psychoProtection: d2000000
+  thermalProtection: e1000000
+  biologicalProtection: 22010000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 53000000
+  tearDmgFactor: 62000000
+  explosionDmgFactor: 76000000
+  electraDmgFactor: 33020000
+  burnDmgFactor: 33020000
+  chemicalBurnDmgFactor: 33020000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: spacious

@@ -2,38 +2,87 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: nbgM
-    key: jnec
-    fullName: 'REAPER Suit'
-    pathCategory: Armor/Scientific
-    rank: Veteran
-    class: Scientist
-    weight: 12.0
-    maxDurability: 100.0
-    maxWeightBonus: [5.0]
-    nightVision: 1
-    bulletDmgFactor: [63.0]
-    tearDmgFactor: [71.0]
-    explosionDmgFactor: [86.0]
-    electraDmgFactor: [773.0]
-    burnDmgFactor: [773.0]
-    chemicalBurnDmgFactor: [773.0]
-    radiationProtection: [340.0]
-    thermalProtection: [340.0]
-    biologicalProtection: [400.0]
-    psychoProtection: [310.0]
-    bleedingProtection: [40.0]
-    compatibleBackpacks: light
-    compatibleContainers: spacious
-    text: 'Who says bandits can’t afford decent gear? Even though this example of the SEVA suit is second-hand, and its former owner is probably dead, this suit’s properties are nonetheless superb. Despite the fact that the bullets holes in the chest needed thoroughly darning, the value of this suit didn’t increase. Equipped with 2nd-generation NVGs.'
-    image: { fileID: 21300000, guid: 95e383c9a0bc41b992d14b2e0545000a, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'REAPER Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: REAPER Suit
+  m_EditorClassIdentifier: null
+  id: nbgM
+  key: jnec
+  fullName: REAPER Suit
+  pathCategory: Armor/Scientific
+  weight: 12
+  text: "Who says bandits can\u2019t afford decent gear? Even though this example
+    of the SEVA suit is second-hand, and its former owner is probably dead, this
+    suit\u2019s properties are nonetheless superb. Despite the fact that the bullets
+    holes in the chest needed thoroughly darning, the value of this suit didn\u2019t
+    increase. Equipped with 2nd-generation NVGs."
+  maxStack: 1
+  price: 260000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 824dfcc02aa84eaf830d996c78d2f0db, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 05000000
+  bleedingProtection: 28000000
+  radiationProtection: 54010000
+  psychoProtection: 36010000
+  thermalProtection: 54010000
+  biologicalProtection: 90010000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 3f000000
+  tearDmgFactor: 47000000
+  explosionDmgFactor: 56000000
+  electraDmgFactor: 05030000
+  burnDmgFactor: 05030000
+  chemicalBurnDmgFactor: 05030000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: spacious

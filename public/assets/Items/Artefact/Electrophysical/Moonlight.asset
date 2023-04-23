@@ -2,26 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: n8l9
-    key: electra_moonlight
-    fullName: Moonlight
-    pathCategory: Artefact/Electrophysical
-    class: Electrophysical
-    weight: 0.3
-    common: 'Not studied'
-    maxDurability: 100.0
-    psychoDmgFactor: [5.0, 15.0]
-    radiationAccumulation: [2.0, 5.0]
-    psychoAccumulation: [-3.0, -1.0]
-    text: 'Plasma is somehow contained in a cloud similar to the finest glass, yet organic in nature. The artifact has a positive effect on the mind of its owner, despite being radioactive.'
-    image: { fileID: 21300000, guid: 3f5fa80404d34d58b4c0b8421a3173c9, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Moonlight
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Moonlight
+  m_EditorClassIdentifier: null
+  id: n8l9
+  key: electra_moonlight
+  fullName: Moonlight
+  pathCategory: Artefact/Electrophysical
+  weight: 0.3
+  text: Plasma is somehow contained in a cloud similar to the finest glass, yet organic
+    in nature. The artifact has a positive effect on the mind of its owner, despite
+    being radioactive.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: a19c4e75a8ce4356b7a815528d8602d2, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: fdffffffffffffff
+  radiationAccumulation: 0200000005000000
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 050000000f000000
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

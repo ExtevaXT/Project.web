@@ -2,40 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Xqok
-    key: centurion
-    fullName: 'Centurion Armored Exoskeleton'
-    pathCategory: Armor/Combat
-    rank: Master
-    class: Combat
-    weight: 40.0
-    maxDurability: 100.0
-    staminaBonus: [-15.0]
-    speedModifier: [-3.0]
-    maxWeightBonus: [25.0]
-    nightVision: 1
-    bulletDmgFactor: [182.0]
-    tearDmgFactor: [182.0]
-    explosionDmgFactor: [251.0]
-    electraDmgFactor: [71.0]
-    burnDmgFactor: [71.0]
-    chemicalBurnDmgFactor: [71.0]
-    radiationProtection: [200.0]
-    thermalProtection: [50.0]
-    biologicalProtection: [200.0]
-    psychoProtection: [200.0]
-    bleedingProtection: [66.0]
-    compatibleBackpacks: light
-    compatibleContainers: standard
-    text: 'Virtually the perfect armor for combat. Good protection from bullets and fragmentation, comfortable, the best night-vision goggles—not everyone can afford a masterpiece like this.'
-    image: { fileID: 21300000, guid: 99638c5f525647938d909923fc2d7cc4, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Centurion Armored Exoskeleton'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Centurion Armored Exoskeleton
+  m_EditorClassIdentifier: null
+  id: Xqok
+  key: centurion
+  fullName: Centurion Armored Exoskeleton
+  pathCategory: Armor/Combat
+  weight: 40
+  text: "Virtually the perfect armor for combat. Good protection from bullets and
+    fragmentation, comfortable, the best night-vision goggles\u2014not everyone can
+    afford a masterpiece like this."
+  maxStack: 1
+  price: 3500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 544ecda1b3c246e18e21700f54d0e798, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f1ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: fdffffff
+  maxWeightBonus: 19000000
+  bleedingProtection: 42000000
+  radiationProtection: c8000000
+  psychoProtection: c8000000
+  thermalProtection: 32000000
+  biologicalProtection: c8000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: b6000000
+  tearDmgFactor: b6000000
+  explosionDmgFactor: fb000000
+  electraDmgFactor: 47000000
+  burnDmgFactor: 47000000
+  chemicalBurnDmgFactor: 47000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: standard

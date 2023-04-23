@@ -2,42 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: ZzY8
-    key: hound
-    fullName: 'Hounds Exoskeleton'
-    pathCategory: Armor/Mixed
-    rank: Master
-    class: Combo
-    weight: 24.0
-    maxDurability: 100.0
-    speedModifier: [15.0]
-    maxWeightBonus: [20.0]
-    heal: [2.0]
-    radiationAccumulation: [-2.0]
-    bleedingAccumulation: [-0.5]
-    nightVision: 1
-    bulletDmgFactor: [95.0]
-    tearDmgFactor: [145.0]
-    explosionDmgFactor: [143.0]
-    electraDmgFactor: [356.0]
-    burnDmgFactor: [356.0]
-    chemicalBurnDmgFactor: [356.0]
-    radiationProtection: [270.0]
-    thermalProtection: [150.0]
-    biologicalProtection: [300.0]
-    psychoProtection: [270.0]
-    bleedingProtection: [60.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'This exo-suit is an excellent purchase for a sniper working in the Zone. High mobility is combined with the ability to lie for hours in a radioactive swamp, waiting for the enemy. Masters of ambush from Freedom approve!'
-    image: { fileID: 21300000, guid: fccfaa175917451697c504c5283cfced, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Hounds Exoskeleton'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Hounds Exoskeleton
+  m_EditorClassIdentifier: null
+  id: ZzY8
+  key: hound
+  fullName: Hounds Exoskeleton
+  pathCategory: Armor/Mixed
+  weight: 24
+  text: This exo-suit is an excellent purchase for a sniper working in the Zone.
+    High mobility is combined with the ability to lie for hours in a radioactive
+    swamp, waiting for the enemy. Masters of ambush from Freedom approve!
+  maxStack: 1
+  price: 5000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: f41a1207ea5e48caa1e4b749543eb57f, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 02000000
+  healEfficiency: 
+  speedModifier: 0f000000
+  maxWeightBonus: 14000000
+  bleedingProtection: 3c000000
+  radiationProtection: 0e010000
+  psychoProtection: 0e010000
+  thermalProtection: 96000000
+  biologicalProtection: 2c010000
+  psychoAccumulation: 
+  radiationAccumulation: feffffff
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 00000000
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 5f000000
+  tearDmgFactor: 91000000
+  explosionDmgFactor: 8f000000
+  electraDmgFactor: 64010000
+  burnDmgFactor: 64010000
+  chemicalBurnDmgFactor: 64010000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

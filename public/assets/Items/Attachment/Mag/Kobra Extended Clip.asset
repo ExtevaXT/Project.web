@@ -2,27 +2,55 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: DVeV
-    key: mag_svu15
-    fullName: 'Kobra Extended Clip'
-    pathCategory: Attachment/Mag
-    attachmentMetaGroup: 3
-    attachmentMetaId: '['
-    rank: Veteran
-    class: Clips
-    weight: 0.28
-    clipSize: 15.0
-    reloadTime: 20.000004
-    suitableFor: [MTs-116M, Avalanche, SVD, SVU]
-    image: { fileID: 21300000, guid: f614f3d826264f2caca0ab8c946f4cf2, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Kobra Extended Clip'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: e9bb5caf793d4678832784ef57c7e108, type: 2 }, { fileID: 11400000, guid: aa8d6b375bff4ef9900be7a7212ebc00, type: 2 }, { fileID: 11400000, guid: f4f3d513157b4f1ca6fccb57acc1ac2d, type: 2 }, { fileID: 11400000, guid: 5a5ea663ec264b778073728ffb220112, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: Kobra Extended Clip
+  m_EditorClassIdentifier: null
+  id: DVeV
+  key: mag_svu15
+  fullName: Kobra Extended Clip
+  pathCategory: Attachment/Mag
+  weight: 0.28
+  text: 
+  maxStack: 1
+  price: 500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 84853b511c6049428f43e6d2123b9d3a, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 91
+  attachmentMetaGroup: 3
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - MTs-116M
+  - Avalanche
+  - SVD
+  - SVU
+  clipSize: 15
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: 20.000004
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

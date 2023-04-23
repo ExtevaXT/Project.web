@@ -2,22 +2,41 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: BOry
-    key: 9st
-    fullName: '9 mm Ammo'
-    pathCategory: Ammo
-    class: Ammo
-    weight: 0.009
-    bleeding: 5.0
-    stoppingPower: 50.0
-    image: { fileID: 21300000, guid: b26619c1ab5649bca2d7a2a7ab35931a, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: '9 mm Ammo'
-    m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3}
+  m_Name: 9 mm Ammo
+  m_EditorClassIdentifier: null
+  id: BOry
+  key: 9st
+  fullName: 9 mm Ammo
+  pathCategory: Ammo
+  weight: 0.009
+  text: 
+  maxStack: 1
+  price: 50
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 155c48ab47d4454f9f7c9cb5b3062738, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  bleeding: 5
+  stoppingPower: 50
+  piercing: 0
+  damage: 0
+  combustion: 0
+  numBullets: 0
+  damageDistant: 0
+  spread: 0
+  absoluteDamage: 0

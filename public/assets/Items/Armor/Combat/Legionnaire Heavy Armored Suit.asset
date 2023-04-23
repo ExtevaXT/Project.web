@@ -2,40 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: rbJ0
-    key: legion
-    fullName: 'Legionnaire Heavy Armored Suit'
-    pathCategory: Armor/Combat
-    rank: Veteran
-    class: Combat
-    weight: 11.0
-    maxDurability: 100.0
-    staminaBonus: [-10.0]
-    speedModifier: [-3.0]
-    maxWeightBonus: [8.0]
-    nightVision: 1
-    bulletDmgFactor: [136.0]
-    tearDmgFactor: [136.0]
-    explosionDmgFactor: [189.0]
-    electraDmgFactor: [53.0]
-    burnDmgFactor: [53.0]
-    chemicalBurnDmgFactor: [53.0]
-    radiationProtection: [200.0]
-    thermalProtection: [30.0]
-    biologicalProtection: [150.0]
-    psychoProtection: [140.0]
-    bleedingProtection: [59.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'Virtually the perfect armor for combat. Good protection from bullets and fragmentation, comfortable, the best night-vision goggles—not everyone can afford a masterpiece like this.'
-    image: { fileID: 21300000, guid: 037f32f4c1604ad3928783129d088e23, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Legionnaire Heavy Armored Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Legionnaire Heavy Armored Suit
+  m_EditorClassIdentifier: null
+  id: rbJ0
+  key: legion
+  fullName: Legionnaire Heavy Armored Suit
+  pathCategory: Armor/Combat
+  weight: 11
+  text: "Virtually the perfect armor for combat. Good protection from bullets and
+    fragmentation, comfortable, the best night-vision goggles\u2014not everyone can
+    afford a masterpiece like this."
+  maxStack: 1
+  price: 750000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 9bf10e4c7e22446e9f3b276f2fd2b63b, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f6ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: fdffffff
+  maxWeightBonus: 08000000
+  bleedingProtection: 3b000000
+  radiationProtection: c8000000
+  psychoProtection: 8c000000
+  thermalProtection: 1e000000
+  biologicalProtection: 96000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 88000000
+  tearDmgFactor: 88000000
+  explosionDmgFactor: bd000000
+  electraDmgFactor: 35000000
+  burnDmgFactor: 35000000
+  chemicalBurnDmgFactor: 35000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

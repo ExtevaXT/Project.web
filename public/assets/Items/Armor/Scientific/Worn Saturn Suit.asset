@@ -2,38 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 8EQJ
-    key: saturn-1
-    fullName: 'Worn Saturn Suit'
-    pathCategory: Armor/Scientific
-    rank: Master
-    class: Scientist
-    weight: 13.0
-    maxDurability: 100.0
-    maxWeightBonus: [6.0]
-    nightVision: 1
-    bulletDmgFactor: [77.0]
-    tearDmgFactor: [87.0]
-    explosionDmgFactor: [105.0]
-    electraDmgFactor: [945.0]
-    burnDmgFactor: [945.0]
-    chemicalBurnDmgFactor: [945.0]
-    radiationProtection: [370.0]
-    thermalProtection: [370.0]
-    biologicalProtection: [405.0]
-    psychoProtection: [370.0]
-    bleedingProtection: [45.0]
-    compatibleBackpacks: light
-    compatibleContainers: spacious
-    text: 'A further development of the SEVA, this combines very good protection against anomalous with decent physical protection.'
-    image: { fileID: 21300000, guid: 2475dd12227448358b040a4aeeb3950f, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn Saturn Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Worn Saturn Suit
+  m_EditorClassIdentifier: null
+  id: 8EQJ
+  key: saturn-1
+  fullName: Worn Saturn Suit
+  pathCategory: Armor/Scientific
+  weight: 13
+  text: A further development of the SEVA, this combines very good protection against
+    anomalous with decent physical protection.
+  maxStack: 1
+  price: 1250000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: a1e75513281840729376a5495ebc27a2, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 06000000
+  bleedingProtection: 2d000000
+  radiationProtection: 72010000
+  psychoProtection: 72010000
+  thermalProtection: 72010000
+  biologicalProtection: 95010000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 4d000000
+  tearDmgFactor: 57000000
+  explosionDmgFactor: 69000000
+  electraDmgFactor: b1030000
+  burnDmgFactor: b1030000
+  chemicalBurnDmgFactor: b1030000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: spacious

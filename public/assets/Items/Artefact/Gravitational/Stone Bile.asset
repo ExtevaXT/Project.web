@@ -2,26 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: lLbd
-    key: karousel_jelch
-    fullName: 'Stone Bile'
-    pathCategory: Artefact/Gravitational
-    class: Gravitational
-    weight: 0.3
-    common: 'Not studied'
-    maxDurability: 100.0
-    biologicalDmgFactor: [5.0, 15.0]
-    radiationAccumulation: [2.0, 5.0]
-    biologicalAccumulation: [-3.0, -1.0]
-    text: 'This artifact takes the form of a bluish formation of compressed and fossilized plants, soil and animal remains. It possesses the ability to partially neutralize substances that are harmful to humans, and when it comes in contact with acid, it releases a gas that increases the body’s regeneration ability.'
-    image: { fileID: 21300000, guid: d51ba22f65294937ac5ab160c6769236, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Stone Bile'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Stone Bile
+  m_EditorClassIdentifier: null
+  id: lLbd
+  key: karousel_jelch
+  fullName: Stone Bile
+  pathCategory: Artefact/Gravitational
+  weight: 0.3
+  text: "This artifact takes the form of a bluish formation of compressed and fossilized
+    plants, soil and animal remains. It possesses the ability to partially neutralize
+    substances that are harmful to humans, and when it comes in contact with acid,
+    it releases a gas that increases the body\u2019s regeneration ability."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: f649b2d0f52040bc85887ba576eb1f0d, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 0200000005000000
+  biologicalAccumulation: fdffffffffffffff
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 050000000f000000
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

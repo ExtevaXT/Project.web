@@ -2,25 +2,41 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 2D9P
-    key: 12drob
-    fullName: '12 Caliber Buckshot'
-    pathCategory: Ammo
-    class: Ammo
-    weight: 0.03
-    numBullets: 20.0
-    damage: 49.999977
-    bleeding: 0.25
-    stoppingPower: 50.0
-    damageDistant: -65.0
-    image: { fileID: 21300000, guid: 63ba93d1f17a47329b75b43ac8a4e435, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: '12 Caliber Buckshot'
-    m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3}
+  m_Name: 12 Caliber Buckshot
+  m_EditorClassIdentifier: null
+  id: 2D9P
+  key: 12drob
+  fullName: 12 Caliber Buckshot
+  pathCategory: Ammo
+  weight: 0.03
+  text: 
+  maxStack: 1
+  price: 100
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: b86b19527f3d48b592ab4a7763c78a18, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  bleeding: 0
+  stoppingPower: 50
+  piercing: 0
+  damage: 49
+  combustion: 0
+  numBullets: 20
+  damageDistant: -65
+  spread: 0
+  absoluteDamage: 0

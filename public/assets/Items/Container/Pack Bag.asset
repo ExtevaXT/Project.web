@@ -2,29 +2,86 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: oPG8
-    key: pouch
-    fullName: 'Pack Bag'
-    pathCategory: Container
-    rank: Veteran
-    class: 'Backpacks and Containers'
-    weight: 7.0
-    maxDurability: 100.0
-    innerProtection: 75.0
-    effectiveness: 80.0
-    size: 3.0
-    staminaBonus: [10.0]
-    maxWeightBonus: [10.0]
-    biologicalAccumulation: [-1.5]
-    text: 'Cursed artifact hunters’ bag with three containers and filter system'
-    image: { fileID: 21300000, guid: 6639b205ee3d4cfcbc01e8b9835ad6d6, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Pack Bag'
-    m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3}
+  m_Name: Pack Bag
+  m_EditorClassIdentifier: null
+  id: oPG8
+  key: pouch
+  fullName: Pack Bag
+  pathCategory: Container
+  weight: 7
+  text: "Cursed artifact hunters\u2019 bag with three containers and filter system"
+  maxStack: 1
+  price: 3500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 6955f0ad261041d7b7f995478f101781, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 0a000000
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 0a000000
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: ffffffff
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 
+  innerProtection: 75
+  effectiveness: 80
+  size: 3

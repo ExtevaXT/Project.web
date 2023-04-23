@@ -2,40 +2,90 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: gwrR
-    key: yorsh
-    fullName: 'Yorsh Protective Armored Suit'
-    pathCategory: Armor/Combat
-    rank: Veteran
-    class: Combat
-    weight: 32.0
-    maxDurability: 100.0
-    staminaBonus: [-15.0]
-    speedModifier: [-3.0]
-    maxWeightBonus: [25.0]
-    nightVision: 1
-    bulletDmgFactor: [103.0]
-    tearDmgFactor: [236.0]
-    explosionDmgFactor: [133.0]
-    electraDmgFactor: [593.0]
-    burnDmgFactor: [59.0]
-    chemicalBurnDmgFactor: [59.0]
-    radiationProtection: [200.0]
-    thermalProtection: [40.0]
-    biologicalProtection: [200.0]
-    psychoProtection: [180.0]
-    bleedingProtection: [71.0]
-    compatibleBackpacks: light
-    compatibleContainers: spacious
-    text: 'A multipurpose platform made from various types of components and modules. Assembled by tinkerers from the remains of broken armor sets. Surprisingly, this system came out very well, although it’s not particularly reliable. The main engineering feature of this set is the external electrical impulse dissipation system. Made up of external bolt surge dischargers combined into a single system, it creates a kind of Faraday cage. The bolts sticking out on top also provide excellent protection from most local fauna and give this suit a unique and eye-catching appearance.'
-    image: { fileID: 21300000, guid: efd185ee926844fc98d3b9bb5f52c763, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Yorsh Protective Armored Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Yorsh Protective Armored Suit
+  m_EditorClassIdentifier: null
+  id: gwrR
+  key: yorsh
+  fullName: Yorsh Protective Armored Suit
+  pathCategory: Armor/Combat
+  weight: 32
+  text: "A multipurpose platform made from various types of components and modules.
+    Assembled by tinkerers from the remains of broken armor sets. Surprisingly, this
+    system came out very well, although it\u2019s not particularly reliable. The
+    main engineering feature of this set is the external electrical impulse dissipation
+    system. Made up of external bolt surge dischargers combined into a single system,
+    it creates a kind of Faraday cage. The bolts sticking out on top also provide
+    excellent protection from most local fauna and give this suit a unique and eye-catching
+    appearance."
+  maxStack: 1
+  price: 800000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 98b2e11698394861a0a8f74ff85d59f1, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f1ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: fdffffff
+  maxWeightBonus: 19000000
+  bleedingProtection: 47000000
+  radiationProtection: c8000000
+  psychoProtection: b4000000
+  thermalProtection: 28000000
+  biologicalProtection: c8000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 67000000
+  tearDmgFactor: ec000000
+  explosionDmgFactor: 85000000
+  electraDmgFactor: 51020000
+  burnDmgFactor: 3b000000
+  chemicalBurnDmgFactor: 3b000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: spacious

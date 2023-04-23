@@ -20,7 +20,7 @@ MonoBehaviour:
     maxDurability: 100.0
     destroyable: 1
     toolTip: "<b>{NAME}</b>\nSome weapon description\n{PERSONAL}\n\n{DAMAGE} Damage\nFire Interval: {COOLDOWN}s\nRequires: {REQUIREDAMMO}\n\nAmmo: {AMMO} / {MAGAZINESIZE}\nDurability: {DURABILITY}%\nWeight: {WEIGHT}g"
-    image: { fileID: 21300000, guid: 787388f5bf264a1095af2f7b8a4ed658, type: 3 }
+    image: { fileID: 21300000, guid: 4ff51abf487a47d492c5b768baa6ac3b, type: 3 }
     drop: { fileID: -674074274231560322, guid: 89476fd57f4d15348a40d89bcdc9b9e0, type: 3 }
     modelPrefab: { fileID: 1726046159356512, guid: c0c945cf84c075748ab0c5119436c12b, type: 3 }
     type: Machinegun
@@ -41,7 +41,7 @@ MonoBehaviour:
     damage: 45.0
     damageType: Bullet
     upperBodyAnimationParameter: UPPERBODY_RIFLE
-    attachmentsAllowed: {  }
+    attachmentsAllowed: [{ fileID: 11400000, guid: 48e78b37d4924acb85b9311c679e5fc4, type: 2 }, { fileID: 11400000, guid: 1c9ddaa0176647df9ad23a44cc65e885, type: 2 }, { fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2 }, { fileID: 11400000, guid: ee95ff84830d47eda2db11e99c8f6211, type: 2 }, { fileID: 11400000, guid: 43b407fe72f045a7b79441611f0e386a, type: 2 }, { fileID: 11400000, guid: 19f045b41b7e4d76a0e56adbf63ca956, type: 2 }, { fileID: 11400000, guid: a0c887024b5f4d439402fb4b6e59409d, type: 2 }, { fileID: 11400000, guid: de9a9f999d014fef96f29da069fb36ff, type: 2 }, { fileID: 11400000, guid: 22690b8a27144053aa55849bf9417715, type: 2 }, { fileID: 11400000, guid: 41cb353b545742bc82842d74f01eb174, type: 2 }, { fileID: 11400000, guid: 944b6744d038411a8836325862acdd86, type: 2 }, { fileID: 11400000, guid: a01b8cea0e78440e829d538d7a79aa24, type: 2 }, { fileID: 11400000, guid: 8630028b697f4257b6cc2f791dda4ba7, type: 2 }, { fileID: 11400000, guid: eeded40a88314b02856fe766ab1fcb89, type: 2 }, { fileID: 11400000, guid: e3e4d9f1d3cc43839dce27541c582329, type: 2 }, { fileID: 11400000, guid: 4cad2640285f4cd7a1ba245281201ee8, type: 2 }, { fileID: 11400000, guid: f6b4b3b4871f4c1799717f99b1a0f3b1, type: 2 }, { fileID: 11400000, guid: 19cea63cef0c48c4b82c3330cfe76445, type: 2 }, { fileID: 11400000, guid: 63c1613e78d1405dbc56cedbe7d3b6cf, type: 2 }]
     requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
     magazineSize: 30
     reloadTime: 7.0

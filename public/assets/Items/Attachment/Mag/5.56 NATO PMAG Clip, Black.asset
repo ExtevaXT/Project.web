@@ -2,27 +2,68 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: K5x8
-    key: mag_pmag30b
-    fullName: '5.56 NATO PMAG Clip, Black'
-    pathCategory: Attachment/Mag
-    attachmentMetaGroup: 3
-    attachmentMetaId: D
-    rank: Newbie
-    class: Clips
-    weight: 0.14
-    clipSize: 30.0
-    reloadTime: -5.000001
-    suitableFor: [L85A1, M4A1, M16A3, 'M4 LB', M16A2, 'ALK-22 Dragonfly', 'FN F2000 Tactical', 'FN F2000', LR-300, 'FN SCAR-L', 'Steyr AUG A1', HK416, 'Steyr AUG A2', 'Steyr AUG A3', 'FAMAS G2', 'IWI Tavor X95', L86A1]
-    image: { fileID: 21300000, guid: 53df8e3972db46bba7b9633c32a04148, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: '5.56 NATO PMAG Clip, Black'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: cce94f45edd144c79dd0d9194a23a817, type: 2 }, { fileID: 11400000, guid: 77b46f033e30450698a96080f9af3cf6, type: 2 }, { fileID: 11400000, guid: 45c72c32a22d4eb4a605295e404c0c17, type: 2 }, { fileID: 11400000, guid: 3557b71d3d36444b8930df3819e053ab, type: 2 }, { fileID: 11400000, guid: eedb133410934056a17df10d5d65df96, type: 2 }, { fileID: 11400000, guid: f73b4aa30f204ff8b84cd116cd7e86f3, type: 2 }, { fileID: 11400000, guid: a0f3b4eb762248e7a0e9b9897a3eb028, type: 2 }, { fileID: 11400000, guid: 428addaaf33240f8a6477e6a796f6c2d, type: 2 }, { fileID: 11400000, guid: b10adf3b927c4040a73f3de593efa08d, type: 2 }, { fileID: 11400000, guid: 10ccffcd2cf24697a9eaded376382b27, type: 2 }, { fileID: 11400000, guid: ccbe142eaf2743bf932d32856592ba2c, type: 2 }, { fileID: 11400000, guid: 113352d4da17408b9709f068d8a9cc79, type: 2 }, { fileID: 11400000, guid: 364550d1cd93417b9c993e46e571a087, type: 2 }, { fileID: 11400000, guid: 4c7aad940392434cbbe10ee4b2065e17, type: 2 }, { fileID: 11400000, guid: fc36323a5f4c4c088dd6fa88e75abc31, type: 2 }, { fileID: 11400000, guid: b6cc5f395b0c46b8a7c4c28cd9bc6f6d, type: 2 }, { fileID: 11400000, guid: 3b8db3be285a4b458c0166f1ec936121, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: 5.56 NATO PMAG Clip, Black
+  m_EditorClassIdentifier: null
+  id: K5x8
+  key: mag_pmag30b
+  fullName: 5.56 NATO PMAG Clip, Black
+  pathCategory: Attachment/Mag
+  weight: 0.14
+  text: 
+  maxStack: 1
+  price: 500000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 41ee8fe6ba164a95b36fe68331381916, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 68
+  attachmentMetaGroup: 3
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - L85A1
+  - M4A1
+  - M16A3
+  - M4 LB
+  - M16A2
+  - ALK-22 Dragonfly
+  - FN F2000 Tactical
+  - FN F2000
+  - LR-300
+  - FN SCAR-L
+  - Steyr AUG A1
+  - HK416
+  - Steyr AUG A2
+  - Steyr AUG A3
+  - FAMAS G2
+  - IWI Tavor X95
+  - L86A1
+  clipSize: 30
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 0
+  damageDistant: 0
+  reloadTime: -5.000001
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

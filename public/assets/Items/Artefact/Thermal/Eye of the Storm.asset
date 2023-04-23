@@ -2,27 +2,83 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: NMaj
-    key: blizzard_stormeye
-    fullName: 'Eye of the Storm'
-    pathCategory: Artefact/Thermal
-    class: Thermal
-    weight: 0.15
-    common: 'Not studied'
-    maxDurability: 100.0
-    healthBonus: [-5.0, -3.0]
-    radiationDmgFactor: [10.0, 20.0]
-    thermalDmgFactor: [10.0, 20.0]
-    biologicalDmgFactor: [10.0, 20.0]
-    psychoDmgFactor: [10.0, 20.0]
-    image: { fileID: 21300000, guid: 68124cce07fd4e5887812de6be48e97c, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Eye of the Storm'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Eye of the Storm
+  m_EditorClassIdentifier: null
+  id: NMaj
+  key: blizzard_stormeye
+  fullName: Eye of the Storm
+  pathCategory: Artefact/Thermal
+  weight: 0.15
+  text: 
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 5730e697a16e48719cfc97c122b1d783, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: fbfffffffdffffff
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 0a00000014000000
+  thermalDmgFactor: 0a00000014000000
+  biologicalDmgFactor: 0a00000014000000
+  bleedingDmgFactor: 
+  radiationDmgFactor: 0a00000014000000
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

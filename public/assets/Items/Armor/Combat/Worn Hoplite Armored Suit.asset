@@ -2,39 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 6Xl7
-    key: goplit-1
-    fullName: 'Worn Hoplite Armored Suit'
-    pathCategory: Armor/Combat
-    rank: Stalker
-    class: Combat
-    weight: 10.0
-    maxDurability: 100.0
-    staminaBonus: [-8.0]
-    speedModifier: [-1.0]
-    maxWeightBonus: [5.0]
-    bulletDmgFactor: [91.0]
-    tearDmgFactor: [91.0]
-    explosionDmgFactor: [126.0]
-    electraDmgFactor: [36.0]
-    burnDmgFactor: [36.0]
-    chemicalBurnDmgFactor: [36.0]
-    radiationProtection: [150.0]
-    thermalProtection: [20.0]
-    biologicalProtection: [120.0]
-    psychoProtection: [60.0]
-    bleedingProtection: [49.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'An excellent utility vest with body armor, a reliable helmet, and a gas mask. It is an excellent choice for any true firearms connoisseur. But don’t forget that in the Zone, you need more than just protection from bullets.'
-    image: { fileID: 21300000, guid: e14a9e7fe222407b9f92fc9ea7f7f630, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn Hoplite Armored Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Worn Hoplite Armored Suit
+  m_EditorClassIdentifier: null
+  id: 6Xl7
+  key: goplit-1
+  fullName: Worn Hoplite Armored Suit
+  pathCategory: Armor/Combat
+  weight: 10
+  text: "An excellent utility vest with body armor, a reliable helmet, and a gas
+    mask. It is an excellent choice for any true firearms connoisseur. But don\u2019t
+    forget that in the Zone, you need more than just protection from bullets."
+  maxStack: 1
+  price: 130000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 8a018b394c914fc3adb62a8f3c7dc783, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f8ffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: ffffffff
+  maxWeightBonus: 05000000
+  bleedingProtection: 31000000
+  radiationProtection: 96000000
+  psychoProtection: 3c000000
+  thermalProtection: 14000000
+  biologicalProtection: 78000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 5b000000
+  tearDmgFactor: 5b000000
+  explosionDmgFactor: 7e000000
+  electraDmgFactor: 24000000
+  burnDmgFactor: 24000000
+  chemicalBurnDmgFactor: 24000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

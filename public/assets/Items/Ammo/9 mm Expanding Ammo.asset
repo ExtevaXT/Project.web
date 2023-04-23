@@ -2,24 +2,41 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: l0XB
-    key: 9exp
-    fullName: '9 mm Expanding Ammo'
-    pathCategory: Ammo
-    class: Ammo
-    weight: 0.009
-    damage: 10.000002
-    piercing: -25.0
-    bleeding: 15.000001
-    stoppingPower: 75.0
-    image: { fileID: 21300000, guid: 080ed9b6005b4ca1812d6683ae3f9218, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: '9 mm Expanding Ammo'
-    m_Script: { fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ebbf3d4b1d1a4412ba55eb0813d3fa87, type: 3}
+  m_Name: 9 mm Expanding Ammo
+  m_EditorClassIdentifier: null
+  id: l0XB
+  key: 9exp
+  fullName: 9 mm Expanding Ammo
+  pathCategory: Ammo
+  weight: 0.009
+  text: 
+  maxStack: 1
+  price: 100
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 465bb299f60f4b13a9a15f0f3b20a58f, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  bleeding: 15
+  stoppingPower: 75
+  piercing: -25
+  damage: 10
+  combustion: 0
+  numBullets: 0
+  damageDistant: 0
+  spread: 0
+  absoluteDamage: 0

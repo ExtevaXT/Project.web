@@ -2,26 +2,55 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: xEOl
-    key: misery
-    fullName: Misericorde
-    pathCategory: Weapon/Melee
-    rank: Master
-    class: 'Melee Weapons'
-    weight: 0.32
-    common: 40.0
-    strong: 100.0
-    piercing: 80.0
-    bloodlustChance: 70.0
-    text: 'A dagger with a diamond-shaped blade. In the Medieval Ages, these weapons were used to kill wounded enemies and for piercing in-between the plates of their armor. That doesn’t mean it can’t be used to do the same thing now...'
-    image: { fileID: 21300000, guid: ef7af577a313459493f6f0fc8d457bb4, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Misericorde
-    m_Script: { fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2dab61ac11af4e81a71e209d3f091f2, type: 3}
+  m_Name: Misericorde
+  m_EditorClassIdentifier: null
+  id: xEOl
+  key: misery
+  fullName: Misericorde
+  pathCategory: Weapon/Melee
+  weight: 0.32
+  text: "A dagger with a diamond-shaped blade. In the Medieval Ages, these weapons
+    were used to kill wounded enemies and for piercing in-between the plates of their
+    armor. That doesn\u2019t mean it can\u2019t be used to do the same thing now..."
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 71b6149b6f8f4c2a9f91d3e73d1962e4, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 10
+  damageType: 0
+  upperBodyAnimationParameter: 
+  sphereCastRadius: 0.5
+  common: 40
+  strong: 100
+  piercing: 80
+  bloodlustChance: 70

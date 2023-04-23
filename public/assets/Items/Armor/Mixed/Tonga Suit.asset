@@ -2,42 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: nj29
-    key: tonga
-    fullName: 'Tonga Suit'
-    pathCategory: Armor/Mixed
-    rank: Veteran
-    class: Combo
-    weight: 17.0
-    maxDurability: 100.0
-    staminaBonus: [-10.0]
-    maxWeightBonus: [20.0]
-    heal: [2.0]
-    radiationAccumulation: [-1.0]
-    bleedingAccumulation: [-0.5]
-    nightVision: 1
-    bulletDmgFactor: [76.0]
-    tearDmgFactor: [87.0]
-    explosionDmgFactor: [94.0]
-    electraDmgFactor: [474.0]
-    burnDmgFactor: [474.0]
-    chemicalBurnDmgFactor: [474.0]
-    radiationProtection: [240.0]
-    thermalProtection: [240.0]
-    biologicalProtection: [300.0]
-    psychoProtection: [210.0]
-    bleedingProtection: [40.0]
-    compatibleBackpacks: light
-    compatibleContainers: spacious
-    text: 'A suit named in honor of the archipelago in the Pacific Ocean. Outwardly it resembles a diving suit, but more technologically advanced. Equipped with a cheap but reliable life-support system.'
-    image: { fileID: 21300000, guid: e8f956916b11496d92261fe7d064f5d4, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Tonga Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Tonga Suit
+  m_EditorClassIdentifier: null
+  id: nj29
+  key: tonga
+  fullName: Tonga Suit
+  pathCategory: Armor/Mixed
+  weight: 17
+  text: A suit named in honor of the archipelago in the Pacific Ocean. Outwardly
+    it resembles a diving suit, but more technologically advanced. Equipped with
+    a cheap but reliable life-support system.
+  maxStack: 1
+  price: 1000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 5d5066e33c554b01bf45c36f728e8c9c, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: f6ffffff
+  staminaRegenerationBonus: 
+  heal: 02000000
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 14000000
+  bleedingProtection: 28000000
+  radiationProtection: f0000000
+  psychoProtection: d2000000
+  thermalProtection: f0000000
+  biologicalProtection: 2c010000
+  psychoAccumulation: 
+  radiationAccumulation: ffffffff
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 00000000
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 4c000000
+  tearDmgFactor: 57000000
+  explosionDmgFactor: 5e000000
+  electraDmgFactor: da010000
+  burnDmgFactor: da010000
+  chemicalBurnDmgFactor: da010000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: spacious

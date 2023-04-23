@@ -2,90 +2,116 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    m_ObjectHideFlags: 0
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_GameObject: { fileID: 0 }
-    m_Enabled: 1
-    m_EditorHideFlags: 0
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_Name: 'IMI Mini Uzi'
-    m_EditorClassIdentifier: null
-    maxStack: 1
-    weight: 2.8
-    price: 0
-    sellable: 0
-    personalizable: 0
-    maxDurability: 100.0
-    destroyable: 1
-    toolTip: "<b>{NAME}</b>\nSome weapon description\n{PERSONAL}\n\n{DAMAGE} Damage\nFire Interval: {COOLDOWN}s\nRequires: {REQUIREDAMMO}\n\nAmmo: {AMMO} / {MAGAZINESIZE}\nDurability: {DURABILITY}%\nWeight: {WEIGHT}g"
-    image: { fileID: 21300000, guid: a058a6cc31bc465295cadd8be83bf42a, type: 3 }
-    drop: { fileID: 6918345994587255518, guid: fe7b305ff8df2bd42bfcfd3f462dd211, type: 3 }
-    modelPrefab: { fileID: 1540458763532602, guid: 02445ac09aa4a8f48826f7f60389419d, type: 3 }
-    type: SMG
-    hide: 0
-    content: null
-    notes: null
-    category: WeaponTwohand
-    keepUsingWhileButtonDown: 1
-    successfulUseSound: [{ fileID: 8300000, guid: 12c2bc02022c8174db1df9d092db5aff, type: 3 }, { fileID: 8300000, guid: b00714de39fb04c49a823f65cd0a7cc0, type: 3 }, { fileID: 8300000, guid: 3f9378dae99a3ee428c014f15a85ca32, type: 3 }, { fileID: 8300000, guid: fac9fe36e0b60d34a95e1bcfdead892f, type: 3 }]
-    failedUseSound: { fileID: 8300000, guid: 2b449e759f0bcd34183303db3ebf5f92, type: 3 }
-    emptySound: { fileID: 8300000, guid: 2b449e759f0bcd34183303db3ebf5f92, type: 3 }
-    drawSound: { fileID: 8300000, guid: a0ac02d6e0ab96241aeb08537ceeb4e4, type: 3 }
-    cooldown: 0.1
-    _cooldownCategory: null
-    shoulderLookAtWhileHolding: 1
-    useDirectly: 0
-    attackRange: 140
-    damage: 36.0
-    damageType: Bullet
-    upperBodyAnimationParameter: UPPERBODY_RIFLE
-    attachmentsAllowed: {  }
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    magazineSize: 30
-    reloadTime: 2.6
-    reloadTimeFull: 3.2
-    zoom: 20
-    decalPrefab: { fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28, type: 3 }
-    decalSound: { fileID: 0 }
-    decalOffset: 0.01
-    Ejection: { fileID: 0 }
-    reloadSound: { fileID: 8300000, guid: 0abb6030c8e7306438e32df11175d02c, type: 3 }
-    reloadSound0: { fileID: 8300000, guid: 90e8242530daf474e99477e173c09229, type: 3 }
-    reloadBolt: { fileID: 8300000, guid: aa90bbd5b1195134b97d9001bfc6f0a3, type: 3 }
-    reloadIn: { fileID: 8300000, guid: 2b309e8865cc3f744a776e850a57c49b, type: 3 }
-    reloadOut: { fileID: 8300000, guid: 866a761baa96d8f44bb877813c3b3868, type: 3 }
-    reloadOpen: { fileID: 0 }
-    reloadClose: { fileID: 0 }
-    reloadBegin: { fileID: 0 }
-    reloadBegin0: { fileID: 0 }
-    reloadEnd: { fileID: 0 }
-    reloadStep: { fileID: 0 }
-    silencedSound: { fileID: 8300000, guid: c722bcfe61ad5da4fa9593a90fbfbecc, type: 3 }
-    silencedSound0: { fileID: 0 }
-    successfulUseSound0: { fileID: 0 }
-    recoilHorizontal: 2
-    recoilVertical: 4
-    id: y15x
-    key: miniuzi
-    fullName: 'IMI Mini Uzi'
-    pathCategory: 'Weapon/Submachine gun'
-    rank: Picklock
-    class: 'Submachine Guns'
-    ammoType: '9 mm'
-    clipSize: 40.0
-    distance: 85.0
-    rateOfFire: 950.0
-    spread: 1.599
-    hipSpread: 2.4
-    recoil: 0.42
-    horizontalRecoil: 0.17
-    drawTime: 0.8
-    aimSwitch: 0.15
-    startDamage: 36.0
-    damageDecreaseStart: 10.0
-    endDamage: 18.0
-    damageDecreaseEnd: 34.0
-    maxDistance: 85.0
-    text: 'A modification of the Uzi submachine gun. It has reduced weight due to its lighter bolt, shortened barrel, and shorter recoil spring.'
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: IMI Mini Uzi
+  m_EditorClassIdentifier: null
+  id: y15x
+  key: miniuzi
+  fullName: IMI Mini Uzi
+  pathCategory: Weapon/Submachine gun
+  weight: 2.8
+  text: A modification of the Uzi submachine gun. It has reduced weight due to its
+    lighter bolt, shortened barrel, and shorter recoil spring.
+  maxStack: 1
+  price: 225000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 1
+  toolTip: '<b>{NAME}</b>
+
+    Some weapon description
+
+    {PERSONAL}
+
+
+    {DAMAGE}
+    Damage
+
+    Fire Interval: {COOLDOWN}s
+
+    Requires: {REQUIREDAMMO}
+
+
+    Ammo:
+    {AMMO} / {MAGAZINESIZE}
+
+    Durability: {DURABILITY}%
+
+    Weight: {WEIGHT}g'
+  image: {fileID: 21300000, guid: 74a33abd7fbc4f6186886e9dfc11bf82, type: 3}
+  drop: {fileID: 6918345994587255518, guid: fe7b305ff8df2bd42bfcfd3f462dd211, type: 3}
+  modelPrefab: {fileID: 1540458763532602, guid: 02445ac09aa4a8f48826f7f60389419d,
+    type: 3}
+  hide: 0
+  content: null
+  notes: null
+  rank: Picklock
+  drawTime: 0.8
+  category: WeaponTwohand
+  keepUsingWhileButtonDown: 1
+  successfulUseSound:
+  - {fileID: 8300000, guid: 12c2bc02022c8174db1df9d092db5aff, type: 3}
+  - {fileID: 8300000, guid: b00714de39fb04c49a823f65cd0a7cc0, type: 3}
+  - {fileID: 8300000, guid: 3f9378dae99a3ee428c014f15a85ca32, type: 3}
+  - {fileID: 8300000, guid: fac9fe36e0b60d34a95e1bcfdead892f, type: 3}
+  failedUseSound: {fileID: 8300000, guid: 2b449e759f0bcd34183303db3ebf5f92, type: 3}
+  emptySound: {fileID: 8300000, guid: 2b449e759f0bcd34183303db3ebf5f92, type: 3}
+  drawSound: {fileID: 8300000, guid: a0ac02d6e0ab96241aeb08537ceeb4e4, type: 3}
+  cooldown: 0.1
+  _cooldownCategory: null
+  shoulderLookAtWhileHolding: 1
+  useDirectly: 0
+  attackRange: 140
+  damage: 36
+  damageType: 0
+  upperBodyAnimationParameter: UPPERBODY_RIFLE
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 0d80a32bffa547ed99d5b10170273b68, type: 2}
+  - {fileID: 11400000, guid: a81414a2f146433fa1d53ae5c3702ccb, type: 2}
+  - {fileID: 11400000, guid: 777054dc7e7d404ca67e5abd3de49f31, type: 2}
+  - {fileID: 11400000, guid: 42f57625538e416ca47d9e95a8542b17, type: 2}
+  - {fileID: 11400000, guid: 005da9550b7f4969a5aa65332cba8332, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28,
+    type: 3}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 0
+  reloadTime: 2.6
+  clipSize: 40
+  ammoType: 9 mm
+  spread: 1.599
+  hipSpread: 2.4
+  recoil: 0.42
+  horizontalRecoil: 0.17
+  aimSwitch: 0.15
+  startDamage: 36
+  damageDecreaseStart: 10
+  endDamage: 18
+  damageDecreaseEnd: 34
+  distance: 85
+  maxDistance: 85
+  reloadSound: {fileID: 8300000, guid: 0abb6030c8e7306438e32df11175d02c, type: 3}
+  reloadSound0: {fileID: 8300000, guid: 90e8242530daf474e99477e173c09229, type: 3}
+  reloadBolt: {fileID: 8300000, guid: aa90bbd5b1195134b97d9001bfc6f0a3, type: 3}
+  reloadIn: {fileID: 8300000, guid: 2b309e8865cc3f744a776e850a57c49b, type: 3}
+  reloadOut: {fileID: 8300000, guid: 866a761baa96d8f44bb877813c3b3868, type: 3}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 8300000, guid: c722bcfe61ad5da4fa9593a90fbfbecc, type: 3}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

@@ -2,27 +2,88 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 2DON
-    key: bear6d
-    fullName: 'Berloga-6u Container'
-    pathCategory: Container
-    rank: Master
-    class: 'Backpacks and Containers'
-    weight: 7.0
-    maxDurability: 100.0
-    innerProtection: 60.000004
-    effectiveness: 80.0
-    size: 6.0
-    speedModifier: [-2.0]
-    text: 'A reinforced artifact container model. Has weak shielding capabilities but is easy to produce, reliable, and lets you carry six artifacts. These factors had a strong influence on this model’s popularity.'
-    image: { fileID: 21300000, guid: 357b431e6a20457ab49ce68fcbe34dbd, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Berloga-6u Container'
-    m_Script: { fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08ced404c58c31e4ab5f6795ae9ed896, type: 3}
+  m_Name: Berloga-6u Container
+  m_EditorClassIdentifier: null
+  id: 2DON
+  key: bear6d
+  fullName: Berloga-6u Container
+  pathCategory: Container
+  weight: 7
+  text: "A reinforced artifact container model. Has weak shielding capabilities but
+    is easy to produce, reliable, and lets you carry six artifacts. These factors
+    had a strong influence on this model\u2019s popularity."
+  maxStack: 1
+  price: 6000000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: d7e13e0bf40e45d8b2ad49b1a812166e, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Master
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: feffffff
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 
+  innerProtection: 60
+  effectiveness: 80
+  size: 6

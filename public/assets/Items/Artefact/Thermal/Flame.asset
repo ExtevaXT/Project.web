@@ -2,26 +2,85 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Jk6Q
-    key: jarka_plamya
-    fullName: Flame
-    pathCategory: Artefact/Thermal
-    class: Thermal
-    weight: 0.2
-    common: 'Not studied'
-    maxDurability: 100.0
-    regenerationBonus: [2.0, 4.0]
-    thermalAccumulation: [2.0, 5.0]
-    bleedingAccumulation: [-4.0, -2.0]
-    text: 'A degraded form, this Fireball stayed too close to its parent anomaly for too long. Speeds up tissue regeneration but, unlike its starting form, warms up too fast and is unsafe to touch without protection.'
-    image: { fileID: 21300000, guid: 725158eecfe844ee8abf703c9ed69a94, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Flame
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Flame
+  m_EditorClassIdentifier: null
+  id: Jk6Q
+  key: jarka_plamya
+  fullName: Flame
+  pathCategory: Artefact/Thermal
+  weight: 0.2
+  text: A degraded form, this Fireball stayed too close to its parent anomaly for
+    too long. Speeds up tissue regeneration but, unlike its starting form, warms
+    up too fast and is unsafe to touch without protection.
+  maxStack: 1
+  price: 50000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 0293df6f99cb4f938ff50d04f6968611, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 0200000004000000
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 
+  radiationProtection: 
+  psychoProtection: 
+  thermalProtection: 
+  biologicalProtection: 
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 0200000005000000
+  bleedingAccumulation: fcfffffffeffffff
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 
+  tearDmgFactor: 
+  explosionDmgFactor: 
+  electraDmgFactor: 
+  burnDmgFactor: 
+  chemicalBurnDmgFactor: 
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: 
+  compatibleContainers: 

@@ -2,38 +2,87 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: VqMV
-    key: seva
-    fullName: 'SEVA Suit'
-    pathCategory: Armor/Scientific
-    rank: Veteran
-    class: Scientist
-    weight: 12.0
-    maxDurability: 100.0
-    maxWeightBonus: [5.0]
-    nightVision: 1
-    bulletDmgFactor: [63.0]
-    tearDmgFactor: [71.0]
-    explosionDmgFactor: [86.0]
-    electraDmgFactor: [773.0]
-    burnDmgFactor: [773.0]
-    chemicalBurnDmgFactor: [773.0]
-    radiationProtection: [340.0]
-    thermalProtection: [340.0]
-    biologicalProtection: [400.0]
-    psychoProtection: [310.0]
-    bleedingProtection: [40.0]
-    compatibleBackpacks: light
-    compatibleContainers: spacious
-    text: 'Having obtained a shipment of decommissioned body armor, the Chernobyl Research Institute decided to get a decisive foothold in a newly forming market segment: wealthy stalkers. This suit was the result. The closed breathing system gave it excellent performance and an eye-watering price. Fitted with 2nd-generation NVGs.'
-    image: { fileID: 21300000, guid: e2d15e949af640acbfe387cb351ee2ca, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'SEVA Suit'
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: SEVA Suit
+  m_EditorClassIdentifier: null
+  id: VqMV
+  key: seva
+  fullName: SEVA Suit
+  pathCategory: Armor/Scientific
+  weight: 12
+  text: 'Having obtained a shipment of decommissioned body armor, the Chernobyl Research
+    Institute decided to get a decisive foothold in a newly forming market segment:
+    wealthy stalkers. This suit was the result. The closed breathing system gave
+    it excellent performance and an eye-watering price. Fitted with 2nd-generation
+    NVGs.'
+  maxStack: 1
+  price: 250000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 0c27e7d29fce49bda368e02c92f5ffa9, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Veteran
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: 
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 05000000
+  bleedingProtection: 28000000
+  radiationProtection: 54010000
+  psychoProtection: 36010000
+  thermalProtection: 54010000
+  biologicalProtection: 90010000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 3f000000
+  tearDmgFactor: 47000000
+  explosionDmgFactor: 56000000
+  electraDmgFactor: 05030000
+  burnDmgFactor: 05030000
+  chemicalBurnDmgFactor: 05030000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 1
+  compatibleBackpacks: light
+  compatibleContainers: spacious

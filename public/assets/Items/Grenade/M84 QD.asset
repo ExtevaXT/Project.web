@@ -2,24 +2,50 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: Lm3Z
-    key: m84qd
-    fullName: 'M84 QD'
-    pathCategory: Grenade
-    class: Grenades
-    weight: 0.24
-    explosionSize: 12.0
-    flashTime: 5.0
-    lifetime: 1.5
-    text: 'An American flashbang grenade with a short detonation time.'
-    image: { fileID: 21300000, guid: 16e75c23958e4264a4ed48de583395e8, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'M84 QD'
-    m_Script: { fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed7a33bc444938c4daeeb785a5c3728e, type: 3}
+  m_Name: M84 QD
+  m_EditorClassIdentifier: null
+  id: Lm3Z
+  key: m84qd
+  fullName: M84 QD
+  pathCategory: Grenade
+  weight: 0.24
+  text: An American flashbang grenade with a short detonation time.
+  maxStack: 1
+  price: 1000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: c0110eb8991543eb98f419aa35af238c, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: 
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  lifetime: 1.5
+  explosionStrengthMin: 0
+  explosionStrength: 0
+  explosionSize: 12
+  explosionActivationTime: 0
+  flashTime: 5

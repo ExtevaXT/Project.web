@@ -2,27 +2,53 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: O8dD
-    key: silencer_ash12_mc558
-    fullName: 'ASh-12 MTs-558 Silencer'
-    pathCategory: Attachment/Barrel
-    attachmentMetaGroup: 0
-    attachmentMetaId: ']'
-    rank: Master
-    class: 'Muzzles and Silencers'
-    weight: 0.7
-    drawTime: 10.000002
-    damageDistant: -14.999998
-    suitableFor: [ASh-12, MTs-558]
-    image: { fileID: 21300000, guid: bf2f66944aa243b49de8c7e41d75a785, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'ASh-12 MTs-558 Silencer'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: b82f55b8b3d1455e8784b7fed65054c8, type: 2 }, { fileID: 11400000, guid: 4e845df9a2ab44a68438023408380ebd, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: ASh-12 MTs-558 Silencer
+  m_EditorClassIdentifier: null
+  id: O8dD
+  key: silencer_ash12_mc558
+  fullName: ASh-12 MTs-558 Silencer
+  pathCategory: Attachment/Barrel
+  weight: 0.7
+  text: 
+  maxStack: 1
+  price: 100000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 04a5c0edf2a841fd910c7a1ae7039e3f, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 93
+  attachmentMetaGroup: 0
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - ASh-12
+  - MTs-558
+  clipSize: 0
+  spread: 0
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 10.000002
+  damageDistant: -14
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

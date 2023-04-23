@@ -2,91 +2,128 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    m_ObjectHideFlags: 0
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_GameObject: { fileID: 0 }
-    m_Enabled: 1
-    m_EditorHideFlags: 0
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_Name: 'Steyr AUG A1'
-    m_EditorClassIdentifier: null
-    maxStack: 1
-    weight: 3.6
-    price: 100
-    sellable: 0
-    personalizable: 0
-    maxDurability: 100.0
-    destroyable: 1
-    toolTip: "<b>{NAME}</b>\nSome weapon description\n{PERSONAL}\n\n{DAMAGE} Damage\nFire Interval: {COOLDOWN}s\nRequires: {REQUIREDAMMO}\n\nAmmo: {AMMO} / {MAGAZINESIZE}\nDurability: {DURABILITY}%\nWeight: {WEIGHT}g"
-    image: { fileID: 21300000, guid: ea880b8452724b44bd7fbe919bcb3d29, type: 3 }
-    drop: { fileID: 4724983406357909044, guid: 2854e6cdbcdaaec44a8e9ec49ae145fb, type: 3 }
-    modelPrefab: { fileID: 1428701504022370, guid: c2a14a7492b824e408d4a35a42a0665e, type: 3 }
-    type: 'Assault Rifle'
-    hide: 0
-    content: 'The AK-47, officially known as the Avtomat Kalashnikova, is a gas-operated assault rifle that is chambered for the 7.62×39mm cartridge. Developed in the Soviet Union by Russian small-arms designer Mikhail Kalashnikov, it is the originating firearm of the Kalashnikov (or "AK") family of rifles.'
-    notes: null
-    category: WeaponTwohand
-    keepUsingWhileButtonDown: 1
-    successfulUseSound: [{ fileID: 8300000, guid: 485e090fc60810247be012e44f6dfd31, type: 3 }]
-    failedUseSound: { fileID: 8300000, guid: a867fff00cbb3a348b6acb2dc23f9cd4, type: 3 }
-    emptySound: { fileID: 8300000, guid: a867fff00cbb3a348b6acb2dc23f9cd4, type: 3 }
-    drawSound: { fileID: 8300000, guid: 31dd30783ab527f42af196a3baa344e5, type: 3 }
-    cooldown: 0.13
-    _cooldownCategory: null
-    shoulderLookAtWhileHolding: 1
-    useDirectly: 0
-    attackRange: 150
-    damage: 37.0
-    damageType: Tear
-    upperBodyAnimationParameter: UPPERBODY_RIFLE
-    attachmentsAllowed: {  }
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    magazineSize: 20
-    reloadTime: 3.75
-    reloadTimeFull: 3.5
-    zoom: 20
-    decalPrefab: { fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28, type: 3 }
-    decalSound: { fileID: 0 }
-    decalOffset: 0.01
-    Ejection: { fileID: 0 }
-    reloadSound: { fileID: 8300000, guid: 2be5d80d1e3fcf64486e1298cb71fe68, type: 3 }
-    reloadSound0: { fileID: 8300000, guid: 0124d33a380b165498ee89f3259d18d0, type: 3 }
-    reloadBolt: { fileID: 0 }
-    reloadIn: { fileID: 0 }
-    reloadOut: { fileID: 0 }
-    reloadOpen: { fileID: 0 }
-    reloadClose: { fileID: 0 }
-    reloadBegin: { fileID: 0 }
-    reloadBegin0: { fileID: 0 }
-    reloadEnd: { fileID: 0 }
-    reloadStep: { fileID: 0 }
-    silencedSound: { fileID: 8300000, guid: 208551dbdf01a044e84758a56d4e76e5, type: 3 }
-    silencedSound0: { fileID: 0 }
-    successfulUseSound0: { fileID: 0 }
-    recoilHorizontal: 1
-    recoilVertical: 2
-    id: 8O53
-    key: aug
-    fullName: 'Steyr AUG A1'
-    pathCategory: 'Weapon/Assault rifle'
-    rank: Veteran
-    class: 'Assault Rifles'
-    ammoType: '5.56'
-    clipSize: 30.0
-    distance: 150.0
-    rateOfFire: 750.0
-    tacticalReloadTime: 3.25
-    spread: 0.551
-    hipSpread: 3.0
-    recoil: 0.34
-    horizontalRecoil: 0.12
-    drawTime: 1.0
-    aimSwitch: 0.2
-    startDamage: 37.0
-    damageDecreaseStart: 14.0
-    endDamage: 27.0
-    damageDecreaseEnd: 65.0
-    maxDistance: 150.0
-    text: 'The Steyr AUG (which stands for “Armee Universal Gewehr,” meaning “universal army rifle”) is a range of small arms that was launched in 1977 by the Austrian company Steyr-Daimler-Puch. In this particular rifle, a bullpup layout has been used, whereby the clip and breech are located behind the firing hand grip and the trigger. There are two firing modes: single-shot and full-automatic.'
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Steyr AUG A1
+  m_EditorClassIdentifier: null
+  id: 8O53
+  key: aug
+  fullName: Steyr AUG A1
+  pathCategory: Weapon/Assault rifle
+  weight: 3.6
+  text: 
+  maxStack: 1
+  price: 550000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 1
+  toolTip: '<b>{NAME}</b>
+
+    Some weapon description
+
+    {PERSONAL}
+
+
+    {DAMAGE}
+    Damage
+
+    Fire Interval: {COOLDOWN}s
+
+    Requires: {REQUIREDAMMO}
+
+
+    Ammo:
+    {AMMO} / {MAGAZINESIZE}
+
+    Durability: {DURABILITY}%
+
+    Weight: {WEIGHT}g'
+  image: {fileID: 21300000, guid: 7f9d20dafca0483398a2ce8eea9b4787, type: 3}
+  drop: {fileID: 4724983406357909044, guid: 2854e6cdbcdaaec44a8e9ec49ae145fb, type: 3}
+  modelPrefab: {fileID: 1428701504022370, guid: c2a14a7492b824e408d4a35a42a0665e,
+    type: 3}
+  hide: 0
+  content: "The AK-47, officially known as the Avtomat Kalashnikova, is a gas-operated
+    assault rifle that is chambered for the 7.62\xD739mm cartridge. Developed in
+    the Soviet Union by Russian small-arms designer Mikhail Kalashnikov, it is the
+    originating firearm of the Kalashnikov (or \"AK\") family of rifles."
+  notes: null
+  rank: Veteran
+  drawTime: 1
+  category: WeaponTwohand
+  keepUsingWhileButtonDown: 1
+  successfulUseSound:
+  - {fileID: 8300000, guid: 485e090fc60810247be012e44f6dfd31, type: 3}
+  failedUseSound: {fileID: 8300000, guid: a867fff00cbb3a348b6acb2dc23f9cd4, type: 3}
+  emptySound: {fileID: 8300000, guid: a867fff00cbb3a348b6acb2dc23f9cd4, type: 3}
+  drawSound: {fileID: 8300000, guid: 31dd30783ab527f42af196a3baa344e5, type: 3}
+  cooldown: 0.13
+  _cooldownCategory: null
+  shoulderLookAtWhileHolding: 1
+  useDirectly: 0
+  attackRange: 150
+  damage: 37
+  damageType: 0
+  upperBodyAnimationParameter: UPPERBODY_RIFLE
+  attachmentsAllowed:
+  - {fileID: 11400000, guid: 1f0c4a71d3de41a5a4808cd4bb808237, type: 2}
+  - {fileID: 11400000, guid: de431d44903d432ebe35aa16c586382f, type: 2}
+  - {fileID: 11400000, guid: 97c539a1698d4707a17163d15ad98824, type: 2}
+  - {fileID: 11400000, guid: 7628fbab818b4d0daf51a9336f74ab04, type: 2}
+  - {fileID: 11400000, guid: 2f6291db52864246bdabad95eae985a2, type: 2}
+  - {fileID: 11400000, guid: 0b7fde8fc6ac43c2a95ff3c141051067, type: 2}
+  - {fileID: 11400000, guid: 6a87610a623c441d96f6e739c1247361, type: 2}
+  - {fileID: 11400000, guid: b1ba8b5c98c2485e80379cca9922be7b, type: 2}
+  - {fileID: 11400000, guid: ea0ea3fee0594a97a672c7e270d8cd86, type: 2}
+  - {fileID: 11400000, guid: 7ba4da285b784041a5dc34925f73627c, type: 2}
+  - {fileID: 11400000, guid: 7ba4da285b784041a5dc34925f73627c, type: 2}
+  - {fileID: 11400000, guid: 3ae47e3f61b04108a5e960c666c5df0a, type: 2}
+  - {fileID: 11400000, guid: 8ae3668dea2f42bf9dfa018296077de3, type: 2}
+  - {fileID: 11400000, guid: 7ba4da285b784041a5dc34925f73627c, type: 2}
+  - {fileID: 11400000, guid: 7ba4da285b784041a5dc34925f73627c, type: 2}
+  - {fileID: 11400000, guid: 3f6467e982fa4031bb5c88ede8afa423, type: 2}
+  - {fileID: 11400000, guid: 9ee56d4e93ae4e8e881e124a1ee86abe, type: 2}
+  - {fileID: 11400000, guid: c76f7434579e4601a48dfe70a88bc7af, type: 2}
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 1369496945668376, guid: 12cfe7016056b48e6875cfc877e30d28,
+    type: 3}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 3.25
+  reloadTime: 3.75
+  clipSize: 30
+  ammoType: 5.56
+  spread: 0.551
+  hipSpread: 3
+  recoil: 0.34
+  horizontalRecoil: 0.12
+  aimSwitch: 0.2
+  startDamage: 37
+  damageDecreaseStart: 14
+  endDamage: 27
+  damageDecreaseEnd: 65
+  distance: 150
+  maxDistance: 150
+  reloadSound: {fileID: 8300000, guid: 2be5d80d1e3fcf64486e1298cb71fe68, type: 3}
+  reloadSound0: {fileID: 8300000, guid: 0124d33a380b165498ee89f3259d18d0, type: 3}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 8300000, guid: 208551dbdf01a044e84758a56d4e76e5, type: 3}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

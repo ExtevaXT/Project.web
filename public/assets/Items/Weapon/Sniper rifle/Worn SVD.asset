@@ -2,43 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 20wg
-    key: svd-1
-    fullName: 'Worn SVD'
-    pathCategory: 'Weapon/Sniper rifle'
-    rank: Stalker
-    class: 'Sniper Rifles'
-    weight: 4.83
-    maxDurability: 100.0
-    ammoType: '7.62'
-    requiredAmmo: [{ fileID: 11400000, guid: 999e8dc267ef825418be332578e4e926, type: 2 }]
-    damage: 80.0
-    clipSize: 10.0
-    distance: 180.0
-    rateOfFire: 190.0
-    reloadTime: 3.3
-    tacticalReloadTime: 2.7
-    spread: 0.083
-    hipSpread: 4.5
-    recoil: 1.0
-    horizontalRecoil: 0.45
-    drawTime: 0.9
-    aimSwitch: 0.4
-    stoppingPower: 40.0
-    startDamage: 80.0
-    damageDecreaseStart: 32.0
-    endDamage: 64.0
-    damageDecreaseEnd: 110.0
-    maxDistance: 180.0
-    text: 'This type of sniper rifle has been on the arms market for a good half a century, and in that time it has established itself as an extremely reliable and easy-to-use weapon. In the military, it is used mainly for attacking distant targets that cannot be hit by an assault rifle. However, stalkers value the SVD primarily because bullets shot from it can penetrate even the thickest of mutant’s skin or the toughest body armor.'
-    image: { fileID: 21300000, guid: 8cba470503a04a2aae16fdc084247b87, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Worn SVD'
-    m_Script: { fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa99cbcb882d44b2984928ebe183fb04, type: 3}
+  m_Name: Worn SVD
+  m_EditorClassIdentifier: null
+  id: 20wg
+  key: svd-1
+  fullName: Worn SVD
+  pathCategory: Weapon/Sniper rifle
+  weight: 4.83
+  text: 
+  maxStack: 1
+  price: 80000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: d9954f6fd6cf4f77a1725d6aae136aca, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Stalker
+  drawTime: 0.9
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  attackRange: 120
+  damage: 80
+  damageType: 0
+  upperBodyAnimationParameter: 
+  attachmentsAllowed: []
+  requiredAmmo: {fileID: 0}
+  zoom: 20
+  decalPrefab: {fileID: 0}
+  decalSound: {fileID: 0}
+  decalOffset: 0.01
+  Ejection: {fileID: 0}
+  tacticalReloadTime: 2.7
+  reloadTime: 3.3
+  clipSize: 10
+  ammoType: 7.62
+  spread: 0.083
+  hipSpread: 4.5
+  recoil: 1
+  horizontalRecoil: 0.45
+  aimSwitch: 0.4
+  startDamage: 80
+  damageDecreaseStart: 32
+  endDamage: 64
+  damageDecreaseEnd: 110
+  distance: 180
+  maxDistance: 180
+  reloadSound: {fileID: 0}
+  reloadSound0: {fileID: 0}
+  reloadBolt: {fileID: 0}
+  reloadIn: {fileID: 0}
+  reloadOut: {fileID: 0}
+  reloadOpen: {fileID: 0}
+  reloadClose: {fileID: 0}
+  reloadBegin: {fileID: 0}
+  reloadBegin0: {fileID: 0}
+  reloadEnd: {fileID: 0}
+  reloadStep: {fileID: 0}
+  silencedSound: {fileID: 0}
+  silencedSound0: {fileID: 0}
+  successfulUseSound0: {fileID: 0}

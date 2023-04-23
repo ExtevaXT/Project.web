@@ -2,37 +2,84 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: 7jK6
-    key: longcoat
-    fullName: Cloak
-    pathCategory: Armor/Combat
-    rank: Picklock
-    class: Combat
-    weight: 2.0
-    maxDurability: 100.0
-    staminaBonus: [-5.0]
-    bulletDmgFactor: [14.0]
-    tearDmgFactor: [54.0]
-    explosionDmgFactor: [17.0]
-    electraDmgFactor: [9.0]
-    burnDmgFactor: [9.0]
-    chemicalBurnDmgFactor: [9.0]
-    radiationProtection: [30.0]
-    thermalProtection: [0.0]
-    biologicalProtection: [30.0]
-    psychoProtection: [0.0]
-    bleedingProtection: [34.0]
-    compatibleBackpacks: superheavy
-    compatibleContainers: bulky
-    text: 'Beneath this thick waterproof cloak is a sweater, which conceals light body armor.'
-    image: { fileID: 21300000, guid: f1837166420f46c68a5a6ebccb3d3507, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: Cloak
-    m_Script: { fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 90c06992fabc4400c8c2e33ff979c9e2, type: 3}
+  m_Name: Cloak
+  m_EditorClassIdentifier: null
+  id: 7jK6
+  key: longcoat
+  fullName: Cloak
+  pathCategory: Armor/Combat
+  weight: 2
+  text: Beneath this thick waterproof cloak is a sweater, which conceals light body
+    armor.
+  maxStack: 1
+  price: 20000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 100
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: 12b4370f6e87467a93d1c7fead3de5b2, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  rank: Picklock
+  drawTime: 0.5
+  category: 
+  keepUsingWhileButtonDown: 0
+  successfulUseSound: []
+  failedUseSound: {fileID: 0}
+  emptySound: {fileID: 0}
+  drawSound: {fileID: 0}
+  cooldown: 0
+  _cooldownCategory: 
+  shoulderLookAtWhileHolding: 0
+  useDirectly: 0
+  healthBonus: 
+  regenerationBonus: 
+  staminaBonus: fbffffff
+  staminaRegenerationBonus: 
+  heal: 
+  healEfficiency: 
+  speedModifier: 
+  maxWeightBonus: 
+  bleedingProtection: 22000000
+  radiationProtection: 1e000000
+  psychoProtection: 00000000
+  thermalProtection: 00000000
+  biologicalProtection: 1e000000
+  psychoAccumulation: 
+  radiationAccumulation: 
+  biologicalAccumulation: 
+  thermalAccumulation: 
+  bleedingAccumulation: 
+  reactionToElectroshock: 
+  reactionToBurn: 
+  reactionToChemicalBurn: 
+  reactionToTear: 
+  psychoDmgFactor: 
+  thermalDmgFactor: 
+  biologicalDmgFactor: 
+  bleedingDmgFactor: 
+  radiationDmgFactor: 
+  bulletDmgFactor: 0e000000
+  tearDmgFactor: 36000000
+  explosionDmgFactor: 11000000
+  electraDmgFactor: 09000000
+  burnDmgFactor: 09000000
+  chemicalBurnDmgFactor: 09000000
+  hood: 0
+  mask: 0
+  head: {fileID: 0}
+  nightVision: 0
+  compatibleBackpacks: superheavy
+  compatibleContainers: bulky

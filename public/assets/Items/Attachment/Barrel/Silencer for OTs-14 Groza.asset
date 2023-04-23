@@ -2,29 +2,54 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!114 &11400000
 MonoBehaviour:
-    id: rwnB
-    key: silencer_groza
-    fullName: 'Silencer for OTs-14 Groza'
-    pathCategory: Attachment/Barrel
-    attachmentMetaGroup: 0
-    attachmentMetaId: '['
-    rank: Veteran
-    class: 'Muzzles and Silencers'
-    weight: 0.48
-    spread: -9.000004
-    drawTime: 4.999995
-    damageDistant: -10.000002
-    text: 'ATTENTION: if you use a silencer, the enemy won’t know where you are firing from.'
-    suitableFor: ['OTs-14 Groza', 'OTs-14 Tactical Grip']
-    image: { fileID: 21300000, guid: 54b8e8650d6d4cb8bda6c6ab10053fd6, type: 3 }
-    m_EditorClassIdentifier: null
-    m_Name: 'Silencer for OTs-14 Groza'
-    m_Script: { fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3 }
-    m_EditorHideFlags: 0
-    m_Enabled: 1
-    m_GameObject: { fileID: 0 }
-    m_PrefabAsset: { fileID: 0 }
-    m_PrefabInstance: { fileID: 0 }
-    m_CorrespondingSourceObject: { fileID: 0 }
-    m_ObjectHideFlags: 0
-    _suitableFor: [{ fileID: 11400000, guid: e29bc2d515c14bd2b6f08133294a12b5, type: 2 }, { fileID: 11400000, guid: 0c1d2a03e11f4dfe8b929356a00ef531, type: 2 }]
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87ae8f2a691b5974289ba8a2d2fd217c, type: 3}
+  m_Name: Silencer for OTs-14 Groza
+  m_EditorClassIdentifier: null
+  id: rwnB
+  key: silencer_groza
+  fullName: Silencer for OTs-14 Groza
+  pathCategory: Attachment/Barrel
+  weight: 0.48
+  text: "ATTENTION: if you use a silencer, the enemy won\u2019t know where you are
+    firing from."
+  maxStack: 1
+  price: 100000
+  sellable: 0
+  personalizable: 0
+  maxDurability: 1000
+  destroyable: 0
+  toolTip: 
+  image: {fileID: 21300000, guid: f6eb084e6f9c454c9f473ae369846519, type: 3}
+  drop: {fileID: 0}
+  modelPrefab: {fileID: 0}
+  hide: 0
+  content: 
+  notes: 
+  attachmentMetaId: 91
+  attachmentMetaGroup: 0
+  attachmentsAllowed: []
+  grenadeLauncher: 0
+  silencer: 0
+  zoom: 0
+  suitableFor:
+  - OTs-14 Groza
+  - OTs-14 Tactical Grip
+  clipSize: 0
+  spread: -9.000004
+  recoil: 0
+  horizontalRecoil: 0
+  recoilGain: 0
+  drawTime: 4.999995
+  damageDistant: -10
+  reloadTime: 0
+  wiggle: 0
+  hipSpread: 0
+  aimSwitchTime: 0
+  tickSpreadMultiplierReduction: 0

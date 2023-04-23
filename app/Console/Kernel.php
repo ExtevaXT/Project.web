@@ -18,9 +18,9 @@ class Kernel extends ConsoleKernel
     {
         // $schedule->command('inspire')->hourly();
         // $schedule->job(new ServerStatus)->everyMinute();
-        $schedule->command('bot:lot-create')->everySixHours();
-        $schedule->command('bot:lot-bid')->everyThreeHours();
-        $schedule->command('bot:lot-buyout')->daily();
+        $schedule->command('bot:lot-create 10')->everySixHours();
+        $schedule->command('bot:lot-bid 2')->everyThreeHours();
+        $schedule->command('bot:lot-buyout 10')->daily();
     }
 
     /**
