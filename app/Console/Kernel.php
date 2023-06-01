@@ -16,11 +16,10 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-        // $schedule->command('inspire')->hourly();
-        // $schedule->job(new ServerStatus)->everyMinute();
-        $schedule->command('bot:lot-create 10')->everySixHours();
-        $schedule->command('bot:lot-bid 2')->everyThreeHours();
-        $schedule->command('bot:lot-buyout 10')->daily();
+        $schedule->command('bot:lot-create 10')->everySixHours()->withoutOverlapping();
+        $schedule->command('bot:lot-bid 2')->everyThreeHours()->withoutOverlapping();
+        $schedule->command('bot:lot-buyout 10')->daily()->withoutOverlapping();
+
     }
 
     /**

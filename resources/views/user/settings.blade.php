@@ -121,6 +121,13 @@
                     <select class="form-select my-2 input-glass" name="styleTheme">
                         <option selected disabled>Select theme</option>
                         <option value="null">None</option>
+                        <option value="corridor" @if(Account::auth()->setting('styleTheme')=='corridor') selected @endif>Corridor</option>
+                        <option value="red-haze" @if(Account::auth()->setting('styleTheme')=='red-haze') selected @endif>Red Haze</option>
+                        <option value="nodes" @if(Account::auth()->setting('styleTheme')=='nodes') selected @endif>Nodes</option>
+                        <option value="neon" @if(Account::auth()->setting('styleTheme')=='neon') selected @endif>Neon</option>
+                        <option value="flame" @if(Account::auth()->setting('styleTheme')=='flame') selected @endif>Flame</option>
+                        <option value="cosmos" @if(Account::auth()->setting('styleTheme')=='cosmos') selected @endif>Cosmos</option>
+
                         <option value="rainbow" @if(Account::auth()->setting('styleTheme')=='rainbow') selected @endif>Rainbow</option>
                         <option value="hanipaganda" @if(Account::auth()->setting('styleTheme')=='hanipaganda') selected @endif>HANIPAGANDA</option>
                         <option value="consultant" @if(Account::auth()->setting('styleTheme')=='consultant') selected @endif>こ～んさるたん</option>
