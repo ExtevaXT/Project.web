@@ -11,10 +11,10 @@
 @section('content')
     <div class="">
         @if(session()->has('success'))
-            <div class="alert alert-success">Password reset link was sent to email</div>
+            <div class="alert bg-glass-success">Password reset link was sent to email</div>
         @endif
         @if ($errors->has('email'))
-            <div class="alert alert-danger">
+            <div class="alert bg-glass-danger">
                 {{$errors->first()}}
             </div>
         @endif

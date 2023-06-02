@@ -19,10 +19,7 @@
 .daily-panel{
     width: 50%;
 }
-.prime-panel{
-    background:linear-gradient( rgba(177, 177, 177, 0.07), rgba(177, 177, 177, 0.07) ), url("/img/icon/tree2.png") no-repeat 50%;
-    background-size: contain;
-}
+
 .profile-panel-bg-input{
     width: 75%;
     height: 40px;

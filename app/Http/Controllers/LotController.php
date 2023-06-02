@@ -94,9 +94,9 @@ class LotController extends Controller
         $previousBidder = Character::all()->where('name', $lot->bidder)->first();
 
         //validation
-        if($bidder->gold < $request['bid']) return 'Not enough currency';
-        if($request['bid'] < $lot->bid) return 'Bid is too low';
-        if($previousBidder->name == $bidder->name) return "Can't overwrite your bid";
+        if($bidder->gold < $request['bid']) return back()->with(['currency'=>true]);
+        if($request['bid'] <= $lot->bid) return back()->with(['bid-low'=>true]);
+        if($previousBidder->name == $bidder->name) return back()->with(['bid-overwrite'=>true]);
 
         //Remove gold from bidder and give gold back to previous bidder
         $bidder->setGold($bidder->gold- $request['bid']);

@@ -9,13 +9,13 @@
 
 @section('content')
     @if(session()->has('error'))
-        <div class="alert alert-danger mt-4">Something went wrong</div>
+        <div class="alert bg-glass-danger mt-4">Something went wrong</div>
     @endif
     @if(session()->has('item'))
-        <div class="alert alert-success mt-4">Item was added to your storage</div>
+        <div class="alert bg-glass-success mt-4">Item was added to your storage</div>
     @endif
     @if(session()->has('money'))
-        <div class="alert alert-success mt-4">Balance was updated</div>
+        <div class="alert bg-glass-success mt-4">Balance was updated</div>
     @endif
     @if(Auth::user()->character())
     <h3 class="my-3">Deliveries</h3>

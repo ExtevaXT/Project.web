@@ -20,10 +20,10 @@
     </div>
     @endguest
     @if(session()->has('daily') and session()->get('daily') == false)
-        <div class="alert alert-danger mt-4">Daily reward already claimed</div>
+        <div class="alert bg-glass-danger mt-4">Daily reward already claimed</div>
     @endif
     @if(session()->get('daily') == true)
-        <div class="alert alert-success mt-4">Daily reward claimed</div>
+        <div class="alert bg-glass-success mt-4">Daily reward claimed</div>
     @endif
     <div class="@auth d-flex my-2 main @endauth">
         <div class="main-left d-flex flex-column @auth() w-50 @endauth ">

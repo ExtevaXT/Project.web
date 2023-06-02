@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="{{ asset('css/style.css')}}">
     <link rel="stylesheet" href="{{ asset('css/Custom/MaterialDesignIcons.min.css')}}">
     <link rel="stylesheet" id="switcher-id" href="">
-    @if(Auth::check() and $theme = Account::auth()->setting('styleTheme') and
+    @if(Auth::check() and $theme = Account::auth()->setting('styleTheme') and $theme!='null' and
 (Account::auth()->setting('styleThemeShow') == 1 or Account::auth()->setting('styleThemeShow') == 2))
         <link rel="stylesheet" href="{{asset('css/themes/'.($theme != null ? $theme : 'default').'.css')}}">
     @endif
@@ -68,10 +68,10 @@
                 </div>
             </nav>
     @if($errors->has('g-recaptcha-response'))
-        <div class="alert alert-danger mt-3">Recaptcha failed</div>
+        <div class="alert bg-glass-danger mt-3">Recaptcha failed</div>
     @endif
     @if(session()->has('error'))
-        <div class="alert alert-danger mt-3">Something went wrong</div>
+        <div class="alert bg-glass-danger mt-3">Something went wrong</div>
     @endif
     @section('content')
 

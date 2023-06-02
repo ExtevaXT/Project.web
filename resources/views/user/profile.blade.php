@@ -5,7 +5,7 @@
 @section('title', 'Profile page')
 @section('style')
     <link rel="stylesheet" href="{{ asset('css/profile.css')}}">
-    @if(($theme = $account->setting('styleTheme')) and ($account->setting('styleThemeShow') == 0 or $account->setting('styleThemeShow') == 2))
+    @if(($theme = $account->setting('styleTheme')) and $theme!='null' and ($account->setting('styleThemeShow') == 0 or $account->setting('styleThemeShow') == 2))
         <link rel="stylesheet" href="{{asset('css/themes/'.($theme != null ? $theme : 'default').'.css')}}">
     @endif
     <style>
@@ -15,10 +15,10 @@
 
 @section('content')
     @if(session()->has('error'))
-        <div class="alert alert-danger my-3">Something went wrong</div>
+        <div class="alert bg-glass-danger my-3">Something went wrong</div>
     @endif
     @if(session()->has('upload'))
-        <div class="alert alert-success my-3">Picture uploaded successfully</div>
+        <div class="alert bg-glass-success my-3">Picture uploaded successfully</div>
     @endif
 <div class="">
     <div class="d-flex my-5 top-panel">

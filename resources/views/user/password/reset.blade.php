@@ -10,7 +10,7 @@
 @section('content')
     <div class="my-3">
         @if ($errors->any())
-            <div class="alert alert-danger">
+            <div class="alert bg-glass-danger">
                 <ul>
                     @foreach ($errors->all() as $error)
                         <li>{{ $error }}</li>

@@ -10,13 +10,22 @@
 
 @section('content')
     @if(session()->has('bid'))
-        <div class="alert alert-success my-3">Bid was placed successfully</div>
+        <div class="alert bg-glass-success my-3">Bid was placed successfully</div>
     @endif
     @if(session()->has('lot'))
-        <div class="alert alert-success my-3">Lot was created successfully</div>
+        <div class="alert bg-glass-success my-3">Lot was created successfully</div>
     @endif
     @if(session()->has('currency'))
-        <div class="alert alert-danger my-3">Not enough currency</div>
+        <div class="alert bg-glass-danger my-3">Not enough currency</div>
+    @endif
+    @if(session()->has('bid-low'))
+        <div class="alert bg-glass-danger my-3">Bid is too low</div>
+    @endif
+    @if(session()->has('bid-overwrite'))
+        <div class="alert bg-glass-danger my-3">Can't overwrite your bid</div>
+    @endif
+    @if(session()->has('error'))
+        <div class="alert bg-glass-danger my-3">Something went wrong</div>
     @endif
     <div class="top-filter my-3">
         <ul class="nav nav-tabs">
