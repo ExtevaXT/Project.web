@@ -9,11 +9,17 @@
 @endsection
 
 @section('content')
+    @if(session()->has('remove'))
+        <div class="alert bg-glass-success my-3">Lot was removed</div>
+    @endif
     @if(session()->has('bid'))
-        <div class="alert bg-glass-success my-3">Bid was placed successfully</div>
+        <div class="alert bg-glass-success my-3">Bid was placed</div>
+    @endif
+    @if(session()->has('buyout'))
+        <div class="alert bg-glass-success my-3">Lot was bought</div>
     @endif
     @if(session()->has('lot'))
-        <div class="alert bg-glass-success my-3">Lot was created successfully</div>
+        <div class="alert bg-glass-success my-3">Lot was created</div>
     @endif
     @if(session()->has('currency'))
         <div class="alert bg-glass-danger my-3">Not enough currency</div>

@@ -7,14 +7,8 @@ use App\Http\Controllers\GuideController;
 use App\Http\Controllers\TalentController;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\LotController;
-use Carbon\Carbon;
-use GrahamCampbell\GitHub\Facades\GitHub;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Password;
 use Illuminate\Support\Facades\Route;
-use Illuminate\Support\Str;
-use NotificationChannels\Telegram\TelegramUpdates;
 use Illuminate\Http\Request;
 
 /*
@@ -34,7 +28,8 @@ Route::get('/guides', function () {
     return view('guides');
 });
 Route::get('/guides/search', fn() => view('guides.search'));
-Route::get('/guides/info', fn() => view('guides.info'));
+Route::get('/guides/info', fn() => abort(404)); //view('guides.info'));
+
 Route::get('/guides/{category}', [GuideController::class, 'category']);
 Route::get('/guides/{category}/{item_name}', [GuideController::class, 'item']);
 Route::get('/item/{item}', [GuideController::class, 'find']);

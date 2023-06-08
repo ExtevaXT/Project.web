@@ -28,7 +28,7 @@ class SettingsValidation extends FormRequest
             'styleTheme' => 'in:corridor,red-haze,nodes,neon,flame,cosmos,hanipaganda,consultant,rainbow,null',
             'styleThemeShow' => 'in:0,1,2',
 
-            'profileColor' => 'size:7',
+            'profileColor' => 'size:7|nullable',
             'character' => 'numeric',
             'profileAchievements' => 'boolean',
             'profileTalents' => 'boolean',

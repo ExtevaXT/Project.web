@@ -46,12 +46,23 @@ class Lot extends Model
                 and $lot->bidder == $character
                 and ($lot->endTime() < Carbon::now() or $lot->bid == $lot->price));
     }
+    public static function removed()
+    {
+        $character = Auth::user()->character()->name;
+        return Lot::all()
+            ->filter(fn($lot) => $lot->character == $character
+                and $lot->bidder == $character
+                and ($lot->bid == $lot->price));
+    }
 
     public static function unclaimed()
     {
         //should check double for seller claiming and bidder claiming
-        $lots = Lot::bought()->concat(Lot::expired())->concat(Lot::sold());
-        $lots->filter(fn($lot)=> !$lot->claimed and !$lot->item()->claimed);
-        return $lots->isEmpty();
+        // What the fuck with this php, same code but using variable gives false                // Are there unclaimed?
+        return Lot::bought()->filter(fn($lot)=> !$lot->claimed and !$lot->item()->claimed)->isNotEmpty() or // false
+            Lot::expired()->filter(fn($lot)=> !$lot->claimed and !$lot->item()->claimed)->isNotEmpty() or // true
+            Lot::sold()->filter(fn($lot)=> !$lot->claimed and !$lot->item()->claimed)->isNotEmpty() or // false
+            Lot::removed()->filter(fn($lot)=> !$lot->claimed and !$lot->item()->claimed)->isNotEmpty(); // true
+                                                                                                    // So true;
     }
 }

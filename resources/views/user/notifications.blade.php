@@ -27,7 +27,7 @@
                 <span class="fw-bold">Auction Delivery</span>
                 <span class="fw-light">{{$lot->endTime()}}</span>
             </div>
-            <div>Lot {{$lot->item()->name}} was bought</div>
+            <div title="{{$lot->id}}">Lot {{$lot->item()->name}} was bought</div>
         </div>
         @if(!$lot->item()->claimed)
             <button class="input-glass px-5 py-2">Claim {{$lot->item()->amount}}x {{$lot->item()->name }}</button>
@@ -44,7 +44,7 @@
                     <span class="fw-bold">Auction Delivery</span>
                     <span class="fw-light">{{$lot->endTime()}}</span>
                 </div>
-                <div>Lot {{$lot->item()->name}} was sold</div>
+                <div title="{{$lot->id}}">Lot {{$lot->item()->name}} was sold</div>
             </div>
             @if(!$lot->claimed)
                 <button class="input-glass px-5 py-2">Claim {{$lot->bid}} ₽</button>
@@ -61,7 +61,24 @@
                     <span class="fw-bold">Auction Delivery</span>
                     <span class="fw-light">{{$lot->endTime()}}</span>
                 </div>
-                <div>Lot {{$lot->item()->name}} was expired</div>
+                <div title="{{$lot->id}}">Lot {{$lot->item()->name}} was expired</div>
+            </div>
+            @if(!$lot->item()->claimed)
+                <button class="input-glass px-5 py-2">Claim {{$lot->item()->amount}}x {{$lot->item()->name }}</button>
+            @else
+                <button class="btn input-glass py-2 px-5 disabled">Already claimed</button>
+            @endif
+        </form>
+    @endforeach
+    @foreach(Lot::removed()->reverse() as $lot)
+        <form action="{{route('lot.claim.item', ['id'=>$lot->id])}}" method="POST" class="bg-glass p-3 mt-2 d-flex flex-row gap-3">
+            @csrf
+            <div>
+                <div>
+                    <span class="fw-bold">Auction Delivery</span>
+                    <span class="fw-light">{{$lot->endTime()}}</span>
+                </div>
+                <div title="{{$lot->id}}">Lot {{$lot->item()->name}} was removed</div>
             </div>
             @if(!$lot->item()->claimed)
                 <button class="input-glass px-5 py-2">Claim {{$lot->item()->amount}}x {{$lot->item()->name }}</button>

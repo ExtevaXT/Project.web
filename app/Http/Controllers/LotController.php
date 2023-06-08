@@ -117,8 +117,8 @@ class LotController extends Controller
         $bidder = Auth::user()->character();
         $cps = Character_personal_storage::all()->where('character', $bidder->name);
 
-        if($bidder->name == $lot->character) return 'Cannot buy your lot';
-        if($bidder->gold < $lot->price) return 'Not enough currency';
+        //if($bidder->name == $lot->character) return 'Cannot buy your lot';
+        if($bidder->gold < $lot->price) return back()->with(['currency'=>true]);
 
         //give previous bidder money back if he exists
         $previousBidder = Character::all()->where('name', $lot->bidder)->first();
@@ -136,6 +136,8 @@ class LotController extends Controller
 //        //Give item instantly
 //        $bidder->claimItem($lot->item());
 //        AccountNotification::make('Auction Delivery', "Item was added to your storage");
+        if($bidder->name == $lot->character) return back()->with(['remove'=>true]);
+
         return back()->with(['buyout'=>true]);
     }
 

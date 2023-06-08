@@ -16,10 +16,11 @@
         <div class="d-flex ms-4">
             <x-user-profile name="{{Auth::user()->name}}" size="128" all="0" />
             <div class="align-self-center mb-4">
-                <div class="fs-2">{{Auth::user()->name}}</div>
                 @if(Account::auth()->character()!=null)
+                    <div class="fs-2">{{Auth::user()->character()->name}}</div>
                     <div class="fs-5">Balance: {{Account::auth()->character()->gold}}₽</div>
                 @else
+                    <div class="fs-2">{{Auth::user()->name}}</div>
                     <div class="fs-5">Character not created</div>
                 @endif
             </div>
@@ -33,7 +34,7 @@
                         <button class="input-glass py-2 my-2 w-100" type="submit">Claim</button>
                     </form>
                 @else
-                    <button class="btn input-glass py-2 px-4 m-2 disabled w-100">Remain {{Carbon::now()->addDay()->diffInHours(Carbon::parse(Auth::user()->setting('daily')))}} hours</button>
+                    <button class="btn input-glass py-2 px-4 m-2 disabled w-100">Remain {{Carbon::parse(Auth::user()->setting('daily'))->addDay()->diffInHours(Carbon::now())}} hours</button>
                 @endif
             </div>
         @endif
