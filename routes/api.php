@@ -19,3 +19,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 Route::get('/commits',[Controller::class, 'commits']);
+Route::post('/receive',[Controller::class, 'receive']);

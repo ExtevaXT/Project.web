@@ -117,12 +117,13 @@ class Controller extends BaseController
         // CHECK UDP 91.197.1.60:7777
         // OR
         // CHECK PROCESS ON SERVER
+        $debug = config('app.debug') == false;
+
         $status = (bool)shell_exec('pidof ./headless.x86_64');
-        $announcements = $this->messages(1042157595386970132);
-        $releases = GitHub::repo()->releases()->all('ExtevaXT','Project.unity', []);
+        $announcements = $debug ? $this->messages(1042157595386970132) : [];
+        $releases =  $debug ? GitHub::repo()->releases()->all('ExtevaXT','Project.unity', []) : collect();
         return view('index', [
-            'unity' => collect(GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []))->take(3) ,
-            'web' => collect(GitHub::repo()->commits()->all('ExtevaXT','Project.web', []))->take(3),
+            'commits' => Resource::commits(),
             'status' => $status,
             'announcement' =>  end($announcements),
             'release' =>  end($releases)
@@ -141,7 +142,22 @@ class Controller extends BaseController
         ])->toJson();
 
     }
+    public function receive(Request $request)
+    {
+        $commits = unserialize(file_get_contents(resource_path('commits')));
+        $commit = [
+            'repository'=>$request['repository']['name'],
+            'author'=>$request['commits'][0]['author']['name'],
+            'message'=>$request['commits'][0]['message'],
+            'date'=>$request['commits'][0]['timestamp'],
+            'url' => $request['commits'][0]['url'],
+        ];
+        array_push($commits, $commit);
+        file_put_contents(resource_path('commits'), serialize($commits));
+        return $commits;
 
+        return response()->noContent();
+    }
 
 
 

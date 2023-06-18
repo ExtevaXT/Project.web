@@ -3,6 +3,7 @@
 namespace App\Models;
 
 use Carbon\Carbon;
+use GrahamCampbell\GitHub\Facades\GitHub;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Arr;
 use Illuminate\Support\Str;
@@ -89,5 +90,31 @@ class Resource extends Model
     public static function date($date)
     {
         return Carbon::parse($date)->tz('Asia/Yekaterinburg')->format('d M Y | H:i');
+    }
+
+    public static function commits()
+    {
+        $commits = collect(unserialize(file_get_contents(resource_path('commits'))));
+        if($commits->where('repository','Project.web')->count() < 3 or
+            $commits->where('repository','Project.web')->count() < 3){
+            $web = collect(GitHub::repo()->commits()->all('ExtevaXT','Project.web', []))->take(3);
+            $unity = collect(GitHub::repo()->commits()->all('ExtevaXT','Project.unity', []))->take(3);
+            $formatter = fn($commit) => [
+                'author' =>$commit['commit']['author']['name'],
+                'message' => $commit['commit']['message'],
+                'date'=>$commit['commit']['author']['date'],
+                'url'=>$commit['html_url'],
+            ];
+            return [
+                'request' => true,
+                'unity' =>  $unity->map($formatter),
+                'web' => $web->map($formatter),
+            ];
+        }
+        else
+            return [
+                'request'=> false,
+                'commits' => $commits
+            ];
     }
 }

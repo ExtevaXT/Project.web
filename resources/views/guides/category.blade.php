@@ -13,6 +13,7 @@
     <div class="my-3">
         <a class="text-link" href="/guides"><i class="mdi mdi-24px mdi-arrow-left"></i></a>
         <h3 class="d-inline">{{ucfirst($category)}}</h3>
+{{--        <div class="py-2 px-4 m-1 input-glass d-inline">Filter</div>--}}
     </div>
     <div class="d-grid objects-panel">
         @foreach($items as $item)

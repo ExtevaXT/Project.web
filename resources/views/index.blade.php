@@ -11,8 +11,8 @@
     @guest()
     <div class="text-center py-5 mt-5">
         <div class="fs-3">Project.web - Web interface for Project.unity</div>
-        <div class="text-secondary fs-5">Last update
-            {{Resource::date(max($unity[0]['commit']['author']['date'], $web[0]['commit']['author']['date']))}}
+        <div class="text-secondary fs-5">
+            {{ $commits['request'] ? 'Last update '. Resource::date(max($commits['unity'][0]['date'], $commits['web'][0]['date'])) : 'Last update '. Resource::date($commits['commits']->last()['date']) }}
         </div>
         <button class="input-glass py-2 px-4 d-inline-block fs-5 mt-3" onclick="window.location.href='{{route('register')}}'">Register account</button>
         <br>
@@ -28,7 +28,7 @@
     <div class="@auth d-flex my-2 main @endauth">
         <div class="main-left d-flex flex-column @auth() w-50 @endauth ">
             @auth()
-                @if(Auth::user()->setting('indexAnnouncements') and Carbon::parse($announcement['timestamp'])->addMonths(3) > Carbon::now())
+                @if(Auth::user()->setting('indexAnnouncements') and $announcement and Carbon::parse($announcement['timestamp'])->addMonths(3) > Carbon::now())
             <div class="bg-glass m-2 p-4">
                 <div class="m-1">
                     <h5 >{{ $announcement['embeds'] ?  $announcement['embeds'][0]['title'] : $announcement['content']}}</h5>
@@ -117,7 +117,7 @@
                 <div class="bg-glass me-2 w-25 prime-panel d-flex align-items-end pc-panel">
                     <div class="p-3">
                         <h5>Version Control</h5>
-                        <div>{{$release['name']}}</div>
+                        <div>{{$release ? $release['name'] : 'Debug Mode'}}</div>
                     </div>
 
                 </div>
@@ -160,14 +160,18 @@
                 <div class="@guest w-50 main-left @endguest">
                     <h3>Last changes .web</h3>
                     <div>
-                        @foreach($web as $commit)
-                            <a href="{{$commit['html_url']}}" class="d-block text-link">
-                                <div class="input-glass change-item p-4 my-2" onclick="window.location.href='{{$commit['html_url']}}'">
-                                    <div><span>{{ Resource::date($commit['commit']['author']['date']) }}</span> {{ $commit['commit']['author']['name']}}</div>
-                                    <div title="{{$commit['commit']['message']}}">{{ explode("\n",$commit['commit']['message'])[0] }}</div>
+                        @forelse($commits['request'] ? $commits['web'] : $commits['commits']->where('repository', 'Project.web')->reverse() as $commit)
+                            <a href="{{$commit['url']}}" class="d-block text-link">
+                                <div class="input-glass change-item p-4 my-2" onclick="window.location.href='{{$commit['url']}}'">
+                                    <div><span>{{ Resource::date($commit['date']) }}</span> {{ $commit['author']}}</div>
+                                    <div title="{{$commit['message']}}">{{ explode("\n",$commit['message'])[0] }}</div>
                                 </div>
                             </a>
-                        @endforeach
+                        @empty
+                            <div class="input-glass change-item p-4 my-2">
+                                <div>No commits</div>
+                            </div>
+                        @endforelse
                     </div>
                 </div>
                 @endif
@@ -175,14 +179,18 @@
                 <div class="@guest w-50 main-right @endguest">
                     <h3>Last changes .unity</h3>
                     <div>
-                        @foreach($unity as $commit)
-                        <div class="input-glass change-item p-4 my-2">
-                            <a href="{{$commit['html_url']}}" class="d-block text-link">
-                                <div><span>{{ Resource::date($commit['commit']['author']['date']) }}</span> {{ $commit['commit']['author']['name']}}</div>
-                                <div title="{{$commit['commit']['message']}}">{{ explode("\n",$commit['commit']['message'])[0] }}</div>
+                        @forelse($commits['request'] ? $commits['unity'] : $commits['commits']->where('repository', 'Project.unity')->reverse() as $commit)
+                            <a href="{{$commit['url']}}" class="d-block text-link">
+                                <div class="input-glass change-item p-4 my-2" onclick="window.location.href='{{$commit['url']}}'">
+                                    <div><span>{{ Resource::date($commit['date']) }}</span> {{ $commit['author']}}</div>
+                                    <div title="{{$commit['message']}}">{{ explode("\n",$commit['message'])[0] }}</div>
+                                </div>
                             </a>
-                        </div>
-                        @endforeach
+                            @empty
+                                <div class="input-glass change-item p-4 my-2">
+                                    <div>No commits</div>
+                                </div>
+                            @endforelse
                     </div>
                 </div>
                     @endif
