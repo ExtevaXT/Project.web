@@ -12,7 +12,7 @@
     <div class="text-center py-5 mt-5">
         <div class="fs-3">Project.web - Web interface for Project.unity</div>
         <div class="text-secondary fs-5">
-            {{ $commits['request'] ? 'Last update '. Resource::date(max($commits['unity'][0]['date'], $commits['web'][0]['date'])) : 'Last update '. Resource::date($commits['commits']->last()['date']) }}
+            {{ $commits['request'] ? 'Last update '. Resource::date(max($commits['unity'][0]['date'], $commits['web'][0]['date'])) : 'Last update '. Resource::date($commits['commits']->first()['date']) }}
         </div>
         <button class="input-glass py-2 px-4 d-inline-block fs-5 mt-3" onclick="window.location.href='{{route('register')}}'">Register account</button>
         <br>
@@ -160,7 +160,7 @@
                 <div class="@guest w-50 main-left @endguest">
                     <h3>Last changes .web</h3>
                     <div>
-                        @forelse($commits['request'] ? $commits['web'] : $commits['commits']->where('repository', 'Project.web')->reverse() as $commit)
+                        @forelse($commits['request'] ? $commits['web'] : $commits['commits']->where('repository', 'Project.web') as $commit)
                             <a href="{{$commit['url']}}" class="d-block text-link">
                                 <div class="input-glass change-item p-4 my-2" onclick="window.location.href='{{$commit['url']}}'">
                                     <div><span>{{ Resource::date($commit['date']) }}</span> {{ $commit['author']}}</div>
@@ -179,7 +179,7 @@
                 <div class="@guest w-50 main-right @endguest">
                     <h3>Last changes .unity</h3>
                     <div>
-                        @forelse($commits['request'] ? $commits['unity'] : $commits['commits']->where('repository', 'Project.unity')->reverse() as $commit)
+                        @forelse($commits['request'] ? $commits['unity'] : $commits['commits']->where('repository', 'Project.unity') as $commit)
                             <a href="{{$commit['url']}}" class="d-block text-link">
                                 <div class="input-glass change-item p-4 my-2" onclick="window.location.href='{{$commit['url']}}'">
                                     <div><span>{{ Resource::date($commit['date']) }}</span> {{ $commit['author']}}</div>

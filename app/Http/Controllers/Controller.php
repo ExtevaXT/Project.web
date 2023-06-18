@@ -154,9 +154,7 @@ class Controller extends BaseController
         ];
         array_push($commits, $commit);
         file_put_contents(resource_path('commits'), serialize($commits));
-        return $commits;
-
-        return response()->noContent();
+        return http_response_code(202);
     }
 
 

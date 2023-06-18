@@ -114,7 +114,8 @@ class Resource extends Model
         else
             return [
                 'request'=> false,
-                'commits' => $commits
+                'commits' => $commits->where('repository','Project.web')->pop(3)
+                    ->concat($commits->where('repository','Project.unity')->pop(3))
             ];
     }
 }
