@@ -10,10 +10,14 @@
 
 @section('content')
     <x-search-bar/>
-    <div class="my-3">
+    <div class="mt-3 mb-4">
         <a class="text-link" href="/guides"><i class="mdi mdi-24px mdi-arrow-left"></i></a>
-        <h3 class="d-inline">{{ucfirst($category)}}</h3>
-{{--        <div class="py-2 px-4 m-1 input-glass d-inline">Filter</div>--}}
+        <h3 class="d-inline me-5">{{ucfirst($category)}}</h3>
+    </div>
+    <div class="d-grid subcategories-panel my-2" style="grid-template-columns: repeat({{count($subcategories)}},1fr)">
+        @foreach($subcategories as $subcategory)
+            <a class="py-2 px-4 input-glass text-center text-link @if($active = $subcategory == request()->subcategory) bg-glass-danger @endif" href="{{$active ? request()->url() : "?subcategory=$subcategory"}}">{{$subcategory}}</a>
+        @endforeach
     </div>
     <div class="d-grid objects-panel">
         @foreach($items as $item)

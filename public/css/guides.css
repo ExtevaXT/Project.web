@@ -1,6 +1,9 @@
 .objects-panel{
     grid-template-columns: repeat(4,1fr);grid-gap: 8px;
 }
+.subcategories-panel{
+    grid-gap: 8px;
+}
 .main{
      display: flex;
      flex-direction: row;
@@ -23,6 +26,9 @@
 @media screen and (max-width: 1000px){
     .objects-panel{
         grid-template-columns: repeat(1,1fr);
+    }
+    .subcategories-panel{
+        grid-template-columns: repeat(1,1fr) !important;
     }
     .main{
         display: flex;

@@ -6,6 +6,7 @@ use App\Models\AccountNotification;
 use App\Models\Resource;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Str;
 use Symfony\Component\Yaml\Yaml;
 
 class GuideController extends Controller
@@ -13,12 +14,18 @@ class GuideController extends Controller
     public function category($category)
     {
         $items = Resource::data("/Items/$category");
+        $subcategories = $items->flatMap(function ($item) {
+            $categories = explode('/', $item['pathCategory']);
+            return count($categories) > 1 ? [$categories[1]] : [];
+        })->unique();
+        if($subcategory = request()->subcategory) $items = $items->filter(fn($item) => Str::contains($item['pathCategory'], "/$subcategory"));
         // Talent 'Library' feature
         if(!($character = Auth::user()?->character() and $character?->talent('Library')))
             $items = $items->filter(fn($item) => !isset($item['hide']) || !$item['hide']);
         return view('guides.category', [
             'items' => $items,
-            'category' => $category
+            'category' => $category,
+            'subcategories' => $subcategories
         ]);
     }
 
