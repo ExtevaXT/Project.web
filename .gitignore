@@ -26,3 +26,4 @@ config/github.php
 config/services.php
 
 *.psd
+resources/commits

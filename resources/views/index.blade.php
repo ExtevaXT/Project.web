@@ -12,7 +12,7 @@
     <div class="text-center py-5 mt-5">
         <div class="fs-3">Project.web - Web interface for Project.unity</div>
         <div class="text-secondary fs-5">
-            {{ $commits['request'] ? 'Last update '. Resource::date(max($commits['unity'][0]['date'], $commits['web'][0]['date'])) : 'Last update '. Resource::date($commits['commits']->first()['date']) }}
+            {{ $commits['request'] ? 'Last update '. Resource::date(max($commits['unity'][0]['date'], $commits['web'][0]['date'])) : 'Last update '. Resource::date($commits['commits']->sortByDesc('date')->first()['date']) }}
         </div>
         <button class="input-glass py-2 px-4 d-inline-block fs-5 mt-3" onclick="window.location.href='{{route('register')}}'">Register account</button>
         <br>
