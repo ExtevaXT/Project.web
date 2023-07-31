@@ -1,23 +1,19 @@
 # Project.web
-<h3>当冒名顶替者可疑时</h3>
-<pre>Demo https://external.su 大鸡巴 权力</pre> 
-<h5>For 弱智</h5>
-<pre>login: test</pre> 
-<pre>password: test</pre> 
-<h4>为赞美习近平而杀黑鬼</h4>
-<p>中华人民共和国寄语] Great work, Citizen! Your social credit score has increased by [5] Integers. Keep up the good work! [ 中华人民共和国寄语]</p>
-<p><b>习近平吹玉杆社会信用党给一个猫的妻子</b></p>
-Let us all stand for the national anthem.
+Website for [Project](https://github.com/ExtevaXT/Project.unity)
 
-    三民主義，吾黨所宗；
-    以建民國，以進大同。
-    咨爾多士，為民前鋒；
-    夙夜匪懈，主義是從。
-    矢勤矢勇，必信必忠；
-    一心一德，貫徹始終。
+https://external.su
 
-Praise be to 中华民国政府! Down with the illegitimate capitalist 中国共产党, fraudulent usurpers of 大陸!
+## Test account 
 
-Glory to the 中華民國!
+<pre>login: test
+password: test</pre>
 
-你讓中華民國失望了 -300000 social credit 😨
+## Setup guide
+* First need to clone this repo
+* Next need php 8.2.4 with some php.ini extensions and composer to add vendor
+* Then setup laravel project like in official docs
+* Add in .env `DB_CONNECTION=sqlite` and link to db from project, also maybe need migrations this is also in docs. There is also recaptcha keys and mail in env to assign
+* In config folder should be `github.php` with github token from some package, and also `services.php` with discord token
+* To run use `php artisan serve`
+* If installing on nginx this [config](docs/default) is working on my host, also need ssl by certbot. There are also some mini scripts for fixing read only: [fd](docs/fd) - fix db, [pa](docs/pa) - pull all, [pu](docs/pu) - pull unity, [pw](docs/pw) - pull web
+* If something is not working try to debug it, cause there is hardcoded moments only for my host, github and discord

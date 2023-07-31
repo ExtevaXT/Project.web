@@ -1,0 +1,6 @@
+#!/bin/bash
+cd /var/www/Project/Project.web
+git reset --hard
+git pull
+chown www-data:www-data /var/www/Project/Project.web/resources/commits
+chmod -R 775 /var/www/Project/Project.web/resources/commits

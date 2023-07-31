@@ -1,0 +1,5 @@
+#!/bin/bash
+chown www-data:www-data /var/www/Project/Project.unity/Database.sqlite
+chmod -R 775 /var/www/Project/Project.unity/
+chown www-data:www-data /var/www/Project/Project.web/resources/commits
+chmod -R 775 /var/www/Project/Project.web/resources/commits

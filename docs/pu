@@ -1,0 +1,6 @@
+#!/bin/bash
+cd /var/www/Project/Project.unity
+git reset --hard
+git pull
+chown www-data:www-data /var/www/Project/Project.unity/Database.sqlite
+chmod -R 775 /var/www/Project/Project.unity/
