@@ -94,7 +94,7 @@ class Resource extends Model
 
     public static function commits()
     {
-        $commits = collect(unserialize(file_get_contents(resource_path('commits'))));
+        $commits = collect(json_decode(file_get_contents(resource_path('commits.json'))));
         if($commits->where('repository','Project.web')->count() < 3 or
             $commits->where('repository','Project.web')->count() < 3){
             $web = collect(GitHub::repo()->commits()->all('ExtevaXT','Project.web', []))->take(3);

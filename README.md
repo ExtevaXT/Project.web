@@ -1,7 +1,7 @@
 # Project.web
 Website for [Project](https://github.com/ExtevaXT/Project.unity)
 
-https://external.su
+http://dev.external.su
 
 ## Test account 
 

@@ -144,7 +144,7 @@ class Controller extends BaseController
     }
     public function receive(Request $request)
     {
-        $commits = unserialize(file_get_contents(resource_path('commits')));
+        $commits = json_decode(file_get_contents(resource_path('commits')));
         $commit = [
             'repository'=>$request['repository']['name'],
             'author'=>$request['commits'][0]['author']['name'],
@@ -153,7 +153,7 @@ class Controller extends BaseController
             'url' => $request['commits'][0]['url'],
         ];
         array_push($commits, $commit);
-        file_put_contents(resource_path('commits'), serialize($commits));
+        file_put_contents(resource_path('commits.json'), json_encode($commits));
         return http_response_code(202);
     }
 
