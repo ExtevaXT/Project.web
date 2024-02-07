@@ -144,7 +144,7 @@ class Controller extends BaseController
     }
     public function receive(Request $request)
     {
-        $commits = json_decode(file_get_contents(resource_path('commits')));
+        $commits = json_decode(file_get_contents(resource_path('commits.json')));
         $commit = [
             'repository'=>$request['repository']['name'],
             'author'=>$request['commits'][0]['author']['name'],

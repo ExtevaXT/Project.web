@@ -1,5 +1,5 @@
 # Project.web
-Website for [Project](https://github.com/ExtevaXT/Project.unity)
+Website and integration for [Project](https://github.com/ExtevaXT/Project.unity)
 
 http://dev.external.su
 
@@ -7,6 +7,9 @@ http://dev.external.su
 
 <pre>login: test
 password: test</pre>
+
+## [Features](docs/showcase.md)
+Better check it by yourself
 
 ## Setup guide
 * First need to clone this repo
