@@ -3,13 +3,56 @@ Website and integration for [Project](https://github.com/ExtevaXT/Project.unity)
 
 http://dev.external.su
 
-## Test account 
+## Test account to check out features
 
 <pre>login: test
 password: test</pre>
 
-## [Features](docs/showcase.md)
-Better check it by yourself
+## Key features
+### Auction
+Rendering of timestamps is by JS. No loops
+
+![alt text](docs/img/image-1.png)
+
+### Dynamic Inventory
+Functional view of ingame storage
+
+![alt text](docs/img/image-2.png)
+
+### Achievements
+Ranking is based on summary of your achievements
+
+![alt text](docs/img/image-3.png)
+
+### Dynamic Profile
+Ingame progression and stats of your character
+
+![alt text](docs/img/image-4.png)
+
+### Themes and custom styles
+And many more settings features
+
+![alt text](docs/img/image-6.png)
+
+### Talents
+Unlockables that affect your website interactions
+
+![alt text](docs/img/image-8.png)
+
+### Dynamic Wiki
+Parsed and rendered from Unity's YAML assets
+
+![alt text](docs/img/image.png)
+
+### Notificatations
+And auction delieveries to claim items and money
+
+![alt text](docs/img/image-5.png)
+
+### Adapative Design
+Grids on desktop. Flex on mobile
+
+![alt text](docs/img/image-7.png)
 
 ## Setup guide
 * First need to clone this repo
